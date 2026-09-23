@@ -75,7 +75,7 @@ td.num{text-align:right;font-variant-numeric:tabular-nums}
 .login{font-weight:700;color:var(--text)}
 .muted{color:var(--muted)}
 .empty{padding:40px;text-align:center;color:var(--muted)}
-.up{color:var(--ok)} .down{color:var(--ko)}
+.up{color:var(--ok)} .down{color:var(--ko)} .warn{color:var(--warn)}
 
 .pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:14px;font-weight:700;border:1px solid currentColor}
 .s-accepte{color:var(--ok)} .s-refuse{color:var(--ko)} .s-abandon{color:var(--grey)}
@@ -190,7 +190,7 @@ function b64encodeUtf8(str){ const bytes = new TextEncoder().encode(str); let bi
 
 /* ============ État ============ */
 const CFG_KEY = "cabane.cfg", LOCAL_KEY = "cabane.localdata";
-let cfg = store.get(CFG_KEY, {owner:"", repo:"", branch:"main", path:"cabane-data.json", token:"", me:"", remember:true});
+let cfg = store.get(CFG_KEY, {owner:"Lacabanestreamers", repo:"cabane", branch:"main", path:"cabane-data.json", token:"", me:"", remember:true});
 if(!cfg.token){ try { cfg.token = sessionStorage.getItem("cabane.token") || ""; } catch {} }
 const S = {
   data:null, sha:null, mode:"none",          // none | github | local
@@ -212,7 +212,7 @@ function applyOp(d, op){
   d.journal = d.journal || []; d.snapshots = d.snapshots || [];
   switch(op.t){
     case "patch": { const r = (d[op.c]||[]).find(x => x.id === op.id); if(!r) return;
-      for(const [k,v] of Object.entries(op.p)) setPath(r, k, v); r.maj = {par:op.par, le:op.le}; break; }
+      for(const [k,v] of Object.entries(op.p)) setPath(r, k, v); if(!op.auto) r.maj = {par:op.par, le:op.le}; break; }
     case "add": if(!d[op.c].some(x => x.id === op.r.id)) d[op.c].push(JSON.parse(JSON.stringify(op.r))); break;
     case "del": d[op.c] = d[op.c].filter(x => x.id !== op.id); break;
     case "snapshot": d.snapshots = d.snapshots.filter(s => s.date !== op.s.date); d.snapshots.push(op.s);
@@ -327,30 +327,115 @@ function updateSync(txt, cls){
   else { dot.className = "dot"; t.textContent = "Non connecté"; }
 }
 
-/* ============ Données Twitch en direct (decapi.me) ============ */
+/* ============ Données Twitch en direct ============ */
+// Deux sources : l'API Twitch (si un membre du staff a connecté son compte Twitch dans Réglages) ou decapi.me en secours.
 // decapi renvoie une durée (« 2 hours, 5 minutes ») seulement si la chaîne est en live ; tout autre texte = hors ligne ou erreur
 const LIVE_RE = /^\d+\s+(day|hour|minute|second)s?(\s*,\s*\d+\s+(day|hour|minute|second)s?)*$/i;
+const TW_KEY = "cabane.twitch";
+let tw = store.get(TW_KEY, null);                        // {token}
+const twClientId = () => (S.data?.settings.twitchClientId || "").trim();
+const twitchOn = () => !!(tw?.token && twClientId());
+const redirectUri = () => location.origin + location.pathname.replace(/index\.html$/, "");
+function catchTwitchRedirect(){
+  const h = location.hash.slice(1); if(!/access_token=|error=/.test(h)) return;
+  const q = new URLSearchParams(h); let st = null;
+  try { st = sessionStorage.getItem("cabane.twstate"); sessionStorage.removeItem("cabane.twstate"); } catch {}
+  history.replaceState(null, "", location.pathname + location.search);
+  if(q.get("error")){ setTimeout(() => toast("Connexion Twitch annulée ou refusée.", true), 300); return; }
+  if(!st || q.get("state") !== st){ setTimeout(() => toast("Connexion Twitch refusée (vérification de sécurité).", true), 300); return; }
+  tw = {token:q.get("access_token")}; store.set(TW_KEY, tw);
+  setTimeout(() => toast("Compte Twitch connecté"), 300);
+}
+function twitchLogin(){
+  const cid = twClientId(); if(!cid){ toast("Renseigne d'abord le Client ID Twitch.", true); return; }
+  const st = Math.random().toString(36).slice(2) + Date.now().toString(36);
+  try { sessionStorage.setItem("cabane.twstate", st); } catch {}
+  location.href = `https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=${encodeURIComponent(cid)}&redirect_uri=${encodeURIComponent(redirectUri())}&scope=&state=${st}`;
+}
+function twitchLogout(){ tw = null; store.del(TW_KEY); S.twIds = {}; render(); }
+async function helix(path){
+  const r = await fetch(`https://api.twitch.tv/helix/${path}`, {headers:{Authorization:`Bearer ${tw.token}`, "Client-Id":twClientId()}, cache:"no-store"});
+  if(r.status === 401){ tw = null; store.del(TW_KEY); const e = new Error("twitch-auth"); throw e; }
+  if(!r.ok) throw new Error("twitch-" + r.status);
+  return r.json();
+}
+const chunks = (arr, n) => { const out = []; for(let i=0;i<arr.length;i+=n) out.push(arr.slice(i,i+n)); return out; };
+function durationMs(d){ const m = /(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s)?/.exec(d||""); return m ? ((+m[1]||0)*3600 + (+m[2]||0)*60 + (+m[3]||0))*1000 : 0; }
+function sinceTxt(iso){ const min = Math.max(0, Math.round((Date.now() - new Date(iso))/60000)); return min < 60 ? `${min} min` : `${Math.floor(min/60)} h ${String(min%60).padStart(2,"0")}`; }
 async function fetchText(url){ const r = await fetch(url, {cache:"no-store"}); if(!r.ok) throw 0; return (await r.text()).trim(); }
-async function loadLive(){
+async function pool(items, n, fn){ let i = 0; await Promise.all(Array.from({length:n}, async () => { while(i < items.length){ const it = items[i++]; await fn(it); if(i % 10 === 0) render(); } })); }
+
+async function loadHelix(logins, full){
+  const ids = S.twIds || (S.twIds = {});
+  for(const c of chunks(logins.filter(l => !ids[l]), 100)){
+    const j = await helix("users?" + c.map(l => "login=" + encodeURIComponent(l)).join("&"));
+    j.data.forEach(u => ids[u.login] = u.id);
+  }
+  const live = {};
+  for(const c of chunks(logins.map(l => ids[l]).filter(Boolean), 100)){
+    const j = await helix("streams?first=100&" + c.map(id => "user_id=" + id).join("&"));
+    j.data.forEach(st => live[st.user_login] = st);
+  }
+  logins.forEach(l => { const e = S.live[l] || (S.live[l] = {}); e.notFound = !ids[l]; e.live = !!live[l]; e.uptime = live[l] ? sinceTxt(live[l].started_at) : ""; });
+  if(!full) return;
+  await pool(logins.filter(l => ids[l]), 6, async l => {
+    const e = S.live[l];
+    try { e.follows = (await helix(`channels/followers?broadcaster_id=${ids[l]}&first=1`)).total ?? null; } catch(err){ if(err.message === "twitch-auth") throw err; }
+    try { const v = (await helix(`videos?user_id=${ids[l]}&type=archive&first=1`)).data[0];
+      e.lastVod = v ? new Date(v.created_at).getTime() + durationMs(v.duration) : null; } catch(err){ if(err.message === "twitch-auth") throw err; }
+  });
+  S.fullAt = Date.now();
+}
+async function loadDecapi(logins){
+  await pool(logins, 3, async login => {
+    const e = S.live[login] || (S.live[login] = {});
+    try { const f = await fetchText(`https://decapi.me/twitch/followcount/${encodeURIComponent(login)}`); e.follows = /^\d[\d,\s]*$/.test(f) ? parseInt(f.replace(/[^\d]/g,""),10) : null; } catch { e.follows = null; }
+    try { const u = await fetchText(`https://decapi.me/twitch/uptime/${encodeURIComponent(login)}`); e.live = LIVE_RE.test(u); e.uptime = e.live ? u : ""; } catch { e.live = false; }
+  });
+}
+async function loadLive(force){
   if(!S.data || S.liveLoading) return;
   S.liveLoading = true; render();
   const logins = [...new Set([
     ...S.data.membres.filter(m => m.statut !== "Parti").map(m => m.login),
     ...S.data.propositions.filter(p => !["Refusé","Abandonnée","Accepté"].includes(p.statut)).map(p => p.login)
   ])];
-  let i = 0;
-  async function worker(){
-    while(i < logins.length){
-      const login = logins[i++];
-      const e = {};
-      try { const f = await fetchText(`https://decapi.me/twitch/followcount/${encodeURIComponent(login)}`); const n = parseInt(f.replace(/[^\d]/g,""),10); e.follows = /^\d[\d,\s]*$/.test(f) ? n : null; } catch { e.follows = null; }
-      try { const u = await fetchText(`https://decapi.me/twitch/uptime/${encodeURIComponent(login)}`); e.live = LIVE_RE.test(u); e.uptime = e.live ? u : ""; } catch { e.live = false; }
-      S.live[login] = e;
-      if(i % 8 === 0) render();
-    }
-  }
-  await Promise.all([worker(), worker(), worker()]);
-  S.liveLoading = false; S.liveAt = Date.now(); render();
+  try {
+    if(twitchOn()){
+      const full = force || !S.fullAt || Date.now() - S.fullAt > 15*60000;
+      try { await loadHelix(logins, full); }
+      catch(e){
+        toast(e.message === "twitch-auth" ? "Session Twitch expirée : reconnecte-toi dans Réglages." : "API Twitch indisponible, lecture via decapi.", true);
+        await loadDecapi(logins);
+      }
+    } else await loadDecapi(logins);
+  } finally { S.liveLoading = false; S.liveAt = Date.now(); }
+  recordSeenLive(); render();
+}
+// Mémorise le jour où une chaîne de La Cabane a été vue en live (sert au « dernier stream » quand il n'y a pas de VOD)
+function recordSeenLive(){
+  if(S.mode === "none") return;
+  const today = todayISO();
+  S.data.membres.forEach(m => { if(liveOf(m.login).live && m.dernierLive !== today) dispatch({t:"patch", c:"membres", id:m.id, p:{dernierLive:today}, auto:true}); });
+}
+function lastStream(m){
+  const l = liveOf(m.login);
+  if(l.live) return {live:true, days:0};
+  const c = [];
+  if(l.lastVod) c.push({t:l.lastVod, src:"dernière VOD"});
+  if(m.dernierLive) c.push({t:new Date(m.dernierLive + "T12:00:00").getTime(), src:"vu en live sur La Cabane"});
+  if(m.dernierStreamManuel) c.push({t:new Date(m.dernierStreamManuel + "T12:00:00").getTime(), src:"saisie manuelle"});
+  if(!c.length) return null;
+  const best = c.reduce((a,b) => b.t > a.t ? b : a);
+  const d0 = new Date(); d0.setHours(0,0,0,0); const d1 = new Date(best.t); d1.setHours(0,0,0,0);
+  return {days:Math.max(0, Math.round((d0 - d1)/864e5)), date:d1, src:best.src};
+}
+function lastStreamCell(m){
+  const x = lastStream(m);
+  if(!x) return `<span class="muted" title="${twitchOn() ? "Aucune VOD publique : saisis la date sur la fiche" : "Connecte Twitch dans Réglages pour lire la dernière VOD"}">–</span>`;
+  if(x.live) return `<span class="up">en live</span>`;
+  const cls = x.days >= 30 ? "down" : x.days >= 14 ? "warn" : "";
+  return `<span class="${cls}" title="${x.date.toLocaleDateString("fr-FR")} · ${x.src}">${x.days === 0 ? "aujourd'hui" : x.days + " j"}</span>`;
 }
 const liveOf = login => S.live[login] || {};
 const liveStamp = () => S.liveAt ? ` · live vérifié à ${new Date(S.liveAt).toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"})}` : "";
@@ -463,12 +548,12 @@ function viewMembres(){
     return !q || [m.login, m.discord, m.notes].some(x => String(x||"").toLowerCase().includes(q));
   });
   const prog = m => { const c = currentFollows(m), r = ref?.follows?.[m.login]; return c != null && r != null ? c - r : null; };
-  rows = sortRows(rows, S.f.msort, {follows:currentFollows, prog, anniv:m => annivInfo(m.premierStream)?.days ?? null, live:m => liveOf(m.login).live ? 0 : 1});
+  rows = sortRows(rows, S.f.msort, {follows:currentFollows, prog, anniv:m => annivInfo(m.premierStream)?.days ?? null, live:m => liveOf(m.login).live ? 0 : 1, last:m => { const x = lastStream(m); return x ? (x.live ? -1 : x.days) : null; }});
   const chip = (val, label, n) => `<button class="chip" data-mst="${esc(val)}" aria-pressed="${S.f.mst===val}">${esc(label)} <b>${n}</b></button>`;
   const liveCount = all.filter(m => m.statut !== "Parti" && liveOf(m.login).live).length;
   return `
   <h1>Streamers de La Cabane</h1>
-  <p class="sub">${nPres} présents confirmés · ${liveCount} en live maintenant${ref ? ` · progression comparée au relevé du ${fmtDate(ref.date)}` : ""}${liveStamp()}</p>
+  <p class="sub">${nPres} présents confirmés · ${liveCount} en live maintenant${ref ? ` · progression comparée au relevé du ${fmtDate(ref.date)}` : ""}${liveStamp()}${twitchOn() ? "" : ` · <a href="#" data-goto="reglages">connecte Twitch</a> pour le dernier stream`}</p>
   <div class="tools">
     <input class="search" id="mq" type="search" placeholder="Chercher une chaîne, un pseudo Discord…" value="${esc(S.f.mq)}" aria-label="Recherche">
     <button class="btn primary" id="addMember">Ajouter une chaîne</button>
@@ -485,7 +570,7 @@ function viewMembres(){
   <div class="tablewrap"><table>
     <thead><tr>
       ${th("Chaîne","login",S.f.msort)}${th("Live","live",S.f.msort)}${th("Discord","discord",S.f.msort)}${th("Rôle","role",S.f.msort)}${th("Statut","statut",S.f.msort)}
-      ${th("Arrivée","arrivee",S.f.msort)}${th("Follows","follows",S.f.msort,"num")}${th("Progression","prog",S.f.msort,"num")}${th("Anniv dans","anniv",S.f.msort,"num")}<th>Alerte</th>
+      ${th("Arrivée","arrivee",S.f.msort)}${th("Dernier stream","last",S.f.msort,"num")}${th("Follows","follows",S.f.msort,"num")}${th("Progression","prog",S.f.msort,"num")}${th("Anniv dans","anniv",S.f.msort,"num")}<th>Alerte</th>
     </tr></thead>
     <tbody>${rows.map(m => { const l = liveOf(m.login), c = currentFollows(m), p = prog(m), a = annivInfo(m.premierStream); return `
       <tr data-open="membres:${m.id}">
@@ -495,11 +580,12 @@ function viewMembres(){
         <td>${esc(m.role)}</td>
         <td>${pill(m.statut, "À renseigner")}</td>
         <td>${fmtDate(m.arrivee)}</td>
+        <td class="num">${lastStreamCell(m)}</td>
         <td class="num">${c != null ? c + (m.followsMode==="manuel" ? ` <span class="muted" title="Saisie manuelle">✎</span>` : "") : `<span class="muted">${S.liveLoading ? "…" : "–"}</span>`}</td>
         <td class="num ${p>0?"up":p<0?"down":""}">${p == null ? "" : (p>0?"+":"") + p}</td>
         <td class="num">${a ? (a.days === 0 ? "🎂 aujourd'hui" : a.days + " j") : ""}</td>
         <td>${m.alerte ? "✓" : ""}</td>
-      </tr>`; }).join("") || `<tr><td colspan="10" class="empty">Aucune chaîne ne correspond à ce filtre.</td></tr>`}</tbody>
+      </tr>`; }).join("") || `<tr><td colspan="11" class="empty">Aucune chaîne ne correspond à ce filtre.</td></tr>`}</tbody>
   </table></div>`;
 }
 
@@ -529,8 +615,8 @@ function viewReglages(){
     <h2>Connexion au fichier partagé</h2>
     <p>Les données vivent dans un dépôt GitHub privé. Chaque membre du staff saisit ici un jeton qui a accès à ce dépôt. Le jeton reste dans ce navigateur.</p>
     <div class="grid">
-      <label class="f">Propriétaire du dépôt<input id="c_owner" value="${esc(cfg.owner)}" placeholder="aulit42369 ou nom d'organisation" autocomplete="off"></label>
-      <label class="f">Dépôt privé<input id="c_repo" value="${esc(cfg.repo)}" placeholder="cabane-data" autocomplete="off"></label>
+      <label class="f">Propriétaire du dépôt<input id="c_owner" value="${esc(cfg.owner)}" placeholder="Lacabanestreamers" autocomplete="off"></label>
+      <label class="f">Dépôt privé<input id="c_repo" value="${esc(cfg.repo)}" placeholder="cabane" autocomplete="off"></label>
       <label class="f">Branche<input id="c_branch" value="${esc(cfg.branch)}"></label>
       <label class="f">Fichier<input id="c_path" value="${esc(cfg.path)}"></label>
       <label class="f full">Jeton GitHub<input id="c_token" type="password" value="${esc(cfg.token)}" placeholder="github_pat_…" autocomplete="off"></label>
@@ -546,6 +632,19 @@ function viewReglages(){
   if(!d) return `<h1>Réglages</h1>${conn}${localPanel()}`;
   const list = (id, label, arr, hint) => `<label class="f full">${label}<textarea id="${id}" rows="4">${esc(arr.join("\n"))}</textarea><span class="muted">${hint}</span></label>`;
   return `<h1>Réglages</h1>${conn}
+  <section class="panel">
+    <h2>Connexion Twitch</h2>
+    <p>Donne le follow exact, le live en temps réel et la date de la dernière VOD, qui sert au nombre de jours depuis le dernier stream. Chaque membre du staff connecte son propre compte Twitch : aucune autorisation spéciale n'est demandée.</p>
+    <div class="grid">
+      <label class="f full">Client ID de l'application Twitch (partagé avec tout le staff)<input id="s_twcid" value="${esc(d.settings.twitchClientId || "")}" placeholder="ex. abcd1234efgh5678…" autocomplete="off"></label>
+    </div>
+    <p class="meta">URL de redirection à déclarer dans l'application Twitch : <b>${esc(redirectUri())}</b></p>
+    <div class="tools" style="margin:14px 0 0">
+      <button class="btn" id="s_twsave">Enregistrer le Client ID</button>
+      ${tw?.token ? `<span class="up" style="align-self:center">● Twitch connecté</span><button class="btn danger" id="twOut">Déconnecter Twitch</button>`
+                  : `<button class="btn primary" id="twIn" ${d.settings.twitchClientId ? "" : "disabled"}>Se connecter à Twitch</button>`}
+    </div>
+  </section>
   <section class="panel">
     <h2>Listes</h2>
     <div class="grid">
@@ -659,6 +758,10 @@ function drawerMembre(m){
     </div>
     ${hist.length ? `<p class="meta">Relevés : ${hist.map(s => `${fmtDate(s.date)} → <b>${s.follows[m.login]}</b>`).join(" · ")}</p>` : ""}
   </fieldset>
+  <fieldset><legend>Activité</legend>
+    ${(() => { const x = lastStream(m); return `<p class="meta" style="margin-top:0">Dernier stream : ${!x ? "inconnu" : x.live ? "en live maintenant" : `${x.date.toLocaleDateString("fr-FR")} (${x.days === 0 ? "aujourd'hui" : "il y a " + x.days + " j"}) · ${x.src}`}</p>`; })()}
+    <div class="grid">${fld("Dernier stream (saisie manuelle)","dernierStreamManuel",m.dernierStreamManuel,"date")}</div>
+  </fieldset>
   <fieldset><legend>Anniversaire de stream</legend>
     <div class="grid">
       ${fld("Date du 1er stream","premierStream",m.premierStream,"date")}
@@ -683,7 +786,7 @@ document.addEventListener("click", e => {
   const open = t.closest("[data-open]"); if(open && !t.closest("a")){ const [c,id] = open.dataset.open.split(":"); S.drawer = {c,id}; renderDrawer(); setTimeout(() => $(".drawer .btn[data-close]")?.focus(), 0); return; }
   const pst = t.closest("[data-pst]"); if(pst){ S.f.pst = pst.dataset.pst; render(); return; }
   const mst = t.closest("[data-mst]"); if(mst){ S.f.mst = mst.dataset.mst; render(); return; }
-  if(t.closest('[data-act="live"]')){ S.live = {}; loadLive(); return; }
+  if(t.closest('[data-act="live"]')){ loadLive(true); return; }
   const av = t.closest("[data-avis]");
   if(av && S.drawer){ const cur = S.data.propositions.find(x => x.id === S.drawer.id)?.avis?.[av.dataset.avis];
     const v = cur === av.dataset.v ? "" : av.dataset.v;
@@ -727,6 +830,10 @@ document.addEventListener("click", e => {
       path:$("#c_path").value.trim()||"cabane-data.json", token:$("#c_token").value.trim(), me:$("#c_me").value, remember:$("#c_remember").checked});
     saveCfg(); connectGithub().then(() => { if(S.mode === "github"){ toast("Connecté"); S.view = cfg.me ? "propositions" : "reglages"; render(); if(!cfg.me) toast("Choisis ton prénom dans « Je suis » puis reconnecte-toi.", true); } }); return;
   }
+  if(t.id === "twIn"){ twitchLogin(); return; }
+  if(t.id === "twOut"){ twitchLogout(); return; }
+  if(t.id === "s_twsave"){ dispatch({t:"settings", p:{twitchClientId:$("#s_twcid").value.trim()}, txt:"Client ID Twitch modifié"}); S.twIds = {}; toast("Client ID enregistré"); return; }
+  const go = t.closest("[data-goto]"); if(go){ e.preventDefault(); S.view = go.dataset.goto; S.drawer = null; render(); window.scrollTo(0,0); return; }
   if(t.id === "c_pull"){ pull(false); return; }
   if(t.id === "c_logout"){ cfg.token = ""; saveCfg(); S.mode = "none"; S.data = null; S.sha = null; render(); updateSync(); return; }
   if(t.id === "exportBtn"){ exportJson(); return; }
@@ -801,6 +908,7 @@ async function forceReplace(d){
 
 /* ============ Démarrage ============ */
 (function init(){
+  catchTwitchRedirect();
   if(cfg.owner && cfg.repo && cfg.token){ connectGithub(); }
   else {
     const local = store.get(LOCAL_KEY, null);
