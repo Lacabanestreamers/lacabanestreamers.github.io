@@ -296,6 +296,10 @@ async function pull(silent){
   updateSync();
 }
 setInterval(() => { if(document.visibilityState === "visible") pull(true); }, 90000);
+// Statut live relu toutes les 3 min (et au retour sur l'onglet)
+const liveStale = () => S.data && !S.liveLoading && (!S.liveAt || Date.now() - S.liveAt > 180000);
+setInterval(() => { if(document.visibilityState === "visible" && liveStale()) loadLive(); }, 30000);
+document.addEventListener("visibilitychange", () => { if(document.visibilityState === "visible" && liveStale()) loadLive(); });
 window.addEventListener("beforeunload", e => { if(S.pending.length || S.saving){ e.preventDefault(); e.returnValue = ""; } });
 
 async function connectGithub(){
@@ -324,6 +328,8 @@ function updateSync(txt, cls){
 }
 
 /* ============ Données Twitch en direct (decapi.me) ============ */
+// decapi renvoie une durée (« 2 hours, 5 minutes ») seulement si la chaîne est en live ; tout autre texte = hors ligne ou erreur
+const LIVE_RE = /^\d+\s+(day|hour|minute|second)s?(\s*,\s*\d+\s+(day|hour|minute|second)s?)*$/i;
 async function fetchText(url){ const r = await fetch(url, {cache:"no-store"}); if(!r.ok) throw 0; return (await r.text()).trim(); }
 async function loadLive(){
   if(!S.data || S.liveLoading) return;
@@ -338,15 +344,16 @@ async function loadLive(){
       const login = logins[i++];
       const e = {};
       try { const f = await fetchText(`https://decapi.me/twitch/followcount/${encodeURIComponent(login)}`); const n = parseInt(f.replace(/[^\d]/g,""),10); e.follows = /^\d[\d,\s]*$/.test(f) ? n : null; } catch { e.follows = null; }
-      try { const u = await fetchText(`https://decapi.me/twitch/uptime/${encodeURIComponent(login)}`); e.live = /\d/.test(u) && !/offline|not found|error|invalid/i.test(u); e.uptime = e.live ? u : ""; } catch { e.live = false; }
+      try { const u = await fetchText(`https://decapi.me/twitch/uptime/${encodeURIComponent(login)}`); e.live = LIVE_RE.test(u); e.uptime = e.live ? u : ""; } catch { e.live = false; }
       S.live[login] = e;
       if(i % 8 === 0) render();
     }
   }
   await Promise.all([worker(), worker(), worker()]);
-  S.liveLoading = false; S.liveAt = new Date(); render();
+  S.liveLoading = false; S.liveAt = Date.now(); render();
 }
 const liveOf = login => S.live[login] || {};
+const liveStamp = () => S.liveAt ? ` · live vérifié à ${new Date(S.liveAt).toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"})}` : "";
 function currentFollows(m){ return m.followsMode === "manuel" ? (m.followsManuel ?? null) : (liveOf(m.login).follows ?? null); }
 function refSnapshot(){
   const snaps = S.data.snapshots; if(!snaps.length) return null;
@@ -413,7 +420,7 @@ function viewPropositions(){
   const chip = (val, label, n) => `<button class="chip" data-pst="${esc(val)}" aria-pressed="${S.f.pst===val}">${esc(label)} <b>${n}</b></button>`;
   return `
   <h1>Propositions</h1>
-  <p class="sub">${all.length} chaînes proposées · ${counts["Accepté"]||0} acceptées · ${(counts["Refusé"]||0)+(counts["Abandonnée"]||0)} refusées ou abandonnées</p>
+  <p class="sub">${all.length} chaînes proposées · ${counts["Accepté"]||0} acceptées · ${(counts["Refusé"]||0)+(counts["Abandonnée"]||0)} refusées ou abandonnées${liveStamp()}</p>
   <div class="tools">
     <input class="search" id="pq" type="search" placeholder="Chercher une chaîne, un parrain…" value="${esc(S.f.pq)}" aria-label="Recherche">
     <button class="btn primary" id="addProp">Ajouter une proposition</button>
@@ -461,7 +468,7 @@ function viewMembres(){
   const liveCount = all.filter(m => m.statut !== "Parti" && liveOf(m.login).live).length;
   return `
   <h1>Streamers de La Cabane</h1>
-  <p class="sub">${nPres} présents confirmés · ${liveCount} en live maintenant${ref ? ` · progression comparée au relevé du ${fmtDate(ref.date)}` : ""}</p>
+  <p class="sub">${nPres} présents confirmés · ${liveCount} en live maintenant${ref ? ` · progression comparée au relevé du ${fmtDate(ref.date)}` : ""}${liveStamp()}</p>
   <div class="tools">
     <input class="search" id="mq" type="search" placeholder="Chercher une chaîne, un pseudo Discord…" value="${esc(S.f.mq)}" aria-label="Recherche">
     <button class="btn primary" id="addMember">Ajouter une chaîne</button>
