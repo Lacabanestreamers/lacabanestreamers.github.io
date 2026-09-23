@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>La Cabane · Suivi staff</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛖</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#100B24; --panel:#18123A; --panel2:#201951; --line:#2E2663; --text:#ECE9FF; --muted:#9C95CB;
+  --cyan:#3DE3FF; --pink:#FF4FD8; --ok:#5CF2A6; --warn:#FFC857; --ko:#FF5C7A; --grey:#7B769C;
+  --radius:10px; color-scheme:dark;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font:500 16px/1.4 Rajdhani,"Segoe UI",system-ui,sans-serif;min-height:100vh}
+a{color:var(--cyan);text-decoration:none}
+a:hover{text-decoration:underline}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+.hidden{display:none!important}
+
+/* En-tête */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(16,11,36,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:18px;padding:10px 20px;flex-wrap:wrap}
+.brand{font:800 20px/1 Orbitron,sans-serif;letter-spacing:.04em;color:var(--text);text-shadow:0 0 12px rgba(255,79,216,.55);white-space:nowrap}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav button{background:none;border:0;padding:8px 14px;border-radius:8px;cursor:pointer;color:var(--muted);font-weight:700;font-size:17px}
+nav button[aria-current="page"]{color:var(--text);background:var(--panel2);box-shadow:inset 0 -2px 0 var(--pink)}
+.sync{margin-left:auto;display:flex;align-items:center;gap:10px;font-size:14px;color:var(--muted)}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--grey)}
+.dot.ok{background:var(--ok);box-shadow:0 0 8px var(--ok)}
+.dot.busy{background:var(--warn);box-shadow:0 0 8px var(--warn)}
+.dot.err{background:var(--ko);box-shadow:0 0 8px var(--ko)}
+
+main{padding:20px;max-width:1500px;margin:0 auto}
+h1{font:800 26px/1.1 Orbitron,sans-serif;margin:0 0 4px}
+.sub{color:var(--muted);margin:0 0 18px}
+
+/* Boutons */
+.btn{border:1px solid var(--line);background:var(--panel2);padding:7px 14px;border-radius:8px;cursor:pointer;font-weight:700}
+.btn:hover{border-color:var(--cyan)}
+.btn.primary{background:var(--pink);border-color:var(--pink);color:#1a0716}
+.btn.primary:hover{filter:brightness(1.1)}
+.btn.ghost{background:none}
+.btn.danger{border-color:var(--ko);color:var(--ko);background:none}
+.btn:disabled{opacity:.5;cursor:default}
+
+/* Barre d'outils */
+.tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+.search{flex:1 1 220px;max-width:340px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 12px}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:4px 12px;cursor:pointer;font-weight:600;font-size:15px;display:inline-flex;gap:6px;align-items:center}
+.chip b{font-weight:700;color:var(--muted)}
+.chip[aria-pressed="true"]{border-color:var(--cyan);background:rgba(61,227,255,.12)}
+.chip[aria-pressed="true"] b{color:var(--cyan)}
+
+/* Tableaux */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel)}
+table{border-collapse:collapse;width:100%;font-size:15.5px}
+th,td{padding:8px 12px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{position:sticky;top:0;background:var(--panel2);color:var(--muted);font-weight:700;font-size:14px;cursor:pointer;user-select:none}
+th[data-sort]:hover{color:var(--text)}
+th .arrow{color:var(--cyan)}
+tbody tr{cursor:pointer}
+tbody tr:hover{background:rgba(255,255,255,.03)}
+tbody tr:last-child td{border-bottom:0}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+.login{font-weight:700;color:var(--text)}
+.muted{color:var(--muted)}
+.empty{padding:40px;text-align:center;color:var(--muted)}
+.up{color:var(--ok)} .down{color:var(--ko)}
+
+.pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:14px;font-weight:700;border:1px solid currentColor}
+.s-accepte{color:var(--ok)} .s-refuse{color:var(--ko)} .s-abandon{color:var(--grey)}
+.s-attente{color:var(--warn)} .s-encours{color:var(--cyan)} .s-afaire{color:#A99BFF} .s-aucun{color:var(--grey)} .s-vide{color:var(--muted);border-style:dashed}
+.s-present{color:var(--ok)} .s-parti{color:var(--grey)}
+
+.live{display:inline-flex;align-items:center;gap:5px;color:var(--ko);font-weight:700;font-size:14px}
+.live::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ko);box-shadow:0 0 8px var(--ko)}
+.avis{display:inline-flex;gap:3px}
+.avis i{width:10px;height:10px;border-radius:3px;background:var(--line);display:inline-block}
+.avis i.pour{background:var(--ok)} .avis i.contre{background:var(--ko)} .avis i.neutre{background:var(--warn)} .avis i.autre{background:var(--cyan)}
+
+/* Tiroir d'édition */
+.scrim{position:fixed;inset:0;background:rgba(5,3,15,.6);z-index:40}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(560px,100%);background:var(--panel);border-left:1px solid var(--line);z-index:41;display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.drawer .head{display:flex;align-items:center;gap:10px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.drawer .head h2{margin:0;font:700 22px/1.2 Orbitron,sans-serif;flex:1;overflow:hidden;text-overflow:ellipsis}
+.drawer .body{padding:18px 20px;overflow-y:auto;flex:1}
+.drawer .foot{display:flex;gap:10px;padding:14px 20px;border-top:1px solid var(--line);flex-wrap:wrap}
+.links{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:16px;font-weight:600}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 14px}
+.grid .full{grid-column:1/-1}
+label.f{display:flex;flex-direction:column;gap:4px;font-size:14px;color:var(--muted);font-weight:600}
+label.f input,label.f select,label.f textarea{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;color:var(--text);font-size:16px;font-weight:500}
+label.f textarea{min-height:80px;resize:vertical}
+label.check{display:flex;align-items:center;gap:8px;color:var(--text)}
+fieldset{border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px;margin:16px 0 0}
+legend{padding:0 6px;color:var(--pink);font-weight:700}
+.avisrow{display:grid;grid-template-columns:80px 1fr;gap:8px;align-items:center;margin-bottom:8px}
+.avisrow.me span{color:var(--pink);font-weight:700}
+.seg{display:flex;gap:4px;flex-wrap:wrap}
+.seg button{border:1px solid var(--line);background:var(--bg);border-radius:6px;padding:4px 10px;cursor:pointer;font-weight:600;font-size:14px}
+.seg button[aria-pressed="true"].pour{border-color:var(--ok);color:var(--ok)}
+.seg button[aria-pressed="true"].contre{border-color:var(--ko);color:var(--ko)}
+.seg button[aria-pressed="true"].neutre{border-color:var(--warn);color:var(--warn)}
+.seg input{flex:1;min-width:120px;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:4px 8px}
+.meta{font-size:13px;color:var(--muted);margin-top:14px}
+
+/* Anniversaires */
+.annivs{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.ann{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px;cursor:pointer;display:grid;grid-template-columns:62px 1fr;gap:12px;align-items:center}
+.ann .d{text-align:center;border-right:1px solid var(--line);padding-right:10px}
+.ann .d b{display:block;font:800 22px/1 Orbitron,sans-serif}
+.ann .d small{color:var(--muted)}
+.ann.soon{border-color:var(--pink);box-shadow:0 0 0 1px var(--pink) inset}
+.ann.today{background:linear-gradient(135deg,rgba(255,79,216,.18),rgba(61,227,255,.12));border-color:var(--pink)}
+h3.month{font:700 16px/1 Orbitron,sans-serif;color:var(--muted);margin:22px 0 10px}
+
+/* Réglages / connexion */
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:16px;max-width:760px}
+.panel h2{margin:0 0 6px;font:700 18px/1.2 Orbitron,sans-serif}
+.panel p{color:var(--muted);margin:0 0 12px}
+.journal{list-style:none;margin:0;padding:0;font-size:15px}
+.journal li{padding:6px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:130px 90px 1fr;gap:10px}
+.journal li:last-child{border-bottom:0}
+
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--panel2);border:1px solid var(--cyan);padding:10px 18px;border-radius:8px;z-index:60;font-weight:600;max-width:90vw}
+.toast.err{border-color:var(--ko)}
+
+@media (max-width:700px){
+  main{padding:14px}
+  .bar{padding:10px 14px;gap:10px}
+  .sync{margin-left:0;width:100%}
+  .grid{grid-template-columns:1fr}
+  .journal li{grid-template-columns:1fr;gap:0}
+}
+@media (prefers-reduced-motion:no-preference){
+  .drawer{animation:slide .18s ease-out}
+  @keyframes slide{from{transform:translateX(30px);opacity:.4}}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div class="brand" id="brand">La Cabane</div>
+    <nav id="nav" aria-label="Sections">
+      <button data-view="propositions">Propositions</button>
+      <button data-view="membres">Streamers</button>
+      <button data-view="anniv">Anniversaires</button>
+      <button data-view="reglages">Réglages</button>
+    </nav>
+    <div class="sync"><span class="dot" id="syncDot"></span><span id="syncTxt">Non connecté</span></div>
+  </div>
+</header>
+<main id="main"></main>
+<div id="drawerRoot"></div>
+<div id="toastRoot"></div>
+
+<script>
+"use strict";
+/* ============ Utilitaires ============ */
+const $ = s => document.querySelector(s);
+const esc = v => String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const uid = p => p + Math.random().toString(16).slice(2, 10);
+const todayISO = () => { const d = new Date(); return new Date(d.getTime() - d.getTimezoneOffset()*60000).toISOString().slice(0,10); };
+const fmtDate = iso => { if(!iso) return ""; const [y,m,d] = iso.split("-"); return `${d}/${m}/${y}`; };
+const fmtStamp = iso => { if(!iso) return ""; const d = new Date(iso); return d.toLocaleDateString("fr-FR") + " " + d.toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"}); };
+const normLogin = v => String(v||"").trim().replace(/^@/,"").replace(/^https?:\/\/(www\.)?twitch\.tv\//i,"").replace(/[/?#].*$/,"").toLowerCase();
+const safeUrl = u => /^https?:\/\//i.test(u) ? u : null;
+const store = {
+  get(k, d){ try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
+  set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
+  del(k){ try { localStorage.removeItem(k); } catch {} }
+};
+function toast(msg, err){
+  const el = document.createElement("div"); el.className = "toast" + (err ? " err" : ""); el.textContent = msg;
+  $("#toastRoot").replaceChildren(el); setTimeout(() => el.remove(), err ? 6000 : 2600);
+}
+function b64decodeUtf8(b64){ const bin = atob(b64.replace(/\s/g,"")); return new TextDecoder().decode(Uint8Array.from(bin, c => c.charCodeAt(0))); }
+function b64encodeUtf8(str){ const bytes = new TextEncoder().encode(str); let bin = ""; for(let i=0;i<bytes.length;i+=0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i,i+0x8000)); return btoa(bin); }
+
+/* ============ État ============ */
+const CFG_KEY = "cabane.cfg", LOCAL_KEY = "cabane.localdata";
+let cfg = store.get(CFG_KEY, {owner:"", repo:"", branch:"main", path:"cabane-data.json", token:"", me:"", remember:true});
+if(!cfg.token){ try { cfg.token = sessionStorage.getItem("cabane.token") || ""; } catch {} }
+const S = {
+  data:null, sha:null, mode:"none",          // none | github | local
+  pending:[], saving:false, dirtyLocal:false,
+  live:{}, liveLoading:false,
+  view:"propositions", drawer:null,
+  f:{ pq:"", pst:"__all", msort:["login",1], psort:["login",1], mq:"", mst:"__actifs", mrole:"__all", ref:"" }
+};
+
+/* ============ Modèle : opérations ============ */
+function setPath(obj, path, val){
+  const ks = path.split("."); let o = obj;
+  for(let i=0;i<ks.length-1;i++){ if(typeof o[ks[i]] !== "object" || o[ks[i]] === null) o[ks[i]] = {}; o = o[ks[i]]; }
+  const last = ks[ks.length-1];
+  if(val === undefined || val === "") { if(ks.length > 1) delete o[last]; else o[last] = val === undefined ? null : ""; }
+  else o[last] = val;
+}
+function applyOp(d, op){
+  d.journal = d.journal || []; d.snapshots = d.snapshots || [];
+  switch(op.t){
+    case "patch": { const r = (d[op.c]||[]).find(x => x.id === op.id); if(!r) return;
+      for(const [k,v] of Object.entries(op.p)) setPath(r, k, v); r.maj = {par:op.par, le:op.le}; break; }
+    case "add": if(!d[op.c].some(x => x.id === op.r.id)) d[op.c].push(JSON.parse(JSON.stringify(op.r))); break;
+    case "del": d[op.c] = d[op.c].filter(x => x.id !== op.id); break;
+    case "snapshot": d.snapshots = d.snapshots.filter(s => s.date !== op.s.date); d.snapshots.push(op.s);
+      d.snapshots.sort((a,b) => a.date.localeCompare(b.date)); if(d.snapshots.length > 120) d.snapshots = d.snapshots.slice(-120); break;
+    case "settings": Object.assign(d.settings, op.p); break;
+  }
+  if(op.txt){ d.journal.unshift({le:op.le, par:op.par, txt:op.txt}); if(d.journal.length > 400) d.journal.length = 400; }
+}
+function dispatch(op){
+  if(!S.data) return;
+  op.le = new Date().toISOString(); op.par = cfg.me || "?";
+  applyOp(S.data, op);
+  if(S.mode === "github"){ S.pending.push(op); scheduleSave(); }
+  else { S.dirtyLocal = true; store.set(LOCAL_KEY, S.data); }
+  updateSync(); render();
+}
+const patch = (c, id, p, txt) => dispatch({t:"patch", c, id, p, txt});
+
+/* ============ GitHub ============ */
+const ghUrl = () => `https://api.github.com/repos/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}/contents/${cfg.path.split("/").map(encodeURIComponent).join("/")}`;
+const ghHeaders = () => ({Authorization:`Bearer ${cfg.token}`, Accept:"application/vnd.github+json", "X-GitHub-Api-Version":"2022-11-28"});
+async function ghGet(){
+  const r = await fetch(`${ghUrl()}?ref=${encodeURIComponent(cfg.branch)}&_=${Date.now()}`, {headers:ghHeaders(), cache:"no-store"});
+  if(r.status === 401) throw new Error("Jeton refusé par GitHub (expiré ou invalide).");
+  if(r.status === 404) throw new Error("Fichier introuvable : vérifie le dépôt, la branche, le chemin et que le jeton a accès à ce dépôt.");
+  if(!r.ok) throw new Error(`GitHub a répondu ${r.status}.`);
+  const j = await r.json();
+  let text;
+  if(j.content) text = b64decodeUtf8(j.content);
+  else { // fichier > 1 Mo
+    const raw = await fetch(`${ghUrl()}?ref=${encodeURIComponent(cfg.branch)}`, {headers:{...ghHeaders(), Accept:"application/vnd.github.raw+json"}, cache:"no-store"});
+    text = await raw.text();
+  }
+  return {sha:j.sha, data:JSON.parse(text)};
+}
+async function ghPut(data, sha, message){
+  const r = await fetch(ghUrl(), {method:"PUT", headers:{...ghHeaders(), "Content-Type":"application/json"},
+    body:JSON.stringify({message, content:b64encodeUtf8(JSON.stringify(data, null, 1)), sha, branch:cfg.branch})});
+  if(r.status === 409 || r.status === 422) return null; // conflit : quelqu'un a enregistré entre-temps
+  if(r.status === 401 || r.status === 403) throw new Error("Le jeton n'a pas le droit d'écrire (permission Contents : Read and write).");
+  if(!r.ok) throw new Error(`Enregistrement refusé (${r.status}).`);
+  return (await r.json()).content.sha;
+}
+let saveTimer = null;
+function scheduleSave(){ clearTimeout(saveTimer); saveTimer = setTimeout(save, 1200); }
+async function save(){
+  if(S.saving || !S.pending.length) return;
+  S.saving = true; updateSync();
+  const ops = S.pending.splice(0);
+  try {
+    let done = false;
+    for(let attempt=0; attempt<4 && !done; attempt++){
+      const fresh = await ghGet();
+      for(const op of ops) applyOp(fresh.data, JSON.parse(JSON.stringify(op)));
+      const who = cfg.me || "staff";
+      const msg = ops.length === 1 && ops[0].txt ? `${who} : ${ops[0].txt}` : `${who} : ${ops.length} modifications`;
+      const sha = await ghPut(fresh.data, fresh.sha, msg.slice(0,200));
+      if(sha){
+        S.sha = sha; S.data = fresh.data; ensureShape();
+        for(const op of S.pending) applyOp(S.data, JSON.parse(JSON.stringify(op))); // modifs faites pendant l'envoi
+        done = true;
+      }
+    }
+    if(!done) throw new Error("Trop de conflits d'enregistrement, réessaie dans un instant.");
+    S.lastError = null;
+  } catch(e){
+    S.pending.unshift(...ops); S.lastError = e.message; toast(e.message, true);
+  } finally {
+    S.saving = false; updateSync(); render();
+    if(S.pending.length && !S.lastError) scheduleSave();
+  }
+}
+async function pull(silent){
+  if(S.mode !== "github" || S.saving || S.pending.length) return;
+  try {
+    const fresh = await ghGet();
+    if(fresh.sha !== S.sha){ S.data = fresh.data; S.sha = fresh.sha; ensureShape(); render(); if(!silent) toast("Données mises à jour"); }
+    else if(!silent) toast("Déjà à jour");
+    S.lastError = null;
+  } catch(e){ S.lastError = e.message; if(!silent) toast(e.message, true); }
+  updateSync();
+}
+setInterval(() => { if(document.visibilityState === "visible") pull(true); }, 90000);
+window.addEventListener("beforeunload", e => { if(S.pending.length || S.saving){ e.preventDefault(); e.returnValue = ""; } });
+
+async function connectGithub(){
+  if(!cfg.owner || !cfg.repo || !cfg.token){ S.mode = "none"; render(); return; }
+  S.mode = "github"; updateSync("Connexion…", "busy");
+  try { const r = await ghGet(); S.data = r.data; S.sha = r.sha; S.lastError = null; ensureShape(); render(); loadLive(); }
+  catch(e){ S.mode = "none"; S.lastError = e.message; toast(e.message, true); render(); }
+  updateSync();
+}
+function ensureShape(){
+  const d = S.data; d.settings = d.settings || {}; d.propositions = d.propositions || []; d.membres = d.membres || [];
+  d.snapshots = d.snapshots || []; d.journal = d.journal || [];
+  d.settings.staff = d.settings.staff || []; d.settings.statutsProposition = d.settings.statutsProposition || [];
+  d.settings.roles = d.settings.roles || ["Admin","Modo","Streamer"]; d.settings.liens = d.settings.liens || [];
+  if(d.settings.nom) $("#brand").textContent = d.settings.nom;
+}
+function updateSync(txt, cls){
+  const dot = $("#syncDot"), t = $("#syncTxt");
+  if(txt){ dot.className = "dot " + (cls||""); t.textContent = txt; return; }
+  if(S.mode === "github"){
+    if(S.lastError){ dot.className = "dot err"; t.textContent = "Erreur de synchro"; }
+    else if(S.saving || S.pending.length){ dot.className = "dot busy"; t.textContent = "Enregistrement…"; }
+    else { dot.className = "dot ok"; t.textContent = `Synchronisé${cfg.me ? " · " + cfg.me : ""}`; }
+  } else if(S.mode === "local"){ dot.className = "dot busy"; t.textContent = S.dirtyLocal ? "Mode fichier local · non exporté" : "Mode fichier local"; }
+  else { dot.className = "dot"; t.textContent = "Non connecté"; }
+}
+
+/* ============ Données Twitch en direct (decapi.me) ============ */
+async function fetchText(url){ const r = await fetch(url, {cache:"no-store"}); if(!r.ok) throw 0; return (await r.text()).trim(); }
+async function loadLive(){
+  if(!S.data || S.liveLoading) return;
+  S.liveLoading = true; render();
+  const logins = [...new Set([
+    ...S.data.membres.filter(m => m.statut !== "Parti").map(m => m.login),
+    ...S.data.propositions.filter(p => !["Refusé","Abandonnée","Accepté"].includes(p.statut)).map(p => p.login)
+  ])];
+  let i = 0;
+  async function worker(){
+    while(i < logins.length){
+      const login = logins[i++];
+      const e = {};
+      try { const f = await fetchText(`https://decapi.me/twitch/followcount/${encodeURIComponent(login)}`); const n = parseInt(f.replace(/[^\d]/g,""),10); e.follows = /^\d[\d,\s]*$/.test(f) ? n : null; } catch { e.follows = null; }
+      try { const u = await fetchText(`https://decapi.me/twitch/uptime/${encodeURIComponent(login)}`); e.live = /\d/.test(u) && !/offline|not found|error|invalid/i.test(u); e.uptime = e.live ? u : ""; } catch { e.live = false; }
+      S.live[login] = e;
+      if(i % 8 === 0) render();
+    }
+  }
+  await Promise.all([worker(), worker(), worker()]);
+  S.liveLoading = false; S.liveAt = new Date(); render();
+}
+const liveOf = login => S.live[login] || {};
+function currentFollows(m){ return m.followsMode === "manuel" ? (m.followsManuel ?? null) : (liveOf(m.login).follows ?? null); }
+function refSnapshot(){
+  const snaps = S.data.snapshots; if(!snaps.length) return null;
+  if(S.f.ref) return snaps.find(s => s.date === S.f.ref) || null;
+  const limit = new Date(Date.now() - 7*864e5).toISOString().slice(0,10);
+  const older = snaps.filter(s => s.date <= limit);
+  return older.length ? older[older.length-1] : snaps[0];
+}
+
+/* ============ Anniversaires ============ */
+function annivInfo(iso){
+  if(!iso) return null;
+  const [y,m,d] = iso.split("-").map(Number);
+  const t = new Date(); t.setHours(0,0,0,0);
+  let next = new Date(t.getFullYear(), m-1, d);
+  if(next < t) next = new Date(t.getFullYear()+1, m-1, d);
+  const days = Math.round((next - t) / 864e5);
+  return {days, years: next.getFullYear() - y, next};
+}
+
+/* ============ Libellés statuts ============ */
+function statutClass(s){
+  return ({"Accepté":"s-accepte","Refusé":"s-refuse","Abandonnée":"s-abandon","Attente staff":"s-attente","Proposition en cours":"s-encours","Proposition à faire":"s-afaire","Aucun contact":"s-aucun","Présent":"s-present","Parti":"s-parti"})[s] || "s-vide";
+}
+const pill = (s, empty="À trier") => `<span class="pill ${statutClass(s)}">${esc(s || empty)}</span>`;
+function avisKind(v){ const t = String(v||"").toLowerCase(); if(!t) return ""; if(t.startsWith("pour")||t==="oui"||t==="👍") return "pour"; if(t.startsWith("contre")||t==="non"||t==="👎") return "contre"; if(t.startsWith("neutre")||t.startsWith("mitig")) return "neutre"; return "autre"; }
+function contactHtml(c){
+  if(!c) return "";
+  if(/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(c)) return `<a href="mailto:${esc(c)}" onclick="event.stopPropagation()">${esc(c)}</a>`;
+  const u = safeUrl(c); if(!u) return esc(c);
+  let label = u; try { const h = new URL(u).hostname.replace(/^www\./,""); label = h.includes("discord") ? "Discord" : h.includes("instagram") ? "Instagram" : (h === "x.com" || h.includes("twitter")) ? "X" : h.includes("tiktok") ? "TikTok" : h; } catch {}
+  return `<a href="${esc(u)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${esc(label)}</a>`;
+}
+function sortRows(rows, [key, dir], getters){
+  const g = getters[key] || (r => r[key]);
+  return rows.sort((a,b) => { const x = g(a), y = g(b);
+    if(x == null || x === "") return 1; if(y == null || y === "") return -1;
+    return (typeof x === "number" && typeof y === "number" ? x - y : String(x).localeCompare(String(y), "fr", {numeric:true})) * dir; });
+}
+const th = (label, key, sort, cls="") => `<th data-sort="${key}" class="${cls}" aria-sort="${sort[0]===key ? (sort[1]>0?"ascending":"descending") : "none"}">${label}${sort[0]===key ? ` <span class="arrow">${sort[1]>0?"▲":"▼"}</span>` : ""}</th>`;
+
+/* ============ Rendu ============ */
+function render(){
+  document.querySelectorAll("#nav button").forEach(b => b.setAttribute("aria-current", b.dataset.view === S.view ? "page" : "false"));
+  const main = $("#main");
+  if(!S.data && S.view !== "reglages"){ main.innerHTML = viewSetup(); renderDrawer(); return; }
+  const v = {propositions:viewPropositions, membres:viewMembres, anniv:viewAnniv, reglages:viewReglages}[S.view];
+  const focus = document.activeElement && document.activeElement.id; const caret = document.activeElement && document.activeElement.selectionStart;
+  main.innerHTML = v();
+  if(focus){ const el = document.getElementById(focus); if(el){ el.focus(); try { el.setSelectionRange(caret, caret); } catch {} } }
+  renderDrawer();
+}
+
+/* ----- Propositions ----- */
+function viewPropositions(){
+  const d = S.data, all = d.propositions;
+  const counts = {}; all.forEach(p => counts[p.statut || ""] = (counts[p.statut || ""]||0) + 1);
+  const statuts = [...d.settings.statutsProposition];
+  const q = S.f.pq.trim().toLowerCase();
+  let rows = all.filter(p => (S.f.pst === "__all" || (p.statut||"") === S.f.pst) &&
+    (!q || [p.login, p.proposePar, p.contact, p.commentaire].some(x => String(x||"").toLowerCase().includes(q))));
+  rows = sortRows(rows, S.f.psort, {statut:p => p.statut||"", date:p => p.dateProposition, follows:p => liveOf(p.login).follows ?? null});
+  const staff = d.settings.staff;
+  const chip = (val, label, n) => `<button class="chip" data-pst="${esc(val)}" aria-pressed="${S.f.pst===val}">${esc(label)} <b>${n}</b></button>`;
+  return `
+  <h1>Propositions</h1>
+  <p class="sub">${all.length} chaînes proposées · ${counts["Accepté"]||0} acceptées · ${(counts["Refusé"]||0)+(counts["Abandonnée"]||0)} refusées ou abandonnées</p>
+  <div class="tools">
+    <input class="search" id="pq" type="search" placeholder="Chercher une chaîne, un parrain…" value="${esc(S.f.pq)}" aria-label="Recherche">
+    <button class="btn primary" id="addProp">Ajouter une proposition</button>
+    <button class="btn ghost" data-act="live" ${S.liveLoading?"disabled":""}>${S.liveLoading ? "Lecture Twitch…" : "Actualiser Twitch"}</button>
+  </div>
+  <div class="tools chips">
+    ${chip("__all","Toutes",all.length)}
+    ${chip("","À trier",counts[""]||0)}
+    ${statuts.map(s => chip(s, s, counts[s]||0)).join("")}
+  </div>
+  <div class="tablewrap"><table>
+    <thead><tr>
+      ${th("Chaîne","login",S.f.psort)}${th("Statut","statut",S.f.psort)}${th("Proposée par","proposePar",S.f.psort)}
+      <th>Contact</th>${th("Follows","follows",S.f.psort,"num")}<th>Avis staff</th>${th("Proposée le","date",S.f.psort)}
+    </tr></thead>
+    <tbody>${rows.map(p => { const l = liveOf(p.login); return `
+      <tr data-open="propositions:${p.id}">
+        <td><span class="login">${esc(p.login)}</span> ${l.live ? `<span class="live">LIVE</span>` : ""}</td>
+        <td>${pill(p.statut)}</td>
+        <td>${esc(p.proposePar)}</td>
+        <td>${contactHtml(p.contact)}</td>
+        <td class="num">${l.follows != null ? l.follows : `<span class="muted">${S.liveLoading ? "…" : "–"}</span>`}</td>
+        <td><span class="avis" title="${esc(staff.map(s => `${s} : ${p.avis?.[s] || "—"}`).join("\n"))}">${staff.map(s => `<i class="${avisKind(p.avis?.[s])}"></i>`).join("")}</span></td>
+        <td>${fmtDate(p.dateProposition)}</td>
+      </tr>`; }).join("") || `<tr><td colspan="7" class="empty">Aucune proposition ne correspond à ce filtre.</td></tr>`}</tbody>
+  </table></div>`;
+}
+
+/* ----- Streamers de La Cabane ----- */
+function viewMembres(){
+  const d = S.data, all = d.membres, ref = refSnapshot();
+  const q = S.f.mq.trim().toLowerCase();
+  const nPres = all.filter(m => m.statut === "Présent").length, nVide = all.filter(m => !m.statut).length, nParti = all.filter(m => m.statut === "Parti").length;
+  let rows = all.filter(m => {
+    if(S.f.mst === "__actifs" && m.statut === "Parti") return false;
+    if(S.f.mst === "Présent" && m.statut !== "Présent") return false;
+    if(S.f.mst === "" && m.statut) return false;
+    if(S.f.mst === "Parti" && m.statut !== "Parti") return false;
+    if(S.f.mrole !== "__all" && (m.role||"") !== S.f.mrole) return false;
+    return !q || [m.login, m.discord, m.notes].some(x => String(x||"").toLowerCase().includes(q));
+  });
+  const prog = m => { const c = currentFollows(m), r = ref?.follows?.[m.login]; return c != null && r != null ? c - r : null; };
+  rows = sortRows(rows, S.f.msort, {follows:currentFollows, prog, anniv:m => annivInfo(m.premierStream)?.days ?? null, live:m => liveOf(m.login).live ? 0 : 1});
+  const chip = (val, label, n) => `<button class="chip" data-mst="${esc(val)}" aria-pressed="${S.f.mst===val}">${esc(label)} <b>${n}</b></button>`;
+  const liveCount = all.filter(m => m.statut !== "Parti" && liveOf(m.login).live).length;
+  return `
+  <h1>Streamers de La Cabane</h1>
+  <p class="sub">${nPres} présents confirmés · ${liveCount} en live maintenant${ref ? ` · progression comparée au relevé du ${fmtDate(ref.date)}` : ""}</p>
+  <div class="tools">
+    <input class="search" id="mq" type="search" placeholder="Chercher une chaîne, un pseudo Discord…" value="${esc(S.f.mq)}" aria-label="Recherche">
+    <button class="btn primary" id="addMember">Ajouter une chaîne</button>
+    <button class="btn ghost" data-act="live" ${S.liveLoading?"disabled":""}>${S.liveLoading ? "Lecture Twitch…" : "Actualiser Twitch"}</button>
+    <button class="btn ghost" id="snapBtn" ${S.liveLoading?"disabled":""} title="Enregistre les follows de toutes les chaînes à la date du jour">Enregistrer le relevé du jour</button>
+    <label class="f" style="flex-direction:row;align-items:center;gap:8px">Comparer à
+      <select id="refSel">${`<option value="">Auto (≥ 7 jours)</option>` + d.snapshots.slice().reverse().map(s => `<option value="${s.date}" ${S.f.ref===s.date?"selected":""}>${fmtDate(s.date)}</option>`).join("")}</select>
+    </label>
+  </div>
+  <div class="tools chips">
+    ${chip("__actifs","Sans les partis",all.length-nParti)}${chip("Présent","Présents",nPres)}${chip("","À renseigner",nVide)}${chip("Parti","Partis",nParti)}
+    <select id="roleSel" class="chip" aria-label="Rôle"><option value="__all">Tous les rôles</option>${d.settings.roles.map(r => `<option ${S.f.mrole===r?"selected":""}>${esc(r)}</option>`).join("")}</select>
+  </div>
+  <div class="tablewrap"><table>
+    <thead><tr>
+      ${th("Chaîne","login",S.f.msort)}${th("Live","live",S.f.msort)}${th("Discord","discord",S.f.msort)}${th("Rôle","role",S.f.msort)}${th("Statut","statut",S.f.msort)}
+      ${th("Arrivée","arrivee",S.f.msort)}${th("Follows","follows",S.f.msort,"num")}${th("Progression","prog",S.f.msort,"num")}${th("Anniv dans","anniv",S.f.msort,"num")}<th>Alerte</th>
+    </tr></thead>
+    <tbody>${rows.map(m => { const l = liveOf(m.login), c = currentFollows(m), p = prog(m), a = annivInfo(m.premierStream); return `
+      <tr data-open="membres:${m.id}">
+        <td><span class="login">${esc(m.login)}</span></td>
+        <td>${l.live ? `<span class="live" title="${esc(l.uptime)}">LIVE</span>` : ""}</td>
+        <td>${esc(m.discord)}</td>
+        <td>${esc(m.role)}</td>
+        <td>${pill(m.statut, "À renseigner")}</td>
+        <td>${fmtDate(m.arrivee)}</td>
+        <td class="num">${c != null ? c + (m.followsMode==="manuel" ? ` <span class="muted" title="Saisie manuelle">✎</span>` : "") : `<span class="muted">${S.liveLoading ? "…" : "–"}</span>`}</td>
+        <td class="num ${p>0?"up":p<0?"down":""}">${p == null ? "" : (p>0?"+":"") + p}</td>
+        <td class="num">${a ? (a.days === 0 ? "🎂 aujourd'hui" : a.days + " j") : ""}</td>
+        <td>${m.alerte ? "✓" : ""}</td>
+      </tr>`; }).join("") || `<tr><td colspan="10" class="empty">Aucune chaîne ne correspond à ce filtre.</td></tr>`}</tbody>
+  </table></div>`;
+}
+
+/* ----- Anniversaires ----- */
+function viewAnniv(){
+  const list = S.data.membres.filter(m => m.statut !== "Parti" && m.premierStream).map(m => ({m, a:annivInfo(m.premierStream)})).sort((x,y) => x.a.days - y.a.days);
+  const months = new Map();
+  list.forEach(e => { const k = e.a.next.toLocaleDateString("fr-FR",{month:"long", year:"numeric"}); if(!months.has(k)) months.set(k, []); months.get(k).push(e); });
+  const week = list.filter(e => e.a.days <= 7).length;
+  const card = ({m,a}) => `
+    <div class="ann ${a.days===0?"today":a.days<=7?"soon":""}" data-open="membres:${m.id}" tabindex="0" role="button">
+      <div class="d"><b>${a.next.getDate()}</b><small>${a.next.toLocaleDateString("fr-FR",{month:"short"})}</small></div>
+      <div><div class="login">${esc(m.login)}</div>
+        <div class="muted">${a.years} ${a.years>1?"ans":"an"} de stream · ${a.days===0?"aujourd'hui !":a.days===1?"demain":"dans "+a.days+" jours"}</div>
+        <div class="muted">${m.annivConfirme ? "✓ date confirmée" : "date à confirmer"}${m.annivCommentaire ? " · " + esc(m.annivCommentaire) : ""}</div></div>
+    </div>`;
+  return `<h1>Anniversaires de stream</h1>
+    <p class="sub">${week ? `${week} anniversaire${week>1?"s":""} dans les 7 prochains jours` : "Aucun anniversaire dans les 7 prochains jours"} · ${list.length} dates connues</p>
+    ${[...months].map(([k, es]) => `<h3 class="month">${esc(k)}</h3><div class="annivs">${es.map(card).join("")}</div>`).join("") || `<p class="empty">Ajoute une date de 1er stream sur une fiche pour la voir ici.</p>`}`;
+}
+
+/* ----- Réglages ----- */
+function viewReglages(){
+  const d = S.data;
+  const conn = `
+  <section class="panel">
+    <h2>Connexion au fichier partagé</h2>
+    <p>Les données vivent dans un dépôt GitHub privé. Chaque membre du staff saisit ici un jeton qui a accès à ce dépôt. Le jeton reste dans ce navigateur.</p>
+    <div class="grid">
+      <label class="f">Propriétaire du dépôt<input id="c_owner" value="${esc(cfg.owner)}" placeholder="aulit42369 ou nom d'organisation" autocomplete="off"></label>
+      <label class="f">Dépôt privé<input id="c_repo" value="${esc(cfg.repo)}" placeholder="cabane-data" autocomplete="off"></label>
+      <label class="f">Branche<input id="c_branch" value="${esc(cfg.branch)}"></label>
+      <label class="f">Fichier<input id="c_path" value="${esc(cfg.path)}"></label>
+      <label class="f full">Jeton GitHub<input id="c_token" type="password" value="${esc(cfg.token)}" placeholder="github_pat_…" autocomplete="off"></label>
+      <label class="f">Je suis<select id="c_me"><option value="">— choisir —</option>${(d?.settings.staff || []).map(s => `<option ${cfg.me===s?"selected":""}>${esc(s)}</option>`).join("")}${cfg.me && d && !d.settings.staff.includes(cfg.me) ? `<option selected>${esc(cfg.me)}</option>` : ""}</select></label>
+      <label class="check" style="align-self:end"><input type="checkbox" id="c_remember" ${cfg.remember?"checked":""}> Mémoriser le jeton sur cet appareil</label>
+    </div>
+    <div class="tools" style="margin:14px 0 0">
+      <button class="btn primary" id="c_save">Se connecter</button>
+      ${S.mode==="github" ? `<button class="btn ghost" id="c_pull">Recharger maintenant</button><button class="btn danger" id="c_logout">Se déconnecter</button>` : ""}
+    </div>
+    ${S.lastError ? `<p style="color:var(--ko);margin-top:10px">${esc(S.lastError)}</p>` : ""}
+  </section>`;
+  if(!d) return `<h1>Réglages</h1>${conn}${localPanel()}`;
+  const list = (id, label, arr, hint) => `<label class="f full">${label}<textarea id="${id}" rows="4">${esc(arr.join("\n"))}</textarea><span class="muted">${hint}</span></label>`;
+  return `<h1>Réglages</h1>${conn}
+  <section class="panel">
+    <h2>Listes</h2>
+    <div class="grid">
+      <label class="f full">Nom affiché<input id="s_nom" value="${esc(d.settings.nom||"")}"></label>
+      ${list("s_staff","Staff qui donne son avis", d.settings.staff, "Un prénom par ligne. Chaque personne a sa case d'avis sur les propositions.")}
+      ${list("s_statuts","Statuts de proposition", d.settings.statutsProposition, "Un statut par ligne.")}
+      ${list("s_roles","Rôles", d.settings.roles, "Un rôle par ligne.")}
+      ${list("s_liens","Sites de mesure d'audience", d.settings.liens, "Un lien par ligne.")}
+    </div>
+    <div class="tools" style="margin:14px 0 0"><button class="btn primary" id="s_save">Enregistrer les listes</button></div>
+  </section>
+  <section class="panel">
+    <h2>Sites de mesure d'audience</h2>
+    <div class="links">${d.settings.liens.map(u => safeUrl(u) ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/,"").replace(/\/$/,""))}</a>` : "").join("")}</div>
+  </section>
+  ${localPanel()}
+  <section class="panel">
+    <h2>Historique des modifications</h2>
+    <ul class="journal">${(d.journal||[]).slice(0,80).map(j => `<li><span class="muted">${fmtStamp(j.le)}</span><b>${esc(j.par)}</b><span>${esc(j.txt)}</span></li>`).join("")}</ul>
+  </section>`;
+}
+function localPanel(){
+  return `<section class="panel">
+    <h2>Fichier JSON</h2>
+    <p>Pour tester sans GitHub, ou pour garder une copie de sauvegarde. En mode fichier local, les modifications ne sont partagées avec personne tant que tu n'exportes pas.</p>
+    <div class="tools" style="margin:0">
+      <label class="btn">Ouvrir un fichier JSON<input type="file" id="fileIn" accept=".json,application/json" hidden></label>
+      ${S.data ? `<button class="btn" id="exportBtn">Exporter une copie</button>` : ""}
+    </div>
+  </section>`;
+}
+function viewSetup(){
+  return `<h1>Bienvenue</h1><p class="sub">Connecte-toi au fichier partagé du staff pour commencer.</p>${viewReglages()}`;
+}
+
+/* ============ Tiroir d'édition ============ */
+function renderDrawer(){
+  const root = $("#drawerRoot");
+  if(!S.drawer || !S.data){ root.innerHTML = ""; return; }
+  const {c, id} = S.drawer; const r = S.data[c].find(x => x.id === id);
+  if(!r){ S.drawer = null; root.innerHTML = ""; return; }
+  // Ne pas écraser un champ en cours de saisie
+  if(root.contains(document.activeElement) && root.dataset.key === c+id && document.activeElement.matches("input:not([type=checkbox]),textarea")) return;
+  root.dataset.key = c+id;
+  const scroll = root.querySelector(".body")?.scrollTop || 0;
+  root.innerHTML = `<div class="scrim" data-close></div>
+    <aside class="drawer" role="dialog" aria-modal="true" aria-label="${esc(r.login)}">
+      <div class="head"><h2>${esc(r.login)}</h2>${liveOf(r.login).live ? `<span class="live">LIVE</span>` : ""}<button class="btn ghost" data-close aria-label="Fermer">✕</button></div>
+      <div class="body">${c === "propositions" ? drawerProp(r) : drawerMembre(r)}</div>
+      <div class="foot">${c === "propositions" ? footProp(r) : footMembre(r)}</div>
+    </aside>`;
+  root.querySelector(".body").scrollTop = scroll;
+}
+const fld = (label, key, val, type="text", extra="") => `<label class="f ${extra}">${label}<input data-k="${key}" type="${type}" value="${esc(val ?? "")}"></label>`;
+function selF(label, key, val, opts, emptyLabel){
+  return `<label class="f">${label}<select data-k="${key}"><option value="">${esc(emptyLabel)}</option>${opts.map(o => `<option ${o===val?"selected":""}>${esc(o)}</option>`).join("")}${val && !opts.includes(val) ? `<option selected>${esc(val)}</option>` : ""}</select></label>`;
+}
+function linksFor(login){
+  return `<div class="links">
+    <a href="https://www.twitch.tv/${encodeURIComponent(login)}" target="_blank" rel="noopener">Twitch</a>
+    <a href="https://sullygnome.com/channel/${encodeURIComponent(login)}" target="_blank" rel="noopener">SullyGnome</a>
+    <a href="https://twitchtracker.com/${encodeURIComponent(login)}" target="_blank" rel="noopener">TwitchTracker</a>
+    ${liveOf(login).follows != null ? `<span class="muted">${liveOf(login).follows} follows</span>` : ""}
+  </div>`;
+}
+function drawerProp(p){
+  const st = S.data.settings;
+  const avisRow = name => { const v = p.avis?.[name] || "", k = avisKind(v);
+    const preset = ["Pour","Contre","Neutre"];
+    return `<div class="avisrow ${cfg.me===name?"me":""}"><span>${esc(name)}</span><div class="seg">
+      ${preset.map(o => `<button type="button" class="${o.toLowerCase()}" data-avis="${esc(name)}" data-v="${o}" aria-pressed="${v===o}">${o}</button>`).join("")}
+      <input data-k="avis.${esc(name)}" value="${esc(preset.includes(v) ? "" : v)}" placeholder="${preset.includes(v) ? esc(v) + " (ou précise…)" : "Avis libre"}" aria-label="Avis de ${esc(name)}">
+    </div></div>`; };
+  return `${linksFor(p.login)}
+  <div class="grid">
+    ${selF("Statut","statut",p.statut,st.statutsProposition,"À trier")}
+    ${fld("Proposée par","proposePar",p.proposePar)}
+    ${fld("Contact (lien ou e-mail)","contact",p.contact,"text","full")}
+    ${fld("Date de proposition","dateProposition",p.dateProposition,"date")}
+    ${fld("Date de revue","dateRevue",p.dateRevue,"date")}
+    ${fld("Date d'invitation","dateInvitation",p.dateInvitation,"date")}
+    ${fld("Hype","hype",p.hype)}
+    ${fld("Follows à la revue","followsRevue",p.followsRevue,"number")}
+    ${fld("Viewers moyens (30 j)","viewersMoyens",p.viewersMoyens,"number")}
+  </div>
+  <fieldset><legend>Avis du staff</legend>${st.staff.map(avisRow).join("") || `<p class="muted">Ajoute les membres du staff dans Réglages.</p>`}</fieldset>
+  <label class="f" style="margin-top:14px">Commentaires de revue<textarea data-k="commentaire">${esc(p.commentaire)}</textarea></label>
+  ${p.maj ? `<p class="meta">Dernière modification par ${esc(p.maj.par)} le ${fmtStamp(p.maj.le)}</p>` : ""}`;
+}
+function footProp(p){
+  const inCabane = S.data.membres.some(m => m.login === p.login);
+  return `${inCabane ? `<span class="muted" style="align-self:center">Déjà dans la liste de La Cabane</span>` : `<button class="btn primary" data-act="accept">Accepter et ajouter à La Cabane</button>`}
+    <button class="btn danger" data-act="delete" style="margin-left:auto">Supprimer</button>`;
+}
+function drawerMembre(m){
+  const st = S.data.settings, a = annivInfo(m.premierStream);
+  const hist = S.data.snapshots.filter(s => s.follows?.[m.login] != null).slice(-6).reverse();
+  return `${linksFor(m.login)}
+  <div class="grid">
+    ${fld("Pseudo Discord","discord",m.discord)}
+    ${selF("Rôle","role",m.role,st.roles,"—")}
+    ${selF("Statut","statut",m.statut,["Présent","Parti"],"À renseigner")}
+    ${fld("Arrivée","arrivee",m.arrivee,"date")}
+    ${m.statut === "Parti" ? fld("Départ","depart",m.depart,"date") : ""}
+    <label class="check" style="align-self:end"><input type="checkbox" data-k="alerte" ${m.alerte?"checked":""}> Alerte stream configurée</label>
+  </div>
+  <fieldset><legend>Follows</legend>
+    <div class="grid">
+      <label class="f">Mise à jour<select data-k="followsMode"><option value="auto" ${m.followsMode!=="manuel"?"selected":""}>Auto (Twitch)</option><option value="manuel" ${m.followsMode==="manuel"?"selected":""}>Manuelle</option></select></label>
+      ${m.followsMode === "manuel" ? fld("Follows (saisie)","followsManuel",m.followsManuel,"number") : `<label class="f">Follows actuels<input disabled value="${esc(liveOf(m.login).follows ?? "non lu")}"></label>`}
+    </div>
+    ${hist.length ? `<p class="meta">Relevés : ${hist.map(s => `${fmtDate(s.date)} → <b>${s.follows[m.login]}</b>`).join(" · ")}</p>` : ""}
+  </fieldset>
+  <fieldset><legend>Anniversaire de stream</legend>
+    <div class="grid">
+      ${fld("Date du 1er stream","premierStream",m.premierStream,"date")}
+      <label class="check" style="align-self:end"><input type="checkbox" data-k="annivConfirme" ${m.annivConfirme?"checked":""}> Date confirmée</label>
+      ${fld("Commentaire","annivCommentaire",m.annivCommentaire,"text","full")}
+    </div>
+    ${a ? `<p class="meta">${a.years} ${a.years>1?"ans":"an"} le ${a.next.toLocaleDateString("fr-FR")} · ${a.days===0?"aujourd'hui":"dans "+a.days+" jours"}</p>` : ""}
+  </fieldset>
+  <label class="f" style="margin-top:14px">Notes<textarea data-k="notes">${esc(m.notes)}</textarea></label>
+  ${m.maj ? `<p class="meta">Dernière modification par ${esc(m.maj.par)} le ${fmtStamp(m.maj.le)}</p>` : ""}`;
+}
+function footMembre(m){ return `<button class="btn danger" data-act="delete" style="margin-left:auto">Supprimer la fiche</button>`; }
+
+/* ============ Événements ============ */
+document.addEventListener("click", e => {
+  const t = e.target;
+  const nav = t.closest("#nav button"); if(nav){ S.view = nav.dataset.view; S.drawer = null; render(); window.scrollTo(0,0); return; }
+  if(t.closest("[data-close]")){ S.drawer = null; renderDrawer(); return; }
+  const sortTh = t.closest("th[data-sort]");
+  if(sortTh){ const k = S.view === "propositions" ? "psort" : "msort"; const key = sortTh.dataset.sort;
+    S.f[k] = [key, S.f[k][0] === key ? -S.f[k][1] : 1]; render(); return; }
+  const open = t.closest("[data-open]"); if(open && !t.closest("a")){ const [c,id] = open.dataset.open.split(":"); S.drawer = {c,id}; renderDrawer(); setTimeout(() => $(".drawer .btn[data-close]")?.focus(), 0); return; }
+  const pst = t.closest("[data-pst]"); if(pst){ S.f.pst = pst.dataset.pst; render(); return; }
+  const mst = t.closest("[data-mst]"); if(mst){ S.f.mst = mst.dataset.mst; render(); return; }
+  if(t.closest('[data-act="live"]')){ S.live = {}; loadLive(); return; }
+  const av = t.closest("[data-avis]");
+  if(av && S.drawer){ const cur = S.data.propositions.find(x => x.id === S.drawer.id)?.avis?.[av.dataset.avis];
+    const v = cur === av.dataset.v ? "" : av.dataset.v;
+    patch("propositions", S.drawer.id, {["avis."+av.dataset.avis]: v}, `Avis de ${av.dataset.avis} sur ${S.data.propositions.find(x=>x.id===S.drawer.id).login} : ${v || "retiré"}`); return; }
+  const act = t.closest("[data-act]");
+  if(act && S.drawer){
+    const {c, id} = S.drawer; const r = S.data[c].find(x => x.id === id);
+    if(act.dataset.act === "delete"){ if(confirm(`Supprimer ${r.login} ? Cette action est partagée avec tout le staff.`)){ dispatch({t:"del", c, id, txt:`Suppression de ${r.login} (${c === "propositions" ? "proposition" : "streamers"})`}); S.drawer = null; renderDrawer(); } }
+    if(act.dataset.act === "accept"){
+      const today = todayISO();
+      patch("propositions", id, {statut:"Accepté", dateInvitation: r.dateInvitation || today}, `${r.login} accepté`);
+      const nm = {id:uid("m_"), login:r.login, discord:"", alerte:false, premierStream:null, annivConfirme:false, annivCommentaire:"", arrivee:today, depart:null, statut:"Présent", role:"Streamer", followsMode:"auto", followsManuel:null, notes: r.proposePar ? `Proposé par ${r.proposePar}` : ""};
+      dispatch({t:"add", c:"membres", r:nm, txt:`${r.login} ajouté à La Cabane`});
+      toast(`${r.login} ajouté à La Cabane`);
+    }
+    return;
+  }
+  if(t.id === "addProp" || t.id === "addMember"){
+    const c = t.id === "addProp" ? "propositions" : "membres";
+    const raw = prompt("Nom de la chaîne Twitch ou lien de la chaîne :"); if(!raw) return;
+    const login = normLogin(raw); if(!/^[a-z0-9_]{2,25}$/.test(login)){ toast("Ce nom de chaîne n'est pas valide.", true); return; }
+    const dupP = S.data.propositions.find(p => p.login === login), dupM = S.data.membres.find(m => m.login === login);
+    const dup = c === "propositions" ? dupP : dupM;
+    if(dup){ toast(`${login} est déjà dans la liste.`); S.drawer = {c, id:dup.id}; renderDrawer(); return; }
+    if(c === "propositions" && dupM && !confirm(`${login} fait déjà partie de La Cabane. L'ajouter quand même aux propositions ?`)) return;
+    const r = c === "propositions"
+      ? {id:uid("p_"), login, contact:"", proposePar:cfg.me||"", dateProposition:todayISO(), dateRevue:null, dateInvitation:null, hype:"", followsRevue:null, viewersMoyens:null, statut:"Proposition à faire", avis:{}, commentaire:""}
+      : {id:uid("m_"), login, discord:"", alerte:false, premierStream:null, annivConfirme:false, annivCommentaire:"", arrivee:todayISO(), depart:null, statut:"Présent", role:"Streamer", followsMode:"auto", followsManuel:null, notes:""};
+    dispatch({t:"add", c, r, txt:`Ajout de ${login} (${c === "propositions" ? "proposition" : "streamers"})`});
+    S.drawer = {c, id:r.id}; renderDrawer(); return;
+  }
+  if(t.id === "snapBtn"){
+    const follows = {}; let n = 0;
+    S.data.membres.filter(m => m.statut !== "Parti").forEach(m => { const f = currentFollows(m); if(f != null){ follows[m.login] = f; n++; } });
+    if(!n){ toast("Aucun follow lu : clique d'abord sur « Actualiser Twitch ».", true); return; }
+    dispatch({t:"snapshot", s:{date:todayISO(), source:cfg.me||"", follows}, txt:`Relevé des follows du ${fmtDate(todayISO())} (${n} chaînes)`});
+    toast(`Relevé enregistré pour ${n} chaînes`); return;
+  }
+  if(t.id === "c_save"){
+    Object.assign(cfg, {owner:$("#c_owner").value.trim(), repo:$("#c_repo").value.trim(), branch:$("#c_branch").value.trim()||"main",
+      path:$("#c_path").value.trim()||"cabane-data.json", token:$("#c_token").value.trim(), me:$("#c_me").value, remember:$("#c_remember").checked});
+    saveCfg(); connectGithub().then(() => { if(S.mode === "github"){ toast("Connecté"); S.view = cfg.me ? "propositions" : "reglages"; render(); if(!cfg.me) toast("Choisis ton prénom dans « Je suis » puis reconnecte-toi.", true); } }); return;
+  }
+  if(t.id === "c_pull"){ pull(false); return; }
+  if(t.id === "c_logout"){ cfg.token = ""; saveCfg(); S.mode = "none"; S.data = null; S.sha = null; render(); updateSync(); return; }
+  if(t.id === "exportBtn"){ exportJson(); return; }
+  if(t.id === "s_save"){
+    const lines = id => $("#"+id).value.split("\n").map(s => s.trim()).filter(Boolean);
+    dispatch({t:"settings", p:{nom:$("#s_nom").value.trim(), staff:lines("s_staff"), statutsProposition:lines("s_statuts"), roles:lines("s_roles"), liens:lines("s_liens")}, txt:"Listes modifiées"});
+    ensureShape(); toast("Listes enregistrées"); return;
+  }
+});
+document.addEventListener("keydown", e => {
+  if(e.key === "Escape" && S.drawer){ S.drawer = null; renderDrawer(); }
+  if(e.key === "Enter" && e.target.matches(".ann")){ e.target.click(); }
+});
+document.addEventListener("input", e => {
+  const t = e.target;
+  if(t.id === "pq"){ S.f.pq = t.value; render(); }
+  if(t.id === "mq"){ S.f.mq = t.value; render(); }
+});
+document.addEventListener("change", e => {
+  const t = e.target;
+  if(t.id === "refSel"){ S.f.ref = t.value; render(); return; }
+  if(t.id === "roleSel"){ S.f.mrole = t.value; render(); return; }
+  if(t.id === "fileIn"){ const f = t.files[0]; if(f) openLocalFile(f); return; }
+  if(t.dataset.k && S.drawer){
+    const {c, id} = S.drawer; const r = S.data[c].find(x => x.id === id); if(!r) return;
+    let v = t.type === "checkbox" ? t.checked : t.value.trim();
+    if(t.type === "number") v = v === "" ? null : Number(v);
+    if(t.type === "date") v = v || null;
+    const k = t.dataset.k;
+    const extra = {};
+    if(k === "statut" && v === "Parti" && !r.depart) extra.depart = todayISO();
+    if(k === "statut" && v === "Présent" && !r.arrivee) extra.arrivee = todayISO();
+    if(k === "statut" && c === "propositions" && v && !r.dateRevue && ["Accepté","Refusé"].includes(v)) extra.dateRevue = todayISO();
+    const label = t.closest("label")?.firstChild?.textContent?.trim() || k.replace("avis.","Avis de ");
+    patch(c, id, {[k]: v, ...extra}, `${r.login} · ${k.startsWith("avis.") ? "Avis de " + k.slice(5) : label} : ${typeof v === "boolean" ? (v?"oui":"non") : (v ?? "vidé")}`);
+    renderDrawer();
+  }
+});
+function saveCfg(){
+  const c = {...cfg};
+  try { if(!cfg.remember){ sessionStorage.setItem("cabane.token", cfg.token); c.token = ""; } else sessionStorage.removeItem("cabane.token"); } catch {}
+  store.set(CFG_KEY, c);
+}
+function exportJson(){
+  const blob = new Blob([JSON.stringify(S.data, null, 1)], {type:"application/json"});
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = `cabane-data-${todayISO()}.json`; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000); S.dirtyLocal = false; updateSync();
+}
+function openLocalFile(f){
+  const rd = new FileReader();
+  rd.onload = () => { try {
+      const d = JSON.parse(rd.result); if(!d.membres || !d.propositions) throw 0;
+      if(S.mode === "github"){
+        if(!confirm("Tu es connecté au fichier partagé. Remplacer TOUTES les données partagées par ce fichier ?")) return;
+        d.journal = d.journal || [];
+        d.journal.unshift({le:new Date().toISOString(), par:cfg.me||"?", txt:`Données remplacées par le fichier ${f.name}`});
+        forceReplace(d); return;
+      }
+      S.data = d; S.mode = "local"; S.dirtyLocal = false; ensureShape(); store.set(LOCAL_KEY, d);
+      S.view = "propositions"; render(); updateSync(); loadLive(); toast(`Fichier ${f.name} ouvert en mode local`);
+    } catch { toast("Ce fichier n'est pas un export de La Cabane.", true); } };
+  rd.readAsText(f);
+}
+async function forceReplace(d){
+  if(S.pending.length){ toast("Enregistrement en cours, réessaie dans quelques secondes.", true); return; }
+  S.saving = true; updateSync();
+  try { const fresh = await ghGet(); const sha = await ghPut(d, fresh.sha, `${cfg.me||"staff"} : remplacement complet des données`); if(!sha) throw new Error("Conflit, réessaie.");
+    S.sha = sha; S.data = d; ensureShape(); toast("Données remplacées"); }
+  catch(e){ toast(e.message, true); }
+  S.saving = false; updateSync(); render();
+}
+
+/* ============ Démarrage ============ */
+(function init(){
+  if(cfg.owner && cfg.repo && cfg.token){ connectGithub(); }
+  else {
+    const local = store.get(LOCAL_KEY, null);
+    if(local && local.membres){ S.data = local; S.mode = "local"; ensureShape(); loadLive(); }
+    render(); updateSync();
+  }
+})();
+</script>
+</body>
+</html>
