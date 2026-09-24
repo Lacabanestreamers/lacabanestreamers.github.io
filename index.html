@@ -73,6 +73,9 @@ tbody tr:hover{background:rgba(255,255,255,.03)}
 tbody tr:last-child td{border-bottom:0}
 td.num{text-align:right;font-variant-numeric:tabular-nums}
 .login{font-weight:700;color:var(--text)}
+.who{display:inline-flex;align-items:center;gap:8px;vertical-align:middle}
+.av{width:22px;height:22px;border-radius:50%;object-fit:cover;flex:none;margin:-3px 0;background:var(--line);display:inline-grid;place-items:center;font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase}
+.av.big{width:36px;height:36px;margin:0;font-size:18px;box-shadow:0 0 0 2px var(--pink)}
 .muted{color:var(--muted)}
 .empty{padding:40px;text-align:center;color:var(--muted)}
 .up{color:var(--ok)} .down{color:var(--ko)} .warn{color:var(--warn)}
@@ -198,7 +201,7 @@ if(!cfg.token){ try { cfg.token = sessionStorage.getItem("cabane.token") || ""; 
 const S = {
   data:null, sha:null, mode:"none",          // none | github | local
   pending:[], saving:false, dirtyLocal:false,
-  live:{}, liveLoading:false,
+  live:{}, liveLoading:false, avatars:{},
   view:"propositions", drawer:null,
   f:{ pq:"", pst:"__all", msort:["login",1], psort:["login",1], mq:"", mst:"__actifs", mrole:"__all", ref:"" }
 };
@@ -372,7 +375,7 @@ async function loadHelix(logins, full){
   const ids = S.twIds || (S.twIds = {});
   for(const c of chunks(logins.filter(l => !ids[l]), 100)){
     const j = await helix("users?" + c.map(l => "login=" + encodeURIComponent(l)).join("&"));
-    j.data.forEach(u => ids[u.login] = u.id);
+    j.data.forEach(u => { ids[u.login] = u.id; if(u.profile_image_url) S.avatars[u.login] = u.profile_image_url; });
   }
   const live = {};
   for(const c of chunks(logins.map(l => ids[l]).filter(Boolean), 100)){
@@ -392,6 +395,7 @@ async function loadHelix(logins, full){
 async function loadDecapi(logins){
   await pool(logins, 3, async login => {
     const e = S.live[login] || (S.live[login] = {});
+    if(!(login in S.avatars)){ try { const a = await fetchText(`https://decapi.me/twitch/avatar/${encodeURIComponent(login)}`); S.avatars[login] = /^https:\/\//.test(a) ? a : null; } catch { S.avatars[login] = null; } }
     try { const f = await fetchText(`https://decapi.me/twitch/followcount/${encodeURIComponent(login)}`); e.follows = /^\d[\d,\s]*$/.test(f) ? parseInt(f.replace(/[^\d]/g,""),10) : null; } catch { e.follows = null; }
     try { const u = await fetchText(`https://decapi.me/twitch/uptime/${encodeURIComponent(login)}`); e.live = LIVE_RE.test(u); e.uptime = e.live ? u : ""; } catch { e.live = false; }
   });
@@ -441,6 +445,12 @@ function lastStreamCell(m){
   return `<span class="${cls}" title="${x.date.toLocaleDateString("fr-FR")} · ${x.src}">${x.days === 0 ? "aujourd'hui" : x.days + " j"}</span>`;
 }
 const liveOf = login => S.live[login] || {};
+function avatarHtml(login, big){
+  const u = S.avatars[login], cls = "av" + (big ? " big" : "");
+  if(!u) return `<span class="${cls}" aria-hidden="true">${esc((login || "?")[0])}</span>`;
+  const src = u.replace(/\d+x\d+(\.\w+)$/, (big ? "150x150" : "70x70") + "$1");
+  return `<img class="${cls}" src="${esc(src)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${esc(u)}'">`;
+}
 const liveStamp = () => S.liveAt ? ` · live vérifié à ${new Date(S.liveAt).toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"})}` : "";
 function currentFollows(m){ return m.followsMode === "manuel" ? (m.followsManuel ?? null) : (liveOf(m.login).follows ?? null); }
 function refSnapshot(){
@@ -526,7 +536,7 @@ function viewPropositions(){
     </tr></thead>
     <tbody>${rows.map(p => { const l = liveOf(p.login); return `
       <tr data-open="propositions:${p.id}">
-        <td><span class="login">${esc(p.login)}</span> ${l.live ? `<span class="live">LIVE</span>` : ""}</td>
+        <td><span class="who">${avatarHtml(p.login)}<span class="login">${esc(p.login)}</span></span> ${l.live ? `<span class="live">LIVE</span>` : ""}</td>
         <td>${pill(p.statut)}</td>
         <td>${esc(p.proposePar)}</td>
         <td>${contactHtml(p.contact)}</td>
@@ -577,7 +587,7 @@ function viewMembres(){
     </tr></thead>
     <tbody>${rows.map(m => { const l = liveOf(m.login), c = currentFollows(m), p = prog(m), a = annivInfo(m.premierStream); return `
       <tr data-open="membres:${m.id}">
-        <td><span class="login">${esc(m.login)}</span></td>
+        <td><span class="who">${avatarHtml(m.login)}<span class="login">${esc(m.login)}</span></span></td>
         <td>${l.live ? `<span class="live" title="${esc(l.uptime)}">LIVE</span>` : ""}</td>
         <td>${esc(m.discord)}</td>
         <td>${esc(m.role)}</td>
@@ -695,7 +705,7 @@ function renderDrawer(){
   const scroll = root.querySelector(".body")?.scrollTop || 0;
   root.innerHTML = `<div class="scrim" data-close></div>
     <aside class="drawer" role="dialog" aria-modal="true" aria-label="${esc(r.login)}">
-      <div class="head"><h2><a class="chanlink" href="https://www.twitch.tv/${encodeURIComponent(r.login)}" target="_blank" rel="noopener" title="Ouvrir la chaîne Twitch">${esc(r.login)} <span aria-hidden="true">↗</span></a></h2>${liveOf(r.login).live ? `<span class="live">LIVE</span>` : ""}<button class="btn ghost" data-close aria-label="Fermer">✕</button></div>
+      <div class="head">${avatarHtml(r.login, true)}<h2><a class="chanlink" href="https://www.twitch.tv/${encodeURIComponent(r.login)}" target="_blank" rel="noopener" title="Ouvrir la chaîne Twitch">${esc(r.login)} <span aria-hidden="true">↗</span></a></h2>${liveOf(r.login).live ? `<span class="live">LIVE</span>` : ""}<button class="btn ghost" data-close aria-label="Fermer">✕</button></div>
       <div class="body">${c === "propositions" ? drawerProp(r) : drawerMembre(r)}</div>
       <div class="foot">${c === "propositions" ? footProp(r) : footMembre(r)}</div>
     </aside>`;
