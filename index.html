@@ -336,6 +336,14 @@ async function ghPut(data, sha, message){
   if(!r.ok) throw new Error(`Enregistrement refusé (${r.status}).`);
   return (await r.json()).content.sha;
 }
+// Réveille le robot (GitHub Actions) pour qu'il poste tout de suite sur Discord. En cas d'échec, son passage horaire rattrape.
+async function notifyRobot(){
+  try {
+    const r = await fetch(`https://api.github.com/repos/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}/dispatches`,
+      {method:"POST", headers:{...ghHeaders(), "Content-Type":"application/json"}, body:JSON.stringify({event_type:"cabane-notif"})});
+    if(!r.ok) console.warn("Robot non déclenché (" + r.status + "), il passera à l'heure suivante.");
+  } catch(e){ console.warn("Robot non déclenché", e); }
+}
 let saveTimer = null;
 function scheduleSave(){ clearTimeout(saveTimer); saveTimer = setTimeout(save, 1200); }
 async function save(){
@@ -350,6 +358,7 @@ async function save(){
       const who = cfg.me || "staff";
       const msg = ops.length === 1 && ops[0].txt ? `${who} : ${ops[0].txt}` : `${who} : ${ops.length} modifications`;
       const sha = await ghPut(fresh.data, fresh.sha, msg.slice(0,200));
+      if(sha && ops.some(o => o.notify)) notifyRobot();
       if(sha){
         S.sha = sha; S.data = fresh.data; ensureShape();
         for(const op of S.pending) applyOp(S.data, JSON.parse(JSON.stringify(op))); // modifs faites pendant l'envoi
@@ -670,7 +679,7 @@ function viewMembres(){
     <input class="search" id="mq" type="search" placeholder="Chercher une chaîne, un pseudo Discord…" value="${esc(S.f.mq)}" aria-label="Recherche">
     <button class="btn primary" id="addMember">Ajouter une chaîne</button>
     <button class="btn ghost" data-act="live" ${S.liveLoading?"disabled":""}>${S.liveLoading ? "Lecture Twitch…" : "Actualiser Twitch"}</button>
-    <button class="btn ghost" id="snapBtn" ${S.liveLoading?"disabled":""} title="Le robot fait un relevé chaque matin ; ce bouton en force un maintenant">Relevé maintenant</button>
+    <button class="btn ghost" id="snapBtn" ${S.liveLoading?"disabled":""} title="Le robot fait un relevé matin, midi et soir ; ce bouton en force un maintenant">Relevé maintenant</button>
     <label class="f" style="flex-direction:row;align-items:center;gap:8px">Comparer à
       <select id="refSel">${`<option value="">Auto (≥ 7 jours)</option>` + d.snapshots.slice().reverse().map(s => `<option value="${s.date}" ${S.f.ref===s.date?"selected":""}>${fmtDate(s.date)}</option>`).join("")}</select>
     </label>
@@ -726,24 +735,35 @@ function viewAccueil(){
     ${card("Anniversaires dans les 7 jours", annivs.map(x => x.m), m => { const a = annivInfo(m.premierStream); return li("membres", m, `${a.years} ${a.years>1?"ans":"an"} · <b class="${a.days===0?"up":""}">${a.days===0?"aujourd'hui":a.days===1?"demain":"dans "+a.days+" j"}</b>`); }, "Aucun anniversaire de stream cette semaine.", `data-goto="anniv"`)}
     ${card("Inactifs depuis 30 jours ou plus", inactifs.map(o => o.m), m => { const x = lastStream(m); return li("membres", m, `<span class="down">${x.days} j</span>`); }, "Tout le monde a streamé ce mois-ci." + (inconnus ? ` (${inconnus} chaîne${inconnus>1?"s":""} sans date connue)` : ""), `data-goto="membres"`)
        .replace("</section>", inconnus && inactifs.length ? `<p class="meta">${inconnus} chaîne${inconnus>1?"s":""} sans date de dernier stream connue.</p></section>` : "</section>")}
+    ${card("Paliers de follows (14 jours)", recentPaliers(14), x => { const m = S.data.membres.find(y => y.login === x.login) || {id:"", login:x.login};
+        return `<li ${m.id ? `data-open="membres:${m.id}"` : ""}>${avatarHtml(x.login)}<span class="login">${esc(x.login)}</span><span class="r"><b class="up">${x.palier}</b> · ${fmtDate(x.date)}</span></li>`; },
+      "Aucun nouveau palier de 50 follows ces 14 derniers jours.", `data-goto="membres"`)}
     ${card("Fiches à compléter", incomplets, m => li("membres", m, "manque : " + need(m).join(", "), true), "Toutes les fiches sont complètes.", `data-goto="membres" data-mst=""`)}
   </div>`;
 }
 
 /* ----- Bandeau d'anniversaires ----- */
+function recentPaliers(days){
+  const lim = new Date(Date.now() - days*864e5).toISOString().slice(0,10);
+  return (S.data?.paliers || []).filter(x => x.date >= lim).sort((a,b) => b.date.localeCompare(a.date) || b.palier - a.palier);
+}
 function renderTicker(){
   const el = $("#ticker"); if(!el) return;
   const list = (S.data?.membres || []).filter(m => m.statut !== "Parti" && m.premierStream)
     .map(m => ({m, a:annivInfo(m.premierStream)})).filter(x => x.a.days <= 7).sort((x,y) => x.a.days - y.a.days);
   const today = list.filter(x => x.a.days === 0);
   const shown = today.length ? today : list;
-  const key = shown.map(x => x.m.id + x.a.days).join("|");
+  const pal = recentPaliers(3);
+  const key = shown.map(x => x.m.id + x.a.days).join("|") + "#" + pal.map(x => x.login + x.palier).join("|");
   if(key === S.tickerKey) return; S.tickerKey = key;
-  if(!shown.length){ el.classList.add("hidden"); el.innerHTML = ""; return; }
+  if(!shown.length && !pal.length){ el.classList.add("hidden"); el.innerHTML = ""; return; }
   const ans = n => `${n} ${n > 1 ? "ans" : "an"}`;
-  const items = shown.map(({m,a}) => a.days === 0
+  let items = shown.map(({m,a}) => a.days === 0
     ? `<span class="it" data-open="membres:${m.id}">🎂 Joyeux anniversaire de stream à <b>${esc(m.login)}</b> : ${ans(a.years)} de live aujourd'hui !</span>`
     : `<span class="it" data-open="membres:${m.id}">🎂 <b>${esc(m.login)}</b> fêtera ses ${ans(a.years)} de stream ${a.days === 1 ? "demain" : `dans ${a.days} jours`} (${a.next.toLocaleDateString("fr-FR",{day:"numeric",month:"long"})})</span>`).join("");
+  const palItems = pal.map(x => { const m = S.data.membres.find(y => y.login === x.login);
+    return `<span class="it" ${m ? `data-open="membres:${m.id}"` : ""}>🚀 <b>${esc(x.login)}</b> a passé les ${x.palier} follows${x.date === todayISO() ? " aujourd'hui" : ""} !</span>`; }).join("");
+  items = (today.length ? items + palItems : palItems + items);
   const len = items.replace(/<[^>]+>/g,"").length;
   el.innerHTML = `<div class="track" style="--dur:${Math.max(16, Math.round(len * 0.2))}s"><span>${items}</span><span class="dup" aria-hidden="true">${items}</span></div>`;
   el.classList.remove("hidden");
@@ -754,7 +774,7 @@ function sparkline(m){
   const pts = S.data.snapshots.filter(s => s.follows?.[m.login] != null).map(s => ({d:s.date, v:s.follows[m.login]}));
   const cur = currentFollows(m), today = todayISO();
   if(cur != null && !pts.some(p => p.d === today)) pts.push({d:today, v:cur, now:true});
-  if(pts.length < 2) return `<p class="meta">La courbe apparaîtra dès qu'il y aura deux relevés (le robot en fait un chaque matin).</p>`;
+  if(pts.length < 2) return `<p class="meta">La courbe apparaîtra dès qu'il y aura deux relevés (le robot en fait matin, midi et soir).</p>`;
   const W = 320, H = 96, P = 8, B = 16;
   const t0 = new Date(pts[0].d).getTime(), t1 = new Date(pts[pts.length-1].d).getTime() || t0 + 1;
   const vs = pts.map(p => p.v), lo = Math.min(...vs), hi = Math.max(...vs), span = hi - lo || 1;
@@ -783,6 +803,8 @@ function historyBlock(r, c){
     const m = S.data.membres.find(x => x.login === r.login);
     if(m) parts.unshift(`<li><span class="when">La Cabane</span>${m.statut === "Parti" ? `a quitté La Cabane${m.depart ? " le " + fmtDate(m.depart) : ""}` : `membre${m.arrivee ? " depuis le " + fmtDate(m.arrivee) : ""}`} · <a href="#" data-open="membres:${m.id}">voir la fiche</a></li>`);
   } else {
+    const cd = r.candidature;
+    if(cd) parts.push(`<li><span class="when">${fmtDate(cd.transfereLe)}</span>transféré depuis les Propositions${cd.transferePar ? " par " + esc(cd.transferePar) : ""} · proposé${cd.proposePar ? " par " + esc(cd.proposePar) : ""}${cd.dateProposition ? " le " + fmtDate(cd.dateProposition) : ""}${Object.keys(cd.avis||{}).length ? "<br><span class='muted'>Avis : " + Object.entries(cd.avis).map(([k,v]) => esc(k) + " " + esc(v)).join(", ") + "</span>" : ""}${cd.commentaire ? "<br><span class='muted'>« " + esc(cd.commentaire) + " »</span>" : ""}${cd.contact ? "<br><span class='muted'>Contact : " + contactHtml(cd.contact) + "</span>" : ""}</li>`);
     const p = S.data.propositions.find(x => x.login === r.login);
     if(p) parts.push(`<li><span class="when">Proposition</span>${pill(p.statut)}${p.proposePar ? " · proposée par " + esc(p.proposePar) : ""}${p.dateProposition ? " le " + fmtDate(p.dateProposition) : ""} · <a href="#" data-open="propositions:${p.id}">voir</a></li>`);
   }
@@ -835,8 +857,8 @@ function viewReglages(){
   return `<h1>Réglages</h1>${conn}
   <section class="panel">
     <h2>Robot quotidien</h2>
-    <p>Tourne toutes les heures sur GitHub : live, relevé des follows et dernière VOD chaque matin, annonce Discord des anniversaires de stream.</p>
-    <p class="meta" style="margin:0">${d.robot?.lastDaily ? `Dernier relevé : ${fmtDate(d.robot.lastDaily)}` : "Le robot n'a pas encore tourné."}${d.robot?.annivAnnonce ? ` · anniversaires vérifiés le ${fmtDate(d.robot.annivAnnonce)}` : ""}${d.robot?.derniereExecution ? ` · dernière écriture ${fmtStamp(d.robot.derniereExecution)}` : ""}</p>
+    <p>Tourne toutes les heures sur GitHub : live, relevé des follows, dernière VOD et paliers matin (8 h), midi (12 h) et soir (19 h), annonces Discord.</p>
+    <p class="meta" style="margin:0">${d.robot?.dernierReleve ? `Dernier relevé : ${fmtDate(d.robot.dernierReleve.slice(0,10))} (${esc(d.robot.dernierReleve.slice(11))})` : d.robot?.lastDaily ? `Dernier relevé : ${fmtDate(d.robot.lastDaily)}` : "Le robot n'a pas encore tourné."}${d.robot?.annivAnnonce ? ` · anniversaires vérifiés le ${fmtDate(d.robot.annivAnnonce)}` : ""}${d.robot?.derniereExecution ? ` · dernière écriture ${fmtStamp(d.robot.derniereExecution)}` : ""}</p>
   </section>
   <section class="panel">
     <h2>Connexion Twitch</h2>
@@ -944,7 +966,9 @@ function drawerProp(p){
 function footProp(p){
   const inCabane = S.data.membres.some(m => m.login === p.login);
   const closed = ["Refusé","Abandonnée","Aucun contact"].includes(p.statut);
-  return `${closed ? `<button class="btn" data-act="repropose">Reproposer</button>` : ""}${inCabane ? `<span class="muted" style="align-self:center">Déjà dans la liste de La Cabane</span>` : closed ? "" : `<button class="btn primary" data-act="accept">Accepter et ajouter à La Cabane</button>`}
+  const move = inCabane ? `<span class="muted" style="align-self:center">Déjà dans Streamers</span>`
+    : closed ? "" : `<button class="btn primary" data-act="transfer">${p.statut === "Accepté" ? "Transférer dans Streamers" : "Accepter et transférer dans Streamers"}</button>`;
+  return `${closed ? `<button class="btn" data-act="repropose">Reproposer</button>` : ""}${move}
     <button class="btn danger" data-act="delete" style="margin-left:auto">Supprimer</button>`;
 }
 function drawerMembre(m){
@@ -964,6 +988,7 @@ function drawerMembre(m){
       ${m.followsMode === "manuel" ? fld("Follows (saisie)","followsManuel",m.followsManuel,"number") : `<label class="f">Follows actuels<input disabled value="${esc(liveOf(m.login).follows ?? "non lu")}"></label>`}
     </div>
     ${sparkline(m)}
+    ${(() => { const pl = (S.data.paliers || []).filter(x => x.login === m.login).slice(-5).reverse(); return pl.length ? `<p class="meta" style="margin-top:2px">Paliers : ${pl.map(x => `<b>${x.palier}</b> le ${fmtDate(x.date)}`).join(" · ")}</p>` : ""; })()}
   </fieldset>
   <fieldset><legend>Activité</legend>
     ${(() => { const x = lastStream(m); return `<p class="meta" style="margin-top:0">Dernier stream : ${!x ? "inconnu" : x.live ? "en live maintenant" : `${x.date.toLocaleDateString("fr-FR")} (${x.days === 0 ? "aujourd'hui" : "il y a " + x.days + " j"}) · ${x.src}`}</p>`; })()}
@@ -1039,12 +1064,17 @@ document.addEventListener("click", e => {
       patch("propositions", id, {historique:[...(r.historique || []), arch], statut:"Proposition à faire", proposePar:cfg.me || "", dateProposition:todayISO(), dateRevue:null, dateInvitation:null, avis:{}, commentaire:""}, `${r.login} reproposé (ancienne candidature : ${r.statut})`);
       toast(`${r.login} est de nouveau en proposition`); return;
     }
-    if(act.dataset.act === "accept"){
+    if(act.dataset.act === "transfer"){
+      if(!confirm(`Transférer ${r.login} dans Streamers ?\nLa fiche quitte les Propositions ; sa candidature (parrain, avis, commentaire) est conservée dans l'historique de sa fiche streamer.`)) return;
       const today = todayISO();
-      patch("propositions", id, {statut:"Accepté", dateInvitation: r.dateInvitation || today}, `${r.login} accepté`);
-      const nm = {id:uid("m_"), login:r.login, discord:"", alerte:false, premierStream:null, annivConfirme:false, annivCommentaire:"", arrivee:today, depart:null, statut:"Présent", role:"Streamer", followsMode:"auto", followsManuel:null, notes: r.proposePar ? `Proposé par ${r.proposePar}` : ""};
-      dispatch({t:"add", c:"membres", r:nm, txt:`${r.login} ajouté à La Cabane`});
-      toast(`${r.login} ajouté à La Cabane`);
+      const candidature = {proposePar:r.proposePar||"", contact:r.contact||"", dateProposition:r.dateProposition||null, dateRevue:r.dateRevue||today,
+        dateInvitation:r.dateInvitation||today, avis:r.avis||{}, commentaire:r.commentaire||"", historique:r.historique||[], transfereLe:today, transferePar:cfg.me||""};
+      const nm = {id:uid("m_"), login:r.login, discord:"", alerte:false, premierStream:null, annivConfirme:false, annivCommentaire:"", arrivee:today, depart:null,
+        statut:"Présent", role:"Streamer", followsMode:"auto", followsManuel:null, notes:"", candidature};
+      dispatch({t:"add", c:"membres", r:nm, notify:true, txt:`${r.login} accepté et transféré dans Streamers${r.proposePar ? " (proposé par " + r.proposePar + ")" : ""}`});
+      dispatch({t:"del", c:"propositions", id});
+      S.drawer = {c:"membres", id:nm.id}; renderDrawer();
+      toast(`${r.login} est maintenant dans Streamers`);
     }
     return;
   }
@@ -1069,7 +1099,7 @@ document.addEventListener("click", e => {
     const r = c === "propositions"
       ? {id:uid("p_"), login, contact:"", proposePar:cfg.me||"", dateProposition:todayISO(), dateRevue:null, dateInvitation:null, hype:"", followsRevue:null, viewersMoyens:null, statut:"Proposition à faire", avis:{}, commentaire:""}
       : {id:uid("m_"), login, discord:"", alerte:false, premierStream:null, annivConfirme:false, annivCommentaire:"", arrivee:todayISO(), depart:null, statut:"Présent", role:"Streamer", followsMode:"auto", followsManuel:null, notes:""};
-    dispatch({t:"add", c, r, txt:`Ajout de ${login} (${c === "propositions" ? "proposition" : "streamers"})`});
+    dispatch({t:"add", c, r, notify:true, txt:`Ajout de ${login} (${c === "propositions" ? "proposition" : "streamers"})`});
     S.drawer = {c, id:r.id}; renderDrawer(); return;
   }
   if(t.id === "snapBtn"){
