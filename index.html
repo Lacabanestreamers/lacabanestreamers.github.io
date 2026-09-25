@@ -6,6 +6,13 @@
 <meta name="robots" content="noindex, nofollow">
 <title>La Cabane · Suivi staff</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛖</text></svg>">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#100B24">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="La Cabane">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
@@ -229,6 +236,15 @@ tr.picked{background:rgba(255,79,216,.08)}
 .recap canvas{width:100%;height:auto;border-radius:var(--radius);border:1px solid var(--line);display:block}
 @media (max-width:900px){ .recap{grid-template-columns:1fr} }
 
+.spacer{flex:1 1 auto}
+.colmenu{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:10px 14px;margin-bottom:12px}
+.tg{display:inline-block;font-size:12px;font-weight:700;padding:1px 8px;border-radius:999px;background:rgba(61,227,255,.12);color:var(--cyan);border:1px solid rgba(61,227,255,.35);margin:0 4px 0 0;white-space:nowrap}
+.tagedit{display:flex;flex-wrap:wrap;gap:6px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
+.tagedit .tg button{background:none;border:0;color:inherit;cursor:pointer;padding:0 0 0 4px;font-weight:700}
+.tagedit input{flex:1;min-width:140px;background:none;border:0;padding:4px;color:var(--text)}
+.tagedit input:focus{outline:none}
+.bulkbar input{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:6px 10px;width:150px}
+
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--panel2);border:1px solid var(--cyan);padding:10px 18px;border-radius:8px;z-index:60;font-weight:600;max-width:90vw}
 .toast.err{border-color:var(--ko)}
 
@@ -259,6 +275,7 @@ tr.picked{background:rgba(255,79,216,.08)}
   .tablewrap td.empty{display:block;text-align:center}
   .tablewrap td.empty::before{content:none}
   .bulkbar{bottom:calc(8px + env(safe-area-inset-bottom,0px))}
+  .spacer{display:none}
 }
 @media (prefers-reduced-motion:no-preference){
   .drawer{animation:slide .18s ease-out}
@@ -319,7 +336,7 @@ const S = {
   pending:[], saving:false, dirtyLocal:false,
   live:{}, liveLoading:false, avatars:{},
   view:"accueil", drawer:null, sel:new Set(), selView:"", visible:[], tickerKey:"",
-  f:{ pq:"", pst:"__all", msort:["login",1], psort:["login",1], mq:"", mst:"__actifs", mrole:"__all", ref:"" }
+  f:{ ptag:"", mtag:"", pq:"", pst:"__all", msort:["login",1], psort:["login",1], mq:"", mst:"__actifs", mrole:"__all", ref:"" }
 };
 
 /* ============ Modèle : opérations ============ */
@@ -636,7 +653,13 @@ function render(){
   renderTicker();
   const v = {accueil:viewAccueil, propositions:viewPropositions, membres:viewMembres, anniv:viewAnniv, stats:viewStats, reglages:viewReglages}[S.view];
   const focus = document.activeElement && document.activeElement.id; const caret = document.activeElement && document.activeElement.selectionStart;
+  // Les rafraîchissements automatiques (live, synchro) ne doivent pas effacer ce qu'on est en train de saisir
+  const saisies = [...main.querySelectorAll("input[id], textarea[id], select[id]")].filter(el =>
+    el.type === "checkbox" ? el.checked !== el.defaultChecked
+    : el.tagName === "SELECT" ? [...el.options].some(o => o.selected !== o.defaultSelected)
+    : el.value !== el.defaultValue).map(el => [el.id, el.type === "checkbox" ? el.checked : el.value]);
   main.innerHTML = tokenWarning() + v();
+  for(const [id, val] of saisies){ const el = document.getElementById(id); if(!el) continue; if(el.type === "checkbox") el.checked = val; else el.value = val; }
   if(focus){ const el = document.getElementById(focus); if(el){ el.focus(); try { el.setSelectionRange(caret, caret); } catch {} } }
   renderDrawer();
 }
@@ -691,112 +714,211 @@ function bulkBar(kind){
     ? `<select id="bk_statut" aria-label="Statut">${opt([["Présent","Présent"],["Parti","Parti"],["","À renseigner"]], "Statut : inchangé")}</select>
        <select id="bk_role" aria-label="Rôle">${opt([...S.data.settings.roles.map(r => [r,r]), ["","Aucun rôle"]], "Rôle : inchangé")}</select>
        <select id="bk_ref" aria-label="Référent">${opt([...S.data.settings.staff.map(x => [x,x]), ["","Aucun référent"]], "Référent : inchangé")}</select>
+       <input id="bk_tag" list="tagList" placeholder="Étiquette…" aria-label="Étiquette"><select id="bk_tagmode" aria-label="Ajouter ou retirer"><option value="add">l'ajouter</option><option value="del">la retirer</option></select>
        <select id="bk_alerte" aria-label="Alerte">${opt([["1","Alerte configurée"],["0","Pas d'alerte"]], "Alerte : inchangée")}</select>`
-    : `<select id="bk_statut" aria-label="Statut">${opt([...S.data.settings.statutsProposition.map(x => [x,x]), ["","À trier"]], "Statut : inchangé")}</select>`;
+    : `<select id="bk_statut" aria-label="Statut">${opt([...S.data.settings.statutsProposition.map(x => [x,x]), ["","À trier"]], "Statut : inchangé")}</select>
+       <input id="bk_tag" list="tagList" placeholder="Étiquette…" aria-label="Étiquette"><select id="bk_tagmode" aria-label="Ajouter ou retirer"><option value="add">l'ajouter</option><option value="del">la retirer</option></select>`;
   return `<div class="bulkbar" role="region" aria-label="Modification groupée"><span><b>${S.sel.size}</b> sélectionnée${S.sel.size > 1 ? "s" : ""}</span>${fields}
     <button class="btn primary" data-bulk="apply">Appliquer</button><button class="btn ghost" data-bulk="clear">Désélectionner</button>
-    <button class="btn danger bulkdel" data-bulk="delete">Supprimer ${S.sel.size > 1 ? "les " + S.sel.size + " fiches" : "la fiche"}</button></div>`;
+    ${tagList()}<button class="btn danger bulkdel" data-bulk="delete">Supprimer ${S.sel.size > 1 ? "les " + S.sel.size + " fiches" : "la fiche"}</button></div>`;
 }
 
+/* ----- Étiquettes ----- */
+const normTag = t => String(t || "").replace(/\s+/g, " ").trim().slice(0, 30);
+function allTags(){
+  const set = new Map();
+  for(const r of [...S.data.membres, ...S.data.propositions]) for(const t of r.tags || []) set.set(t.toLowerCase(), t);
+  return [...set.values()].sort((a,b) => a.localeCompare(b, "fr"));
+}
+const tagsHtml = r => (r.tags || []).map(t => `<span class="tg">${esc(t)}</span>`).join("");
+const tagList = () => `<datalist id="tagList">${allTags().map(t => `<option value="${esc(t)}">`).join("")}</datalist>`;
+const hasTag = (r, t) => (r.tags || []).some(x => x.toLowerCase() === t.toLowerCase());
+
+/* ----- Colonnes (choix mémorisé sur l'appareil) ----- */
+const COLS_KEY = "cabane.cols";
+let colPrefs = store.get(COLS_KEY, {});
+const staffAvis = p => { const staff = S.data.settings.staff, v = voteInfo(p);
+  return `<span class="avis" title="${esc(staff.map(s => `${s} : ${p.avis?.[s] || "—"}`).join("\n"))}">${staff.map(s => `<i class="${avisKind(p.avis?.[s])}"></i>`).join("")}</span><span class="avcount">${v.done}/${staff.length}</span>${v.suggestion && v.suggestion !== p.statut ? ` <span title="Suggestion d'après les avis : ${v.suggestion}">${v.suggestion === "Accepté" ? "👍" : "👎"}</span>` : ""}`; };
+const followsCell = (f, manuel) => f != null ? f + (manuel ? ` <span class="muted" title="Saisie manuelle">✎</span>` : "") : `<span class="muted">${S.liveLoading ? "…" : "–"}</span>`;
+function membreProg(m){ const ref = refSnapshot(), c = currentFollows(m), r = ref?.follows?.[m.login]; return c != null && r != null ? c - r : null; }
+const COLS = {
+  propositions:[
+    {k:"statut", l:"Statut", s:"statut", td:p => pill(p.statut), x:p => p.statut || "À trier"},
+    {k:"proposePar", l:"Proposée par", s:"proposePar", td:p => esc(p.proposePar), x:p => p.proposePar},
+    {k:"contact", l:"Contact", td:p => contactHtml(p.contact), x:p => p.contact},
+    {k:"follows", l:"Follows", s:"follows", n:1, td:p => followsCell(liveOf(p.login).follows), x:p => liveOf(p.login).follows ?? ""},
+    {k:"viewers", l:"Viewers moy.", s:"viewers", n:1, td:viewersCell, x:p => viewersStats(p)?.avg ?? ""},
+    {k:"votes", l:"Avis staff", s:"votes", td:staffAvis, x:p => `${voteInfo(p).done}/${S.data.settings.staff.length}`},
+    {k:"date", l:"Proposée le", s:"date", td:p => fmtDate(p.dateProposition), x:p => p.dateProposition || ""},
+    {k:"tags", l:"Étiquettes", off:1, td:tagsHtml, x:p => (p.tags || []).join(", ")}
+  ],
+  membres:[
+    {k:"live", l:"Live", s:"live", td:m => { const l = liveOf(m.login); return l.live ? `<span class="live" title="${esc(l.uptime)}">LIVE</span>` : ""; }, x:m => liveOf(m.login).live ? "oui" : ""},
+    {k:"discord", l:"Discord", s:"discord", td:m => esc(m.discord), x:m => m.discord},
+    {k:"role", l:"Rôle", s:"role", td:m => esc(m.role), x:m => m.role},
+    {k:"statut", l:"Statut", s:"statut", td:m => pill(m.statut, "À renseigner"), x:m => m.statut || "À renseigner"},
+    {k:"referent", l:"Référent", s:"referent", off:1, td:m => esc(m.referent), x:m => m.referent},
+    {k:"arrivee", l:"Arrivée", s:"arrivee", td:m => fmtDate(m.arrivee), x:m => m.arrivee || ""},
+    {k:"last", l:"Dernier stream", s:"last", n:1, td:lastStreamCell, x:m => { const z = lastStream(m); return z ? (z.live ? "en live" : z.days + " j") : ""; }},
+    {k:"follows", l:"Follows", s:"follows", n:1, td:m => followsCell(currentFollows(m), m.followsMode === "manuel"), x:m => currentFollows(m) ?? ""},
+    {k:"viewers", l:"Viewers moy.", s:"viewers", n:1, td:viewersCell, x:m => viewersStats(m)?.avg ?? ""},
+    {k:"prog", l:"Progression", s:"prog", n:1, td:m => { const p = membreProg(m); return p == null ? "" : `<span class="${p>0?"up":p<0?"down":""}">${p>0?"+":""}${p}</span>`; }, x:m => membreProg(m) ?? ""},
+    {k:"anniv", l:"Anniv dans", s:"anniv", n:1, td:m => { const a = annivInfo(m.premierStream); return a ? (a.days === 0 ? "🎂 aujourd'hui" : a.days + " j") : ""; }, x:m => annivInfo(m.premierStream)?.days ?? ""},
+    {k:"alerte", l:"Alerte", td:m => m.alerte ? "✓" : "", x:m => m.alerte ? "oui" : ""},
+    {k:"tags", l:"Étiquettes", off:1, td:tagsHtml, x:m => (m.tags || []).join(", ")}
+  ]
+};
+const colOn = (view, c) => (colPrefs[view] || {})[c.k] ?? !c.off;
+const visibleCols = view => COLS[view].filter(c => colOn(view, c));
+function colMenu(view){
+  if(S.colMenu !== view) return "";
+  return `<div class="colmenu" role="group" aria-label="Colonnes affichées">${COLS[view].map(c => `<label class="check"><input type="checkbox" data-col="${c.k}" ${colOn(view, c) ? "checked" : ""}> ${esc(c.l)}</label>`).join("")}
+    <button class="btn ghost" data-colreset="${view}">Par défaut</button></div>`;
+}
+function tableHtml(view, rows, sort){
+  const cols = visibleCols(view), c = view === "propositions" ? "propositions" : "membres";
+  return `<div class="tablewrap"><table>
+    <thead><tr>${selHead(rows.map(r => r.id))}${th("Chaîne","login",sort)}${cols.map(col => col.s ? th(col.l, col.s, sort, col.n ? "num" : "") : `<th>${esc(col.l)}</th>`).join("")}</tr></thead>
+    <tbody>${rows.map(r => `
+      <tr data-open="${c}:${r.id}" class="${S.sel.has(r.id) ? "picked" : ""}">
+        ${selCell(r.id)}
+        ${cell("", `<span class="who">${avatarHtml(r.login)}<span class="login">${esc(r.login)}</span></span>${typeTag(r)}${view === "propositions" && liveOf(r.login).live ? ` <span class="live">LIVE</span>` : ""}`, "first")}
+        ${cols.map(col => cell(col.l, col.td(r), col.n ? "num" : "")).join("")}
+      </tr>`).join("") || `<tr><td colspan="${cols.length + 2}" class="empty">Aucune fiche ne correspond à ce filtre.</td></tr>`}</tbody>
+  </table></div>`;
+}
+const tagFilter = (id, cur) => { const tags = allTags(); return tags.length ? `<select id="${id}" class="chip" aria-label="Étiquette"><option value="">Toutes les étiquettes</option>${tags.map(t => `<option ${cur === t ? "selected" : ""}>${esc(t)}</option>`).join("")}</select>` : ""; };
+
 /* ----- Propositions ----- */
+function propRows(){
+  const q = S.f.pq.trim().toLowerCase();
+  let rows = S.data.propositions.filter(p => (S.f.pst === "__all" || (p.statut||"") === S.f.pst) && (!S.f.ptag || hasTag(p, S.f.ptag)) &&
+    (!q || [p.login, p.proposePar, p.contact, p.commentaire, ...(p.tags || [])].some(x => String(x||"").toLowerCase().includes(q))));
+  return sortRows(rows, S.f.psort, {statut:p => p.statut||"", date:p => p.dateProposition, follows:p => liveOf(p.login).follows ?? null, viewers:p => viewersStats(p)?.avg ?? null, votes:p => voteInfo(p).done});
+}
 function viewPropositions(){
   const d = S.data, all = d.propositions;
   const counts = {}; all.forEach(p => counts[p.statut || ""] = (counts[p.statut || ""]||0) + 1);
-  const statuts = [...d.settings.statutsProposition];
-  const q = S.f.pq.trim().toLowerCase();
-  let rows = all.filter(p => (S.f.pst === "__all" || (p.statut||"") === S.f.pst) &&
-    (!q || [p.login, p.proposePar, p.contact, p.commentaire].some(x => String(x||"").toLowerCase().includes(q))));
-  rows = sortRows(rows, S.f.psort, {statut:p => p.statut||"", date:p => p.dateProposition, follows:p => liveOf(p.login).follows ?? null, viewers:p => viewersStats(p)?.avg ?? null, votes:p => voteInfo(p).done});
-  const staff = d.settings.staff;
+  const rows = propRows();
   const chip = (val, label, n) => `<button class="chip" data-pst="${esc(val)}" aria-pressed="${S.f.pst===val}">${esc(label)} <b>${n}</b></button>`;
   return `
   <h1>Propositions</h1>
   <p class="sub">${all.length} chaînes proposées · ${counts["Accepté"]||0} acceptées · ${(counts["Refusé"]||0)+(counts["Abandonnée"]||0)} refusées ou abandonnées${liveStamp()}</p>
   <div class="tools">
-    <input class="search" id="pq" type="search" placeholder="Chercher une chaîne, un parrain…" value="${esc(S.f.pq)}" aria-label="Recherche">
+    <input class="search" id="pq" type="search" placeholder="Chercher une chaîne, un parrain, une étiquette…" value="${esc(S.f.pq)}" aria-label="Recherche">
     <button class="btn primary" id="addProp">Ajouter une proposition</button>
+    <button class="btn" id="importOpen">Importer une liste</button>
     <button class="btn ghost" data-act="live" ${S.liveLoading?"disabled":""}>${S.liveLoading ? "Lecture Twitch…" : "Actualiser Twitch"}</button>
+    <span class="spacer"></span>
+    <button class="btn ghost" data-colmenu="propositions" aria-expanded="${S.colMenu === "propositions"}">Colonnes ▾</button>
+    <button class="btn ghost" data-export="propositions" title="Fichier CSV qui s'ouvre dans Excel, avec les filtres actuels">Exporter (Excel)</button>
   </div>
+  ${colMenu("propositions")}${importPanel()}
   <div class="tools chips">
     ${chip("__all","Toutes",all.length)}
     ${chip("","À trier",counts[""]||0)}
-    ${statuts.map(s => chip(s, s, counts[s]||0)).join("")}
+    ${d.settings.statutsProposition.map(s => chip(s, s, counts[s]||0)).join("")}
+    ${tagFilter("ptagSel", S.f.ptag)}
   </div>
-  <div class="tablewrap"><table>
-    <thead><tr>
-      ${selHead(rows.map(p => p.id))}${th("Chaîne","login",S.f.psort)}${th("Statut","statut",S.f.psort)}${th("Proposée par","proposePar",S.f.psort)}
-      <th>Contact</th>${th("Follows","follows",S.f.psort,"num")}${th("Viewers moy.","viewers",S.f.psort,"num")}${th("Avis staff","votes",S.f.psort)}${th("Proposée le","date",S.f.psort)}
-    </tr></thead>
-    <tbody>${rows.map(p => { const l = liveOf(p.login); return `
-      <tr data-open="propositions:${p.id}" class="${S.sel.has(p.id) ? "picked" : ""}">
-        ${selCell(p.id)}
-        ${cell("", `<span class="who">${avatarHtml(p.login)}<span class="login">${esc(p.login)}</span></span>${typeTag(p)} ${l.live ? `<span class="live">LIVE</span>` : ""}`, "first")}
-        ${cell("Statut", pill(p.statut))}
-        ${cell("Proposée par", esc(p.proposePar))}
-        ${cell("Contact", contactHtml(p.contact))}
-        ${cell("Follows", l.follows != null ? l.follows : `<span class="muted">${S.liveLoading ? "…" : "–"}</span>`, "num")}
-        ${cell("Viewers moy.", viewersCell(p), "num")}
-        ${cell("Avis staff", `<span class="avis" title="${esc(staff.map(s => `${s} : ${p.avis?.[s] || "—"}`).join("\n"))}">${staff.map(s => `<i class="${avisKind(p.avis?.[s])}"></i>`).join("")}</span><span class="avcount">${voteInfo(p).done}/${staff.length}</span>${voteInfo(p).suggestion && voteInfo(p).suggestion !== p.statut ? ` <span title="Suggestion d'après les avis : ${voteInfo(p).suggestion}">${voteInfo(p).suggestion === "Accepté" ? "👍" : "👎"}</span>` : ""}`)}
-        ${cell("Proposée le", fmtDate(p.dateProposition))}
-      </tr>`; }).join("") || `<tr><td colspan="9" class="empty">Aucune proposition ne correspond à ce filtre.</td></tr>`}</tbody>
-  </table></div>${bulkBar("propositions")}`;
+  ${tableHtml("propositions", rows, S.f.psort)}${bulkBar("propositions")}`;
 }
 
 /* ----- Streamers de La Cabane ----- */
-function viewMembres(){
-  const d = S.data, all = d.membres, ref = refSnapshot();
+function membreRows(){
   const q = S.f.mq.trim().toLowerCase();
-  const nPres = all.filter(m => m.statut === "Présent").length, nVide = all.filter(m => !m.statut).length, nParti = all.filter(m => m.statut === "Parti").length;
-  let rows = all.filter(m => {
+  let rows = S.data.membres.filter(m => {
     if(S.f.mst === "__actifs" && m.statut === "Parti") return false;
     if(S.f.mst === "Présent" && m.statut !== "Présent") return false;
     if(S.f.mst === "" && m.statut) return false;
     if(S.f.mst === "Parti" && m.statut !== "Parti") return false;
     if(S.f.mrole !== "__all" && (m.role||"") !== S.f.mrole) return false;
-    return !q || [m.login, m.discord, m.notes].some(x => String(x||"").toLowerCase().includes(q));
+    if(S.f.mtag && !hasTag(m, S.f.mtag)) return false;
+    return !q || [m.login, m.discord, m.notes, m.referent, ...(m.tags || [])].some(x => String(x||"").toLowerCase().includes(q));
   });
-  const prog = m => { const c = currentFollows(m), r = ref?.follows?.[m.login]; return c != null && r != null ? c - r : null; };
-  rows = sortRows(rows, S.f.msort, {follows:currentFollows, prog, anniv:m => annivInfo(m.premierStream)?.days ?? null, live:m => liveOf(m.login).live ? 0 : 1, last:m => { const x = lastStream(m); return x ? (x.live ? -1 : x.days) : null; }, viewers:m => viewersStats(m)?.avg ?? null});
+  return sortRows(rows, S.f.msort, {follows:currentFollows, prog:membreProg, anniv:m => annivInfo(m.premierStream)?.days ?? null, live:m => liveOf(m.login).live ? 0 : 1, last:m => { const x = lastStream(m); return x ? (x.live ? -1 : x.days) : null; }, viewers:m => viewersStats(m)?.avg ?? null});
+}
+function viewMembres(){
+  const d = S.data, all = d.membres, ref = refSnapshot();
+  const nPres = all.filter(m => m.statut === "Présent").length, nVide = all.filter(m => !m.statut).length, nParti = all.filter(m => m.statut === "Parti").length;
+  const rows = membreRows();
   const chip = (val, label, n) => `<button class="chip" data-mst="${esc(val)}" aria-pressed="${S.f.mst===val}">${esc(label)} <b>${n}</b></button>`;
   const liveCount = all.filter(m => m.statut !== "Parti" && liveOf(m.login).live).length;
   return `
   <h1>Streamers de La Cabane</h1>
   <p class="sub">${nPres} présents confirmés · ${liveCount} en live maintenant${ref ? ` · progression comparée au relevé du ${fmtDate(ref.date)}` : ""}${liveStamp()}</p>
   <div class="tools">
-    <input class="search" id="mq" type="search" placeholder="Chercher une chaîne, un pseudo Discord…" value="${esc(S.f.mq)}" aria-label="Recherche">
+    <input class="search" id="mq" type="search" placeholder="Chercher une chaîne, un pseudo Discord, une étiquette…" value="${esc(S.f.mq)}" aria-label="Recherche">
     <button class="btn primary" id="addMember">Ajouter une chaîne</button>
     <button class="btn ghost" data-act="live" ${S.liveLoading?"disabled":""}>${S.liveLoading ? "Lecture Twitch…" : "Actualiser Twitch"}</button>
     <button class="btn ghost" id="snapBtn" ${S.liveLoading?"disabled":""} title="Le robot fait un relevé matin, midi et soir ; ce bouton en force un maintenant">Relevé maintenant</button>
     <label class="f" style="flex-direction:row;align-items:center;gap:8px">Comparer à
       <select id="refSel">${`<option value="">Auto (≥ 7 jours)</option>` + d.snapshots.slice().reverse().map(s => `<option value="${s.date}" ${S.f.ref===s.date?"selected":""}>${fmtDate(s.date)}</option>`).join("")}</select>
     </label>
+    <span class="spacer"></span>
+    <button class="btn ghost" data-colmenu="membres" aria-expanded="${S.colMenu === "membres"}">Colonnes ▾</button>
+    <button class="btn ghost" data-export="membres" title="Fichier CSV qui s'ouvre dans Excel, avec les filtres actuels">Exporter (Excel)</button>
   </div>
+  ${colMenu("membres")}
   <div class="tools chips">
     ${chip("__actifs","Sans les partis",all.length-nParti)}${chip("Présent","Présents",nPres)}${chip("","À renseigner",nVide)}${chip("Parti","Partis",nParti)}
     <select id="roleSel" class="chip" aria-label="Rôle"><option value="__all">Tous les rôles</option>${d.settings.roles.map(r => `<option ${S.f.mrole===r?"selected":""}>${esc(r)}</option>`).join("")}</select>
+    ${tagFilter("mtagSel", S.f.mtag)}
   </div>
-  <div class="tablewrap"><table>
-    <thead><tr>
-      ${selHead(rows.map(m => m.id))}${th("Chaîne","login",S.f.msort)}${th("Live","live",S.f.msort)}${th("Discord","discord",S.f.msort)}${th("Rôle","role",S.f.msort)}${th("Statut","statut",S.f.msort)}
-      ${th("Arrivée","arrivee",S.f.msort)}${th("Dernier stream","last",S.f.msort,"num")}${th("Follows","follows",S.f.msort,"num")}${th("Viewers moy.","viewers",S.f.msort,"num")}${th("Progression","prog",S.f.msort,"num")}${th("Anniv dans","anniv",S.f.msort,"num")}<th>Alerte</th>
-    </tr></thead>
-    <tbody>${rows.map(m => { const l = liveOf(m.login), c = currentFollows(m), p = prog(m), a = annivInfo(m.premierStream); return `
-      <tr data-open="membres:${m.id}" class="${S.sel.has(m.id) ? "picked" : ""}">
-        ${selCell(m.id)}
-        ${cell("", `<span class="who">${avatarHtml(m.login)}<span class="login">${esc(m.login)}</span></span>${typeTag(m)}`, "first")}
-        ${cell("Live", l.live ? `<span class="live" title="${esc(l.uptime)}">LIVE</span>` : "")}
-        ${cell("Discord", esc(m.discord))}
-        ${cell("Rôle", esc(m.role))}
-        ${cell("Statut", pill(m.statut, "À renseigner"))}
-        ${cell("Arrivée", fmtDate(m.arrivee))}
-        ${cell("Dernier stream", lastStreamCell(m), "num")}
-        ${cell("Follows", c != null ? c + (m.followsMode==="manuel" ? ` <span class="muted" title="Saisie manuelle">✎</span>` : "") : `<span class="muted">${S.liveLoading ? "…" : "–"}</span>`, "num")}
-        ${cell("Viewers moy.", viewersCell(m), "num")}
-        ${cell("Progression", p == null ? "" : (p>0?"+":"") + p, `num ${p>0?"up":p<0?"down":""}`)}
-        ${cell("Anniv dans", a ? (a.days === 0 ? "🎂 aujourd'hui" : a.days + " j") : "", "num")}
-        ${cell("Alerte", m.alerte ? "✓" : "")}
-      </tr>`; }).join("") || `<tr><td colspan="13" class="empty">Aucune chaîne ne correspond à ce filtre.</td></tr>`}</tbody>
-  </table></div>${bulkBar("membres")}`;
+  ${tableHtml("membres", rows, S.f.msort)}${bulkBar("membres")}`;
+}
+
+/* ----- Export CSV (s'ouvre dans Excel) ----- */
+function exportCsv(view){
+  const rows = view === "membres" ? membreRows() : propRows();
+  const extra = view === "membres"
+    ? [["Pseudo Discord", m => m.discord], ["Référent", m => m.referent], ["Départ", m => m.depart || ""], ["1er stream", m => m.premierStream || ""], ["Twitch", m => m.type === "partner" ? "partenaire" : m.type === "affiliate" ? "affilié" : ""], ["Notes", m => m.notes]]
+    : [["Contact", p => p.contact], ["Date de revue", p => p.dateRevue || ""], ["Date d'invitation", p => p.dateInvitation || ""], ...S.data.settings.staff.map(s => [`Avis ${s}`, p => p.avis?.[s] || ""]), ["Commentaire", p => p.commentaire]];
+  const cols = [["Chaîne", r => r.login], ["Lien", r => `https://twitch.tv/${r.login}`], ...COLS[view].map(c => [c.l, c.x]), ...extra]
+    .filter((c, i, arr) => arr.findIndex(z => z[0] === c[0]) === i);
+  const q = v => { const t = String(v ?? "").replace(/\r?\n/g, " "); return /[;"]/.test(t) ? `"${t.replace(/"/g, '""')}"` : t; };
+  const csv = "\ufeff" + [cols.map(c => q(c[0])).join(";"), ...rows.map(r => cols.map(c => q(c[1](r))).join(";"))].join("\r\n");
+  const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([csv], {type:"text/csv;charset=utf-8"}));
+  a.download = `la-cabane-${view === "membres" ? "streamers" : "propositions"}-${todayISO()}.csv`; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  toast(`${rows.length} ligne${rows.length > 1 ? "s" : ""} exportée${rows.length > 1 ? "s" : ""}`);
+}
+
+/* ----- Import de propositions en lot ----- */
+function parseImport(text){
+  const d = S.data, seen = new Set(), res = {nouveaux:[], props:[], membres:[], corbeille:[], doublons:[], ignores:[]};
+  for(const raw of text.split(/\r?\n/)){
+    const line = raw.trim(); if(!line) continue;
+    const found = [...line.matchAll(/twitch\.tv\/([A-Za-z0-9_]{2,25})/gi)].map(m => m[1].toLowerCase());
+    let cands = found;
+    if(!cands.length) cands = line.split(/[,;\t]+/).map(x => x.trim().replace(/^@/, "").toLowerCase()).filter(Boolean);
+    const ok = cands.filter(x => /^[a-z0-9_]{2,25}$/.test(x));
+    if(!ok.length){ res.ignores.push(line); continue; }
+    if(!found.length && ok.length !== cands.length){ res.ignores.push(line); continue; }   // ligne de texte libre : on ne devine pas
+    for(const l of ok){
+      if(seen.has(l)){ res.doublons.push(l); continue; } seen.add(l);
+      const p = d.propositions.find(x => x.login === l), m = d.membres.find(x => x.login === l), t = (d.corbeille || []).find(x => x.r.login === l);
+      if(p) res.props.push({l, info:p.statut || "À trier"}); else if(m) res.membres.push({l, info:m.statut || "À renseigner"});
+      else if(t) res.corbeille.push({l, info:"dans la corbeille"}); else res.nouveaux.push(l);
+    }
+  }
+  return res;
+}
+function importPanel(){
+  if(!S.importOpen) return "";
+  const r = S.importRes;
+  const list = (title, arr, fmt) => arr.length ? `<p class="meta" style="margin:6px 0 0"><b>${title} (${arr.length}) :</b> ${arr.map(fmt).join(", ")}</p>` : "";
+  return `<section class="card" style="margin-bottom:14px"><h2>Importer une liste de propositions</h2>
+    <p class="meta" style="margin-top:0">Une chaîne par ligne (pseudo, @pseudo ou lien twitch.tv), ou plusieurs séparées par des virgules. Les lignes de texte libre sont ignorées.</p>
+    <label class="f full"><textarea id="importText" rows="6" placeholder="https://twitch.tv/exemple&#10;@autre_chaine&#10;troisieme, quatrieme">${esc(S.importText || "")}</textarea></label>
+    <div class="grid" style="margin-top:10px">
+      <label class="f">Proposées par<input id="importPar" value="${esc(S.importPar ?? cfg.me ?? "")}"></label>
+      <label class="f">Statut de départ<select id="importSt">${["", ...S.data.settings.statutsProposition].map(x => `<option value="${esc(x)}" ${(S.importSt ?? "Proposition à faire") === x ? "selected" : ""}>${esc(x || "À trier")}</option>`).join("")}</select></label>
+    </div>
+    <div class="tools" style="margin:12px 0 0"><button class="btn" id="importAnalyse">Analyser</button>
+      ${r && r.nouveaux.length ? `<button class="btn primary" id="importGo">Créer ${r.nouveaux.length} proposition${r.nouveaux.length > 1 ? "s" : ""}</button>` : ""}
+      <button class="btn ghost" id="importClose">Fermer</button></div>
+    ${r ? `${list("À créer", r.nouveaux, esc)}${list("Déjà en proposition", r.props, x => `${esc(x.l)} (${esc(x.info)})`)}${list("Déjà dans Streamers", r.membres, x => `${esc(x.l)} (${esc(x.info)})`)}${list("Dans la corbeille (à restaurer plutôt)", r.corbeille, x => esc(x.l))}${list("En double dans la liste", r.doublons, esc)}${list("Lignes ignorées", r.ignores, x => `« ${esc(x.slice(0,40))} »`)}${!r.nouveaux.length ? `<p class="meta">Rien de nouveau à créer.</p>` : ""}` : ""}
+  </section>`;
 }
 
 /* ----- Accueil : ce qui attend le staff ----- */
@@ -1129,6 +1251,9 @@ function viewReglages(){
   <section class="panel">
     <h2>Robot quotidien</h2>
     <p>Tourne toutes les heures sur GitHub : live, relevé des follows, dernière VOD et paliers matin (8 h), midi (12 h) et soir (19 h), annonces Discord.</p>
+    ${(() => { const f = [...d.membres, ...d.propositions], vus = f.filter(r => r.type !== undefined);
+      const aff = vus.filter(r => r.type === "affiliate").length, par = vus.filter(r => r.type === "partner").length, ids = f.filter(r => r.twitchId).length;
+      return `<p class="meta" style="margin:0 0 6px">${vus.length ? `Statut Twitch connu pour ${vus.length} fiche${vus.length>1?"s":""} sur ${f.length} : <b>${aff}</b> affilié${aff>1?"s":""}, <b>${par}</b> partenaire${par>1?"s":""} · identifiant Twitch enregistré pour ${ids} fiche${ids>1?"s":""}.` : `<span class="warn">Le robot n'a encore enregistré aucun statut affilié / partenaire ni identifiant Twitch.</span> Vérifie que le dépôt cabane contient la dernière version de robot/robot.mjs et qu'un passage a eu lieu depuis (onglet Actions).`}</p>`; })()}
     <p class="meta" style="margin:0">${d.robot?.dernierReleve ? `Dernier relevé : ${fmtDate(d.robot.dernierReleve.slice(0,10))} (${esc(d.robot.dernierReleve.slice(11))})` : d.robot?.lastDaily ? `Dernier relevé : ${fmtDate(d.robot.lastDaily)}` : "Le robot n'a pas encore tourné."}${d.robot?.annivAnnonce ? ` · anniversaires vérifiés le ${fmtDate(d.robot.annivAnnonce)}` : ""}${d.robot?.derniereExecution ? ` · dernière écriture ${fmtStamp(d.robot.derniereExecution)}` : ""}</p>
   </section>
   <section class="panel">
@@ -1233,9 +1358,15 @@ function drawerProp(p){
     <label class="f">Viewers moyens mesurés (30 j)<input disabled value="${(() => { const v = viewersStats(p); return v ? `${v.avg} (${v.n} mesures, ${v.days} j de live)` : "pas encore mesuré"; })()}"></label>
   </div>
   <fieldset><legend>Avis du staff</legend>${voteSummary(p)}${st.staff.map(avisRow).join("") || `<p class="muted">Ajoute les membres du staff dans Réglages.</p>`}</fieldset>
+  ${tagEditor(p)}
   <label class="f" style="margin-top:14px">Commentaires de revue<textarea data-k="commentaire">${esc(p.commentaire)}</textarea></label>
   ${historyBlock(p, "propositions")}
   ${p.maj ? `<p class="meta">Dernière modification par ${esc(p.maj.par)} le ${fmtStamp(p.maj.le)}</p>` : ""}`;
+}
+function tagEditor(r){
+  return `<label class="f" style="margin-top:14px">Étiquettes
+    <span class="tagedit">${(r.tags || []).map(t => `<span class="tg">${esc(t)}<button type="button" data-tagdel="${esc(t)}" aria-label="Retirer ${esc(t)}">×</button></span>`).join("")}
+    <input id="tagAdd" list="tagList" placeholder="Ajouter une étiquette puis Entrée…" autocomplete="off"></span></label>${tagList()}`;
 }
 function voteSummary(p){
   const v = voteInfo(p); if(!v.total) return "";
@@ -1290,6 +1421,7 @@ function drawerMembre(m){
     </div>
     ${a ? `<p class="meta">${a.years} ${a.years>1?"ans":"an"} le ${a.next.toLocaleDateString("fr-FR")} · ${a.days===0?"aujourd'hui":"dans "+a.days+" jours"}</p>` : ""}
   </fieldset>
+  ${tagEditor(m)}
   <label class="f" style="margin-top:14px">Notes<textarea data-k="notes">${esc(m.notes)}</textarea></label>
   ${historyBlock(m, "membres")}
   ${m.maj ? `<p class="meta">Dernière modification par ${esc(m.maj.par)} le ${fmtStamp(m.maj.le)}</p>` : ""}`;
@@ -1341,11 +1473,14 @@ function jetonsSoon(d, days = 14){
 }
 function jetonsPanel(d){
   const lines = (d.settings.jetons || []).map(x => `${x.nom} ; ${x.expire}`).join("\n");
-  const soon = jetonsSoon(d);
+  const soon = jetonsSoon(d), now = Date.now();
+  const lu = (d.settings.jetons || []).map(x => { const j = Math.ceil((new Date(x.expire + "T23:59:59") - now) / 864e5);
+    return `<li><b>${esc(x.nom)}</b> · expire le ${fmtDate(x.expire)} · <span class="${j <= 2 ? "down" : j <= 14 ? "warn" : "up"}">${j < 0 ? "expiré" : j === 0 ? "aujourd'hui" : "dans " + j + " jour" + (j > 1 ? "s" : "")}</span></li>`; }).join("");
   return `<section class="panel">
     <h2>Jetons distribués</h2>
-    <p>Si tu crées toi-même les jetons du staff, note ici à qui tu les as donnés et leur date d'expiration. Tout le staff voit une alerte sur l'Accueil 14 jours avant. Une ligne par jeton : <b>Nom ; AAAA-MM-JJ</b>.</p>
-    <label class="f full"><textarea id="s_jetons" rows="4" placeholder="Kiali ; 2027-01-15&#10;Jeton commun ; 2027-03-01">${esc(lines)}</textarea></label>
+    <p>Si tu crées toi-même les jetons du staff, note ici à qui tu les as donnés et leur date d'expiration. Tout le staff voit une alerte sur l'Accueil 14 jours avant. Une ligne par jeton : <b>Nom ; JJ/MM/AAAA</b> (ou AAAA-MM-JJ).</p>
+    <label class="f full"><textarea id="s_jetons" rows="4" placeholder="Kiali ; 15/01/2027&#10;Jeton commun ; 2027-03-01">${esc(lines)}</textarea></label>
+    ${lu ? `<p class="meta" style="margin:8px 0 2px">Dates comprises par la page :</p><ul class="hist">${lu}</ul>` : ""}
     ${soon.length ? `<p class="meta" style="color:var(--warn)">À renouveler bientôt : ${soon.map(x => `${esc(x.nom)} (${x.j < 0 ? "expiré" : "dans " + x.j + " j"})`).join(", ")}</p>` : ""}
     <div class="tools" style="margin:10px 0 0"><button class="btn" id="s_jetsave">Enregistrer</button></div>
   </section>`;
@@ -1379,7 +1514,8 @@ function bulkApply(what){
   }
   const val = id => { const v = $("#" + id)?.value; return v === undefined || v === "__keep" ? undefined : v; };
   const st = val("bk_statut"), role = c === "membres" ? val("bk_role") : undefined, al = c === "membres" ? val("bk_alerte") : undefined, ref = c === "membres" ? val("bk_ref") : undefined;
-  if(st === undefined && role === undefined && al === undefined && ref === undefined){ toast("Choisis au moins une modification.", true); return; }
+  const tag = normTag($("#bk_tag")?.value), tagMode = $("#bk_tagmode")?.value || "add";
+  if(st === undefined && role === undefined && al === undefined && ref === undefined && !tag){ toast("Choisis au moins une modification.", true); return; }
   const ids = [...S.sel].filter(id => S.data[c].some(x => x.id === id)); const today = todayISO();
   ids.forEach(id => {
     const r = S.data[c].find(x => x.id === id), p = {};
@@ -1390,9 +1526,13 @@ function bulkApply(what){
     if(role !== undefined) p.role = role;
     if(al !== undefined) p.alerte = al === "1";
     if(ref !== undefined) p.referent = ref;
+    if(tag){ const cur = r.tags || [];
+      if(tagMode === "add" && !hasTag(r, tag)) p.tags = [...cur, tag];
+      if(tagMode === "del" && hasTag(r, tag)) p.tags = cur.filter(x => x.toLowerCase() !== tag.toLowerCase()); }
+    if(!Object.keys(p).length) return;
     dispatch({t:"patch", c, id, p});
   });
-  const desc = [st !== undefined && `statut « ${st || (c === "membres" ? "À renseigner" : "À trier")} »`, role !== undefined && `rôle « ${role || "aucun"} »`, ref !== undefined && `référent « ${ref || "aucun"} »`, al !== undefined && (al === "1" ? "alerte configurée" : "sans alerte")].filter(Boolean).join(", ");
+  const desc = [st !== undefined && `statut « ${st || (c === "membres" ? "À renseigner" : "À trier")} »`, role !== undefined && `rôle « ${role || "aucun"} »`, ref !== undefined && `référent « ${ref || "aucun"} »`, tag && `étiquette « ${tag} » ${tagMode === "add" ? "ajoutée" : "retirée"}`, al !== undefined && (al === "1" ? "alerte configurée" : "sans alerte")].filter(Boolean).join(", ");
   dispatch({t:"note", txt:`Modification groupée de ${ids.length} fiche${ids.length>1?"s":""} (${desc}) : ${ids.map(id => S.data[c].find(x => x.id === id)?.login).join(", ")}`});
   S.sel.clear(); render(); toast(`${ids.length} fiche${ids.length>1?"s":""} modifiée${ids.length>1?"s":""}`);
 }
@@ -1407,6 +1547,24 @@ document.addEventListener("click", e => {
     else { cb.checked ? S.sel.add(cb.dataset.sel) : S.sel.delete(cb.dataset.sel); }
     render(); return; }
   const bk = t.closest("[data-bulk]"); if(bk){ bulkApply(bk.dataset.bulk); return; }
+  const cm = t.closest("[data-colmenu]"); if(cm){ S.colMenu = S.colMenu === cm.dataset.colmenu ? null : cm.dataset.colmenu; render(); return; }
+  if(t.matches("[data-col]")){ const v = S.view; colPrefs[v] = {...(colPrefs[v] || {}), [t.dataset.col]: t.checked}; store.set(COLS_KEY, colPrefs); render(); return; }
+  const cr = t.closest("[data-colreset]"); if(cr){ delete colPrefs[cr.dataset.colreset]; store.set(COLS_KEY, colPrefs); render(); return; }
+  const ex = t.closest("[data-export]"); if(ex){ exportCsv(ex.dataset.export); return; }
+  const td = t.closest("[data-tagdel]");
+  if(td && S.drawer){ const r = S.data[S.drawer.c].find(x => x.id === S.drawer.id); if(!r) return;
+    patch(S.drawer.c, r.id, {tags:(r.tags || []).filter(x => x !== td.dataset.tagdel)}, `${r.login} · Étiquette retirée : ${td.dataset.tagdel}`); renderDrawer(); return; }
+  if(t.id === "importOpen"){ S.importOpen = !S.importOpen; render(); return; }
+  if(t.id === "importClose"){ S.importOpen = false; S.importRes = null; render(); return; }
+  if(t.id === "importAnalyse"){ S.importText = $("#importText").value; S.importPar = $("#importPar").value; S.importSt = $("#importSt").value; S.importRes = parseImport(S.importText); render(); return; }
+  if(t.id === "importGo"){
+    const r = parseImport($("#importText").value); const par = $("#importPar").value.trim(), st = $("#importSt").value;
+    if(!r.nouveaux.length) return;
+    if(!confirm(`Créer ${r.nouveaux.length} proposition${r.nouveaux.length > 1 ? "s" : ""} ?\n${r.nouveaux.join(", ")}`)) return;
+    r.nouveaux.forEach(l => dispatch({t:"add", c:"propositions", notify:true, r:{id:uid("p_"), login:l, contact:"", proposePar:par, dateProposition:todayISO(), dateRevue:null, dateInvitation:null, hype:"", followsRevue:null, viewersMoyens:null, statut:st, avis:{}, commentaire:""}}));
+    dispatch({t:"note", txt:`Import de ${r.nouveaux.length} proposition${r.nouveaux.length > 1 ? "s" : ""} : ${r.nouveaux.join(", ")}`});
+    S.importOpen = false; S.importRes = null; S.importText = ""; render(); toast(`${r.nouveaux.length} proposition${r.nouveaux.length > 1 ? "s" : ""} créée${r.nouveaux.length > 1 ? "s" : ""}`); return;
+  }
   const tr = t.closest("[data-trash]");
   if(tr){ const x = (S.data.corbeille || []).find(y => y.r.id === tr.dataset.id); if(!x) return;
     if(tr.dataset.trash === "restore") restoreFiches([x.r.id]);
@@ -1516,8 +1674,12 @@ document.addEventListener("click", e => {
   if(t.id === "s_jetsave"){
     const jetons = [], bad = [];
     $("#s_jetons").value.split("\n").map(l => l.trim()).filter(Boolean).forEach(l => {
-      const m = /^(.+?)\s*[;,]\s*(\d{4}-\d{2}-\d{2})$/.exec(l); m ? jetons.push({nom:m[1].trim(), expire:m[2]}) : bad.push(l); });
-    if(bad.length){ toast(`Ligne illisible : « ${bad[0]} » (format : Nom ; AAAA-MM-JJ)`, true); return; }
+      const m = /^(.+?)\s*[;,]\s*(\d{4}-\d{2}-\d{2}|\d{1,2}\/\d{1,2}\/\d{4})$/.exec(l);
+      if(!m){ bad.push(l); return; }
+      let dt = m[2]; if(dt.includes("/")){ const [jj, mm, aa] = dt.split("/"); dt = `${aa}-${mm.padStart(2,"0")}-${jj.padStart(2,"0")}`; }
+      if(isNaN(new Date(dt + "T12:00:00"))){ bad.push(l); return; }
+      jetons.push({nom:m[1].trim(), expire:dt}); });
+    if(bad.length){ toast(`Ligne illisible : « ${bad[0]} » (format : Nom ; JJ/MM/AAAA ou AAAA-MM-JJ)`, true); return; }
     dispatch({t:"settings", p:{jetons}, txt:"Liste des jetons distribués modifiée"}); toast("Liste des jetons enregistrée"); return;
   }
   if(t.id === "s_save"){
@@ -1529,6 +1691,7 @@ document.addEventListener("click", e => {
 document.addEventListener("keydown", e => {
   if(e.key === "Escape" && S.drawer){ S.drawer = null; renderDrawer(); }
   if(e.key === "Enter" && e.target.matches(".ann")){ e.target.click(); }
+  if(e.key === "Enter" && e.target.id === "tagAdd"){ e.preventDefault(); e.target.dispatchEvent(new Event("change", {bubbles:true})); }
 });
 document.addEventListener("input", e => {
   const t = e.target;
@@ -1539,6 +1702,10 @@ document.addEventListener("change", e => {
   const t = e.target;
   if(t.id === "refSel"){ S.f.ref = t.value; render(); return; }
   if(t.id === "roleSel"){ S.f.mrole = t.value; render(); return; }
+  if(t.id === "ptagSel"){ S.f.ptag = t.value; render(); return; }
+  if(t.id === "mtagSel"){ S.f.mtag = t.value; render(); return; }
+  if(t.id === "tagAdd" && S.drawer){ const tag = normTag(t.value); if(!tag) return; const r = S.data[S.drawer.c].find(x => x.id === S.drawer.id); if(!r || hasTag(r, tag)){ t.value = ""; return; }
+    patch(S.drawer.c, r.id, {tags:[...(r.tags || []), tag]}, `${r.login} · Étiquette ajoutée : ${tag}`); t.value = ""; renderDrawer(); setTimeout(() => $("#tagAdd")?.focus(), 0); return; }
   if(t.id === "fileIn"){ const f = t.files[0]; if(f) openLocalFile(f); return; }
   if(t.dataset.k && S.drawer){
     const {c, id} = S.drawer; const r = S.data[c].find(x => x.id === id); if(!r) return;
@@ -1591,6 +1758,8 @@ async function forceReplace(d){
 }
 
 /* ============ Démarrage ============ */
+// Application installable : le service worker ne sert que la page elle-même (réseau d'abord, cache si hors ligne)
+if("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("sw.js").catch(() => {});
 (function init(){
   catchTwitchRedirect();
   if(cfg.owner && cfg.repo && cfg.token){ connectGithub(); }
