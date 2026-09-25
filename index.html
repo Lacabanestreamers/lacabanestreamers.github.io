@@ -157,6 +157,7 @@ th.sel input,td.sel input{width:17px;height:17px;accent-color:var(--pink);cursor
 tr.picked{background:rgba(255,79,216,.08)}
 .bulkbar{position:sticky;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:15;display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:12px;padding:10px 14px;background:var(--panel2);border:1px solid var(--pink);border-radius:var(--radius);box-shadow:0 8px 30px rgba(0,0,0,.45)}
 .bulkbar b{color:var(--pink)}
+.bulkbar .bulkdel{margin-left:auto}
 .bulkbar select{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:6px 10px}
 
 /* Accueil */
@@ -609,7 +610,8 @@ function bulkBar(kind){
        <select id="bk_alerte" aria-label="Alerte">${opt([["1","Alerte configurée"],["0","Pas d'alerte"]], "Alerte : inchangée")}</select>`
     : `<select id="bk_statut" aria-label="Statut">${opt([...S.data.settings.statutsProposition.map(x => [x,x]), ["","À trier"]], "Statut : inchangé")}</select>`;
   return `<div class="bulkbar" role="region" aria-label="Modification groupée"><span><b>${S.sel.size}</b> sélectionnée${S.sel.size > 1 ? "s" : ""}</span>${fields}
-    <button class="btn primary" data-bulk="apply">Appliquer</button><button class="btn ghost" data-bulk="clear">Désélectionner</button></div>`;
+    <button class="btn primary" data-bulk="apply">Appliquer</button><button class="btn ghost" data-bulk="clear">Désélectionner</button>
+    <button class="btn danger bulkdel" data-bulk="delete">Supprimer ${S.sel.size > 1 ? "les " + S.sel.size + " fiches" : "la fiche"}</button></div>`;
 }
 
 /* ----- Propositions ----- */
@@ -1012,6 +1014,17 @@ function footMembre(m){ return `<button class="btn danger" data-act="delete" sty
 function bulkApply(what){
   if(what === "clear"){ S.sel.clear(); render(); return; }
   const c = S.view === "membres" ? "membres" : "propositions";
+  if(what === "delete"){
+    const recs = [...S.sel].map(id => S.data[c].find(x => x.id === id)).filter(Boolean);
+    if(!recs.length) return;
+    const noms = recs.map(r => r.login);
+    const liste = noms.length > 15 ? noms.slice(0, 15).join(", ") + ` … et ${noms.length - 15} autres` : noms.join(", ");
+    if(!confirm(`Supprimer définitivement ${recs.length} fiche${recs.length > 1 ? "s" : ""} (${c === "membres" ? "Streamers" : "Propositions"}) ?\n\n${liste}\n\nCette suppression est partagée avec tout le staff.`)) return;
+    recs.forEach(r => dispatch({t:"del", c, id:r.id}));
+    dispatch({t:"note", txt:`Suppression groupée de ${recs.length} fiche${recs.length > 1 ? "s" : ""} (${c === "membres" ? "streamers" : "propositions"}) : ${noms.join(", ")}`});
+    S.sel.clear(); S.drawer = null; render(); toast(`${recs.length} fiche${recs.length > 1 ? "s" : ""} supprimée${recs.length > 1 ? "s" : ""}`);
+    return;
+  }
   const val = id => { const v = $("#" + id)?.value; return v === undefined || v === "__keep" ? undefined : v; };
   const st = val("bk_statut"), role = c === "membres" ? val("bk_role") : undefined, al = c === "membres" ? val("bk_alerte") : undefined;
   if(st === undefined && role === undefined && al === undefined){ toast("Choisis au moins une modification.", true); return; }
