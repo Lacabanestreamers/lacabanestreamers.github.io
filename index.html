@@ -1460,21 +1460,23 @@ function restoreFiches(ids){
   if(items.length) dispatch({t:"note", txt:`Restauration depuis la corbeille : ${items.map(x => x.r.login).join(", ")}`});
   toast(`${items.length} fiche${items.length > 1 ? "s" : ""} restaurée${items.length > 1 ? "s" : ""}`);
 }
+// Jours entre aujourd'hui et une date AAAA-MM-JJ, en jours calendaires (0 = aujourd'hui, -1 = hier)
+function joursAvant(iso){ const t = new Date(); t.setHours(0,0,0,0); const [y,m,d] = iso.split("-").map(Number); return Math.round((new Date(y, m-1, d) - t) / 864e5); }
 function tokenWarning(){
   if(!cfg.tokenExpire || S.mode !== "github") return "";
-  const j = Math.ceil((new Date(cfg.tokenExpire + "T23:59:59") - Date.now()) / 864e5);
+  const j = joursAvant(cfg.tokenExpire);
   if(j > 10) return "";
   return `<div class="warnbar ${j <= 2 ? "ko" : ""}">⚠ ${j < 0 ? "Ton jeton GitHub a expiré" : j === 0 ? "Ton jeton GitHub expire aujourd'hui" : `Ton jeton GitHub expire dans ${j} jour${j>1?"s":""}`} (${fmtDate(cfg.tokenExpire)}).
     <a href="https://github.com/settings/personal-access-tokens" target="_blank" rel="noopener">Le régénérer</a> ou en demander un nouveau à l'admin, puis le coller dans <a href="#" data-goto="reglages">Réglages</a>.</div>`;
 }
 function jetonsSoon(d, days = 14){
   const now = Date.now();
-  return (d.settings.jetons || []).map(x => ({...x, j:Math.ceil((new Date(x.expire + "T23:59:59") - now) / 864e5)})).filter(x => x.j <= days).sort((a,b) => a.j - b.j);
+  return (d.settings.jetons || []).map(x => ({...x, j:joursAvant(x.expire)})).filter(x => x.j <= days).sort((a,b) => a.j - b.j);
 }
 function jetonsPanel(d){
   const lines = (d.settings.jetons || []).map(x => `${x.nom} ; ${x.expire}`).join("\n");
   const soon = jetonsSoon(d), now = Date.now();
-  const lu = (d.settings.jetons || []).map(x => { const j = Math.ceil((new Date(x.expire + "T23:59:59") - now) / 864e5);
+  const lu = (d.settings.jetons || []).map(x => { const j = joursAvant(x.expire);
     return `<li><b>${esc(x.nom)}</b> · expire le ${fmtDate(x.expire)} · <span class="${j <= 2 ? "down" : j <= 14 ? "warn" : "up"}">${j < 0 ? "expiré" : j === 0 ? "aujourd'hui" : "dans " + j + " jour" + (j > 1 ? "s" : "")}</span></li>`; }).join("");
   return `<section class="panel">
     <h2>Jetons distribués</h2>
@@ -1608,7 +1610,7 @@ document.addEventListener("click", e => {
         dateInvitation:r.dateInvitation||today, avis:r.avis||{}, commentaire:r.commentaire||"", historique:r.historique||[], transfereLe:today, transferePar:cfg.me||""};
       const nm = {id:uid("m_"), login:r.login, discord:"", alerte:false, premierStream:null, annivConfirme:false, annivCommentaire:"", arrivee:today, depart:null,
         statut:"Présent", role:"Streamer", followsMode:"auto", followsManuel:null, notes:"", candidature};
-      dispatch({t:"add", c:"membres", r:nm, notify:true, txt:`${r.login} accepté et transféré dans Streamers${r.proposePar ? " (proposé par " + r.proposePar + ")" : ""}`});
+      dispatch({t:"add", c:"membres", r:nm, txt:`${r.login} accepté et transféré dans Streamers${r.proposePar ? " (proposé par " + r.proposePar + ")" : ""}`});
       dispatch({t:"del", c:"propositions", id, noTrash:true});
       S.drawer = {c:"membres", id:nm.id}; renderDrawer();
       toast(`${r.login} est maintenant dans Streamers`);
@@ -1636,7 +1638,7 @@ document.addEventListener("click", e => {
     const r = c === "propositions"
       ? {id:uid("p_"), login, contact:"", proposePar:cfg.me||"", dateProposition:todayISO(), dateRevue:null, dateInvitation:null, hype:"", followsRevue:null, viewersMoyens:null, statut:"Proposition à faire", avis:{}, commentaire:""}
       : {id:uid("m_"), login, discord:"", alerte:false, premierStream:null, annivConfirme:false, annivCommentaire:"", arrivee:todayISO(), depart:null, statut:"Présent", role:"Streamer", followsMode:"auto", followsManuel:null, notes:""};
-    dispatch({t:"add", c, r, notify:true, txt:`Ajout de ${login} (${c === "propositions" ? "proposition" : "streamers"})`});
+    dispatch({t:"add", c, r, notify:c === "propositions", txt:`Ajout de ${login} (${c === "propositions" ? "proposition" : "streamers"})`});
     S.drawer = {c, id:r.id}; renderDrawer(); return;
   }
   if(t.id === "snapBtn"){
