@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La Cabane · Nos streamers</title>
+<meta name="description" content="La Cabane, communauté d'entraide et de motivation entre streamers : découvre nos membres et qui est en live.">
+<meta property="og:title" content="La Cabane · Nos streamers">
+<meta property="og:description" content="Communauté d'entraide et de motivation entre streamers : découvre nos membres et qui est en live.">
+<meta property="og:image" content="../icon-512.png">
+<meta name="theme-color" content="#100B24">
+<link rel="icon" href="../icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#100B24; --panel:#18123A; --panel2:#201951; --line:#2E2663; --text:#ECE9FF; --muted:#A59FD3;
+  --cyan:#3DE3FF; --pink:#FF4FD8; --ok:#5CF2A6; --ko:#FF5C7A; --aff:#C9A7FF;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:500 17px/1.45 Rajdhani,"Segoe UI",system-ui,sans-serif;min-height:100vh;
+  background-image:radial-gradient(900px 500px at 12% -10%, rgba(255,79,216,.20), transparent 60%),radial-gradient(900px 600px at 100% 0%, rgba(61,227,255,.12), transparent 60%);background-attachment:fixed}
+a{color:var(--cyan)}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.hidden{display:none!important}
+
+/* En-tête */
+header{padding:56px 0 30px}
+h1{font:800 clamp(40px,8vw,76px)/1 Orbitron,sans-serif;margin:0;letter-spacing:.02em;text-shadow:0 0 18px rgba(255,79,216,.65),0 0 44px rgba(255,79,216,.25)}
+.intro{max-width:62ch;color:#D4CFF5;font-size:20px;margin:18px 0 0;white-space:pre-line}
+.cta{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:10px;font-weight:700;font-size:17px;text-decoration:none;border:1px solid var(--pink);background:var(--pink);color:#1a0716}
+.btn:hover{filter:brightness(1.1)}
+.stats{color:var(--muted);font-weight:600}
+.stats b{color:var(--text);font-size:19px}
+
+/* Sections */
+section{margin:34px 0}
+h2{font:700 20px/1.2 Orbitron,sans-serif;margin:0 0 16px;display:flex;align-items:center;gap:10px}
+h2 .dot{width:11px;height:11px;border-radius:50%;background:var(--ko);box-shadow:0 0 10px var(--ko)}
+@media (prefers-reduced-motion:no-preference){ h2 .dot{animation:pulse 1.6s ease-in-out infinite} @keyframes pulse{50%{opacity:.35}} }
+
+/* En live */
+.lives{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px}
+.lv{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:border-color .15s}
+.lv:hover{border-color:var(--ko)}
+.lv .img{aspect-ratio:16/9;background:#0b0820 center/cover no-repeat;position:relative}
+.lv .badge{position:absolute;left:10px;top:10px;background:var(--ko);color:#fff;font-weight:700;font-size:13px;padding:2px 8px;border-radius:5px;letter-spacing:.04em}
+.lv .vw{position:absolute;left:10px;bottom:10px;background:rgba(10,6,25,.8);font-weight:700;font-size:14px;padding:2px 8px;border-radius:5px}
+.lv .b{display:flex;gap:10px;padding:12px 14px;align-items:flex-start}
+.lv .t{font-size:15px;color:#D4CFF5;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.lv .g{font-size:14px;color:var(--cyan);font-weight:700}
+
+/* Membres */
+.tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.search{flex:1 1 240px;max-width:360px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px;color:var(--text);font:inherit}
+.chip{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:6px 14px;cursor:pointer;font:600 16px Rajdhani,sans-serif;color:var(--text)}
+.chip[aria-pressed="true"]{border-color:var(--cyan);background:rgba(61,227,255,.12)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:10px;text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}
+.card:hover{border-color:var(--pink);transform:translateY(-2px)}
+.card.on{border-color:rgba(255,92,122,.6)}
+.who{display:flex;gap:12px;align-items:center;min-width:0}
+.av{width:56px;height:56px;border-radius:50%;object-fit:cover;flex:none;background:var(--panel2);display:grid;place-items:center;font:800 22px Orbitron,sans-serif;color:var(--muted)}
+.card.on .av{box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--ko)}
+.lv .av{width:40px;height:40px;font-size:16px}
+.nm{font-weight:700;font-size:19px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:2px}
+.tag{font-size:12px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:1px 7px;border-radius:4px}
+.tag.aff{background:rgba(169,112,255,.18);color:var(--aff);border:1px solid rgba(169,112,255,.5)}
+.tag.par{background:#9146FF;color:#fff}
+.tag.staff{background:rgba(255,79,216,.15);color:var(--pink);border:1px solid rgba(255,79,216,.5)}
+.tag.live{background:var(--ko);color:#fff}
+.bio{color:#C9C3EE;font-size:15.5px;margin:0;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}
+.since{color:var(--muted);font-size:14px;margin-top:auto}
+.empty{color:var(--muted);padding:30px 0}
+
+footer{border-top:1px solid var(--line);margin-top:50px;padding:22px 0 40px;color:var(--muted);font-size:15px;display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between}
+
+@media (max-width:600px){
+  header{padding:36px 0 20px}
+  .intro{font-size:18px}
+  .grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1 id="titre">La Cabane</h1>
+    <p class="intro" id="texte"></p>
+    <div class="cta"><a class="btn hidden" id="discord" target="_blank" rel="noopener">Rejoindre le Discord</a><span class="stats" id="stats"></span></div>
+  </header>
+
+  <main id="main"><p class="empty">Chargement…</p></main>
+
+  <footer><span id="maj"></span><span>Données publiques Twitch · <a href="https://www.twitch.tv" target="_blank" rel="noopener">twitch.tv</a></span></footer>
+</div>
+
+<script>
+"use strict";
+const $ = s => document.querySelector(s);
+const esc = v => String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const okLogin = l => /^[a-z0-9_]{1,25}$/i.test(l || "");
+const okImg = u => /^https:\/\/static-cdn\.jtvnw\.net\//.test(u || "");
+const chan = l => `https://www.twitch.tv/${encodeURIComponent(l)}`;
+let DATA = null, filtre = "tous", q = "";
+
+function av(m){ return okImg(m.avatar) ? `<img class="av" src="${esc(m.avatar)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : `<span class="av" aria-hidden="true">${esc((m.nom || m.login || "?")[0])}</span>`; }
+function tags(m){
+  return [m.live && `<span class="tag live">En live</span>`, m.type === "partner" && `<span class="tag par">Partenaire</span>`,
+    m.type === "affiliate" && `<span class="tag aff">Affilié</span>`, m.staff && `<span class="tag staff">Staff</span>`].filter(Boolean).join("");
+}
+function depuis(iso){ if(!iso) return ""; const [y, mo] = iso.split("-").map(Number); return `Membre depuis ${new Date(y, mo - 1, 1).toLocaleDateString("fr-FR", {month:"long", year:"numeric"})}`; }
+function duree(iso){ const min = Math.max(0, Math.round((Date.now() - new Date(iso)) / 60000)); return min < 60 ? `${min} min` : `${Math.floor(min / 60)} h ${String(min % 60).padStart(2, "0")}`; }
+
+function render(){
+  const d = DATA, main = $("#main");
+  if(!d || !d.active){
+    main.innerHTML = `<p class="empty">La vitrine n'est pas publiée pour le moment. Reviens bientôt !</p>`;
+    $("#stats").textContent = ""; return;
+  }
+  document.title = `${d.titre || "La Cabane"} · Nos streamers`;
+  $("#titre").textContent = d.titre || "La Cabane";
+  $("#texte").textContent = d.texte || "";
+  const dc = $("#discord");
+  if(/^https:\/\/(discord\.gg|discord\.com\/invite)\//i.test(d.lienDiscord || "")){ dc.href = d.lienDiscord; dc.classList.remove("hidden"); } else dc.classList.add("hidden");
+
+  const membres = (d.membres || []).filter(m => okLogin(m.login));
+  const lives = membres.filter(m => m.live).sort((a, b) => (b.live.viewers || 0) - (a.live.viewers || 0));
+  const aff = membres.filter(m => m.type === "affiliate" || m.type === "partner").length;
+  $("#stats").innerHTML = `<b>${membres.length}</b> streamers · <b>${lives.length}</b> en live · <b>${aff}</b> affiliés ou partenaires`;
+
+  const qq = q.trim().toLowerCase();
+  const liste = membres.filter(m => (filtre === "tous" || (filtre === "live" && m.live) || (filtre === "aff" && (m.type === "affiliate" || m.type === "partner")) || (filtre === "staff" && m.staff))
+    && (!qq || [m.nom, m.login, m.bio, m.live?.jeu].some(x => String(x || "").toLowerCase().includes(qq))));
+  const cache = encodeURIComponent(d.maj || "");
+  main.innerHTML = `
+    ${lives.length ? `<section aria-labelledby="h-live"><h2 id="h-live"><span class="dot" aria-hidden="true"></span>En live maintenant</h2>
+      <div class="lives">${lives.map(m => `<a class="lv" href="${chan(m.login)}" target="_blank" rel="noopener">
+        <span class="img" style="${okImg(m.live.apercu) ? `background-image:url('${esc(m.live.apercu)}?t=${cache}')` : ""}"><span class="badge">LIVE</span><span class="vw">${Number(m.live.viewers) || 0} spectateur${(m.live.viewers || 0) > 1 ? "s" : ""}${m.live.depuis ? " · " + duree(m.live.depuis) : ""}</span></span>
+        <span class="b">${av(m)}<span style="min-width:0"><span class="nm" style="display:block;font-size:17px">${esc(m.nom)}</span>${m.live.jeu ? `<span class="g">${esc(m.live.jeu)}</span>` : ""}<span class="t">${esc(m.live.titre)}</span></span></span>
+      </a>`).join("")}</div></section>` : ""}
+    <section aria-labelledby="h-membres"><h2 id="h-membres">Nos streamers</h2>
+      <div class="tools">
+        <input class="search" id="q" type="search" placeholder="Chercher un streamer, un jeu…" value="${esc(q)}" aria-label="Chercher un streamer">
+        ${[["tous","Tous"],["live","En live"],["aff","Affiliés et partenaires"],["staff","Staff"]].map(([k,l]) => `<button class="chip" data-f="${k}" aria-pressed="${filtre === k}">${l}</button>`).join("")}
+      </div>
+      ${liste.length ? `<div class="grid">${liste.map(m => `<a class="card ${m.live ? "on" : ""}" href="${chan(m.login)}" target="_blank" rel="noopener">
+        <span class="who">${av(m)}<span style="min-width:0"><span class="nm" style="display:block">${esc(m.nom)}</span><span class="tags">${tags(m)}</span></span></span>
+        ${m.bio ? `<p class="bio">${esc(m.bio)}</p>` : ""}
+        ${m.depuis ? `<span class="since">${depuis(m.depuis)}</span>` : ""}
+      </a>`).join("")}</div>` : `<p class="empty">Aucun streamer ne correspond.</p>`}
+    </section>`;
+  $("#maj").textContent = d.maj ? `Mis à jour le ${new Date(d.maj).toLocaleDateString("fr-FR")} à ${new Date(d.maj).toLocaleTimeString("fr-FR", {hour:"2-digit", minute:"2-digit"})} · actualisé toutes les heures` : "";
+}
+
+async function charger(){
+  try {
+    const r = await fetch(`membres.json?t=${Date.now()}`, {cache:"no-store"});
+    if(r.status === 404){ DATA = {active:false}; }
+    else if(!r.ok) throw 0;
+    else DATA = await r.json();
+  } catch { if(!DATA) $("#main").innerHTML = `<p class="empty">Impossible de charger la liste pour le moment. Réessaie dans quelques minutes.</p>`; return; }
+  const focus = document.activeElement?.id === "q", pos = focus ? document.activeElement.selectionStart : 0;
+  render();
+  if(focus){ const el = $("#q"); el.focus(); try { el.setSelectionRange(pos, pos); } catch {} }
+}
+document.addEventListener("click", e => { const c = e.target.closest("[data-f]"); if(c){ filtre = c.dataset.f; render(); } });
+document.addEventListener("input", e => { if(e.target.id === "q"){ q = e.target.value; const pos = e.target.selectionStart; render(); const el = $("#q"); el.focus(); el.setSelectionRange(pos, pos); } });
+charger();
+setInterval(() => { if(document.visibilityState === "visible") charger(); }, 5 * 60 * 1000);
+</script>
+</body>
+</html>
