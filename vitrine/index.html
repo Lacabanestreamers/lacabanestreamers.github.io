@@ -186,7 +186,7 @@ function render(){
   const cache = encodeURIComponent(d.maj || "");
   main.innerHTML = `
     ${lives.length ? `<section aria-labelledby="h-live"><h2 id="h-live"><span class="dot" aria-hidden="true"></span>En live maintenant</h2>
-      <div class="lives">${lives.map(m => `<a class="lv" href="${chan(m.login)}" target="_blank" rel="noopener">
+      <div class="lives">${lives.map(m => `<a class="lv" href="${pageUrl(m.login)}" data-nav title="Voir la page de ${esc(m.nom)}">
         <span class="img" style="${okImg(m.live.apercu) ? `background-image:url('${esc(m.live.apercu)}?t=${cache}')` : ""}"><span class="badge">LIVE</span><span class="vw">${Number(m.live.viewers) || 0} spectateur${(m.live.viewers || 0) > 1 ? "s" : ""}${m.live.depuis ? " · " + duree(m.live.depuis) : ""}</span></span>
         <span class="b">${av(m)}<span style="min-width:0"><span class="nm" style="display:block;font-size:17px">${esc(m.nom)}</span>${m.live.jeu ? `<span class="g">${esc(m.live.jeu)}</span>` : ""}<span class="t">${esc(m.live.titre)}</span></span></span>
       </a>`).join("")}</div></section>` : ""}
