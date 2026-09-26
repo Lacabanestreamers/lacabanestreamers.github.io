@@ -78,6 +78,42 @@ h2 .dot{width:11px;height:11px;border-radius:50%;background:var(--ko);box-shadow
 .since{color:var(--muted);font-size:14px;margin-top:auto}
 .empty{color:var(--muted);padding:30px 0}
 
+/* Réussites */
+.wins{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.win{display:flex;gap:12px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px;text-decoration:none;color:inherit}
+.win:hover{border-color:var(--pink)}
+.win .av{width:40px;height:40px;font-size:16px}
+.win .ic{font-size:22px;flex:none}
+.win b{color:var(--text)}
+.win .d{color:var(--muted);font-size:14px;display:block}
+
+/* Page d'un membre */
+body.profil header{padding:26px 0 6px}
+body.profil h1{font-size:clamp(28px,5vw,40px)}
+body.profil .intro, body.profil #stats, body.profil #discord{display:none!important}
+.back{display:inline-block;margin:6px 0 18px;font-weight:700;text-decoration:none}
+.prof{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px;display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start}
+.prof .av{width:128px;height:128px;font-size:48px;box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--pink),0 0 34px rgba(255,79,216,.45)}
+.prof.on .av{box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--ko),0 0 34px rgba(255,92,122,.5)}
+.prof h2{font:800 clamp(26px,5vw,38px)/1.1 Orbitron,sans-serif;margin:0 0 8px;display:block;overflow-wrap:anywhere}
+.prof .bio{-webkit-line-clamp:unset;display:block;margin:12px 0 0;font-size:17px;white-space:pre-line}
+.prof .since{display:block;margin-top:12px;font-size:16px}
+.acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.btn.alt{background:transparent;color:var(--text);border-color:var(--line)}
+.btn.alt:hover{border-color:var(--cyan)}
+.golive{margin-top:18px;display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:16px;align-items:center;background:rgba(255,92,122,.08);border:1px solid rgba(255,92,122,.5);border-radius:14px;padding:12px;text-decoration:none;color:inherit}
+.golive .img{aspect-ratio:16/9;border-radius:10px;background:#0b0820 center/cover no-repeat}
+.timeline{list-style:none;margin:0;padding:0}
+.timeline li{display:flex;gap:12px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--line)}
+.timeline li:last-child{border-bottom:0}
+.timeline .d{color:var(--muted);min-width:96px;font-size:15px}
+.hint{color:var(--muted);font-size:15px;margin-top:10px}
+@media (max-width:600px){
+  .prof{grid-template-columns:1fr;justify-items:start;padding:20px}
+  .prof .av{width:96px;height:96px;font-size:36px}
+  .golive{grid-template-columns:1fr}
+}
+
 footer{border-top:1px solid var(--line);margin-top:50px;padding:22px 0 40px;color:var(--muted);font-size:15px;display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between}
 
 @media (max-width:600px){
@@ -115,10 +151,16 @@ function tags(m){
     m.type === "affiliate" && `<span class="tag aff">Affilié</span>`, m.staff && `<span class="tag staff">Staff</span>`].filter(Boolean).join("");
 }
 function depuis(iso){ if(!iso) return ""; const [y, mo] = iso.split("-").map(Number); return `Membre depuis ${new Date(y, mo - 1, 1).toLocaleDateString("fr-FR", {month:"long", year:"numeric"})}`; }
+const fmtD = iso => { const [y, m, d] = iso.split("-").map(Number); return new Date(y, m - 1, d).toLocaleDateString("fr-FR", {day:"numeric", month:"long", year:"numeric"}); };
+function succesTxt(x){ return x.type === "palier" ? `a passé les <b>${Number(x.palier)} follows</b>` : x.type === "partenaire" ? `est devenu <b>partenaire Twitch</b>` : `est devenu <b>affilié Twitch</b>`; }
+const succesIc = x => x.type === "palier" ? "🚀" : "🎉";
+const pageUrl = l => `?m=${encodeURIComponent(l)}`;
 function duree(iso){ const min = Math.max(0, Math.round((Date.now() - new Date(iso)) / 60000)); return min < 60 ? `${min} min` : `${Math.floor(min / 60)} h ${String(min % 60).padStart(2, "0")}`; }
 
 function render(){
   const d = DATA, main = $("#main");
+  const perso = new URLSearchParams(location.search).get("m");
+  document.body.classList.toggle("profil", !!perso && !!d?.active);
   if(!d || !d.active){
     main.innerHTML = `<p class="empty">La vitrine n'est pas publiée pour le moment. Reviens bientôt !</p>`;
     $("#stats").textContent = ""; return;
@@ -130,6 +172,10 @@ function render(){
   if(/^https:\/\/(discord\.gg|discord\.com\/invite)\//i.test(d.lienDiscord || "")){ dc.href = d.lienDiscord; dc.classList.remove("hidden"); } else dc.classList.add("hidden");
 
   const membres = (d.membres || []).filter(m => okLogin(m.login));
+  if(perso){ renderProfil(membres.find(m => m.login.toLowerCase() === perso.toLowerCase()), d); return; }
+  // Réussites des 30 derniers jours, tous membres confondus
+  const lim = new Date(Date.now() - 30 * 864e5).toISOString().slice(0, 10);
+  const wins = membres.flatMap(m => (m.succes || []).filter(x => x.date >= lim).map(x => ({m, x}))).sort((a, b) => b.x.date.localeCompare(a.x.date)).slice(0, 12);
   const lives = membres.filter(m => m.live).sort((a, b) => (b.live.viewers || 0) - (a.live.viewers || 0));
   const aff = membres.filter(m => m.type === "affiliate" || m.type === "partner").length;
   $("#stats").innerHTML = `<b>${membres.length}</b> streamers · <b>${lives.length}</b> en live · <b>${aff}</b> affiliés ou partenaires`;
@@ -144,12 +190,14 @@ function render(){
         <span class="img" style="${okImg(m.live.apercu) ? `background-image:url('${esc(m.live.apercu)}?t=${cache}')` : ""}"><span class="badge">LIVE</span><span class="vw">${Number(m.live.viewers) || 0} spectateur${(m.live.viewers || 0) > 1 ? "s" : ""}${m.live.depuis ? " · " + duree(m.live.depuis) : ""}</span></span>
         <span class="b">${av(m)}<span style="min-width:0"><span class="nm" style="display:block;font-size:17px">${esc(m.nom)}</span>${m.live.jeu ? `<span class="g">${esc(m.live.jeu)}</span>` : ""}<span class="t">${esc(m.live.titre)}</span></span></span>
       </a>`).join("")}</div></section>` : ""}
+    ${wins.length ? `<section aria-labelledby="h-wins"><h2 id="h-wins">Nos réussites</h2>
+      <div class="wins">${wins.map(({m, x}) => `<a class="win" href="${pageUrl(m.login)}" data-nav>${av(m)}<span><span class="ic" aria-hidden="true">${succesIc(x)}</span> <b>${esc(m.nom)}</b> ${succesTxt(x)}<span class="d">le ${fmtD(x.date)}</span></span></a>`).join("")}</div></section>` : ""}
     <section aria-labelledby="h-membres"><h2 id="h-membres">Nos streamers</h2>
       <div class="tools">
         <input class="search" id="q" type="search" placeholder="Chercher un streamer, un jeu…" value="${esc(q)}" aria-label="Chercher un streamer">
         ${[["tous","Tous"],["live","En live"],["aff","Affiliés et partenaires"],["staff","Staff"]].map(([k,l]) => `<button class="chip" data-f="${k}" aria-pressed="${filtre === k}">${l}</button>`).join("")}
       </div>
-      ${liste.length ? `<div class="grid">${liste.map(m => `<a class="card ${m.live ? "on" : ""}" href="${chan(m.login)}" target="_blank" rel="noopener">
+      ${liste.length ? `<div class="grid">${liste.map(m => `<a class="card ${m.live ? "on" : ""}" href="${pageUrl(m.login)}" data-nav>
         <span class="who">${av(m)}<span style="min-width:0"><span class="nm" style="display:block">${esc(m.nom)}</span><span class="tags">${tags(m)}</span></span></span>
         ${m.bio ? `<p class="bio">${esc(m.bio)}</p>` : ""}
         ${m.depuis ? `<span class="since">${depuis(m.depuis)}</span>` : ""}
@@ -158,18 +206,85 @@ function render(){
   $("#maj").textContent = d.maj ? `Mis à jour le ${new Date(d.maj).toLocaleDateString("fr-FR")} à ${new Date(d.maj).toLocaleTimeString("fr-FR", {hour:"2-digit", minute:"2-digit"})} · actualisé toutes les heures` : "";
 }
 
+function renderProfil(m, d){
+  const main = $("#main");
+  window.scrollTo(0, 0);
+  if(!m){
+    document.title = `${d.titre || "La Cabane"} · Streamer introuvable`;
+    main.innerHTML = `<a class="back" href="./" data-nav>← Tous les streamers</a><p class="empty">Ce streamer n'est pas (ou plus) présenté sur la vitrine.</p>`;
+    return;
+  }
+  document.title = `${m.nom} · ${d.titre || "La Cabane"}`;
+  const lien = location.origin + location.pathname + pageUrl(m.login);
+  const cache = encodeURIComponent(d.maj || "");
+  const succes = m.succes || [];
+  main.innerHTML = `<a class="back" href="./" data-nav>← Tous les streamers</a>
+    <article class="prof ${m.live ? "on" : ""}">
+      ${okImg(m.avatar) ? `<img class="av" src="${esc(m.avatar.replace(/\d+x\d+(\.\w+)$/, "300x300$1"))}" alt="" referrerpolicy="no-referrer">` : `<span class="av" aria-hidden="true">${esc((m.nom || "?")[0])}</span>`}
+      <div style="min-width:0">
+        <h2>${esc(m.nom)}</h2>
+        <span class="tags">${tags(m)}</span>
+        ${m.bio ? `<p class="bio">${esc(m.bio)}</p>` : ""}
+        <span class="since">${m.depuis ? `🏠 ${depuis(m.depuis)} de <b>${esc(d.titre || "La Cabane")}</b>` : `🏠 Membre de <b>${esc(d.titre || "La Cabane")}</b>`}</span>
+        ${m.live ? `<a class="golive" href="${chan(m.login)}" target="_blank" rel="noopener">
+            <span class="img" style="${okImg(m.live.apercu) ? `background-image:url('${esc(m.live.apercu)}?t=${cache}')` : ""}"></span>
+            <span><span class="tag live">En live</span> <b>${Number(m.live.viewers) || 0} spectateur${(m.live.viewers || 0) > 1 ? "s" : ""}</b>${m.live.depuis ? ` · depuis ${duree(m.live.depuis)}` : ""}
+              ${m.live.jeu ? `<span class="g" style="display:block;color:var(--cyan);font-weight:700;margin-top:4px">${esc(m.live.jeu)}</span>` : ""}<span style="display:block;margin-top:4px">${esc(m.live.titre)}</span></span></a>` : ""}
+        <div class="acts">
+          <a class="btn" href="${chan(m.login)}" target="_blank" rel="noopener">${m.live ? "Regarder le live" : "Voir la chaîne Twitch"}</a>
+          <button class="btn alt" id="copyLien" type="button">Copier le lien de cette page</button>
+          ${/^https:\/\/(discord\.gg|discord\.com\/invite)\//i.test(d.lienDiscord || "") ? `<a class="btn alt" href="${esc(d.lienDiscord)}" target="_blank" rel="noopener">Rejoindre ${esc(d.titre || "La Cabane")}</a>` : ""}
+        </div>
+        <p class="hint">Streamer de ${esc(d.titre || "La Cabane")} ? Ajoute ce lien dans tes panneaux Twitch ou ta bio : <span style="overflow-wrap:anywhere">${esc(lien)}</span></p>
+      </div>
+    </article>
+    ${succes.length ? `<section aria-labelledby="h-succes"><h2 id="h-succes">Ses réussites</h2>
+      <ul class="timeline">${succes.map(x => `<li><span class="d">${fmtD(x.date)}</span><span>${succesIc(x)} ${esc(m.nom)} ${succesTxt(x)}</span></li>`).join("")}</ul></section>` : ""}`;
+}
+
+// Le robot ne passe qu'une fois par heure : les lives qu'il a notés sont revérifiés ici, en direct.
+// decapi renvoie une durée (« 1 hour, 5 minutes ») si la chaîne est en live, « … is offline » sinon.
+const LIVE_RE = /^\d+\s+(day|hour|minute|second)s?(\s*,\s*\d+\s+(day|hour|minute|second)s?)*$/i;
+let liveVerifieA = null;
+const horsLigne = new Map();   // pseudo -> version des données (maj) pour laquelle le live a été vu terminé
+async function verifierLives(){
+  const aVerifier = (DATA?.membres || []).filter(m => m.live && okLogin(m.login));
+  if(!aVerifier.length) return;
+  let change = false;
+  await Promise.all(aVerifier.map(async m => {
+    try {
+      const r = await fetch(`https://decapi.me/twitch/uptime/${encodeURIComponent(m.login)}`, {cache:"no-store"});
+      if(!r.ok) return;
+      const t = (await r.text()).trim();
+      if(/offline/i.test(t) && !LIVE_RE.test(t)){ m.live = null; horsLigne.set(m.login, DATA.maj); change = true; }      // live terminé depuis le passage du robot
+    } catch { /* réseau : on garde l'information du robot */ }
+  }));
+  liveVerifieA = new Date();
+  if(change) render();
+}
+
 async function charger(){
   try {
     const r = await fetch(`membres.json?t=${Date.now()}`, {cache:"no-store"});
     if(r.status === 404){ DATA = {active:false}; }
     else if(!r.ok) throw 0;
-    else DATA = await r.json();
+    else { DATA = await r.json(); for(const m of DATA.membres || []) if(m.live && horsLigne.get(m.login) === DATA.maj) m.live = null; }
   } catch { if(!DATA) $("#main").innerHTML = `<p class="empty">Impossible de charger la liste pour le moment. Réessaie dans quelques minutes.</p>`; return; }
   const focus = document.activeElement?.id === "q", pos = focus ? document.activeElement.selectionStart : 0;
   render();
   if(focus){ const el = $("#q"); el.focus(); try { el.setSelectionRange(pos, pos); } catch {} }
+  verifierLives();
 }
-document.addEventListener("click", e => { const c = e.target.closest("[data-f]"); if(c){ filtre = c.dataset.f; render(); } });
+document.addEventListener("click", e => {
+  const c = e.target.closest("[data-f]"); if(c){ filtre = c.dataset.f; render(); return; }
+  const n = e.target.closest("a[data-nav]");
+  if(n && !e.ctrlKey && !e.metaKey && !e.shiftKey && e.button === 0){ e.preventDefault(); const retour = !new URLSearchParams(location.search).get("m"); if(retour) sessionScroll = window.scrollY;
+    history.pushState(null, "", n.getAttribute("href")); render(); if(n.getAttribute("href") === "./") window.scrollTo(0, sessionScroll || 0); return; }
+  if(e.target.id === "copyLien"){ const t = location.href; const ok = () => { e.target.textContent = "Lien copié ✓"; setTimeout(() => { e.target.textContent = "Copier le lien de cette page"; }, 2500); };
+    (navigator.clipboard?.writeText(t) || Promise.reject()).then(ok, () => prompt("Copie ce lien :", t)); }
+});
+let sessionScroll = 0;
+window.addEventListener("popstate", () => render());
 document.addEventListener("input", e => { if(e.target.id === "q"){ q = e.target.value; const pos = e.target.selectionStart; render(); const el = $("#q"); el.focus(); el.setSelectionRange(pos, pos); } });
 charger();
 setInterval(() => { if(document.visibilityState === "visible") charger(); }, 5 * 60 * 1000);
