@@ -14,19 +14,7 @@
    "au": "2026-09-28"
   }
  },
- "agenda": [
-  {
-   "id": "ev_1854c9f0",
-   "titre": "test 5",
-   "date": "2026-09-28",
-   "heure": "",
-   "type": "Soirée jeux",
-   "description": "",
-   "lien": "",
-   "discord": "https://discord.com/channels/1550885636322492476/1551942576230240287/1553895045474680864",
-   "participants": []
-  }
- ],
+ "agenda": [],
  "membres": [
   {
    "login": "aly0806",
@@ -315,5 +303,5 @@
   "webhook": "https://discord.com/api/webhooks/1553888440163246081/0PTJYd5BXosQqQUFNDAF1w73exleliAB0e1djrTF28WvjAqWoL469QF8dlzdT9RR1HjC",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-09-27T22:36:09.725Z"
+ "maj": "2026-09-27T22:37:00.570Z"
 }
