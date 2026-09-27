@@ -1700,7 +1700,7 @@ function viewAide(){
     <h3>Ne rien oublier : les rappels</h3>
     <p>Dans une fiche, section <b>Rappels</b> : choisis une date et écris quoi faire (« recontacter après ses vacances »). Le jour venu, le rappel apparaît sur l'Accueil (« Rappels du jour », filtre « Les miens ») et une 🔔 s'affiche dans les tableaux. Clique sur <b>Fait</b> une fois traité.</p>
     <h3>Organiser un événement</h3>
-    <p>Onglet <b>Événements</b> → <b>Créer un événement</b> : titre, date, heure, type, description et participants. S'il est public, il apparaît sur la vitrine. S'il est annoncé, le robot le rappelle dans le salon célébration la veille à 18 h et le jour même à 9 h.</p>
+    <p>Onglet <b>Événements</b> → <b>Créer un événement</b> : titre, date, heure, type, description et participants. S'il est public, il apparaît sur la vitrine. Si <b>Partager sur Discord</b> est coché, le robot le publie dans le salon événements environ une minute après l'enregistrement (et envoie un message de mise à jour si la date ou l'heure change). Avec les rappels cochés, il le rappelle aussi la veille à 18 h et le jour même à 9 h.</p>
     <h3>Modifier plusieurs fiches</h3>
     <p>Coche les fiches dans un tableau : une barre apparaît en bas pour changer d'un coup le statut, le rôle, le référent ou une étiquette.</p>
     <h3>Supprimer par erreur ?</h3>
@@ -1744,7 +1744,7 @@ function evCarte(e, passe){
   return `<article class="ev ${passe ? "passe" : ""}">
     <div class="quand"><b>${d}</b><small>${dt.toLocaleDateString("fr-FR", {month:"short"})}</small><small>${esc(e.heure || "")}</small></div>
     <div style="min-width:0"><h3>${esc(e.titre)}</h3>
-      <span class="tg">${esc(e.type || "Autre")}</span>${e.public ? ` <span class="tg" style="color:var(--ok);border-color:rgba(92,242,166,.4)">vitrine</span>` : ` <span class="tg" style="color:var(--muted);border-color:var(--line)">staff seulement</span>`}${e.discord ? ` <span class="tg" style="color:var(--pink);border-color:rgba(255,79,216,.4)">annonce Discord</span>` : ""}
+      <span class="tg">${esc(e.type || "Autre")}</span>${e.public ? ` <span class="tg" style="color:var(--ok);border-color:rgba(92,242,166,.4)">vitrine</span>` : ` <span class="tg" style="color:var(--muted);border-color:var(--line)">staff seulement</span>`}${e.publierDiscord ? ` <span class="tg" style="color:var(--pink);border-color:rgba(255,79,216,.4)">${e.publieDiscord ? "partagé sur Discord" : "partage Discord en cours…"}</span>` : ""}${e.discord ? ` <span class="tg" style="color:var(--pink);border-color:rgba(255,79,216,.4)">rappels Discord</span>` : ""}
       ${!passe ? `<span class="meta" style="margin-left:6px">${j === 0 ? "aujourd'hui" : j === 1 ? "demain" : `dans ${j} jours`}</span>` : ""}
       ${e.description ? `<p class="desc">${esc(e.description)}</p>` : ""}
       ${safeUrl(e.lien || "") ? `<p style="margin:4px 0"><a href="${esc(e.lien)}" target="_blank" rel="noopener">${esc(e.lien.replace(/^https?:\/\/(www\.)?/, "").slice(0, 50))}</a></p>` : ""}
@@ -1768,7 +1768,8 @@ function evForm(){
         <input id="ev_ppl" list="evPplList" placeholder="Pseudo d'un streamer puis Entrée…" autocomplete="off"></span></label>
       <datalist id="evPplList">${S.data.membres.filter(m => m.statut !== "Parti").map(m => `<option value="${esc(m.login)}">`).join("")}</datalist>
       <label class="check"><input type="checkbox" id="ev_public" ${e.public !== false ? "checked" : ""}> Afficher sur la vitrine publique</label>
-      <label class="check"><input type="checkbox" id="ev_discord" ${e.discord !== false ? "checked" : ""}> Annoncer dans le salon célébration (la veille à 18 h et le jour même à 9 h)</label>
+      <label class="check" style="grid-column:1/-1"><input type="checkbox" id="ev_publier" ${e.publierDiscord ? "checked" : ""}> 📣 Partager sur Discord dès l'enregistrement (salon événements)${e.publieDiscord ? ` <span class="meta">· déjà publié le ${esc(new Date(e.publieDiscord.le).toLocaleString("fr-FR", {day:"numeric", month:"short", hour:"2-digit", minute:"2-digit"}))} ; si tu changes la date ou l'heure, un message de mise à jour partira</span>` : ""}</label>
+      <label class="check"><input type="checkbox" id="ev_discord" ${e.discord !== false ? "checked" : ""}> Rappels Discord la veille à 18 h et le jour même à 9 h</label>
     </div>
     <div class="tools" style="margin:14px 0 0"><button class="btn primary" id="evSave">Enregistrer</button><button class="btn ghost" id="evCancel">Annuler</button></div>
   </section>`;
@@ -1776,7 +1777,7 @@ function evForm(){
 function viewAgenda(){
   const {avenir, passes} = agendaTri();
   return `<h1>Événements</h1>
-  <p class="sub">Raids, soirées jeux, streams caritatifs… Les événements publics apparaissent sur la vitrine, et le robot les annonce dans le salon célébration.</p>
+  <p class="sub">Raids, soirées jeux, streams caritatifs… Les événements publics apparaissent sur la vitrine. Coche « Partager sur Discord » pour que le robot les publie tout de suite dans le salon événements (puis rappels la veille et le jour même).</p>
   <div class="tools"><button class="btn primary" id="evNew">Créer un événement</button></div>
   ${evForm()}
   <h2 style="font:700 17px Orbitron,sans-serif;margin:18px 0 10px">À venir (${avenir.length})</h2>
@@ -1786,7 +1787,7 @@ function viewAgenda(){
 function lireEvForm(){
   const e = S.evEdit || {};
   return {...e, titre:$("#ev_titre").value.trim(), date:$("#ev_date").value, heure:$("#ev_heure").value, type:$("#ev_type").value, lien:$("#ev_lien").value.trim(),
-    description:$("#ev_desc").value.trim(), public:$("#ev_public").checked, discord:$("#ev_discord").checked};
+    description:$("#ev_desc").value.trim(), public:$("#ev_public").checked, discord:$("#ev_discord").checked, publierDiscord:$("#ev_publier").checked};
 }
 
 /* ============ Vitrine publique ============ */
@@ -1965,10 +1966,11 @@ document.addEventListener("click", e => {
     const neuf = !e.id; if(neuf){ e.id = uid("ev_"); e.par = cfg.me || ""; }
     // si la date ou l'heure change, les annonces Discord repartent
     const ancien = (S.data.agenda || []).find(x => x.id === e.id);
-    delete e.annonceVeille; delete e.annonceJour;   // ces drapeaux appartiennent au robot : on ne les renvoie pas (valeurs peut-être périmées)
+    delete e.annonceVeille; delete e.annonceJour; delete e.publieDiscord;   // ces drapeaux appartiennent au robot : on ne les renvoie pas (valeurs peut-être périmées)
     if(ancien && (ancien.date !== e.date || ancien.heure !== e.heure)){ e.annonceVeille = false; e.annonceJour = false; }
     dispatch({t:"agendaSet", ev:e, notify:true, txt:`Événement ${neuf ? "créé" : "modifié"} : ${e.titre} (${fmtDate(e.date)}${e.heure ? " " + e.heure : ""})`});
-    S.evEdit = null; render(); toast(`${neuf ? "Événement créé" : "Événement enregistré"}${e.public !== false ? " : il apparaîtra sur la vitrine d'ici 2 à 3 minutes" : ""}`); return; }
+    S.evEdit = null; render(); const aPartager = e.publierDiscord && (!ancien?.publieDiscord || ancien.publieDiscord.date !== e.date || (ancien.publieDiscord.heure || "") !== (e.heure || ""));
+    toast(`${neuf ? "Événement créé" : "Événement enregistré"}${aPartager ? " · publication Discord d'ici une minute" : ""}${e.public !== false ? " · sur la vitrine d'ici 2 à 3 minutes" : ""}`); return; }
   const rpf = t.closest("[data-rpf]"); if(rpf){ S.f.rpMiens = rpf.dataset.rpf === "1"; render(); return; }
   const rpd = t.closest("[data-rpdone]");
   if(rpd){ e.stopPropagation(); const c = rpd.dataset.rpc || S.drawer?.c, id = rpd.dataset.rpid || S.drawer?.id; const r = S.data[c]?.find(x => x.id === id); if(!r) return;
