@@ -14,17 +14,7 @@
    "au": "2026-09-27"
   }
  },
- "agenda": [
-  {
-   "titre": "test",
-   "date": "2026-09-28",
-   "heure": "",
-   "type": "Collab",
-   "description": "test",
-   "lien": "",
-   "participants": []
-  }
- ],
+ "agenda": [],
  "membres": [
   {
    "login": "aly0806",
@@ -77,7 +67,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "Stardew Valley",
     "titre": "🐮STARDEW VALLEY • Marnie aime nous stp pour qu'on recup le slibard • 6 💗",
     "depuis": "2026-09-27T19:00:37Z",
@@ -185,7 +175,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 14,
+    "viewers": 15,
     "jeu": "Graveyard Keeper II",
     "titre": "SOIRÉE JEU 🎮💫 : On joue à Graveyard Keeper 2, le RPG d'aventure/gestion le plus addictif du moment ! | Découverte Test Nouveauté jeu-vidéo",
     "depuis": "2026-09-27T19:01:07Z",
@@ -315,5 +305,5 @@
    "succes": []
   }
  ],
- "maj": "2026-09-27T21:30:36.314Z"
+ "maj": "2026-09-27T21:36:50.363Z"
 }
