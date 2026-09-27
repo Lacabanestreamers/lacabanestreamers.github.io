@@ -8,31 +8,45 @@
    "login": "aly0806",
    "nom": "aly0806",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/a82dd431-b906-4991-802b-e16ded62c062-profile_image-300x300.png",
-   "bio": " Salut, moi c’est Aly, gameuse pro du fail épique et du cri dans les jeux d’horreur. Je joue à tout: du mignon au flippant, du chill au ragequit. Ici, on rigole, on râle (un peu), ",
+   "bio": " Salut, moi c’est Aly, gameuse pro du fail épique et du cri dans les jeux d’horreur. Je joue à tout: du mignon au flippant, du chill au ragequit. Ici, on rigole, on râle (un peu), et on de bonne humeur.Règle d’or: sois gentil, sinon je t’envoie mes pandasninjas. Contact: aly0806stream@gmail.com",
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null
+   "live": null,
+   "succes": []
   },
   {
    "login": "asalie",
    "nom": "Asalie",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/485d5d77-22b3-4fb7-b764-a85f69057353-profile_image-300x300.png",
-   "bio": "Tu aimes les ambiances douces, les univers féeriques et les moments cocooning ? Tu es au bon endroit... Ici on prend soin de soi, on se détend, en lurk ou en discutant, toujours av",
+   "bio": "Tu aimes les ambiances douces, les univers féeriques et les moments cocooning ? Tu es au bon endroit... Ici on prend soin de soi, on se détend, en lurk ou en discutant, toujours avec respect. En général on s'accompagne de jeux cosy comme Starsand Island ou Fields of Mistria mais pas que !",
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-22",
-   "live": null
+   "live": null,
+   "succes": []
   },
   {
    "login": "aulit42369",
    "nom": "Aulit42369",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/f33ce494-5527-426f-bc67-7a59bbf51609-profile_image-300x300.png",
-   "bio": "Bienvenue dans mon univers, ici on fait du multigaming, du jeu coop , on rage, on rigole et on troll les copains. Installe toi et viens dire des bétises avec nous. Les differentes ",
+   "bio": "Bienvenue dans mon univers, ici on fait du multigaming, du jeu coop , on rage, on rigole et on troll les copains. Installe toi et viens dire des bétises avec nous. Les differentes commandes :  !commandes  !gameinfos  !prime  !discord  !wishliststeam  !regles",
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null
+   "live": null,
+   "succes": []
+  },
+  {
+   "login": "bichoune_",
+   "nom": "Bichoune_",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/ff3e595e-d998-4554-a3bd-39839664a3b0-profile_image-300x300.png",
+   "bio": "☕️ Bienvenue à la maison ! Ici on fait nos meilleures jeux cosy et du coloriage💗Le planning change chaques semaines, fais un eye contact avec, sinon regarde dans programme 👀",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-09-27",
+   "live": null,
+   "succes": []
   },
   {
    "login": "brastentv",
@@ -42,27 +56,58 @@
    "type": "",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": null
+   "live": null,
+   "succes": []
   },
   {
    "login": "chezelodie",
    "nom": "ChezElodie",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/4e51a08c-b45b-4d0f-9431-b157b51a7ccf-profile_image-300x300.jpeg",
-   "bio": "Bienvenue dans le poulailler ! Une communauté perchée, des visuels qui chantent, et des commandes qui font danser. Ici, on crée ensemble, on rigole fort, et on célèbre chaque œuf p",
+   "bio": "Bienvenue dans le poulailler ! Une communauté perchée, des visuels qui chantent, et des commandes qui font danser. Ici, on crée ensemble, on rigole fort, et on célèbre chaque œuf pondu.",
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null
+   "live": null,
+   "succes": [
+    {
+     "type": "palier",
+     "palier": 400,
+     "date": "2026-09-26"
+    }
+   ]
+  },
+  {
+   "login": "cosy_loutte",
+   "nom": "cosy_loutte",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/41d334dc-fd2a-4c36-aeeb-c0ce8c9312b8-profile_image-300x300.png",
+   "bio": "Hello! Moi c'est Loutte et je passe mon temps à fabriquer des choses.Tu trouveras ici des DIY mais surtout des live où on lit et on joue ensemble aux \"livres dont vous êtes le héros\".On fait aussi des cahiers de culture en regardant des émissions.Univers cosy de Miss Marple à One Piece.",
+   "type": "",
+   "staff": false,
+   "depuis": "2026-09-27",
+   "live": null,
+   "succes": []
   },
   {
    "login": "cristal578",
    "nom": "Cristal578",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/294e2b6c-6eed-4642-b4a5-b4fd7034baa7-profile_image-300x300.png",
-   "bio": "Salut ! Nouveau streamer, je partage ma passion avec vous.  💕Au programme : de la détente sur des jeux de simulation, des tidy up et des jeux d'horreurs ! Installe toi dans le cha",
+   "bio": "Salut ! Nouveau streamer, je partage ma passion avec vous.  💕Au programme : de la détente sur des jeux de simulation, des tidy up et des jeux d'horreurs ! Installe toi dans le chat ! 📩Mail Pro : cristal578.live@gmail.com",
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": null
+   "live": null,
+   "succes": []
+  },
+  {
+   "login": "elegaming__",
+   "nom": "elegaming__",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0919dbcd-ed9e-4317-aa73-9b0aec619c5a-profile_image-300x300.jpeg",
+   "bio": "🌸 Bienvenue sur ma chaîne Twitch 🌸           ~     Ici tu retrouves majoritairement du Let's Play de différents jeux comme 🏝ACNH, ⚪️Pokemon, Pikmin, 🥊SSBU, 🦑Splatoon, ⚔️SAO et d'autre encore ! et bien-évidemment avec le sourire ! 😝 ~  N'hésite pas à jeter un coup d'œil, ça me ferait plaisir 💫",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-09-27",
+   "live": null,
+   "succes": []
   },
   {
    "login": "emmamarmotte",
@@ -72,43 +117,41 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null
+   "live": null,
+   "succes": []
   },
   {
    "login": "galyssiane",
    "nom": "galyssiane",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5f1c037e-16a5-4a48-a01d-8d8a016dadc2-profile_image-300x300.jpeg",
-   "bio": "Salut, je vous embarque avec moi dans tous mes univers, que ce soie via des jeux d'horreur, des moments plus calmes, des périodes créatives, ou du multi!! Egalement Ormuu à temps p",
+   "bio": "Salut, je vous embarque avec moi dans tous mes univers, que ce soie via des jeux d'horreur, des moments plus calmes, des périodes créatives, ou du multi!! Egalement Ormuu à temps partiel chez EmmaMarmotte - Email de contact : galyssianetwitch@gmail.com",
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 11,
-    "jeu": "Fall Guys",
-    "titre": "Ce soir c'est Fall Guys : Des rires, des Fails, et du fun ! Avec @laelya_ @asakha @titounetsan et plein d'autres!",
-    "depuis": "2026-09-26T18:50:18Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   }
+   "live": null,
+   "succes": []
   },
   {
    "login": "liiapin",
    "nom": "Liiapin",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/2997b710-116d-46f1-849b-2ca55cac5b7a-profile_image-300x300.png",
-   "bio": "Je stream depuis 4ans. Je fais plein de jeux différents, aventures solo, coop, des jeux chill, en écoutant de la musique. Des maquettes. Mais aussi de la VR sur du beat saber, synt",
+   "bio": "Je stream depuis 4ans. Je fais plein de jeux différents, aventures solo, coop, des jeux chill, en écoutant de la musique. Des maquettes. Mais aussi de la VR sur du beat saber, synthrider pour des reveils en musique. Je rage beaucoup mais ca vous fait rire.",
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null
+   "live": null,
+   "succes": []
   },
   {
    "login": "lilyth_minerva",
    "nom": "Lilyth_Minerva",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/47802ae9-c2a9-4b93-86e6-be0dfc2fd998-profile_image-300x300.png",
-   "bio": "On raconte qu’un kitsune parcourt les mondes numériques, tissant des liens entre les âmes curieuses et les esprits rêveurs. 🌌Si tu entends un rire dans la brume… c’est peut-être m",
+   "bio": "On raconte qu’un kitsune parcourt les mondes numériques, tissant des liens entre les âmes curieuses et les esprits rêveurs. 🌌Si tu entends un rire dans la brume… c’est peut-être moi. 🦊✨",
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null
+   "live": null,
+   "succes": []
   },
   {
    "login": "mattmist2",
@@ -118,17 +161,19 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null
+   "live": null,
+   "succes": []
   },
   {
    "login": "melpastelplay",
    "nom": "melpastelplay",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/3c3103aa-24ee-483b-8c2f-a1c1798ca53b-profile_image-300x300.png",
-   "bio": "Bienvenue sur MelPastelPlay 🌼 Ici on est en mode Gaming Chill , Cozy & Fun ! ✨N’hésite pas à parler dans le chat on peut échanger sur tout et surtout sur rien !! 😂 🐱 Alors GO ! ",
+   "bio": "Bienvenue sur MelPastelPlay 🌼 Ici on est en mode Gaming Chill , Cozy & Fun ! ✨N’hésite pas à parler dans le chat on peut échanger sur tout et surtout sur rien !! 😂 🐱 Alors GO ! Rejoins la Team Pastel 👏❤️",
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null
+   "live": null,
+   "succes": []
   },
   {
    "login": "mysti94",
@@ -138,49 +183,41 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 6,
-    "jeu": "R.E.P.O.",
-    "titre": "[FR] ~ REPO - C'est le Birthday d'Okko ! ~",
-    "depuis": "2026-09-26T19:00:17Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
-   }
+   "live": null,
+   "succes": []
   },
   {
    "login": "oko_san_",
    "nom": "Oko_san_",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/c803851b-3887-4362-8bc4-7518f7ea398c-profile_image-300x300.jpeg",
-   "bio": "Salut petit caneton !! ✨ Moi c'est Okko ( ou Oko) je suis une petite streameuse chill et souriante qui fait du multi gaming dans une ambiance cozy !! Alors n'hésite pas venir faire",
+   "bio": "Salut petit caneton !! ✨ Moi c'est Okko ( ou Oko) je suis une petite streameuse chill et souriante qui fait du multi gaming dans une ambiance cozy !! Alors n'hésite pas venir faire un petit coucou ! 💜Pour me contacter c'est par ici : contactpro@okkosan.fr  ✨",
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 15,
-    "jeu": "R.E.P.O.",
-    "titre": "[FR] C'est l'heure de la fête !! 12h ensemble pour les 1 an !! [!steam !insta !discord !bs ]",
-    "depuis": "2026-09-26T19:46:22Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
-   }
+   "live": null,
+   "succes": []
   },
   {
    "login": "p_xline_",
    "nom": "P_xline_",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0098308b-33c1-4fe6-9ad4-3bcb19d0a315-profile_image-300x300.png",
-   "bio": "✨🌙 Bienvenue sur ma chaîne P_xline_ 🌙✨ Toute nouvelle dans l'aventure du streaming 🎥 Ici c'est ambiance chill et convivialité avant tout, en partageant de bons moments ensemble ",
+   "bio": "✨🌙 Bienvenue sur ma chaîne P_xline_ 🌙✨ Toute nouvelle dans l'aventure du streaming 🎥 Ici c'est ambiance chill et convivialité avant tout, en partageant de bons moments ensemble 🍃🌺 Au programme : The Sims4, Palia, Phamso et plein d'autres 🦖! Installe toi, prend un thé et un plaid, et profite ☕️",
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": null
+   "live": null,
+   "succes": []
   },
   {
    "login": "r3skyo",
    "nom": "R3skyo",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/4506736c-9801-4b95-b2b3-b44fb201ab6d-profile_image-300x300.png",
-   "bio": "On est là pour chill tous ensemble, prends ton pop-corn et viens te détendre et blablater avec nous ! 😝Adepte de tous les types de jeux ! Qu'ils soient solo ou multi, on est ici p",
+   "bio": "On est là pour chill tous ensemble, prends ton pop-corn et viens te détendre et blablater avec nous ! 😝Adepte de tous les types de jeux ! Qu'ils soient solo ou multi, on est ici pour se faire du jeu indé, RPG, MMORPG, MOBA, FPS ...Venez partager ça en jeu ou sur le tchat 😉",
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null
+   "live": null,
+   "succes": []
   },
   {
    "login": "yukaho_35",
@@ -190,8 +227,9 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": null
+   "live": null,
+   "succes": []
   }
  ],
- "maj": "2026-09-26T20:50:07.047Z"
+ "maj": "2026-09-27T11:50:33.043Z"
 }
