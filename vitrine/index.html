@@ -149,6 +149,13 @@ body.profil .intro, body.profil #stats, body.profil #discord, body.profil #hasar
 .evt p{margin:6px 0;color:#D4CFF5;font-size:15.5px;white-space:pre-line}
 .evt .ppl{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
 .evt .ppl a .av{width:30px;height:30px;font-size:13px}
+.evt .acts{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:10px}
+.btn.mini{padding:7px 14px;font-size:15px;border-radius:8px}
+.evt .acts a.dc{font-size:15px}
+.evt .wait{font-size:14px;color:var(--muted);flex-basis:100%}
+.evt .moi{font-size:14px;color:var(--cyan)}
+#toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);max-width:min(560px,calc(100% - 32px));background:var(--panel);border:1px solid var(--pink);color:var(--text);padding:12px 18px;border-radius:12px;font-size:16px;box-shadow:0 8px 30px rgba(0,0,0,.45);z-index:50}
+#toast[hidden]{display:none}
 
 footer{border-top:1px solid var(--line);margin-top:50px;padding:22px 0 40px;color:var(--muted);font-size:15px;display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between}
 
@@ -169,6 +176,7 @@ footer{border-top:1px solid var(--line);margin-top:50px;padding:22px 0 40px;colo
 
   <main id="main"><p class="empty">Chargement…</p></main>
 
+  <div id="toast" role="status" aria-live="polite" hidden></div>
   <footer><span id="maj"></span><span>Données publiques Twitch · <a href="https://www.twitch.tv" target="_blank" rel="noopener">twitch.tv</a></span></footer>
 </div>
 
@@ -179,7 +187,7 @@ const esc = v => String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt
 const okLogin = l => /^[a-z0-9_]{1,25}$/i.test(l || "");
 const okImg = u => /^https:\/\/static-cdn\.jtvnw\.net\//.test(u || "");
 const chan = l => `https://www.twitch.tv/${encodeURIComponent(l)}`;
-let DATA = null, filtre = "tous", q = "";
+let DATA = null, filtre = "tous", q = "", chargerFait = false;
 
 function av(m){ return okImg(m.avatar) ? `<img class="av" src="${esc(m.avatar)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : `<span class="av" aria-hidden="true">${esc((m.nom || m.login || "?")[0])}</span>`; }
 function tags(m){
@@ -258,7 +266,8 @@ function render(){
         <div style="min-width:0"><span class="ty">${esc(e.type || "Événement")} · ${e.j === 0 ? "aujourd'hui" : e.j === 1 ? "demain" : e.dt.toLocaleDateString("fr-FR", {weekday:"long"})}</span>
           <h3>${esc(e.titre)}</h3>${e.description ? `<p>${esc(e.description)}</p>` : ""}
           ${(e.participants || []).filter(x => okLogin(x.login)).length ? `<div class="ppl">${e.participants.filter(x => okLogin(x.login)).map(x => `<a href="${pageUrl(x.login)}" data-nav title="${esc(x.nom)}">${av(x)}</a>`).join("")}</div>` : ""}
-          ${/^https:\/\//.test(e.lien || "") ? `<p><a href="${esc(e.lien)}" target="_blank" rel="noopener">Plus d'infos</a></p>` : ""}</div>
+          ${/^https:\/\//.test(e.lien || "") ? `<p><a href="${esc(e.lien)}" target="_blank" rel="noopener">Plus d'infos</a></p>` : ""}
+          ${actionsEvt(e, d)}</div>
       </article>`).join("")}</div></section>` : ""}
     ${annivs.length ? `<section aria-labelledby="h-anniv"><h2 id="h-anniv">🎂 Anniversaires de stream</h2>
       <div class="annivs">${annivs.map(({m, a}) => `<a class="ann ${a.jours ? "bientot" : ""}" href="${pageUrl(m.login)}" data-nav>${av(m)}<span>${a.jours === 0
@@ -376,6 +385,72 @@ function decouvrir(){
   history.pushState(null, "", pageUrl(m.login)); render();
 }
 
+/* ---------- Inscriptions aux événements (streamers de La Cabane) ----------
+   Connexion Twitch (prouve qui tu es) → demande déposée dans un salon Discord privé →
+   le robot la vérifie auprès de Twitch, l'ajoute, puis efface le message. */
+const SESSION = "cabane.vitrine.twitch", ATTENTE = "cabane.vitrine.attente", RETOUR = "cabane.vitrine.oauth";
+const lire = (st, k) => { try { return JSON.parse(st.getItem(k)); } catch { return null; } };
+const ecrire = (st, k, v) => { try { v == null ? st.removeItem(k) : st.setItem(k, JSON.stringify(v)); } catch {} };
+const okWebhook = u => /^https:\/\/(discord\.com|discordapp\.com)\/api\/webhooks\/\d+\/[\w-]+$/.test(u || "");
+const redirectUri = () => location.origin + location.pathname.replace(/index\.html$/, "");
+let toastT = null;
+function toast(t){ const el = $("#toast"); el.textContent = t; el.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => { el.hidden = true; }, 6000); }
+function attentes(){
+  const a = lire(localStorage, ATTENTE) || {}, s = lire(sessionStorage, SESSION);
+  for(const [id, x] of Object.entries(a)){
+    const e = (DATA?.agenda || []).find(y => y.id === id), dedans = !!e?.participants?.some(p => p.login.toLowerCase() === x.login.toLowerCase());
+    if(!e || Date.now() - x.le > 3 * 36e5 || (x.action === "in") === dedans || (s && s.login !== x.login)) delete a[id];
+  }
+  ecrire(localStorage, ATTENTE, a); return a;
+}
+function actionsEvt(e, d){
+  const ins = d.inscriptions && okWebhook(d.inscriptions.webhook) && e.id, dc = /^https:\/\/discord\.com\/channels\//.test(e.discord || "") ? e.discord : "";
+  if(!ins && !dc) return "";
+  const s = lire(sessionStorage, SESSION), att = attentes()[e.id];
+  const dedans = !!(s && (e.participants || []).some(p => p.login.toLowerCase() === s.login.toLowerCase()));
+  const veut = att ? att.action === "in" : dedans;
+  return `<div class="acts">
+    ${ins ? (veut ? `<span class="moi">✓ Tu participes</span><button class="btn alt mini" type="button" data-insout="${esc(e.id)}">Me désinscrire</button>`
+                  : `<button class="btn mini" type="button" data-ins="${esc(e.id)}">✋ Je participe</button>`) : ""}
+    ${dc ? `<a class="dc" href="${esc(dc)}" target="_blank" rel="noopener">${ins ? "ou réagis ✅ sur Discord" : "S'inscrire : réagis ✅ sur Discord"}</a>` : ""}
+    ${att ? `<span class="wait">⏳ ${att.action === "in" ? "Inscription" : "Désinscription"} envoyée : elle apparaîtra ici d'ici une heure.</span>` : ""}
+  </div>`;
+}
+async function inscrire(id, action){
+  const ins = DATA?.inscriptions; if(!ins || !okWebhook(ins.webhook)) return;
+  const s = lire(sessionStorage, SESSION);
+  if(!s){   // d'abord : qui es-tu ? (connexion Twitch, sans aucune autorisation demandée)
+    const etat = Math.random().toString(36).slice(2) + Date.now().toString(36);
+    ecrire(sessionStorage, RETOUR, {etat, id, action, retour:location.search});
+    location.href = `https://id.twitch.tv/oauth2/authorize?${new URLSearchParams({client_id:ins.clientId, redirect_uri:redirectUri(), response_type:"token", scope:"", state:etat})}`;
+    return;
+  }
+  if(!(DATA.membres || []).some(m => m.login.toLowerCase() === s.login.toLowerCase())){
+    toast(`Les inscriptions sont réservées aux streamers de La Cabane (tu es connecté à Twitch en tant que ${s.login}).`); return; }
+  const fd = new FormData();
+  fd.append("payload_json", JSON.stringify({username:`Vitrine · ${s.login}`, allowed_mentions:{parse:[]},
+    content:JSON.stringify({cabane:"inscription", ev:id, action, jeton:s.jeton})}));
+  let ok = true;
+  try { const r = await fetch(ins.webhook, {method:"POST", body:fd}); ok = r.ok; } catch { /* réponse illisible (CORS) : la demande est quand même partie */ }
+  if(!ok){ toast("La demande n'a pas pu être envoyée. Réessaie plus tard, ou réagis ✅ sur Discord."); return; }
+  const a = attentes(); a[id] = {action, login:s.login, le:Date.now()}; ecrire(localStorage, ATTENTE, a);
+  render();
+  toast(action === "in" ? "C'est noté ! Ton inscription sera visible d'ici une heure." : "Désinscription envoyée, elle sera prise en compte d'ici une heure.");
+}
+async function retourTwitch(){
+  const h = new URLSearchParams(location.hash.slice(1)); if(!h.has("access_token") && !h.has("error")) return;
+  const r = lire(sessionStorage, RETOUR); ecrire(sessionStorage, RETOUR, null);
+  history.replaceState(null, "", location.pathname + (r?.retour || ""));
+  if(h.has("error")){ toast("Connexion Twitch annulée."); return; }
+  if(!r || h.get("state") !== r.etat){ toast("Connexion Twitch refusée (vérification de sécurité)."); return; }
+  try {
+    const j = await (await fetch("https://api.twitch.tv/helix/users", {headers:{Authorization:`Bearer ${h.get("access_token")}`, "Client-Id":DATA?.inscriptions?.clientId || ""}})).json();
+    const u = j.data?.[0]; if(!u) throw 0;
+    ecrire(sessionStorage, SESSION, {jeton:h.get("access_token"), login:u.login, id:u.id});
+  } catch { toast("Impossible de vérifier ton compte Twitch. Réessaie."); return; }
+  if(r.id) await inscrire(r.id, r.action);
+}
+
 async function charger(){
   try {
     const r = await fetch(`membres.json?t=${Date.now()}`, {cache:"no-store"});
@@ -390,6 +465,7 @@ async function charger(){
   } catch { if(!DATA) $("#main").innerHTML = `<p class="empty">Impossible de charger la liste pour le moment. Réessaie dans quelques minutes.</p>`; return; }
   const focus = document.activeElement?.id === "q", pos = focus ? document.activeElement.selectionStart : 0;
   render();
+  if(!chargerFait){ chargerFait = true; await retourTwitch(); }
   if(focus){ const el = $("#q"); el.focus(); try { el.setSelectionRange(pos, pos); } catch {} }
   verifierLives();
 }
@@ -399,6 +475,8 @@ document.addEventListener("click", e => {
   if(n && !e.ctrlKey && !e.metaKey && !e.shiftKey && e.button === 0){ e.preventDefault(); const retour = !new URLSearchParams(location.search).get("m"); if(retour) sessionScroll = window.scrollY;
     history.pushState(null, "", n.getAttribute("href")); render(); if(n.getAttribute("href") === "./") window.scrollTo(0, sessionScroll || 0); return; }
   if(e.target.closest("#hasard, #autre")){ const m = new URLSearchParams(location.search).get("m"); if(m && !deja.includes(m)) deja.push(m); decouvrir(); return; }
+  const ib = e.target.closest("[data-ins], [data-insout]");
+  if(ib){ ib.disabled = true; inscrire(ib.dataset.ins || ib.dataset.insout, ib.dataset.ins ? "in" : "out"); return; }
   if(e.target.id === "copyLien"){ const t = location.href; const ok = () => { e.target.textContent = "Lien copié ✓"; setTimeout(() => { e.target.textContent = "Copier le lien de cette page"; }, 2500); };
     (navigator.clipboard?.writeText(t) || Promise.reject()).then(ok, () => prompt("Copie ce lien :", t)); }
 });

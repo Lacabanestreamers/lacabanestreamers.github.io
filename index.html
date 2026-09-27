@@ -429,7 +429,16 @@ function applyOp(d, op){
     case "rappelAdd": { const r = (d[op.c]||[]).find(x => x.id === op.id); if(!r) break; r.rappels = r.rappels || [];
       if(!r.rappels.some(x => x.id === op.rp.id)) r.rappels.push({...op.rp, par:op.par, cree:op.le}); break; }
     case "agendaSet": { d.agenda = d.agenda || []; const i = d.agenda.findIndex(x => x.id === op.ev.id);
-      if(i < 0) d.agenda.push(op.ev); else d.agenda[i] = {...d.agenda[i], ...op.ev}; break; }
+      if(i < 0){ d.agenda.push(op.ev); break; }
+      const cur = d.agenda[i], ev = {...op.ev};
+      // participants : on n'applique que ce que la personne a changé dans le formulaire,
+      // pour ne pas effacer les inscriptions arrivées (Discord, vitrine) pendant qu'elle le remplissait
+      if(op.pplAvant){ const av = op.pplAvant, nv = ev.participants || [];
+        ev.participants = [...(cur.participants || []).filter(l => !(av.includes(l) && !nv.includes(l))), ...nv.filter(l => !av.includes(l) && !(cur.participants || []).includes(l))]; }
+      d.agenda[i] = {...cur, ...ev}; break; }
+    case "agendaPpl": { const e = (d.agenda || []).find(x => x.id === op.id); if(!e) break; e.participants = e.participants || [];
+      if(op.add && !e.participants.includes(op.add)) e.participants.push(op.add);
+      if(op.inconnu && e.discordInconnus) e.discordInconnus = e.discordInconnus.filter(x => x.id !== op.inconnu); break; }
     case "agendaDel": d.agenda = (d.agenda || []).filter(x => x.id !== op.id); break;
     case "rappelDel": { const r = (d[op.c]||[]).find(x => x.id === op.id); if(r?.rappels) r.rappels = r.rappels.filter(x => x.id !== op.rid); break; }
     case "snapshot": d.snapshots = d.snapshots.filter(s => s.date !== op.s.date); d.snapshots.push(op.s);
@@ -1701,6 +1710,7 @@ function viewAide(){
     <p>Dans une fiche, section <b>Rappels</b> : choisis une date et écris quoi faire (« recontacter après ses vacances »). Le jour venu, le rappel apparaît sur l'Accueil (« Rappels du jour », filtre « Les miens ») et une 🔔 s'affiche dans les tableaux. Clique sur <b>Fait</b> une fois traité.</p>
     <h3>Organiser un événement</h3>
     <p>Onglet <b>Événements</b> → <b>Créer un événement</b> : titre, date, heure, type, description et participants. S'il est public, il apparaît sur la vitrine. Si <b>Partager sur Discord</b> est coché, le robot le publie dans le salon événements environ une minute après l'enregistrement (et envoie un message de mise à jour si la date ou l'heure change). Avec les rappels cochés, il le rappelle aussi la veille à 18 h et le jour même à 9 h.</p>
+    <p><b>Inscriptions</b> (streamers de La Cabane seulement) : réaction ✅ sous le message Discord de l'événement, ou bouton « Je participe » sur la vitrine (connexion Twitch). Le robot les ajoute à chaque passage, toutes les heures ; le bouton « Relever les inscriptions maintenant » le lance tout de suite. Si un compte Discord n'est pas reconnu, la carte de l'événement te demande à quel streamer il correspond : c'est retenu pour la suite. Un participant que tu retires à la main n'est pas réajouté tant qu'il ne remet pas sa réaction.</p>
     <h3>Modifier plusieurs fiches</h3>
     <p>Coche les fiches dans un tableau : une barre apparaît en bas pour changer d'un coup le statut, le rôle, le référent ou une étiquette.</p>
     <h3>Supprimer par erreur ?</h3>
@@ -1748,7 +1758,8 @@ function evCarte(e, passe){
       ${!passe ? `<span class="meta" style="margin-left:6px">${j === 0 ? "aujourd'hui" : j === 1 ? "demain" : `dans ${j} jours`}</span>` : ""}
       ${e.description ? `<p class="desc">${esc(e.description)}</p>` : ""}
       ${safeUrl(e.lien || "") ? `<p style="margin:4px 0"><a href="${esc(e.lien)}" target="_blank" rel="noopener">${esc(e.lien.replace(/^https?:\/\/(www\.)?/, "").slice(0, 50))}</a></p>` : ""}
-      ${ppl.length ? `<div class="ppl">${ppl.map(m => `<span class="who" title="${esc(m.login)}">${avatarHtml(m.login)}<span class="muted" style="font-size:14px">${esc(m.login)}</span></span>`).join("")}</div>` : `<p class="meta" style="margin:4px 0 0">Pas encore de participant.</p>`}
+      ${ppl.length ? `<div class="ppl">${ppl.map(m => `<span class="who" title="${esc(m.login)}${(e.viaDiscord || []).includes(m.login) ? " · inscrit via Discord" : ""}">${avatarHtml(m.login)}<span class="muted" style="font-size:14px">${esc(m.login)}${(e.viaDiscord || []).includes(m.login) ? " ✅" : ""}</span></span>`).join("")}</div>` : `<p class="meta" style="margin:4px 0 0">Pas encore de participant.${!passe && e.publieDiscord?.msg ? " Les inscriptions se font par ✅ sous le message Discord ou sur la vitrine." : ""}</p>`}
+      ${!passe && (e.discordInconnus || []).length ? `<div class="inconnus"><p class="meta" style="margin:6px 0 2px">✅ sur Discord, compte non reconnu : à qui est-il ?</p>${e.discordInconnus.map(x => `<label class="meta" style="display:flex;gap:6px;align-items:center;margin:2px 0"><b style="color:var(--text)">${esc(x.nom)}</b><select data-evlier="${e.id}" data-did="${esc(x.id)}" data-dnom="${esc(x.nom)}"><option value="">Choisir le streamer…</option>${S.data.membres.filter(m => m.statut !== "Parti").sort((a, b) => a.login.localeCompare(b.login)).map(m => `<option value="${m.id}">${esc(m.login)}</option>`).join("")}</select></label>`).join("")}</div>` : ""}
       ${e.par ? `<p class="meta" style="margin:6px 0 0">Créé par ${esc(e.par)}</p>` : ""}</div>
     <div class="acts" style="display:flex;gap:6px;flex-wrap:wrap"><button class="btn ghost" data-evedit="${e.id}">Modifier</button><button class="btn danger" data-evdel="${e.id}">Supprimer</button></div>
   </article>`;
@@ -1777,8 +1788,9 @@ function evForm(){
 function viewAgenda(){
   const {avenir, passes} = agendaTri();
   return `<h1>Événements</h1>
-  <p class="sub">Raids, soirées jeux, streams caritatifs… Les événements publics apparaissent sur la vitrine. Coche « Partager sur Discord » pour que le robot les publie tout de suite dans le salon événements (puis rappels la veille et le jour même).</p>
-  <div class="tools"><button class="btn primary" id="evNew">Créer un événement</button></div>
+  <p class="sub">Raids, soirées jeux, streams caritatifs… Les événements publics apparaissent sur la vitrine. Coche « Partager sur Discord » pour que le robot les publie tout de suite dans le salon événements (puis rappels la veille et le jour même). Les streamers s'inscrivent en réagissant ✅ sous ce message ou avec le bouton « Je participe » de la vitrine : le robot les ajoute à chaque passage (toutes les heures).</p>
+  <div class="tools"><button class="btn primary" id="evNew">Créer un événement</button><button class="btn ghost" id="evRelever" title="Le robot relit les réactions Discord et les demandes de la vitrine (sinon il le fait toutes les heures)">Relever les inscriptions maintenant</button></div>
+  ${S.data.robot?.inscriptions && !S.data.robot.inscriptions.ok ? `<p class="warnbox" role="alert" style="border:1px solid var(--warn,#ffb020);border-radius:10px;padding:10px 14px;margin:10px 0">⚠ Inscriptions : ${esc(S.data.robot.inscriptions.erreur || "problème inconnu")}</p>` : ""}
   ${evForm()}
   <h2 style="font:700 17px Orbitron,sans-serif;margin:18px 0 10px">À venir (${avenir.length})</h2>
   ${avenir.length ? `<div class="evs">${avenir.map(e => evCarte(e, false)).join("")}</div>` : `<p class="none">Aucun événement prévu.</p>`}
@@ -1956,8 +1968,9 @@ document.addEventListener("click", e => {
     render(); return; }
   const bk = t.closest("[data-bulk]"); if(bk){ bulkApply(bk.dataset.bulk); return; }
   if(t.id === "evNew"){ S.evEdit = {participants:[], type:"Raid train", public:true, discord:true}; render(); setTimeout(() => $("#ev_titre")?.focus(), 0); return; }
+  if(t.id === "evRelever"){ if(S.mode !== "github"){ toast("Il faut être connecté à GitHub.", true); return; } notifyRobot(); toast("Robot lancé : les nouvelles inscriptions arrivent d'ici une à deux minutes."); return; }
   if(t.id === "evCancel"){ S.evEdit = null; render(); return; }
-  const eed = t.closest("[data-evedit]"); if(eed){ S.evEdit = JSON.parse(JSON.stringify((S.data.agenda || []).find(x => x.id === eed.dataset.evedit) || null)); render(); window.scrollTo(0, 0); return; }
+  const eed = t.closest("[data-evedit]"); if(eed){ S.evEdit = JSON.parse(JSON.stringify((S.data.agenda || []).find(x => x.id === eed.dataset.evedit) || null)); if(S.evEdit) S.evEdit._pplAvant = [...(S.evEdit.participants || [])]; render(); window.scrollTo(0, 0); return; }
   const edl = t.closest("[data-evdel]"); if(edl){ const e = (S.data.agenda || []).find(x => x.id === edl.dataset.evdel); if(e && confirm(`Supprimer l'événement « ${e.titre} » ?`)){ dispatch({t:"agendaDel", id:e.id, notify:true, txt:`Événement supprimé : ${e.titre}`}); toast("Événement supprimé"); } return; }
   const epl = t.closest("[data-evppl]"); if(epl && S.evEdit){ S.evEdit = {...lireEvForm(), participants:(S.evEdit.participants || []).filter(l => l !== epl.dataset.evppl)}; render(); return; }
   if(t.id === "evSave"){ const e = lireEvForm();
@@ -1966,9 +1979,10 @@ document.addEventListener("click", e => {
     const neuf = !e.id; if(neuf){ e.id = uid("ev_"); e.par = cfg.me || ""; }
     // si la date ou l'heure change, les annonces Discord repartent
     const ancien = (S.data.agenda || []).find(x => x.id === e.id);
-    delete e.annonceVeille; delete e.annonceJour; delete e.publieDiscord;   // ces drapeaux appartiennent au robot : on ne les renvoie pas (valeurs peut-être périmées)
+    const pplAvant = e._pplAvant; delete e._pplAvant;
+    delete e.annonceVeille; delete e.annonceJour; delete e.publieDiscord; delete e.viaDiscord; delete e.discordInconnus;   // ces drapeaux appartiennent au robot : on ne les renvoie pas (valeurs peut-être périmées)
     if(ancien && (ancien.date !== e.date || ancien.heure !== e.heure)){ e.annonceVeille = false; e.annonceJour = false; }
-    dispatch({t:"agendaSet", ev:e, notify:true, txt:`Événement ${neuf ? "créé" : "modifié"} : ${e.titre} (${fmtDate(e.date)}${e.heure ? " " + e.heure : ""})`});
+    dispatch({t:"agendaSet", ev:e, ...(pplAvant ? {pplAvant} : {}), notify:true, txt:`Événement ${neuf ? "créé" : "modifié"} : ${e.titre} (${fmtDate(e.date)}${e.heure ? " " + e.heure : ""})`});
     S.evEdit = null; render(); const aPartager = e.publierDiscord && (!ancien?.publieDiscord || ancien.publieDiscord.date !== e.date || (ancien.publieDiscord.heure || "") !== (e.heure || ""));
     toast(`${neuf ? "Événement créé" : "Événement enregistré"}${aPartager ? " · publication Discord d'ici une minute" : ""}${e.public !== false ? " · sur la vitrine d'ici 2 à 3 minutes" : ""}`); return; }
   const rpf = t.closest("[data-rpf]"); if(rpf){ S.f.rpMiens = rpf.dataset.rpf === "1"; render(); return; }
@@ -2169,6 +2183,11 @@ document.addEventListener("input", e => {
 });
 document.addEventListener("change", e => {
   const t = e.target;
+  if(t.dataset.evlier && t.value){ const m = S.data.membres.find(x => x.id === t.value), ev = (S.data.agenda || []).find(x => x.id === t.dataset.evlier); if(!m || !ev) return;
+    // le compte Discord est mémorisé sur la fiche : ses prochaines réactions seront reconnues toutes seules
+    dispatch({t:"patch", c:"membres", id:m.id, p:{discordId:t.dataset.did, discord:t.dataset.dnom}, auto:true});
+    dispatch({t:"agendaPpl", id:ev.id, add:m.login, inconnu:t.dataset.did, txt:`${m.login} inscrit à « ${ev.titre} » (✅ Discord de ${t.dataset.dnom})`});
+    toast(`${t.dataset.dnom} = ${m.login} : inscrit, et reconnu automatiquement la prochaine fois`); return; }
   if(t.id === "refSel"){ S.f.ref = t.value; render(); return; }
   if(t.id === "roleSel"){ S.f.mrole = t.value; render(); return; }
   if(t.id === "ev_ppl" && S.evEdit){ const l = normLogin(t.value); if(!l) return;
