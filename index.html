@@ -2164,7 +2164,9 @@ document.addEventListener("change", e => {
     const {c, id} = S.drawer; const r = S.data[c].find(x => x.id === id); if(!r) return;
     let v = t.type === "checkbox" ? (t.dataset.date ? (t.checked ? todayISO() : null) : t.checked) : t.value.trim();
     if(t.type === "number") v = v === "" ? null : Number(v);
-    if(t.type === "date") v = v || null;
+    if(t.type === "date"){ v = v || null;
+      // En tapant l'année chiffre par chiffre, le navigateur envoie « 0002 », « 0020 », « 0202 »… : on attend une année plausible
+      if(v && (Number(v.slice(0,4)) < 1990 || Number(v.slice(0,4)) > new Date().getFullYear() + 5)) return; }
     const k = t.dataset.k;
     const extra = {};
     if(k === "statut" && v === "Parti" && !r.depart) extra.depart = todayISO();
