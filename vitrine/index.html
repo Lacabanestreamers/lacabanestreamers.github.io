@@ -392,7 +392,7 @@ const SESSION = "cabane.vitrine.twitch", ATTENTE = "cabane.vitrine.attente", RET
 const lire = (st, k) => { try { return JSON.parse(st.getItem(k)); } catch { return null; } };
 const ecrire = (st, k, v) => { try { v == null ? st.removeItem(k) : st.setItem(k, JSON.stringify(v)); } catch {} };
 const okWebhook = u => /^https:\/\/(discord\.com|discordapp\.com)\/api\/webhooks\/\d+\/[\w-]+$/.test(u || "");
-const redirectUri = () => location.origin + location.pathname.replace(/index\.html$/, "");
+const redirectUri = () => location.origin + "/";   // adresse déjà autorisée dans l'application Twitch (page staff), qui renvoie ici
 let toastT = null;
 function toast(t){ const el = $("#toast"); el.textContent = t; el.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => { el.hidden = true; }, 6000); }
 function attentes(){
