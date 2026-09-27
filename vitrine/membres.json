@@ -14,7 +14,17 @@
    "au": "2026-09-27"
   }
  },
- "agenda": [],
+ "agenda": [
+  {
+   "titre": "test",
+   "date": "2026-09-28",
+   "heure": "",
+   "type": "Collab",
+   "description": "test",
+   "lien": "",
+   "participants": []
+  }
+ ],
  "membres": [
   {
    "login": "aly0806",
@@ -305,5 +315,5 @@
    "succes": []
   }
  ],
- "maj": "2026-09-27T21:30:16.336Z"
+ "maj": "2026-09-27T21:30:36.314Z"
 }
