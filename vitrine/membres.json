@@ -4,10 +4,10 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 21,
-  "affilies": 19,
-  "nouveaux30": 21,
-  "heuresLive30": 25,
+  "membres": 22,
+  "affilies": 20,
+  "nouveaux30": 22,
+  "heuresLive30": 28,
   "followsGagnes30": 206,
   "periode": {
    "du": "2026-09-23",
@@ -36,13 +36,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-22",
-   "live": {
-    "viewers": 26,
-    "jeu": "The Cosmic Wheel Sisterhood",
-    "titre": "Changement de programme, soutien à Hanao",
-    "depuis": "2026-09-27T11:54:22Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asalie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-07-27",
    "succes": []
   },
@@ -121,7 +115,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 4,
+    "viewers": 8,
     "jeu": "Parisian Brasserie Simulator",
     "titre": "☕ Cuisine et ambiance chill sur ParisianBrasserie 🍸",
     "depuis": "2026-09-27T12:45:35Z",
@@ -150,13 +144,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 20,
-    "jeu": "Art",
-    "titre": "🖍️ Coloriage !🎨 | Avec @Gaffeuse_💬 !lurk !clip !commandes",
-    "depuis": "2026-09-27T12:00:09Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-05-25",
    "succes": []
   },
@@ -233,6 +221,24 @@
    "succes": []
   },
   {
+   "login": "morganokonrin",
+   "nom": "MorganOkonrin",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/630cd4f7-b13c-42b3-b940-315aad97390e-profile_image-300x300.jpeg",
+   "bio": "",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-09-27",
+   "live": {
+    "viewers": 2,
+    "jeu": "No Man's Sky",
+    "titre": "On continue l'expédition !",
+    "depuis": "2026-09-27T07:31:33Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
+   },
+   "premierStream": null,
+   "succes": []
+  },
+  {
    "login": "mysti94",
    "nom": "Mysti94",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/19f324be-aa0d-4f23-b9d2-73d9f99b0cb4-profile_image-300x300.png",
@@ -293,5 +299,5 @@
    "succes": []
   }
  ],
- "maj": "2026-09-27T13:51:05.231Z"
+ "maj": "2026-09-27T17:25:03.799Z"
 }
