@@ -3,6 +3,18 @@
  "titre": "La Cabane",
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
+ "chiffres": {
+  "membres": 22,
+  "affilies": 20,
+  "nouveaux30": 22,
+  "heuresLive30": 31,
+  "followsGagnes30": 228,
+  "periode": {
+   "du": "2026-09-23",
+   "au": "2026-09-27"
+  }
+ },
+ "agenda": [],
  "membres": [
   {
    "login": "aly0806",
@@ -13,6 +25,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": null,
+   "premierStream": "2025-03-29",
    "succes": []
   },
   {
@@ -23,14 +36,15 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-22",
-   "live": {
-    "viewers": 11,
-    "jeu": "The Cosmic Wheel Sisterhood",
-    "titre": "Changement de programme, soutien à Hanao",
-    "depuis": "2026-09-27T11:54:22Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asalie-440x248.jpg"
-   },
-   "succes": []
+   "live": null,
+   "premierStream": "2025-07-27",
+   "succes": [
+    {
+     "type": "palier",
+     "palier": 150,
+     "date": "2026-09-27"
+    }
+   ]
   },
   {
    "login": "aulit42369",
@@ -41,6 +55,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": null,
+   "premierStream": "2025-10-09",
    "succes": []
   },
   {
@@ -51,7 +66,14 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Stardew Valley",
+    "titre": "🐮STARDEW VALLEY • Marnie aime nous stp pour qu'on recup le slibard • 6 💗",
+    "depuis": "2026-09-27T19:00:37Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bichoune_-440x248.jpg"
+   },
+   "premierStream": "2025-10-04",
    "succes": []
   },
   {
@@ -63,6 +85,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": null,
+   "premierStream": "2026-06-05",
    "succes": []
   },
   {
@@ -74,6 +97,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": null,
+   "premierStream": "2025-02-13",
    "succes": [
     {
      "type": "palier",
@@ -91,6 +115,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": null,
+   "premierStream": "2025-06-04",
    "succes": []
   },
   {
@@ -102,6 +127,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": null,
+   "premierStream": "2025-11-16",
    "succes": []
   },
   {
@@ -113,6 +139,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": null,
+   "premierStream": "2024-08-12",
    "succes": []
   },
   {
@@ -123,13 +150,8 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 11,
-    "jeu": "Art",
-    "titre": "🖍️ Coloriage !🎨 | Avec @Gaffeuse_💬 !lurk !clip !commandes",
-    "depuis": "2026-09-27T12:00:09Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
-   },
+   "live": null,
+   "premierStream": "2025-05-25",
    "succes": []
   },
   {
@@ -141,6 +163,25 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": null,
+   "premierStream": "2024-06-17",
+   "succes": []
+  },
+  {
+   "login": "laelya_",
+   "nom": "Laelya_",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/573b258c-b832-4e27-b719-827121afc530-profile_image-300x300.png",
+   "bio": "🌸 Laélya | Streameuse Gaming 🎮 (Roguelike, RPG & Stratégie) + Fan de Manga/Anime !",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-09-27",
+   "live": {
+    "viewers": 13,
+    "jeu": "Graveyard Keeper II",
+    "titre": "SOIRÉE JEU 🎮💫 : On joue à Graveyard Keeper 2, le RPG d'aventure/gestion le plus addictif du moment ! | Découverte Test Nouveauté jeu-vidéo",
+    "depuis": "2026-09-27T19:01:07Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
+   },
+   "premierStream": "2025-10-10",
    "succes": []
   },
   {
@@ -152,6 +193,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": null,
+   "premierStream": "2022-04-19",
    "succes": []
   },
   {
@@ -163,6 +205,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": null,
+   "premierStream": "2018-08-08",
    "succes": []
   },
   {
@@ -174,6 +217,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": null,
+   "premierStream": "2025-01-08",
    "succes": []
   },
   {
@@ -184,13 +228,20 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": {
-    "viewers": 3,
-    "jeu": "Gartic Show",
-    "titre": "Aujourd'hui on joue ensemble   ...  !discord !regles !don !wishlist",
-    "depuis": "2026-09-27T11:53:22Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
-   },
+   "live": null,
+   "premierStream": null,
+   "succes": []
+  },
+  {
+   "login": "morganokonrin",
+   "nom": "MorganOkonrin",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/630cd4f7-b13c-42b3-b940-315aad97390e-profile_image-300x300.jpeg",
+   "bio": "",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-09-27",
+   "live": null,
+   "premierStream": "2024-12-03",
    "succes": []
   },
   {
@@ -202,6 +253,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": null,
+   "premierStream": "2025-08-11",
    "succes": []
   },
   {
@@ -213,6 +265,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": null,
+   "premierStream": "2025-09-24",
    "succes": []
   },
   {
@@ -224,6 +277,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": null,
+   "premierStream": "2025-09-10",
    "succes": []
   },
   {
@@ -235,6 +289,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": null,
+   "premierStream": null,
    "succes": []
   },
   {
@@ -246,8 +301,9 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": null,
+   "premierStream": "2025-06-20",
    "succes": []
   }
  ],
- "maj": "2026-09-27T12:11:47.189Z"
+ "maj": "2026-09-27T21:07:57.222Z"
 }
