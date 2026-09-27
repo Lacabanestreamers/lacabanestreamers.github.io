@@ -14,17 +14,7 @@
    "au": "2026-09-28"
   }
  },
- "agenda": [
-  {
-   "titre": "test 3",
-   "date": "2026-09-28",
-   "heure": "",
-   "type": "Raid train",
-   "description": "",
-   "lien": "",
-   "participants": []
-  }
- ],
+ "agenda": [],
  "membres": [
   {
    "login": "aly0806",
@@ -309,5 +299,9 @@
    "succes": []
   }
  ],
- "maj": "2026-09-27T22:02:53.713Z"
+ "inscriptions": {
+  "webhook": "https://discord.com/api/webhooks/1553888440163246081/0PTJYd5BXosQqQUFNDAF1w73exleliAB0e1djrTF28WvjAqWoL469QF8dlzdT9RR1HjC",
+  "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
+ },
+ "maj": "2026-09-27T22:05:39.722Z"
 }
