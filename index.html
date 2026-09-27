@@ -303,6 +303,9 @@ tr.picked{background:rgba(255,79,216,.08)}
 .evform .ppl{margin-top:6px}
 @media (max-width:700px){ .ev{grid-template-columns:70px 1fr} .ev .acts{grid-column:1/-1} }
 
+nav a.navlink{padding:8px 14px;border-radius:8px;color:var(--muted);font-weight:700;font-size:17px;text-decoration:none;white-space:nowrap;flex:none}
+nav a.navlink:hover{color:var(--cyan);text-decoration:none}
+
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--panel2);border:1px solid var(--cyan);padding:10px 18px;border-radius:8px;z-index:60;font-weight:600;max-width:90vw}
 .toast.err{border-color:var(--ko)}
 
@@ -317,6 +320,7 @@ tr.picked{background:rgba(255,79,216,.08)}
   nav{order:4;width:100%;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -4px}
   nav::-webkit-scrollbar{display:none}
   nav button{padding:6px 11px;font-size:16px;white-space:nowrap;flex:none}
+  nav a.navlink{padding:6px 11px;font-size:16px}
   .sync{order:2;width:auto;margin-left:auto}
   /* Tableaux en cartes sur téléphone */
   .tablewrap{border:0;background:none;overflow:visible}
@@ -354,6 +358,7 @@ tr.picked{background:rgba(255,79,216,.08)}
       <button data-view="agenda">Événements</button>
       <button data-view="reglages">Réglages</button>
       <button data-view="aide">Aide</button>
+      <a class="navlink" id="navVitrine" href="vitrine/" target="_blank" rel="noopener" title="Ouvrir la vitrine publique dans un nouvel onglet">Vitrine ↗</a>
     </nav>
     <div class="ticker hidden" id="ticker" aria-label="Anniversaires de stream"></div>
     <div class="sync"><span class="dot" id="syncDot"></span><span id="syncTxt">Non connecté</span></div>
