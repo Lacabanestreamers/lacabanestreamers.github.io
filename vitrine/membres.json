@@ -14,7 +14,17 @@
    "au": "2026-09-28"
   }
  },
- "agenda": [],
+ "agenda": [
+  {
+   "titre": "test 3",
+   "date": "2026-09-28",
+   "heure": "",
+   "type": "Raid train",
+   "description": "",
+   "lien": "",
+   "participants": []
+  }
+ ],
  "membres": [
   {
    "login": "aly0806",
@@ -299,5 +309,5 @@
    "succes": []
   }
  ],
- "maj": "2026-09-27T22:01:12.536Z"
+ "maj": "2026-09-27T22:01:56.574Z"
 }
