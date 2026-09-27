@@ -327,18 +327,29 @@ function renderProfil(m, d){
 const LIVE_RE = /^\d+\s+(day|hour|minute|second)s?(\s*,\s*\d+\s+(day|hour|minute|second)s?)*$/i;
 let liveVerifieA = null;
 const horsLigne = new Map();   // pseudo -> version des données (maj) pour laquelle le live a été vu terminé
+// Le live est vérifié ici, en direct, pour TOUS les membres (pas seulement ceux notés par le robot) :
+// la vitrine reste juste même si le robot a du retard. decapi renvoie une durée si la chaîne est en live.
+const horsLigneOk = t => /offline/i.test(t) && !LIVE_RE.test(t);
+function dureeMs(t){ let ms = 0; for(const [, n, u] of t.matchAll(/(\d+)\s+(day|hour|minute|second)/gi)) ms += n * {day:864e5, hour:36e5, minute:6e4, second:1e3}[u.toLowerCase()]; return ms; }
+async function pool(items, n, fn){ let i = 0; await Promise.all(Array.from({length:Math.min(n, items.length)}, async () => { while(i < items.length) await fn(items[i++]); })); }
+async function decapi(path){ const r = await fetch(`https://decapi.me/twitch/${path}`, {cache:"no-store"}); if(!r.ok) throw 0; return (await r.text()).trim(); }
 async function verifierLives(){
-  const aVerifier = (DATA?.membres || []).filter(m => m.live && okLogin(m.login));
+  const tous = (DATA?.membres || []).filter(m => okLogin(m.login));
+  // au-delà de 80 membres, on ne revérifie que ceux notés en live par le robot (pour rester raisonnable)
+  const aVerifier = tous.length <= 80 ? tous : tous.filter(m => m.live);
   if(!aVerifier.length) return;
   let change = false;
-  await Promise.all(aVerifier.map(async m => {
-    try {
-      const r = await fetch(`https://decapi.me/twitch/uptime/${encodeURIComponent(m.login)}`, {cache:"no-store"});
-      if(!r.ok) return;
-      const t = (await r.text()).trim();
-      if(/offline/i.test(t) && !LIVE_RE.test(t)){ m.live = null; horsLigne.set(m.login, DATA.maj); change = true; }      // live terminé depuis le passage du robot
-    } catch { /* réseau : on garde l'information du robot */ }
-  }));
+  await pool(aVerifier, 6, async m => {
+    let t; try { t = await decapi(`uptime/${encodeURIComponent(m.login)}`); } catch { return; }   // réseau : on garde l'information du robot
+    if(LIVE_RE.test(t)){
+      if(!m.live){   // passé en live depuis le passage du robot : on complète les infos
+        const [jeu, titre, vw] = await Promise.all([decapi(`game/${encodeURIComponent(m.login)}`).catch(() => ""), decapi(`title/${encodeURIComponent(m.login)}`).catch(() => ""), decapi(`viewercount/${encodeURIComponent(m.login)}`).catch(() => "")]);
+        m.live = {viewers:/^\d+$/.test(vw) ? Number(vw) : 0, jeu:/offline|error|not found/i.test(jeu) ? "" : jeu, titre:/error|not found/i.test(titre) ? "" : titre.slice(0, 140),
+          depuis:new Date(Date.now() - dureeMs(t)).toISOString(), apercu:`https://static-cdn.jtvnw.net/previews-ttv/live_user_${m.login.toLowerCase()}-440x248.jpg`};
+        horsLigne.delete(m.login); change = true;
+      }
+    } else if(horsLigneOk(t) && m.live){ m.live = null; horsLigne.set(m.login, DATA.maj); change = true; }
+  });
   liveVerifieA = new Date();
   if(change) render();
 }
@@ -370,7 +381,12 @@ async function charger(){
     const r = await fetch(`membres.json?t=${Date.now()}`, {cache:"no-store"});
     if(r.status === 404){ DATA = {active:false}; }
     else if(!r.ok) throw 0;
-    else { DATA = await r.json(); for(const m of DATA.membres || []) if(m.live && horsLigne.get(m.login) === DATA.maj) m.live = null; }
+    else { const ancien = DATA; DATA = await r.json();
+      for(const m of DATA.membres || []){
+        if(m.live && horsLigne.get(m.login) === DATA.maj) m.live = null;
+        const avant = ancien?.membres?.find(x => x.login === m.login);
+        if(!m.live && avant?.live && ancien.maj === DATA.maj) m.live = avant.live;      // live vu en direct, pas encore dans les données du robot
+      } }
   } catch { if(!DATA) $("#main").innerHTML = `<p class="empty">Impossible de charger la liste pour le moment. Réessaie dans quelques minutes.</p>`; return; }
   const focus = document.activeElement?.id === "q", pos = focus ? document.activeElement.selectionStart : 0;
   render();
@@ -391,6 +407,7 @@ window.addEventListener("popstate", () => render());
 document.addEventListener("input", e => { if(e.target.id === "q"){ q = e.target.value; const pos = e.target.selectionStart; render(); const el = $("#q"); el.focus(); el.setSelectionRange(pos, pos); } });
 charger();
 setInterval(() => { if(document.visibilityState === "visible") charger(); }, 5 * 60 * 1000);
+setInterval(() => { if(document.visibilityState === "visible") verifierLives(); }, 2 * 60 * 1000);
 </script>
 </body>
 </html>
