@@ -7,14 +7,24 @@
   "membres": 22,
   "affilies": 20,
   "nouveaux30": 22,
-  "heuresLive30": 31,
-  "followsGagnes30": 228,
+  "heuresLive30": 33,
+  "followsGagnes30": 229,
   "periode": {
    "du": "2026-09-23",
    "au": "2026-09-27"
   }
  },
- "agenda": [],
+ "agenda": [
+  {
+   "titre": "test",
+   "date": "2026-09-27",
+   "heure": "",
+   "type": "Soirée jeux",
+   "description": "",
+   "lien": "",
+   "participants": []
+  }
+ ],
  "membres": [
   {
    "login": "aly0806",
@@ -175,7 +185,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 13,
+    "viewers": 14,
     "jeu": "Graveyard Keeper II",
     "titre": "SOIRÉE JEU 🎮💫 : On joue à Graveyard Keeper 2, le RPG d'aventure/gestion le plus addictif du moment ! | Découverte Test Nouveauté jeu-vidéo",
     "depuis": "2026-09-27T19:01:07Z",
@@ -305,5 +315,5 @@
    "succes": []
   }
  ],
- "maj": "2026-09-27T21:07:57.222Z"
+ "maj": "2026-09-27T21:29:02.812Z"
 }
