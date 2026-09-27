@@ -391,6 +391,8 @@ function decouvrir(){
 const SESSION = "cabane.vitrine.twitch", ATTENTE = "cabane.vitrine.attente", RETOUR = "cabane.vitrine.oauth";
 const lire = (st, k) => { try { return JSON.parse(st.getItem(k)); } catch { return null; } };
 const ecrire = (st, k, v) => { try { v == null ? st.removeItem(k) : st.setItem(k, JSON.stringify(v)); } catch {} };
+// l'adresse du webhook est publiée masquée (voir le robot) : on la reconstitue ici
+const webhookDe = ins => { try { return ins?.cle ? decodeURIComponent(escape(atob(ins.cle.split("").reverse().join("")))) : (ins?.webhook || ""); } catch { return ""; } };
 const okWebhook = u => /^https:\/\/(discord\.com|discordapp\.com)\/api\/webhooks\/\d+\/[\w-]+$/.test(u || "");
 const redirectUri = () => location.origin + "/";   // adresse déjà autorisée dans l'application Twitch (page staff), qui renvoie ici
 let toastT = null;
@@ -404,7 +406,7 @@ function attentes(){
   ecrire(localStorage, ATTENTE, a); return a;
 }
 function actionsEvt(e, d){
-  const ins = d.inscriptions && okWebhook(d.inscriptions.webhook) && e.id, dc = /^https:\/\/discord\.com\/channels\//.test(e.discord || "") ? e.discord : "";
+  const ins = d.inscriptions && okWebhook(webhookDe(d.inscriptions)) && e.id, dc = /^https:\/\/discord\.com\/channels\//.test(e.discord || "") ? e.discord : "";
   if(!ins && !dc) return "";
   const s = lire(sessionStorage, SESSION), att = attentes()[e.id];
   const dedans = !!(s && (e.participants || []).some(p => p.login.toLowerCase() === s.login.toLowerCase()));
@@ -417,7 +419,7 @@ function actionsEvt(e, d){
   </div>`;
 }
 async function inscrire(id, action){
-  const ins = DATA?.inscriptions; if(!ins || !okWebhook(ins.webhook)) return;
+  const ins = DATA?.inscriptions, wh = webhookDe(ins); if(!ins || !okWebhook(wh)) return;
   const s = lire(sessionStorage, SESSION);
   if(!s){   // d'abord : qui es-tu ? (connexion Twitch, sans aucune autorisation demandée)
     const etat = Math.random().toString(36).slice(2) + Date.now().toString(36);
@@ -431,7 +433,7 @@ async function inscrire(id, action){
   fd.append("payload_json", JSON.stringify({username:`Vitrine · ${s.login}`, allowed_mentions:{parse:[]},
     content:JSON.stringify({cabane:"inscription", ev:id, action, jeton:s.jeton})}));
   let ok = true;
-  try { const r = await fetch(ins.webhook, {method:"POST", body:fd}); ok = r.ok; } catch { /* réponse illisible (CORS) : la demande est quand même partie */ }
+  try { const r = await fetch(wh, {method:"POST", body:fd}); ok = r.ok; } catch { /* réponse illisible (CORS) : la demande est quand même partie */ }
   if(!ok){ toast("La demande n'a pas pu être envoyée. Réessaie plus tard, ou réagis ✅ sur Discord."); return; }
   const a = attentes(); a[id] = {action, login:s.login, le:Date.now()}; ecrire(localStorage, ATTENTE, a);
   render();
