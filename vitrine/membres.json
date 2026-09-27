@@ -14,25 +14,7 @@
    "au": "2026-09-28"
   }
  },
- "agenda": [
-  {
-   "id": "ev_3f6ed71d",
-   "titre": "test 4",
-   "date": "2026-09-28",
-   "heure": "",
-   "type": "Collab",
-   "description": "",
-   "lien": "",
-   "discord": "https://discord.com/channels/1550885636322492476/1551942576230240287/1553890795524857928",
-   "participants": [
-    {
-     "login": "aulit42369",
-     "nom": "Aulit42369",
-     "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/f33ce494-5527-426f-bc67-7a59bbf51609-profile_image-300x300.png"
-    }
-   ]
-  }
- ],
+ "agenda": [],
  "membres": [
   {
    "login": "aly0806",
@@ -321,5 +303,5 @@
   "webhook": "https://discord.com/api/webhooks/1553888440163246081/0PTJYd5BXosQqQUFNDAF1w73exleliAB0e1djrTF28WvjAqWoL469QF8dlzdT9RR1HjC",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-09-27T22:22:59.341Z"
+ "maj": "2026-09-27T22:23:36.866Z"
 }
