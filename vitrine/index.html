@@ -34,6 +34,7 @@ h1{font:800 clamp(40px,8vw,76px)/1 Orbitron,sans-serif;margin:0;letter-spacing:.
 .cta{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:24px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:10px;font-weight:700;font-size:17px;text-decoration:none;border:1px solid var(--pink);background:var(--pink);color:#1a0716}
 .btn:hover{filter:brightness(1.1)}
+button.btn{cursor:pointer;font-family:inherit}
 .stats{color:var(--muted);font-weight:600}
 .stats b{color:var(--text);font-size:19px}
 
@@ -90,7 +91,7 @@ h2 .dot{width:11px;height:11px;border-radius:50%;background:var(--ko);box-shadow
 /* Page d'un membre */
 body.profil header{padding:26px 0 6px}
 body.profil h1{font-size:clamp(28px,5vw,40px)}
-body.profil .intro, body.profil #stats, body.profil #discord{display:none!important}
+body.profil .intro, body.profil #stats, body.profil #discord, body.profil #hasard{display:none!important}
 .back{display:inline-block;margin:6px 0 18px;font-weight:700;text-decoration:none}
 .prof{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px;display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start}
 .prof .av{width:128px;height:128px;font-size:48px;box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--pink),0 0 34px rgba(255,79,216,.45)}
@@ -124,6 +125,31 @@ body.profil .intro, body.profil #stats, body.profil #discord{display:none!import
 .fete{margin-top:14px;padding:10px 14px;border-radius:12px;background:linear-gradient(135deg,rgba(255,79,216,.2),rgba(61,227,255,.1));border:1px solid var(--pink);font-weight:700;font-size:18px}
 .fete.calme{background:none;border-color:var(--line);font-weight:600;font-size:16px;color:#D4CFF5}
 
+/* En chiffres */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:0 0 6px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.kpi b{display:block;font:800 30px/1.1 Orbitron,sans-serif;background:linear-gradient(90deg,var(--pink),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.kpi span{color:var(--muted);font-weight:600;font-size:15px}
+/* Nouveaux */
+.news{display:flex;gap:12px;flex-wrap:wrap}
+.new{display:flex;flex-direction:column;align-items:center;gap:6px;width:110px;text-decoration:none;color:inherit;text-align:center}
+.new .av{width:72px;height:72px;box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--cyan)}
+.new:hover .av{box-shadow:0 0 0 2px var(--bg),0 0 0 4px var(--pink)}
+.new .nm{font-size:15px;max-width:110px}
+.new .d{color:var(--muted);font-size:13px}
+/* Événements */
+.evts{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.evt{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;grid-template-columns:70px 1fr;gap:14px}
+.evt.today{border-color:var(--pink);background:linear-gradient(135deg,rgba(255,79,216,.14),rgba(61,227,255,.06))}
+.evt .q{text-align:center;border-right:1px solid var(--line);padding-right:10px}
+.evt .q b{display:block;font:800 28px/1 Orbitron,sans-serif}
+.evt .q small{display:block;color:var(--muted);font-size:14px}
+.evt h3{margin:0 0 4px;font-size:19px}
+.evt .ty{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;color:var(--cyan)}
+.evt p{margin:6px 0;color:#D4CFF5;font-size:15.5px;white-space:pre-line}
+.evt .ppl{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.evt .ppl a .av{width:30px;height:30px;font-size:13px}
+
 footer{border-top:1px solid var(--line);margin-top:50px;padding:22px 0 40px;color:var(--muted);font-size:15px;display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between}
 
 @media (max-width:600px){
@@ -138,7 +164,7 @@ footer{border-top:1px solid var(--line);margin-top:50px;padding:22px 0 40px;colo
   <header>
     <h1 id="titre">La Cabane</h1>
     <p class="intro" id="texte"></p>
-    <div class="cta"><a class="btn hidden" id="discord" target="_blank" rel="noopener">Rejoindre le Discord</a><span class="stats" id="stats"></span></div>
+    <div class="cta"><a class="btn hidden" id="discord" target="_blank" rel="noopener">Rejoindre le Discord</a><button class="btn alt hidden" id="hasard" type="button">🎲 Découvrir un streamer</button><span class="stats" id="stats"></span></div>
   </header>
 
   <main id="main"><p class="empty">Chargement…</p></main>
@@ -192,6 +218,7 @@ function render(){
   $("#texte").textContent = d.texte || "";
   const dc = $("#discord");
   if(/^https:\/\/(discord\.gg|discord\.com\/invite)\//i.test(d.lienDiscord || "")){ dc.href = d.lienDiscord; dc.classList.remove("hidden"); } else dc.classList.add("hidden");
+  $("#hasard").classList.toggle("hidden", !(d.membres || []).length);
 
   const membres = (d.membres || []).filter(m => okLogin(m.login));
   if(perso){ renderProfil(membres.find(m => m.login.toLowerCase() === perso.toLowerCase()), d); return; }
@@ -202,22 +229,43 @@ function render(){
   const wins = membres.flatMap(m => (m.succes || []).filter(x => x.date >= lim).map(x => ({m, x}))).sort((a, b) => b.x.date.localeCompare(a.x.date)).slice(0, 12);
   const lives = membres.filter(m => m.live).sort((a, b) => (b.live.viewers || 0) - (a.live.viewers || 0));
   const aff = membres.filter(m => m.type === "affiliate" || m.type === "partner").length;
-  $("#stats").innerHTML = `<b>${membres.length}</b> streamers · <b>${lives.length}</b> en live · <b>${aff}</b> affiliés ou partenaires`;
+  $("#stats").innerHTML = "";
 
   const qq = q.trim().toLowerCase();
   const liste = membres.filter(m => (filtre === "tous" || (filtre === "live" && m.live) || (filtre === "aff" && (m.type === "affiliate" || m.type === "partner")) || (filtre === "staff" && m.staff))
     && (!qq || [m.nom, m.login, m.bio, m.live?.jeu].some(x => String(x || "").toLowerCase().includes(qq))));
   const cache = encodeURIComponent(d.maj || "");
+  const ch = d.chiffres || {};
+  const nf = n => Number(n).toLocaleString("fr-FR");
+  const kpis = [[membres.length, "streamers"], [lives.length, "en live maintenant"],
+    ch.heuresLive30 ? [`≈ ${nf(ch.heuresLive30)} h`, "de live ces 30 derniers jours"] : null,
+    ch.followsGagnes30 > 0 ? [`+${nf(ch.followsGagnes30)}`, "follows gagnés ensemble en 30 jours"] : null,
+    ch.affilies ? [ch.affilies, "affiliés ou partenaires"] : null].filter(Boolean);
+  const lim30 = new Date(Date.now() - 30 * 864e5).toISOString().slice(0, 10);
+  const nouveaux = membres.filter(m => m.depuis && m.depuis >= lim30).sort((a, b) => b.depuis.localeCompare(a.depuis));
+  const t0 = new Date(); t0.setHours(0, 0, 0, 0);
+  const agenda = (d.agenda || []).filter(e => /^\d{4}-\d{2}-\d{2}$/.test(e.date)).map(e => { const [y, mo, dd] = e.date.split("-").map(Number); const dt = new Date(y, mo - 1, dd); return {...e, dt, j:Math.round((dt - t0) / 864e5)}; }).filter(e => e.j >= 0);
   main.innerHTML = `
+    <section aria-label="La Cabane en chiffres"><div class="kpis">${kpis.map(([v, l]) => `<div class="kpi"><b>${esc(v)}</b><span>${esc(l)}</span></div>`).join("")}</div></section>
     ${lives.length ? `<section aria-labelledby="h-live"><h2 id="h-live"><span class="dot" aria-hidden="true"></span>En live maintenant</h2>
       <div class="lives">${lives.map(m => `<a class="lv" href="${pageUrl(m.login)}" data-nav title="Voir la page de ${esc(m.nom)}">
         <span class="img" style="${okImg(m.live.apercu) ? `background-image:url('${esc(m.live.apercu)}?t=${cache}')` : ""}"><span class="badge">LIVE</span><span class="vw">${Number(m.live.viewers) || 0} spectateur${(m.live.viewers || 0) > 1 ? "s" : ""}${m.live.depuis ? " · " + duree(m.live.depuis) : ""}</span></span>
         <span class="b">${av(m)}<span style="min-width:0"><span class="nm" style="display:block;font-size:17px">${esc(m.nom)}</span>${m.live.jeu ? `<span class="g">${esc(m.live.jeu)}</span>` : ""}<span class="t">${esc(m.live.titre)}</span></span></span>
       </a>`).join("")}</div></section>` : ""}
+    ${agenda.length ? `<section aria-labelledby="h-evts"><h2 id="h-evts">📅 Prochains événements</h2>
+      <div class="evts">${agenda.map(e => `<article class="evt ${e.j === 0 ? "today" : ""}">
+        <div class="q"><b>${e.dt.getDate()}</b><small>${e.dt.toLocaleDateString("fr-FR", {month:"short"})}</small><small>${esc((e.heure || "").replace(":", "h"))}</small></div>
+        <div style="min-width:0"><span class="ty">${esc(e.type || "Événement")} · ${e.j === 0 ? "aujourd'hui" : e.j === 1 ? "demain" : e.dt.toLocaleDateString("fr-FR", {weekday:"long"})}</span>
+          <h3>${esc(e.titre)}</h3>${e.description ? `<p>${esc(e.description)}</p>` : ""}
+          ${(e.participants || []).filter(x => okLogin(x.login)).length ? `<div class="ppl">${e.participants.filter(x => okLogin(x.login)).map(x => `<a href="${pageUrl(x.login)}" data-nav title="${esc(x.nom)}">${av(x)}</a>`).join("")}</div>` : ""}
+          ${/^https:\/\//.test(e.lien || "") ? `<p><a href="${esc(e.lien)}" target="_blank" rel="noopener">Plus d'infos</a></p>` : ""}</div>
+      </article>`).join("")}</div></section>` : ""}
     ${annivs.length ? `<section aria-labelledby="h-anniv"><h2 id="h-anniv">🎂 Anniversaires de stream</h2>
       <div class="annivs">${annivs.map(({m, a}) => `<a class="ann ${a.jours ? "bientot" : ""}" href="${pageUrl(m.login)}" data-nav>${av(m)}<span>${a.jours === 0
         ? `<b>${esc(m.nom)}</b> fête aujourd'hui <b>${fete(a.ans)}</b> de stream ! 🎉<span class="d">Passe lui souhaiter en live ou sur sa chaîne</span>`
         : `<b>${esc(m.nom)}</b> fêtera ${fete(a.ans)} de stream<span class="d">${a.jours === 1 ? "demain" : `dans ${a.jours} jours`}, le ${a.date.toLocaleDateString("fr-FR", {day:"numeric", month:"long"})}</span>`}</span></a>`).join("")}</div></section>` : ""}
+    ${nouveaux.length ? `<section aria-labelledby="h-new"><h2 id="h-new">👋 Bienvenue aux nouveaux</h2>
+      <div class="news">${nouveaux.map(m => `<a class="new" href="${pageUrl(m.login)}" data-nav>${av(m)}<span class="nm">${esc(m.nom)}</span><span class="d">depuis le ${new Date(m.depuis + "T12:00:00").toLocaleDateString("fr-FR", {day:"numeric", month:"long"})}</span></a>`).join("")}</div></section>` : ""}
     ${wins.length ? `<section aria-labelledby="h-wins"><h2 id="h-wins">Nos réussites</h2>
       <div class="wins">${wins.map(({m, x}) => `<a class="win" href="${pageUrl(m.login)}" data-nav>${av(m)}<span><span class="ic" aria-hidden="true">${succesIc(x)}</span> <b>${esc(m.nom)}</b> ${succesTxt(x)}<span class="d">le ${fmtD(x.date)}</span></span></a>`).join("")}</div></section>` : ""}
     <section aria-labelledby="h-membres"><h2 id="h-membres">Nos streamers</h2>
@@ -264,6 +312,7 @@ function renderProfil(m, d){
         <div class="acts">
           <a class="btn" href="${chan(m.login)}" target="_blank" rel="noopener">${m.live ? "Regarder le live" : "Voir la chaîne Twitch"}</a>
           <button class="btn alt" id="copyLien" type="button">Copier le lien de cette page</button>
+          <button class="btn alt" id="autre" type="button">🎲 Un autre au hasard</button>
           ${/^https:\/\/(discord\.gg|discord\.com\/invite)\//i.test(d.lienDiscord || "") ? `<a class="btn alt" href="${esc(d.lienDiscord)}" target="_blank" rel="noopener">Rejoindre ${esc(d.titre || "La Cabane")}</a>` : ""}
         </div>
         <p class="hint">Streamer de ${esc(d.titre || "La Cabane")} ? Ajoute ce lien dans tes panneaux Twitch ou ta bio : <span style="overflow-wrap:anywhere">${esc(lien)}</span></p>
@@ -294,6 +343,28 @@ async function verifierLives(){
   if(change) render();
 }
 
+// « Découvrir un streamer » : tirage parmi les membres de La Cabane uniquement.
+// En priorité quelqu'un en live (les petits lives ont plus de chances), sinon n'importe quel membre,
+// avec un coup de pouce aux chaînes pas encore affiliées. On évite de retomber sur les derniers tirés.
+const deja = [];
+function tirage(){
+  const membres = (DATA?.membres || []).filter(m => okLogin(m.login));
+  if(!membres.length) return null;
+  const libres = membres.filter(m => !deja.includes(m.login));
+  const pool = libres.length ? libres : membres;
+  const lives = pool.filter(m => m.live);
+  const choix = lives.length && Math.random() < 0.7 ? lives : pool;
+  const poids = m => m.live ? 1 / (1 + Math.sqrt(Number(m.live.viewers) || 0)) : (m.type ? 1 : 2);
+  let total = choix.reduce((a, m) => a + poids(m), 0), x = Math.random() * total;
+  for(const m of choix){ x -= poids(m); if(x <= 0) return m; }
+  return choix[choix.length - 1];
+}
+function decouvrir(){
+  const m = tirage(); if(!m) return;
+  deja.push(m.login); if(deja.length > 8) deja.shift();
+  history.pushState(null, "", pageUrl(m.login)); render();
+}
+
 async function charger(){
   try {
     const r = await fetch(`membres.json?t=${Date.now()}`, {cache:"no-store"});
@@ -311,6 +382,7 @@ document.addEventListener("click", e => {
   const n = e.target.closest("a[data-nav]");
   if(n && !e.ctrlKey && !e.metaKey && !e.shiftKey && e.button === 0){ e.preventDefault(); const retour = !new URLSearchParams(location.search).get("m"); if(retour) sessionScroll = window.scrollY;
     history.pushState(null, "", n.getAttribute("href")); render(); if(n.getAttribute("href") === "./") window.scrollTo(0, sessionScroll || 0); return; }
+  if(e.target.closest("#hasard, #autre")){ const m = new URLSearchParams(location.search).get("m"); if(m && !deja.includes(m)) deja.push(m); decouvrir(); return; }
   if(e.target.id === "copyLien"){ const t = location.href; const ok = () => { e.target.textContent = "Lien copié ✓"; setTimeout(() => { e.target.textContent = "Copier le lien de cette page"; }, 2500); };
     (navigator.clipboard?.writeText(t) || Promise.reject()).then(ok, () => prompt("Copie ce lien :", t)); }
 });
