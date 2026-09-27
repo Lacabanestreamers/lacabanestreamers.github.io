@@ -1957,7 +1957,7 @@ document.addEventListener("click", e => {
   if(t.id === "evNew"){ S.evEdit = {participants:[], type:"Raid train", public:true, discord:true}; render(); setTimeout(() => $("#ev_titre")?.focus(), 0); return; }
   if(t.id === "evCancel"){ S.evEdit = null; render(); return; }
   const eed = t.closest("[data-evedit]"); if(eed){ S.evEdit = JSON.parse(JSON.stringify((S.data.agenda || []).find(x => x.id === eed.dataset.evedit) || null)); render(); window.scrollTo(0, 0); return; }
-  const edl = t.closest("[data-evdel]"); if(edl){ const e = (S.data.agenda || []).find(x => x.id === edl.dataset.evdel); if(e && confirm(`Supprimer l'événement « ${e.titre} » ?`)){ dispatch({t:"agendaDel", id:e.id, txt:`Événement supprimé : ${e.titre}`}); toast("Événement supprimé"); } return; }
+  const edl = t.closest("[data-evdel]"); if(edl){ const e = (S.data.agenda || []).find(x => x.id === edl.dataset.evdel); if(e && confirm(`Supprimer l'événement « ${e.titre} » ?`)){ dispatch({t:"agendaDel", id:e.id, notify:true, txt:`Événement supprimé : ${e.titre}`}); toast("Événement supprimé"); } return; }
   const epl = t.closest("[data-evppl]"); if(epl && S.evEdit){ S.evEdit = {...lireEvForm(), participants:(S.evEdit.participants || []).filter(l => l !== epl.dataset.evppl)}; render(); return; }
   if(t.id === "evSave"){ const e = lireEvForm();
     if(!e.titre || !e.date){ toast("Il faut au moins un titre et une date.", true); return; }
@@ -1967,8 +1967,8 @@ document.addEventListener("click", e => {
     const ancien = (S.data.agenda || []).find(x => x.id === e.id);
     delete e.annonceVeille; delete e.annonceJour;   // ces drapeaux appartiennent au robot : on ne les renvoie pas (valeurs peut-être périmées)
     if(ancien && (ancien.date !== e.date || ancien.heure !== e.heure)){ e.annonceVeille = false; e.annonceJour = false; }
-    dispatch({t:"agendaSet", ev:e, txt:`Événement ${neuf ? "créé" : "modifié"} : ${e.titre} (${fmtDate(e.date)}${e.heure ? " " + e.heure : ""})`});
-    S.evEdit = null; render(); toast(neuf ? "Événement créé" : "Événement enregistré"); return; }
+    dispatch({t:"agendaSet", ev:e, notify:true, txt:`Événement ${neuf ? "créé" : "modifié"} : ${e.titre} (${fmtDate(e.date)}${e.heure ? " " + e.heure : ""})`});
+    S.evEdit = null; render(); toast(`${neuf ? "Événement créé" : "Événement enregistré"}${e.public !== false ? " : il apparaîtra sur la vitrine d'ici 2 à 3 minutes" : ""}`); return; }
   const rpf = t.closest("[data-rpf]"); if(rpf){ S.f.rpMiens = rpf.dataset.rpf === "1"; render(); return; }
   const rpd = t.closest("[data-rpdone]");
   if(rpd){ e.stopPropagation(); const c = rpd.dataset.rpc || S.drawer?.c, id = rpd.dataset.rpid || S.drawer?.id; const r = S.data[c]?.find(x => x.id === id); if(!r) return;
@@ -2110,7 +2110,7 @@ document.addEventListener("click", e => {
   if(t.id === "v_save"){
     const lien = $("#v_discord").value.trim();
     if(lien && !/^https:\/\/(discord\.gg|discord\.com\/invite)\//i.test(lien)){ toast("Le lien Discord doit commencer par https://discord.gg/ ou https://discord.com/invite/", true); return; }
-    dispatch({t:"settings", p:{vitrine:{active:$("#v_active").checked, titre:$("#v_titre").value.trim() || "La Cabane", texte:$("#v_texte").value.trim(), lienDiscord:lien}}, txt:`Vitrine publique ${$("#v_active").checked ? "activée / modifiée" : "désactivée"}`});
+    dispatch({t:"settings", notify:true, p:{vitrine:{active:$("#v_active").checked, titre:$("#v_titre").value.trim() || "La Cabane", texte:$("#v_texte").value.trim(), lienDiscord:lien}}, txt:`Vitrine publique ${$("#v_active").checked ? "activée / modifiée" : "désactivée"}`});
     toast($("#v_active").checked ? "Vitrine enregistrée : le robot la publiera à son prochain passage" : "Vitrine désactivée : le robot la retirera à son prochain passage"); return;
   }
   if(t.id === "bkRefresh"){ listerSauvegardes(); return; }
@@ -2194,6 +2194,7 @@ document.addEventListener("change", e => {
     if(k === "statut" && c === "propositions" && v && !r.dateRevue && ["Accepté","Refusé"].includes(v)) extra.dateRevue = todayISO();
     const label = t.closest("label")?.firstChild?.textContent?.trim() || k.replace("avis.","Avis de ");
     const lib = t.dataset.date ? `Prise de nouvelles J+${k === "suivi7" ? 7 : 30}` : k.startsWith("avis.") ? "Avis de " + k.slice(5) : label;
+    if(k === "masquerVitrine"){ dispatch({t:"patch", c, id, p:{[k]: v, ...extra}, notify:true, txt:`${r.login} · ${v ? "masqué de" : "affiché sur"} la vitrine`}); renderDrawer(); return; }
     patch(c, id, {[k]: v, ...extra}, `${r.login} · ${lib} : ${typeof v === "boolean" ? (v?"oui":"non") : t.dataset.date ? (v ? "faite" : "annulée") : (v ?? "vidé")}`);
     renderDrawer();
   }
