@@ -23,7 +23,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-22",
-   "live": null,
+   "live": {
+    "viewers": 11,
+    "jeu": "The Cosmic Wheel Sisterhood",
+    "titre": "Changement de programme, soutien à Hanao",
+    "depuis": "2026-09-27T11:54:22Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asalie-440x248.jpg"
+   },
    "succes": []
   },
   {
@@ -117,7 +123,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 11,
+    "jeu": "Art",
+    "titre": "🖍️ Coloriage !🎨 | Avec @Gaffeuse_💬 !lurk !clip !commandes",
+    "depuis": "2026-09-27T12:00:09Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
+   },
    "succes": []
   },
   {
@@ -172,7 +184,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Gartic Show",
+    "titre": "Aujourd'hui on joue ensemble   ...  !discord !regles !don !wishlist",
+    "depuis": "2026-09-27T11:53:22Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "succes": []
   },
   {
@@ -231,5 +249,5 @@
    "succes": []
   }
  ],
- "maj": "2026-09-27T11:50:33.043Z"
+ "maj": "2026-09-27T12:11:47.189Z"
 }
