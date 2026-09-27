@@ -14,17 +14,7 @@
    "au": "2026-09-27"
   }
  },
- "agenda": [
-  {
-   "titre": "test",
-   "date": "2026-09-27",
-   "heure": "",
-   "type": "Soirée jeux",
-   "description": "",
-   "lien": "",
-   "participants": []
-  }
- ],
+ "agenda": [],
  "membres": [
   {
    "login": "aly0806",
@@ -77,7 +67,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "Stardew Valley",
     "titre": "🐮STARDEW VALLEY • Marnie aime nous stp pour qu'on recup le slibard • 6 💗",
     "depuis": "2026-09-27T19:00:37Z",
@@ -315,5 +305,5 @@
    "succes": []
   }
  ],
- "maj": "2026-09-27T21:29:02.812Z"
+ "maj": "2026-09-27T21:30:16.336Z"
 }
