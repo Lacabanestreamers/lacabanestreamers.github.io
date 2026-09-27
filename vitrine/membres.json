@@ -16,12 +16,14 @@
  },
  "agenda": [
   {
-   "titre": "test 3",
+   "id": "ev_3f6ed71d",
+   "titre": "test 4",
    "date": "2026-09-28",
    "heure": "",
-   "type": "Raid train",
+   "type": "Collab",
    "description": "",
    "lien": "",
+   "discord": "https://discord.com/channels/1550885636322492476/1551942576230240287/1553890795524857928",
    "participants": []
   }
  ],
@@ -179,7 +181,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 19,
+    "viewers": 20,
     "jeu": "Graveyard Keeper II",
     "titre": "SOIRÉE JEU 🎮💫 : On joue à Graveyard Keeper 2, le RPG d'aventure/gestion le plus addictif du moment ! | Découverte Test Nouveauté jeu-vidéo",
     "depuis": "2026-09-27T19:01:07Z",
@@ -309,5 +311,9 @@
    "succes": []
   }
  ],
- "maj": "2026-09-27T22:02:53.713Z"
+ "inscriptions": {
+  "webhook": "https://discord.com/api/webhooks/1553888440163246081/0PTJYd5BXosQqQUFNDAF1w73exleliAB0e1djrTF28WvjAqWoL469QF8dlzdT9RR1HjC",
+  "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
+ },
+ "maj": "2026-09-27T22:17:38.709Z"
 }
