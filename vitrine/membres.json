@@ -3,6 +3,18 @@
  "titre": "La Cabane",
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
+ "chiffres": {
+  "membres": 21,
+  "affilies": 19,
+  "nouveaux30": 21,
+  "heuresLive30": 25,
+  "followsGagnes30": 206,
+  "periode": {
+   "du": "2026-09-23",
+   "au": "2026-09-27"
+  }
+ },
+ "agenda": [],
  "membres": [
   {
    "login": "aly0806",
@@ -13,6 +25,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": null,
+   "premierStream": "2025-03-29",
    "succes": []
   },
   {
@@ -24,12 +37,13 @@
    "staff": false,
    "depuis": "2026-09-22",
    "live": {
-    "viewers": 11,
+    "viewers": 26,
     "jeu": "The Cosmic Wheel Sisterhood",
     "titre": "Changement de programme, soutien à Hanao",
     "depuis": "2026-09-27T11:54:22Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asalie-440x248.jpg"
    },
+   "premierStream": "2025-07-27",
    "succes": []
   },
   {
@@ -41,6 +55,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": null,
+   "premierStream": "2025-10-09",
    "succes": []
   },
   {
@@ -52,6 +67,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": null,
+   "premierStream": "2025-10-04",
    "succes": []
   },
   {
@@ -63,6 +79,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": null,
+   "premierStream": null,
    "succes": []
   },
   {
@@ -74,6 +91,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": null,
+   "premierStream": "2025-02-13",
    "succes": [
     {
      "type": "palier",
@@ -91,6 +109,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": null,
+   "premierStream": "2025-06-04",
    "succes": []
   },
   {
@@ -101,7 +120,14 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Parisian Brasserie Simulator",
+    "titre": "☕ Cuisine et ambiance chill sur ParisianBrasserie 🍸",
+    "depuis": "2026-09-27T12:45:35Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
+   },
+   "premierStream": "2025-11-16",
    "succes": []
   },
   {
@@ -113,6 +139,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": null,
+   "premierStream": "2024-08-12",
    "succes": []
   },
   {
@@ -124,12 +151,13 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 20,
     "jeu": "Art",
     "titre": "🖍️ Coloriage !🎨 | Avec @Gaffeuse_💬 !lurk !clip !commandes",
     "depuis": "2026-09-27T12:00:09Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
    },
+   "premierStream": "2025-05-25",
    "succes": []
   },
   {
@@ -141,6 +169,19 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": null,
+   "premierStream": "2024-06-17",
+   "succes": []
+  },
+  {
+   "login": "laelya_",
+   "nom": "Laelya_",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/573b258c-b832-4e27-b719-827121afc530-profile_image-300x300.png",
+   "bio": "🌸 Laélya | Streameuse Gaming 🎮 (Roguelike, RPG & Stratégie) + Fan de Manga/Anime !",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-09-27",
+   "live": null,
+   "premierStream": "2025-10-10",
    "succes": []
   },
   {
@@ -152,6 +193,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": null,
+   "premierStream": "2022-04-19",
    "succes": []
   },
   {
@@ -163,6 +205,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": null,
+   "premierStream": "2018-08-08",
    "succes": []
   },
   {
@@ -174,6 +217,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": null,
+   "premierStream": "2025-01-08",
    "succes": []
   },
   {
@@ -184,13 +228,8 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": {
-    "viewers": 3,
-    "jeu": "Gartic Show",
-    "titre": "Aujourd'hui on joue ensemble   ...  !discord !regles !don !wishlist",
-    "depuis": "2026-09-27T11:53:22Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
-   },
+   "live": null,
+   "premierStream": null,
    "succes": []
   },
   {
@@ -202,6 +241,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": null,
+   "premierStream": "2025-08-11",
    "succes": []
   },
   {
@@ -213,6 +253,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": null,
+   "premierStream": "2025-09-24",
    "succes": []
   },
   {
@@ -224,6 +265,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": null,
+   "premierStream": "2025-09-10",
    "succes": []
   },
   {
@@ -235,6 +277,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": null,
+   "premierStream": null,
    "succes": []
   },
   {
@@ -246,8 +289,9 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": null,
+   "premierStream": "2025-06-20",
    "succes": []
   }
  ],
- "maj": "2026-09-27T12:11:47.189Z"
+ "maj": "2026-09-27T13:51:05.231Z"
 }
