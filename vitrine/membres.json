@@ -24,13 +24,7 @@
    "description": "",
    "lien": "",
    "discord": "https://discord.com/channels/1550885636322492476/1551942576230240287/1553895045474680864",
-   "participants": [
-    {
-     "login": "aulit42369",
-     "nom": "Aulit42369",
-     "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/f33ce494-5527-426f-bc67-7a59bbf51609-profile_image-300x300.png"
-    }
-   ]
+   "participants": []
   }
  ],
  "membres": [
@@ -321,5 +315,5 @@
   "webhook": "https://discord.com/api/webhooks/1553888440163246081/0PTJYd5BXosQqQUFNDAF1w73exleliAB0e1djrTF28WvjAqWoL469QF8dlzdT9RR1HjC",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-09-27T22:29:44.909Z"
+ "maj": "2026-09-27T22:32:55.558Z"
 }
