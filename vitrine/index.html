@@ -114,6 +114,16 @@ body.profil .intro, body.profil #stats, body.profil #discord{display:none!import
   .golive{grid-template-columns:1fr}
 }
 
+/* Anniversaires de stream */
+.annivs{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.ann{display:flex;gap:12px;align-items:center;background:linear-gradient(135deg,rgba(255,79,216,.16),rgba(61,227,255,.08));border:1px solid rgba(255,79,216,.5);border-radius:12px;padding:10px 14px;text-decoration:none;color:inherit}
+.ann.bientot{background:var(--panel);border-color:var(--line)}
+.ann:hover{border-color:var(--pink)}
+.ann .av{width:44px;height:44px;font-size:17px}
+.ann .d{color:var(--muted);font-size:14px;display:block}
+.fete{margin-top:14px;padding:10px 14px;border-radius:12px;background:linear-gradient(135deg,rgba(255,79,216,.2),rgba(61,227,255,.1));border:1px solid var(--pink);font-weight:700;font-size:18px}
+.fete.calme{background:none;border-color:var(--line);font-weight:600;font-size:16px;color:#D4CFF5}
+
 footer{border-top:1px solid var(--line);margin-top:50px;padding:22px 0 40px;color:var(--muted);font-size:15px;display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between}
 
 @media (max-width:600px){
@@ -155,6 +165,18 @@ const fmtD = iso => { const [y, m, d] = iso.split("-").map(Number); return new D
 function succesTxt(x){ return x.type === "palier" ? `a passé les <b>${Number(x.palier)} follows</b>` : x.type === "partenaire" ? `est devenu <b>partenaire Twitch</b>` : `est devenu <b>affilié Twitch</b>`; }
 const succesIc = x => x.type === "palier" ? "🚀" : "🎉";
 const pageUrl = l => `?m=${encodeURIComponent(l)}`;
+// Anniversaire de stream : prochaine date (aujourd'hui compris), nombre de jours et d'années de stream fêtées
+function anniv(m){
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(m.premierStream || "")) return null;
+  const [y, mo, d] = m.premierStream.split("-").map(Number);
+  const t = new Date(); t.setHours(0, 0, 0, 0);
+  const le = an => { const x = new Date(an, mo - 1, d); if(mo === 2 && d === 29 && x.getMonth() !== 1) x.setDate(0); return x; };  // 29/02 → 28/02 les années non bissextiles
+  let prochain = le(t.getFullYear()); if(prochain < t) prochain = le(t.getFullYear() + 1);
+  const ans = prochain.getFullYear() - y;
+  return ans < 1 ? null : {jours:Math.round((prochain - t) / 864e5), ans, date:prochain};
+}
+const ansTxt = n => `${n} an${n > 1 ? "s" : ""}`;
+const fete = n => n === 1 ? "sa première année" : `ses ${n} ans`;   // « fête ses 3 ans » / « fête sa première année »
 function duree(iso){ const min = Math.max(0, Math.round((Date.now() - new Date(iso)) / 60000)); return min < 60 ? `${min} min` : `${Math.floor(min / 60)} h ${String(min % 60).padStart(2, "0")}`; }
 
 function render(){
@@ -173,6 +195,8 @@ function render(){
 
   const membres = (d.membres || []).filter(m => okLogin(m.login));
   if(perso){ renderProfil(membres.find(m => m.login.toLowerCase() === perso.toLowerCase()), d); return; }
+  // Anniversaires de stream : aujourd'hui, puis les 7 prochains jours
+  const annivs = membres.map(m => ({m, a:anniv(m)})).filter(x => x.a && x.a.jours <= 7).sort((a, b) => a.a.jours - b.a.jours || a.m.nom.localeCompare(b.m.nom, "fr"));
   // Réussites des 30 derniers jours, tous membres confondus
   const lim = new Date(Date.now() - 30 * 864e5).toISOString().slice(0, 10);
   const wins = membres.flatMap(m => (m.succes || []).filter(x => x.date >= lim).map(x => ({m, x}))).sort((a, b) => b.x.date.localeCompare(a.x.date)).slice(0, 12);
@@ -190,6 +214,10 @@ function render(){
         <span class="img" style="${okImg(m.live.apercu) ? `background-image:url('${esc(m.live.apercu)}?t=${cache}')` : ""}"><span class="badge">LIVE</span><span class="vw">${Number(m.live.viewers) || 0} spectateur${(m.live.viewers || 0) > 1 ? "s" : ""}${m.live.depuis ? " · " + duree(m.live.depuis) : ""}</span></span>
         <span class="b">${av(m)}<span style="min-width:0"><span class="nm" style="display:block;font-size:17px">${esc(m.nom)}</span>${m.live.jeu ? `<span class="g">${esc(m.live.jeu)}</span>` : ""}<span class="t">${esc(m.live.titre)}</span></span></span>
       </a>`).join("")}</div></section>` : ""}
+    ${annivs.length ? `<section aria-labelledby="h-anniv"><h2 id="h-anniv">🎂 Anniversaires de stream</h2>
+      <div class="annivs">${annivs.map(({m, a}) => `<a class="ann ${a.jours ? "bientot" : ""}" href="${pageUrl(m.login)}" data-nav>${av(m)}<span>${a.jours === 0
+        ? `<b>${esc(m.nom)}</b> fête aujourd'hui <b>${fete(a.ans)}</b> de stream ! 🎉<span class="d">Passe lui souhaiter en live ou sur sa chaîne</span>`
+        : `<b>${esc(m.nom)}</b> fêtera ${fete(a.ans)} de stream<span class="d">${a.jours === 1 ? "demain" : `dans ${a.jours} jours`}, le ${a.date.toLocaleDateString("fr-FR", {day:"numeric", month:"long"})}</span>`}</span></a>`).join("")}</div></section>` : ""}
     ${wins.length ? `<section aria-labelledby="h-wins"><h2 id="h-wins">Nos réussites</h2>
       <div class="wins">${wins.map(({m, x}) => `<a class="win" href="${pageUrl(m.login)}" data-nav>${av(m)}<span><span class="ic" aria-hidden="true">${succesIc(x)}</span> <b>${esc(m.nom)}</b> ${succesTxt(x)}<span class="d">le ${fmtD(x.date)}</span></span></a>`).join("")}</div></section>` : ""}
     <section aria-labelledby="h-membres"><h2 id="h-membres">Nos streamers</h2>
@@ -226,6 +254,9 @@ function renderProfil(m, d){
         <span class="tags">${tags(m)}</span>
         ${m.bio ? `<p class="bio">${esc(m.bio)}</p>` : ""}
         <span class="since">${m.depuis ? `🏠 ${depuis(m.depuis)} de <b>${esc(d.titre || "La Cabane")}</b>` : `🏠 Membre de <b>${esc(d.titre || "La Cabane")}</b>`}</span>
+        ${(() => { const a = anniv(m); if(!a) return "";
+          return a.jours === 0 ? `<div class="fete">🎂 Aujourd'hui, ${esc(m.nom)} fête ${fete(a.ans)} de stream ! Joyeux anniversaire de stream ! 🎉</div>`
+            : `<div class="fete calme">🎂 Anniversaire de stream le ${a.date.toLocaleDateString("fr-FR", {day:"numeric", month:"long"})} : ${ansTxt(a.ans)} de stream${a.jours <= 7 ? ` (${a.jours === 1 ? "demain" : `dans ${a.jours} jours`})` : ""}</div>`; })()}
         ${m.live ? `<a class="golive" href="${chan(m.login)}" target="_blank" rel="noopener">
             <span class="img" style="${okImg(m.live.apercu) ? `background-image:url('${esc(m.live.apercu)}?t=${cache}')` : ""}"></span>
             <span><span class="tag live">En live</span> <b>${Number(m.live.viewers) || 0} spectateur${(m.live.viewers || 0) > 1 ? "s" : ""}</b>${m.live.depuis ? ` · depuis ${duree(m.live.depuis)}` : ""}

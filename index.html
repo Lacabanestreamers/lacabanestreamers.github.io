@@ -1606,7 +1606,7 @@ function viewAide(){
     <ul><li>il note qui est en live et mesure les viewers ;</li>
       <li>il relève les follows matin, midi et soir ;</li>
       <li>il détecte les changements de pseudo, les affiliations et les paliers de 50 follows ;</li>
-      <li>il annonce sur Discord les nouvelles propositions, les anniversaires de stream, les paliers et les affiliations (pas les arrivées dans Streamers) ;</li>
+      <li>il annonce sur Discord, dans le salon du staff, les nouvelles propositions et les validations (arrivées dans Streamers), et dans le salon des célébrations les anniversaires de stream, les paliers et les affiliations ;</li>
       <li>il met à jour la vitrine publique et fait une sauvegarde chaque dimanche.</li></ul>`)}
   ${sec("vitrine", "La vitrine publique", `
     <p>La page <a href="${VITRINE_URL()}" target="_blank" rel="noopener">${VITRINE_URL()}</a> présente les membres à tout le monde : avatar, bio Twitch, badges, lives en cours et réussites. Aucune donnée interne n'y apparaît.</p>
@@ -1851,7 +1851,7 @@ document.addEventListener("click", e => {
         dateInvitation:r.dateInvitation||today, avis:r.avis||{}, commentaire:r.commentaire||"", historique:r.historique||[], transfereLe:today, transferePar:cfg.me||""};
       const nm = {id:uid("m_"), login:r.login, discord:"", alerte:false, premierStream:null, annivConfirme:false, annivCommentaire:"", arrivee:today, depart:null,
         statut:"Présent", role:"Streamer", followsMode:"auto", followsManuel:null, notes:"", candidature};
-      dispatch({t:"add", c:"membres", r:nm, txt:`${r.login} accepté et transféré dans Streamers${r.proposePar ? " (proposé par " + r.proposePar + ")" : ""}`});
+      dispatch({t:"add", c:"membres", r:nm, notify:true, txt:`${r.login} accepté et transféré dans Streamers${r.proposePar ? " (proposé par " + r.proposePar + ")" : ""}`});
       dispatch({t:"del", c:"propositions", id, noTrash:true});
       S.drawer = {c:"membres", id:nm.id}; renderDrawer();
       toast(`${r.login} est maintenant dans Streamers`);
@@ -1879,7 +1879,8 @@ document.addEventListener("click", e => {
     const r = c === "propositions"
       ? {id:uid("p_"), login, contact:"", proposePar:cfg.me||"", dateProposition:todayISO(), dateRevue:null, dateInvitation:null, hype:"", followsRevue:null, viewersMoyens:null, statut:"Proposition à faire", avis:{}, commentaire:""}
       : {id:uid("m_"), login, discord:"", alerte:false, premierStream:null, annivConfirme:false, annivCommentaire:"", arrivee:todayISO(), depart:null, statut:"Présent", role:"Streamer", followsMode:"auto", followsManuel:null, notes:""};
-    dispatch({t:"add", c, r, notify:c === "propositions", txt:`Ajout de ${login} (${c === "propositions" ? "proposition" : "streamers"})`});
+    if(c === "membres") r.creePar = cfg.me || "";
+    dispatch({t:"add", c, r, notify:true, txt:`Ajout de ${login} (${c === "propositions" ? "proposition" : "streamers"})`});
     S.drawer = {c, id:r.id}; renderDrawer(); return;
   }
   if(t.id === "snapBtn"){
