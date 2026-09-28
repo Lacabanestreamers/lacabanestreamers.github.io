@@ -7,7 +7,7 @@
   "membres": 22,
   "affilies": 20,
   "nouveaux30": 22,
-  "heuresLive30": 37,
+  "heuresLive30": 42,
   "followsGagnes30": 235,
   "periode": {
    "du": "2026-09-23",
@@ -91,9 +91,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
-    "jeu": "Tiny Eden",
-    "titre": "🌻  Découverte de Tiny Eden | Direction notre Eden miniature",
+    "viewers": 12,
+    "jeu": "Aniimo",
+    "titre": "🌻 Aniimo : On continue la collection et les quêtes !",
     "depuis": "2026-09-28T11:48:14Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
    },
@@ -114,13 +114,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 2,
-    "jeu": "Sovereign Tower",
-    "titre": "Démo Sovereign Tower + Strange Antiquities !programme !discord",
-    "depuis": "2026-09-28T11:34:17Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cosy_loutte-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-06-04",
    "succes": []
   },
@@ -193,7 +187,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 6,
     "jeu": "Resonance: A Plague Tale Legacy",
     "titre": "🐰Ils sont où les rats ??",
     "depuis": "2026-09-28T11:48:37Z",
@@ -211,7 +205,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 8,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🔞[DDV/FF14]On chill cet aprem !!! Entre papote et éclat de fun !! kon-kon / !discord !clip !kitsune !zic🔞",
     "depuis": "2026-09-28T12:13:58Z",
@@ -228,13 +222,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 2,
-    "jeu": "Strange Horticulture",
-    "titre": "On se met au vert",
-    "depuis": "2026-09-28T07:58:53Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-08",
    "succes": []
   },
@@ -282,7 +270,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "Tukoni: Forest Keepers",
+    "titre": "[FR] On découvre Tukoni ! Prend ton thé ça va être cozy ! [!steam !insta !discord !bs ]",
+    "depuis": "2026-09-28T13:50:40Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
+   },
    "premierStream": "2025-09-24",
    "succes": []
   },
@@ -327,5 +321,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-09-28T12:43:33.053Z"
+ "maj": "2026-09-28T14:23:07.264Z"
 }
