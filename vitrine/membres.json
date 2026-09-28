@@ -4,10 +4,10 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 22,
-  "affilies": 20,
-  "nouveaux30": 22,
-  "heuresLive30": 42,
+  "membres": 23,
+  "affilies": 21,
+  "nouveaux30": 23,
+  "heuresLive30": 46,
   "followsGagnes30": 235,
   "periode": {
    "du": "2026-09-23",
@@ -90,13 +90,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 12,
-    "jeu": "Aniimo",
-    "titre": "🌻 Aniimo : On continue la collection et les quêtes !",
-    "depuis": "2026-09-28T11:48:14Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -187,7 +181,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 4,
     "jeu": "Resonance: A Plague Tale Legacy",
     "titre": "🐰Ils sont où les rats ??",
     "depuis": "2026-09-28T11:48:37Z",
@@ -205,8 +199,8 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
-    "jeu": "Disney Dreamlight Valley",
+    "viewers": 13,
+    "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "🔞[DDV/FF14]On chill cet aprem !!! Entre papote et éclat de fun !! kon-kon / !discord !clip !kitsune !zic🔞",
     "depuis": "2026-09-28T12:13:58Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
@@ -271,7 +265,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 7,
     "jeu": "Tukoni: Forest Keepers",
     "titre": "[FR] On découvre Tukoni ! Prend ton thé ça va être cozy ! [!steam !insta !discord !bs ]",
     "depuis": "2026-09-28T13:50:40Z",
@@ -305,6 +299,18 @@
    "succes": []
   },
   {
+   "login": "tata_gazouille",
+   "nom": "tata_gazouille",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/e1ad1459-f3e6-4135-bc8c-6b249900a722-profile_image-300x300.png",
+   "bio": "Hello, ça gazouille ? Ici pas de chichi, du jeu + du fun !! J'ai commencé par faire des vidéos sur youtube et twitch me faisait de l'oeil ce coquin alors me voici..😈​📩​ Contact: tata_gazouille@hotmail.com",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-09-28",
+   "live": null,
+   "premierStream": null,
+   "succes": []
+  },
+  {
    "login": "yukaho_35",
    "nom": "yukaho_35",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/734da5c5-0e7d-4544-a2d0-ba7d4735b7af-profile_image-300x300.png",
@@ -321,5 +327,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-09-28T14:23:07.264Z"
+ "maj": "2026-09-28T15:05:28.972Z"
 }
