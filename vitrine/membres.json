@@ -192,7 +192,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "FINAL FANTASY XVI",
+    "titre": "🔞[FF16] On continue l'aventure !!! Entre papote et éclat de fun !! kon-kon / !discord !clip !kitsune !zic🔞",
+    "depuis": "2026-09-28T06:20:59Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": []
   },
@@ -228,7 +234,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "No Man's Sky",
+    "titre": "On fini l'expédition ! (enfin je l'espère)",
+    "depuis": "2026-09-28T06:30:42Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
+   },
    "premierStream": "2024-12-03",
    "succes": []
   },
@@ -297,5 +309,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-09-28T00:33:07.352Z"
+ "maj": "2026-09-28T06:41:10.621Z"
 }
