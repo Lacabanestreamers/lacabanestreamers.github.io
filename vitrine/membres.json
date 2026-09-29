@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 63,
+  "heuresLive30": 64,
   "followsGagnes30": 259,
   "periode": {
    "du": "2026-09-23",
@@ -156,13 +156,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 9,
-    "jeu": "Don't Starve Together",
-    "titre": "Le mardi : c'est survie !!! (En tout cas, on essaie fort fort) avec @asakha pour la 456...1ere tentative sur Don't Starve Together!",
-    "depuis": "2026-09-29T19:20:08Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": []
   },
@@ -315,5 +309,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-09-29T20:40:29.817Z"
+ "maj": "2026-09-29T23:46:26.550Z"
 }
