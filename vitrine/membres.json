@@ -7,11 +7,11 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 57,
-  "followsGagnes30": 247,
+  "heuresLive30": 59,
+  "followsGagnes30": 251,
   "periode": {
    "du": "2026-09-23",
-   "au": "2026-09-28"
+   "au": "2026-09-29"
   }
  },
  "agenda": [],
@@ -145,7 +145,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 22,
+    "viewers": 17,
     "jeu": "Art",
     "titre": "🖍️ Coloriage !🎨 | Avec @Gaffeuse_💬 !lurk !clip !commandes",
     "depuis": "2026-09-29T07:00:13Z",
@@ -199,7 +199,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 11,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "🔞[FF14] On chill ce matin !!! Entre papote et éclat de fun !! kon-kon / !discord !clip !kitsune !zic🔞",
     "depuis": "2026-09-29T07:32:54Z",
@@ -321,5 +321,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-09-29T08:00:11.056Z"
+ "maj": "2026-09-29T08:20:05.824Z"
 }
