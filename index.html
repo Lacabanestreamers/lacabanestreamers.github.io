@@ -299,6 +299,23 @@ tr.picked{background:rgba(255,79,216,.08)}
 .evs{display:grid;gap:12px}
 .navn{display:inline-block;min-width:18px;margin-left:6px;padding:0 5px;border-radius:9px;background:var(--warn,#ffb020);color:#1a0716;font-size:12px;line-height:18px;text-align:center;vertical-align:1px}
 .navn:empty{display:none}
+#undoRoot .undo{position:fixed;left:calc(16px + env(safe-area-inset-left,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:61;display:flex;gap:10px;align-items:center;max-width:min(460px,calc(100vw - 32px));background:var(--panel2);border:1px solid var(--pink);border-radius:10px;padding:8px 10px 8px 14px;box-shadow:0 8px 24px rgba(0,0,0,.45)}
+#undoRoot .undo span{font-size:14px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+#undoRoot .undo button{flex:none}
+.rech{position:fixed;inset:0;z-index:70;background:rgba(8,5,20,.72);display:flex;align-items:flex-start;justify-content:center;padding:10vh 16px 16px}
+.rech .box{width:min(640px,100%);background:var(--panel);border:1px solid var(--cyan);border-radius:14px;box-shadow:0 20px 50px rgba(0,0,0,.5);overflow:hidden}
+.rech input{width:100%;box-sizing:border-box;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--text);font:600 19px Rajdhani,system-ui,sans-serif;padding:14px 16px;outline:none}
+.rech ul{list-style:none;margin:0;padding:6px;max-height:60vh;overflow:auto}
+.rech li{display:flex;gap:10px;align-items:center;padding:8px 10px;border-radius:8px;cursor:pointer}
+.rech li[aria-selected="true"],.rech li:hover{background:var(--panel2)}
+.rech li .k{font-size:12px;font-weight:700;text-transform:uppercase;color:var(--cyan);min-width:88px}
+.rech li .t{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rech li .m{font-size:13px;color:var(--muted)}
+.rech .vide{padding:14px 16px;color:var(--muted)}
+#rechBtn{background:none;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:4px 10px;cursor:pointer;font:inherit}
+#rechBtn:hover{border-color:var(--cyan)}
+button[disabled].adminonly{opacity:.45;cursor:not-allowed}
+.integ label{display:flex;gap:8px;align-items:center;padding:3px 0}
 .netp{max-width:none}
 .netl{display:grid;grid-template-columns:minmax(170px,240px) 1fr auto;gap:10px;align-items:center;padding:7px 0;border-top:1px solid var(--line)}
 .netl .login{display:flex;align-items:center;gap:6px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -375,6 +392,7 @@ nav a.navlink:hover{color:var(--cyan);text-decoration:none}
       <button data-view="reglages">Réglages</button>
       <button data-view="aide">Aide</button>
       <a class="navlink" id="navVitrine" href="vitrine/" target="_blank" rel="noopener" title="Ouvrir la vitrine publique dans un nouvel onglet">Vitrine ↗</a>
+      <button id="rechBtn" type="button" title="Rechercher partout (Ctrl+K)" aria-label="Rechercher partout">🔍</button>
     </nav>
     <div class="ticker hidden" id="ticker" aria-label="Anniversaires de stream"></div>
     <div class="sync"><span class="dot" id="syncDot"></span><span id="syncTxt">Non connecté</span></div>
@@ -383,6 +401,8 @@ nav a.navlink:hover{color:var(--cyan);text-decoration:none}
 <main id="main"></main>
 <div id="drawerRoot"></div>
 <div id="toastRoot"></div>
+<div id="undoRoot"></div>
+<div id="rechRoot"></div>
 
 <script>
 "use strict";
@@ -428,12 +448,21 @@ function setPath(obj, path, val){
   if(val === undefined || val === "") { if(ks.length > 1) delete o[last]; else o[last] = val === undefined ? null : ""; }
   else o[last] = val;
 }
+function getPath(obj, path){ let o = obj; for(const k of path.split(".")){ if(o == null) return undefined; o = o[k]; } return o; }
+const memeValeur = (a, b) => JSON.stringify(a ?? null) === JSON.stringify(b ?? null);
 function applyOp(d, op){
   d.journal = d.journal || []; d.snapshots = d.snapshots || [];
   switch(op.t){
     case "patch": { const r = (d[op.c]||[]).find(x => x.id === op.id); if(!r) return;
-      if("statut" in op.p && (op.p.statut || "") !== (r.statut || "")) r.statutDepuis = op.le.slice(0,10);
-      for(const [k,v] of Object.entries(op.p)) setPath(r, k, v); if(!op.auto) r.maj = {par:op.par, le:op.le}; break; }
+      let p = op.p;
+      // À l'enregistrement : si quelqu'un d'autre a changé ce champ entre-temps, on ne l'écrase pas sans demander
+      if(op.verif && op.base){ p = {};
+        for(const [k, v] of Object.entries(op.p)){ const cur = getPath(r, k);
+          if(k in op.base && !memeValeur(cur, op.base[k]) && !memeValeur(cur, v)){ (S.conflits = S.conflits || []).push({c:op.c, id:op.id, k, mien:v, sien:cur ?? null, par:r.maj?.par || "quelqu'un", login:r.login, notify:op.notify}); }
+          else p[k] = v; }
+        if(!Object.keys(p).length) return; }
+      if("statut" in p && (p.statut || "") !== (r.statut || "")) r.statutDepuis = op.le.slice(0,10);
+      for(const [k,v] of Object.entries(p)) setPath(r, k, v); if(!op.auto) r.maj = {par:op.par, le:op.le}; break; }
     case "add": if(!d[op.c].some(x => x.id === op.r.id)){ const r = JSON.parse(JSON.stringify(op.r)); if(!r.statutDepuis) r.statutDepuis = op.le.slice(0,10); d[op.c].push(r); } break;
     case "del": { const i = d[op.c].findIndex(x => x.id === op.id); if(i < 0) break;
       const [r] = d[op.c].splice(i, 1);
@@ -445,6 +474,8 @@ function applyOp(d, op){
     case "rappelAdd": { const r = (d[op.c]||[]).find(x => x.id === op.id); if(!r) break; r.rappels = r.rappels || [];
       if(!r.rappels.some(x => x.id === op.rp.id)) r.rappels.push({...op.rp, par:op.par, cree:op.le}); break; }
     case "agendaSet": { d.agenda = d.agenda || []; const i = d.agenda.findIndex(x => x.id === op.ev.id);
+      if(op.rinclure && op.ev.serie){ const se = (d.series || []).find(x => x.id === op.ev.serie); if(se?.exclus) se.exclus = se.exclus.filter(x => x !== op.ev.date); }
+      if(op.remplace){ if(i < 0) d.agenda.push(JSON.parse(JSON.stringify(op.ev))); else d.agenda[i] = JSON.parse(JSON.stringify(op.ev)); break; }
       if(i < 0){ d.agenda.push(op.ev); break; }
       const cur = d.agenda[i], ev = {...op.ev};
       // participants : on n'applique que ce que la personne a changé dans le formulaire,
@@ -457,7 +488,7 @@ function applyOp(d, op){
       if(op.inconnu && e.discordInconnus) e.discordInconnus = e.discordInconnus.filter(x => x.id !== op.inconnu); break; }
     case "agendaDel": { const e = (d.agenda || []).find(x => x.id === op.id);
       // une occurrence de série supprimée est écartée : le robot ne la recréera pas
-      if(e?.serie){ const se = (d.series || []).find(x => x.id === e.serie); if(se && !(se.exclus || []).includes(e.date)) se.exclus = [...(se.exclus || []), e.date]; }
+      if(e?.serie && !op.sansExclure){ const se = (d.series || []).find(x => x.id === e.serie); if(se && !(se.exclus || []).includes(e.date)) se.exclus = [...(se.exclus || []), e.date]; }
       d.agenda = (d.agenda || []).filter(x => x.id !== op.id); break; }
     case "serieSet": { d.series = d.series || []; const i = d.series.findIndex(x => x.id === op.serie.id);
       const se = i < 0 ? op.serie : {...d.series[i], ...op.serie}; if(i < 0) d.series.push(se); else d.series[i] = se;
@@ -477,12 +508,59 @@ function applyOp(d, op){
 function dispatch(op){
   if(!S.data) return;
   op.le = new Date().toISOString(); op.par = cfg.me || "?";
+  // valeurs avant modification : servent à détecter une modification simultanée et à « Annuler »
+  if(op.t === "patch" && !op.auto && !op.force){ const r = (S.data[op.c] || []).find(x => x.id === op.id); if(r) op.base = Object.fromEntries(Object.keys(op.p).map(k => [k, getPath(r, k) ?? null])); }
+  if(!op.auto && !op.noUndo) noterAnnulation(op);
   applyOp(S.data, op);
   if(S.mode === "github"){ S.pending.push(op); scheduleSave(); }
   else { S.dirtyLocal = true; store.set(LOCAL_KEY, S.data); }
   updateSync(); render();
 }
 const patch = (c, id, p, txt) => dispatch({t:"patch", c, id, p, txt});
+
+/* ============ Annuler (15 s après chaque action) ============ */
+const clone = x => x === undefined ? undefined : JSON.parse(JSON.stringify(x));
+function inverseDe(op){
+  const d = S.data;
+  switch(op.t){
+    case "patch": { const r = (d[op.c] || []).find(x => x.id === op.id); if(!r) return null;
+      const p = Object.fromEntries(Object.keys(op.p).map(k => [k, clone(getPath(r, k)) ?? null])); if("statut" in op.p) p.statutDepuis = r.statutDepuis ?? null;
+      return [{t:"patch", c:op.c, id:op.id, p}]; }
+    case "add": return [{t:"del", c:op.c, id:op.r.id, noTrash:true}];
+    case "del": { const r = (d[op.c] || []).find(x => x.id === op.id); if(!r) return null; return [op.noTrash ? {t:"add", c:op.c, r:clone(r)} : {t:"restore", id:op.id}]; }
+    case "restore": { const e = (d.corbeille || []).find(x => x.r.id === op.id); return e ? [{t:"del", c:e.c, id:op.id}] : null; }
+    case "agendaSet": { const prev = (d.agenda || []).find(x => x.id === op.ev.id); return [prev ? {t:"agendaSet", ev:clone(prev), remplace:true} : {t:"agendaDel", id:op.ev.id, sansExclure:true}]; }
+    case "agendaDel": { const prev = (d.agenda || []).find(x => x.id === op.id); return prev ? [{t:"agendaSet", ev:clone(prev), remplace:true, rinclure:true}] : null; }
+    case "agendaPpl": { const prev = (d.agenda || []).find(x => x.id === op.id); return prev ? [{t:"agendaSet", ev:clone(prev), remplace:true}] : null; }
+    case "settings": return [{t:"settings", p:Object.fromEntries(Object.keys(op.p).map(k => [k, clone(d.settings[k]) ?? null]))}];
+    case "rappelAdd": return [{t:"rappelDel", c:op.c, id:op.id, rid:op.rp.id}];
+    case "rappelDel": { const r = (d[op.c] || []).find(x => x.id === op.id), rp = r?.rappels?.find(x => x.id === op.rid); return rp ? [{t:"rappelAdd", c:op.c, id:op.id, rp:clone(rp)}] : null; }
+    case "note": return [];
+    default: return null;          // séries, sauvegardes… : pas d'annulation rapide (historique et corbeille restent là)
+  }
+}
+const UNDO = {groupe:null, timer:null};
+function noterAnnulation(op){
+  if(!UNDO.groupe){ UNDO.groupe = {ops:[], ok:true, txt:""}; setTimeout(fermerAnnulation, 0); }
+  const inv = inverseDe(op);
+  if(!inv) UNDO.groupe.ok = false; else UNDO.groupe.ops.unshift(...inv.map(x => ({...x, notify:op.notify})));
+  if(op.txt && !UNDO.groupe.txt) UNDO.groupe.txt = op.txt;
+}
+function fermerAnnulation(){
+  const g = UNDO.groupe; UNDO.groupe = null; if(!g || !g.ok || !g.ops.length) return;
+  const root = $("#undoRoot"); clearTimeout(UNDO.timer);
+  root.innerHTML = `<div class="undo" role="status"><span>${esc(g.txt || "Modification enregistrée")}</span><button class="btn" type="button" id="undoBtn">↶ Annuler</button></div>`;
+  $("#undoBtn").onclick = () => { root.innerHTML = ""; clearTimeout(UNDO.timer);
+    g.ops.forEach((o, i) => dispatch({...o, noUndo:true, ...(i === 0 ? {txt:`Annulé : ${g.txt || "dernière action"}`} : {})}));
+    renderDrawer(); toast("Action annulée"); };
+  UNDO.timer = setTimeout(() => { root.innerHTML = ""; }, 15000);
+}
+
+/* ============ Réveil du robot groupé ============ */
+// Plusieurs enregistrements à la suite = un seul passage du robot (chaque passage coûte au moins 1 minute de quota GitHub)
+let reveilT = null;
+function planifierReveil(){ if(reveilT) return; reveilT = setTimeout(() => { reveilT = null; notifyRobot(); }, 60000); }
+window.addEventListener("pagehide", () => { if(reveilT){ clearTimeout(reveilT); reveilT = null; notifyRobot(true); } });
 
 /* ============ GitHub ============ */
 const ghUrl = () => `https://api.github.com/repos/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}/contents/${cfg.path.split("/").map(encodeURIComponent).join("/")}`;
@@ -515,10 +593,10 @@ async function ghPut(data, sha, message){
   return (await r.json()).content.sha;
 }
 // Réveille le robot (GitHub Actions) pour qu'il poste tout de suite sur Discord. En cas d'échec, son passage horaire rattrape.
-async function notifyRobot(){
+async function notifyRobot(garder){
   try {
     const r = await fetch(`https://api.github.com/repos/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}/dispatches`,
-      {method:"POST", headers:{...ghHeaders(), "Content-Type":"application/json"}, body:JSON.stringify({event_type:"cabane-notif"})});
+      {method:"POST", headers:{...ghHeaders(), "Content-Type":"application/json"}, body:JSON.stringify({event_type:"cabane-notif"}), keepalive:!!garder});
     if(!r.ok) console.warn("Robot non déclenché (" + r.status + "), il passera à l'heure suivante.");
   } catch(e){ console.warn("Robot non déclenché", e); }
 }
@@ -532,11 +610,12 @@ async function save(){
     let done = false;
     for(let attempt=0; attempt<4 && !done; attempt++){
       const fresh = await ghGet();
-      for(const op of ops) applyOp(fresh.data, JSON.parse(JSON.stringify(op)));
+      S.conflits = [];
+      for(const op of ops) applyOp(fresh.data, {...JSON.parse(JSON.stringify(op)), verif:true});
       const who = cfg.me || "staff";
       const msg = ops.length === 1 && ops[0].txt ? `${who} : ${ops[0].txt}` : `${who} : ${ops.length} modifications`;
       const sha = await ghPut(fresh.data, fresh.sha, msg.slice(0,200));
-      if(sha && ops.some(o => o.notify)) notifyRobot();
+      if(sha && ops.some(o => o.notify)) planifierReveil();
       if(sha){
         S.sha = sha; S.data = fresh.data; ensureShape();
         for(const op of S.pending) applyOp(S.data, JSON.parse(JSON.stringify(op))); // modifs faites pendant l'envoi
@@ -550,7 +629,24 @@ async function save(){
   } finally {
     S.saving = false; updateSync(); render();
     if(S.pending.length && !S.lastError) scheduleSave();
+    const cf = S.conflits || []; S.conflits = [];
+    if(cf.length) setTimeout(() => resoudreConflits(cf), 50);
   }
+}
+// Modification simultanée : on montre les deux versions, la personne choisit
+function resoudreConflits(liste){
+  const court = v => v == null || v === "" ? "(vide)" : typeof v === "object" ? JSON.stringify(v).slice(0, 80) : String(v).slice(0, 120);
+  for(const x of liste){
+    const champ = x.k.startsWith("avis.") ? `avis de ${x.k.slice(5)}` : x.k;
+    if(confirm(`⚠ ${x.par} a modifié « ${champ} » de ${x.login} pendant que tu l'éditais.
+
+Sa version : ${court(x.sien)}
+Ta version : ${court(x.mien)}
+
+OK = garder TA version · Annuler = garder la sienne`))
+      dispatch({t:"patch", c:x.c, id:x.id, p:{[x.k]:x.mien}, force:true, notify:x.notify, txt:`${x.login} · ${champ} : ${court(x.mien)} (gardé malgré la modification de ${x.par})`});
+  }
+  renderDrawer();
 }
 async function pull(silent){
   if(S.mode !== "github" || S.saving || S.pending.length) return;
@@ -805,6 +901,7 @@ function render(){
   main.innerHTML = tokenWarning() + v();
   for(const [id, val] of saisies){ const el = document.getElementById(id); if(!el) continue; if(el.type === "checkbox") el.checked = val; else el.value = val; }
   if(focus){ const el = document.getElementById(focus); if(el){ el.focus(); try { el.setSelectionRange(caret, caret); } catch {} } }
+  if(!estAdmin()) main.querySelectorAll(ADMIN_SEL).forEach(el => { el.disabled = true; el.classList.add("adminonly"); el.title = "Réservé aux admins de la page (Réglages → Admins)"; });
   renderDrawer();
 }
 
@@ -1101,6 +1198,11 @@ function viewAccueil(){
     ${card(`Propositions qui stagnent (${stagJours()} j et +)`, stagnantes().map(x => x.p), p => li("propositions", p, `${pill(p.statut)} · <b class="warn">${depuisStatut(p)} j</b>`), "Aucune proposition bloquée dans le même statut.", `data-goto="propositions"`)}
     ${(() => { const prox = agendaTri().avenir.filter(e => joursAvant(e.date) <= 7); return prox.length ? `<section class="card"><h2>Événements de la semaine<span class="n">${prox.length}</span></h2><ul class="todo">${prox.map(e => { const j = joursAvant(e.date);
       return `<li data-goto="agenda"><span class="login" style="flex:1">${esc(e.titre)}</span><span class="r"><b class="${j === 0 ? "up" : ""}">${j === 0 ? "aujourd'hui" : j === 1 ? "demain" : fmtDate(e.date)}</b>${e.heure ? " · " + esc(e.heure) : ""}</span></li>`; }).join("")}</ul></section>` : ""; })()}
+    ${me ? (() => { const miens = d.propositions.filter(p => p.responsable === me && !CLOSED.includes(p.statut) && p.statut !== "Aucun contact").map(p => ({p, j:depuisStatut(p)})).sort((a, b) => (b.j ?? 0) - (a.j ?? 0));
+      return card("Tes propositions en charge", miens.map(x => x.p), p => { const j = depuisStatut(p); return li("propositions", p, `${pill(p.statut)}${j != null ? ` · <b class="${j >= stagJours() ? "warn" : ""}">${j} j</b>` : ""}`); }, "Aucune proposition à ton nom (champ « Responsable » d'une proposition).", `data-goto="propositions"`); })() : ""}
+    ${(() => { const etapes = etapesIntegration(), lim = new Date(Date.now() - 60 * 864e5).toISOString().slice(0, 10);
+      const enCours = etapes.length ? actifs.filter(m => m.arrivee && m.arrivee >= lim && !["Admin","Modo"].includes(m.role) && faitesIntegration(m) < etapes.length) : [];
+      return card("Intégrations en cours", enCours, m => li("membres", m, `<b class="warn">${faitesIntegration(m)}/${etapes.length}</b>${m.referent ? " · " + esc(m.referent) : ` · <span class="down">sans référent</span>`}`), "Tous les nouveaux (60 derniers jours) sont intégrés.", `data-goto="membres"`); })()}
     ${suivisCard()}
     ${card("Réussites (14 jours)", evenementsRecents(14), x => { const m = S.data.membres.find(y => y.login === x.login) || {id:"", login:x.login};
         return `<li ${m.id ? `data-open="membres:${m.id}"` : ""}>${avatarHtml(x.login)}<span class="login">${esc(x.login)}</span><span class="r">${x.kind === "palier" ? "🚀" : "🎉"} <b class="up">${esc(x.txt)}</b> · ${fmtDate(x.date)}</span></li>`; },
@@ -1122,6 +1224,21 @@ function chargeReferents(){
   }).sort((a, b) => a.nouveaux - b.nouveaux || a.total - b.total || a.nom.localeCompare(b.nom, "fr"));
 }
 function suggestionReferent(){ const c = chargeReferents(); return c.length ? c[0] : null; }
+// Responsable d'une proposition (celui qui contacte le streamer) : répartition sur les propositions ouvertes
+const ETAPES_DEFAUT = ["Ajouté au serveur Discord", "Rôle Discord donné", "Présenté dans le salon", "Règles et fonctionnement expliqués"];
+const etapesIntegration = () => (S.data?.settings.integration ?? ETAPES_DEFAUT).map(x => String(x).replace(/\./g, "·")).filter(Boolean);
+const faitesIntegration = m => etapesIntegration().filter(e => m.integ?.[e]).length;
+function integrationBlock(m){
+  const etapes = etapesIntegration(); if(!etapes.length || m.statut === "Parti") return "";
+  const n = faitesIntegration(m);
+  return `<fieldset class="integ"><legend>Intégration ${n}/${etapes.length}</legend>
+    ${etapes.map(e => `<label><input type="checkbox" data-integ="${esc(e)}" ${m.integ?.[e] ? "checked" : ""}> ${esc(e)}${m.integ?.[e] ? ` <span class="muted">(${fmtDate(m.integ[e])})</span>` : ""}</label>`).join("")}
+    <p class="meta" style="margin:6px 0 0">Étapes réglables dans Réglages → Listes.</p></fieldset>`;
+}
+function chargeResponsables(){
+  const ouvertes = S.data.propositions.filter(p => !CLOSED.includes(p.statut) && !["Aucun contact"].includes(p.statut));
+  return S.data.settings.staff.map(nom => ({nom, n:ouvertes.filter(p => p.responsable === nom).length})).sort((a, b) => a.n - b.n || a.nom.localeCompare(b.nom, "fr"));
+}
 function suivisCard(){
   const d = S.data, me = cfg.me, now = Date.now();
   const nouveaux = d.membres.filter(m => m.statut !== "Parti" && m.arrivee && !["Admin","Modo"].includes(m.role)).map(m => ({m, j:Math.floor((now - new Date(m.arrivee + "T12:00:00")) / 864e5)}));
@@ -1456,6 +1573,7 @@ function viewReglages(){
       ${list("s_statuts","Statuts de proposition", d.settings.statutsProposition, "Un statut par ligne.")}
       ${list("s_roles","Rôles", d.settings.roles, "Un rôle par ligne.")}
       ${list("s_liens","Sites de mesure d'audience", d.settings.liens, "Un lien par ligne.")}
+      ${list("s_integ","Étapes d'intégration d'un nouveau membre", d.settings.integration ?? ETAPES_DEFAUT, "Une étape par ligne. Elles apparaissent en cases à cocher sur la fiche, et sur l'Accueil tant qu'un nouveau (60 derniers jours) n'a pas tout coché.")}
       <label class="f">Proposition « qui stagne » après (jours)<input id="s_stag" type="number" min="3" max="120" value="${stagJours()}"></label>
     </div>
     <div class="tools" style="margin:14px 0 0"><button class="btn primary" id="s_save">Enregistrer les listes</button></div>
@@ -1465,6 +1583,7 @@ function viewReglages(){
     <div class="links">${d.settings.liens.map(u => safeUrl(u) ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/,"").replace(/\/$/,""))}</a>` : "").join("")}</div>
   </section>
   ${santePanel(d)}
+  ${adminsPanel(d)}
   ${staffDiscordPanel(d)}
   ${vitrinePanel(d)}
   ${sauvegardesPanel(d)}
@@ -1579,6 +1698,9 @@ function drawerProp(p){
   <div class="grid">
     ${selF("Statut","statut",p.statut,st.statutsProposition,"À trier")}
     ${fld("Proposée par","proposePar",p.proposePar)}
+    ${(() => { const ch = chargeResponsables(), sg = ch[0], n = Object.fromEntries(ch.map(x => [x.nom, x.n]));
+      return `<label class="f">Responsable (contacte le streamer)<select data-k="responsable"><option value="">— personne —</option>${st.staff.map(o => `<option value="${esc(o)}" ${o === p.responsable ? "selected" : ""}>${esc(o)} (${n[o] ?? 0} en cours)</option>`).join("")}${p.responsable && !st.staff.includes(p.responsable) ? `<option selected>${esc(p.responsable)}</option>` : ""}</select>
+        ${!p.responsable && sg && !CLOSED.includes(p.statut) ? `<span class="meta" style="margin:4px 0 0">Suggestion : <b>${esc(sg.nom)}</b> (${sg.n} en cours) <button type="button" class="btn ghost" data-resppick="${esc(sg.nom)}" style="padding:2px 10px">Choisir</button></span>` : ""}</label>`; })()}
     ${fld("Contact (lien ou e-mail)","contact",p.contact,"text","full")}
     ${fld("Date de proposition","dateProposition",p.dateProposition,"date")}
     ${fld("Date de revue","dateRevue",p.dateRevue,"date")}
@@ -1658,6 +1780,7 @@ function drawerMembre(m){
     ${(() => { const pl = (S.data.paliers || []).filter(x => x.login === m.login).slice(-5).reverse(); return pl.length ? `<p class="meta" style="margin-top:2px">Paliers : ${pl.map(x => `<b>${x.palier}</b> le ${fmtDate(x.date)}`).join(" · ")}</p>` : ""; })()}
   </fieldset>
   ${suiviBlock(m)}
+  ${integrationBlock(m)}
   ${affiliationBlock(m)}
   <fieldset><legend>Activité</legend>
     ${(() => { const x = lastStream(m); return `<p class="meta" style="margin-top:0">Dernier stream : ${!x ? "inconnu" : x.live ? "en live maintenant" : `${x.date.toLocaleDateString("fr-FR")} (${x.days === 0 ? "aujourd'hui" : "il y a " + x.days + " j"}) · ${x.src}`}</p>`; })()}
@@ -1746,6 +1869,8 @@ function viewAide(){
     <p><b>Événement Discord</b> : un événement partagé sur Discord avec une heure apparaît aussi dans l'onglet « Événements » du serveur (créé par le bot). « Intéressé » y vaut inscription. Le supprimer ici le supprime là-bas.</p>
     <p><b>Rappels</b> : la veille et le jour même, les inscrits dont le compte Discord est relié sont mentionnés (ils reçoivent une notification). Le compte se relie tout seul, ou via le champ « Pseudo Discord » de la fiche.</p>
     <p><b>Séries récurrentes</b> (onglet Événements) : un raid chaque samedi, une soirée le 1er vendredi du mois… Chaque date est créée quelques jours avant (réglable), puis se gère comme un événement normal. Supprimer une seule date la saute ; modifier la série met à jour les dates à venir ; « Pause » arrête d'en créer.</p>
+    <p><b>Annuler</b> : après chaque action, un bouton « ↶ Annuler » reste 15 secondes en bas à gauche. <b>Recherche</b> : Ctrl+K (ou 🔍) cherche partout : streamers, propositions, corbeille, événements, historique. <b>Modification simultanée</b> : si quelqu'un a changé le même champ pendant que tu l'éditais, la page te montre les deux versions et te laisse choisir.</p>
+    <p><b>Responsable d'une proposition</b> : celui qui contacte le streamer (suggestion du moins chargé). Chaque matin à 9 h, le robot mentionne dans le salon admin chaque membre du staff qui a des propositions qui stagnent ou des rappels du jour (comptes Discord du staff à renseigner dans Réglages). <b>Intégration</b> : cases à cocher sur la fiche d'un nouveau membre (étapes réglables dans Réglages → Listes) ; l'Accueil liste les intégrations pas terminées.</p>
     <p><b>Santé</b> (Réglages) : état de chaque branchement (robot, webhooks, bot, vitrine, jetons, sauvegardes). Les problèmes et leurs résolutions arrivent aussi dans le salon Discord Commandes.</p>
     <h3>Modifier plusieurs fiches</h3>
     <p>Coche les fiches dans un tableau : une barre apparaît en bas pour changer d'un coup le statut, le rôle, le référent ou une étiquette.</p>
@@ -1980,6 +2105,20 @@ async function lireSauvegarde(f){
   const d = JSON.parse(await r.text()); if(!d.membres || !d.propositions) throw new Error("Ce fichier n'est pas une sauvegarde de La Cabane.");
   return d;
 }
+// Admins de la page : protège les actions lourdes contre les fausses manipulations (pas une vraie sécurité :
+// chaque jeton GitHub garde tous les droits sur le fichier).
+const estAdmin = () => { const a = S.data?.settings.admins || []; return !a.length || a.includes(cfg.me); };
+const ADMIN_SEL = '[data-bk="restore"], [data-trash="purge"], #s_save, #v_save, #s_twsave, #s_staffdcSave, #s_jetsave, #s_adminsSave, #fileIn, #importGo';
+function adminsPanel(d){
+  const a = d.settings.admins || [];
+  return `<section class="panel" id="admins">
+    <h2>Admins de la page</h2>
+    <p>Seuls les admins cochés peuvent restaurer une sauvegarde, supprimer définitivement depuis la corbeille, importer ou remplacer des données, et modifier les Réglages. Les autres voient ces boutons grisés. Personne de coché = tout le monde est admin. C'est une protection contre les fausses manipulations, pas une sécurité : un jeton GitHub garde tous les droits.</p>
+    <div class="grid">${d.settings.staff.map(n => `<label class="check"><input type="checkbox" class="admChk" value="${esc(n)}" ${a.includes(n) ? "checked" : ""}> ${esc(n)}</label>`).join("")}</div>
+    ${a.length && !a.includes(cfg.me) ? `<p class="meta">Tu n'es pas admin de la page${cfg.me ? "" : " (choisis ton prénom dans « Je suis »)"}.</p>` : ""}
+    <div class="tools" style="margin:10px 0 0"><button class="btn primary" id="s_adminsSave">Enregistrer</button></div>
+  </section>`;
+}
 function staffDiscordPanel(d){
   const liste = d.settings.staffDiscord || [], res = d.robot?.staffDiscord || {};
   const lignes = liste.map(x => `${x.nom} ; ${x.discord}`).join("\n");
@@ -2154,6 +2293,8 @@ function bulkApply(what){
 /* ============ Événements ============ */
 document.addEventListener("click", e => {
   const t = e.target;
+  if(t.closest?.(ADMIN_SEL) && S.data && !estAdmin()){ e.preventDefault(); e.stopPropagation(); toast("Réservé aux admins de la page (Réglages → Admins).", true); return; }
+  if(t.closest?.("#rechBtn")){ ouvrirRecherche(); return; }
   // Cases à cocher (sélection groupée) : ne pas ouvrir la fiche
   const sc = t.closest("td.sel, th.sel");
   if(sc){ const cb = sc.querySelector("input"); if(t !== cb) cb.checked = !cb.checked;
@@ -2178,6 +2319,11 @@ document.addEventListener("click", e => {
       if(!r.ok) throw new Error(`Lecture impossible (${r.status}).`);
       const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([await r.text()], {type:"application/json"})); a.download = "cabane-archive.json"; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
     } catch(e){ toast(e.message, true); } })(); return; }
+  if(t.id === "s_adminsSave"){ const a = [...document.querySelectorAll(".admChk:checked")].map(x => x.value);
+    if(a.length && !a.includes(cfg.me) && !confirm("Tu ne t'es pas coché toi-même : tu ne pourras plus modifier les Réglages ensuite. Continuer ?")) return;
+    dispatch({t:"settings", p:{admins:a}, txt:a.length ? `Admins de la page : ${a.join(", ")}` : "Admins de la page : tout le staff"}); toast("Admins enregistrés"); return; }
+  const rsp = t.closest("[data-resppick]"); if(rsp && S.drawer){ const p = S.data.propositions.find(x => x.id === S.drawer.id); if(!p) return;
+    patch("propositions", p.id, {responsable:rsp.dataset.resppick}, `${p.login} · Responsable : ${rsp.dataset.resppick}`); renderDrawer(); return; }
   if(t.id === "srNew"){ S.serieEdit = {rythme:"hebdo", type:"Raid train", public:true, discord:true, publierDiscord:true, avance:7, duree:120}; render(); setTimeout(() => $("#sr_titre")?.focus(), 0); return; }
   if(t.id === "srCancel"){ S.serieEdit = null; render(); return; }
   const sre = t.closest("[data-sredit]"); if(sre){ S.serieEdit = JSON.parse(JSON.stringify((S.data.series || []).find(x => x.id === sre.dataset.sredit) || null)); render(); $("#sr_titre")?.scrollIntoView({block:"center"}); return; }
@@ -2209,7 +2355,7 @@ document.addEventListener("click", e => {
     if(ancien && (ancien.date !== e.date || ancien.heure !== e.heure)){ e.annonceVeille = false; e.annonceJour = false; }
     dispatch({t:"agendaSet", ev:e, ...(pplAvant ? {pplAvant} : {}), notify:true, txt:`Événement ${neuf ? "créé" : "modifié"} : ${e.titre} (${fmtDate(e.date)}${e.heure ? " " + e.heure : ""})`});
     S.evEdit = null; render(); const aPartager = e.publierDiscord && (!ancien?.publieDiscord || ancien.publieDiscord.date !== e.date || (ancien.publieDiscord.heure || "") !== (e.heure || ""));
-    toast(`${neuf ? "Événement créé" : "Événement enregistré"}${aPartager ? " · publication Discord d'ici une minute" : ""}${e.public !== false ? " · sur la vitrine d'ici 2 à 3 minutes" : ""}`); return; }
+    toast(`${neuf ? "Événement créé" : "Événement enregistré"}${aPartager ? " · publication Discord d'ici 2 minutes" : ""}${e.public !== false ? " · sur la vitrine d'ici 2 à 3 minutes" : ""}`); return; }
   const rpf = t.closest("[data-rpf]"); if(rpf){ S.f.rpMiens = rpf.dataset.rpf === "1"; render(); return; }
   const rpd = t.closest("[data-rpdone]");
   if(rpd){ e.stopPropagation(); const c = rpd.dataset.rpc || S.drawer?.c, id = rpd.dataset.rpid || S.drawer?.id; const r = S.data[c]?.find(x => x.id === id); if(!r) return;
@@ -2389,10 +2535,51 @@ document.addEventListener("click", e => {
   }
   if(t.id === "s_save"){
     const lines = id => $("#"+id).value.split("\n").map(s => s.trim()).filter(Boolean);
-    dispatch({t:"settings", p:{nom:$("#s_nom").value.trim(), staff:lines("s_staff"), statutsProposition:lines("s_statuts"), roles:lines("s_roles"), liens:lines("s_liens"), stagnationJours:Math.max(3, Number($("#s_stag").value) || 14)}, txt:"Listes modifiées"});
+    dispatch({t:"settings", p:{nom:$("#s_nom").value.trim(), staff:lines("s_staff"), statutsProposition:lines("s_statuts"), roles:lines("s_roles"), liens:lines("s_liens"), integration:lines("s_integ").map(x => x.replace(/\./g, "·")), stagnationJours:Math.max(3, Number($("#s_stag").value) || 14)}, txt:"Listes modifiées"});
     ensureShape(); toast("Listes enregistrées"); return;
   }
 });
+/* ============ Recherche globale (Ctrl+K) ============ */
+const sansAccents = s => String(s ?? "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const RECH = {q:"", sel:0, res:[]};
+function resultatsRecherche(q){
+  const d = S.data, n = sansAccents(q.trim()); if(!d || n.length < 2) return [];
+  const ok = (...champs) => champs.some(c => sansAccents(c).includes(n));
+  const out = [];
+  for(const m of d.membres) if(ok(m.login, m.discord, m.notes, (m.tags || []).join(" "))) out.push({k:"Streamer", t:m.login, m:[m.statut, m.role].filter(Boolean).join(" · "), go:() => { S.drawer = {c:"membres", id:m.id}; renderDrawer(); }, score:sansAccents(m.login).startsWith(n) ? 0 : 1});
+  for(const p of d.propositions) if(ok(p.login, p.proposePar, p.commentaire, p.notes, p.responsable)) out.push({k:"Proposition", t:p.login, m:[p.statut || "À trier", p.proposePar && "par " + p.proposePar].filter(Boolean).join(" · "), go:() => { S.drawer = {c:"propositions", id:p.id}; renderDrawer(); }, score:sansAccents(p.login).startsWith(n) ? 0 : 1});
+  for(const x of d.corbeille || []) if(ok(x.r.login)) out.push({k:"Corbeille", t:x.r.login, m:`supprimé le ${fmtDate((x.le || "").slice(0, 10))}${x.par ? " par " + x.par : ""}`, go:() => { S.view = "reglages"; render(); setTimeout(() => $("#corbeille")?.scrollIntoView({block:"start"}), 50); }, score:2});
+  for(const e of d.agenda || []) if(ok(e.titre, e.description, e.type)) out.push({k:"Événement", t:e.titre, m:fmtDate(e.date) + (e.heure ? " · " + e.heure : ""), go:() => { S.view = "agenda"; S.evEdit = clone(e); S.evEdit._pplAvant = [...(e.participants || [])]; render(); window.scrollTo(0, 0); }, score:1});
+  for(const se of d.series || []) if(ok(se.titre)) out.push({k:"Série", t:se.titre, m:rythmeTxt(se), go:() => { S.view = "agenda"; S.serieEdit = clone(se); render(); }, score:1});
+  for(const j of (d.journal || []).slice(0, 400)) if(ok(j.txt)) { const fiche = [...d.membres.map(r => ["membres", r]), ...d.propositions.map(r => ["propositions", r])].find(([, r]) => j.txt.startsWith(r.login + " ·"));
+    out.push({k:"Historique", t:j.txt, m:`${fmtStamp(j.le)} · ${j.par}`, go:fiche ? () => { S.drawer = {c:fiche[0], id:fiche[1].id}; renderDrawer(); } : () => { S.view = "reglages"; render(); }, score:3}); }
+  return out.sort((a, b) => a.score - b.score).slice(0, 40);
+}
+function ouvrirRecherche(){
+  if(!S.data){ toast("Connecte-toi d'abord au fichier partagé.", true); return; }
+  RECH.q = ""; RECH.sel = 0; RECH.res = [];
+  $("#rechRoot").innerHTML = `<div class="rech" id="rechOv" role="dialog" aria-modal="true" aria-label="Recherche"><div class="box"><input id="rechQ" type="search" placeholder="Streamer, proposition, événement, historique…" autocomplete="off" aria-label="Rechercher"><ul id="rechL" role="listbox"></ul></div></div>`;
+  majRecherche(); setTimeout(() => $("#rechQ")?.focus(), 0);
+}
+function fermerRecherche(){ $("#rechRoot").innerHTML = ""; }
+function majRecherche(){
+  const ul = $("#rechL"); if(!ul) return;
+  RECH.res = resultatsRecherche(RECH.q); RECH.sel = Math.min(RECH.sel, Math.max(0, RECH.res.length - 1));
+  ul.innerHTML = RECH.q.trim().length < 2 ? `<li class="vide" style="cursor:default">Tape au moins 2 lettres. Échap pour fermer.</li>`
+    : RECH.res.length ? RECH.res.map((r, i) => `<li role="option" data-ri="${i}" aria-selected="${i === RECH.sel}"><span class="k">${esc(r.k)}</span><span class="t">${esc(r.t)}</span><span class="m">${esc(r.m || "")}</span></li>`).join("")
+    : `<li class="vide" style="cursor:default">Rien trouvé.</li>`;
+  ul.querySelector('[aria-selected="true"]')?.scrollIntoView({block:"nearest"});
+}
+function allerResultat(i){ const r = RECH.res[i]; if(!r) return; fermerRecherche(); r.go(); }
+document.addEventListener("input", e => { if(e.target.id === "rechQ"){ RECH.q = e.target.value; RECH.sel = 0; majRecherche(); } });
+document.addEventListener("click", e => { const li = e.target.closest?.("#rechL [data-ri]"); if(li){ allerResultat(Number(li.dataset.ri)); return; } if(e.target.id === "rechOv") fermerRecherche(); });
+document.addEventListener("keydown", e => {
+  if((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k"){ e.preventDefault(); $("#rechOv") ? fermerRecherche() : ouvrirRecherche(); return; }
+  if(!$("#rechOv")) return;
+  if(e.key === "Escape"){ e.preventDefault(); e.stopImmediatePropagation(); fermerRecherche(); return; }
+  if(e.key === "ArrowDown" || e.key === "ArrowUp"){ e.preventDefault(); RECH.sel = Math.max(0, Math.min(RECH.res.length - 1, RECH.sel + (e.key === "ArrowDown" ? 1 : -1))); majRecherche(); }
+  if(e.key === "Enter"){ e.preventDefault(); allerResultat(RECH.sel); }
+}, true);
 document.addEventListener("keydown", e => {
   if(e.key === "Escape" && S.drawer){ S.drawer = null; renderDrawer(); }
   if(e.key === "Enter" && e.target.matches(".ann")){ e.target.click(); }
@@ -2408,6 +2595,9 @@ document.addEventListener("input", e => {
 });
 document.addEventListener("change", e => {
   const t = e.target;
+  if(t.dataset.integ && S.drawer){ const m = S.data.membres.find(x => x.id === S.drawer.id); if(!m) return;
+    patch("membres", m.id, {[`integ.${t.dataset.integ}`]: t.checked ? todayISO() : undefined}, `${m.login} · Intégration : ${t.dataset.integ} ${t.checked ? "fait" : "décoché"}`); renderDrawer(); return; }
+  if(t.id === "fileIn" && S.data && !estAdmin()){ t.value = ""; toast("Réservé aux admins de la page (Réglages → Admins).", true); return; }
   if(["sr_rythme", "sr_debut", "sr_heure"].includes(t.id) && S.serieEdit){ S.serieEdit = lireSerieForm(); render(); return; }
   if(t.dataset.evlier && t.value){ const m = S.data.membres.find(x => x.id === t.value), ev = (S.data.agenda || []).find(x => x.id === t.dataset.evlier); if(!m || !ev) return;
     // le compte Discord est mémorisé sur la fiche : ses prochaines réactions seront reconnues toutes seules
@@ -2427,6 +2617,7 @@ document.addEventListener("change", e => {
     patch(S.drawer.c, r.id, {tags:[...(r.tags || []), tag]}, `${r.login} · Étiquette ajoutée : ${tag}`); t.value = ""; renderDrawer(); setTimeout(() => $("#tagAdd")?.focus(), 0); return; }
   if(t.id === "fileIn"){ const f = t.files[0]; if(f) openLocalFile(f); return; }
   if(t.dataset.k && S.drawer){
+    if(!t.isConnected || !t.closest("#drawerRoot")) return;          // champ d'une fiche déjà refermée : ne pas l'appliquer à une autre
     const {c, id} = S.drawer; const r = S.data[c].find(x => x.id === id); if(!r) return;
     let v = t.type === "checkbox" ? (t.dataset.date ? (t.checked ? todayISO() : null) : t.checked) : t.value.trim();
     if(t.type === "number") v = v === "" ? null : Number(v);
