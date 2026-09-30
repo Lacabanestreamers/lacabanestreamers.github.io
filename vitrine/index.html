@@ -62,7 +62,7 @@ h2 .dot{width:11px;height:11px;border-radius:50%;background:var(--ko);box-shadow
 .lv{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:border-color .15s}
 .lv:hover{border-color:var(--ko)}
 .lv .img{aspect-ratio:16/9;background:#0b0820 center/cover no-repeat;position:relative}
-.lv .badge{position:absolute;left:10px;top:10px;background:var(--ko);color:#fff;font-weight:700;font-size:13px;padding:2px 8px;border-radius:5px;letter-spacing:.04em}
+.lv .badge{position:absolute;left:10px;top:10px;background:var(--ko);color:#1a0716;font-weight:700;font-size:13px;padding:2px 8px;border-radius:5px;letter-spacing:.04em}
 .lv .vw{position:absolute;left:10px;bottom:10px;background:rgba(10,6,25,.8);font-weight:700;font-size:14px;padding:2px 8px;border-radius:5px}
 .lv .b{display:flex;gap:10px;padding:12px 14px;align-items:flex-start}
 .lv .t{font-size:15px;color:#D4CFF5;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
@@ -73,8 +73,8 @@ h2 .dot{width:11px;height:11px;border-radius:50%;background:var(--ko);box-shadow
 .search{flex:1 1 240px;max-width:360px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px;color:var(--text);font:inherit}
 .chip{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:6px 14px;cursor:pointer;font:600 16px Rajdhani,sans-serif;color:var(--text)}
 .chip[aria-pressed="true"]{border-color:var(--cyan);background:rgba(61,227,255,.12)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:10px;text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(250px,100%),1fr));gap:14px}
+.card{min-width:0;overflow-wrap:anywhere;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:10px;text-decoration:none;color:inherit;transition:border-color .15s,transform .15s}
 .card:hover{border-color:var(--pink);transform:translateY(-2px)}
 .card.on{border-color:rgba(255,92,122,.6)}
 .who{display:flex;gap:12px;align-items:center;min-width:0}
@@ -87,12 +87,26 @@ h2 .dot{width:11px;height:11px;border-radius:50%;background:var(--ko);box-shadow
 .tag.aff{background:rgba(169,112,255,.18);color:var(--aff);border:1px solid rgba(169,112,255,.5)}
 .tag.par{background:#9146FF;color:#fff}
 .tag.staff{background:rgba(255,79,216,.15);color:var(--pink);border:1px solid rgba(255,79,216,.5)}
-.tag.live{background:var(--ko);color:#fff}
+.tag.live{background:var(--ko);color:#1a0716}
 .bio{color:#C9C3EE;font-size:15.5px;margin:0;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}
 .since{color:var(--muted);font-size:14px;margin-top:auto}
 .empty{color:var(--muted);padding:30px 0}
 
 /* Réussites */
+.clips{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.clip{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column}
+.clip:hover,.clip:focus-visible{border-color:var(--pink)}
+.clip .img{aspect-ratio:16/9;background:#0a0718 center/cover no-repeat;position:relative}
+.clip .img .vw{position:absolute;right:8px;bottom:8px;background:rgba(0,0,0,.72);border-radius:6px;padding:2px 8px;font-size:14px;font-weight:700}
+.clip .b{padding:10px 12px;display:flex;gap:10px;align-items:center}
+.clip .b .av{width:34px;height:34px}
+.clip .t{font-weight:700;line-height:1.2;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.clip .n{font-size:14px;color:var(--muted)}
+.jeux{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.jeu{font-size:14px;font-weight:700;color:var(--cyan);border:1px solid rgba(61,227,255,.35);border-radius:999px;padding:1px 10px}
+select.chip{appearance:none;padding-right:28px;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 15px) 55%,calc(100% - 10px) 55%;background-size:5px 5px;background-repeat:no-repeat}
+.rejoindre{background:linear-gradient(135deg,rgba(255,79,216,.12),rgba(61,227,255,.08));border:1px solid var(--line);border-radius:16px;padding:22px 24px}
+.rejoindre p{white-space:pre-line;font-size:18px;margin:0 0 14px;max-width:70ch}
 .wins{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
 .win{display:flex;gap:12px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px;text-decoration:none;color:inherit}
 .win:hover{border-color:var(--pink)}
@@ -180,7 +194,7 @@ footer{border-top:1px solid var(--line);margin-top:50px;padding:22px 0 40px;colo
 @media (max-width:600px){
   header{padding:36px 0 20px}
   .intro{font-size:18px}
-  .grid{grid-template-columns:1fr}
+  .grid{grid-template-columns:minmax(0,1fr)}
 }
 </style>
 </head>
@@ -204,8 +218,10 @@ const $ = s => document.querySelector(s);
 const esc = v => String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const okLogin = l => /^[a-z0-9_]{1,25}$/i.test(l || "");
 const okImg = u => /^https:\/\/static-cdn\.jtvnw\.net\//.test(u || "");
+const okClipImg = u => /^https:\/\/(static-cdn\.jtvnw\.net|clips-media-assets2\.twitch\.tv)\//.test(u || "");
+const okClip = c => c && /^https:\/\/(clips\.twitch\.tv|www\.twitch\.tv)\//.test(c.url || "");
 const chan = l => `https://www.twitch.tv/${encodeURIComponent(l)}`;
-let DATA = null, filtre = "tous", q = "", chargerFait = false;
+let DATA = null, filtre = "tous", q = "", chargerFait = false, jeuFiltre = "";
 
 function av(m){ return okImg(m.avatar) ? `<img class="av" src="${esc(m.avatar)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : `<span class="av" aria-hidden="true">${esc((m.nom || m.login || "?")[0])}</span>`; }
 function tags(m){
@@ -218,9 +234,9 @@ function succesTxt(x){ return x.type === "palier" ? `a passé les <b>${Number(x.
 const succesIc = x => x.type === "palier" ? "🚀" : "🎉";
 const pageUrl = l => `?m=${encodeURIComponent(l)}`;
 // Anniversaire de stream : prochaine date (aujourd'hui compris), nombre de jours et d'années de stream fêtées
-function anniv(m){
-  if(!/^\d{4}-\d{2}-\d{2}$/.test(m.premierStream || "")) return null;
-  const [y, mo, d] = m.premierStream.split("-").map(Number);
+function anniv(m, champ = "premierStream"){
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(m[champ] || "")) return null;
+  const [y, mo, d] = m[champ].split("-").map(Number);
   const t = new Date(); t.setHours(0, 0, 0, 0);
   const le = an => { const x = new Date(an, mo - 1, d); if(mo === 2 && d === 29 && x.getMonth() !== 1) x.setDate(0); return x; };  // 29/02 → 28/02 les années non bissextiles
   let prochain = le(t.getFullYear()); if(prochain < t) prochain = le(t.getFullYear() + 1);
@@ -249,7 +265,7 @@ function render(){
   const membres = (d.membres || []).filter(m => okLogin(m.login));
   if(perso){ renderProfil(membres.find(m => m.login.toLowerCase() === perso.toLowerCase()), d); return; }
   // Anniversaires de stream : aujourd'hui, puis les 7 prochains jours
-  const annivs = membres.map(m => ({m, a:anniv(m)})).filter(x => x.a && x.a.jours <= 7).sort((a, b) => a.a.jours - b.a.jours || a.m.nom.localeCompare(b.m.nom, "fr"));
+  const annivs = [...membres.map(m => ({m, a:anniv(m)})), ...membres.map(m => ({m, a:anniv(m, "depuis"), cabane:true}))].filter(x => x.a && x.a.jours <= 7).sort((a, b) => a.a.jours - b.a.jours || a.m.nom.localeCompare(b.m.nom, "fr"));
   // Réussites des 30 derniers jours, tous membres confondus
   const lim = new Date(Date.now() - 30 * 864e5).toISOString().slice(0, 10);
   const wins = membres.flatMap(m => (m.succes || []).filter(x => x.date >= lim).map(x => ({m, x}))).sort((a, b) => b.x.date.localeCompare(a.x.date)).slice(0, 12);
@@ -258,8 +274,12 @@ function render(){
   $("#stats").innerHTML = "";
 
   const qq = q.trim().toLowerCase();
+  const tousJeux = (() => { const n = {}; for(const m of membres) for(const j of m.jeux || []) n[j] = (n[j] || 0) + 1; return Object.entries(n).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "fr")).slice(0, 30); })();
+  if(jeuFiltre && !tousJeux.some(([j]) => j === jeuFiltre)) jeuFiltre = "";
   const liste = membres.filter(m => (filtre === "tous" || (filtre === "live" && m.live) || (filtre === "aff" && (m.type === "affiliate" || m.type === "partner")) || (filtre === "staff" && m.staff))
-    && (!qq || [m.nom, m.login, m.bio, m.live?.jeu].some(x => String(x || "").toLowerCase().includes(qq))));
+    && (!jeuFiltre || (m.jeux || []).includes(jeuFiltre) || m.live?.jeu === jeuFiltre)
+    && (!qq || [m.nom, m.login, m.bio, m.live?.jeu, ...(m.jeux || [])].some(x => String(x || "").toLowerCase().includes(qq))));
+  const clips = membres.filter(m => okClip(m.clip)).sort((a, b) => (b.clip.vues || 0) - (a.clip.vues || 0)).slice(0, 8);
   const cache = encodeURIComponent(d.maj || "");
   const ch = d.chiffres || {};
   const nf = n => Number(n).toLocaleString("fr-FR");
@@ -278,6 +298,10 @@ function render(){
         <span class="img" style="${okImg(m.live.apercu) ? `background-image:url('${esc(m.live.apercu)}?t=${cache}')` : ""}"><span class="badge">LIVE</span><span class="vw">${Number(m.live.viewers) || 0} spectateur${(m.live.viewers || 0) > 1 ? "s" : ""}${m.live.depuis ? " · " + duree(m.live.depuis) : ""}</span></span>
         <span class="b">${av(m)}<span style="min-width:0"><span class="nm" style="display:block;font-size:17px">${esc(m.nom)}</span>${m.live.jeu ? `<span class="g">${esc(m.live.jeu)}</span>` : ""}<span class="t">${esc(m.live.titre)}</span></span></span>
       </a>`).join("")}</div></section>` : ""}
+    ${clips.length ? `<section aria-labelledby="h-clips"><h2 id="h-clips">🎬 Clips de la semaine</h2>
+      <div class="clips">${clips.map(m => `<a class="clip" href="${esc(m.clip.url)}" target="_blank" rel="noopener" aria-label="Clip de ${esc(m.nom)} : ${esc(m.clip.titre)} (s'ouvre sur Twitch)">
+        <span class="img" style="${okClipImg(m.clip.vignette) ? `background-image:url('${esc(m.clip.vignette)}')` : ""}"><span class="vw">▶ ${Number(m.clip.vues) || 0} vue${(m.clip.vues || 0) > 1 ? "s" : ""}</span></span>
+        <span class="b">${av(m)}<span style="min-width:0"><span class="t">${esc(m.clip.titre || "Clip")}</span><span class="n">${esc(m.nom)}</span></span></span></a>`).join("")}</div></section>` : ""}
     ${agenda.length ? `<section aria-labelledby="h-evts"><h2 id="h-evts">📅 Prochains événements</h2>
       <div class="evts">${agenda.map(e => `<article class="evt ${e.j === 0 ? "today" : ""}">
         <div class="q"><b>${e.dt.getDate()}</b><small>${e.dt.toLocaleDateString("fr-FR", {month:"short"})}</small><small>${esc((e.heure || "").replace(":", "h"))}</small></div>
@@ -288,9 +312,10 @@ function render(){
           ${actionsEvt(e, d)}
           ${e.id ? `<details class="cal"><summary>📅 Ajouter à mon agenda</summary><a href="${esc(lienGoogle(e))}" target="_blank" rel="noopener">Google Agenda</a><a href="#" data-ics="${esc(e.id)}">Apple, Outlook… (.ics)</a></details>` : ""}</div>
       </article>`).join("")}</div></section>` : ""}
-    ${annivs.length ? `<section aria-labelledby="h-anniv"><h2 id="h-anniv">🎂 Anniversaires de stream</h2>
-      <div class="annivs">${annivs.map(({m, a}) => `<a class="ann ${a.jours ? "bientot" : ""}" href="${pageUrl(m.login)}" data-nav>${av(m)}<span>${a.jours === 0
-        ? `<b>${esc(m.nom)}</b> fête aujourd'hui <b>${fete(a.ans)}</b> de stream ! 🎉<span class="d">Passe lui souhaiter en live ou sur sa chaîne</span>`
+    ${annivs.length ? `<section aria-labelledby="h-anniv"><h2 id="h-anniv">🎂 Anniversaires</h2>
+      <div class="annivs">${annivs.map(({m, a, cabane}) => `<a class="ann ${a.jours ? "bientot" : ""}" href="${pageUrl(m.login)}" data-nav>${av(m)}<span>${a.jours === 0
+        ? (cabane ? `🏠 <b>${esc(m.nom)}</b> fête aujourd'hui <b>${ansTxt(a.ans)}</b> dans ${esc(d.titre || "La Cabane")} ! 💜<span class="d">Merci d'être avec nous</span>` : `<b>${esc(m.nom)}</b> fête aujourd'hui <b>${fete(a.ans)}</b> de stream ! 🎉<span class="d">Passe lui souhaiter en live ou sur sa chaîne</span>`)
+        : cabane ? `🏠 <b>${esc(m.nom)}</b> fêtera ${ansTxt(a.ans)} dans ${esc(d.titre || "La Cabane")}<span class="d">${a.jours === 1 ? "demain" : `dans ${a.jours} jours`}, le ${a.date.toLocaleDateString("fr-FR", {day:"numeric", month:"long"})}</span>`
         : `<b>${esc(m.nom)}</b> fêtera ${fete(a.ans)} de stream<span class="d">${a.jours === 1 ? "demain" : `dans ${a.jours} jours`}, le ${a.date.toLocaleDateString("fr-FR", {day:"numeric", month:"long"})}</span>`}</span></a>`).join("")}</div></section>` : ""}
     ${nouveaux.length ? `<section aria-labelledby="h-new"><h2 id="h-new">👋 Bienvenue aux nouveaux</h2>
       <div class="news">${nouveaux.map(m => `<a class="new" href="${pageUrl(m.login)}" data-nav>${av(m)}<span class="nm">${esc(m.nom)}</span><span class="d">depuis le ${new Date(m.depuis + "T12:00:00").toLocaleDateString("fr-FR", {day:"numeric", month:"long"})}</span></a>`).join("")}</div></section>` : ""}
@@ -300,13 +325,17 @@ function render(){
       <div class="tools">
         <input class="search" id="q" type="search" placeholder="Chercher un streamer, un jeu…" value="${esc(q)}" aria-label="Chercher un streamer">
         ${[["tous","Tous"],["live","En live"],["aff","Affiliés et partenaires"],["staff","Staff"]].map(([k,l]) => `<button class="chip" data-f="${k}" aria-pressed="${filtre === k}">${l}</button>`).join("")}
+        ${tousJeux.length ? `<select class="chip" id="jeuSel" aria-label="Filtrer par jeu"><option value="">🎮 Tous les jeux</option>${tousJeux.map(([j, n]) => `<option value="${esc(j)}" ${j === jeuFiltre ? "selected" : ""}>${esc(j)} (${n})</option>`).join("")}</select>` : ""}
       </div>
       ${liste.length ? `<div class="grid">${liste.map(m => `<a class="card ${m.live ? "on" : ""}" href="${pageUrl(m.login)}" data-nav>
         <span class="who">${av(m)}<span style="min-width:0"><span class="nm" style="display:block">${esc(m.nom)}</span><span class="tags">${tags(m)}</span></span></span>
         ${m.bio ? `<p class="bio">${esc(m.bio)}</p>` : ""}
+        ${(m.jeux || []).length ? `<span class="jeux">${m.jeux.slice(0, 3).map(j => `<span class="jeu">${esc(j)}</span>`).join("")}</span>` : ""}
         ${m.depuis ? `<span class="since">${depuis(m.depuis)}</span>` : ""}
       </a>`).join("")}</div>` : `<p class="empty">Aucun streamer ne correspond.</p>`}
-    </section>`;
+    </section>
+    ${d.rejoindre?.texte ? `<section aria-labelledby="h-rej"><div class="rejoindre"><h2 id="h-rej" style="margin-top:0">${esc(d.rejoindre.titre || "Rejoindre La Cabane")}</h2><p>${esc(d.rejoindre.texte)}</p>
+      ${/^https:\/\/(discord\.gg|discord\.com\/invite)\//i.test(d.lienDiscord || "") ? `<a class="btn" href="${esc(d.lienDiscord)}" target="_blank" rel="noopener">Rejoindre le Discord</a>` : ""}</div></section>` : ""}`;
   $("#maj").textContent = d.maj ? `Mis à jour le ${new Date(d.maj).toLocaleDateString("fr-FR")} à ${new Date(d.maj).toLocaleTimeString("fr-FR", {hour:"2-digit", minute:"2-digit"})} · actualisé toutes les heures` : "";
 }
 
@@ -330,6 +359,8 @@ function renderProfil(m, d){
         <span class="tags">${tags(m)}</span>
         ${m.bio ? `<p class="bio">${esc(m.bio)}</p>` : ""}
         <span class="since">${m.depuis ? `🏠 ${depuis(m.depuis)} de <b>${esc(d.titre || "La Cabane")}</b>` : `🏠 Membre de <b>${esc(d.titre || "La Cabane")}</b>`}</span>
+        ${(m.jeux || []).length ? `<div class="jeux" aria-label="Joue surtout à">🎮 ${m.jeux.map(j => `<span class="jeu">${esc(j)}</span>`).join("")}</div>` : ""}
+        ${(() => { const a = anniv(m, "depuis"); return a && a.jours === 0 ? `<div class="fete">🏠 Aujourd'hui, ${esc(m.nom)} fête ${ansTxt(a.ans)} dans ${esc(d.titre || "La Cabane")} ! 💜</div>` : ""; })()}
         ${(() => { const a = anniv(m); if(!a) return "";
           return a.jours === 0 ? `<div class="fete">🎂 Aujourd'hui, ${esc(m.nom)} fête ${fete(a.ans)} de stream ! Joyeux anniversaire de stream ! 🎉</div>`
             : `<div class="fete calme">🎂 Anniversaire de stream le ${a.date.toLocaleDateString("fr-FR", {day:"numeric", month:"long"})} : ${ansTxt(a.ans)} de stream${a.jours <= 7 ? ` (${a.jours === 1 ? "demain" : `dans ${a.jours} jours`})` : ""}</div>`; })()}
@@ -346,6 +377,9 @@ function renderProfil(m, d){
         <p class="hint">Streamer de ${esc(d.titre || "La Cabane")} ? Ajoute ce lien dans tes panneaux Twitch ou ta bio : <span style="overflow-wrap:anywhere">${esc(lien)}</span></p>
       </div>
     </article>
+    ${okClip(m.clip) ? `<section aria-labelledby="h-pclip"><h2 id="h-pclip">🎬 Son clip de la semaine</h2><div class="clips" style="max-width:420px"><a class="clip" href="${esc(m.clip.url)}" target="_blank" rel="noopener" aria-label="${esc(m.clip.titre)} (s'ouvre sur Twitch)">
+      <span class="img" style="${okClipImg(m.clip.vignette) ? `background-image:url('${esc(m.clip.vignette)}')` : ""}"><span class="vw">▶ ${Number(m.clip.vues) || 0} vue${(m.clip.vues || 0) > 1 ? "s" : ""}</span></span>
+      <span class="b"><span style="min-width:0"><span class="t">${esc(m.clip.titre || "Clip")}</span><span class="n">${m.clip.date ? fmtD(m.clip.date) : ""}</span></span></span></a></div></section>` : ""}
     ${succes.length ? `<section aria-labelledby="h-succes"><h2 id="h-succes">Ses réussites</h2>
       <ul class="timeline">${succes.map(x => `<li><span class="d">${fmtD(x.date)}</span><span>${succesIc(x)} ${esc(m.nom)} ${succesTxt(x)}</span></li>`).join("")}</ul></section>` : ""}`;
 }
@@ -536,6 +570,7 @@ document.addEventListener("click", e => {
 });
 let sessionScroll = 0;
 window.addEventListener("popstate", () => render());
+document.addEventListener("change", e => { if(e.target.id === "jeuSel"){ jeuFiltre = e.target.value; render(); $("#jeuSel")?.focus(); } });
 document.addEventListener("input", e => { if(e.target.id === "q"){ q = e.target.value; const pos = e.target.selectionStart; render(); const el = $("#q"); el.focus(); el.setSelectionRange(pos, pos); } });
 charger();
 setInterval(() => { if(document.visibilityState === "visible") charger(); }, 5 * 60 * 1000);

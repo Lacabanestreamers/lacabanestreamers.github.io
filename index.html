@@ -25,7 +25,7 @@
 <style>
 :root{
   --bg:#100B24; --panel:#18123A; --panel2:#201951; --line:#2E2663; --text:#ECE9FF; --muted:#9C95CB;
-  --cyan:#3DE3FF; --pink:#FF4FD8; --ok:#5CF2A6; --warn:#FFC857; --ko:#FF5C7A; --grey:#7B769C;
+  --cyan:#3DE3FF; --pink:#FF4FD8; --ok:#5CF2A6; --warn:#FFC857; --ko:#FF5C7A; --grey:#8E89B4;
   --radius:10px; color-scheme:dark;
   box-sizing:border-box;
   padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
@@ -299,6 +299,13 @@ tr.picked{background:rgba(255,79,216,.08)}
 .evs{display:grid;gap:12px}
 .navn{display:inline-block;min-width:18px;margin-left:6px;padding:0 5px;border-radius:9px;background:var(--warn,#ffb020);color:#1a0716;font-size:12px;line-height:18px;text-align:center;vertical-align:1px}
 .navn:empty{display:none}
+select{background-color:var(--panel2);color:var(--text)}
+.meta a,.muted a,p a{text-decoration:underline;text-underline-offset:2px}
+.ev.passe .quand small{color:var(--text)}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+table.tbl{border-collapse:collapse;font-size:15px}
+table.tbl th{text-align:left;font-weight:700;color:var(--muted);padding:6px 8px;border-bottom:1px solid var(--line)}
+table.tbl td{padding:6px 8px;border-bottom:1px solid var(--line)}
 #undoRoot .undo{position:fixed;left:calc(16px + env(safe-area-inset-left,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:61;display:flex;gap:10px;align-items:center;max-width:min(460px,calc(100vw - 32px));background:var(--panel2);border:1px solid var(--pink);border-radius:10px;padding:8px 10px 8px 14px;box-shadow:0 8px 24px rgba(0,0,0,.45)}
 #undoRoot .undo span{font-size:14px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
 #undoRoot .undo button{flex:none}
@@ -324,7 +331,8 @@ button[disabled].adminonly{opacity:.45;cursor:not-allowed}
 .netl .meta{margin:0}
 @media (max-width:700px){ .netl{grid-template-columns:1fr} .netl .netb{justify-content:flex-start} }
 .ev{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;display:grid;grid-template-columns:86px 1fr auto;gap:14px;align-items:start}
-.ev.passe{opacity:.6}
+.ev.passe{border-style:dashed;background:transparent}
+.ev.passe h3{color:var(--muted)}
 .ev .quand{text-align:center;border-right:1px solid var(--line);padding-right:12px}
 .ev .quand b{display:block;font:800 26px/1 Orbitron,sans-serif}
 .ev .quand small{display:block;color:var(--muted)}
@@ -556,6 +564,40 @@ function fermerAnnulation(){
   UNDO.timer = setTimeout(() => { root.innerHTML = ""; }, 15000);
 }
 
+/* ============ Notifications du navigateur (page ouverte, même en arrière-plan) ============ */
+const NOTIF_KEY = "cabane.notifs", NOTIF_VU = "cabane.notifsVues";
+const notifsOn = () => store.get(NOTIF_KEY, false) && "Notification" in window && Notification.permission === "granted";
+function notifier(titre, corps, tag, ouvrir){
+  if(!notifsOn()) return;
+  try { const n = new Notification(titre, {body:corps, tag, icon:"icon-192.png"}); n.onclick = () => { window.focus(); ouvrir?.(); n.close(); }; } catch {}
+}
+// Compare les données avant / après une synchro : nouvelles propositions, et rappels du jour (une fois chacun)
+function verifierNotifs(avant, apres){
+  if(!notifsOn() || !apres) return;
+  if(avant){ const ids = new Set(avant.propositions.map(p => p.id));
+    for(const p of apres.propositions) if(!ids.has(p.id)) notifier(`📝 Nouvelle proposition : ${p.login}`, p.proposePar ? `Proposée par ${p.proposePar}` : "À trier", "prop-" + p.id, () => { S.drawer = {c:"propositions", id:p.id}; renderDrawer(); }); }
+  const vus = new Set(store.get(NOTIF_VU, [])), t = todayISO(), me = cfg.me;
+  for(const c of ["membres", "propositions"]) for(const r of apres[c]) for(const rp of r.rappels || []){
+    const k = `${rp.id}|${t}`; if(rp.date > t || vus.has(k) || (me && rp.par && rp.par !== me)) continue;
+    vus.add(k); notifier(`🔔 Rappel : ${r.login}`, rp.texte, "rp-" + rp.id, () => { S.drawer = {c, id:r.id}; renderDrawer(); }); }
+  store.set(NOTIF_VU, [...vus].filter(k => k.endsWith("|" + t)));
+}
+async function activerNotifs(on){
+  if(!on){ store.set(NOTIF_KEY, false); render(); toast("Notifications désactivées sur cet appareil"); return; }
+  if(!("Notification" in window)){ toast("Ce navigateur ne gère pas les notifications.", true); return; }
+  const p = Notification.permission === "granted" ? "granted" : await Notification.requestPermission();
+  if(p !== "granted"){ toast("Notifications refusées par le navigateur (réglages du site pour les autoriser).", true); return; }
+  store.set(NOTIF_KEY, true); render(); notifier("La Cabane", "Les notifications sont activées sur cet appareil.", "test"); verifierNotifs(null, S.data);
+}
+function notifsPanel(){
+  const dispo = "Notification" in window, refus = dispo && Notification.permission === "denied";
+  return `<section class="panel" id="notifs"><h2>Notifications sur cet appareil</h2>
+    <p>Quand la page est ouverte (même dans un onglet en arrière-plan), une notification apparaît pour chaque <b>nouvelle proposition</b> et pour <b>tes rappels du jour</b>. Rien n'arrive si la page est fermée : il n'y a pas de serveur pour les envoyer. Réglage propre à ce navigateur.</p>
+    ${!dispo ? `<p class="none">Ce navigateur ne gère pas les notifications.</p>` : refus ? `<p class="down">Le navigateur bloque les notifications pour ce site : autorise-les dans les réglages du site (cadenas à gauche de l'adresse).</p>`
+      : `<div class="tools" style="margin:10px 0 0">${notifsOn() ? `<span class="up" style="align-self:center">● Activées</span><button class="btn ghost" id="notifOff">Désactiver</button>` : `<button class="btn primary" id="notifOn">Activer les notifications</button>`}</div>`}
+  </section>`;
+}
+
 /* ============ Réveil du robot groupé ============ */
 // Plusieurs enregistrements à la suite = un seul passage du robot (chaque passage coûte au moins 1 minute de quota GitHub)
 let reveilT = null;
@@ -652,14 +694,15 @@ async function pull(silent){
   if(S.mode !== "github" || S.saving || S.pending.length) return;
   try {
     const fresh = await ghGet(true);
-    if(fresh && fresh.sha !== S.sha){ S.data = fresh.data; S.sha = fresh.sha; ensureShape(); render(); if(!silent) toast("Données mises à jour"); }
+    if(fresh && fresh.sha !== S.sha){ const avant = S.data; S.data = fresh.data; S.sha = fresh.sha; ensureShape(); render(); verifierNotifs(avant, S.data); if(!silent) toast("Données mises à jour"); }
     else if(!silent) toast("Déjà à jour");
     relancerRobotSiBesoin();
     S.lastError = null;
   } catch(e){ S.lastError = e.message; if(!silent) toast(e.message, true); }
   updateSync();
 }
-setInterval(() => { if(document.visibilityState === "visible") pull(true); }, 90000);
+setInterval(() => { if(document.visibilityState === "visible" || notifsOn()) pull(true); }, 90000);   // en arrière-plan seulement si les notifications sont activées
+setInterval(() => { if(S.data) verifierNotifs(null, S.data); }, 10 * 60000);                             // rappels qui tombent dans la journée
 // Statut live relu toutes les 3 min (et au retour sur l'onglet)
 const liveStale = () => S.data && !S.liveLoading && (!S.liveAt || Date.now() - S.liveAt > 180000);
 setInterval(() => { if(document.visibilityState === "visible" && liveStale()) loadLive(); }, 30000);
@@ -1263,13 +1306,15 @@ function lineChart(pts, opts = {}){
   const ticks = [lo, lo + span/2, hi].map(v => `<text x="${L-6}" y="${Y(v)+4}" text-anchor="end">${Math.round(v)}</text><line class="ax" x1="${L}" x2="${W-Rr}" y1="${Y(v)}" y2="${Y(v)}" stroke-dasharray="2 4"/>`).join("");
   const step = Math.max(1, Math.ceil(pts.length / 6));
   const labels = pts.map((p,i) => i % step === 0 || i === pts.length - 1 ? `<text x="${X(i)}" y="${H-5}" text-anchor="middle">${esc(p.l)}</text>` : "").join("");
-  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(opts.label || "")}">${ticks}
+  const resume = `${opts.label ? opts.label + " : " : ""}de ${Math.round(pts[0].v)} (${pts[0].l}) à ${Math.round(pts[pts.length - 1].v)} (${pts[pts.length - 1].l})`;
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(resume)}"><title>${esc(resume)}</title>${ticks}
     <polygon class="ar" points="${X(0)},${H-B} ${line} ${X(pts.length-1)},${H-B}"/><polyline class="ln" points="${line}"/>${labels}</svg>`;
 }
 function barChart(rows){
   if(!rows.length) return `<p class="none">Pas de données.</p>`;
   const W = 420, rowH = 26, H = rows.length * rowH + 6, L = 150, max = Math.max(...rows.map(r => r.v)) || 1;
-  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img">${rows.map((r,i) => { const w = (W - L - 40) * r.v / max;
+  const resume = rows.map(r => `${r.l} : ${r.v}`).join(", ");
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(resume)}"><title>${esc(resume)}</title>${rows.map((r,i) => { const w = (W - L - 40) * r.v / max;
     return `<text x="${L-8}" y="${i*rowH+18}" text-anchor="end">${esc(r.l)}</text><rect class="br" x="${L}" y="${i*rowH+6}" width="${Math.max(2,w).toFixed(1)}" height="16" rx="3" style="${r.c ? `fill:${r.c}` : ""}"/><text x="${L+w+6}" y="${i*rowH+18}">${r.v}</text>`; }).join("")}</svg>`;
 }
 /* ----- Carte récap du mois (image) ----- */
@@ -1356,6 +1401,26 @@ async function drawRecap(mk){
   return cv;
 }
 const lastSnapTotal = snaps => { const s = snaps[snaps.length-1]; return s ? Object.values(s.follows || {}).reduce((a,b) => a + (b||0), 0) : null; };
+// Entonnoir des propositions, mois par mois (d'après la date de proposition)
+function entonnoirCard(){
+  const d = S.data, mois = [], now = new Date();
+  for(let i = 5; i >= 0; i--){ const dt = new Date(now.getFullYear(), now.getMonth() - i, 1); mois.push({k:`${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, "0")}`, l:dt.toLocaleDateString("fr-FR", {month:"long"})}); }
+  const lignes = [...d.propositions.map(p => ({m:(p.dateProposition || "").slice(0, 7), st:p.statut || "À trier", fin:["Accepté","Refusé","Abandonnée","Aucun contact"].includes(p.statut) ? (p.dateRevue || p.statutDepuis) : null, deb:p.dateProposition})),
+    ...d.membres.filter(m => m.candidature?.dateProposition).map(m => ({m:m.candidature.dateProposition.slice(0, 7), st:"Accepté", fin:m.candidature.transfereLe, deb:m.candidature.dateProposition}))];
+  const stat = k => { const l = lignes.filter(x => x.m === k), n = st => l.filter(x => st.includes(x.st)).length;
+    const dl = l.filter(x => x.fin && x.deb).map(x => (new Date(x.fin) - new Date(x.deb)) / 864e5).filter(x => x >= 0);
+    return {recues:l.length, acc:n(["Accepté"]), ref:n(["Refusé"]), aband:n(["Abandonnée","Aucun contact"]), cours:l.length - n(["Accepté","Refusé","Abandonnée","Aucun contact"]), delai:dl.length ? Math.round(dl.reduce((a, b) => a + b, 0) / dl.length) : null}; };
+  const rows = mois.map(mo => ({...mo, ...stat(mo.k)})), tot = rows.reduce((a, r) => ({recues:a.recues + r.recues, acc:a.acc + r.acc, ref:a.ref + r.ref, aband:a.aband + r.aband, cours:a.cours + r.cours}), {recues:0, acc:0, ref:0, aband:0, cours:0});
+  const max = Math.max(1, ...rows.map(r => r.recues));
+  const barre = r => r.recues ? `<span style="display:flex;height:10px;border-radius:5px;overflow:hidden;width:${Math.round(r.recues / max * 100)}%;min-width:8px;background:var(--line)" aria-hidden="true">${[["acc","var(--ok)"],["ref","var(--ko)"],["aband","var(--grey)"],["cours","var(--cyan)"]].map(([k, c]) => r[k] ? `<span style="flex:${r[k]};background:${c}"></span>` : "").join("")}</span>` : "";
+  const pct = (a, b) => b ? Math.round(a / b * 100) + " %" : "–";
+  return `<section class="card" style="margin-bottom:14px"><h2>Entonnoir des propositions (6 mois)</h2>
+    <p class="meta" style="margin-top:0">Sur ${tot.recues} proposition${tot.recues > 1 ? "s" : ""} : <b class="up">${tot.acc} acceptée${tot.acc > 1 ? "s" : ""}</b> (${pct(tot.acc, tot.recues)}), <b class="down">${tot.ref} refusée${tot.ref > 1 ? "s" : ""}</b>, ${tot.aband} abandonnée${tot.aband > 1 ? "s" : ""} ou sans contact, <b style="color:var(--cyan)">${tot.cours} en cours</b>. Taux d'acceptation des décisions : <b>${pct(tot.acc, tot.acc + tot.ref)}</b>.</p>
+    <div style="overflow-x:auto" tabindex="0" role="region" aria-label="Tableau de l'entonnoir des propositions"><table class="tbl" style="width:100%;min-width:520px"><thead><tr><th scope="col">Mois</th><th scope="col">Reçues</th><th scope="col">Acceptées</th><th scope="col">Refusées</th><th scope="col">Abandon</th><th scope="col">En cours</th><th scope="col">Délai moyen</th><th scope="col" style="width:30%"><span class="sr">Répartition</span></th></tr></thead>
+    <tbody>${rows.map(r => `<tr><td>${esc(r.l)}</td><td><b>${r.recues}</b></td><td class="up">${r.acc || ""}</td><td class="down">${r.ref || ""}</td><td>${r.aband || ""}</td><td>${r.cours || ""}</td><td>${r.delai != null ? r.delai + " j" : "–"}</td><td>${barre(r)}</td></tr>`).join("")}</tbody></table></div>
+    <p class="meta">Chaque proposition compte dans le mois où elle a été proposée. Délai moyen : de la proposition à la décision (acceptée, refusée, abandonnée).</p>
+  </section>`;
+}
 function viewStats(){
   const d = S.data, today = todayISO();
   const actifs = d.membres.filter(m => m.statut !== "Parti");
@@ -1397,6 +1462,7 @@ function viewStats(){
     ${kpi("Délai de décision", delai != null ? delai + " j" : "–", delais.length ? `moyenne sur ${delais.length} décisions datées` : "pas encore de dates")}
     ${kpi("Paliers ce mois", palMois, "paliers de 50 follows franchis")}
   </div>
+  ${entonnoirCard()}
   <section class="card" style="margin-bottom:14px"><h2>Carte récap du mois</h2>
     <div class="tools" style="margin:0 0 12px">
       <select id="recapMonth" aria-label="Mois">${recapMonths().map(m => `<option value="${m.k}" ${S.recapMonth === m.k ? "selected" : ""}>${esc(m.l)}</option>`).join("")}</select>
@@ -1468,7 +1534,7 @@ function sparkline(m){
   const Y = p => P + (1 - (p.v - lo) / span) * (H - P - B);
   const line = pts.map(p => `${X(p).toFixed(1)},${Y(p).toFixed(1)}`).join(" ");
   const diff = pts[pts.length-1].v - pts[0].v;
-  return `<svg class="spark" viewBox="0 0 ${W} ${H}" role="img" aria-label="Évolution des follows : de ${pts[0].v} à ${pts[pts.length-1].v}">
+  return `<svg class="spark" viewBox="0 0 ${W} ${H}" role="img" aria-label="Évolution des follows : de ${pts[0].v} à ${pts[pts.length-1].v}"><title>Évolution des follows : de ${pts[0].v} à ${pts[pts.length-1].v}</title>
     <polygon class="area" points="${X(pts[0]).toFixed(1)},${H-B} ${line} ${X(pts[pts.length-1]).toFixed(1)},${H-B}"/>
     <polyline class="ln" points="${line}"/>
     ${pts.length <= 40 ? pts.map(p => `<circle class="${p.now ? "now" : ""}" cx="${X(p).toFixed(1)}" cy="${Y(p).toFixed(1)}" r="2.6"><title>${fmtDate(p.d)} : ${p.v}</title></circle>`).join("") : ""}
@@ -1583,6 +1649,7 @@ function viewReglages(){
     <div class="links">${d.settings.liens.map(u => safeUrl(u) ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/,"").replace(/\/$/,""))}</a>` : "").join("")}</div>
   </section>
   ${santePanel(d)}
+  ${notifsPanel()}
   ${adminsPanel(d)}
   ${staffDiscordPanel(d)}
   ${vitrinePanel(d)}
@@ -1783,6 +1850,9 @@ function drawerMembre(m){
   ${integrationBlock(m)}
   ${affiliationBlock(m)}
   <fieldset><legend>Activité</legend>
+    ${(() => { const n = {}; for(const [, j] of m.jeuxLog || []) n[j] = (n[j] || 0) + 1; const t = Object.entries(n).sort((a, b) => b[1] - a[1]).slice(0, 5);
+      return t.length ? `<p class="meta" style="margin-top:0">🎮 Joue surtout à (30 jours) : ${t.map(([j, h]) => `<b>${esc(j)}</b> ${h} h`).join(" · ")}</p>` : ""; })()}
+    ${m.clip?.url ? `<p class="meta" style="margin-top:0">🎬 Clip de la semaine : <a href="${esc(m.clip.url)}" target="_blank" rel="noopener">${esc(m.clip.titre || "clip")}</a> (${Number(m.clip.vues) || 0} vues)</p>` : ""}
     ${(() => { const x = lastStream(m); return `<p class="meta" style="margin-top:0">Dernier stream : ${!x ? "inconnu" : x.live ? "en live maintenant" : `${x.date.toLocaleDateString("fr-FR")} (${x.days === 0 ? "aujourd'hui" : "il y a " + x.days + " j"}) · ${x.src}`}</p>`; })()}
     <div class="grid">${fld("Dernier stream (saisie manuelle)","dernierStreamManuel",m.dernierStreamManuel,"date")}</div>
   </fieldset>
@@ -1871,6 +1941,7 @@ function viewAide(){
     <p><b>Séries récurrentes</b> (onglet Événements) : un raid chaque samedi, une soirée le 1er vendredi du mois… Chaque date est créée quelques jours avant (réglable), puis se gère comme un événement normal. Supprimer une seule date la saute ; modifier la série met à jour les dates à venir ; « Pause » arrête d'en créer.</p>
     <p><b>Annuler</b> : après chaque action, un bouton « ↶ Annuler » reste 15 secondes en bas à gauche. <b>Recherche</b> : Ctrl+K (ou 🔍) cherche partout : streamers, propositions, corbeille, événements, historique. <b>Modification simultanée</b> : si quelqu'un a changé le même champ pendant que tu l'éditais, la page te montre les deux versions et te laisse choisir.</p>
     <p><b>Responsable d'une proposition</b> : celui qui contacte le streamer (suggestion du moins chargé). Chaque matin à 9 h, le robot mentionne dans le salon admin chaque membre du staff qui a des propositions qui stagnent ou des rappels du jour (comptes Discord du staff à renseigner dans Réglages). <b>Intégration</b> : cases à cocher sur la fiche d'un nouveau membre (étapes réglables dans Réglages → Listes) ; l'Accueil liste les intégrations pas terminées.</p>
+    <p><b>Notifications</b> (Réglages, par appareil) : nouvelles propositions et tes rappels du jour, tant que la page est ouverte. <b>Entonnoir</b> (Tableau de bord) : propositions reçues, acceptées, refusées et délai de décision, mois par mois.</p>
     <p><b>Santé</b> (Réglages) : état de chaque branchement (robot, webhooks, bot, vitrine, jetons, sauvegardes). Les problèmes et leurs résolutions arrivent aussi dans le salon Discord Commandes.</p>
     <h3>Modifier plusieurs fiches</h3>
     <p>Coche les fiches dans un tableau : une barre apparaît en bas pour changer d'un coup le statut, le rôle, le référent ou une étiquette.</p>
@@ -2067,6 +2138,9 @@ function vitrinePanel(d){
       <label class="f full">Titre<input id="v_titre" value="${esc(v.titre || "La Cabane")}"></label>
       <label class="f full">Texte de présentation<textarea id="v_texte" rows="3">${esc(v.texte ?? "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !")}</textarea></label>
       <label class="f full">Lien d'invitation Discord (bouton « Rejoindre », facultatif)<input id="v_discord" value="${esc(v.lienDiscord || "")}" placeholder="https://discord.gg/…"></label>
+      <label class="check full"><input type="checkbox" id="v_rej" ${v.rejoindre?.actif ? "checked" : ""}> Afficher la section « Rejoindre » en bas de la vitrine</label>
+      <label class="f full">Titre de la section<input id="v_rejtitre" value="${esc(v.rejoindre?.titre || "Rejoindre La Cabane")}" maxlength="80"></label>
+      <label class="f full">Texte de la section (critères, état d'esprit, comment nous rejoindre)<textarea id="v_rejtexte" rows="5" placeholder="Tu streames régulièrement et tu cherches une communauté bienveillante ?&#10;Nos critères : …&#10;Pour nous rejoindre : passe sur le Discord et présente-toi.">${esc(v.rejoindre?.texte || "")}</textarea></label>
     </div>
     <p class="meta">${st ? (st.ok ? `<span class="up">Publiée</span> : le robot la tient à jour à chaque passage (depuis le ${fmtStamp(st.le)}).` : `<span class="down">Publication en échec depuis le ${fmtStamp(st.le)} : ${esc(st.erreur || "erreur inconnue")}</span>`) : v.active ? "En attente du prochain passage du robot (secret VITRINE_TOKEN nécessaire, voir le README)." : "Pas encore publiée."} Adresse : <a href="${VITRINE_URL()}" target="_blank" rel="noopener">${VITRINE_URL()}</a></p>
     <div class="tools" style="margin:10px 0 0"><button class="btn primary" id="v_save">Enregistrer</button></div>
@@ -2319,6 +2393,8 @@ document.addEventListener("click", e => {
       if(!r.ok) throw new Error(`Lecture impossible (${r.status}).`);
       const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([await r.text()], {type:"application/json"})); a.download = "cabane-archive.json"; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
     } catch(e){ toast(e.message, true); } })(); return; }
+  if(t.id === "notifOn"){ activerNotifs(true); return; }
+  if(t.id === "notifOff"){ activerNotifs(false); return; }
   if(t.id === "s_adminsSave"){ const a = [...document.querySelectorAll(".admChk:checked")].map(x => x.value);
     if(a.length && !a.includes(cfg.me) && !confirm("Tu ne t'es pas coché toi-même : tu ne pourras plus modifier les Réglages ensuite. Continuer ?")) return;
     dispatch({t:"settings", p:{admins:a}, txt:a.length ? `Admins de la page : ${a.join(", ")}` : "Admins de la page : tout le staff"}); toast("Admins enregistrés"); return; }
@@ -2497,7 +2573,8 @@ document.addEventListener("click", e => {
   if(t.id === "v_save"){
     const lien = $("#v_discord").value.trim();
     if(lien && !/^https:\/\/(discord\.gg|discord\.com\/invite)\//i.test(lien)){ toast("Le lien Discord doit commencer par https://discord.gg/ ou https://discord.com/invite/", true); return; }
-    dispatch({t:"settings", notify:true, p:{vitrine:{active:$("#v_active").checked, titre:$("#v_titre").value.trim() || "La Cabane", texte:$("#v_texte").value.trim(), lienDiscord:lien}}, txt:`Vitrine publique ${$("#v_active").checked ? "activée / modifiée" : "désactivée"}`});
+    dispatch({t:"settings", notify:true, p:{vitrine:{active:$("#v_active").checked, titre:$("#v_titre").value.trim() || "La Cabane", texte:$("#v_texte").value.trim(), lienDiscord:lien,
+      rejoindre:{actif:$("#v_rej").checked, titre:$("#v_rejtitre").value.trim() || "Rejoindre La Cabane", texte:$("#v_rejtexte").value.trim()}}}, txt:`Vitrine publique ${$("#v_active").checked ? "activée / modifiée" : "désactivée"}`});
     toast($("#v_active").checked ? "Vitrine enregistrée : le robot la publiera à son prochain passage" : "Vitrine désactivée : le robot la retirera à son prochain passage"); return;
   }
   if(t.id === "bkRefresh"){ listerSauvegardes(); return; }
