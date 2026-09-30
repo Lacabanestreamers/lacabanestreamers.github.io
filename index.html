@@ -445,7 +445,16 @@ function applyOp(d, op){
     case "agendaPpl": { const e = (d.agenda || []).find(x => x.id === op.id); if(!e) break; e.participants = e.participants || [];
       if(op.add && !e.participants.includes(op.add)) e.participants.push(op.add);
       if(op.inconnu && e.discordInconnus) e.discordInconnus = e.discordInconnus.filter(x => x.id !== op.inconnu); break; }
-    case "agendaDel": d.agenda = (d.agenda || []).filter(x => x.id !== op.id); break;
+    case "agendaDel": { const e = (d.agenda || []).find(x => x.id === op.id);
+      // une occurrence de série supprimée est écartée : le robot ne la recréera pas
+      if(e?.serie){ const se = (d.series || []).find(x => x.id === e.serie); if(se && !(se.exclus || []).includes(e.date)) se.exclus = [...(se.exclus || []), e.date]; }
+      d.agenda = (d.agenda || []).filter(x => x.id !== op.id); break; }
+    case "serieSet": { d.series = d.series || []; const i = d.series.findIndex(x => x.id === op.serie.id);
+      const se = i < 0 ? op.serie : {...d.series[i], ...op.serie}; if(i < 0) d.series.push(se); else d.series[i] = se;
+      synchroSerie(d, se, todayISO()); break; }
+    case "serieDel": { const t = todayISO();
+      d.series = (d.series || []).filter(x => x.id !== op.id);
+      d.agenda = (d.agenda || []).filter(e => !(e.serie === op.id && e.date >= t)); break; }
     case "rappelDel": { const r = (d[op.c]||[]).find(x => x.id === op.id); if(r?.rappels) r.rappels = r.rappels.filter(x => x.id !== op.rid); break; }
     case "snapshot": d.snapshots = d.snapshots.filter(s => s.date !== op.s.date); d.snapshots.push(op.s);
       d.snapshots.sort((a,b) => a.date.localeCompare(b.date)); if(d.snapshots.length > 120) d.snapshots = d.snapshots.slice(-120); break;
@@ -1444,6 +1453,7 @@ function viewReglages(){
     <h2>Sites de mesure d'audience</h2>
     <div class="links">${d.settings.liens.map(u => safeUrl(u) ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/,"").replace(/\/$/,""))}</a>` : "").join("")}</div>
   </section>
+  ${santePanel(d)}
   ${vitrinePanel(d)}
   ${sauvegardesPanel(d)}
   ${modelesPanel()}
@@ -1612,6 +1622,9 @@ function drawerMembre(m){
   return `${linksFor(m.login)}${msgBox(m, "membres")}
   <div class="grid">
     ${fld("Pseudo Discord","discord",m.discord)}
+    <p class="meta full" style="margin:-4px 0 0">${m.discordId ? `✓ Compte Discord relié${m.discord ? ` (<b>${esc(m.discord)}</b>)` : ""} : ses ✅ et « Intéressé » comptent comme inscriptions, et il est mentionné dans les rappels. <button type="button" class="btn ghost" data-delier="${m.id}" style="padding:2px 10px">Délier</button>`
+      : m.discord ? `Pas encore relié : le robot cherchera « ${esc(m.discord)} » sur le serveur au prochain passage (nom d'utilisateur Discord, pas le pseudo affiché si possible).`
+      : `Aucun compte Discord relié. Il se relie tout seul si son nom Discord ressemble à son pseudo Twitch, sinon note son nom d'utilisateur Discord ici.`}</p>
     ${selF("Rôle","role",m.role,st.roles,"—")}
     ${selF("Statut","statut",m.statut,["Présent","Parti"],"À renseigner")}
     ${(() => { const ch = Object.fromEntries(chargeReferents().map(x => [x.nom, x])), sg = suggestionReferent();
@@ -1717,6 +1730,10 @@ function viewAide(){
     <h3>Organiser un événement</h3>
     <p>Onglet <b>Événements</b> → <b>Créer un événement</b> : titre, date, heure, type, description et participants. S'il est public, il apparaît sur la vitrine. Si <b>Partager sur Discord</b> est coché, le robot le publie dans le salon événements environ une minute après l'enregistrement (et envoie un message de mise à jour si la date ou l'heure change). Avec les rappels cochés, il le rappelle aussi la veille à 18 h et le jour même à 9 h.</p>
     <p><b>Inscriptions</b> (streamers de La Cabane seulement) : réaction ✅ sous le message Discord de l'événement, ou bouton « Je participe » sur la vitrine (connexion Twitch). Le robot les ajoute à chaque passage, toutes les heures ; le bouton « Relever les inscriptions maintenant » le lance tout de suite. Si un compte Discord n'est pas reconnu, la carte de l'événement te demande à quel streamer il correspond : c'est retenu pour la suite. Un participant que tu retires à la main n'est pas réajouté tant qu'il ne remet pas sa réaction.</p>
+    <p><b>Événement Discord</b> : un événement partagé sur Discord avec une heure apparaît aussi dans l'onglet « Événements » du serveur (créé par le bot). « Intéressé » y vaut inscription. Le supprimer ici le supprime là-bas.</p>
+    <p><b>Rappels</b> : la veille et le jour même, les inscrits dont le compte Discord est relié sont mentionnés (ils reçoivent une notification). Le compte se relie tout seul, ou via le champ « Pseudo Discord » de la fiche.</p>
+    <p><b>Séries récurrentes</b> (onglet Événements) : un raid chaque samedi, une soirée le 1er vendredi du mois… Chaque date est créée quelques jours avant (réglable), puis se gère comme un événement normal. Supprimer une seule date la saute ; modifier la série met à jour les dates à venir ; « Pause » arrête d'en créer.</p>
+    <p><b>Santé</b> (Réglages) : état de chaque branchement (robot, webhooks, bot, vitrine, jetons, sauvegardes). Les problèmes et leurs résolutions arrivent aussi dans le salon Discord Commandes.</p>
     <h3>Modifier plusieurs fiches</h3>
     <p>Coche les fiches dans un tableau : une barre apparaît en bas pour changer d'un coup le statut, le rôle, le référent ou une étiquette.</p>
     <h3>Supprimer par erreur ?</h3>
@@ -1747,6 +1764,94 @@ function viewAide(){
 }
 
 /* ============ Événements communautaires ============ */
+/* ============ Séries récurrentes ============ */
+// Même calcul que le robot (robot/robot.mjs) : les deux créent les mêmes occurrences, avec le même identifiant.
+function occurrencesSerie(s, du, au){
+  if(!s?.debut || !/^\d{4}-\d{2}-\d{2}$/.test(s.debut)) return [];
+  const iso = t => new Date(t).toISOString().slice(0, 10), fin = s.fin || "9999-12-31", out = [];
+  const [y, m, d] = s.debut.split("-").map(Number), t0 = Date.UTC(y, m - 1, d);
+  const garder = x => { if(x >= du && x >= s.debut && !(s.exclus || []).includes(x)) out.push(x); };
+  if(s.rythme === "hebdo" || s.rythme === "2sem"){
+    const pas = (s.rythme === "hebdo" ? 7 : 14) * 864e5;
+    let t = t0; if(iso(t) < du){ const n = Math.floor((Date.UTC(...du.split("-").map((v, i) => i === 1 ? v - 1 : +v)) - t0) / pas); if(n > 0) t += n * pas; }
+    for(; iso(t) <= au && iso(t) <= fin; t += pas) garder(iso(t));
+  } else if(s.rythme === "mois" || s.rythme === "moisPos"){
+    const jourSem = new Date(t0).getUTCDay(), pos = Math.ceil(d / 7);
+    for(let k = 0; k < 600; k++){
+      const an = y + Math.floor((m - 1 + k) / 12), mo = (m - 1 + k) % 12, dernier = new Date(Date.UTC(an, mo + 1, 0)).getUTCDate();
+      let j;
+      if(s.rythme === "mois") j = Math.min(d, dernier);
+      else { const premier = new Date(Date.UTC(an, mo, 1)).getUTCDay(); j = 1 + ((jourSem - premier + 7) % 7) + (pos - 1) * 7; if(pos >= 5 || j > dernier){ j = 1 + ((jourSem - premier + 7) % 7); while(j + 7 <= dernier) j += 7; } }
+      const x = iso(Date.UTC(an, mo, j)); if(x > au || x > fin) break; garder(x);
+    }
+  }
+  return out;
+}
+const occDe = (s, date) => ({id:`${s.id}_${date}`, serie:s.id, titre:s.titre, date, heure:s.heure || "", duree:s.duree || 120, type:s.type || "",
+  description:s.description || "", lien:s.lien || "", public:s.public !== false, discord:s.discord !== false, publierDiscord:!!s.publierDiscord,
+  participants:[], par:s.par || "Série"});
+const plusJours = (iso, n) => new Date(Date.UTC(...iso.split("-").map((v, i) => i === 1 ? v - 1 : +v)) + n * 864e5).toISOString().slice(0, 10);
+// Après modification d'une série : les occurrences à venir reprennent ses réglages, celles qui ne tombent plus
+// sur le rythme (et sans inscrit) disparaissent, et celles de la fenêtre « X jours avant » sont créées.
+function synchroSerie(d, se, t){
+  d.agenda = d.agenda || [];
+  const au = plusJours(t, Math.min(60, Math.max(0, Number(se.avance ?? 7)))), dates = se.actif === false ? null : occurrencesSerie(se, t, au);
+  const champs = ["titre", "heure", "duree", "type", "description", "lien"];
+  d.agenda = d.agenda.filter(e => !(e.serie === se.id && e.date >= t && dates && !dates.includes(e.date) && !(e.participants || []).length && e.date <= au));
+  for(const e of d.agenda) if(e.serie === se.id && e.date >= t){ for(const k of champs) e[k] = se[k] ?? (k === "duree" ? 120 : ""); e.public = se.public !== false; e.discord = se.discord !== false; e.publierDiscord = !!se.publierDiscord; }
+  for(const x of dates || []) if(!d.agenda.some(e => e.id === `${se.id}_${x}`)) d.agenda.push(occDe(se, x));
+}
+const RYTHMES = {hebdo:"Chaque semaine", "2sem":"Toutes les 2 semaines", mois:"Chaque mois, même date", moisPos:"Chaque mois, même jour de la semaine"};
+function rythmeTxt(se){
+  if(!se.debut) return RYTHMES[se.rythme] || "";
+  const [y, m, d] = se.debut.split("-").map(Number), dt = new Date(y, m - 1, d), jour = dt.toLocaleDateString("fr-FR", {weekday:"long"});
+  const h = se.heure ? ` à ${se.heure.replace(":", "h")}` : "";
+  if(se.rythme === "hebdo") return `Chaque ${jour}${h}`;
+  if(se.rythme === "2sem") return `Un ${jour} sur deux${h}`;
+  if(se.rythme === "mois") return `Le ${d === 1 ? "1er" : d} de chaque mois${h}`;
+  const pos = Math.ceil(d / 7); return `Le ${pos >= 5 ? "dernier" : ["1er", "2e", "3e", "4e"][pos - 1]} ${jour} du mois${h}`;
+}
+function serieForm(){
+  const se = S.serieEdit; if(!se) return "";
+  const t = todayISO(), proch = occurrencesSerie({...se, exclus:[]}, t, plusJours(t, 120)).slice(0, 4);
+  return `<section class="evform" aria-label="${se.id ? "Modifier la série" : "Nouvelle série"}"><h2 style="margin:0 0 10px;font:700 17px Orbitron,sans-serif">${se.id ? "Modifier la série" : "Nouvelle série récurrente"}</h2>
+    <div class="grid">
+      <label class="f full">Titre<input id="sr_titre" value="${esc(se.titre || "")}" placeholder="Ex. Raid train du samedi" maxlength="80"></label>
+      <label class="f">Rythme<select id="sr_rythme">${Object.entries(RYTHMES).map(([k, l]) => `<option value="${k}" ${k === (se.rythme || "hebdo") ? "selected" : ""}>${l}</option>`).join("")}</select></label>
+      <label class="f">Première date<input id="sr_debut" type="date" value="${esc(se.debut || "")}"></label>
+      <label class="f">Heure<input id="sr_heure" type="time" value="${esc(se.heure || "")}"></label>
+      <label class="f">Durée<select id="sr_duree">${DUREES.map(([v, l]) => `<option value="${v}" ${v === Number(se.duree || 120) ? "selected" : ""}>${l}</option>`).join("")}</select></label>
+      <label class="f">Type<select id="sr_type">${TYPES_EVT.map(x => `<option ${x === (se.type || "Raid train") ? "selected" : ""}>${x}</option>`).join("")}</select></label>
+      <label class="f">Créer chaque occurrence (jours avant)<input id="sr_avance" type="number" min="1" max="60" value="${esc(se.avance ?? 7)}"></label>
+      <label class="f">Jusqu'au (facultatif)<input id="sr_fin" type="date" value="${esc(se.fin || "")}"></label>
+      <label class="f">Lien (facultatif)<input id="sr_lien" value="${esc(se.lien || "")}" placeholder="https://…"></label>
+      <label class="f full">Description<textarea id="sr_desc" rows="3">${esc(se.description || "")}</textarea></label>
+      <label class="check"><input type="checkbox" id="sr_public" ${se.public !== false ? "checked" : ""}> Afficher sur la vitrine publique</label>
+      <label class="check"><input type="checkbox" id="sr_publier" ${se.publierDiscord ? "checked" : ""}> 📣 Partager chaque occurrence sur Discord</label>
+      <label class="check"><input type="checkbox" id="sr_discord" ${se.discord !== false ? "checked" : ""}> Rappels Discord la veille et le jour même</label>
+    </div>
+    <p class="meta" style="margin:10px 0 0">${se.debut ? `${esc(rythmeTxt(se))} · prochaines dates : ${proch.length ? proch.map(x => fmtDate(x)).join(", ") : "aucune"}` : "Choisis la première date pour voir les suivantes."}</p>
+    <div class="tools" style="margin:14px 0 0"><button class="btn primary" id="srSave">Enregistrer la série</button><button class="btn ghost" id="srCancel">Annuler</button></div>
+  </section>`;
+}
+function lireSerieForm(){
+  const se = S.serieEdit || {};
+  return {...se, titre:$("#sr_titre").value.trim(), rythme:$("#sr_rythme").value, debut:$("#sr_debut").value, heure:$("#sr_heure").value, duree:Number($("#sr_duree").value) || 120,
+    type:$("#sr_type").value, avance:Math.min(60, Math.max(1, Number($("#sr_avance").value) || 7)), fin:$("#sr_fin").value || "", lien:$("#sr_lien").value.trim(),
+    description:$("#sr_desc").value.trim(), public:$("#sr_public").checked, publierDiscord:$("#sr_publier").checked, discord:$("#sr_discord").checked};
+}
+function seriesBloc(){
+  const series = S.data.series || [], t = todayISO();
+  return `<h2 style="font:700 17px Orbitron,sans-serif;margin:18px 0 10px">🔁 Séries récurrentes (${series.length}) <button class="btn ghost" id="srNew" style="margin-left:8px;padding:4px 12px;font-size:14px">Nouvelle série</button></h2>
+  ${serieForm()}
+  ${series.length ? `<div class="evs">${series.map(se => { const p = occurrencesSerie(se, t, plusJours(t, 400))[0];
+    return `<article class="ev" style="grid-template-columns:1fr auto"><div style="min-width:0"><h3 style="margin:0">${esc(se.titre)}</h3>
+      <span class="tg">${esc(se.type || "Autre")}</span>${se.actif === false ? ` <span class="tg" style="color:var(--warn);border-color:var(--warn)">en pause</span>` : ""}${se.publierDiscord ? ` <span class="tg" style="color:var(--pink);border-color:rgba(255,79,216,.4)">Discord</span>` : ""}
+      <p class="meta" style="margin:6px 0 0">${esc(rythmeTxt(se))} · créée ${se.avance ?? 7} j avant${se.fin ? ` · jusqu'au ${fmtDate(se.fin)}` : ""}${p && se.actif !== false ? ` · prochaine : <b>${fmtDate(p)}</b>` : ""}${(se.exclus || []).filter(x => x >= t).length ? ` · ${(se.exclus || []).filter(x => x >= t).length} date(s) sautée(s)` : ""}</p></div>
+      <div class="acts" style="display:flex;gap:6px;flex-wrap:wrap"><button class="btn ghost" data-sredit="${se.id}">Modifier</button><button class="btn ghost" data-srpause="${se.id}">${se.actif === false ? "Reprendre" : "Pause"}</button><button class="btn danger" data-srdel="${se.id}">Supprimer</button></div>
+    </article>`; }).join("")}</div>` : `<p class="meta">Un raid chaque samedi, une soirée le 1er vendredi du mois… Crée la série une fois : chaque occurrence apparaît toute seule dans la liste ci-dessous, quelques jours avant, puis se gère comme un événement normal (inscriptions, modification, suppression d'une seule date).</p>`}`;
+}
+const DUREES = [[30, "30 min"], [60, "1 h"], [90, "1 h 30"], [120, "2 h"], [180, "3 h"], [240, "4 h"], [360, "6 h"], [720, "12 h"]];
 const TYPES_EVT = ["Raid train","Soirée jeux","Stream caritatif","Collab","Soirée Discord","Autre"];
 function agendaTri(){
   const t = todayISO(), a = (S.data.agenda || []).slice();
@@ -1761,11 +1866,12 @@ function evCarte(e, passe){
     <div class="quand"><b>${d}</b><small>${dt.toLocaleDateString("fr-FR", {month:"short"})}</small><small>${esc(e.heure || "")}</small></div>
     <div style="min-width:0"><h3>${esc(e.titre)}</h3>
       <span class="tg">${esc(e.type || "Autre")}</span>${e.public ? ` <span class="tg" style="color:var(--ok);border-color:rgba(92,242,166,.4)">vitrine</span>` : ` <span class="tg" style="color:var(--muted);border-color:var(--line)">staff seulement</span>`}${e.publierDiscord ? ` <span class="tg" style="color:var(--pink);border-color:rgba(255,79,216,.4)">${e.publieDiscord ? "partagé sur Discord" : "partage Discord en cours…"}</span>` : ""}${e.discord ? ` <span class="tg" style="color:var(--pink);border-color:rgba(255,79,216,.4)">rappels Discord</span>` : ""}
+      ${e.serie ? ` <span class="tg" title="${esc(rythmeTxt((S.data.series || []).find(x => x.id === e.serie) || {}))}">🔁 série</span>` : ""}${S.data.robot?.evtNatifs?.[e.id]?.id ? ` <span class="tg" style="color:var(--pink);border-color:rgba(255,79,216,.4)" title="Visible dans l'onglet Événements du serveur Discord ; « Intéressé » = inscrit">événement Discord</span>` : ""}
       ${!passe ? `<span class="meta" style="margin-left:6px">${j === 0 ? "aujourd'hui" : j === 1 ? "demain" : `dans ${j} jours`}</span>` : ""}
       ${e.description ? `<p class="desc">${esc(e.description)}</p>` : ""}
       ${safeUrl(e.lien || "") ? `<p style="margin:4px 0"><a href="${esc(e.lien)}" target="_blank" rel="noopener">${esc(e.lien.replace(/^https?:\/\/(www\.)?/, "").slice(0, 50))}</a></p>` : ""}
       ${ppl.length ? `<div class="ppl">${ppl.map(m => `<span class="who" title="${esc(m.login)}${(e.viaDiscord || []).includes(m.login) ? " · inscrit via Discord" : ""}">${avatarHtml(m.login)}<span class="muted" style="font-size:14px">${esc(m.login)}${(e.viaDiscord || []).includes(m.login) ? " ✅" : ""}</span></span>`).join("")}</div>` : `<p class="meta" style="margin:4px 0 0">Pas encore de participant.${!passe && e.publieDiscord?.msg ? " Les inscriptions se font par ✅ sous le message Discord ou sur la vitrine." : ""}</p>`}
-      ${!passe && (e.discordInconnus || []).length ? `<div class="inconnus"><p class="meta" style="margin:6px 0 2px">✅ sur Discord, compte non reconnu : à qui est-il ?</p>${e.discordInconnus.map(x => `<label class="meta" style="display:flex;gap:6px;align-items:center;margin:2px 0"><b style="color:var(--text)">${esc(x.nom)}</b><select data-evlier="${e.id}" data-did="${esc(x.id)}" data-dnom="${esc(x.nom)}"><option value="">Choisir le streamer…</option>${S.data.membres.filter(m => m.statut !== "Parti").sort((a, b) => a.login.localeCompare(b.login)).map(m => `<option value="${m.id}">${esc(m.login)}</option>`).join("")}</select></label>`).join("")}</div>` : ""}
+      ${!passe && (e.discordInconnus || []).length ? `<div class="inconnus"><p class="meta" style="margin:6px 0 2px">✅ ou « Intéressé » sur Discord, compte non reconnu : à qui est-il ?</p>${e.discordInconnus.map(x => `<label class="meta" style="display:flex;gap:6px;align-items:center;margin:2px 0"><b style="color:var(--text)">${esc(x.nom)}</b><select data-evlier="${e.id}" data-did="${esc(x.id)}" data-dnom="${esc(x.nom)}"><option value="">Choisir le streamer…</option>${S.data.membres.filter(m => m.statut !== "Parti").sort((a, b) => a.login.localeCompare(b.login)).map(m => `<option value="${m.id}">${esc(m.login)}</option>`).join("")}</select></label>`).join("")}</div>` : ""}
       ${e.par ? `<p class="meta" style="margin:6px 0 0">Créé par ${esc(e.par)}</p>` : ""}</div>
     <div class="acts" style="display:flex;gap:6px;flex-wrap:wrap"><button class="btn ghost" data-evedit="${e.id}">Modifier</button><button class="btn danger" data-evdel="${e.id}">Supprimer</button></div>
   </article>`;
@@ -1777,6 +1883,7 @@ function evForm(){
       <label class="f full">Titre<input id="ev_titre" value="${esc(e.titre || "")}" placeholder="Ex. Raid train du samedi soir" maxlength="80"></label>
       <label class="f">Date<input id="ev_date" type="date" value="${esc(e.date || "")}"></label>
       <label class="f">Heure<input id="ev_heure" type="time" value="${esc(e.heure || "")}"></label>
+      <label class="f">Durée<select id="ev_duree">${DUREES.map(([v, l]) => `<option value="${v}" ${v === Number(e.duree || 120) ? "selected" : ""}>${l}</option>`).join("")}</select></label>
       <label class="f">Type<select id="ev_type">${TYPES_EVT.map(t => `<option ${t === (e.type || "Raid train") ? "selected" : ""}>${t}</option>`).join("")}</select></label>
       <label class="f">Lien (événement Discord, page…, facultatif)<input id="ev_lien" value="${esc(e.lien || "")}" placeholder="https://…"></label>
       <label class="f full">Description<textarea id="ev_desc" rows="3" placeholder="Déroulé, règles, comment participer…">${esc(e.description || "")}</textarea></label>
@@ -1798,6 +1905,7 @@ function viewAgenda(){
   <div class="tools"><button class="btn primary" id="evNew">Créer un événement</button><button class="btn ghost" id="evRelever" title="Le robot relit les réactions Discord et les demandes de la vitrine (sinon il le fait toutes les heures)">Relever les inscriptions maintenant</button></div>
   ${S.data.robot?.inscriptions && !S.data.robot.inscriptions.ok ? `<p class="warnbox" role="alert" style="border:1px solid var(--warn,#ffb020);border-radius:10px;padding:10px 14px;margin:10px 0">⚠ Inscriptions : ${esc(S.data.robot.inscriptions.erreur || "problème inconnu")}</p>` : ""}
   ${evForm()}
+  ${seriesBloc()}
   <h2 style="font:700 17px Orbitron,sans-serif;margin:18px 0 10px">À venir (${avenir.length})</h2>
   ${avenir.length ? `<div class="evs">${avenir.map(e => evCarte(e, false)).join("")}</div>` : `<p class="none">Aucun événement prévu.</p>`}
   ${passes.length ? `<h2 style="font:700 17px Orbitron,sans-serif;margin:24px 0 10px">Passés</h2><div class="evs">${passes.slice(0, 10).map(e => evCarte(e, true)).join("")}</div>` : ""}`;
@@ -1805,7 +1913,7 @@ function viewAgenda(){
 function lireEvForm(){
   const e = S.evEdit || {};
   return {...e, titre:$("#ev_titre").value.trim(), date:$("#ev_date").value, heure:$("#ev_heure").value, type:$("#ev_type").value, lien:$("#ev_lien").value.trim(),
-    description:$("#ev_desc").value.trim(), public:$("#ev_public").checked, discord:$("#ev_discord").checked, publierDiscord:$("#ev_publier").checked};
+    description:$("#ev_desc").value.trim(), public:$("#ev_public").checked, discord:$("#ev_discord").checked, publierDiscord:$("#ev_publier").checked, duree:Number($("#ev_duree").value) || 120};
 }
 
 /* ============ Vitrine publique ============ */
@@ -1891,6 +1999,17 @@ function tokenWarning(){
   return `<div class="warnbar ${j <= 2 ? "ko" : ""}">⚠ ${j < 0 ? "Ton jeton GitHub a expiré" : j === 0 ? "Ton jeton GitHub expire aujourd'hui" : `Ton jeton GitHub expire dans ${j} jour${j>1?"s":""}`} (${fmtDate(cfg.tokenExpire)}).
     <a href="https://github.com/settings/personal-access-tokens" target="_blank" rel="noopener">Le régénérer</a> ou en demander un nouveau à l'admin, puis le coller dans <a href="#" data-goto="reglages">Réglages</a>.</div>`;
 }
+function santePanel(d){
+  const sa = d.robot?.sante, p = d.robot?.passage || d.robot?.derniereExecution, h = p ? (Date.now() - new Date(p)) / 36e5 : null;
+  const lignes = [{ok:p ? h <= 2 : false, txt:p ? `Robot : dernier passage ${fmtStamp(p)}` : "Robot : jamais passé", conseil:"Onglet Actions du dépôt cabane : regarde le dernier passage en erreur. La page le relance d'elle-même toutes les heures."}, ...(sa?.checks || [])];
+  const ko = lignes.filter(x => x.ok === false).length;
+  const pt = x => x.ok === false ? `<span class="down">●</span>` : x.ok ? `<span class="up">●</span>` : `<span class="muted">○</span>`;
+  return `<section class="panel">
+    <h2>Santé${ko ? ` <span class="n" style="background:var(--ko)">${ko}</span>` : ""}</h2>
+    <p>Le robot vérifie chaque branchement à chaque passage. Un problème qui apparaît, ou qui se règle, est signalé dans le salon Discord <b>Commandes</b>${sa ? ` · dernière vérification ${fmtStamp(sa.le)}` : " (pas encore de vérification : il faut la dernière version du robot)"}.</p>
+    <ul class="todo" style="list-style:none;padding:0;margin:0">${lignes.map(x => `<li style="display:block;padding:6px 0">${pt(x)} ${esc(x.txt)}${x.ok === false && x.conseil ? `<br><span class="meta" style="margin-left:18px">↳ ${esc(x.conseil)}</span>` : ""}</li>`).join("")}</ul>
+  </section>`;
+}
 function jetonsSoon(d, days = 14){
   const now = Date.now();
   return (d.settings.jetons || []).map(x => ({...x, j:joursAvant(x.expire)})).filter(x => x.j <= days).sort((a,b) => a.j - b.j);
@@ -1973,6 +2092,22 @@ document.addEventListener("click", e => {
     else { cb.checked ? S.sel.add(cb.dataset.sel) : S.sel.delete(cb.dataset.sel); }
     render(); return; }
   const bk = t.closest("[data-bulk]"); if(bk){ bulkApply(bk.dataset.bulk); return; }
+  const dl = t.closest("[data-delier]"); if(dl){ const m = S.data.membres.find(x => x.id === dl.dataset.delier); if(!m) return;
+    dispatch({t:"patch", c:"membres", id:m.id, p:{discordId:null, discord:null}, txt:`${m.login} · Compte Discord délié`}); renderDrawer(); toast("Compte Discord délié"); return; }
+  if(t.id === "srNew"){ S.serieEdit = {rythme:"hebdo", type:"Raid train", public:true, discord:true, publierDiscord:true, avance:7, duree:120}; render(); setTimeout(() => $("#sr_titre")?.focus(), 0); return; }
+  if(t.id === "srCancel"){ S.serieEdit = null; render(); return; }
+  const sre = t.closest("[data-sredit]"); if(sre){ S.serieEdit = JSON.parse(JSON.stringify((S.data.series || []).find(x => x.id === sre.dataset.sredit) || null)); render(); $("#sr_titre")?.scrollIntoView({block:"center"}); return; }
+  const srp = t.closest("[data-srpause]"); if(srp){ const se = (S.data.series || []).find(x => x.id === srp.dataset.srpause); if(!se) return; const actif = se.actif === false;
+    dispatch({t:"serieSet", serie:{id:se.id, actif}, notify:true, txt:`Série « ${se.titre} » ${actif ? "reprise" : "mise en pause"}`}); toast(actif ? "Série reprise" : "Série en pause : plus aucune nouvelle date (celles déjà créées restent)"); return; }
+  const srd = t.closest("[data-srdel]"); if(srd){ const se = (S.data.series || []).find(x => x.id === srd.dataset.srdel);
+    if(se && confirm(`Supprimer la série « ${se.titre} » ?\nSes dates à venir déjà créées sont supprimées aussi (les événements passés restent).`)){ dispatch({t:"serieDel", id:se.id, notify:true, txt:`Série supprimée : ${se.titre}`}); toast("Série supprimée"); } return; }
+  if(t.id === "srSave"){ const se = lireSerieForm();
+    if(!se.titre || !se.debut){ toast("Il faut au moins un titre et une première date.", true); return; }
+    if(se.lien && !safeUrl(se.lien)){ toast("Le lien doit commencer par https://", true); return; }
+    if(se.fin && se.fin < se.debut){ toast("La date de fin est avant la première date.", true); return; }
+    const neuf = !se.id; if(neuf){ se.id = uid("sr"); se.par = cfg.me || ""; se.actif = true; se.exclus = []; }
+    dispatch({t:"serieSet", serie:se, notify:true, txt:`Série ${neuf ? "créée" : "modifiée"} : ${se.titre} (${rythmeTxt(se)})`});
+    S.serieEdit = null; render(); toast(`${neuf ? "Série créée" : "Série enregistrée"} : les dates des ${se.avance} prochains jours sont déjà dans la liste`); return; }
   if(t.id === "evNew"){ S.evEdit = {participants:[], type:"Raid train", public:true, discord:true}; render(); setTimeout(() => $("#ev_titre")?.focus(), 0); return; }
   if(t.id === "evRelever"){ if(S.mode !== "github"){ toast("Il faut être connecté à GitHub.", true); return; } notifyRobot(); toast("Robot lancé : les nouvelles inscriptions arrivent d'ici une à deux minutes."); return; }
   if(t.id === "evCancel"){ S.evEdit = null; render(); return; }
@@ -2189,6 +2324,7 @@ document.addEventListener("input", e => {
 });
 document.addEventListener("change", e => {
   const t = e.target;
+  if(["sr_rythme", "sr_debut", "sr_heure"].includes(t.id) && S.serieEdit){ S.serieEdit = lireSerieForm(); render(); return; }
   if(t.dataset.evlier && t.value){ const m = S.data.membres.find(x => x.id === t.value), ev = (S.data.agenda || []).find(x => x.id === t.dataset.evlier); if(!m || !ev) return;
     // le compte Discord est mémorisé sur la fiche : ses prochaines réactions seront reconnues toutes seules
     dispatch({t:"patch", c:"membres", id:m.id, p:{discordId:t.dataset.did, discord:t.dataset.dnom}, auto:true});
@@ -2216,6 +2352,7 @@ document.addEventListener("change", e => {
     const k = t.dataset.k;
     const extra = {};
     if(k === "statut" && v === "Parti" && !r.depart) extra.depart = todayISO();
+    if(k === "discord" && (v || "") !== (r.discord || "")) extra.discordId = null;     // nouveau pseudo : le robot relie le bon compte
     if(k === "statut" && v === "Parti" && c === "membres" && !r.raisonDepart) setTimeout(() => { toast("Indique la raison du départ juste en dessous"); $('.drawer select[data-k="raisonDepart"]')?.focus(); }, 50);
     if(k === "statut" && v === "Présent" && !r.arrivee) extra.arrivee = todayISO();
     if(k === "statut" && c === "propositions" && v && !r.dateRevue && ["Accepté","Refusé"].includes(v)) extra.dateRevue = todayISO();
