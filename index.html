@@ -297,6 +297,15 @@ tr.picked{background:rgba(255,79,216,.08)}
 
 /* Événements */
 .evs{display:grid;gap:12px}
+.navn{display:inline-block;min-width:18px;margin-left:6px;padding:0 5px;border-radius:9px;background:var(--warn,#ffb020);color:#1a0716;font-size:12px;line-height:18px;text-align:center;vertical-align:1px}
+.navn:empty{display:none}
+.netp{max-width:none}
+.netl{display:grid;grid-template-columns:minmax(170px,240px) 1fr auto;gap:10px;align-items:center;padding:7px 0;border-top:1px solid var(--line)}
+.netl .login{display:flex;align-items:center;gap:6px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.netl .netb{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.netl .netb .btn{padding:3px 10px}
+.netl .meta{margin:0}
+@media (max-width:700px){ .netl{grid-template-columns:1fr} .netl .netb{justify-content:flex-start} }
 .ev{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;display:grid;grid-template-columns:86px 1fr auto;gap:14px;align-items:start}
 .ev.passe{opacity:.6}
 .ev .quand{text-align:center;border-right:1px solid var(--line);padding-right:12px}
@@ -362,6 +371,7 @@ nav a.navlink:hover{color:var(--cyan);text-decoration:none}
       <button data-view="anniv">Anniversaires</button>
       <button data-view="stats">Tableau de bord</button>
       <button data-view="agenda">Événements</button>
+      <button data-view="nettoyage">Nettoyage<span class="navn" id="navNet"></span></button>
       <button data-view="reglages">Réglages</button>
       <button data-view="aide">Aide</button>
       <a class="navlink" id="navVitrine" href="vitrine/" target="_blank" rel="noopener" title="Ouvrir la vitrine publique dans un nouvel onglet">Vitrine ↗</a>
@@ -784,7 +794,8 @@ function render(){
   if(!S.data && S.view !== "reglages"){ main.innerHTML = viewSetup(); renderDrawer(); return; }
   if(S.selView !== S.view){ S.sel.clear(); S.selView = S.view; }
   renderTicker();
-  const v = {accueil:viewAccueil, propositions:viewPropositions, membres:viewMembres, anniv:viewAnniv, stats:viewStats, agenda:viewAgenda, reglages:viewReglages, aide:viewAide}[S.view];
+  { const nb = document.getElementById("navNet"); if(nb){ try { const n = aNettoyer().slice(0, 4).reduce((a, [, l]) => a + l.length, 0); nb.textContent = n ? String(n) : ""; /* fiches incomplètes non comptées */ } catch { nb.textContent = ""; } } }
+  const v = {accueil:viewAccueil, propositions:viewPropositions, membres:viewMembres, anniv:viewAnniv, stats:viewStats, agenda:viewAgenda, nettoyage:viewNettoyage, reglages:viewReglages, aide:viewAide}[S.view];
   const focus = document.activeElement && document.activeElement.id; const caret = document.activeElement && document.activeElement.selectionStart;
   // Les rafraîchissements automatiques (live, synchro) ne doivent pas effacer ce qu'on est en train de saisir
   const saisies = [...main.querySelectorAll("input[id], textarea[id], select[id]")].filter(el =>
@@ -1454,8 +1465,10 @@ function viewReglages(){
     <div class="links">${d.settings.liens.map(u => safeUrl(u) ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/,"").replace(/\/$/,""))}</a>` : "").join("")}</div>
   </section>
   ${santePanel(d)}
+  ${staffDiscordPanel(d)}
   ${vitrinePanel(d)}
   ${sauvegardesPanel(d)}
+  ${archivePanel(d)}
   ${modelesPanel()}
   ${trashPanel(d)}
   ${jetonsPanel(d)}
@@ -1558,7 +1571,7 @@ function drawerProp(p){
 
   const avisRow = name => { const v = p.avis?.[name] || "", k = avisKind(v);
     const preset = ["Pour","Contre","Neutre"];
-    return `<div class="avisrow ${cfg.me===name?"me":""}"><span>${esc(name)}</span><div class="seg">
+    return `<div class="avisrow ${cfg.me===name?"me":""}"><span>${esc(name)}${v && p.avisDiscord?.[name] === v ? ` <span class="muted" title="Avis donné par réaction sur Discord">(Discord)</span>` : ""}</span><div class="seg">
       ${preset.map(o => `<button type="button" class="${o.toLowerCase()}" data-avis="${esc(name)}" data-v="${o}" aria-pressed="${v===o}">${o}</button>`).join("")}
       <input data-k="avis.${esc(name)}" value="${esc(preset.includes(v) ? "" : v)}" placeholder="${preset.includes(v) ? esc(v) + " (ou précise…)" : "Avis libre"}" aria-label="Avis de ${esc(name)}">
     </div></div>`; };
@@ -1967,6 +1980,26 @@ async function lireSauvegarde(f){
   const d = JSON.parse(await r.text()); if(!d.membres || !d.propositions) throw new Error("Ce fichier n'est pas une sauvegarde de La Cabane.");
   return d;
 }
+function staffDiscordPanel(d){
+  const liste = d.settings.staffDiscord || [], res = d.robot?.staffDiscord || {};
+  const lignes = liste.map(x => `${x.nom} ; ${x.discord}`).join("\n");
+  return `<section class="panel" id="staffDiscord">
+    <h2>Comptes Discord du staff</h2>
+    <p>Chaque nouvelle proposition arrive dans le salon admin avec 👍 🤔 👎 : la réaction d'un membre du staff devient son avis <b>Pour</b>, <b>Neutre</b> ou <b>Contre</b> sur la fiche. Une réaction retirée retire l'avis. Si l'avis est ensuite modifié sur le site, c'est celui du site qui compte. Une ligne par personne : <b>Prénom ; nom d'utilisateur Discord</b> (le prénom tel qu'il est dans la liste du staff).</p>
+    <label class="f full"><textarea id="s_staffdc" rows="4" placeholder="Aly ; aly_discord&#10;Galy ; galy">${esc(lignes)}</textarea></label>
+    ${liste.length ? `<ul class="todo" style="list-style:none;padding:0;margin:8px 0 0">${liste.map(x => `<li style="display:block;padding:4px 0">${res[x.nom]?.id ? `<span class="up">●</span> <b>${esc(x.nom)}</b> relié à ${esc(x.discord)}` : `<span class="muted">○</span> <b>${esc(x.nom)}</b> : ${esc(x.discord)} pas encore trouvé sur le serveur (vérifie le nom d'utilisateur, le robot réessaie à chaque passage)`}${d.settings.staff.includes(x.nom) ? "" : ` <span class="warn">(« ${esc(x.nom)} » n'est pas dans la liste du staff)</span>`}</li>`).join("")}</ul>` : ""}
+    <div class="tools" style="margin:10px 0 0"><button class="btn primary" id="s_staffdcSave">Enregistrer</button></div>
+  </section>`;
+}
+function archivePanel(d){
+  const a = d.robot?.archive;
+  return `<section class="panel" id="archives">
+    <h2>Archives</h2>
+    <p>Pour garder le fichier partagé léger, le robot déplace chaque nuit vers <b>archives/cabane-archive.json</b> : les relevés de follows de plus de 90 jours (le premier de chaque mois reste, pour les courbes longues), les événements passés depuis plus de 90 jours et le journal au-delà des 250 dernières lignes. Rien n'est supprimé.</p>
+    <p class="meta">${a ? `Dernier archivage : ${fmtDate(a.le)} · l'archive contient ${a["relevés"] ?? 0} relevés, ${a.evenements ?? 0} événements, ${a.journal ?? 0} lignes de journal.` : "Rien d'archivé pour l'instant (il faut des données de plus de 90 jours)."}</p>
+    ${S.mode === "github" && a ? `<div class="tools" style="margin:10px 0 0"><button class="btn" id="arcDl">Télécharger l'archive</button></div>` : ""}
+  </section>`;
+}
 function sauvegardesPanel(d){
   const b = S.backups;
   if(S.mode === "github" && !b) setTimeout(listerSauvegardes, 0);
@@ -2009,6 +2042,42 @@ function santePanel(d){
     <p>Le robot vérifie chaque branchement à chaque passage. Un problème qui apparaît, ou qui se règle, est signalé dans le salon Discord <b>Commandes</b>${sa ? ` · dernière vérification ${fmtStamp(sa.le)}` : " (pas encore de vérification : il faut la dernière version du robot)"}.</p>
     <ul class="todo" style="list-style:none;padding:0;margin:0">${lignes.map(x => `<li style="display:block;padding:6px 0">${pt(x)} ${esc(x.txt)}${x.ok === false && x.conseil ? `<br><span class="meta" style="margin-left:18px">↳ ${esc(x.conseil)}</span>` : ""}</li>`).join("")}</ul>
   </section>`;
+}
+/* ============ Nettoyage ============ */
+const INACTIF_JOURS = 90;
+function aNettoyer(){
+  const d = S.data, presents = d.membres.filter(m => m.statut !== "Parti"), ouvertes = d.propositions.filter(p => !["Refusé","Abandonnée","Aucun contact","Accepté"].includes(p.statut));
+  const cle = r => r.twitchId ? "id:" + r.twitchId : "l:" + r.login.toLowerCase();
+  const membreDe = new Map(d.membres.map(m => [cle(m), m])), membreLogin = new Map(d.membres.map(m => [m.login.toLowerCase(), m]));
+  const vusProp = new Map();
+  const dupProps = [], dejaMembres = [];
+  for(const p of ouvertes){
+    const m = membreDe.get(cle(p)) || membreLogin.get(p.login.toLowerCase());
+    if(m) dejaMembres.push({r:p, c:"propositions", info:`déjà dans Streamers (${m.statut === "Parti" ? "parti" : "présent"})`});
+    const k = cle(p); if(vusProp.has(k)) dupProps.push({r:p, c:"propositions", info:`même chaîne que la proposition du ${fmtDate(vusProp.get(k).dateProposition || "") || "?"}`}); else vusProp.set(k, p);
+  }
+  const introuvables = [...presents.map(r => ({r, c:"membres"})), ...ouvertes.map(r => ({r, c:"propositions"}))].filter(x => x.r.introuvable)
+    .map(x => ({...x, info:`chaîne Twitch introuvable depuis le ${fmtDate(x.r.introuvable)} (supprimée, bannie ou renommée sans suivi)`}));
+  const inactifs = presents.filter(m => !["Admin","Modo"].includes(m.role)).map(m => ({m, x:lastStream(m)})).filter(({x}) => x && !x.live && x.days >= INACTIF_JOURS)
+    .sort((a, b) => b.x.days - a.x.days).map(({m, x}) => ({r:m, c:"membres", info:`pas de live depuis ${x.days} jours (${x.src})`, inactif:true}));
+  const incompletes = presents.filter(m => !["Admin","Modo"].includes(m.role)).map(m => ({r:m, c:"membres", manque:[!m.referent && "référent", !m.premierStream && "date du 1er stream", !m.arrivee && "date d'arrivée"].filter(Boolean)}))
+    .filter(x => x.manque.length).map(x => ({...x, info:`manque : ${x.manque.join(", ")}`}));
+  return [["Chaînes introuvables", introuvables, "Le robot ne trouve plus ces chaînes sur Twitch."],
+    ["Propositions déjà dans Streamers", dejaMembres, "La proposition est restée ouverte alors que la chaîne est déjà membre."],
+    ["Propositions en double", dupProps, "La même chaîne a été proposée plusieurs fois."],
+    [`Sans live depuis plus de ${INACTIF_JOURS} jours`, inactifs, "Membres présents (hors Admin et Modo) qui ne streament plus."],
+    ["Fiches incomplètes", incompletes, "Membres présents (hors Admin et Modo) à qui il manque des informations."]];
+}
+function viewNettoyage(){
+  const groupes = aNettoyer(), total = groupes.reduce((a, [, l]) => a + l.length, 0);
+  const ligne = x => `<li class="netl">
+    <a href="#" data-open="${x.c}:${x.r.id}" class="login">${avatarHtml(x.r.login)} ${esc(x.r.login)}</a>
+    <span class="meta">${esc(x.info)}</span>
+    <span class="netb">${x.c === "membres" && x.inactif ? `<button class="btn ghost" data-netparti="${x.r.id}" >Marquer « Parti »</button>` : ""}${x.c === "propositions" ? `<button class="btn ghost" data-netclore="${x.r.id}">Clore (Abandonnée)</button><button class="btn danger" data-netdel="${x.r.id}">Supprimer</button>` : ""}<button class="btn" data-open="${x.c}:${x.r.id}">Ouvrir</button></span></li>`;
+  return `<h1>Nettoyage</h1>
+  <p class="sub">${total ? `${total} point${total > 1 ? "s" : ""} à vérifier (la pastille du menu ne compte pas les fiches incomplètes).` : "Rien à nettoyer : tout est en ordre. 👌"} Rien n'est modifié tout seul : chaque action se fait ici, à la main, et reste visible dans l'historique.</p>
+  ${groupes.map(([titre, l, aide]) => `<section class="panel netp"><h2>${esc(titre)}${l.length ? ` <span class="navn">${l.length}</span>` : ""}</h2><p class="meta" style="margin-top:0">${esc(aide)}</p>
+    ${l.length ? `<ul style="list-style:none;padding:0;margin:0">${l.slice(0, 100).map(ligne).join("")}</ul>${l.length > 100 ? `<p class="meta">… et ${l.length - 100} autres.</p>` : ""}` : `<p class="none">Rien.</p>`}</section>`).join("")}`;
 }
 function jetonsSoon(d, days = 14){
   const now = Date.now();
@@ -2094,6 +2163,21 @@ document.addEventListener("click", e => {
   const bk = t.closest("[data-bulk]"); if(bk){ bulkApply(bk.dataset.bulk); return; }
   const dl = t.closest("[data-delier]"); if(dl){ const m = S.data.membres.find(x => x.id === dl.dataset.delier); if(!m) return;
     dispatch({t:"patch", c:"membres", id:m.id, p:{discordId:null, discord:null}, txt:`${m.login} · Compte Discord délié`}); renderDrawer(); toast("Compte Discord délié"); return; }
+  const npa = t.closest("[data-netparti]"); if(npa){ const m = S.data.membres.find(x => x.id === npa.dataset.netparti); if(!m) return;
+    if(confirm(`Passer ${m.login} en « Parti » (raison : inactif) ?`)){ dispatch({t:"patch", c:"membres", id:m.id, p:{statut:"Parti", depart:todayISO(), raisonDepart:"Inactif / ne streame plus"}, notify:true, txt:`${m.login} · Statut : Parti (inactif, depuis Nettoyage)`}); toast(`${m.login} est passé en « Parti »`); } return; }
+  const ncl = t.closest("[data-netclore]"); if(ncl){ const p = S.data.propositions.find(x => x.id === ncl.dataset.netclore); if(!p) return;
+    dispatch({t:"patch", c:"propositions", id:p.id, p:{statut:"Abandonnée"}, txt:`${p.login} · Statut : Abandonnée (depuis Nettoyage)`}); toast(`Proposition ${p.login} close`); return; }
+  const ndl = t.closest("[data-netdel]"); if(ndl){ const p = S.data.propositions.find(x => x.id === ndl.dataset.netdel); if(!p) return;
+    if(confirm(`Supprimer la proposition ${p.login} ? Elle part dans la corbeille (30 jours).`)){ dispatch({t:"del", c:"propositions", id:p.id, txt:`Suppression de ${p.login} (proposition, depuis Nettoyage)`}); toast("Proposition supprimée"); } return; }
+  if(t.id === "s_staffdcSave"){ const out = [], bad = [];
+    $("#s_staffdc").value.split("\n").map(l => l.trim()).filter(Boolean).forEach(l => { const m = /^(.+?)\s*[;:,]\s*@?(\S.*)$/.exec(l); if(m) out.push({nom:m[1].trim(), discord:m[2].trim()}); else bad.push(l); });
+    if(bad.length){ toast(`Ligne non comprise : ${bad[0]} (format : Prénom ; pseudo)`, true); return; }
+    dispatch({t:"settings", p:{staffDiscord:out}, notify:true, txt:"Comptes Discord du staff modifiés"}); toast("Enregistré : le robot relie les comptes au prochain passage"); return; }
+  if(t.id === "arcDl"){ (async () => { try {
+      const r = await fetch(`${dirUrl("archives")}/cabane-archive.json?ref=${encodeURIComponent(cfg.branch)}`, {headers:{...ghHeaders(), Accept:"application/vnd.github.raw+json"}, cache:"no-store"});
+      if(!r.ok) throw new Error(`Lecture impossible (${r.status}).`);
+      const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([await r.text()], {type:"application/json"})); a.download = "cabane-archive.json"; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+    } catch(e){ toast(e.message, true); } })(); return; }
   if(t.id === "srNew"){ S.serieEdit = {rythme:"hebdo", type:"Raid train", public:true, discord:true, publierDiscord:true, avance:7, duree:120}; render(); setTimeout(() => $("#sr_titre")?.focus(), 0); return; }
   if(t.id === "srCancel"){ S.serieEdit = null; render(); return; }
   const sre = t.closest("[data-sredit]"); if(sre){ S.serieEdit = JSON.parse(JSON.stringify((S.data.series || []).find(x => x.id === sre.dataset.sredit) || null)); render(); $("#sr_titre")?.scrollIntoView({block:"center"}); return; }
