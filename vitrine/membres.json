@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 76,
+  "heuresLive30": 77,
   "followsGagnes30": 263,
   "periode": {
    "du": "2026-09-23",
@@ -269,7 +269,9 @@
    },
    "premierStream": "2024-12-03",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Apex Legends"
+   ],
    "clip": null
   },
   {
@@ -362,5 +364,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-09-30T22:52:51.388Z"
+ "maj": "2026-09-30T22:58:44.837Z"
 }
