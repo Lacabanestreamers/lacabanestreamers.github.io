@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 64,
+  "heuresLive30": 65,
   "followsGagnes30": 258,
   "periode": {
    "du": "2026-09-23",
@@ -180,13 +180,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 3,
-    "jeu": "Sort Them Ducks",
-    "titre": "🐰1 canard, 2 canards, 3 canards, 4015 canards !!!  🦆",
-    "depuis": "2026-09-30T06:48:16Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": []
   },
@@ -315,5 +309,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-09-30T07:09:03.945Z"
+ "maj": "2026-09-30T12:35:23.373Z"
 }
