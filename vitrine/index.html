@@ -267,8 +267,9 @@ function render(){
   // Anniversaires de stream : aujourd'hui, puis les 7 prochains jours
   const annivs = [...membres.map(m => ({m, a:anniv(m)})), ...membres.map(m => ({m, a:anniv(m, "depuis"), cabane:true}))].filter(x => x.a && x.a.jours <= 7).sort((a, b) => a.a.jours - b.a.jours || a.m.nom.localeCompare(b.m.nom, "fr"));
   // Réussites des 30 derniers jours, tous membres confondus
-  const lim = new Date(Date.now() - 30 * 864e5).toISOString().slice(0, 10);
-  const wins = membres.flatMap(m => (m.succes || []).filter(x => x.date >= lim).map(x => ({m, x}))).sort((a, b) => b.x.date.localeCompare(a.x.date)).slice(0, 12);
+  const joursWins = Number.isFinite(d.reussitesJours) ? d.reussitesJours : 30;     // réglable par le staff (0 = section cachée)
+  const lim = new Date(Date.now() - joursWins * 864e5).toISOString().slice(0, 10);
+  const wins = joursWins ? membres.flatMap(m => (m.succes || []).filter(x => x.date >= lim).map(x => ({m, x}))).sort((a, b) => b.x.date.localeCompare(a.x.date)).slice(0, 12) : [];
   const lives = membres.filter(m => m.live).sort((a, b) => (b.live.viewers || 0) - (a.live.viewers || 0));
   const aff = membres.filter(m => m.type === "affiliate" || m.type === "partner").length;
   $("#stats").innerHTML = "";

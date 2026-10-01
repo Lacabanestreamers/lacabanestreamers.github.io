@@ -494,6 +494,8 @@ function applyOp(d, op){
     case "agendaPpl": { const e = (d.agenda || []).find(x => x.id === op.id); if(!e) break; e.participants = e.participants || [];
       if(op.add && !e.participants.includes(op.add)) e.participants.push(op.add);
       if(op.inconnu && e.discordInconnus) e.discordInconnus = e.discordInconnus.filter(x => x.id !== op.inconnu); break; }
+    case "reussiteMasque": { const l = op.kind === "palier" ? (d.paliers || []).filter(x => x.login === op.login && x.palier === op.palier) : (d.evenements || []).filter(x => x.login === op.login && x.type === op.type && x.date === op.date);
+      for(const x of l){ if(op.masque) x.masque = true; else delete x.masque; } break; }
     case "agendaDel": { const e = (d.agenda || []).find(x => x.id === op.id);
       // une occurrence de série supprimée est écartée : le robot ne la recréera pas
       if(e?.serie && !op.sansExclure){ const se = (d.series || []).find(x => x.id === e.serie); if(se && !(se.exclus || []).includes(e.date)) se.exclus = [...(se.exclus || []), e.date]; }
@@ -544,6 +546,7 @@ function inverseDe(op){
     case "rappelAdd": return [{t:"rappelDel", c:op.c, id:op.id, rid:op.rp.id}];
     case "rappelDel": { const r = (d[op.c] || []).find(x => x.id === op.id), rp = r?.rappels?.find(x => x.id === op.rid); return rp ? [{t:"rappelAdd", c:op.c, id:op.id, rp:clone(rp)}] : null; }
     case "note": return [];
+    case "reussiteMasque": return [{...op, masque:!op.masque, txt:undefined}];
     default: return null;          // séries, sauvegardes… : pas d'annulation rapide (historique et corbeille restent là)
   }
 }
@@ -976,9 +979,9 @@ function voteInfo(p){
 }
 function evenementsRecents(days){
   const lim = new Date(Date.now() - days*864e5).toISOString().slice(0,10);
-  const pal = (S.data?.paliers || []).filter(x => x.date >= lim).map(x => ({date:x.date, login:x.login, kind:"palier", txt:`${x.palier} follows`}));
+  const pal = (S.data?.paliers || []).filter(x => x.date >= lim).map(x => ({date:x.date, login:x.login, kind:"palier", palier:x.palier, masque:!!x.masque, txt:`${x.palier} follows`}));
   const ev = (S.data?.evenements || []).filter(x => x.date >= lim && (x.type === "affilie" || x.type === "partenaire"))
-    .map(x => ({date:x.date, login:x.login, kind:x.type, txt:x.type === "affilie" ? "affilié Twitch" : "partenaire Twitch"}));
+    .map(x => ({date:x.date, login:x.login, kind:x.type, type:x.type, masque:!!x.masque, txt:x.type === "affilie" ? "affilié Twitch" : "partenaire Twitch"}));
   return [...ev, ...pal].sort((a,b) => b.date.localeCompare(a.date));
 }
 
@@ -1248,7 +1251,7 @@ function viewAccueil(){
       return card("Intégrations en cours", enCours, m => li("membres", m, `<b class="warn">${faitesIntegration(m)}/${etapes.length}</b>${m.referent ? " · " + esc(m.referent) : ` · <span class="down">sans référent</span>`}`), "Tous les nouveaux (60 derniers jours) sont intégrés.", `data-goto="membres"`); })()}
     ${suivisCard()}
     ${card("Réussites (14 jours)", evenementsRecents(14), x => { const m = S.data.membres.find(y => y.login === x.login) || {id:"", login:x.login};
-        return `<li ${m.id ? `data-open="membres:${m.id}"` : ""}>${avatarHtml(x.login)}<span class="login">${esc(x.login)}</span><span class="r">${x.kind === "palier" ? "🚀" : "🎉"} <b class="up">${esc(x.txt)}</b> · ${fmtDate(x.date)}</span></li>`; },
+        return `<li ${m.id ? `data-open="membres:${m.id}"` : ""}>${avatarHtml(x.login)}<span class="login">${esc(x.login)}</span><span class="r">${x.kind === "palier" ? "🚀" : "🎉"} <b class="up">${esc(x.txt)}</b> · ${fmtDate(x.date)}${x.masque ? ` · <span class="muted">masquée</span>` : ""}</span></li>`; },
       "Aucun palier ni affiliation ces 14 derniers jours.", `data-goto="membres"`)}
     ${(() => { const ko = [...d.membres.filter(m => m.statut !== "Parti"), ...d.propositions.filter(p => !CLOSED.includes(p.statut))].filter(r => r.introuvable);
       return ko.length ? card("Introuvables sur Twitch", ko, r => li(d.membres.includes(r) ? "membres" : "propositions", r, `${d.membres.includes(r) ? "" : "proposition · "}depuis le ${fmtDate(r.introuvable)}`), "", "") : ""; })()}
@@ -1653,6 +1656,7 @@ function viewReglages(){
   ${adminsPanel(d)}
   ${staffDiscordPanel(d)}
   ${vitrinePanel(d)}
+  ${reussitesPanel(d)}
   ${sauvegardesPanel(d)}
   ${archivePanel(d)}
   ${modelesPanel()}
@@ -1848,6 +1852,7 @@ function drawerMembre(m){
   </fieldset>
   ${suiviBlock(m)}
   ${integrationBlock(m)}
+  ${(() => { const l = evenementsRecents(3650).filter(x => x.login === m.login); return l.length ? `<fieldset><legend>Réussites (vitrine)</legend><ul style="list-style:none;padding:0;margin:0">${l.map(x => `<li style="display:flex;gap:8px;align-items:center;padding:3px 0"><span style="flex:1">${x.kind === "palier" ? "🚀" : "🎉"} ${esc(x.txt)} · <span class="muted">${fmtDate(x.date)}</span>${x.masque ? ` · <b class="warn">masquée</b>` : ""}</span>${btnReussite(x)}</li>`).join("")}</ul></fieldset>` : ""; })()}
   ${affiliationBlock(m)}
   <fieldset><legend>Activité</legend>
     ${(() => { const n = {}; for(const [, j] of m.jeuxLog || []) n[j] = (n[j] || 0) + 1; const t = Object.entries(n).sort((a, b) => b[1] - a[1]).slice(0, 5);
@@ -2182,7 +2187,7 @@ async function lireSauvegarde(f){
 // Admins de la page : protège les actions lourdes contre les fausses manipulations (pas une vraie sécurité :
 // chaque jeton GitHub garde tous les droits sur le fichier).
 const estAdmin = () => { const a = S.data?.settings.admins || []; return !a.length || a.includes(cfg.me); };
-const ADMIN_SEL = '[data-bk="restore"], [data-trash="purge"], #s_save, #v_save, #s_twsave, #s_staffdcSave, #s_jetsave, #s_adminsSave, #fileIn, #importGo';
+const ADMIN_SEL = '[data-bk="restore"], [data-trash="purge"], #s_save, #v_save, #s_twsave, #s_staffdcSave, #s_jetsave, #s_adminsSave, #fileIn, #importGo, #v_reusave';
 function adminsPanel(d){
   const a = d.settings.admins || [];
   return `<section class="panel" id="admins">
@@ -2191,6 +2196,22 @@ function adminsPanel(d){
     <div class="grid">${d.settings.staff.map(n => `<label class="check"><input type="checkbox" class="admChk" value="${esc(n)}" ${a.includes(n) ? "checked" : ""}> ${esc(n)}</label>`).join("")}</div>
     ${a.length && !a.includes(cfg.me) ? `<p class="meta">Tu n'es pas admin de la page${cfg.me ? "" : " (choisis ton prénom dans « Je suis »)"}.</p>` : ""}
     <div class="tools" style="margin:10px 0 0"><button class="btn primary" id="s_adminsSave">Enregistrer</button></div>
+  </section>`;
+}
+// Réussites (paliers, affiliations) : le staff peut en masquer une sur la vitrine (réversible)
+const attrReussite = x => `data-reu="${x.kind === "palier" ? "palier" : "evt"}" data-rlogin="${esc(x.login)}" data-rpal="${x.palier ?? ""}" data-rtype="${esc(x.type || "")}" data-rdate="${esc(x.date)}" data-rmasque="${x.masque ? "1" : ""}"`;
+const btnReussite = x => `<button type="button" class="btn ghost" ${attrReussite(x)} style="padding:2px 10px" title="${x.masque ? "Réafficher sur la vitrine" : "Ne plus afficher sur la vitrine (réversible)"}">${x.masque ? "Réafficher" : "Masquer"}</button>`;
+function reussitesPanel(d){
+  const v = d.settings.vitrine || {}, jours = Number.isFinite(Number(v.reussitesJours)) ? Number(v.reussitesJours) : 30;
+  const liste = evenementsRecents(Math.max(jours, 60));
+  return `<section class="panel" id="reussites">
+    <h2>« Nos réussites » sur la vitrine</h2>
+    <p>La section affiche les paliers de follows et les affiliations / partenariats des <b>${jours} derniers jours</b> (12 au plus, les plus récents d'abord). Sur la page de chaque streamer, toutes ses réussites restent visibles : une réussite masquée ici disparaît des deux. Rien n'est supprimé, tu peux la réafficher.</p>
+    <div class="grid"><label class="f">Durée d'affichage sur l'accueil de la vitrine (jours, 0 = section cachée)<input id="v_reujours" type="number" min="0" max="365" value="${jours}"></label></div>
+    <div class="tools" style="margin:8px 0 12px"><button class="btn" id="v_reusave">Enregistrer la durée</button></div>
+    ${liste.length ? `<ul class="todo" style="list-style:none;padding:0;margin:0">${liste.map(x => `<li style="display:flex;gap:10px;align-items:center;padding:5px 0;border-top:1px solid var(--line)${x.masque ? ";opacity:.75" : ""}">${avatarHtml(x.login)}<span class="login" style="min-width:140px">${esc(x.login)}</span>
+      <span style="flex:1">${x.kind === "palier" ? "🚀" : "🎉"} ${esc(x.txt)} · <span class="muted">${fmtDate(x.date)}</span>${x.masque ? ` · <b class="warn">masquée</b>` : x.date < new Date(Date.now() - jours * 864e5).toISOString().slice(0, 10) ? ` · <span class="muted">plus sur l'accueil</span>` : ""}</span>${btnReussite(x)}</li>`).join("")}</ul>`
+      : `<p class="none">Aucune réussite ces ${Math.max(jours, 60)} derniers jours.</p>`}
   </section>`;
 }
 function staffDiscordPanel(d){
@@ -2393,6 +2414,12 @@ document.addEventListener("click", e => {
       if(!r.ok) throw new Error(`Lecture impossible (${r.status}).`);
       const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([await r.text()], {type:"application/json"})); a.download = "cabane-archive.json"; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
     } catch(e){ toast(e.message, true); } })(); return; }
+  const reu = t.closest("[data-reu]"); if(reu){ e.stopPropagation(); const masque = !reu.dataset.rmasque, kind = reu.dataset.reu;
+    dispatch({t:"reussiteMasque", kind, login:reu.dataset.rlogin, palier:kind === "palier" ? Number(reu.dataset.rpal) : undefined, type:reu.dataset.rtype || undefined, date:reu.dataset.rdate, masque, notify:true,
+      txt:`${reu.dataset.rlogin} · Réussite ${masque ? "masquée sur" : "réaffichée sur"} la vitrine`});
+    renderDrawer(); toast(masque ? "Réussite masquée : elle disparaît de la vitrine au prochain passage du robot" : "Réussite réaffichée"); return; }
+  if(t.id === "v_reusave"){ const n = Math.max(0, Math.min(365, Math.round(Number($("#v_reujours").value)))); if(!Number.isFinite(n)){ toast("Nombre de jours invalide", true); return; }
+    dispatch({t:"settings", notify:true, p:{vitrine:{...(S.data.settings.vitrine || {}), reussitesJours:n}}, txt:`Vitrine : réussites affichées ${n ? n + " jours" : "désactivées"}`}); toast(n ? `Réussites des ${n} derniers jours sur la vitrine` : "Section « Nos réussites » cachée sur la vitrine"); return; }
   if(t.id === "notifOn"){ activerNotifs(true); return; }
   if(t.id === "notifOff"){ activerNotifs(false); return; }
   if(t.id === "s_adminsSave"){ const a = [...document.querySelectorAll(".admChk:checked")].map(x => x.value);
@@ -2573,7 +2600,7 @@ document.addEventListener("click", e => {
   if(t.id === "v_save"){
     const lien = $("#v_discord").value.trim();
     if(lien && !/^https:\/\/(discord\.gg|discord\.com\/invite)\//i.test(lien)){ toast("Le lien Discord doit commencer par https://discord.gg/ ou https://discord.com/invite/", true); return; }
-    dispatch({t:"settings", notify:true, p:{vitrine:{active:$("#v_active").checked, titre:$("#v_titre").value.trim() || "La Cabane", texte:$("#v_texte").value.trim(), lienDiscord:lien,
+    dispatch({t:"settings", notify:true, p:{vitrine:{...(S.data.settings.vitrine || {}), active:$("#v_active").checked, titre:$("#v_titre").value.trim() || "La Cabane", texte:$("#v_texte").value.trim(), lienDiscord:lien,
       rejoindre:{actif:$("#v_rej").checked, titre:$("#v_rejtitre").value.trim() || "Rejoindre La Cabane", texte:$("#v_rejtexte").value.trim()}}}, txt:`Vitrine publique ${$("#v_active").checked ? "activée / modifiée" : "désactivée"}`});
     toast($("#v_active").checked ? "Vitrine enregistrée : le robot la publiera à son prochain passage" : "Vitrine désactivée : le robot la retirera à son prochain passage"); return;
   }
