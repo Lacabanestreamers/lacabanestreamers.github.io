@@ -217,10 +217,11 @@ footer{border-top:1px solid var(--line);margin-top:50px;padding:22px 0 40px;colo
 const $ = s => document.querySelector(s);
 const esc = v => String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const okLogin = l => /^[a-z0-9_]{1,25}$/i.test(l || "");
-const okImg = u => /^https:\/\/static-cdn\.jtvnw\.net\//.test(u || "");
-const okClipImg = u => /^https:\/\/(static-cdn\.jtvnw\.net|clips-media-assets2\.twitch\.tv)\//.test(u || "");
+const okImg = u => /^https:\/\/static-cdn\.jtvnw\.net\/[\w\-./%~]+$/.test(u || "");
+const okClipImg = u => /^https:\/\/(static-cdn\.jtvnw\.net|clips-media-assets2\.twitch\.tv)\/[\w\-./%~]+$/.test(u || "");
 const okClip = c => c && /^https:\/\/(clips\.twitch\.tv|www\.twitch\.tv)\//.test(c.url || "");
 const chan = l => `https://www.twitch.tv/${encodeURIComponent(l)}`;
+const horsParis = (() => { try { return Intl.DateTimeFormat().resolvedOptions().timeZone !== "Europe/Paris"; } catch { return false; } })();
 let DATA = null, filtre = "tous", q = "", chargerFait = false, jeuFiltre = "";
 
 function av(m){ return okImg(m.avatar) ? `<img class="av" src="${esc(m.avatar)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : `<span class="av" aria-hidden="true">${esc((m.nom || m.login || "?")[0])}</span>`; }
@@ -248,6 +249,15 @@ const fete = n => n === 1 ? "sa première année" : `ses ${n} ans`;   // « fêt
 function duree(iso){ const min = Math.max(0, Math.round((Date.now() - new Date(iso)) / 60000)); return min < 60 ? `${min} min` : `${Math.floor(min / 60)} h ${String(min % 60).padStart(2, "0")}`; }
 
 function render(){
+  // garder ce que la personne avait ouvert ou sélectionné (agenda déplié, menu des jeux…) malgré les rafraîchissements
+  const ouverts = [...document.querySelectorAll("details.cal[open]")].map(x => x.closest("[data-ev]")?.dataset.ev).filter(Boolean);
+  const focusId = document.activeElement?.id || "";
+  const r = _render();
+  for(const id of ouverts) document.querySelector(`[data-ev="${CSS.escape(id)}"] details.cal`)?.setAttribute("open", "");
+  if(focusId && focusId !== "q") document.getElementById(focusId)?.focus({preventScroll:true});
+  return r;
+}
+function _render(){
   const d = DATA, main = $("#main");
   const perso = new URLSearchParams(location.search).get("m");
   document.body.classList.toggle("profil", !!perso && !!d?.active);
@@ -263,6 +273,7 @@ function render(){
   $("#hasard").classList.toggle("hidden", !(d.membres || []).length);
 
   const membres = (d.membres || []).filter(m => okLogin(m.login));
+  if(!perso) profilAffiche = null;
   if(perso){ renderProfil(membres.find(m => m.login.toLowerCase() === perso.toLowerCase()), d); return; }
   // Anniversaires de stream : aujourd'hui, puis les 7 prochains jours
   const annivs = [...membres.map(m => ({m, a:anniv(m)})), ...membres.map(m => ({m, a:anniv(m, "depuis"), cabane:true}))].filter(x => x.a && x.a.jours <= 7).sort((a, b) => a.a.jours - b.a.jours || a.m.nom.localeCompare(b.m.nom, "fr"));
@@ -281,7 +292,7 @@ function render(){
     && (!jeuFiltre || (m.jeux || []).includes(jeuFiltre) || m.live?.jeu === jeuFiltre)
     && (!qq || [m.nom, m.login, m.bio, m.live?.jeu, ...(m.jeux || [])].some(x => String(x || "").toLowerCase().includes(qq))));
   const clips = membres.filter(m => okClip(m.clip)).sort((a, b) => (b.clip.vues || 0) - (a.clip.vues || 0)).slice(0, 8);
-  const cache = encodeURIComponent(d.maj || "");
+  const cache = Math.floor(Date.now() / 6e5);          // aperçus des lives rafraîchis toutes les 10 min
   const ch = d.chiffres || {};
   const nf = n => Number(n).toLocaleString("fr-FR");
   const kpis = [[membres.length, "streamers"], [lives.length, "en live maintenant"],
@@ -304,8 +315,8 @@ function render(){
         <span class="img" style="${okClipImg(m.clip.vignette) ? `background-image:url('${esc(m.clip.vignette)}')` : ""}"><span class="vw">▶ ${Number(m.clip.vues) || 0} vue${(m.clip.vues || 0) > 1 ? "s" : ""}</span></span>
         <span class="b">${av(m)}<span style="min-width:0"><span class="t">${esc(m.clip.titre || "Clip")}</span><span class="n">${esc(m.nom)}</span></span></span></a>`).join("")}</div></section>` : ""}
     ${agenda.length ? `<section aria-labelledby="h-evts"><h2 id="h-evts">📅 Prochains événements</h2>
-      <div class="evts">${agenda.map(e => `<article class="evt ${e.j === 0 ? "today" : ""}">
-        <div class="q"><b>${e.dt.getDate()}</b><small>${e.dt.toLocaleDateString("fr-FR", {month:"short"})}</small><small>${esc((e.heure || "").replace(":", "h"))}</small></div>
+      <div class="evts">${agenda.map(e => `<article class="evt ${e.j === 0 ? "today" : ""}" data-ev="${esc(e.id || "")}">
+        <div class="q"><b>${e.dt.getDate()}</b><small>${e.dt.toLocaleDateString("fr-FR", {month:"short"})}</small><small>${esc((e.heure || "").replace(":", "h"))}${e.heure && horsParis ? `<br><abbr title="heure de Paris">Paris</abbr>` : ""}</small></div>
         <div style="min-width:0"><span class="ty">${esc(e.type || "Événement")} · ${e.j === 0 ? "aujourd'hui" : e.j === 1 ? "demain" : e.dt.toLocaleDateString("fr-FR", {weekday:"long"})}</span>
           <h3>${esc(e.titre)}</h3>${e.description ? `<p>${esc(e.description)}</p>` : ""}
           ${(e.participants || []).filter(x => okLogin(x.login)).length ? `<div class="ppl">${e.participants.filter(x => okLogin(x.login)).map(x => `<a href="${pageUrl(x.login)}" data-nav title="${esc(x.nom)}">${av(x)}</a>`).join("")}</div>` : ""}
@@ -337,12 +348,14 @@ function render(){
     </section>
     ${d.rejoindre?.texte ? `<section aria-labelledby="h-rej"><div class="rejoindre"><h2 id="h-rej" style="margin-top:0">${esc(d.rejoindre.titre || "Rejoindre La Cabane")}</h2><p>${esc(d.rejoindre.texte)}</p>
       ${/^https:\/\/(discord\.gg|discord\.com\/invite)\//i.test(d.lienDiscord || "") ? `<a class="btn" href="${esc(d.lienDiscord)}" target="_blank" rel="noopener">Rejoindre le Discord</a>` : ""}</div></section>` : ""}`;
-  $("#maj").textContent = d.maj ? `Mis à jour le ${new Date(d.maj).toLocaleDateString("fr-FR")} à ${new Date(d.maj).toLocaleTimeString("fr-FR", {hour:"2-digit", minute:"2-digit"})} · actualisé toutes les heures` : "";
+  $("#maj").textContent = d.maj ? `Mis à jour le ${new Date(d.maj).toLocaleDateString("fr-FR")} à ${new Date(d.maj).toLocaleTimeString("fr-FR", {hour:"2-digit", minute:"2-digit"})} · le live est vérifié en direct toutes les 2 minutes` : "";
 }
 
+let profilAffiche = null;
 function renderProfil(m, d){
   const main = $("#main");
-  window.scrollTo(0, 0);
+  const qui = new URLSearchParams(location.search).get("m");
+  if(qui !== profilAffiche){ window.scrollTo(0, 0); profilAffiche = qui; }       // pas de saut en haut lors des rafraîchissements
   if(!m){
     document.title = `${d.titre || "La Cabane"} · Streamer introuvable`;
     main.innerHTML = `<a class="back" href="./" data-nav>← Tous les streamers</a><p class="empty">Ce streamer n'est pas (ou plus) présenté sur la vitrine.</p>`;
@@ -350,7 +363,7 @@ function renderProfil(m, d){
   }
   document.title = `${m.nom} · ${d.titre || "La Cabane"}`;
   const lien = location.origin + location.pathname + pageUrl(m.login);
-  const cache = encodeURIComponent(d.maj || "");
+  const cache = Math.floor(Date.now() / 6e5);          // aperçus des lives rafraîchis toutes les 10 min
   const succes = m.succes || [];
   main.innerHTML = `<a class="back" href="./" data-nav>← Tous les streamers</a>
     <article class="prof ${m.live ? "on" : ""}">
@@ -396,11 +409,17 @@ const horsLigneOk = t => /offline/i.test(t) && !LIVE_RE.test(t);
 function dureeMs(t){ let ms = 0; for(const [, n, u] of t.matchAll(/(\d+)\s+(day|hour|minute|second)/gi)) ms += n * {day:864e5, hour:36e5, minute:6e4, second:1e3}[u.toLowerCase()]; return ms; }
 async function pool(items, n, fn){ let i = 0; await Promise.all(Array.from({length:Math.min(n, items.length)}, async () => { while(i < items.length) await fn(items[i++]); })); }
 async function decapi(path){ const r = await fetch(`https://decapi.me/twitch/${path}`, {cache:"no-store"}); if(!r.ok) throw 0; return (await r.text()).trim(); }
+let verifEnCours = false, rotation = 0;
 async function verifierLives(){
-  const tous = (DATA?.membres || []).filter(m => okLogin(m.login));
-  // au-delà de 80 membres, on ne revérifie que ceux notés en live par le robot (pour rester raisonnable)
-  const aVerifier = tous.length <= 80 ? tous : tous.filter(m => m.live);
+  if(verifEnCours) return;                                    // un passage à la fois
+  const donnees = DATA;
+  const tous = (donnees?.membres || []).filter(m => okLogin(m.login));
+  // au-delà de 40 membres : ceux notés en live + 40 autres à tour de rôle (tout le monde est vu en quelques minutes)
+  let aVerifier = tous;
+  if(tous.length > 40){ const autres = tous.filter(m => !m.live); const lot = autres.slice(rotation, rotation + 40); rotation = rotation + 40 >= autres.length ? 0 : rotation + 40;
+    aVerifier = [...tous.filter(m => m.live), ...lot]; }
   if(!aVerifier.length) return;
+  verifEnCours = true;
   let change = false;
   await pool(aVerifier, 6, async m => {
     let t; try { t = await decapi(`uptime/${encodeURIComponent(m.login)}`); } catch { return; }   // réseau : on garde l'information du robot
@@ -413,8 +432,9 @@ async function verifierLives(){
       }
     } else if(horsLigneOk(t) && m.live){ m.live = null; horsLigne.set(m.login, DATA.maj); change = true; }
   });
+  verifEnCours = false;
   liveVerifieA = new Date();
-  if(change) render();
+  if(change && DATA === donnees) render();          // données rechargées entre-temps : le prochain passage s'en charge
 }
 
 // « Découvrir un streamer » : tirage parmi les membres de La Cabane uniquement.
@@ -482,13 +502,14 @@ async function inscrire(id, action){
     return;
   }
   if(!(DATA.membres || []).some(m => m.login.toLowerCase() === s.login.toLowerCase())){
-    toast(`Les inscriptions sont réservées aux streamers de La Cabane (tu es connecté à Twitch en tant que ${s.login}).`); return; }
+    render(); toast(`Les inscriptions sont réservées aux streamers de La Cabane (tu es connecté à Twitch en tant que ${s.login}). Si tu en fais partie mais n'apparais pas sur la vitrine, inscris-toi avec ✅ sous le message Discord.`); return; }
+  if(!navigator.onLine){ render(); toast("Pas de connexion internet : réessaie dans un instant."); return; }
   const fd = new FormData();
   fd.append("payload_json", JSON.stringify({username:`Vitrine · ${s.login}`, allowed_mentions:{parse:[]},
     content:JSON.stringify({cabane:"inscription", ev:id, action, jeton:s.jeton})}));
   let ok = true;
   try { const r = await fetch(wh, {method:"POST", body:fd}); ok = r.ok; } catch { /* réponse illisible (CORS) : la demande est quand même partie */ }
-  if(!ok){ toast("La demande n'a pas pu être envoyée. Réessaie plus tard, ou réagis ✅ sur Discord."); return; }
+  if(!ok){ render(); toast("La demande n'a pas pu être envoyée. Réessaie plus tard, ou réagis ✅ sur Discord."); return; }
   const a = attentes(); a[id] = {action, login:s.login, le:Date.now()}; ecrire(localStorage, ATTENTE, a);
   render();
   toast(action === "in" ? "C'est noté ! Ton inscription sera visible d'ici une heure." : "Désinscription envoyée, elle sera prise en compte d'ici une heure.");
@@ -522,7 +543,7 @@ function lienGoogle(e){
   return `https://calendar.google.com/calendar/render?${new URLSearchParams({action:"TEMPLATE", text:e.titre, dates:`${b.debut}/${b.fin}`, ctz:"Europe/Paris", details:texteEvt(e), location:e.lien || "Twitch"})}`;
 }
 function telechargerIcs(e){
-  const b = bornes(e), x = t => String(t || "").replace(/\\/g, "\\\\").replace(/;/g, "\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n");
+  const b = bornes(e), x = t => String(t || "").replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n");
   const now = new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z";
   const ics = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//La Cabane//Vitrine//FR", "CALSCALE:GREGORIAN",
     "BEGIN:VTIMEZONE", "TZID:Europe/Paris",
@@ -555,13 +576,14 @@ async function charger(){
   render();
   if(!chargerFait){ chargerFait = true; await retourTwitch(); }
   if(focus){ const el = $("#q"); el.focus(); try { el.setSelectionRange(pos, pos); } catch {} }
-  verifierLives();
+  if(!liveVerifieA || Date.now() - liveVerifieA > 60e3) verifierLives();
 }
 document.addEventListener("click", e => {
   const c = e.target.closest("[data-f]"); if(c){ filtre = c.dataset.f; render(); return; }
   const n = e.target.closest("a[data-nav]");
   if(n && !e.ctrlKey && !e.metaKey && !e.shiftKey && e.button === 0){ e.preventDefault(); const retour = !new URLSearchParams(location.search).get("m"); if(retour) sessionScroll = window.scrollY;
-    history.pushState(null, "", n.getAttribute("href")); render(); if(n.getAttribute("href") === "./") window.scrollTo(0, sessionScroll || 0); return; }
+    if(n.getAttribute("href") === "./" && history.state?.depuisAccueil){ history.back(); return; }   // « ← Tous les streamers » = retour arrière
+    history.pushState(retour ? {depuisAccueil:true} : null, "", n.getAttribute("href")); render(); if(n.getAttribute("href") === "./") window.scrollTo(0, sessionScroll || 0); return; }
   if(e.target.closest("#hasard, #autre")){ const m = new URLSearchParams(location.search).get("m"); if(m && !deja.includes(m)) deja.push(m); decouvrir(); return; }
   const ic = e.target.closest("[data-ics]"); if(ic){ e.preventDefault(); const ev = (DATA?.agenda || []).find(x => x.id === ic.dataset.ics); if(ev) telechargerIcs(ev); return; }
   const ib = e.target.closest("[data-ins], [data-insout]");
@@ -570,9 +592,10 @@ document.addEventListener("click", e => {
     (navigator.clipboard?.writeText(t) || Promise.reject()).then(ok, () => prompt("Copie ce lien :", t)); }
 });
 let sessionScroll = 0;
-window.addEventListener("popstate", () => render());
+window.addEventListener("popstate", () => { render(); if(!new URLSearchParams(location.search).get("m")) window.scrollTo(0, sessionScroll || 0); });
 document.addEventListener("change", e => { if(e.target.id === "jeuSel"){ jeuFiltre = e.target.value; render(); $("#jeuSel")?.focus(); } });
-document.addEventListener("input", e => { if(e.target.id === "q"){ q = e.target.value; const pos = e.target.selectionStart; render(); const el = $("#q"); el.focus(); el.setSelectionRange(pos, pos); } });
+document.addEventListener("compositionend", e => { if(e.target.id === "q"){ q = e.target.value; const pos = e.target.selectionStart; render(); const el = $("#q"); el.focus(); el.setSelectionRange(pos, pos); } });
+document.addEventListener("input", e => { if(e.target.id === "q" && !e.isComposing){ q = e.target.value; const pos = e.target.selectionStart; render(); const el = $("#q"); el.focus(); el.setSelectionRange(pos, pos); } });
 charger();
 setInterval(() => { if(document.visibilityState === "visible") charger(); }, 5 * 60 * 1000);
 setInterval(() => { if(document.visibilityState === "visible") verifierLives(); }, 2 * 60 * 1000);

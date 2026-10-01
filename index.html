@@ -3,7 +3,11 @@
 <head>
 <script>
 // Connexion Twitch lancée depuis la vitrine : Twitch revient ici (adresse déjà autorisée), on renvoie aussitôt vers la vitrine.
-(function(){ try { var h = location.hash; if(!/access_token=|error=/.test(h)) return;
+(function(){ try {
+  // Twitch renvoie le jeton dans « #… », mais un refus (« Annuler ») peut arriver dans « ?error=… » : on gère les deux
+  var h = location.hash, q = new URLSearchParams(location.search);
+  if(!/access_token=|error=/.test(h) && q.has("error")) h = "#" + location.search.slice(1);
+  if(!/access_token=|error=/.test(h)) return;
   var r = JSON.parse(sessionStorage.getItem("cabane.vitrine.oauth") || "null"), st = new URLSearchParams(h.slice(1)).get("state");
   if(r && r.etat === st) location.replace(location.origin + "/vitrine/" + (r.retour || "") + h); } catch(e){} })();
 </script>
@@ -418,6 +422,7 @@ nav a.navlink:hover{color:var(--cyan);text-decoration:none}
 const $ = s => document.querySelector(s);
 const esc = v => String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const uid = p => p + Math.random().toString(16).slice(2, 10);
+const jourLocal = iso => { const d = iso ? new Date(iso) : new Date(); return isNaN(d) ? String(iso || "").slice(0, 10) : `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
 const todayISO = () => { const d = new Date(); return new Date(d.getTime() - d.getTimezoneOffset()*60000).toISOString().slice(0,10); };
 const fmtDate = iso => { if(!iso) return ""; const [y,m,d] = iso.split("-"); return `${d}/${m}/${y}`; };
 const fmtStamp = iso => { if(!iso) return ""; const d = new Date(iso); return d.toLocaleDateString("fr-FR") + " " + d.toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"}); };
@@ -469,9 +474,9 @@ function applyOp(d, op){
           if(k in op.base && !memeValeur(cur, op.base[k]) && !memeValeur(cur, v)){ (S.conflits = S.conflits || []).push({c:op.c, id:op.id, k, mien:v, sien:cur ?? null, par:r.maj?.par || "quelqu'un", login:r.login, notify:op.notify}); }
           else p[k] = v; }
         if(!Object.keys(p).length) return; }
-      if("statut" in p && (p.statut || "") !== (r.statut || "")) r.statutDepuis = op.le.slice(0,10);
+      if("statut" in p && (p.statut || "") !== (r.statut || "")) r.statutDepuis = jourLocal(op.le);
       for(const [k,v] of Object.entries(p)) setPath(r, k, v); if(!op.auto) r.maj = {par:op.par, le:op.le}; break; }
-    case "add": if(!d[op.c].some(x => x.id === op.r.id)){ const r = JSON.parse(JSON.stringify(op.r)); if(!r.statutDepuis) r.statutDepuis = op.le.slice(0,10); d[op.c].push(r); } break;
+    case "add": if(!d[op.c].some(x => x.id === op.r.id)){ const r = JSON.parse(JSON.stringify(op.r)); if(!r.statutDepuis) r.statutDepuis = jourLocal(op.le); d[op.c].push(r); } break;
     case "del": { const i = d[op.c].findIndex(x => x.id === op.id); if(i < 0) break;
       const [r] = d[op.c].splice(i, 1);
       if(!op.noTrash){ d.corbeille = d.corbeille || []; d.corbeille.push({c:op.c, r, le:op.le, par:op.par}); }
@@ -484,7 +489,7 @@ function applyOp(d, op){
     case "agendaSet": { d.agenda = d.agenda || []; const i = d.agenda.findIndex(x => x.id === op.ev.id);
       if(op.rinclure && op.ev.serie){ const se = (d.series || []).find(x => x.id === op.ev.serie); if(se?.exclus) se.exclus = se.exclus.filter(x => x !== op.ev.date); }
       if(op.remplace){ if(i < 0) d.agenda.push(JSON.parse(JSON.stringify(op.ev))); else d.agenda[i] = JSON.parse(JSON.stringify(op.ev)); break; }
-      if(i < 0){ d.agenda.push(op.ev); break; }
+      if(i < 0){ if(op.edition) break; d.agenda.push(op.ev); break; }          // modifié ici mais supprimé entre-temps par quelqu'un d'autre : on ne le recrée pas
       const cur = d.agenda[i], ev = {...op.ev};
       // participants : on n'applique que ce que la personne a changé dans le formulaire,
       // pour ne pas effacer les inscriptions arrivées (Discord, vitrine) pendant qu'elle le remplissait
@@ -501,6 +506,7 @@ function applyOp(d, op){
       if(e?.serie && !op.sansExclure){ const se = (d.series || []).find(x => x.id === e.serie); if(se && !(se.exclus || []).includes(e.date)) se.exclus = [...(se.exclus || []), e.date]; }
       d.agenda = (d.agenda || []).filter(x => x.id !== op.id); break; }
     case "serieSet": { d.series = d.series || []; const i = d.series.findIndex(x => x.id === op.serie.id);
+      if(i < 0 && !op.serie.debut) break;           // pause / reprise d'une série supprimée entre-temps
       const se = i < 0 ? op.serie : {...d.series[i], ...op.serie}; if(i < 0) d.series.push(se); else d.series[i] = se;
       synchroSerie(d, se, todayISO()); break; }
     case "serieDel": { const t = todayISO();
@@ -509,7 +515,8 @@ function applyOp(d, op){
     case "rappelDel": { const r = (d[op.c]||[]).find(x => x.id === op.id); if(r?.rappels) r.rappels = r.rappels.filter(x => x.id !== op.rid); break; }
     case "snapshot": d.snapshots = d.snapshots.filter(s => s.date !== op.s.date); d.snapshots.push(op.s);
       d.snapshots.sort((a,b) => a.date.localeCompare(b.date)); if(d.snapshots.length > 120) d.snapshots = d.snapshots.slice(-120); break;
-    case "settings": Object.assign(d.settings, op.p); break;
+    case "settings": for(const [k, v] of Object.entries(op.p)){ const ks = k.split("."); let o = d.settings;
+        for(const x of ks.slice(0, -1)){ if(typeof o[x] !== "object" || o[x] === null) o[x] = {}; o = o[x]; } o[ks[ks.length - 1]] = v; } break;   // « vitrine.titre » : seul ce champ change (pas d'écrasement des réglages voisins)
     case "note": break;
   }
   if(d.corbeille?.length){ const lim = new Date(Date.now() - 30*864e5).toISOString(); d.corbeille = d.corbeille.filter(x => (x.le || "") >= lim); }
@@ -524,9 +531,15 @@ function dispatch(op){
   applyOp(S.data, op);
   if(S.mode === "github"){ S.pending.push(op); scheduleSave(); }
   else { S.dirtyLocal = true; store.set(LOCAL_KEY, S.data); }
+  if(S.lot) return;                       // plusieurs opérations d'un coup : un seul affichage à la fin
   updateSync(); render();
 }
 const patch = (c, id, p, txt) => dispatch({t:"patch", c, id, p, txt});
+
+// Chaque champ d'une fiche retient la fiche sur laquelle on a commencé à le modifier
+document.addEventListener("focusin", e => { const t = e.target; if(t.dataset?.k && t.closest?.("#drawerRoot") && S.drawer) t.dataset.fiche = S.drawer.c + S.drawer.id; });
+// Avatar introuvable en petite taille : on retente l'image d'origine (une seule fois)
+document.addEventListener("error", e => { const im = e.target; if(im?.tagName === "IMG" && im.dataset.repli && /^https:\/\//.test(im.dataset.repli)){ const u = im.dataset.repli; delete im.dataset.repli; im.src = u; } }, true);
 
 /* ============ Annuler (15 s après chaque action) ============ */
 const clone = x => x === undefined ? undefined : JSON.parse(JSON.stringify(x));
@@ -542,7 +555,7 @@ function inverseDe(op){
     case "agendaSet": { const prev = (d.agenda || []).find(x => x.id === op.ev.id); return [prev ? {t:"agendaSet", ev:clone(prev), remplace:true} : {t:"agendaDel", id:op.ev.id, sansExclure:true}]; }
     case "agendaDel": { const prev = (d.agenda || []).find(x => x.id === op.id); return prev ? [{t:"agendaSet", ev:clone(prev), remplace:true, rinclure:true}] : null; }
     case "agendaPpl": { const prev = (d.agenda || []).find(x => x.id === op.id); return prev ? [{t:"agendaSet", ev:clone(prev), remplace:true}] : null; }
-    case "settings": return [{t:"settings", p:Object.fromEntries(Object.keys(op.p).map(k => [k, clone(d.settings[k]) ?? null]))}];
+    case "settings": return [{t:"settings", p:Object.fromEntries(Object.keys(op.p).map(k => [k, clone(getPath(d.settings, k)) ?? null]))}];
     case "rappelAdd": return [{t:"rappelDel", c:op.c, id:op.id, rid:op.rp.id}];
     case "rappelDel": { const r = (d[op.c] || []).find(x => x.id === op.id), rp = r?.rappels?.find(x => x.id === op.rid); return rp ? [{t:"rappelAdd", c:op.c, id:op.id, rp:clone(rp)}] : null; }
     case "note": return [];
@@ -662,7 +675,7 @@ async function save(){
       const sha = await ghPut(fresh.data, fresh.sha, msg.slice(0,200));
       if(sha && ops.some(o => o.notify)) planifierReveil();
       if(sha){
-        S.sha = sha; S.data = fresh.data; ensureShape();
+        const avantNotif = S.data; S.sha = sha; S.data = fresh.data; ensureShape(); verifierNotifs(avantNotif, S.data);
         for(const op of S.pending) applyOp(S.data, JSON.parse(JSON.stringify(op))); // modifs faites pendant l'envoi
         done = true;
       }
@@ -670,6 +683,7 @@ async function save(){
     if(!done) throw new Error("Trop de conflits d'enregistrement, réessaie dans un instant.");
     S.lastError = null;
   } catch(e){
+    S.conflits = [];            // l'enregistrement a échoué : les opérations repartiront, les conflits seront recalculés
     S.pending.unshift(...ops); S.lastError = e.message; toast(e.message, true);
   } finally {
     S.saving = false; updateSync(); render();
@@ -693,10 +707,14 @@ OK = garder TA version · Annuler = garder la sienne`))
   }
   renderDrawer();
 }
+let pullN = 0;
 async function pull(silent){
   if(S.mode !== "github" || S.saving || S.pending.length) return;
+  const n = ++pullN, shaAvant = S.sha;
   try {
     const fresh = await ghGet(true);
+    // réponse arrivée trop tard (une modification ou un enregistrement a eu lieu entre-temps) : on l'ignore
+    if(n !== pullN || S.saving || S.pending.length || S.sha !== shaAvant){ updateSync(); return; }
     if(fresh && fresh.sha !== S.sha){ const avant = S.data; S.data = fresh.data; S.sha = fresh.sha; ensureShape(); render(); verifierNotifs(avant, S.data); if(!silent) toast("Données mises à jour"); }
     else if(!silent) toast("Déjà à jour");
     relancerRobotSiBesoin();
@@ -857,7 +875,10 @@ async function loadLive(force){
 function recordSeenLive(){
   if(S.mode === "none") return;
   const today = todayISO();
-  S.data.membres.forEach(m => { if(liveOf(m.login).live && m.dernierLive !== today) dispatch({t:"patch", c:"membres", id:m.id, p:{dernierLive:today}, auto:true}); });
+  const vus = S.data.membres.filter(m => liveOf(m.login).live && m.dernierLive !== today);
+  if(!vus.length) return;
+  S.lot = true; try { vus.forEach(m => dispatch({t:"patch", c:"membres", id:m.id, p:{dernierLive:today}, auto:true})); } finally { S.lot = false; }
+  updateSync(); render();
 }
 function lastStream(m){
   const l = liveOf(m.login);
@@ -884,7 +905,7 @@ function avatarHtml(login, big){
   const u = S.avatars[login], cls = "av" + (big ? " big" : "");
   if(!u) return `<span class="${cls}" aria-hidden="true">${esc((login || "?")[0])}</span>`;
   const src = u.replace(/\d+x\d+(\.\w+)$/, (big ? "150x150" : "70x70") + "$1");
-  return `<img class="${cls}" src="${esc(src)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${esc(u)}'">`;
+  return `<img class="${cls}" src="${esc(src)}" data-repli="${esc(u)}" alt="" loading="lazy" referrerpolicy="no-referrer">`;
 }
 const liveStamp = () => S.liveAt ? ` · live vérifié à ${new Date(S.liveAt).toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"})}` : "";
 function currentFollows(m){ return m.followsMode === "manuel" ? (m.followsManuel ?? null) : (liveOf(m.login).follows ?? null); }
@@ -940,10 +961,11 @@ function render(){
   const v = {accueil:viewAccueil, propositions:viewPropositions, membres:viewMembres, anniv:viewAnniv, stats:viewStats, agenda:viewAgenda, nettoyage:viewNettoyage, reglages:viewReglages, aide:viewAide}[S.view];
   const focus = document.activeElement && document.activeElement.id; const caret = document.activeElement && document.activeElement.selectionStart;
   // Les rafraîchissements automatiques (live, synchro) ne doivent pas effacer ce qu'on est en train de saisir
-  const saisies = [...main.querySelectorAll("input[id], textarea[id], select[id]")].filter(el =>
+  const saisies = S.sansRestaurer ? [] : [...main.querySelectorAll("input[id], textarea[id], select[id]")].filter(el =>
     el.type === "checkbox" ? el.checked !== el.defaultChecked
     : el.tagName === "SELECT" ? [...el.options].some(o => o.selected !== o.defaultSelected)
     : el.value !== el.defaultValue).map(el => [el.id, el.type === "checkbox" ? el.checked : el.value]);
+  S.sansRestaurer = false;
   main.innerHTML = tokenWarning() + v();
   for(const [id, val] of saisies){ const el = document.getElementById(id); if(!el) continue; if(el.type === "checkbox") el.checked = val; else el.value = val; }
   if(focus){ const el = document.getElementById(focus); if(el){ el.focus(); try { el.setSelectionRange(caret, caret); } catch {} } }
@@ -1329,7 +1351,7 @@ function recapMonths(){
 }
 function recapStats(mk){
   const d = S.data, [y, mo] = mk.split("-").map(Number);
-  const start = `${mk}-01`, end = new Date(y, mo, 0).toISOString().slice(0,10);
+  const start = `${mk}-01`, end = jourLocal(new Date(y, mo, 0));
   const snaps = d.snapshots.filter(s => s.date <= end);
   const base = [...snaps].reverse().find(s => s.date < start) || snaps.find(s => s.date >= start);
   const last = [...snaps].reverse().find(s => s.date >= start);
@@ -1429,7 +1451,7 @@ function viewStats(){
   const actifs = d.membres.filter(m => m.statut !== "Parti");
   // Membres présents à la fin de chaque mois (12 derniers mois), d'après arrivée / départ
   const months = []; const now = new Date();
-  for(let i = 11; i >= 0; i--){ const dt = new Date(now.getFullYear(), now.getMonth() - i + 1, 0); months.push({end:dt.toISOString().slice(0,10), l:dt.toLocaleDateString("fr-FR",{month:"short"})}); }
+  for(let i = 11; i >= 0; i--){ const dt = new Date(now.getFullYear(), now.getMonth() - i + 1, 0); months.push({end:jourLocal(dt), l:dt.toLocaleDateString("fr-FR",{month:"short"})}); }
   const presents = months.map(mo => ({l:mo.l, v:d.membres.filter(m => m.arrivee && m.arrivee <= mo.end && (!m.depart || m.depart > mo.end)).length}));
   // Follows cumulés (chaînes présentes dans chaque relevé)
   const snaps = d.snapshots.slice(-60);
@@ -1852,12 +1874,12 @@ function drawerMembre(m){
   </fieldset>
   ${suiviBlock(m)}
   ${integrationBlock(m)}
-  ${(() => { const l = evenementsRecents(3650).filter(x => x.login === m.login); return l.length ? `<fieldset><legend>Réussites (vitrine)</legend><ul style="list-style:none;padding:0;margin:0">${l.map(x => `<li style="display:flex;gap:8px;align-items:center;padding:3px 0"><span style="flex:1">${x.kind === "palier" ? "🚀" : "🎉"} ${esc(x.txt)} · <span class="muted">${fmtDate(x.date)}</span>${x.masque ? ` · <b class="warn">masquée</b>` : ""}</span>${btnReussite(x)}</li>`).join("")}</ul></fieldset>` : ""; })()}
+  ${(() => { const l = evenementsRecents(3650).filter(x => x.login === m.login); return l.length ? `<fieldset><legend>Réussites (vitrine)</legend><ul style="list-style:none;padding:0;margin:0">${l.map(x => `<li style="display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;padding:3px 0"><span style="flex:1 1 160px;min-width:0">${x.kind === "palier" ? "🚀" : "🎉"} ${esc(x.txt)} · <span class="muted">${fmtDate(x.date)}</span>${x.masque ? ` · <b class="warn">masquée</b>` : ""}</span>${btnReussite(x)}</li>`).join("")}</ul></fieldset>` : ""; })()}
   ${affiliationBlock(m)}
   <fieldset><legend>Activité</legend>
     ${(() => { const n = {}; for(const [, j] of m.jeuxLog || []) n[j] = (n[j] || 0) + 1; const t = Object.entries(n).sort((a, b) => b[1] - a[1]).slice(0, 5);
       return t.length ? `<p class="meta" style="margin-top:0">🎮 Joue surtout à (30 jours) : ${t.map(([j, h]) => `<b>${esc(j)}</b> ${h} h`).join(" · ")}</p>` : ""; })()}
-    ${m.clip?.url ? `<p class="meta" style="margin-top:0">🎬 Clip de la semaine : <a href="${esc(m.clip.url)}" target="_blank" rel="noopener">${esc(m.clip.titre || "clip")}</a> (${Number(m.clip.vues) || 0} vues)</p>` : ""}
+    ${m.clip?.url && safeUrl(m.clip.url) ? `<p class="meta" style="margin-top:0">🎬 Clip de la semaine : <a href="${esc(m.clip.url)}" target="_blank" rel="noopener">${esc(m.clip.titre || "clip")}</a> (${Number(m.clip.vues) || 0} vues)</p>` : ""}
     ${(() => { const x = lastStream(m); return `<p class="meta" style="margin-top:0">Dernier stream : ${!x ? "inconnu" : x.live ? "en live maintenant" : `${x.date.toLocaleDateString("fr-FR")} (${x.days === 0 ? "aujourd'hui" : "il y a " + x.days + " j"}) · ${x.src}`}</p>`; })()}
     <div class="grid">${fld("Dernier stream (saisie manuelle)","dernierStreamManuel",m.dernierStreamManuel,"date")}</div>
   </fieldset>
@@ -1906,7 +1928,7 @@ function footMembre(m){ return `<button class="btn danger" data-act="delete" sty
 function viewAide(){
   const owner = cfg.owner || "Lacabanestreamers", repo = cfg.repo || "cabane";
   const sec = (id, titre, html) => `<section id="aide-${id}"><h2>${titre}</h2>${html}</section>`;
-  const som = [["connexion","Se connecter"],["onglets","Les onglets"],["quotidien","Au quotidien"],["robot","Le robot"],["vitrine","La vitrine"],["telephone","Sur téléphone"],["probleme","En cas de problème"]];
+  const som = [["connexion","Se connecter"],["onglets","Les onglets"],["quotidien","Au quotidien"],["evenements","Événements"],["discord","Discord"],["robot","Le robot"],["vitrine","La vitrine"],["admin","Réglages et sécurité"],["telephone","Sur téléphone"],["probleme","En cas de problème"]];
   return `<div class="aide"><h1>Aide</h1><p class="sub">Tout ce qu'il faut savoir pour utiliser La Cabane côté staff.</p>
   <nav class="som" aria-label="Sommaire">${som.map(([id, l]) => `<a href="#aide-${id}">${l}</a>`).join("")}</nav>
   ${sec("connexion", "Se connecter", `
@@ -1921,58 +1943,86 @@ function viewAide(){
     <h3>Connexion Twitch (facultatif mais conseillé)</h3>
     <p>Dans Réglages → Connexion Twitch, clique sur <b>Se connecter à Twitch</b> avec n'importe quel compte. Tu obtiens le live en temps réel, les follows exacts et la date du dernier stream.</p>`)}
   ${sec("onglets", "Les onglets", `
-    <ul><li><b>Accueil</b> : ce qui t'attend (tes avis à donner, anniversaires, inactifs, propositions qui stagnent, suivis de nouveaux, fiches à compléter, réussites).</li>
-      <li><b>Propositions</b> : les chaînes proposées, leur statut et les avis du staff.</li>
-      <li><b>Streamers</b> : les membres de La Cabane, leurs follows, leur dernier stream et leur progression.</li>
+    <ul><li><b>Accueil</b> : ce qui t'attend (tes avis à donner, tes propositions en charge, rappels du jour, anniversaires, inactifs, propositions qui stagnent, intégrations et suivis de nouveaux, événements de la semaine, réussites, fiches à compléter).</li>
+      <li><b>Propositions</b> : les chaînes proposées, leur statut, leur responsable et les avis du staff.</li>
+      <li><b>Streamers</b> : les membres de La Cabane, leurs follows, leur dernier stream, leurs jeux et leur progression.</li>
       <li><b>Anniversaires</b> : les anniversaires de stream, mois par mois.</li>
-      <li><b>Tableau de bord</b> : les chiffres de la communauté, la répartition des référents et la carte récap du mois (image à poster).</li>
-      <li><b>Réglages</b> : connexion, listes, vitrine, sauvegardes, modèles de messages, corbeille, historique.</li></ul>`)}
+      <li><b>Tableau de bord</b> : les chiffres de la communauté, l'<b>entonnoir des propositions</b> (reçues, acceptées, refusées, délai de décision, mois par mois), la répartition des référents et la carte récap du mois (image à poster).</li>
+      <li><b>Événements</b> : raids, soirées, séries récurrentes et inscriptions.</li>
+      <li><b>Nettoyage</b> : chaînes introuvables, propositions en double ou déjà membres, membres inactifs depuis 90 jours, fiches incomplètes. La pastille compte ce qui demande une action.</li>
+      <li><b>Réglages</b> : connexion, santé, notifications, admins, comptes Discord du staff, listes, vitrine, réussites, sauvegardes, archives, modèles de messages, corbeille, historique.</li>
+      <li><b>Vitrine ↗</b> ouvre la page publique. <b>🔍</b> (ou <b>Ctrl+K</b>) cherche partout.</li></ul>`)}
   ${sec("quotidien", "Au quotidien", `
     <h3>Donner son avis sur une proposition</h3>
-    <p>Ouvre la fiche, puis clique sur <b>Pour</b>, <b>Contre</b> ou <b>Neutre</b> sur ta ligne, ou écris un avis libre. Quand une majorité se dégage, la fiche propose d'appliquer le statut correspondant.</p>
+    <p>Ouvre la fiche, puis clique sur <b>Pour</b>, <b>Contre</b> ou <b>Neutre</b> sur ta ligne, ou écris un avis libre. Tu peux aussi réagir sous le message de la proposition dans le salon staff de Discord : 👍 Pour, 🤔 Neutre, 👎 Contre (ton compte Discord doit être noté dans Réglages → Comptes Discord du staff). L'avis arrive sur la fiche dans l'heure, marqué « (Discord) ». Quand une majorité se dégage, la fiche propose d'appliquer le statut correspondant.</p>
+    <h3>Prendre une proposition en charge</h3>
+    <p>Sur la fiche, choisis le <b>Responsable</b> : celui qui contacte le streamer (la page suggère le moins chargé). Tes propositions apparaissent sur l'Accueil, et chaque matin à 9 h le robot te mentionne dans le salon staff si l'une d'elles stagne ou si un de tes rappels tombe.</p>
     <h3>Accepter une chaîne</h3>
     <p>Sur la fiche de la proposition, clique sur <b>Accepter et transférer dans Streamers</b>. La fiche passe dans Streamers et garde tout son historique (parrain, avis). Pense à lui choisir un <b>référent</b>.</p>
+    <h3>Intégrer et suivre un nouveau</h3>
+    <p>Sur la fiche d'un nouveau membre, coche les étapes d'<b>intégration</b> au fur et à mesure (ajouté au Discord, rôle donné…, liste réglable dans Réglages → Listes). Tant qu'elles ne sont pas toutes cochées (60 premiers jours), il apparaît sur l'Accueil. Le référent est aussi rappelé de prendre des nouvelles à J+7 et à J+30.</p>
     <h3>Contacter un streamer</h3>
     <p>Dans une fiche, choisis un modèle dans « Préparer un message… » (invitation, refus, bienvenue…), retouche le texte si besoin, puis clique sur <b>Copier</b> et colle le message dans Discord.</p>
-    <h3>Suivre un nouveau</h3>
-    <p>Si tu es référent, l'Accueil te rappelle de prendre des nouvelles à J+7 et à J+30. Coche la case sur sa fiche une fois que c'est fait.</p>
     <h3>Ne rien oublier : les rappels</h3>
-    <p>Dans une fiche, section <b>Rappels</b> : choisis une date et écris quoi faire (« recontacter après ses vacances »). Le jour venu, le rappel apparaît sur l'Accueil (« Rappels du jour », filtre « Les miens ») et une 🔔 s'affiche dans les tableaux. Clique sur <b>Fait</b> une fois traité.</p>
-    <h3>Organiser un événement</h3>
-    <p>Onglet <b>Événements</b> → <b>Créer un événement</b> : titre, date, heure, type, description et participants. S'il est public, il apparaît sur la vitrine. Si <b>Partager sur Discord</b> est coché, le robot le publie dans le salon événements environ une minute après l'enregistrement (et envoie un message de mise à jour si la date ou l'heure change). Avec les rappels cochés, il le rappelle aussi la veille à 18 h et le jour même à 9 h.</p>
-    <p><b>Inscriptions</b> (streamers de La Cabane seulement) : réaction ✅ sous le message Discord de l'événement, ou bouton « Je participe » sur la vitrine (connexion Twitch). Le robot les ajoute à chaque passage, toutes les heures ; le bouton « Relever les inscriptions maintenant » le lance tout de suite. Si un compte Discord n'est pas reconnu, la carte de l'événement te demande à quel streamer il correspond : c'est retenu pour la suite. Un participant que tu retires à la main n'est pas réajouté tant qu'il ne remet pas sa réaction.</p>
-    <p><b>Événement Discord</b> : un événement partagé sur Discord avec une heure apparaît aussi dans l'onglet « Événements » du serveur (créé par le bot). « Intéressé » y vaut inscription. Le supprimer ici le supprime là-bas.</p>
-    <p><b>Rappels</b> : la veille et le jour même, les inscrits dont le compte Discord est relié sont mentionnés (ils reçoivent une notification). Le compte se relie tout seul, ou via le champ « Pseudo Discord » de la fiche.</p>
-    <p><b>Séries récurrentes</b> (onglet Événements) : un raid chaque samedi, une soirée le 1er vendredi du mois… Chaque date est créée quelques jours avant (réglable), puis se gère comme un événement normal. Supprimer une seule date la saute ; modifier la série met à jour les dates à venir ; « Pause » arrête d'en créer.</p>
-    <p><b>Annuler</b> : après chaque action, un bouton « ↶ Annuler » reste 15 secondes en bas à gauche. <b>Recherche</b> : Ctrl+K (ou 🔍) cherche partout : streamers, propositions, corbeille, événements, historique. <b>Modification simultanée</b> : si quelqu'un a changé le même champ pendant que tu l'éditais, la page te montre les deux versions et te laisse choisir.</p>
-    <p><b>Responsable d'une proposition</b> : celui qui contacte le streamer (suggestion du moins chargé). Chaque matin à 9 h, le robot mentionne dans le salon admin chaque membre du staff qui a des propositions qui stagnent ou des rappels du jour (comptes Discord du staff à renseigner dans Réglages). <b>Intégration</b> : cases à cocher sur la fiche d'un nouveau membre (étapes réglables dans Réglages → Listes) ; l'Accueil liste les intégrations pas terminées.</p>
-    <p><b>Notifications</b> (Réglages, par appareil) : nouvelles propositions et tes rappels du jour, tant que la page est ouverte. <b>Entonnoir</b> (Tableau de bord) : propositions reçues, acceptées, refusées et délai de décision, mois par mois.</p>
-    <p><b>Santé</b> (Réglages) : état de chaque branchement (robot, webhooks, bot, vitrine, jetons, sauvegardes). Les problèmes et leurs résolutions arrivent aussi dans le salon Discord Commandes.</p>
+    <p>Dans une fiche, section <b>Rappels</b> : choisis une date et écris quoi faire (« recontacter après ses vacances »). Le jour venu, le rappel apparaît sur l'Accueil (« Rappels du jour », filtre « Les miens »), une 🔔 s'affiche dans les tableaux, et le robot te mentionne à 9 h. Clique sur <b>Fait</b> une fois traité.</p>
     <h3>Modifier plusieurs fiches</h3>
     <p>Coche les fiches dans un tableau : une barre apparaît en bas pour changer d'un coup le statut, le rôle, le référent ou une étiquette.</p>
-    <h3>Supprimer par erreur ?</h3>
-    <p>Pas de panique : un bouton <b>Annuler</b> s'affiche quelques secondes. Sinon, la fiche reste 30 jours dans <b>Réglages → Corbeille</b>.</p>
+    <h3>Annuler, corbeille, modification simultanée</h3>
+    <p>Après chaque action, un bouton <b>↶ Annuler</b> reste 15 secondes en bas à gauche. Une fiche supprimée reste 30 jours dans <b>Réglages → Corbeille</b>. Si quelqu'un a modifié le même champ pendant que tu l'éditais, la page te montre les deux versions et te laisse choisir laquelle garder.</p>
+    <h3>Chercher</h3>
+    <p><b>Ctrl+K</b> (ou 🔍 au bout du menu) : streamers, propositions (même closes), corbeille, événements, séries et historique. Flèches puis Entrée pour ouvrir.</p>
+    <h3>Notifications</h3>
+    <p>Réglages → <b>Notifications sur cet appareil</b> : une notification du navigateur pour chaque nouvelle proposition et pour tes rappels du jour, tant que la page est ouverte (même en arrière-plan). À activer sur chaque appareil.</p>
     <p class="astuce">Tout s'enregistre automatiquement pour tout le staff. Le point en haut à droite passe au vert (« Synchronisé ») quand c'est fait.</p>`)}
+  ${sec("evenements", "Événements", `
+    <h3>Créer un événement</h3>
+    <p>Onglet <b>Événements</b> → <b>Créer un événement</b> : titre, date, heure, durée, type, lien, description et participants. Coché « vitrine », il apparaît sur la page publique (avec « Ajouter à mon agenda »).</p>
+    <h3>Le partager sur Discord</h3>
+    <p>Coche <b>Partager sur Discord</b> : le robot le publie dans le salon événements une à deux minutes après l'enregistrement. Si la date ou l'heure change, un message de mise à jour part, et le message d'origine est tenu à jour (participants, description). S'il a une heure, il est aussi créé dans l'onglet <b>Événements du serveur Discord</b> ; le supprimer ici le supprime là-bas. Avec <b>Rappels</b> coché, le robot le rappelle la veille à 18 h et le jour même à 9 h, en <b>mentionnant les inscrits</b> dont le compte Discord est relié.</p>
+    <h3>Inscriptions</h3>
+    <p>Réservées aux streamers de La Cabane, de trois façons : réaction ✅ sous le message Discord, « Intéressé » sur l'événement du serveur Discord, ou bouton <b>Je participe</b> sur la vitrine (connexion Twitch). Le robot les ajoute à chaque passage ; le bouton <b>Relever les inscriptions maintenant</b> le lance tout de suite. Retirer sa réaction désinscrit. Si un compte Discord n'est pas reconnu, la carte de l'événement te demande à quel streamer il correspond : c'est retenu pour la suite. Un participant que tu retires à la main n'est pas réajouté tant qu'il ne remet pas sa réaction.</p>
+    <h3>Séries récurrentes</h3>
+    <p>Un raid chaque samedi, une soirée le 1er vendredi du mois… <b>Nouvelle série</b> : rythme, première date, heure, et combien de jours avant chaque date est créée. Chaque date se gère ensuite comme un événement normal. Supprimer une seule date la saute ; modifier la série met à jour les dates à venir ; <b>Pause</b> arrête d'en créer ; supprimer la série supprime ses dates à venir.</p>`)}
+  ${sec("discord", "Discord", `
+    <ul><li><b>Salon staff</b> : nouvelles propositions (avec 👍 🤔 👎 pour donner son avis), arrivées dans Streamers, changements de pseudo, « À faire aujourd'hui » à 9 h.</li>
+      <li><b>Salon célébration</b> : anniversaires de stream, anniversaires d'arrivée dans La Cabane, paliers de follows, affiliations et partenariats.</li>
+      <li><b>Salon événements</b> : publications, mises à jour et rappels d'événements.</li>
+      <li><b>Salon Commandes</b> : alertes de santé (un problème qui apparaît ou se règle) et, chaque mois, une copie complète des données en pièce jointe. À garder privé.</li>
+      <li><b>Salon des inscriptions</b> (privé, seulement pour le bot) : la vitrine y dépose les demandes d'inscription, que le robot vérifie puis efface.</li></ul>
+    <p><b>Comptes Discord</b> : celui d'un membre se relie tout seul (ou via le champ « Pseudo Discord » de sa fiche, avec un bouton Délier) ; ceux du staff se notent dans Réglages → Comptes Discord du staff.</p>`)}
   ${sec("robot", "Le robot", `
-    <p>Un robot tourne toutes les heures sur GitHub, même quand personne n'a la page ouverte :</p>
-    <ul><li>il note qui est en live et mesure les viewers ;</li>
-      <li>il relève les follows matin, midi et soir ;</li>
-      <li>il détecte les changements de pseudo, les affiliations et les paliers de 50 follows ;</li>
-      <li>il annonce sur Discord, dans le salon du staff, les nouvelles propositions et les validations (arrivées dans Streamers), et dans le salon des célébrations les anniversaires de stream, les paliers et les affiliations ;</li>
-      <li>il met à jour la vitrine publique et fait une sauvegarde chaque dimanche.</li></ul>`)}
+    <p>Un robot tourne toutes les heures sur GitHub, même quand personne n'a la page ouverte. La page le réveille aussi une minute après une modification qui doit partir sur Discord.</p>
+    <ul><li><b>À chaque passage</b> : qui est en live (viewers et jeu joué), changements de pseudo, affiliations, inscriptions aux événements, publication de la vitrine, vérification de santé.</li>
+      <li><b>Matin, midi et soir</b> : relevé des follows et paliers de 50 follows.</li>
+      <li><b>Chaque jour</b> : anniversaires (9 h), « À faire aujourd'hui » (9 h), clips de la semaine, minutes GitHub consommées, archivage des vieilles données (relevés et événements de plus de 90 jours, journal au-delà de 250 lignes, rien n'est supprimé).</li>
+      <li><b>Chaque dimanche</b> : sauvegarde complète. <b>Chaque mois</b> : copie des données dans le salon Commandes.</li>
+      <li><b>Garde-fou</b> : s'il allait enregistrer des données incohérentes (fiches disparues), il n'écrit rien et prévient dans Commandes.</li></ul>`)}
   ${sec("vitrine", "La vitrine publique", `
-    <p>La page <a href="${VITRINE_URL()}" target="_blank" rel="noopener">${VITRINE_URL()}</a> présente les membres à tout le monde : avatar, bio Twitch, badges, lives en cours et réussites. Aucune donnée interne n'y apparaît.</p>
-    <p>Chaque membre a sa propre page à partager (dans ses panneaux Twitch, par exemple) : <code>${VITRINE_URL()}?m=pseudo</code>. Pour retirer quelqu'un de la vitrine, coche « Masquer de la vitrine publique » sur sa fiche.</p>`)}
+    <p>La page <a href="${VITRINE_URL()}" target="_blank" rel="noopener">${VITRINE_URL()}</a> présente les membres à tout le monde : avatar, bio Twitch, badges, jeux, lives en cours, clips de la semaine, prochains événements (avec inscription et ajout à l'agenda), anniversaires et réussites. Aucune donnée interne n'y apparaît.</p>
+    <ul><li>Chaque membre a sa propre page à partager (dans ses panneaux Twitch, par exemple) : <code>${VITRINE_URL()}?m=pseudo</code>.</li>
+      <li>Pour retirer quelqu'un : coche « Masquer de la vitrine publique » sur sa fiche.</li>
+      <li>Pour retirer une réussite (palier, affiliation) : <b>Masquer</b> dans Réglages → « Nos réussites » ou sur la fiche du membre. La durée d'affichage sur l'accueil se règle au même endroit (30 jours par défaut).</li>
+      <li>Section <b>Rejoindre</b> (critères, état d'esprit) : à activer et écrire dans Réglages → Vitrine publique.</li>
+      <li>Les changements apparaissent au passage suivant du robot.</li></ul>`)}
+  ${sec("admin", "Réglages et sécurité", `
+    <ul><li><b>Santé</b> : un voyant par branchement (robot, webhooks, bot Discord, inscriptions, vitrine, jetons, sauvegardes, minutes GitHub, données). En rouge, la ligne dit quoi faire.</li>
+      <li><b>Admins de la page</b> : seuls eux peuvent restaurer une sauvegarde, supprimer définitivement, importer des données et modifier les Réglages. Personne de coché = tout le monde est admin.</li>
+      <li><b>Sauvegardes</b> : chaque dimanche (8 gardées) et à la demande ; <b>Restaurer</b> remplace toutes les données (l'état actuel est sauvegardé juste avant).</li>
+      <li><b>Archives</b> : les vieilles données déplacées par le robot, téléchargeables.</li>
+      <li><b>Minutes GitHub</b> : le dépôt privé a droit à 2000 minutes de robot par mois ; Santé affiche la consommation et prévient avant la limite.</li></ul>`)}
   ${sec("telephone", "Sur téléphone", `
     <p>La page s'installe comme une application :</p>
     <ul><li><b>Android (Chrome)</b> : menu ⋮ → <b>Installer l'application</b>.</li>
       <li><b>iPhone (Safari)</b> : bouton Partager → <b>Sur l'écran d'accueil</b>.</li></ul>
-    <p>Les tableaux s'affichent en cartes sur petit écran.</p>`)}
+    <p>Les tableaux s'affichent en cartes sur petit écran. La recherche 🔍 est au bout du menu (fais-le défiler).</p>`)}
   ${sec("probleme", "En cas de problème", `
     <ul><li><b>« Jeton refusé »</b> : ton jeton a expiré ou a été supprimé. Demande-en un nouveau à Olivier (ou régénère le tien), puis colle-le dans Réglages.</li>
       <li><b>« Erreur de synchro »</b> : vérifie ta connexion internet, puis clique sur <b>Recharger maintenant</b> dans Réglages. Tes modifications restent en attente et repartent toutes seules.</li>
       <li><b>La page ne montre pas la dernière version</b> : fais <b>Ctrl+F5</b> (ou ferme et rouvre l'application sur téléphone).</li>
-      <li><b>Un chiffre semble faux</b> : les follows et le live viennent de Twitch. Clique sur <b>Actualiser Twitch</b> ; les relevés du robot se font trois fois par jour.</li></ul>
+      <li><b>Un chiffre semble faux</b> : les follows et le live viennent de Twitch. Clique sur <b>Actualiser Twitch</b> ; les relevés du robot se font trois fois par jour.</li>
+      <li><b>Un voyant rouge dans Santé</b> ou une alerte dans Commandes : suis le conseil affiché ; sinon regarde l'onglet <b>Actions</b> du dépôt ${esc(repo)} sur GitHub.</li>
+      <li><b>Une inscription ou une publication Discord n'arrive pas</b> : clique sur <b>Relever les inscriptions maintenant</b> (Événements) et attends deux minutes.</li>
+      <li><b>Un bouton est grisé</b> : il est réservé aux admins de la page (Réglages → Admins).</li></ul>
     <p>Pour le reste, demande à Olivier sur Discord.</p>`)}
   </div>`;
 }
@@ -2209,8 +2259,8 @@ function reussitesPanel(d){
     <p>La section affiche les paliers de follows et les affiliations / partenariats des <b>${jours} derniers jours</b> (12 au plus, les plus récents d'abord). Sur la page de chaque streamer, toutes ses réussites restent visibles : une réussite masquée ici disparaît des deux. Rien n'est supprimé, tu peux la réafficher.</p>
     <div class="grid"><label class="f">Durée d'affichage sur l'accueil de la vitrine (jours, 0 = section cachée)<input id="v_reujours" type="number" min="0" max="365" value="${jours}"></label></div>
     <div class="tools" style="margin:8px 0 12px"><button class="btn" id="v_reusave">Enregistrer la durée</button></div>
-    ${liste.length ? `<ul class="todo" style="list-style:none;padding:0;margin:0">${liste.map(x => `<li style="display:flex;gap:10px;align-items:center;padding:5px 0;border-top:1px solid var(--line)${x.masque ? ";opacity:.75" : ""}">${avatarHtml(x.login)}<span class="login" style="min-width:140px">${esc(x.login)}</span>
-      <span style="flex:1">${x.kind === "palier" ? "🚀" : "🎉"} ${esc(x.txt)} · <span class="muted">${fmtDate(x.date)}</span>${x.masque ? ` · <b class="warn">masquée</b>` : x.date < new Date(Date.now() - jours * 864e5).toISOString().slice(0, 10) ? ` · <span class="muted">plus sur l'accueil</span>` : ""}</span>${btnReussite(x)}</li>`).join("")}</ul>`
+    ${liste.length ? `<ul class="todo" style="list-style:none;padding:0;margin:0">${liste.map(x => `<li style="display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;padding:5px 0;border-top:1px solid var(--line)">${avatarHtml(x.login)}<span class="login" style="min-width:min(140px,40%)">${esc(x.login)}</span>
+      <span style="flex:1 1 180px;min-width:0">${x.kind === "palier" ? "🚀" : "🎉"} ${esc(x.txt)} · <span class="muted">${fmtDate(x.date)}</span>${x.masque ? ` · <b class="warn">masquée</b>` : x.date < new Date(Date.now() - jours * 864e5).toISOString().slice(0, 10) ? ` · <span class="muted">plus sur l'accueil</span>` : ""}</span>${btnReussite(x)}</li>`).join("")}</ul>`
       : `<p class="none">Aucune réussite ces ${Math.max(jours, 60)} derniers jours.</p>`}
   </section>`;
 }
@@ -2419,7 +2469,7 @@ document.addEventListener("click", e => {
       txt:`${reu.dataset.rlogin} · Réussite ${masque ? "masquée sur" : "réaffichée sur"} la vitrine`});
     renderDrawer(); toast(masque ? "Réussite masquée : elle disparaît de la vitrine au prochain passage du robot" : "Réussite réaffichée"); return; }
   if(t.id === "v_reusave"){ const n = Math.max(0, Math.min(365, Math.round(Number($("#v_reujours").value)))); if(!Number.isFinite(n)){ toast("Nombre de jours invalide", true); return; }
-    dispatch({t:"settings", notify:true, p:{vitrine:{...(S.data.settings.vitrine || {}), reussitesJours:n}}, txt:`Vitrine : réussites affichées ${n ? n + " jours" : "désactivées"}`}); toast(n ? `Réussites des ${n} derniers jours sur la vitrine` : "Section « Nos réussites » cachée sur la vitrine"); return; }
+    dispatch({t:"settings", notify:true, p:{"vitrine.reussitesJours":n}, txt:`Vitrine : réussites affichées ${n ? n + " jours" : "désactivées"}`}); toast(n ? `Réussites des ${n} derniers jours sur la vitrine` : "Section « Nos réussites » cachée sur la vitrine"); return; }
   if(t.id === "notifOn"){ activerNotifs(true); return; }
   if(t.id === "notifOff"){ activerNotifs(false); return; }
   if(t.id === "s_adminsSave"){ const a = [...document.querySelectorAll(".admChk:checked")].map(x => x.value);
@@ -2427,9 +2477,9 @@ document.addEventListener("click", e => {
     dispatch({t:"settings", p:{admins:a}, txt:a.length ? `Admins de la page : ${a.join(", ")}` : "Admins de la page : tout le staff"}); toast("Admins enregistrés"); return; }
   const rsp = t.closest("[data-resppick]"); if(rsp && S.drawer){ const p = S.data.propositions.find(x => x.id === S.drawer.id); if(!p) return;
     patch("propositions", p.id, {responsable:rsp.dataset.resppick}, `${p.login} · Responsable : ${rsp.dataset.resppick}`); renderDrawer(); return; }
-  if(t.id === "srNew"){ S.serieEdit = {rythme:"hebdo", type:"Raid train", public:true, discord:true, publierDiscord:true, avance:7, duree:120}; render(); setTimeout(() => $("#sr_titre")?.focus(), 0); return; }
+  if(t.id === "srNew"){ S.sansRestaurer = true; S.serieEdit = {rythme:"hebdo", type:"Raid train", public:true, discord:true, publierDiscord:true, avance:7, duree:120}; render(); setTimeout(() => $("#sr_titre")?.focus(), 0); return; }
   if(t.id === "srCancel"){ S.serieEdit = null; render(); return; }
-  const sre = t.closest("[data-sredit]"); if(sre){ S.serieEdit = JSON.parse(JSON.stringify((S.data.series || []).find(x => x.id === sre.dataset.sredit) || null)); render(); $("#sr_titre")?.scrollIntoView({block:"center"}); return; }
+  const sre = t.closest("[data-sredit]"); if(sre){ S.sansRestaurer = true; S.serieEdit = JSON.parse(JSON.stringify((S.data.series || []).find(x => x.id === sre.dataset.sredit) || null)); render(); $("#sr_titre")?.scrollIntoView({block:"center"}); return; }
   const srp = t.closest("[data-srpause]"); if(srp){ const se = (S.data.series || []).find(x => x.id === srp.dataset.srpause); if(!se) return; const actif = se.actif === false;
     dispatch({t:"serieSet", serie:{id:se.id, actif}, notify:true, txt:`Série « ${se.titre} » ${actif ? "reprise" : "mise en pause"}`}); toast(actif ? "Série reprise" : "Série en pause : plus aucune nouvelle date (celles déjà créées restent)"); return; }
   const srd = t.closest("[data-srdel]"); if(srd){ const se = (S.data.series || []).find(x => x.id === srd.dataset.srdel);
@@ -2441,10 +2491,10 @@ document.addEventListener("click", e => {
     const neuf = !se.id; if(neuf){ se.id = uid("sr"); se.par = cfg.me || ""; se.actif = true; se.exclus = []; }
     dispatch({t:"serieSet", serie:se, notify:true, txt:`Série ${neuf ? "créée" : "modifiée"} : ${se.titre} (${rythmeTxt(se)})`});
     S.serieEdit = null; render(); toast(`${neuf ? "Série créée" : "Série enregistrée"} : les dates des ${se.avance} prochains jours sont déjà dans la liste`); return; }
-  if(t.id === "evNew"){ S.evEdit = {participants:[], type:"Raid train", public:true, discord:true}; render(); setTimeout(() => $("#ev_titre")?.focus(), 0); return; }
+  if(t.id === "evNew"){ S.sansRestaurer = true; S.evEdit = {participants:[], type:"Raid train", public:true, discord:true}; render(); setTimeout(() => $("#ev_titre")?.focus(), 0); return; }
   if(t.id === "evRelever"){ if(S.mode !== "github"){ toast("Il faut être connecté à GitHub.", true); return; } notifyRobot(); toast("Robot lancé : les nouvelles inscriptions arrivent d'ici une à deux minutes."); return; }
   if(t.id === "evCancel"){ S.evEdit = null; render(); return; }
-  const eed = t.closest("[data-evedit]"); if(eed){ S.evEdit = JSON.parse(JSON.stringify((S.data.agenda || []).find(x => x.id === eed.dataset.evedit) || null)); if(S.evEdit) S.evEdit._pplAvant = [...(S.evEdit.participants || [])]; render(); window.scrollTo(0, 0); return; }
+  const eed = t.closest("[data-evedit]"); if(eed){ S.sansRestaurer = true; S.evEdit = JSON.parse(JSON.stringify((S.data.agenda || []).find(x => x.id === eed.dataset.evedit) || null)); if(S.evEdit) S.evEdit._pplAvant = [...(S.evEdit.participants || [])]; render(); window.scrollTo(0, 0); return; }
   const edl = t.closest("[data-evdel]"); if(edl){ const e = (S.data.agenda || []).find(x => x.id === edl.dataset.evdel); if(e && confirm(`Supprimer l'événement « ${e.titre} » ?`)){ dispatch({t:"agendaDel", id:e.id, notify:true, txt:`Événement supprimé : ${e.titre}`}); toast("Événement supprimé"); } return; }
   const epl = t.closest("[data-evppl]"); if(epl && S.evEdit){ S.evEdit = {...lireEvForm(), participants:(S.evEdit.participants || []).filter(l => l !== epl.dataset.evppl)}; render(); return; }
   if(t.id === "evSave"){ const e = lireEvForm();
@@ -2456,7 +2506,7 @@ document.addEventListener("click", e => {
     const pplAvant = e._pplAvant; delete e._pplAvant;
     delete e.annonceVeille; delete e.annonceJour; delete e.publieDiscord; delete e.viaDiscord; delete e.discordInconnus;   // ces drapeaux appartiennent au robot : on ne les renvoie pas (valeurs peut-être périmées)
     if(ancien && (ancien.date !== e.date || ancien.heure !== e.heure)){ e.annonceVeille = false; e.annonceJour = false; }
-    dispatch({t:"agendaSet", ev:e, ...(pplAvant ? {pplAvant} : {}), notify:true, txt:`Événement ${neuf ? "créé" : "modifié"} : ${e.titre} (${fmtDate(e.date)}${e.heure ? " " + e.heure : ""})`});
+    dispatch({t:"agendaSet", ev:e, ...(pplAvant ? {pplAvant} : {}), ...(neuf ? {} : {edition:true}), notify:true, txt:`Événement ${neuf ? "créé" : "modifié"} : ${e.titre} (${fmtDate(e.date)}${e.heure ? " " + e.heure : ""})`});
     S.evEdit = null; render(); const aPartager = e.publierDiscord && (!ancien?.publieDiscord || ancien.publieDiscord.date !== e.date || (ancien.publieDiscord.heure || "") !== (e.heure || ""));
     toast(`${neuf ? "Événement créé" : "Événement enregistré"}${aPartager ? " · publication Discord d'ici 2 minutes" : ""}${e.public !== false ? " · sur la vitrine d'ici 2 à 3 minutes" : ""}`); return; }
   const rpf = t.closest("[data-rpf]"); if(rpf){ S.f.rpMiens = rpf.dataset.rpf === "1"; render(); return; }
@@ -2500,8 +2550,8 @@ document.addEventListener("click", e => {
   if(sortTh){ const k = S.view === "propositions" ? "psort" : "msort"; const key = sortTh.dataset.sort;
     S.f[k] = [key, S.f[k][0] === key ? -S.f[k][1] : 1]; render(); return; }
   const open = t.closest("[data-open]"); if(open && (!t.closest("a") || t.closest("a").matches("[data-open]"))){ e.preventDefault(); S.msgSel = null; const [c,id] = open.dataset.open.split(":"); S.drawer = {c,id}; renderDrawer(); setTimeout(() => $(".drawer .btn[data-close]")?.focus(), 0); return; }
-  const pst = t.closest("[data-pst]"); if(pst){ S.f.pst = pst.dataset.pst; render(); return; }
-  const mst = t.closest("[data-mst]"); if(mst){ S.f.mst = mst.dataset.mst; render(); return; }
+  const pst = t.closest("[data-pst]"); if(pst && !pst.matches("[data-goto]")){ S.f.pst = pst.dataset.pst; render(); return; }
+  const mst = t.closest("[data-mst]"); if(mst && !mst.matches("[data-goto]")){ S.f.mst = mst.dataset.mst; render(); return; }
   if(t.closest('[data-act="live"]')){ loadLive(true); return; }
   const av = t.closest("[data-avis]");
   if(av && S.drawer){ const cur = S.data.propositions.find(x => x.id === S.drawer.id)?.avis?.[av.dataset.avis];
@@ -2584,7 +2634,9 @@ document.addEventListener("click", e => {
     if(go.dataset.mst !== undefined) S.f.mst = go.dataset.mst; if(go.dataset.pst !== undefined) S.f.pst = go.dataset.pst;
     render(); window.scrollTo(0,0); return; }
   if(t.id === "c_pull"){ pull(false); return; }
-  if(t.id === "c_logout"){ cfg.token = ""; saveCfg(); S.mode = "none"; S.data = null; S.sha = null; render(); updateSync(); return; }
+  if(t.id === "c_logout"){ if(S.pending.length && !confirm("Des modifications ne sont pas encore enregistrées : elles seront perdues. Se déconnecter quand même ?")) return;
+    clearTimeout(saveTimer); clearTimeout(reveilT); reveilT = null; S.pending = []; S.backups = null; S.conflits = [];
+    cfg.token = ""; saveCfg(); S.mode = "none"; S.data = null; S.sha = null; render(); updateSync(); return; }
   if(t.id === "exportBtn"){ exportJson(); return; }
   if(t.id === "recapGo"){
     S.recapMonth = $("#recapMonth").value;
@@ -2600,8 +2652,8 @@ document.addEventListener("click", e => {
   if(t.id === "v_save"){
     const lien = $("#v_discord").value.trim();
     if(lien && !/^https:\/\/(discord\.gg|discord\.com\/invite)\//i.test(lien)){ toast("Le lien Discord doit commencer par https://discord.gg/ ou https://discord.com/invite/", true); return; }
-    dispatch({t:"settings", notify:true, p:{vitrine:{...(S.data.settings.vitrine || {}), active:$("#v_active").checked, titre:$("#v_titre").value.trim() || "La Cabane", texte:$("#v_texte").value.trim(), lienDiscord:lien,
-      rejoindre:{actif:$("#v_rej").checked, titre:$("#v_rejtitre").value.trim() || "Rejoindre La Cabane", texte:$("#v_rejtexte").value.trim()}}}, txt:`Vitrine publique ${$("#v_active").checked ? "activée / modifiée" : "désactivée"}`});
+    dispatch({t:"settings", notify:true, p:{"vitrine.active":$("#v_active").checked, "vitrine.titre":$("#v_titre").value.trim() || "La Cabane", "vitrine.texte":$("#v_texte").value.trim(), "vitrine.lienDiscord":lien,
+      "vitrine.rejoindre":{actif:$("#v_rej").checked, titre:$("#v_rejtitre").value.trim() || "Rejoindre La Cabane", texte:$("#v_rejtexte").value.trim()}}, txt:`Vitrine publique ${$("#v_active").checked ? "activée / modifiée" : "désactivée"}`});
     toast($("#v_active").checked ? "Vitrine enregistrée : le robot la publiera à son prochain passage" : "Vitrine désactivée : le robot la retirera à son prochain passage"); return;
   }
   if(t.id === "bkRefresh"){ listerSauvegardes(); return; }
@@ -2617,9 +2669,9 @@ document.addEventListener("click", e => {
       await forceReplace(d); listerSauvegardes();
     } catch(e){ toast(e.message, true); } })();
     return; }
-  if(t.id === "tplAdd"){ S.tplEdit = [...lireModeles(), {nom:"Nouveau modèle", pour:"tous", texte:"Coucou {pseudo} !\n"}]; render(); return; }
-  const tdl = t.closest("[data-tpldel]"); if(tdl){ const m = lireModeles(); m.splice(Number(tdl.dataset.tpldel), 1); S.tplEdit = m; render(); return; }
-  if(t.id === "tplReset"){ S.tplEdit = JSON.parse(JSON.stringify(MODELES_DEFAUT)); render(); toast("Modèles d'origine remis : clique sur Enregistrer pour les garder"); return; }
+  if(t.id === "tplAdd"){ S.sansRestaurer = true; S.tplEdit = [...lireModeles(), {nom:"Nouveau modèle", pour:"tous", texte:"Coucou {pseudo} !\n"}]; render(); return; }
+  const tdl = t.closest("[data-tpldel]"); if(tdl){ const m = lireModeles(); m.splice(Number(tdl.dataset.tpldel), 1); S.sansRestaurer = true; S.tplEdit = m; render(); return; }
+  if(t.id === "tplReset"){ S.sansRestaurer = true; S.tplEdit = JSON.parse(JSON.stringify(MODELES_DEFAUT)); render(); toast("Modèles d'origine remis : clique sur Enregistrer pour les garder"); return; }
   if(t.id === "tplSave"){ const m = lireModeles(); dispatch({t:"settings", p:{modeles:m}, txt:`Modèles de messages modifiés (${m.length})`}); S.tplEdit = null; toast("Modèles enregistrés"); return; }
   if(t.id === "msgClose"){ S.msgSel = null; renderDrawer(); return; }
   if(t.id === "msgCopy"){ const txt = $("#msgText").value;
@@ -2653,8 +2705,8 @@ function resultatsRecherche(q){
   for(const m of d.membres) if(ok(m.login, m.discord, m.notes, (m.tags || []).join(" "))) out.push({k:"Streamer", t:m.login, m:[m.statut, m.role].filter(Boolean).join(" · "), go:() => { S.drawer = {c:"membres", id:m.id}; renderDrawer(); }, score:sansAccents(m.login).startsWith(n) ? 0 : 1});
   for(const p of d.propositions) if(ok(p.login, p.proposePar, p.commentaire, p.notes, p.responsable)) out.push({k:"Proposition", t:p.login, m:[p.statut || "À trier", p.proposePar && "par " + p.proposePar].filter(Boolean).join(" · "), go:() => { S.drawer = {c:"propositions", id:p.id}; renderDrawer(); }, score:sansAccents(p.login).startsWith(n) ? 0 : 1});
   for(const x of d.corbeille || []) if(ok(x.r.login)) out.push({k:"Corbeille", t:x.r.login, m:`supprimé le ${fmtDate((x.le || "").slice(0, 10))}${x.par ? " par " + x.par : ""}`, go:() => { S.view = "reglages"; render(); setTimeout(() => $("#corbeille")?.scrollIntoView({block:"start"}), 50); }, score:2});
-  for(const e of d.agenda || []) if(ok(e.titre, e.description, e.type)) out.push({k:"Événement", t:e.titre, m:fmtDate(e.date) + (e.heure ? " · " + e.heure : ""), go:() => { S.view = "agenda"; S.evEdit = clone(e); S.evEdit._pplAvant = [...(e.participants || [])]; render(); window.scrollTo(0, 0); }, score:1});
-  for(const se of d.series || []) if(ok(se.titre)) out.push({k:"Série", t:se.titre, m:rythmeTxt(se), go:() => { S.view = "agenda"; S.serieEdit = clone(se); render(); }, score:1});
+  for(const e of d.agenda || []) if(ok(e.titre, e.description, e.type)) out.push({k:"Événement", t:e.titre, m:fmtDate(e.date) + (e.heure ? " · " + e.heure : ""), go:() => { S.view = "agenda"; S.sansRestaurer = true; S.evEdit = clone(e); S.evEdit._pplAvant = [...(e.participants || [])]; render(); window.scrollTo(0, 0); }, score:1});
+  for(const se of d.series || []) if(ok(se.titre)) out.push({k:"Série", t:se.titre, m:rythmeTxt(se), go:() => { S.view = "agenda"; S.sansRestaurer = true; S.serieEdit = clone(se); render(); }, score:1});
   for(const j of (d.journal || []).slice(0, 400)) if(ok(j.txt)) { const fiche = [...d.membres.map(r => ["membres", r]), ...d.propositions.map(r => ["propositions", r])].find(([, r]) => j.txt.startsWith(r.login + " ·"));
     out.push({k:"Historique", t:j.txt, m:`${fmtStamp(j.le)} · ${j.par}`, go:fiche ? () => { S.drawer = {c:fiche[0], id:fiche[1].id}; renderDrawer(); } : () => { S.view = "reglages"; render(); }, score:3}); }
   return out.sort((a, b) => a.score - b.score).slice(0, 40);
@@ -2717,11 +2769,12 @@ document.addEventListener("change", e => {
   if(t.id === "msgPick" && S.drawer){ S.msgSel = t.value === "" ? null : {id:S.drawer.id, i:Number(t.value)}; renderDrawer(); return; }
   if(t.id === "ptagSel"){ S.f.ptag = t.value; render(); return; }
   if(t.id === "mtagSel"){ S.f.mtag = t.value; render(); return; }
-  if(t.id === "tagAdd" && S.drawer){ const tag = normTag(t.value); if(!tag) return; const r = S.data[S.drawer.c].find(x => x.id === S.drawer.id); if(!r || hasTag(r, tag)){ t.value = ""; return; }
+  if(t.id === "tagAdd" && S.drawer){ const tag = normTag(t.value); if(!tag) return; t.blur(); const r = S.data[S.drawer.c].find(x => x.id === S.drawer.id); if(!r || hasTag(r, tag)){ t.value = ""; return; }
     patch(S.drawer.c, r.id, {tags:[...(r.tags || []), tag]}, `${r.login} · Étiquette ajoutée : ${tag}`); t.value = ""; renderDrawer(); setTimeout(() => $("#tagAdd")?.focus(), 0); return; }
   if(t.id === "fileIn"){ const f = t.files[0]; if(f) openLocalFile(f); return; }
   if(t.dataset.k && S.drawer){
     if(!t.isConnected || !t.closest("#drawerRoot")) return;          // champ d'une fiche déjà refermée : ne pas l'appliquer à une autre
+    if(t.dataset.fiche && t.dataset.fiche !== S.drawer.c + S.drawer.id) return;   // saisie commencée sur une autre fiche
     const {c, id} = S.drawer; const r = S.data[c].find(x => x.id === id); if(!r) return;
     let v = t.type === "checkbox" ? (t.dataset.date ? (t.checked ? todayISO() : null) : t.checked) : t.value.trim();
     if(t.type === "number") v = v === "" ? null : Number(v);
