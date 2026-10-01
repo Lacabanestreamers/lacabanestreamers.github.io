@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 87,
+  "heuresLive30": 89,
   "followsGagnes30": 265,
   "periode": {
    "du": "2026-09-23",
@@ -24,7 +24,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Phasmophobia",
+    "titre": "🎃 Mois de l'horreur🎃 ✨Aprem Horreur avec Devil, Gigi et Lilyth🔥",
+    "depuis": "2026-10-01T13:56:13Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
+   },
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [],
@@ -116,13 +122,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 9,
-    "jeu": "The Quarry",
-    "titre": "🎃 OCTOBRE EST LÀ ! | Le tchat choisit, je subis... | The Quarry 👻🐔",
-    "depuis": "2026-10-01T10:10:45Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -270,7 +270,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Phasmophobia",
+    "titre": "🔞On va crier avec la panda/le DemonVampire et Gigi @aly0806 @devilkore__  @geijei_jeux  kon-kon / !discord !clip !kitsune !zic🔞",
+    "depuis": "2026-10-01T13:31:44Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [],
    "jeux": [
@@ -330,13 +336,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 1,
-    "jeu": "Apex Legends",
-    "titre": "On continue la découverte de Apex avec Nuage641",
-    "depuis": "2026-10-01T10:07:45Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -451,5 +451,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-01T12:47:41.722Z"
+ "maj": "2026-10-01T14:48:42.702Z"
 }
