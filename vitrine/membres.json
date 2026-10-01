@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 80,
+  "heuresLive30": 84,
   "followsGagnes30": 266,
   "periode": {
    "du": "2026-09-23",
@@ -79,16 +79,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 4,
-    "jeu": "Pokémon Mystery Dungeon: Explorers of Sky",
-    "titre": "⚡POKEMON DONGON MYSTERE : EXPLORATEUR DU CIEL DS • C KWA LE JEU ??? 💗",
-    "depuis": "2026-10-01T07:50:56Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bichoune_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-04",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Pokémon Mystery Dungeon: Explorers of Sky"
+   ],
    "clip": {
     "url": "https://www.twitch.tv/bichoune_/clip/NastySpunkySkirretCoolStoryBob-XcPi60PCBevz5VRq",
     "titre": "3 ptits chats",
@@ -120,7 +116,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "The Quarry",
+    "titre": "🎃 OCTOBRE EST LÀ ! | Le tchat choisit, je subis... | The Quarry 👻🐔",
+    "depuis": "2026-10-01T10:10:45Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -266,13 +268,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 8,
-    "jeu": "Just Chatting",
-    "titre": "🔞Ce matin on met le bazar avec le KISTUNE BAZAR SHOW !! Entre papote et éclat de fun !! kon-kon / !discord !clip !kitsune !zic🔞",
-    "depuis": "2026-10-01T06:30:39Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [],
    "jeux": [
@@ -309,13 +305,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": {
-    "viewers": 5,
-    "jeu": "Aniimo",
-    "titre": "La matinale Cozy, viens papoter devant Aniimo  !discord !regles !don !wishlist",
-    "depuis": "2026-10-01T07:05:48Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -339,10 +329,10 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "Apex Legends",
     "titre": "On continue la découverte de Apex avec Nuage641",
-    "depuis": "2026-10-01T06:22:15Z",
+    "depuis": "2026-10-01T10:07:45Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
    },
    "premierStream": "2024-12-03",
@@ -430,7 +420,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Cyberpunk 2077",
+    "titre": "🧠[EP:39] CYBERPUNK 2077🧠 !rs !discord !instantgaming",
+    "depuis": "2026-10-01T10:00:07Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
+   },
    "premierStream": "2025-01-19",
    "succes": [],
    "jeux": [],
@@ -457,5 +453,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-01T08:44:48.306Z"
+ "maj": "2026-10-01T10:45:41.509Z"
 }
