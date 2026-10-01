@@ -7,8 +7,8 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 84,
-  "followsGagnes30": 266,
+  "heuresLive30": 87,
+  "followsGagnes30": 265,
   "periode": {
    "du": "2026-09-23",
    "au": "2026-10-01"
@@ -117,7 +117,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 9,
     "jeu": "The Quarry",
     "titre": "🎃 OCTOBRE EST LÀ ! | Le tchat choisit, je subis... | The Quarry 👻🐔",
     "depuis": "2026-10-01T10:10:45Z",
@@ -131,7 +131,9 @@
      "date": "2026-09-26"
     }
    ],
-   "jeux": [],
+   "jeux": [
+    "The Quarry"
+   ],
    "clip": null
   },
   {
@@ -420,16 +422,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": {
-    "viewers": 4,
-    "jeu": "Cyberpunk 2077",
-    "titre": "🧠[EP:39] CYBERPUNK 2077🧠 !rs !discord !instantgaming",
-    "depuis": "2026-10-01T10:00:07Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-19",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Cyberpunk 2077"
+   ],
    "clip": null
   },
   {
@@ -453,5 +451,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-01T10:45:41.509Z"
+ "maj": "2026-10-01T12:47:41.722Z"
 }
