@@ -221,7 +221,9 @@ const okImg = u => /^https:\/\/static-cdn\.jtvnw\.net\/[\w\-./%~]+$/.test(u || "
 const okClipImg = u => /^https:\/\/(static-cdn\.jtvnw\.net|clips-media-assets2\.twitch\.tv)\/[\w\-./%~]+$/.test(u || "");
 const okClip = c => c && /^https:\/\/(clips\.twitch\.tv|www\.twitch\.tv)\//.test(c.url || "");
 const chan = l => `https://www.twitch.tv/${encodeURIComponent(l)}`;
-const horsParis = (() => { try { return Intl.DateTimeFormat().resolvedOptions().timeZone !== "Europe/Paris"; } catch { return false; } })();
+// heure locale différente de celle de Paris (Bruxelles, Genève… ne sont pas concernés)
+const horsParis = (() => { try { const p = new Intl.DateTimeFormat("en-GB", {timeZone:"Europe/Paris", hour:"2-digit", minute:"2-digit", hourCycle:"h23"}).format(new Date()), d = new Date();
+  return p !== `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`; } catch { return false; } })();
 let DATA = null, filtre = "tous", q = "", chargerFait = false, jeuFiltre = "";
 
 function av(m){ return okImg(m.avatar) ? `<img class="av" src="${esc(m.avatar)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : `<span class="av" aria-hidden="true">${esc((m.nom || m.login || "?")[0])}</span>`; }
@@ -251,10 +253,11 @@ function duree(iso){ const min = Math.max(0, Math.round((Date.now() - new Date(i
 function render(){
   // garder ce que la personne avait ouvert ou sélectionné (agenda déplié, menu des jeux…) malgré les rafraîchissements
   const ouverts = [...document.querySelectorAll("details.cal[open]")].map(x => x.closest("[data-ev]")?.dataset.ev).filter(Boolean);
-  const focusId = document.activeElement?.id || "";
+  const act = document.activeElement, focusId = act?.id || "";
+  const sel = focusId === "q" ? [act.selectionStart, act.selectionEnd] : null;
   const r = _render();
   for(const id of ouverts) document.querySelector(`[data-ev="${CSS.escape(id)}"] details.cal`)?.setAttribute("open", "");
-  if(focusId && focusId !== "q") document.getElementById(focusId)?.focus({preventScroll:true});
+  if(focusId){ const el = document.getElementById(focusId); if(el && el !== document.activeElement){ el.focus({preventScroll:true}); if(sel) try { el.setSelectionRange(sel[0], sel[1]); } catch {} } }
   return r;
 }
 function _render(){
@@ -416,12 +419,13 @@ async function verifierLives(){
   const tous = (donnees?.membres || []).filter(m => okLogin(m.login));
   // au-delà de 40 membres : ceux notés en live + 40 autres à tour de rôle (tout le monde est vu en quelques minutes)
   let aVerifier = tous;
-  if(tous.length > 40){ const autres = tous.filter(m => !m.live); const lot = autres.slice(rotation, rotation + 40); rotation = rotation + 40 >= autres.length ? 0 : rotation + 40;
+  if(tous.length > 40){ const autres = tous.filter(m => !m.live); if(rotation >= autres.length) rotation = 0;
+    const lot = autres.slice(rotation, rotation + 40); rotation += 40;
     aVerifier = [...tous.filter(m => m.live), ...lot]; }
   if(!aVerifier.length) return;
   verifEnCours = true;
   let change = false;
-  await pool(aVerifier, 6, async m => {
+  try { await pool(aVerifier, 6, async m => {
     let t; try { t = await decapi(`uptime/${encodeURIComponent(m.login)}`); } catch { return; }   // réseau : on garde l'information du robot
     if(LIVE_RE.test(t)){
       if(!m.live){   // passé en live depuis le passage du robot : on complète les infos
@@ -430,9 +434,8 @@ async function verifierLives(){
           depuis:new Date(Date.now() - dureeMs(t)).toISOString(), apercu:`https://static-cdn.jtvnw.net/previews-ttv/live_user_${m.login.toLowerCase()}-440x248.jpg`};
         horsLigne.delete(m.login); change = true;
       }
-    } else if(horsLigneOk(t) && m.live){ m.live = null; horsLigne.set(m.login, DATA.maj); change = true; }
-  });
-  verifEnCours = false;
+    } else if(horsLigneOk(t) && m.live){ m.live = null; horsLigne.set(m.login, donnees.maj); change = true; }
+  }); } finally { verifEnCours = false; }
   liveVerifieA = new Date();
   if(change && DATA === donnees) render();          // données rechargées entre-temps : le prochain passage s'en charge
 }
@@ -454,6 +457,7 @@ function tirage(){
   return choix[choix.length - 1];
 }
 function decouvrir(){
+  if(!new URLSearchParams(location.search).get("m")) sessionScroll = window.scrollY;
   const m = tirage(); if(!m) return;
   deja.push(m.login); if(deja.length > 8) deja.shift();
   history.pushState(null, "", pageUrl(m.login)); render();
@@ -474,7 +478,7 @@ function toast(t){ const el = $("#toast"); el.textContent = t; el.hidden = false
 function attentes(){
   const a = lire(localStorage, ATTENTE) || {}, s = lire(sessionStorage, SESSION);
   for(const [id, x] of Object.entries(a)){
-    const e = (DATA?.agenda || []).find(y => y.id === id), dedans = !!e?.participants?.some(p => p.login.toLowerCase() === x.login.toLowerCase());
+    const e = (DATA?.agenda || []).find(y => y.id === id), dedans = !!e?.participants?.some(p => p.login?.toLowerCase() === x.login.toLowerCase());
     if(!e || Date.now() - x.le > 3 * 36e5 || (x.action === "in") === dedans || (s && s.login !== x.login)) delete a[id];
   }
   ecrire(localStorage, ATTENTE, a); return a;
@@ -483,7 +487,7 @@ function actionsEvt(e, d){
   const ins = d.inscriptions && okWebhook(webhookDe(d.inscriptions)) && e.id, dc = /^https:\/\/discord\.com\/channels\//.test(e.discord || "") ? e.discord : "";
   if(!ins && !dc) return "";
   const s = lire(sessionStorage, SESSION), att = attentes()[e.id];
-  const dedans = !!(s && (e.participants || []).some(p => p.login.toLowerCase() === s.login.toLowerCase()));
+  const dedans = !!(s && (e.participants || []).some(p => p.login?.toLowerCase() === s.login.toLowerCase()));
   const veut = att ? att.action === "in" : dedans;
   return `<div class="acts">
     ${ins ? (veut ? `<span class="moi">✓ Tu participes</span><button class="btn alt mini" type="button" data-insout="${esc(e.id)}">Me désinscrire</button>`
@@ -542,6 +546,12 @@ function lienGoogle(e){
   const b = bornes(e);
   return `https://calendar.google.com/calendar/render?${new URLSearchParams({action:"TEMPLATE", text:e.titre, dates:`${b.debut}/${b.fin}`, ctz:"Europe/Paris", details:texteEvt(e), location:e.lien || "Twitch"})}`;
 }
+// RFC 5545 : lignes de 75 octets au plus, la suite commence par un espace
+function plier(l){ const enc = new TextEncoder(); if(enc.encode(l).length <= 75) return l;
+  const out = []; let cur = "";
+  for(const ch of l){ if(enc.encode(cur + ch).length > (out.length ? 74 : 75)){ out.push(cur); cur = ""; } cur += ch; }
+  out.push(cur); return out.join("\r\n ");
+}
 function telechargerIcs(e){
   const b = bornes(e), x = t => String(t || "").replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n");
   const now = new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z";
@@ -553,8 +563,8 @@ function telechargerIcs(e){
     "BEGIN:VEVENT", `UID:${e.id}@lacabane`, `DTSTAMP:${now}`,
     b.journee ? `DTSTART;VALUE=DATE:${b.debut}` : `DTSTART;TZID=Europe/Paris:${b.debut}`,
     b.journee ? `DTEND;VALUE=DATE:${b.fin}` : `DTEND;TZID=Europe/Paris:${b.fin}`,
-    `SUMMARY:${x(e.titre)}`, `DESCRIPTION:${x(texteEvt(e))}`, `LOCATION:${x(e.lien || "Twitch")}`, ...(e.lien ? [`URL:${e.lien}`] : []),
-    "END:VEVENT", "END:VCALENDAR"].join("\r\n");
+    `SUMMARY:${x(e.titre)}`, `DESCRIPTION:${x(texteEvt(e))}`, `LOCATION:${x(e.lien || "Twitch")}`, ...(/^https:\/\/[^\s]+$/.test(e.lien || "") ? [`URL:${e.lien}`] : []),
+    "END:VEVENT", "END:VCALENDAR"].map(plier).join("\r\n");
   const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([ics], {type:"text/calendar;charset=utf-8"}));
   a.download = `${e.titre.normalize("NFD").replace(/[^\w]+/g, "-").replace(/^-|-$/g, "").toLowerCase() || "evenement"}.ics`;
   document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 3000);
@@ -593,7 +603,7 @@ document.addEventListener("click", e => {
 });
 let sessionScroll = 0;
 window.addEventListener("popstate", () => { render(); if(!new URLSearchParams(location.search).get("m")) window.scrollTo(0, sessionScroll || 0); });
-document.addEventListener("change", e => { if(e.target.id === "jeuSel"){ jeuFiltre = e.target.value; render(); $("#jeuSel")?.focus(); } });
+document.addEventListener("change", e => { if(e.target.id === "jeuSel"){ jeuFiltre = e.target.value; render(); } });
 document.addEventListener("compositionend", e => { if(e.target.id === "q"){ q = e.target.value; const pos = e.target.selectionStart; render(); const el = $("#q"); el.focus(); el.setSelectionRange(pos, pos); } });
 document.addEventListener("input", e => { if(e.target.id === "q" && !e.isComposing){ q = e.target.value; const pos = e.target.selectionStart; render(); const el = $("#q"); el.focus(); el.setSelectionRange(pos, pos); } });
 charger();
