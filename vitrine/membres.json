@@ -7,11 +7,11 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 77,
-  "followsGagnes30": 263,
+  "heuresLive30": 79,
+  "followsGagnes30": 266,
   "periode": {
    "du": "2026-09-23",
-   "au": "2026-09-30"
+   "au": "2026-10-01"
   }
  },
  "agenda": [],
@@ -261,7 +261,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 8,
     "jeu": "Just Chatting",
     "titre": "🔞Ce matin on met le bazar avec le KISTUNE BAZAR SHOW !! Entre papote et éclat de fun !! kon-kon / !discord !clip !kitsune !zic🔞",
     "depuis": "2026-10-01T06:30:39Z",
@@ -269,7 +269,9 @@
    },
    "premierStream": "2018-08-08",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Just Chatting"
+   ],
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/SavoryTawdryKumquatPipeHype-tJciW3_byy04A-bZ",
     "titre": "le var de arco",
@@ -301,7 +303,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Aniimo",
+    "titre": "La matinale Cozy, viens papoter devant Aniimo  !discord !regles !don !wishlist",
+    "depuis": "2026-10-01T07:05:48Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [],
@@ -435,10 +443,11 @@
    "clip": null
   }
  ],
+ "reussitesJours": 15,
  "rejoindre": null,
  "inscriptions": {
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-01T07:05:23.054Z"
+ "maj": "2026-10-01T07:14:41.093Z"
 }
