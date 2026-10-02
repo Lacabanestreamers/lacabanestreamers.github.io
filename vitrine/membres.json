@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 123,
+  "heuresLive30": 129,
   "followsGagnes30": 286,
   "periode": {
    "du": "2026-09-23",
@@ -69,9 +69,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
-    "jeu": "VALORANT",
-    "titre": "Je vais vous montrer le pire gameplay",
+    "viewers": 4,
+    "jeu": "Brotato",
+    "titre": "On vas ce bro le tato",
     "depuis": "2026-10-02T18:56:58Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
    },
@@ -91,13 +91,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 1,
-    "jeu": "Pokémon Mystery Dungeon: Explorers of Sky",
-    "titre": "⚡POKEMON DONGON MYSTERE : EXPLORATEUR DU CIEL DS • ON SAUVE AZURILL 💗",
-    "depuis": "2026-10-02T19:47:18Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bichoune_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-04",
    "succes": [],
    "jeux": [
@@ -171,13 +165,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": {
-    "viewers": 4,
-    "jeu": "Aniimo",
-    "titre": "☕ C'est parti pour découvrir Aniimo !",
-    "depuis": "2026-10-02T18:28:53Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -200,19 +188,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 1,
-    "jeu": "Minecraft",
-    "titre": "🏹Minecraft be ~ Survie entre pote ! - !réseaux",
-    "depuis": "2026-10-02T17:12:23Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [],
    "jeux": [
     "Splatoon 3",
-    "Gartic Phone",
-    "Minecraft"
+    "Minecraft",
+    "Gartic Phone"
    ],
    "clip": null
   },
@@ -282,13 +264,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 2,
-    "jeu": "WheelMates",
-    "titre": "🐰Cassage de tête ce soir avec @ryolee_saeba",
-    "depuis": "2026-10-02T19:00:36Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": [],
    "jeux": [
@@ -390,18 +366,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 1,
-    "jeu": "The Sims 4",
-    "titre": "[FR] ~ Sims 4 - Rénovation des Mondes - Sulani #13 ~",
-    "depuis": "2026-10-02T18:55:22Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
-    "R.E.P.O.",
-    "The Sims 4"
+    "The Sims 4",
+    "R.E.P.O."
    ],
    "clip": {
     "url": "https://www.twitch.tv/mysti94/clip/UgliestResourcefulMoonKappaPride-1lxZqV2tbRNN38Pp",
@@ -503,5 +473,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-02T20:38:49.010Z"
+ "maj": "2026-10-02T22:39:47.422Z"
 }
