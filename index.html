@@ -404,6 +404,7 @@ nav a.navlink:hover{color:var(--cyan);text-decoration:none}
       <button data-view="reglages">Réglages</button>
       <button data-view="aide">Aide</button>
       <a class="navlink" id="navVitrine" href="vitrine/" target="_blank" rel="noopener" title="Ouvrir la vitrine publique dans un nouvel onglet">Vitrine ↗</a>
+      <a class="navlink hidden" id="navBot" href="#" target="_blank" rel="noopener" title="Ouvrir le site de gestion du bot Discord dans un nouvel onglet">Bot ↗</a>
       <button id="rechBtn" type="button" title="Rechercher partout (Ctrl+K)" aria-label="Rechercher partout">🔍</button>
     </nav>
     <div class="ticker hidden" id="ticker" aria-label="Anniversaires de stream"></div>
@@ -428,6 +429,11 @@ const fmtDate = iso => { if(!iso) return ""; const [y,m,d] = iso.split("-"); ret
 const fmtStamp = iso => { if(!iso) return ""; const d = new Date(iso); return d.toLocaleDateString("fr-FR") + " " + d.toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"}); };
 const normLogin = v => String(v||"").trim().replace(/^@/,"").replace(/^https?:\/\/(www\.)?twitch\.tv\//i,"").replace(/[/?#].*$/,"").toLowerCase();
 const safeUrl = u => /^https?:\/\//i.test(u) ? u : null;
+// Site de gestion du bot Discord : adresse modifiable dans Réglages (elle change à chaque redémarrage du tunnel)
+const LIEN_BOT_DEFAUT = "https://growth-compile-planes-velocity.trycloudflare.com/";
+const lienBot = () => { const u = S.data?.settings?.lienBot; return u === undefined || u === null ? (S.data ? LIEN_BOT_DEFAUT : "") : u; };
+function majLienBot(){ const a = document.getElementById("navBot"); if(!a) return; const u = lienBot(), ok = /^https:\/\/[^\s"'<>]+$/.test(u || "");
+  a.classList.toggle("hidden", !ok); if(ok) a.href = u; else a.removeAttribute("href"); }
 const store = {
   get(k, d){ try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch { return d; } },
   set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
@@ -961,6 +967,7 @@ function render(){
   if(!S.data && S.view !== "reglages"){ main.innerHTML = viewSetup(); renderDrawer(); return; }
   if(S.selView !== S.view){ S.sel.clear(); S.selView = S.view; }
   renderTicker();
+  majLienBot();
   { const nb = document.getElementById("navNet"); if(nb){ try { const n = aNettoyer().slice(0, 4).reduce((a, [, l]) => a + l.length, 0); nb.textContent = n ? String(n) : ""; /* fiches incomplètes non comptées */ } catch { nb.textContent = ""; } } }
   const v = {accueil:viewAccueil, propositions:viewPropositions, membres:viewMembres, anniv:viewAnniv, stats:viewStats, agenda:viewAgenda, nettoyage:viewNettoyage, reglages:viewReglages, aide:viewAide}[S.view];
   const focus = document.activeElement && document.activeElement.id; const caret = document.activeElement && document.activeElement.selectionStart;
@@ -1678,6 +1685,7 @@ function viewReglages(){
     <div class="links">${d.settings.liens.map(u => safeUrl(u) ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/,"").replace(/\/$/,""))}</a>` : "").join("")}</div>
   </section>
   ${santePanel(d)}
+  ${botPanel()}
   ${notifsPanel()}
   ${adminsPanel(d)}
   ${staffDiscordPanel(d)}
@@ -1955,7 +1963,7 @@ function viewAide(){
       <li><b>Événements</b> : raids, soirées, séries récurrentes et inscriptions.</li>
       <li><b>Nettoyage</b> : chaînes introuvables, propositions en double ou déjà membres, membres inactifs depuis 90 jours, fiches incomplètes. La pastille compte ce qui demande une action.</li>
       <li><b>Réglages</b> : connexion, santé, notifications, admins, comptes Discord du staff, listes, vitrine, réussites, sauvegardes, archives, modèles de messages, corbeille, historique.</li>
-      <li><b>Vitrine ↗</b> ouvre la page publique. <b>🔍</b> (ou <b>Ctrl+K</b>) cherche partout.</li></ul>`)}
+      <li><b>Vitrine ↗</b> ouvre la page publique. <b>Bot ↗</b> ouvre le site de gestion du bot Discord (adresse à mettre à jour dans Réglages → Site de gestion du bot quand elle change). <b>🔍</b> (ou <b>Ctrl+K</b>) cherche partout.</li></ul>`)}
   ${sec("quotidien", "Au quotidien", `
     <h3>Donner son avis sur une proposition</h3>
     <p>Ouvre la fiche, puis clique sur <b>Pour</b>, <b>Contre</b> ou <b>Neutre</b> sur ta ligne, ou écris un avis libre. Tu peux aussi réagir sous le message de la proposition dans le salon staff de Discord : 👍 Pour, 🤔 Neutre, 👎 Contre (ton compte Discord doit être noté dans Réglages → Comptes Discord du staff). L'avis arrive sur la fiche dans l'heure, marqué « (Discord) ». Quand une majorité se dégage, la fiche propose d'appliquer le statut correspondant.</p>
@@ -2241,7 +2249,16 @@ async function lireSauvegarde(f){
 // Admins de la page : protège les actions lourdes contre les fausses manipulations (pas une vraie sécurité :
 // chaque jeton GitHub garde tous les droits sur le fichier).
 const estAdmin = () => { const a = S.data?.settings.admins || []; return !a.length || a.includes(cfg.me); };
-const ADMIN_SEL = '[data-bk="restore"], [data-trash="purge"], #s_save, #v_save, #s_twsave, #s_staffdcSave, #s_jetsave, #s_adminsSave, #fileIn, #importGo, #v_reusave';
+const ADMIN_SEL = '[data-bk="restore"], [data-trash="purge"], #s_save, #v_save, #s_twsave, #s_staffdcSave, #s_jetsave, #s_adminsSave, #fileIn, #importGo, #v_reusave, #s_botSave';
+function botPanel(){
+  const u = lienBot();
+  return `<section class="panel" id="lienbot">
+    <h2>Site de gestion du bot</h2>
+    <p>Adresse du panneau d'administration du bot Discord, ouverte par le lien <b>Bot ↗</b> du menu. Elle n'est visible que du staff (jamais sur la vitrine). Quand le tunnel du bot redémarre, son adresse change : colle la nouvelle ici. Champ vide = lien masqué.</p>
+    <div class="grid"><label class="f full">Adresse (https://…)<input id="s_bot" type="url" inputmode="url" value="${esc(u)}" placeholder="https://….trycloudflare.com/" autocomplete="off" spellcheck="false"></label></div>
+    <div class="tools" style="margin:10px 0 0"><button class="btn primary" id="s_botSave">Enregistrer</button>${/^https:\/\//.test(u) ? `<a class="btn ghost" href="${esc(u)}" target="_blank" rel="noopener">Ouvrir le site du bot ↗</a>` : ""}</div>
+  </section>`;
+}
 function adminsPanel(d){
   const a = d.settings.admins || [];
   return `<section class="panel" id="admins">
@@ -2475,6 +2492,9 @@ document.addEventListener("click", e => {
   if(t.id === "v_reusave"){ if($("#v_reujours").value.trim() === ""){ toast("Indique un nombre de jours (0 pour cacher la section).", true); return; }
     const n = Math.max(0, Math.min(365, Math.round(Number($("#v_reujours").value)))); if(!Number.isFinite(n)){ toast("Nombre de jours invalide", true); return; }
     dispatch({t:"settings", notify:true, p:{"vitrine.reussitesJours":n}, txt:`Vitrine : réussites affichées ${n ? n + " jours" : "désactivées"}`}); toast(n ? `Réussites des ${n} derniers jours sur la vitrine` : "Section « Nos réussites » cachée sur la vitrine"); return; }
+  if(t.id === "s_botSave"){ const u = $("#s_bot").value.trim();
+    if(u && !/^https:\/\/[^\s"'<>]+$/.test(u)){ toast("L'adresse doit commencer par https:// et ne pas contenir d'espace.", true); return; }
+    dispatch({t:"settings", p:{lienBot:u}, txt:u ? `Lien du site du bot : ${u}` : "Lien du site du bot retiré"}); toast(u ? "Lien du bot enregistré : il est à jour pour tout le staff" : "Lien du bot masqué"); return; }
   if(t.id === "notifOn"){ activerNotifs(true); return; }
   if(t.id === "notifOff"){ activerNotifs(false); return; }
   if(t.id === "s_adminsSave"){ const a = [...document.querySelectorAll(".admChk:checked")].map(x => x.value);
