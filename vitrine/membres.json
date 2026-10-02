@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 99,
+  "heuresLive30": 102,
   "followsGagnes30": 282,
   "periode": {
    "du": "2026-09-23",
@@ -268,18 +268,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 8,
-    "jeu": "The Quarry",
-    "titre": "🔞On va avoir peur !!! entre papote et éclat de fun !!!!  kon-kon !!! / !discord !clip !kitsune !zic🔞",
-    "depuis": "2026-10-02T07:34:24Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [],
    "jeux": [
     "Phasmophobia",
-    "Just Chatting"
+    "Just Chatting",
+    "The Quarry"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/SavoryTawdryKumquatPipeHype-tJciW3_byy04A-bZ",
@@ -312,13 +307,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": {
-    "viewers": 5,
-    "jeu": "Aniimo",
-    "titre": "Petit café, petit jeu cozy, tu viens ??   !discord !regles !don !wishlist",
-    "depuis": "2026-10-02T06:48:29Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -403,17 +392,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 12,
-    "jeu": "The Sims 4",
-    "titre": "THE SIMS 4 [FR] | Episode 8 : On part à notre 1er bal de promo et 1er amour ?! Les dramaaaaaas 🏠| !lurk !discord !perfectlife",
-    "depuis": "2026-10-02T07:37:02Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-10",
    "succes": [],
    "jeux": [
-    "Just Chatting"
+    "Just Chatting",
+    "The Sims 4"
    ],
    "clip": null
   },
@@ -468,5 +452,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-02T08:23:31.523Z"
+ "maj": "2026-10-02T10:24:09.722Z"
 }
