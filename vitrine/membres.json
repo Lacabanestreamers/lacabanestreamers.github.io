@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 104,
+  "heuresLive30": 109,
   "followsGagnes30": 283,
   "periode": {
    "du": "2026-09-23",
@@ -25,7 +25,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 8,
     "jeu": "DEVOUR",
     "titre": "🎃 Mois de l'horreur🎃 ✨Aprem Horreur avec Elo et Lilyth🔥",
     "depuis": "2026-10-02T13:21:29Z",
@@ -34,7 +34,8 @@
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
-    "Phasmophobia"
+    "Phasmophobia",
+    "DEVOUR"
    ],
    "clip": null
   },
@@ -73,7 +74,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Graveyard Keeper II",
+    "titre": "On vas gerer des potits zombies",
+    "depuis": "2026-10-02T15:04:43Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
+   },
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -127,7 +134,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 16,
     "jeu": "DEVOUR",
     "titre": "🎃 OCTOBRE EST LÀ ! | On va dévourer ou sursauter 👻🐔",
     "depuis": "2026-10-02T10:29:50Z",
@@ -142,7 +149,8 @@
     }
    ],
    "jeux": [
-    "The Quarry"
+    "The Quarry",
+    "DEVOUR"
    ],
    "clip": null
   },
@@ -190,7 +198,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 6,
+    "viewers": 4,
     "jeu": "Splatoon 3",
     "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
     "depuis": "2026-10-02T14:01:41Z",
@@ -198,7 +206,9 @@
    },
    "premierStream": "2024-08-12",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Splatoon 3"
+   ],
    "clip": null
   },
   {
@@ -224,7 +234,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 8,
     "jeu": "DREDGE",
     "titre": "Découverte - Cet après midi, on joue à Dredge! On va pêcher tranquillement",
     "depuis": "2026-10-02T11:36:45Z",
@@ -295,8 +305,8 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
-    "jeu": "Just Chatting",
+    "viewers": 6,
+    "jeu": "DEVOUR",
     "titre": "🔞On va avoir peur !!! entre papote et éclat de fun !!!! avec @aly0806 et @chezelodie kon-kon !!! / !discord !clip !kitsune !zic🔞",
     "depuis": "2026-10-02T12:51:17Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
@@ -304,8 +314,8 @@
    "premierStream": "2018-08-08",
    "succes": [],
    "jeux": [
-    "Phasmophobia",
     "Just Chatting",
+    "Phasmophobia",
     "The Quarry"
    ],
    "clip": {
@@ -484,5 +494,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-02T14:25:45.303Z"
+ "maj": "2026-10-02T15:42:53.772Z"
 }
