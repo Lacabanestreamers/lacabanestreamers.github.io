@@ -7,8 +7,8 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 115,
-  "followsGagnes30": 283,
+  "heuresLive30": 118,
+  "followsGagnes30": 286,
   "periode": {
    "du": "2026-09-23",
    "au": "2026-10-02"
@@ -69,10 +69,10 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
-    "jeu": "Graveyard Keeper II",
-    "titre": "On vas gerer des potits zombies",
-    "depuis": "2026-10-02T15:04:43Z",
+    "viewers": 5,
+    "jeu": "VALORANT",
+    "titre": "Je vais vous montrer le pire gameplay",
+    "depuis": "2026-10-02T18:56:58Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
    },
    "premierStream": "2025-10-09",
@@ -164,7 +164,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Aniimo",
+    "titre": "☕ C'est parti pour découvrir Aniimo !",
+    "depuis": "2026-10-02T18:28:53Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
+   },
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [],
@@ -186,16 +192,17 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 3,
-    "jeu": "Gartic Phone",
-    "titre": "☎️Gartic Phone entre pote ! - !réseaux",
+    "viewers": 2,
+    "jeu": "Minecraft",
+    "titre": "🏹Minecraft be ~ Survie entre pote ! - !réseaux",
     "depuis": "2026-10-02T17:12:23Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
    },
    "premierStream": "2024-08-12",
    "succes": [],
    "jeux": [
-    "Splatoon 3"
+    "Splatoon 3",
+    "Gartic Phone"
    ],
    "clip": null
   },
@@ -221,13 +228,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 7,
-    "jeu": "DREDGE",
-    "titre": "Découverte - Cet après midi, on joue à Dredge! On va pêcher tranquillement",
-    "depuis": "2026-10-02T11:36:45Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -246,7 +247,7 @@
    "login": "laelya_",
    "nom": "Laelya_",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/573b258c-b832-4e27-b719-827121afc530-profile_image-300x300.png",
-   "bio": "🌸 Laélya | Streameuse Gaming 🎮 (Roguelike, RPG & Stratégie) + Fan de Manga/Anime !",
+   "bio": "🌸 Laélya | Streameuse Gaming 🎮 (Roguelike, Stratégie & Aventure) + Fan de Manga/Animé !",
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
@@ -271,7 +272,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "WheelMates",
+    "titre": "🐰Cassage de tête ce soir avec @ryolee_saeba",
+    "depuis": "2026-10-02T19:00:36Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
+   },
    "premierStream": "2022-04-19",
    "succes": [],
    "jeux": [],
@@ -371,7 +378,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "The Sims 4",
+    "titre": "[FR] ~ Sims 4 - Rénovation des Mondes - Sulani #13 ~",
+    "depuis": "2026-10-02T18:55:22Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
+   },
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -477,5 +490,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-02T17:43:43.430Z"
+ "maj": "2026-10-02T19:44:43.419Z"
 }
