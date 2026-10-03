@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 130,
+  "heuresLive30": 132,
   "followsGagnes30": 290,
   "periode": {
    "du": "2026-09-23",
@@ -130,7 +130,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 11,
+    "jeu": "The Quarry",
+    "titre": "🎃 OCTOBRE EST LÀ ! | The quarry : On fini aujourd'hui ?! 👻🐔",
+    "depuis": "2026-10-03T09:57:43Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -174,17 +180,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": {
-    "viewers": 5,
-    "jeu": "Dead by Daylight",
-    "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
-    "depuis": "2026-10-03T07:41:50Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
-    "Aniimo"
+    "Aniimo",
+    "Dead by Daylight"
    ],
    "clip": {
     "url": "https://www.twitch.tv/cristal578/clip/FilthyDarkShieldPunchTrees-Wt_XQxNWinqUT7W4",
@@ -279,17 +280,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 3,
-    "jeu": "Sort Them Ducks",
-    "titre": "🐰1 canard, 2 canards, 3 canards, 4016 canards ...",
-    "depuis": "2026-10-03T08:21:20Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": [],
    "jeux": [
-    "WheelMates"
+    "WheelMates",
+    "Sort Them Ducks"
    ],
    "clip": {
     "url": "https://www.twitch.tv/liiapin/clip/AbnegateAwkwardCockroachTwitchRaid-oJNQfU_16ApgE9zJ",
@@ -465,7 +461,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "Grand Theft Auto V",
+    "titre": "🌴[#2] JE DÉCOUVRE GTA V🌴!rs !discord !instantgaming",
+    "depuis": "2026-10-03T10:00:34Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
+   },
    "premierStream": "2025-01-19",
    "succes": [],
    "jeux": [
@@ -494,5 +496,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-03T09:22:07.884Z"
+ "maj": "2026-10-03T11:22:46.370Z"
 }
