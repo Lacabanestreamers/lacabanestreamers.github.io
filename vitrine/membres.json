@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 147,
+  "heuresLive30": 150,
   "followsGagnes30": 293,
   "periode": {
    "du": "2026-09-23",
@@ -131,13 +131,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 12,
-    "jeu": "Just Chatting",
-    "titre": "On react le temps de manger et après doublage !",
-    "depuis": "2026-10-03T09:57:43Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -149,7 +143,8 @@
    "jeux": [
     "The Quarry",
     "Raft",
-    "DEVOUR"
+    "DEVOUR",
+    "Just Chatting"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/CooperativeSucculentRaisinKappaWealth-gM1O2FgPRlAGDzxv",
@@ -208,7 +203,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "Minecraft",
     "titre": "🏹MC BE ~ On continue notre 🏕survie avec les coupings ! - !réseaux",
     "depuis": "2026-10-03T17:00:32Z",
@@ -246,7 +241,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 15,
+    "viewers": 11,
     "jeu": "R.E.P.O.",
     "titre": "On part explorer des endroits flippants, pour faire des sous, pour acheter du stuff avec @sakkiel  @asakha et @celticrobin",
     "depuis": "2026-10-03T18:50:30Z",
@@ -255,7 +250,8 @@
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
-    "DREDGE"
+    "DREDGE",
+    "R.E.P.O."
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/ConcernedCrunchyLorisNononoCat-oairi8USwFxFfK3p",
@@ -274,7 +270,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 13,
+    "jeu": "Sovereign Tower",
+    "titre": "SOIRÉE ÉPIC 🏹: On dirige l'Empire de Bretagne sur Sovereign Tower 👑! | Découverte Test Nouveauté jeu-vidéo",
+    "depuis": "2026-10-03T19:30:28Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
+   },
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [],
@@ -507,5 +509,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-03T19:11:43.652Z"
+ "maj": "2026-10-03T21:07:11.267Z"
 }
