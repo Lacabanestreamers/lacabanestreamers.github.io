@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 150,
+  "heuresLive30": 153,
   "followsGagnes30": 293,
   "periode": {
    "du": "2026-09-23",
@@ -202,18 +202,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 1,
-    "jeu": "Minecraft",
-    "titre": "🏹MC BE ~ On continue notre 🏕survie avec les coupings ! - !réseaux",
-    "depuis": "2026-10-03T17:00:32Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [],
    "jeux": [
-    "Splatoon 3",
     "Minecraft",
+    "Splatoon 3",
     "Gartic Phone"
    ],
    "clip": null
@@ -240,13 +234,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 11,
-    "jeu": "R.E.P.O.",
-    "titre": "On part explorer des endroits flippants, pour faire des sous, pour acheter du stuff avec @sakkiel  @asakha et @celticrobin",
-    "depuis": "2026-10-03T18:50:30Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -270,16 +258,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 13,
-    "jeu": "Sovereign Tower",
-    "titre": "SOIRÉE ÉPIC 🏹: On dirige l'Empire de Bretagne sur Sovereign Tower 👑! | Découverte Test Nouveauté jeu-vidéo",
-    "depuis": "2026-10-03T19:30:28Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-10",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Sovereign Tower"
+   ],
    "clip": {
     "url": "https://www.twitch.tv/laelya_/clip/ScrumptiousRockyLardVoteYea-lS_AoVr6ikycOFxj",
     "titre": "Chocolat Mayo et Nutella Mayo !",
@@ -509,5 +493,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-03T21:07:11.267Z"
+ "maj": "2026-10-03T23:07:46.264Z"
 }
