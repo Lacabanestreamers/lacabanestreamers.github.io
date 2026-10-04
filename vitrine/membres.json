@@ -259,13 +259,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 11,
-    "jeu": "Sovereign Tower",
-    "titre": "SOIRÉE 100% ROYAL 👑 : L'Empire de Bretagne est à nous sur Sovereign Tower 🏹 ! | Découverte Test Nouveauté jeu-vidéo",
-    "depuis": "2026-10-04T19:02:04Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
@@ -511,5 +505,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-04T21:15:42.702Z"
+ "maj": "2026-10-04T22:07:14.615Z"
 }
