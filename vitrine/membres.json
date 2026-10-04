@@ -35,7 +35,7 @@
    "clip": {
     "url": "https://www.twitch.tv/aly0806/clip/LachrymoseCuriousClamBlargNaut-d4t3eVIWh8nFmOje",
     "titre": "WzBot CLIP | 🎃 Mois de l'horreur🎃 ✨Aprem Horreur avec Elo et Lilyth🔥 (by aulit42369)",
-    "vues": 2,
+    "vues": 3,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/76aace28-0a3d-4323-b78d-1bfddb48b1b5/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-02",
     "duree": 60
@@ -149,7 +149,7 @@
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/CooperativeSucculentRaisinKappaWealth-gM1O2FgPRlAGDzxv",
     "titre": "WzBot CLIP | 🎃 OCTOBRE EST LÀ ! | On va dévourer ou sursauter 👻🐔 (by honinbo_)",
-    "vues": 2,
+    "vues": 5,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/45b25206-bd4e-47e9-8193-4e397dc0db59/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-02",
     "duree": 60
@@ -242,11 +242,11 @@
     "R.E.P.O."
    ],
    "clip": {
-    "url": "https://www.twitch.tv/galyssiane/clip/ConcernedCrunchyLorisNononoCat-oairi8USwFxFfK3p",
-    "titre": "WzBot CLIP | Ce soir c'est Fall Guys : Des rires, des Fails, et du fun ! Avec @laelya_ @ (by galyssi",
-    "vues": 11,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/aba54311-f7e9-4cac-bc52-bb41943e5741/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-09-26",
+    "url": "https://www.twitch.tv/galyssiane/clip/VenomousConcernedBeanKappaPride-K96CCi26InwgJaft",
+    "titre": "WzBot CLIP | Le mardi : c'est survie !!! (En tout cas, on essaie fort fort) avec @asakha (by galyssi",
+    "vues": 3,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/bc482839-88f9-4cb0-85ff-ca23c532c780/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-09-29",
     "duree": 60
    }
   },
@@ -318,7 +318,7 @@
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/SavoryTawdryKumquatPipeHype-tJciW3_byy04A-bZ",
     "titre": "le var de arco",
-    "vues": 7,
+    "vues": 11,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/dde75eee-17ff-4503-be87-2fb3775a9bdf/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-09-28",
     "duree": 30
@@ -375,7 +375,14 @@
    "jeux": [
     "Apex Legends"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/morganokonrin/clip/BrainyHomelyHedgehogUncleNox-LckNAEri0NDM8R4h",
+    "titre": "J'était entrain de trier mon inventaire quand soudain...",
+    "vues": 3,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/8888c09c-4daa-4579-9e98-bf274e304f7f/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-03",
+    "duree": 60
+   }
   },
   {
    "login": "mysti94",
@@ -493,5 +500,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-03T23:07:46.264Z"
+ "maj": "2026-10-04T05:41:06.470Z"
 }
