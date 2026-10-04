@@ -1069,6 +1069,7 @@ const COLS = {
     {k:"contact", l:"Contact", td:p => contactHtml(p.contact), x:p => p.contact},
     {k:"follows", l:"Follows", s:"follows", n:1, td:p => followsCell(liveOf(p.login).follows), x:p => liveOf(p.login).follows ?? ""},
     {k:"viewers", l:"Viewers moy.", s:"viewers", n:1, td:viewersCell, x:p => viewersStats(p)?.avg ?? ""},
+    {k:"last", l:"Dernier stream", s:"last", n:1, td:lastStreamCell, x:p => { const z = lastStream(p); return z ? (z.live ? "en live" : z.days + " j") : ""; }},
     {k:"votes", l:"Avis staff", s:"votes", td:staffAvis, x:p => `${voteInfo(p).done}/${S.data.settings.staff.length}`},
     {k:"date", l:"Proposée le", s:"date", td:p => fmtDate(p.dateProposition), x:p => p.dateProposition || ""},
     {k:"tags", l:"Étiquettes", off:1, td:tagsHtml, x:p => (p.tags || []).join(", ")}
@@ -1115,7 +1116,7 @@ function propRows(){
   const q = S.f.pq.trim().toLowerCase();
   let rows = S.data.propositions.filter(p => (S.f.pst === "__all" || (p.statut||"") === S.f.pst) && (!S.f.ptag || hasTag(p, S.f.ptag)) &&
     (!q || [p.login, p.proposePar, p.contact, p.commentaire, ...(p.tags || [])].some(x => String(x||"").toLowerCase().includes(q))));
-  return sortRows(rows, S.f.psort, {statut:p => p.statut||"", date:p => p.dateProposition, follows:p => liveOf(p.login).follows ?? null, viewers:p => viewersStats(p)?.avg ?? null, votes:p => voteInfo(p).done});
+  return sortRows(rows, S.f.psort, {last:p => { const x = lastStream(p); return x ? (x.live ? -1 : x.days) : null; }, statut:p => p.statut||"", date:p => p.dateProposition, follows:p => liveOf(p.login).follows ?? null, viewers:p => viewersStats(p)?.avg ?? null, votes:p => voteInfo(p).done});
 }
 function viewPropositions(){
   const d = S.data, all = d.propositions;
@@ -1799,7 +1800,10 @@ function drawerProp(p){
       ${preset.map(o => `<button type="button" class="${o.toLowerCase()}" data-avis="${esc(name)}" data-v="${o}" aria-pressed="${v===o}">${o}</button>`).join("")}
       <input data-k="avis.${esc(name)}" value="${esc(preset.includes(v) ? "" : v)}" placeholder="${preset.includes(v) ? esc(v) + " (ou précise…)" : "Avis libre"}" aria-label="Avis de ${esc(name)}">
     </div></div>`; };
-  return `${linksFor(p.login)}${msgBox(p, "propositions")}
+  const ls = lastStream(p);
+  return `${linksFor(p.login)}
+  <p class="meta" style="margin:0 0 10px">📺 Dernier stream : ${!ls ? "inconnu (le robot le relève 3 fois par jour)" : ls.live ? `<b class="up">en live maintenant</b>` : `<b class="${ls.days > 30 ? "down" : ls.days > 14 ? "warn" : ""}">${ls.date.toLocaleDateString("fr-FR")}</b> (${ls.days === 0 ? "aujourd'hui" : "il y a " + ls.days + " j"}) · ${esc(ls.src)}`}</p>
+  ${msgBox(p, "propositions")}
   <div class="grid">
     ${selF("Statut","statut",p.statut,st.statutsProposition,"À trier")}
     ${fld("Proposée par","proposePar",p.proposePar)}
