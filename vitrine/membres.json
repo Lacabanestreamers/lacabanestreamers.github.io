@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 163,
+  "heuresLive30": 165,
   "followsGagnes30": 297,
   "periode": {
    "du": "2026-09-23",
@@ -260,7 +260,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 2,
+    "viewers": 14,
     "jeu": "Sovereign Tower",
     "titre": "SOIRÉE 100% ROYAL 👑 : L'Empire de Bretagne est à nous sur Sovereign Tower 🏹 ! | Découverte Test Nouveauté jeu-vidéo",
     "depuis": "2026-10-04T19:02:04Z",
@@ -356,13 +356,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": {
-    "viewers": 6,
-    "jeu": "Poppy Playtime: Chapter 2 - Fly in a Web",
-    "titre": "Dimanche Horreur .... On continue Poppy 2   !discord !regles !don !wishlist",
-    "depuis": "2026-10-04T17:49:42Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -517,5 +511,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-04T19:07:12.632Z"
+ "maj": "2026-10-04T20:07:11.999Z"
 }
