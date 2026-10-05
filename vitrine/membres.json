@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 182,
+  "heuresLive30": 185,
   "followsGagnes30": 296,
   "periode": {
    "du": "2026-09-23",
@@ -143,7 +143,8 @@
     "The Quarry",
     "Raft",
     "DEVOUR",
-    "Just Chatting"
+    "Just Chatting",
+    "Disney Dreamlight Valley"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/CooperativeSucculentRaisinKappaWealth-gM1O2FgPRlAGDzxv",
@@ -235,7 +236,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 11,
     "jeu": "DREDGE",
     "titre": "On retourne naviguer, pêcher et fuir les ... Anomalies?",
     "depuis": "2026-10-05T12:50:43Z",
@@ -307,7 +308,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 10,
     "jeu": "Dead by Daylight",
     "titre": "🔞Tuer ou être tuer ?  entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-05T12:38:22Z",
@@ -319,7 +320,8 @@
     "The Quarry",
     "Just Chatting",
     "Phasmophobia",
-    "DEVOUR"
+    "DEVOUR",
+    "Dead by Daylight"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/SavoryTawdryKumquatPipeHype-tJciW3_byy04A-bZ",
@@ -426,7 +428,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "SONG OF HORROR",
+    "titre": "[FR] Stream horreur - Je suis une personne forte et j'ai pas pas peur... je crois  [!bs !steam !insta !discord ]",
+    "depuis": "2026-10-05T13:53:20Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
+   },
    "premierStream": "2025-09-24",
    "succes": [],
    "jeux": [
@@ -510,5 +518,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-05T13:07:15.430Z"
+ "maj": "2026-10-05T14:07:17.326Z"
 }
