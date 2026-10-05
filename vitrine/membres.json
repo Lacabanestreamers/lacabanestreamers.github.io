@@ -7,11 +7,11 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 167,
-  "followsGagnes30": 297,
+  "heuresLive30": 180,
+  "followsGagnes30": 296,
   "periode": {
    "du": "2026-09-23",
-   "au": "2026-10-04"
+   "au": "2026-10-05"
   }
  },
  "agenda": [],
@@ -298,9 +298,9 @@
    "premierStream": "2018-08-08",
    "succes": [],
    "jeux": [
+    "The Quarry",
     "Just Chatting",
     "Phasmophobia",
-    "The Quarry",
     "DEVOUR"
    ],
    "clip": {
@@ -320,7 +320,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Dead Rising 3",
+    "titre": "ils ont changer Arthur et Joseph",
+    "depuis": "2026-10-05T07:48:05Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
+   },
    "premierStream": "2025-01-08",
    "succes": [],
    "jeux": [
@@ -341,6 +347,7 @@
    "succes": [],
    "jeux": [
     "Aniimo",
+    "Stardew Valley",
     "Poppy Playtime: Chapter 2 - Fly in a Web"
    ],
    "clip": {
@@ -434,8 +441,8 @@
    "premierStream": "2025-09-10",
    "succes": [],
    "jeux": [
-    "Just Chatting",
-    "The Sims 4"
+    "The Sims 4",
+    "Just Chatting"
    ],
    "clip": null
   },
@@ -491,5 +498,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-05T01:07:52.351Z"
+ "maj": "2026-10-05T11:07:12.795Z"
 }
