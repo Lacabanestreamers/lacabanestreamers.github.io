@@ -7,8 +7,8 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 177,
-  "followsGagnes30": 297,
+  "heuresLive30": 180,
+  "followsGagnes30": 296,
   "periode": {
    "du": "2026-09-23",
    "au": "2026-10-05"
@@ -294,19 +294,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 7,
-    "jeu": "The Quarry",
-    "titre": "🔞[Ep.2] On a pas peur  *c'est faux* !!! entre papote et éclat de fun !!!! kon-kon !!! / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-10-05T07:27:52Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [],
    "jeux": [
+    "The Quarry",
     "Just Chatting",
     "Phasmophobia",
-    "The Quarry",
     "DEVOUR"
    ],
    "clip": {
@@ -327,7 +321,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 1,
     "jeu": "Dead Rising 3",
     "titre": "ils ont changer Arthur et Joseph",
     "depuis": "2026-10-05T07:48:05Z",
@@ -443,13 +437,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 9,
-    "jeu": "The Sims 4",
-    "titre": "THE SIMS 4 [FR] | Episode 9 : On trouve un copain à Agathe ? Les dramaaaaaas 🏠| !lurk !discord !perfectlife",
-    "depuis": "2026-10-05T06:59:10Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-10",
    "succes": [],
    "jeux": [
@@ -510,5 +498,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-05T10:07:16.557Z"
+ "maj": "2026-10-05T11:07:12.795Z"
 }
