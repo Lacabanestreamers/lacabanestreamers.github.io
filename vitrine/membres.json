@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 192,
+  "heuresLive30": 195,
   "followsGagnes30": 296,
   "periode": {
    "du": "2026-09-23",
@@ -229,13 +229,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 7,
-    "jeu": "DREDGE",
-    "titre": "On retourne naviguer, pêcher et fuir les ... Anomalies?",
-    "depuis": "2026-10-05T12:50:43Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -312,9 +306,9 @@
    "succes": [],
    "jeux": [
     "The Quarry",
+    "Dead by Daylight",
     "Just Chatting",
     "Phasmophobia",
-    "Dead by Daylight",
     "DEVOUR"
    ],
    "clip": {
@@ -423,7 +417,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 18,
     "jeu": "SONG OF HORROR",
     "titre": "[FR] Stream horreur - Je suis une personne forte et j'ai pas pas peur... je crois  [!bs !steam !insta !discord ]",
     "depuis": "2026-10-05T13:53:20Z",
@@ -513,5 +507,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-05T16:07:15.098Z"
+ "maj": "2026-10-05T17:07:21.419Z"
 }
