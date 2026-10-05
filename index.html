@@ -194,7 +194,37 @@ tr.picked{background:rgba(255,79,216,.08)}
 .card .more{display:inline-block;margin-top:8px;font-weight:700}
 .card .none{color:var(--muted);margin:4px 0}
 /* Bandeau d'alerte de l'accueil (robot à l'arrêt, problème de santé) */
-#sante,#appli{scroll-margin-top:90px}
+/* Réglages : groupes et panneaux repliables */
+.regl-tete{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin-bottom:6px}
+.regl-tete h1{margin:0}
+.regl-nav{display:flex;flex-wrap:wrap;gap:6px;flex:1 1 420px}
+.regl-nav a{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border:1px solid var(--line);border-radius:999px;color:var(--text);font-weight:700;font-size:15px;background:var(--panel)}
+.regl-nav a:hover{text-decoration:none;border-color:var(--pink);box-shadow:0 0 12px rgba(255,79,216,.25)}
+.regl-tout{display:flex;gap:6px}
+.regl-tout .btn{padding:4px 12px;font-size:14px}
+.regl-corps{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,540px),1fr));gap:0 26px;align-items:start;max-width:1500px}
+.regl-grp{min-width:0;margin:26px 0 0;scroll-margin-top:90px}
+.regl-grp .panel{max-width:none}
+.grp-t{display:flex;align-items:baseline;gap:10px;margin:0 0 10px;padding-bottom:6px;font:800 15px/1.2 Orbitron,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);
+  border-bottom:1px solid var(--line)}
+.grp-t small{font:600 14px/1 Rajdhani,sans-serif;letter-spacing:0;text-transform:none;color:var(--muted)}
+details.pli{padding:0;margin-bottom:10px;overflow:hidden;transition:border-color .15s}
+details.pli[open]{border-color:rgba(255,79,216,.45);box-shadow:inset 3px 0 0 var(--pink)}
+details.pli > summary{list-style:none;display:flex;align-items:center;gap:12px;padding:14px 18px;cursor:pointer;user-select:none}
+details.pli > summary::-webkit-details-marker{display:none}
+details.pli > summary:hover{background:rgba(255,255,255,.025)}
+details.pli > summary:focus-visible{outline:2px solid var(--cyan);outline-offset:-2px}
+.pli-t{margin:0;font:700 17px/1.25 Orbitron,sans-serif;flex:1 1 auto;min-width:0;display:flex;align-items:center;gap:8px}
+.pli-r{margin-left:auto;color:var(--muted);font-size:15px;text-align:right;flex:0 1 auto;min-width:0}
+.chev{flex:none;width:28px;height:28px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:transform .2s,border-color .15s,background .15s}
+.chev::before{content:"";width:7px;height:7px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:translateY(-2px) rotate(45deg)}
+details.pli > summary:hover .chev{border-color:var(--pink)}
+details.pli[open] > summary .chev{transform:rotate(180deg);background:rgba(255,79,216,.12);border-color:var(--pink)}
+details.pli[open] > summary .chev::before{border-color:var(--pink)}
+.pli-c{padding:0 20px 18px}
+@media (prefers-reduced-motion:reduce){ .chev{transition:none} }
+@media (max-width:560px){ details.pli > summary{padding:12px 14px} .pli-c{padding:0 14px 14px} .pli-r{font-size:14px} .pli-t{font-size:16px} }
+details.pli,#sante,#appli{scroll-margin-top:90px}
 .alerte-robot{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin:0 0 14px;padding:12px 16px;border-radius:var(--radius);
   border:1px solid rgba(255,92,122,.55);background:linear-gradient(100deg,rgba(255,92,122,.16),rgba(255,79,216,.06) 60%,transparent);box-shadow:inset 3px 0 0 var(--ko)}
 .alerte-robot.warn{border-color:rgba(255,200,87,.5);background:linear-gradient(100deg,rgba(255,200,87,.14),transparent 70%);box-shadow:inset 3px 0 0 var(--warn)}
@@ -1678,7 +1708,7 @@ function viewAnniv(){
 function viewReglages(){
   const d = S.data;
   const conn = `
-  <section class="panel">
+  <section class="panel" id="connexion">
     <h2>Connexion au fichier partagé</h2>
     <p>Les données vivent dans un dépôt GitHub privé. Chaque membre du staff saisit ici un jeton qui a accès à ce dépôt. Le jeton reste dans ce navigateur.</p>
     <div class="grid">
@@ -1698,19 +1728,15 @@ function viewReglages(){
     </div>
     ${S.lastError ? `<p style="color:var(--ko);margin-top:10px">${esc(S.lastError)}</p>` : ""}
   </section>`;
-  if(!d) return `<h1>Réglages</h1>${conn}${localPanel()}`;
+  if(!d) return `<h1>Réglages</h1>${pli("connexion", conn, "", true)}${pli("fichier", localPanel())}`;
   const list = (id, label, arr, hint) => `<label class="f full">${label}<textarea id="${id}" rows="4">${esc(arr.join("\n"))}</textarea><span class="muted">${hint}</span></label>`;
-  return `<h1>Réglages</h1>${conn}
-  <section class="panel">
-    <h2>Robot quotidien</h2>
-    <p>Tourne toutes les heures sur GitHub : live, relevé des follows, dernière VOD et paliers matin (8 h), midi (12 h) et soir (19 h), annonces Discord.</p>
-    ${(() => { const f = [...d.membres, ...d.propositions], vus = f.filter(r => r.type !== undefined);
-      const aff = vus.filter(r => r.type === "affiliate").length, par = vus.filter(r => r.type === "partner").length, ids = f.filter(r => r.twitchId).length;
-      return `<p class="meta" style="margin:0 0 6px">${vus.length ? `Statut Twitch connu pour ${vus.length} fiche${vus.length>1?"s":""} sur ${f.length} : <b>${aff}</b> affilié${aff>1?"s":""}, <b>${par}</b> partenaire${par>1?"s":""} · identifiant Twitch enregistré pour ${ids} fiche${ids>1?"s":""}.` : `<span class="warn">Le robot n'a encore enregistré aucun statut affilié / partenaire ni identifiant Twitch.</span> Vérifie que le dépôt cabane contient la dernière version de robot/robot.mjs et qu'un passage a eu lieu depuis (onglet Actions).`}</p>`; })()}
-    <p class="meta" style="margin:0">${d.robot?.dernierReleve ? `Dernier relevé : ${fmtDate(d.robot.dernierReleve.slice(0,10))} (${esc(d.robot.dernierReleve.slice(11))})` : d.robot?.lastDaily ? `Dernier relevé : ${fmtDate(d.robot.lastDaily)}` : "Le robot n'a pas encore tourné."}${d.robot?.annivAnnonce ? ` · anniversaires vérifiés le ${fmtDate(d.robot.annivAnnonce)}` : ""}${(() => { const p = d.robot?.passage || d.robot?.derniereExecution; if(!p) return ""; const h = (Date.now() - new Date(p)) / 36e5;
-      return ` · dernier passage ${fmtStamp(p)}${h > 2 ? ` <span class="warn">(en retard : la page le relance automatiquement)</span>` : ""}`; })()}</p>
-  </section>
-  <section class="panel">
+  // résumé affiché à droite du titre quand le panneau est fermé
+  const ko = santeKo(d), sv = d.robot?.derniereSauvegarde, adm = (d.settings.admins || []).length, nbJ = (d.settings.jetons || []).length, v = d.settings.vitrine || {};
+  const pt = (cl, t) => `<span class="${cl}">●</span> ${t}`;
+  const G = [
+    ["compte", "👤", "Mon compte", "Propre à ce navigateur", [
+      pli("connexion", conn, S.mode === "github" ? pt("up", S.horsLigne ? "hors ligne" : `connecté${cfg.me ? " · " + esc(cfg.me) : ""}`) : pt("down", "non connecté"), S.mode !== "github"),
+      pli("twitch", `<section class="panel" id="twitch">
     <h2>Connexion Twitch</h2>
     <p>Donne le follow exact, le live en temps réel et la date de la dernière VOD, qui sert au nombre de jours depuis le dernier stream. Chaque membre du staff connecte son propre compte Twitch : aucune autorisation spéciale n'est demandée.</p>
     <div class="grid">
@@ -1722,8 +1748,24 @@ function viewReglages(){
       ${tw?.token ? `<span class="up" style="align-self:center">● Twitch connecté</span><button class="btn danger" id="twOut">Déconnecter Twitch</button>`
                   : `<button class="btn primary" id="twIn" ${d.settings.twitchClientId ? "" : "disabled"}>Se connecter à Twitch</button>`}
     </div>
-  </section>
-  <section class="panel">
+  </section>`, tw?.token ? pt("up", "connecté") : pt("muted", "non connecté")),
+      pli("notifs", notifsPanel(), notifsOn() ? pt("up", "activées") : "désactivées"),
+      pli("appli", appPanel(), estInstallee() ? pt("up", "installée") : S.copieLe ? "copie hors ligne à jour" : "")]],
+    ["robot", "🤖", "Robot et santé", "Partagé par tout le staff", [
+      pli("sante", santePanel(d), ko ? pt("down", `${ko} problème${ko > 1 ? "s" : ""}`) : pt("up", "tout va bien"), ko > 0),
+      pli("robot", `<section class="panel" id="robot">
+    <h2>Robot quotidien</h2>
+    <p>Tourne toutes les heures sur GitHub : live, relevé des follows, dernière VOD et paliers matin (8 h), midi (12 h) et soir (19 h), annonces Discord.</p>
+    ${(() => { const f = [...d.membres, ...d.propositions], vus = f.filter(r => r.type !== undefined);
+      const aff = vus.filter(r => r.type === "affiliate").length, par = vus.filter(r => r.type === "partner").length, ids = f.filter(r => r.twitchId).length;
+      return `<p class="meta" style="margin:0 0 6px">${vus.length ? `Statut Twitch connu pour ${vus.length} fiche${vus.length>1?"s":""} sur ${f.length} : <b>${aff}</b> affilié${aff>1?"s":""}, <b>${par}</b> partenaire${par>1?"s":""} · identifiant Twitch enregistré pour ${ids} fiche${ids>1?"s":""}.` : `<span class="warn">Le robot n'a encore enregistré aucun statut affilié / partenaire ni identifiant Twitch.</span> Vérifie que le dépôt cabane contient la dernière version de robot/robot.mjs et qu'un passage a eu lieu depuis (onglet Actions).`}</p>`; })()}
+    <p class="meta" style="margin:0">${d.robot?.dernierReleve ? `Dernier relevé : ${fmtDate(d.robot.dernierReleve.slice(0,10))} (${esc(d.robot.dernierReleve.slice(11))})` : d.robot?.lastDaily ? `Dernier relevé : ${fmtDate(d.robot.lastDaily)}` : "Le robot n'a pas encore tourné."}${d.robot?.annivAnnonce ? ` · anniversaires vérifiés le ${fmtDate(d.robot.annivAnnonce)}` : ""}${(() => { const p = d.robot?.passage || d.robot?.derniereExecution; if(!p) return ""; const h = (Date.now() - new Date(p)) / 36e5;
+      return ` · dernier passage ${fmtStamp(p)}${h > 2 ? ` <span class="warn">(en retard : la page le relance automatiquement)</span>` : ""}`; })()}</p>
+  </section>`, (() => { const p = d.robot?.passage || d.robot?.derniereExecution; return p ? "passage " + fmtStamp(p) : ""; })()),
+      pli("lienbot", botPanel(), /^https:/.test(lienBot() || "") ? "lien actif" : "aucun lien"),
+      pli("jetons", jetonsPanel(d), nbJ ? `${nbJ} jeton${nbJ > 1 ? "s" : ""}${jetonsSoon(d).length ? ` · <span class="warn">${jetonsSoon(d).length} à renouveler</span>` : ""}` : "")]],
+    ["equipe", "🧑‍🤝‍🧑", "Équipe", "Qui fait quoi", [
+      pli("listes", `<section class="panel" id="listes">
     <h2>Listes</h2>
     <div class="grid">
       <label class="f full">Nom affiché<input id="s_nom" value="${esc(d.settings.nom||"")}"></label>
@@ -1734,31 +1776,54 @@ function viewReglages(){
       ${list("s_integ","Étapes d'intégration d'un nouveau membre", d.settings.integration ?? ETAPES_DEFAUT, "Une étape par ligne. Elles apparaissent en cases à cocher sur la fiche, et sur l'Accueil tant qu'un nouveau (60 derniers jours) n'a pas tout coché.")}
       <label class="f">Proposition « qui stagne » après (jours)<input id="s_stag" type="number" min="3" max="120" value="${stagJours()}"></label>
     </div>
-    <div class="tools" style="margin:14px 0 0"><button class="btn primary" id="s_save">Enregistrer les listes</button></div>
-  </section>
-  <section class="panel">
-    <h2>Sites de mesure d'audience</h2>
+    ${d.settings.liens.length ? `<p class="meta" style="margin:10px 0 4px">Sites de mesure d'audience :</p>` : ""}
     <div class="links">${d.settings.liens.map(u => safeUrl(u) ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/,"").replace(/\/$/,""))}</a>` : "").join("")}</div>
-  </section>
-  ${santePanel(d)}
-  ${botPanel()}
-  ${notifsPanel()}
-  ${appPanel()}
-  ${adminsPanel(d)}
-  ${staffDiscordPanel(d)}
-  ${vitrinePanel(d)}
-  ${reussitesPanel(d)}
-  ${sauvegardesPanel(d)}
-  ${archivePanel(d)}
-  ${modelesPanel()}
-  ${trashPanel(d)}
-  ${jetonsPanel(d)}
-  ${localPanel()}
-  <section class="panel">
+    <div class="tools" style="margin:14px 0 0"><button class="btn primary" id="s_save">Enregistrer les listes</button></div>
+  </section>`, `${d.settings.staff.length} membre${d.settings.staff.length > 1 ? "s" : ""} du staff`),
+      pli("admins", adminsPanel(d), adm ? `${adm} admin${adm > 1 ? "s" : ""}` : "tout le monde est admin"),
+      pli("staffDiscord", staffDiscordPanel(d), ""),
+      pli("modeles", modelesPanel(), `${modeles().length} modèle${modeles().length > 1 ? "s" : ""}`)]],
+    ["vitrinegrp", "🌐", "Vitrine publique", "Ce que le public voit", [
+      pli("vitrine", vitrinePanel(d), v.active ? pt("up", "publiée") : pt("muted", "désactivée")),
+      pli("reussites", reussitesPanel(d), "")]],
+    ["donnees", "🗄️", "Données", "Sauvegardes et historique", [
+      pli("sauvegardes", sauvegardesPanel(d), sv ? "dernière : " + fmtDate(sv) : ""),
+      pli("archives", archivePanel(d), ""),
+      pli("corbeille", trashPanel(d), (d.corbeille || []).length ? `${d.corbeille.length} élément${d.corbeille.length > 1 ? "s" : ""}` : "vide"),
+      pli("fichier", localPanel(), ""),
+      pli("historique", `<section class="panel" id="historique">
     <h2>Historique des modifications</h2>
     <ul class="journal">${(d.journal||[]).slice(0,80).map(j => `<li><span class="muted">${fmtStamp(j.le)}</span><b>${esc(j.par)}</b><span>${esc(j.txt)}</span></li>`).join("")}</ul>
-  </section>`;
+  </section>`, (d.journal || [])[0] ? "dernière : " + fmtStamp(d.journal[0].le) : "")]]
+  ];
+  return `<div class="regl-tete"><h1>Réglages</h1>
+    <nav class="regl-nav" aria-label="Sections des réglages">${G.map(([k, ic, t]) => `<a href="#grp-${k}" data-reglgrp="${k}"><span aria-hidden="true">${ic}</span> ${t}</a>`).join("")}</nav>
+    <div class="regl-tout"><button type="button" class="btn ghost" data-plitout="1">Tout ouvrir</button><button type="button" class="btn ghost" data-plitout="0">Tout fermer</button></div></div>
+  <div class="regl-corps">${G.map(([k, ic, t, st, panneaux]) => `<section class="regl-grp" id="grp-${k}" aria-labelledby="grpt-${k}"><h2 class="grp-t" id="grpt-${k}"><span aria-hidden="true">${ic}</span> ${t}<small>${st}</small></h2>${panneaux.join("")}</section>`).join("")}</div>`;
 }
+// Panneaux repliables : l'état ouvert / fermé est retenu sur cet appareil
+const PLI_KEY = "cabane.reglagesOuverts";
+function pli(cle, html, resume = "", ouvertParDefaut = false){
+  const m = /^\s*<section class="panel"([^>]*)>\s*<h2>([\s\S]*?)<\/h2>/.exec(html); if(!m) return html;
+  const fin = html.lastIndexOf("</section>"), etat = store.get(PLI_KEY, {});
+  const ouvert = cle in etat ? etat[cle] : ouvertParDefaut;
+  const titre = m[2].replace(/\s*<span class="n"[^>]*>[\s\S]*?<\/span>/g, "").replace(/\s*\(\d+\)\s*$/, "");   // compteurs : déjà dans le résumé
+  const attrs = m[1].includes("id=") ? m[1] : `${m[1]} id="${cle}"`;
+  return `<details class="panel pli"${attrs} data-pli="${cle}" ${ouvert ? "open" : ""}><summary><h3 class="pli-t">${titre}</h3>${resume ? `<span class="pli-r">${resume}</span>` : ""}<span class="chev" aria-hidden="true"></span></summary>
+    <div class="pli-c">${html.slice(m[0].length, fin)}</div></details>`;
+}
+function noterPli(cle, ouvert){ const e = store.get(PLI_KEY, {}); e[cle] = ouvert; store.set(PLI_KEY, e); }
+// seul un clic de la personne est retenu (le navigateur signale aussi les panneaux ouverts à l'affichage)
+document.addEventListener("click", e => { const sm = e.target.closest?.("details[data-pli] > summary"); if(sm) noterPli(sm.parentElement.dataset.pli, !sm.parentElement.open); });
+// Ouvre un panneau des Réglages (depuis un autre écran) et y descend
+function ouvrirReglage(id){
+  if(S.view !== "reglages"){ S.view = "reglages"; S.drawer = null; render(); }
+  const el = document.getElementById(id); if(!el) return;
+  if(el.matches("details[data-pli]") && !el.open){ el.open = true; noterPli(el.dataset.pli, true); }
+  el.scrollIntoView({block:"start"});
+}
+const santeKo = d => { const p = d.robot?.passage || d.robot?.derniereExecution, h = p ? (Date.now() - new Date(p)) / 36e5 : null;
+  return (d.robot?.sante?.checks || []).filter(c => c.ok === false).length + (p && h <= 2 ? 0 : 1); };
 function localPanel(){
   return `<section class="panel">
     <h2>Fichier JSON</h2>
@@ -2052,7 +2117,7 @@ function viewAide(){
       <li><b>Tableau de bord</b> : les chiffres de la communauté, l'<b>entonnoir des propositions</b> (reçues, acceptées, refusées, délai de décision, mois par mois), la répartition des référents et la carte récap du mois (image à poster).</li>
       <li><b>Événements</b> : raids, soirées, séries récurrentes et inscriptions.</li>
       <li><b>Nettoyage</b> : chaînes introuvables, propositions en double ou déjà membres, membres inactifs depuis 90 jours, fiches incomplètes. La pastille compte ce qui demande une action.</li>
-      <li><b>Réglages</b> : connexion, santé, notifications, admins, comptes Discord du staff, listes, vitrine, réussites, sauvegardes, archives, modèles de messages, corbeille, historique.</li>
+      <li><b>Réglages</b> : rangés en cinq groupes (Mon compte, Robot et santé, Équipe, Vitrine publique, Données). Chaque panneau se déplie avec sa flèche ; fermé, il affiche son état en un coup d'œil (connecté, 1 problème, dernière sauvegarde…). Ce que tu ouvres reste ouvert sur cet appareil ; « Tout ouvrir » / « Tout fermer » en haut.</li>
       <li><b>Vitrine ↗</b> ouvre la page publique. <b>Bot ↗</b> ouvre le site de gestion du bot Discord (adresse à mettre à jour dans Réglages → Site de gestion du bot quand elle change). <b>🔍</b> (ou <b>Ctrl+K</b>) cherche partout.</li></ul>`)}
   ${sec("quotidien", "Au quotidien", `
     <h3>Donner son avis sur une proposition</h3>
@@ -2781,7 +2846,11 @@ document.addEventListener("click", e => {
   const ancre = t.closest('.aide nav.som a'); if(ancre){ e.preventDefault(); document.querySelector(ancre.getAttribute("href"))?.scrollIntoView({behavior:"smooth"}); return; }
   const go = t.closest("[data-goto]"); if(go){ e.preventDefault(); S.view = go.dataset.goto; S.drawer = null;
     if(go.dataset.mst !== undefined) S.f.mst = go.dataset.mst; if(go.dataset.pst !== undefined) S.f.pst = go.dataset.pst;
-    render(); const an = go.dataset.ancre && document.getElementById(go.dataset.ancre); if(an) an.scrollIntoView({block:"start"}); else window.scrollTo(0,0); return; }
+    render(); if(go.dataset.ancre && document.getElementById(go.dataset.ancre)) ouvrirReglage(go.dataset.ancre); else window.scrollTo(0,0); return; }
+  const pt = t.closest("[data-plitout]");
+  if(pt){ const o = pt.dataset.plitout === "1"; document.querySelectorAll("details[data-pli]").forEach(x => { x.open = o; noterPli(x.dataset.pli, o); }); return; }
+  const rg = t.closest("[data-reglgrp]");
+  if(rg){ e.preventDefault(); document.getElementById("grp-" + rg.dataset.reglgrp)?.scrollIntoView({block:"start", behavior:matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"}); return; }
   if(t.id === "installApp" && installEvt){ const ev = installEvt; installEvt = null; ev.prompt(); ev.userChoice?.finally(() => render()); return; }
   if(t.id === "relancerRobot"){ t.disabled = true; notifyRobot().then(ok => { t.disabled = false;
       toast(ok ? "Robot relancé : il passe d'ici 1 à 2 minutes, la page se mettra à jour toute seule." : "Relance refusée par GitHub : vérifie ton jeton (Réglages) ou relance depuis l'onglet Actions du dépôt cabane.", !ok); }); return; }
@@ -2863,7 +2932,7 @@ function resultatsRecherche(q){
   const out = [];
   for(const m of d.membres) if(ok(m.login, m.discord, m.notes, (m.tags || []).join(" "))) out.push({k:"Streamer", t:m.login, m:[m.statut, m.role].filter(Boolean).join(" · "), go:() => { S.drawer = {c:"membres", id:m.id}; renderDrawer(); }, score:sansAccents(m.login).startsWith(n) ? 0 : 1});
   for(const p of d.propositions) if(ok(p.login, p.proposePar, p.commentaire, p.notes, p.responsable)) out.push({k:"Proposition", t:p.login, m:[p.statut || "À trier", p.proposePar && "par " + p.proposePar].filter(Boolean).join(" · "), go:() => { S.drawer = {c:"propositions", id:p.id}; renderDrawer(); }, score:sansAccents(p.login).startsWith(n) ? 0 : 1});
-  for(const x of d.corbeille || []) if(ok(x.r.login)) out.push({k:"Corbeille", t:x.r.login, m:`supprimé le ${fmtDate((x.le || "").slice(0, 10))}${x.par ? " par " + x.par : ""}`, go:() => { S.view = "reglages"; render(); setTimeout(() => $("#corbeille")?.scrollIntoView({block:"start"}), 50); }, score:2});
+  for(const x of d.corbeille || []) if(ok(x.r.login)) out.push({k:"Corbeille", t:x.r.login, m:`supprimé le ${fmtDate((x.le || "").slice(0, 10))}${x.par ? " par " + x.par : ""}`, go:() => { ouvrirReglage("corbeille"); }, score:2});
   for(const e of d.agenda || []) if(ok(e.titre, e.description, e.type)) out.push({k:"Événement", t:e.titre, m:fmtDate(e.date) + (e.heure ? " · " + e.heure : ""), go:() => { S.view = "agenda"; S.sansRestaurer = true; S.evEdit = clone(e); S.evEdit._pplAvant = [...(e.participants || [])]; render(); window.scrollTo(0, 0); }, score:1});
   for(const se of d.series || []) if(ok(se.titre)) out.push({k:"Série", t:se.titre, m:rythmeTxt(se), go:() => { S.view = "agenda"; S.sansRestaurer = true; S.serieEdit = clone(se); render(); }, score:1});
   for(const j of (d.journal || []).slice(0, 400)) if(ok(j.txt)) { const fiche = [...d.membres.map(r => ["membres", r]), ...d.propositions.map(r => ["propositions", r])].find(([, r]) => j.txt.startsWith(r.login + " ·"));
