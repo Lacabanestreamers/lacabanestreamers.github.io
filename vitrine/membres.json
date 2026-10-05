@@ -336,7 +336,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Stardew Valley",
+    "titre": "Et si on retournait un peu à la ferme ?   !discord !regles !don !wishlist",
+    "depuis": "2026-10-05T07:03:40Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -430,7 +436,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "The Sims 4",
+    "titre": "THE SIMS 4 [FR] | Episode 9 : On trouve un copain à Agathe ? Les dramaaaaaas 🏠| !lurk !discord !perfectlife",
+    "depuis": "2026-10-05T06:59:10Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
+   },
    "premierStream": "2025-09-10",
    "succes": [],
    "jeux": [
@@ -491,5 +503,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-05T06:07:17.957Z"
+ "maj": "2026-10-05T07:07:13.375Z"
 }
