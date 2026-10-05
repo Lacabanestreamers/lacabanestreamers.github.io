@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 197,
+  "heuresLive30": 199,
   "followsGagnes30": 302,
   "periode": {
    "du": "2026-09-23",
@@ -229,18 +229,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 5,
-    "jeu": "Writing & Reading",
-    "titre": "Ce soit, on lit ! Frankenstein Episode 2 (chapitres 1 et 2) ! Venez vous installer ocnfortablement avec un plaid et une boisson chaude!",
-    "depuis": "2026-10-05T17:50:11Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
     "DREDGE",
-    "R.E.P.O."
+    "R.E.P.O.",
+    "Writing & Reading"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/VenomousConcernedBeanKappaPride-K96CCi26InwgJaft",
@@ -275,7 +270,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "BOMBANANA!",
+    "titre": "🐰Va-t-on déçamorcer la bombe ? @ryolee_saeba @raisin_fr",
+    "depuis": "2026-10-05T18:37:38Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
+   },
    "premierStream": "2022-04-19",
    "succes": [],
    "jeux": [
@@ -392,7 +393,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "The Sims 4",
+    "titre": "[FR] ~ Sims 4 - Challenge des Festivités- Halloween #1 ~",
+    "depuis": "2026-10-05T18:55:06Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
+   },
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -416,13 +423,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 21,
-    "jeu": "SONG OF HORROR",
-    "titre": "[FR] Stream horreur - Je suis une personne forte et j'ai pas pas peur... je crois  [!bs !steam !insta !discord ]",
-    "depuis": "2026-10-05T13:53:20Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-24",
    "succes": [],
    "jeux": [
@@ -463,7 +464,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "The Witcher 3: Wild Hunt Remastered",
+    "titre": "A la découverte du beau et sombre monde de Geralt [DROP ✅] !discord",
+    "depuis": "2026-10-05T18:12:10Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_r3skyo-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [],
@@ -507,5 +514,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-05T18:07:14.803Z"
+ "maj": "2026-10-05T19:07:22.638Z"
 }
