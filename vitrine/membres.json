@@ -7,8 +7,8 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 195,
-  "followsGagnes30": 296,
+  "heuresLive30": 197,
+  "followsGagnes30": 302,
   "periode": {
    "du": "2026-09-23",
    "au": "2026-10-05"
@@ -229,7 +229,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Writing & Reading",
+    "titre": "Ce soit, on lit ! Frankenstein Episode 2 (chapitres 1 et 2) ! Venez vous installer ocnfortablement avec un plaid et une boisson chaude!",
+    "depuis": "2026-10-05T17:50:11Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -295,18 +301,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 6,
-    "jeu": "Dead by Daylight",
-    "titre": "🔞Tuer ou être tuer ?  entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-10-05T12:38:22Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [],
    "jeux": [
-    "The Quarry",
     "Dead by Daylight",
+    "The Quarry",
     "Just Chatting",
     "Phasmophobia",
     "DEVOUR"
@@ -417,7 +417,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 18,
+    "viewers": 21,
     "jeu": "SONG OF HORROR",
     "titre": "[FR] Stream horreur - Je suis une personne forte et j'ai pas pas peur... je crois  [!bs !steam !insta !discord ]",
     "depuis": "2026-10-05T13:53:20Z",
@@ -507,5 +507,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-05T17:07:21.419Z"
+ "maj": "2026-10-05T18:07:14.803Z"
 }
