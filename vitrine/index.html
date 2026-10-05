@@ -25,6 +25,8 @@
 <link rel="icon" href="../icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://static-cdn.jtvnw.net">
+<link rel="dns-prefetch" href="https://decapi.me">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -167,6 +169,12 @@ body.profil .intro, body.profil #stats, body.profil #discord, body.profil #hasar
 /* Événements */
 .evts{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
 .evt{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;grid-template-columns:70px 1fr;gap:14px}
+.evt.cible{border-color:var(--cyan);box-shadow:0 0 0 1px var(--cyan),0 0 28px rgba(61,227,255,.28)}
+@media (prefers-reduced-motion:no-preference){ .evt.cible{animation:cible 1.4s ease-out 2} @keyframes cible{0%{box-shadow:0 0 0 1px var(--cyan),0 0 0 rgba(61,227,255,0)}40%{box-shadow:0 0 0 1px var(--cyan),0 0 42px rgba(61,227,255,.55)}} }
+.evt .partage{background:none;border:0;padding:0;margin-top:8px;color:var(--cyan);font:inherit;font-size:15px;cursor:pointer;display:block}
+.evt .partage:hover{text-decoration:underline}
+.note-ev{margin:0 0 12px;padding:10px 14px;border:1px dashed var(--line);border-radius:12px;color:var(--muted);font-size:15px}
+.grid > .card{content-visibility:auto;contain-intrinsic-size:auto 190px}
 .evt.today{border-color:var(--pink);background:linear-gradient(135deg,rgba(255,79,216,.14),rgba(61,227,255,.06))}
 .evt .q{text-align:center;border-right:1px solid var(--line);padding-right:10px}
 .evt .q b{display:block;font:800 28px/1 Orbitron,sans-serif}
@@ -225,8 +233,10 @@ const chan = l => `https://www.twitch.tv/${encodeURIComponent(l)}`;
 const horsParis = (() => { try { const p = new Intl.DateTimeFormat("en-GB", {timeZone:"Europe/Paris", hour:"2-digit", minute:"2-digit", hourCycle:"h23"}).format(new Date()), d = new Date();
   return p !== `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`; } catch { return false; } })();
 let DATA = null, filtre = "tous", q = "", chargerFait = false, jeuFiltre = "";
+let dernierHtml = "", evVise = null, evRecaler = 0, touche = false;
+for(const t of ["wheel", "touchstart", "keydown", "mousedown"]) addEventListener(t, () => { touche = true; }, {passive:true});      // dernier contenu affiché ; événement déjà visé par ?ev= (on n'y défile qu'une fois)
 
-function av(m){ return okImg(m.avatar) ? `<img class="av" src="${esc(m.avatar)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : `<span class="av" aria-hidden="true">${esc((m.nom || m.login || "?")[0])}</span>`; }
+function av(m){ return okImg(m.avatar) ? `<img class="av" src="${esc(m.avatar)}" alt="" width="56" height="56" loading="lazy" decoding="async" referrerpolicy="no-referrer">` : `<span class="av" aria-hidden="true">${esc((m.nom || m.login || "?")[0])}</span>`; }
 function tags(m){
   return [m.live && `<span class="tag live">En live</span>`, m.type === "partner" && `<span class="tag par">Partenaire</span>`,
     m.type === "affiliate" && `<span class="tag aff">Affilié</span>`, m.staff && `<span class="tag staff">Staff</span>`].filter(Boolean).join("");
@@ -265,7 +275,7 @@ function _render(){
   const perso = new URLSearchParams(location.search).get("m");
   document.body.classList.toggle("profil", !!perso && !!d?.active);
   if(!d || !d.active){
-    main.innerHTML = `<p class="empty">La vitrine n'est pas publiée pour le moment. Reviens bientôt !</p>`;
+    main.innerHTML = `<p class="empty">La vitrine n'est pas publiée pour le moment. Reviens bientôt !</p>`; dernierHtml = "";
     $("#stats").textContent = ""; return;
   }
   document.title = `${d.titre || "La Cabane"} · Nos streamers`;
@@ -277,7 +287,7 @@ function _render(){
 
   const membres = (d.membres || []).filter(m => okLogin(m.login));
   if(!perso) profilAffiche = null;
-  if(perso){ renderProfil(membres.find(m => m.login.toLowerCase() === perso.toLowerCase()), d); return; }
+  if(perso){ dernierHtml = ""; renderProfil(membres.find(m => m.login.toLowerCase() === perso.toLowerCase()), d); return; }
   // Anniversaires de stream : aujourd'hui, puis les 7 prochains jours
   const annivs = [...membres.map(m => ({m, a:anniv(m)})), ...membres.map(m => ({m, a:anniv(m, "depuis"), cabane:true}))].filter(x => x.a && x.a.jours <= 7).sort((a, b) => a.a.jours - b.a.jours || a.m.nom.localeCompare(b.m.nom, "fr"));
   // Réussites des 30 derniers jours, tous membres confondus
@@ -305,8 +315,11 @@ function _render(){
   const lim30 = new Date(Date.now() - 30 * 864e5).toISOString().slice(0, 10);
   const nouveaux = membres.filter(m => m.depuis && m.depuis >= lim30).sort((a, b) => b.depuis.localeCompare(a.depuis));
   const t0 = new Date(); t0.setHours(0, 0, 0, 0);
+  const evParam = new URLSearchParams(location.search).get("ev");
   const agenda = (d.agenda || []).filter(e => /^\d{4}-\d{2}-\d{2}$/.test(e.date)).map(e => { const [y, mo, dd] = e.date.split("-").map(Number); const dt = new Date(y, mo - 1, dd); return {...e, dt, j:Math.round((dt - t0) / 864e5)}; }).filter(e => e.j >= 0);
-  main.innerHTML = `
+  const evTrouve = !evParam || agenda.some(e => e.id === evParam);
+  const html = `
+    ${!evTrouve ? `<p class="note-ev" role="status">Cet événement est terminé ou pas encore annoncé.${agenda.length ? " Voici les prochains." : ""}</p>` : ""}
     <section aria-label="La Cabane en chiffres"><div class="kpis">${kpis.map(([v, l]) => `<div class="kpi"><b>${esc(v)}</b><span>${esc(l)}</span></div>`).join("")}</div></section>
     ${lives.length ? `<section aria-labelledby="h-live"><h2 id="h-live"><span class="dot" aria-hidden="true"></span>En live maintenant</h2>
       <div class="lives">${lives.map(m => `<a class="lv" href="${pageUrl(m.login)}" data-nav title="Voir la page de ${esc(m.nom)}">
@@ -318,14 +331,14 @@ function _render(){
         <span class="img" style="${okClipImg(m.clip.vignette) ? `background-image:url('${esc(m.clip.vignette)}')` : ""}"><span class="vw">▶ ${Number(m.clip.vues) || 0} vue${(m.clip.vues || 0) > 1 ? "s" : ""}</span></span>
         <span class="b">${av(m)}<span style="min-width:0"><span class="t">${esc(m.clip.titre || "Clip")}</span><span class="n">${esc(m.nom)}</span></span></span></a>`).join("")}</div></section>` : ""}
     ${agenda.length ? `<section aria-labelledby="h-evts"><h2 id="h-evts">📅 Prochains événements</h2>
-      <div class="evts">${agenda.map(e => `<article class="evt ${e.j === 0 ? "today" : ""}" data-ev="${esc(e.id || "")}">
+      <div class="evts">${agenda.map(e => `<article class="evt ${e.j === 0 ? "today" : ""}${e.id && e.id === evParam ? " cible" : ""}" data-ev="${esc(e.id || "")}" ${e.id ? `id="ev-${esc(e.id)}"` : ""}>
         <div class="q"><b>${e.dt.getDate()}</b><small>${e.dt.toLocaleDateString("fr-FR", {month:"short"})}</small><small>${esc((e.heure || "").replace(":", "h"))}${e.heure && horsParis ? `<br><abbr title="heure de Paris">Paris</abbr>` : ""}</small></div>
         <div style="min-width:0"><span class="ty">${esc(e.type || "Événement")} · ${e.j === 0 ? "aujourd'hui" : e.j === 1 ? "demain" : e.dt.toLocaleDateString("fr-FR", {weekday:"long"})}</span>
           <h3>${esc(e.titre)}</h3>${e.description ? `<p>${esc(e.description)}</p>` : ""}
           ${(e.participants || []).filter(x => okLogin(x.login)).length ? `<div class="ppl">${e.participants.filter(x => okLogin(x.login)).map(x => `<a href="${pageUrl(x.login)}" data-nav title="${esc(x.nom)}">${av(x)}</a>`).join("")}</div>` : ""}
           ${/^https:\/\//.test(e.lien || "") ? `<p><a href="${esc(e.lien)}" target="_blank" rel="noopener">Plus d'infos</a></p>` : ""}
           ${actionsEvt(e, d)}
-          ${e.id ? `<details class="cal"><summary>📅 Ajouter à mon agenda</summary><a href="${esc(lienGoogle(e))}" target="_blank" rel="noopener">Google Agenda</a><a href="#" data-ics="${esc(e.id)}">Apple, Outlook… (.ics)</a></details>` : ""}</div>
+          ${e.id ? `<details class="cal"><summary>📅 Ajouter à mon agenda</summary><a href="${esc(lienGoogle(e))}" target="_blank" rel="noopener">Google Agenda</a><a href="#" data-ics="${esc(e.id)}">Apple, Outlook… (.ics)</a></details><button class="partage" type="button" data-partage="${esc(e.id)}">🔗 Partager cet événement</button>` : ""}</div>
       </article>`).join("")}</div></section>` : ""}
     ${annivs.length ? `<section aria-labelledby="h-anniv"><h2 id="h-anniv">🎂 Anniversaires</h2>
       <div class="annivs">${annivs.map(({m, a, cabane}) => `<a class="ann ${a.jours ? "bientot" : ""}" href="${pageUrl(m.login)}" data-nav>${av(m)}<span>${a.jours === 0
@@ -351,6 +364,16 @@ function _render(){
     </section>
     ${d.rejoindre?.texte ? `<section aria-labelledby="h-rej"><div class="rejoindre"><h2 id="h-rej" style="margin-top:0">${esc(d.rejoindre.titre || "Rejoindre La Cabane")}</h2><p>${esc(d.rejoindre.texte)}</p>
       ${/^https:\/\/(discord\.gg|discord\.com\/invite)\//i.test(d.lienDiscord || "") ? `<a class="btn" href="${esc(d.lienDiscord)}" target="_blank" rel="noopener">Rejoindre le Discord</a>` : ""}</div></section>` : ""}`;
+  // rafraîchissement sans changement (toutes les 2 à 5 min) : rien n'est reconstruit (pas de clignotement des images)
+  const change = html !== dernierHtml;
+  if(change){ main.innerHTML = html; dernierHtml = html; }
+  // ?ev= : la page s'ouvre sur l'événement. Les premiers rafraîchissements (live vérifié en direct) peuvent changer la hauteur
+  // de ce qui est au-dessus : on se recale pendant quelques secondes, sauf si la personne a déjà fait défiler elle-même.
+  if(evParam){ const el = evTrouve ? document.getElementById("ev-" + evParam) : $("#h-evts");
+    if(el && evParam !== evVise){ evVise = evParam; evRecaler = Date.now() + 8000; touche = false;
+      const doux = !matchMedia("(prefers-reduced-motion: reduce)").matches;
+      requestAnimationFrame(() => el.scrollIntoView({block:evTrouve ? "center" : "start", behavior:doux ? "smooth" : "auto"})); }
+    else if(el && change && !touche && Date.now() < evRecaler) el.scrollIntoView({block:evTrouve ? "center" : "start"}); }
   $("#maj").textContent = d.maj ? `Mis à jour le ${new Date(d.maj).toLocaleDateString("fr-FR")} à ${new Date(d.maj).toLocaleTimeString("fr-FR", {hour:"2-digit", minute:"2-digit"})} · le live est vérifié en direct toutes les 2 minutes` : "";
 }
 
@@ -370,7 +393,7 @@ function renderProfil(m, d){
   const succes = m.succes || [];
   main.innerHTML = `<a class="back" href="./" data-nav>← Tous les streamers</a>
     <article class="prof ${m.live ? "on" : ""}">
-      ${okImg(m.avatar) ? `<img class="av" src="${esc(m.avatar.replace(/\d+x\d+(\.\w+)$/, "300x300$1"))}" alt="" referrerpolicy="no-referrer">` : `<span class="av" aria-hidden="true">${esc((m.nom || "?")[0])}</span>`}
+      ${okImg(m.avatar) ? `<img class="av" src="${esc(m.avatar.replace(/\d+x\d+(\.\w+)$/, "300x300$1"))}" alt="" width="128" height="128" fetchpriority="high" decoding="async" referrerpolicy="no-referrer">` : `<span class="av" aria-hidden="true">${esc((m.nom || "?")[0])}</span>`}
       <div style="min-width:0">
         <h2>${esc(m.nom)}</h2>
         <span class="tags">${tags(m)}</span>
@@ -581,7 +604,7 @@ async function charger(){
         const avant = ancien?.membres?.find(x => x.login === m.login);
         if(!m.live && avant?.live && ancien.maj === DATA.maj) m.live = avant.live;      // live vu en direct, pas encore dans les données du robot
       } }
-  } catch { if(!DATA) $("#main").innerHTML = `<p class="empty">Impossible de charger la liste pour le moment. Réessaie dans quelques minutes.</p>`; return; }
+  } catch { if(!DATA){ dernierHtml = ""; $("#main").innerHTML = `<p class="empty">Impossible de charger la liste pour le moment. Réessaie dans quelques minutes.</p>`; } return; }
   const focus = document.activeElement?.id === "q", pos = focus ? document.activeElement.selectionStart : 0;
   render();
   if(!chargerFait){ chargerFait = true; await retourTwitch(); }
@@ -598,6 +621,12 @@ document.addEventListener("click", e => {
   const ic = e.target.closest("[data-ics]"); if(ic){ e.preventDefault(); const ev = (DATA?.agenda || []).find(x => x.id === ic.dataset.ics); if(ev) telechargerIcs(ev); return; }
   const ib = e.target.closest("[data-ins], [data-insout]");
   if(ib){ ib.disabled = true; inscrire(ib.dataset.ins || ib.dataset.insout, ib.dataset.ins ? "in" : "out"); return; }
+  const pg = e.target.closest("[data-partage]");
+  if(pg){ const ev = (DATA?.agenda || []).find(x => x.id === pg.dataset.partage); if(!ev) return;
+    const url = `${location.origin}${location.pathname}?ev=${encodeURIComponent(ev.id)}`;
+    if(navigator.share && matchMedia("(pointer:coarse)").matches){ navigator.share({title:ev.titre, text:`${ev.titre} · La Cabane`, url}).catch(() => {}); return; }
+    const ok = () => { pg.textContent = "✓ Lien copié"; setTimeout(() => { pg.textContent = "🔗 Partager cet événement"; }, 2500); };
+    (navigator.clipboard?.writeText(url) || Promise.reject()).then(ok, () => prompt("Copie ce lien :", url)); return; }
   if(e.target.id === "copyLien"){ const t = location.href; const ok = () => { e.target.textContent = "Lien copié ✓"; setTimeout(() => { e.target.textContent = "Copier le lien de cette page"; }, 2500); };
     (navigator.clipboard?.writeText(t) || Promise.reject()).then(ok, () => prompt("Copie ce lien :", t)); }
 });

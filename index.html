@@ -193,6 +193,21 @@ tr.picked{background:rgba(255,79,216,.08)}
 .pill{white-space:nowrap}
 .card .more{display:inline-block;margin-top:8px;font-weight:700}
 .card .none{color:var(--muted);margin:4px 0}
+/* Bandeau d'alerte de l'accueil (robot à l'arrêt, problème de santé) */
+#sante,#appli{scroll-margin-top:90px}
+.alerte-robot{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin:0 0 14px;padding:12px 16px;border-radius:var(--radius);
+  border:1px solid rgba(255,92,122,.55);background:linear-gradient(100deg,rgba(255,92,122,.16),rgba(255,79,216,.06) 60%,transparent);box-shadow:inset 3px 0 0 var(--ko)}
+.alerte-robot.warn{border-color:rgba(255,200,87,.5);background:linear-gradient(100deg,rgba(255,200,87,.14),transparent 70%);box-shadow:inset 3px 0 0 var(--warn)}
+.alerte-robot .tx{flex:1 1 280px;min-width:0}
+.alerte-robot b{font:700 15px/1.3 Orbitron,sans-serif;letter-spacing:.02em}
+.alerte-robot .meta{display:block;margin:3px 0 0}
+.alerte-robot ul{margin:4px 0 0;padding-left:18px;color:var(--muted);font-size:15px}
+/* Messages : modèle suggéré, historique des messages copiés */
+.msgsugg{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:6px 0 0;font-size:14px;color:var(--muted)}
+.msgsugg button{padding:2px 10px}
+.msghist{margin:6px 0 0;font-size:14px;color:var(--muted)}
+.msghist b{color:var(--text);font-weight:700}
+.revoir{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 
 /* Courbe des follows */
 .spark{width:100%;height:auto;display:block;margin-top:6px}
@@ -611,6 +626,23 @@ async function activerNotifs(on){
   if(p !== "granted"){ toast("Notifications refusées par le navigateur (réglages du site pour les autoriser).", true); return; }
   store.set(NOTIF_KEY, true); render(); notifier("La Cabane", "Les notifications sont activées sur cet appareil.", "test"); verifierNotifs(null, S.data);
 }
+/* ----- Application installable ----- */
+let installEvt = null;
+window.addEventListener("beforeinstallprompt", e => { e.preventDefault(); installEvt = e; if(S.view === "reglages") render(); });
+window.addEventListener("appinstalled", () => { installEvt = null; toast("La Cabane est installée sur cet appareil"); if(S.view === "reglages") render(); });
+const estInstallee = () => matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+function appPanel(){
+  const ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
+  return `<section class="panel" id="appli"><h2>Application sur cet appareil</h2>
+    <p>La page s'installe comme une appli : icône sur l'écran d'accueil, ouverture en plein écran. Sans réseau, elle s'ouvre sur la dernière copie des données reçue ; ce que tu modifies part dès que le réseau revient (garde la page ouverte jusque-là).</p>
+    ${estInstallee() ? `<p class="up" style="margin:0">● Ouverte comme application.</p>`
+      : installEvt ? `<div class="tools" style="margin:0"><button class="btn primary" id="installApp">Installer La Cabane</button></div>`
+      : ios ? `<p style="margin:0">Sur iPhone ou iPad : dans <b>Safari</b>, bouton Partager puis « Sur l'écran d'accueil ».</p>`
+      : `<p style="margin:0">Menu du navigateur → « Installer l'application » (ou « Ajouter à l'écran d'accueil »).</p>`}
+    <p class="meta" style="margin:10px 0 0">${!cfg.remember ? "Copie hors connexion désactivée : coche « Mémoriser le jeton sur cet appareil » pour l'activer."
+      : S.copieLe ? `Copie hors connexion à jour (${fmtStamp(S.copieLe)}).` : S.copieTrop ? "Copie hors connexion : trop de données pour ce navigateur, pas de copie." : "Copie hors connexion : faite au prochain chargement des données."}</p>
+  </section>`;
+}
 function notifsPanel(){
   const dispo = "Notification" in window, refus = dispo && Notification.permission === "denied";
   return `<section class="panel" id="notifs"><h2>Notifications sur cet appareil</h2>
@@ -662,7 +694,8 @@ async function notifyRobot(garder){
     const r = await fetch(`https://api.github.com/repos/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}/dispatches`,
       {method:"POST", headers:{...ghHeaders(), "Content-Type":"application/json"}, body:JSON.stringify({event_type:"cabane-notif"}), keepalive:!!garder});
     if(!r.ok) console.warn("Robot non déclenché (" + r.status + "), il passera à l'heure suivante.");
-  } catch(e){ console.warn("Robot non déclenché", e); }
+    return r.ok;
+  } catch(e){ console.warn("Robot non déclenché", e); return false; }
 }
 let saveTimer = null;
 function scheduleSave(){ clearTimeout(saveTimer); saveTimer = setTimeout(save, 1200); }
@@ -681,7 +714,7 @@ async function save(){
       const sha = await ghPut(fresh.data, fresh.sha, msg.slice(0,200));
       if(sha && ops.some(o => o.notify)) planifierReveil();
       if(sha){
-        const avantNotif = S.data; S.sha = sha; S.etag = null; S.data = fresh.data; ensureShape(); verifierNotifs(avantNotif, S.data);
+        const avantNotif = S.data; S.sha = sha; S.etag = null; S.data = fresh.data; S.horsLigne = null; ensureShape(); verifierNotifs(avantNotif, S.data); garderCopie();
         for(const op of S.pending) applyOp(S.data, JSON.parse(JSON.stringify(op))); // modifs faites pendant l'envoi
         done = true;
       }
@@ -690,7 +723,8 @@ async function save(){
     S.lastError = null;
   } catch(e){
     S.conflits = [];            // l'enregistrement a échoué : les opérations repartiront, les conflits seront recalculés
-    S.pending.unshift(...ops); S.lastError = e.message; toast(e.message, true);
+    S.pending.unshift(...ops); S.lastError = e.message;
+    if(!(e instanceof TypeError && (S.horsLigne || !navigator.onLine))) toast(e.message, true);   // hors ligne : pas de message toutes les 45 s
   } finally {
     S.saving = false; updateSync(); render();
     if(S.pending.length && !S.lastError) scheduleSave();
@@ -720,10 +754,11 @@ async function pull(silent){
   const n = ++pullN, shaAvant = S.sha;
   try {
     const fresh = await ghGet(true);
+    if(S.horsLigne){ S.horsLigne = null; toast("Réseau retrouvé : données à jour"); }
     // réponse arrivée trop tard (une modification ou un enregistrement a eu lieu entre-temps) : on l'ignore
     if(n !== pullN || S.saving || S.pending.length || S.sha !== shaAvant){ updateSync(); return; }
     if(fresh) S.etag = fresh.etag;          // l'empreinte n'est retenue que pour des données réellement utilisées
-    if(fresh && fresh.sha !== S.sha){ const avant = S.data; S.data = fresh.data; S.sha = fresh.sha; ensureShape(); render(); verifierNotifs(avant, S.data); if(!silent) toast("Données mises à jour"); }
+    if(fresh && fresh.sha !== S.sha){ const avant = S.data; S.data = fresh.data; S.sha = fresh.sha; ensureShape(); render(); verifierNotifs(avant, S.data); garderCopie(); if(!silent) toast("Données mises à jour"); }
     else if(!silent) toast("Déjà à jour");
     relancerRobotSiBesoin();
     S.lastError = null;
@@ -750,11 +785,29 @@ function relancerRobotSiBesoin(){
   notifyRobot();
   console.info("Robot relancé : dernier passage", dernier || "inconnu");
 }
+// Copie hors connexion : la dernière version reçue de GitHub reste sur l'appareil (seulement si « se souvenir de moi » est coché).
+// Sans réseau, la page s'ouvre sur cette copie ; les modifications attendent le retour du réseau pour partir.
+const HL_KEY = "cabane.horsLigne";
+function garderCopie(){
+  if(!cfg.remember || !S.data || !S.sha || S.copieSha === S.sha || S.horsLigne) return;
+  try { localStorage.setItem(HL_KEY, JSON.stringify({owner:cfg.owner, repo:cfg.repo, path:cfg.path, sha:S.sha, le:new Date().toISOString(), data:S.data})); S.copieSha = S.sha; S.copieLe = new Date().toISOString(); S.copieTrop = false; }
+  catch { store.del(HL_KEY); S.copieTrop = true; }          // trop gros pour le navigateur : pas de copie plutôt qu'une copie périmée
+}
+function ouvrirCopie(){
+  const c = store.get(HL_KEY, null);
+  if(!c?.data || c.owner !== cfg.owner || c.repo !== cfg.repo || c.path !== cfg.path) return false;
+  S.data = c.data; S.sha = c.sha; S.etag = null; S.horsLigne = c.le; S.lastError = null; ensureShape(); render(); updateSync();
+  toast(`Pas de réseau : copie du ${fmtStamp(c.le)} affichée. Tes modifications partiront au retour du réseau.`);
+  return true;
+}
+window.addEventListener("online", () => { if(S.mode === "github" && S.horsLigne){ if(S.pending.length) save(); else pull(true); } });
 async function connectGithub(){
   if(!cfg.owner || !cfg.repo || !cfg.token){ S.mode = "none"; render(); return; }
   S.mode = "github"; updateSync("Connexion…", "busy");
-  try { const r = await ghGet(); S.data = r.data; S.sha = r.sha; S.etag = r.etag; S.lastError = null; ensureShape(); render(); loadLive(); relancerRobotSiBesoin(); }
-  catch(e){ S.mode = "none"; S.lastError = e.message; toast(e.message, true); render(); }
+  try { const r = await ghGet(); S.data = r.data; S.sha = r.sha; S.etag = r.etag; S.lastError = null; S.horsLigne = null; ensureShape(); render(); loadLive(); relancerRobotSiBesoin(); garderCopie(); }
+  catch(e){
+    if(e instanceof TypeError && ouvrirCopie()) return;     // réseau absent (pas une erreur de jeton) : copie locale
+    S.mode = "none"; S.lastError = e.message; toast(e.message, true); render(); }
   updateSync();
 }
 const STAG_STATUTS = ["Proposition à faire","Proposition en cours","Attente staff"];
@@ -786,7 +839,8 @@ function updateSync(txt, cls){
   const dot = $("#syncDot"), t = $("#syncTxt");
   if(txt){ dot.className = "dot " + (cls||""); t.textContent = txt; return; }
   if(S.mode === "github"){
-    if(S.lastError){ dot.className = "dot err"; t.textContent = "Erreur de synchro"; }
+    if(S.horsLigne || (S.lastError && !navigator.onLine)){ dot.className = "dot busy"; t.textContent = `Hors ligne${S.horsLigne ? " · copie du " + fmtStamp(S.horsLigne) : ""}${S.pending.length ? ` · ${S.pending.length} modif. en attente` : ""}`; }
+    else if(S.lastError){ dot.className = "dot err"; t.textContent = "Erreur de synchro"; }
     else if(S.saving || S.pending.length){ dot.className = "dot busy"; t.textContent = "Enregistrement…"; }
     else { dot.className = "dot ok"; t.textContent = `Synchronisé${cfg.me ? " · " + cfg.me : ""}`; }
   } else if(S.mode === "local"){ dot.className = "dot busy"; t.textContent = S.dirtyLocal ? "Mode fichier local · non exporté" : "Mode fichier local"; }
@@ -1261,6 +1315,7 @@ function viewAccueil(){
 
   return `<h1>${me ? `Salut ${esc(me)} !` : "Accueil"}</h1>
   <p class="sub">Ce qui attend le staff aujourd'hui${d.robot?.lastDaily ? ` · dernier passage du robot le ${fmtDate(d.robot.lastDaily)}` : ""}</p>
+  ${alerteRobot(d)}
   <div class="home">
     ${me ? card("Tes avis en attente", avis, p => li("propositions", p, `${pill(p.statut)}${p.proposePar ? " · " + esc(p.proposePar) : ""}`), "Aucune proposition « Attente staff » n'attend ton avis.", `data-goto="propositions" data-pst="Attente staff"`)
          : `<section class="card"><h2>Tes avis en attente</h2><p class="none">Choisis ton prénom dans <a href="#" data-goto="reglages">Réglages</a> pour voir les propositions qui attendent ton avis.</p></section>`}
@@ -1588,7 +1643,7 @@ function journalFor(login){
 function historyBlock(r, c){
   const parts = [];
   if(c === "propositions"){
-    (r.historique || []).slice().reverse().forEach(h => parts.push(`<li><span class="when">${fmtDate(h.le)}</span>candidature précédente : ${pill(h.statut)} ${h.proposePar ? "· proposée par " + esc(h.proposePar) : ""}${h.dateProposition ? " le " + fmtDate(h.dateProposition) : ""}${Object.keys(h.avis||{}).length ? "<br><span class='muted'>Avis : " + Object.entries(h.avis).map(([k,v]) => esc(k) + " " + esc(v)).join(", ") + "</span>" : ""}${h.commentaire ? "<br><span class='muted'>« " + esc(h.commentaire) + " »</span>" : ""}</li>`));
+    (r.historique || []).slice().reverse().forEach(h => parts.push(`<li><span class="when">${fmtDate(h.le)}</span>candidature précédente : ${pill(h.statut)} ${h.proposePar ? "· proposée par " + esc(h.proposePar) : ""}${h.dateProposition ? " le " + fmtDate(h.dateProposition) : ""}${Object.keys(h.avis||{}).length ? "<br><span class='muted'>Avis : " + Object.entries(h.avis).map(([k,v]) => esc(k) + " " + esc(v)).join(", ") + "</span>" : ""}${h.motifRefus ? "<br><span class='muted'>Motif : " + esc(h.motifRefus) + "</span>" : ""}${h.commentaire ? "<br><span class='muted'>« " + esc(h.commentaire) + " »</span>" : ""}</li>`));
     const m = S.data.membres.find(x => x.login === r.login);
     if(m) parts.unshift(`<li><span class="when">La Cabane</span>${m.statut === "Parti" ? `a quitté La Cabane${m.depart ? " le " + fmtDate(m.depart) : ""}` : `membre${m.arrivee ? " depuis le " + fmtDate(m.arrivee) : ""}`} · <a href="#" data-open="membres:${m.id}">voir la fiche</a></li>`);
   } else {
@@ -1688,6 +1743,7 @@ function viewReglages(){
   ${santePanel(d)}
   ${botPanel()}
   ${notifsPanel()}
+  ${appPanel()}
   ${adminsPanel(d)}
   ${staffDiscordPanel(d)}
   ${vitrinePanel(d)}
@@ -1742,7 +1798,8 @@ function selF(label, key, val, opts, emptyLabel){
 /* ----- Modèles de messages ----- */
 const MODELES_DEFAUT = [
   {nom:"Invitation", pour:"propositions", texte:"Coucou {pseudo} ! 👋\nOn fait partie du staff de La Cabane, un serveur Discord d'entraide et de motivation entre streamers.\n{parrain} nous a parlé de ta chaîne ({lien}).\nOn serait vraiment contents de t'accueillir parmi nous ! Ça te tente ?\n{lien_discord}\n{moi}, pour le staff de La Cabane"},
-  {nom:"Refus (poli)", pour:"propositions", texte:"Coucou {pseudo} !\nMerci pour ton intérêt pour La Cabane. Après discussion, le staff a décidé de ne pas donner suite pour le moment.\nCe n'est pas un jugement sur ta chaîne : n'hésite pas à revenir vers nous plus tard !\nBon stream à toi 💜\n{moi}, pour le staff de La Cabane"},
+  {nom:"Refus (poli)", pour:"propositions", texte:"Coucou {pseudo} !\nMerci pour ton intérêt pour La Cabane. Après discussion, le staff a décidé de ne pas donner suite pour le moment.\nPour être transparents avec toi : {motif}\nCe n'est pas un jugement sur ta chaîne : n'hésite pas à revenir vers nous plus tard !\nBon stream à toi 💜\n{moi}, pour le staff de La Cabane"},
+  {nom:"Demande d'infos", pour:"propositions", texte:"Coucou {pseudo} ! 👋\nOn fait partie du staff de La Cabane, un serveur Discord d'entraide entre streamers.\n{parrain} nous a parlé de ta chaîne ({lien}) et on aimerait mieux te connaître avant d'en discuter entre nous :\n• tes jours et horaires de stream habituels ?\n• ce que tu cherches dans une communauté de streamers ?\nMerci d'avance !\n{moi}, pour le staff de La Cabane"},
   {nom:"Bienvenue", pour:"membres", texte:"Bienvenue dans La Cabane, {pseudo} ! 🎉\nTon référent dans le staff, c'est {referent} : n'hésite pas à lui écrire pour toute question.\nPense à te présenter et à partager tes horaires de stream, la communauté viendra te voir !\n{moi}, pour le staff de La Cabane"},
   {nom:"Prise de nouvelles", pour:"membres", texte:"Coucou {pseudo} ! 😊\nÇa fait quelques jours que tu as rejoint La Cabane : comment ça se passe pour toi ?\nSi tu as besoin d'un coup de main (technique, motivation, idées), on est là.\n{moi}"}
 ];
@@ -1750,7 +1807,7 @@ const modeles = () => S.data.settings.modeles || MODELES_DEFAUT;
 function remplirModele(texte, r, c){
   const cand = r.candidature || {};
   const vars = {pseudo:r.login, lien:`https://twitch.tv/${r.login}`, moi:cfg.me || "", parrain:c === "propositions" ? (r.proposePar || "") : (cand.proposePar || ""),
-    referent:r.referent || "", lien_discord:S.data.settings.vitrine?.lienDiscord || ""};
+    referent:r.referent || "", lien_discord:S.data.settings.vitrine?.lienDiscord || "", motif:r.motifRefus || "", responsable:r.responsable || ""};
   // une ligne dont une variable est vide est retirée (ex. pas de parrain connu)
   return texte.split("\n").filter(l => !/\{(\w+)\}/.test(l) || [...l.matchAll(/\{(\w+)\}/g)].every(m => !(m[1] in vars) || vars[m[1]]))
     .map(l => l.replace(/\{(\w+)\}/g, (m, k) => k in vars ? vars[k] : m)).join("\n").trim();
@@ -1760,15 +1817,32 @@ function msgBox(r, c){
   if(!list.length) return "";
   const sel = S.msgSel && S.msgSel.id === r.id ? S.msgSel : null;
   const texte = sel ? (sel.texte ?? remplirModele(modeles()[sel.i]?.texte || "", r, c)) : "";
+  const sugg = !sel ? modeleSuggere(r, c, list) : null;
+  const hist = (r.messages || []).slice(-3).reverse();
   return `<div class="msgbox"><div class="row"><select id="msgPick" aria-label="Modèle de message"><option value="">Préparer un message…</option>${list.map(m => `<option value="${m.i}" ${sel && sel.i === m.i ? "selected" : ""}>${esc(m.nom)}</option>`).join("")}</select>
     ${sel ? `<button class="btn primary" id="msgCopy">Copier</button><button class="btn ghost" id="msgClose">Fermer</button>` : ""}</div>
-    ${sel ? `<textarea id="msgText" aria-label="Message à copier">${esc(texte)}</textarea><p class="meta" style="margin:4px 0 0">Tu peux retoucher le texte avant de le copier. Les modèles se modifient dans Réglages.</p>` : ""}</div>`;
+    ${sugg ? `<p class="msgsugg">Pour ce statut : <button type="button" class="btn ghost" data-msgsugg="${sugg.i}">${esc(sugg.nom)}</button></p>` : ""}
+    ${sel ? `<textarea id="msgText" aria-label="Message à copier">${esc(texte)}</textarea><p class="meta" style="margin:4px 0 0">Tu peux retoucher le texte avant de le copier. Les modèles se modifient dans Réglages.</p>` : ""}
+    ${hist.length ? `<p class="msghist">Déjà copiés : ${hist.map(x => `<b>${esc(x.nom)}</b> par ${esc(x.par || "?")} le ${fmtDate(x.le.slice(0, 10))}`).join(" · ")}</p>` : ""}</div>`;
+}
+// Modèle adapté à la situation de la fiche (repéré par son nom : « refus », « invitation », « infos », « bienvenue »)
+function modeleSuggere(r, c, list){
+  const cherche = re => list.find(m => re.test(m.nom.normalize("NFD").replace(/[\u0300-\u036f]/g, "")));
+  if(c === "propositions"){
+    if(["Refusé","Abandonnée"].includes(r.statut)) return cherche(/refus/i);
+    if(["Accepté","Proposition à faire","Proposition en cours"].includes(r.statut)) return cherche(/invit/i);
+    if(!r.statut || ["À trier","Attente staff"].includes(r.statut)) return cherche(/info/i);
+    return null;
+  }
+  if(r.statut === "Parti" || !r.arrivee) return null;
+  const j = Math.floor((Date.now() - new Date(r.arrivee + "T12:00:00")) / 864e5);
+  return j <= 3 ? cherche(/bienvenue/i) : (j >= 7 && !r.suivi7) || (j >= 30 && !r.suivi30) ? cherche(/nouvelles/i) : null;
 }
 function modelesPanel(){
   const m = S.tplEdit || modeles();
   return `<section class="panel" id="modeles">
     <h2>Modèles de messages</h2>
-    <p>Proposés dans chaque fiche (« Préparer un message »). Variables : <b>{pseudo}</b>, <b>{lien}</b> (chaîne Twitch), <b>{moi}</b>, <b>{parrain}</b>, <b>{referent}</b>, <b>{lien_discord}</b> (celui de la vitrine). Une ligne dont une variable est vide disparaît du message.</p>
+    <p>Proposés dans chaque fiche (« Préparer un message »). Variables : <b>{pseudo}</b>, <b>{lien}</b> (chaîne Twitch), <b>{moi}</b>, <b>{parrain}</b>, <b>{referent}</b>, <b>{lien_discord}</b> (celui de la vitrine), <b>{responsable}</b>, <b>{motif}</b> (motif du refus noté sur la proposition). Une ligne dont une variable est vide disparaît du message.</p>
     ${m.map((t, i) => `<div class="tpl"><div class="row"><input id="tpl_nom_${i}" value="${esc(t.nom)}" placeholder="Nom du modèle" aria-label="Nom du modèle">
       <select id="tpl_pour_${i}" aria-label="Fiches concernées">${[["propositions","Propositions"],["membres","Streamers"],["tous","Les deux"]].map(([v,l]) => `<option value="${v}" ${t.pour === v ? "selected" : ""}>${l}</option>`).join("")}</select>
       <button class="btn danger" data-tpldel="${i}">Retirer</button></div>
@@ -1807,6 +1881,7 @@ function drawerProp(p){
   <div class="grid">
     ${selF("Statut","statut",p.statut,st.statutsProposition,"À trier")}
     ${fld("Proposée par","proposePar",p.proposePar)}
+    ${["Refusé","Abandonnée"].includes(p.statut) || p.motifRefus ? fld("Motif du refus","motifRefus",p.motifRefus,"text","full") : ""}
     ${(() => { const ch = chargeResponsables(), sg = ch[0], n = Object.fromEntries(ch.map(x => [x.nom, x.n]));
       return `<label class="f">Responsable (contacte le streamer)<select data-k="responsable"><option value="">— personne —</option>${st.staff.map(o => `<option value="${esc(o)}" ${o === p.responsable ? "selected" : ""}>${esc(o)} (${n[o] ?? 0} en cours)</option>`).join("")}${p.responsable && !st.staff.includes(p.responsable) ? `<option selected>${esc(p.responsable)}</option>` : ""}</select>
         ${!p.responsable && sg && !CLOSED.includes(p.statut) ? `<span class="meta" style="margin:4px 0 0">Suggestion : <b>${esc(sg.nom)}</b> (${sg.n} en cours) <button type="button" class="btn ghost" data-resppick="${esc(sg.nom)}" style="padding:2px 10px">Choisir</button></span>` : ""}</label>`; })()}
@@ -1820,11 +1895,22 @@ function drawerProp(p){
     <label class="f">Viewers moyens mesurés (30 j)<input disabled value="${(() => { const v = viewersStats(p); return v ? `${v.avg} (${v.n} mesures, ${v.days} j de live)` : "pas encore mesuré"; })()}"></label>
   </div>
   <fieldset><legend>Avis du staff</legend>${voteSummary(p)}${st.staff.map(avisRow).join("") || `<p class="muted">Ajoute les membres du staff dans Réglages.</p>`}</fieldset>
+  ${revoirBlock(p)}
   ${rappelsBlock(p, "propositions")}
   ${tagEditor(p)}
   <label class="f" style="margin-top:14px">Commentaires de revue<textarea data-k="commentaire">${esc(p.commentaire)}</textarea></label>
   ${historyBlock(p, "propositions")}
   ${p.maj ? `<p class="meta">Dernière modification par ${esc(p.maj.par)} le ${fmtStamp(p.maj.le)}</p>` : ""}`;
+}
+// Proposition refusée ou abandonnée : rappel « à revoir » dans 3, 6 ou 12 mois (accueil + message Discord de 9 h)
+const FERMEES_REVOIR = ["Refusé","Abandonnée","Aucun contact"];
+function revoirBlock(p){
+  if(!FERMEES_REVOIR.includes(p.statut)) return "";
+  const prevu = (p.rappels || []).find(x => x.revoir);
+  return `<fieldset><legend>Revoir plus tard</legend>
+    <p class="meta" style="margin-top:0">${prevu ? `À revoir le <b>${fmtDate(prevu.date)}</b>${prevu.par ? ` par ${esc(prevu.par)}` : ""} : ce jour-là, la fiche apparaît dans les rappels de l'accueil et dans le message Discord de 9 h.`
+      : "Une chaîne qui ne convient pas aujourd'hui peut avoir changé dans quelques mois. Programme un rappel pour la regarder de nouveau :"}</p>
+    <div class="revoir">${[3, 6, 12].map(n => `<button type="button" class="btn ${prevu ? "ghost" : ""}" data-revoir="${n}">${prevu ? "Déplacer à" : "Dans"} ${n} mois</button>`).join("")}</div></fieldset>`;
 }
 function tagEditor(r){
   return `<label class="f" style="margin-top:14px">Étiquettes
@@ -1978,7 +2064,9 @@ function viewAide(){
     <h3>Intégrer et suivre un nouveau</h3>
     <p>Sur la fiche d'un nouveau membre, coche les étapes d'<b>intégration</b> au fur et à mesure (ajouté au Discord, rôle donné…, liste réglable dans Réglages → Listes). Tant qu'elles ne sont pas toutes cochées (60 premiers jours), il apparaît sur l'Accueil. Le référent est aussi rappelé de prendre des nouvelles à J+7 et à J+30.</p>
     <h3>Contacter un streamer</h3>
-    <p>Dans une fiche, choisis un modèle dans « Préparer un message… » (invitation, refus, bienvenue…), retouche le texte si besoin, puis clique sur <b>Copier</b> et colle le message dans Discord.</p>
+    <p>Dans une fiche, choisis un modèle dans « Préparer un message… » (invitation, refus, bienvenue…), retouche le texte si besoin, puis clique sur <b>Copier</b> et colle le message dans Discord. Sous la liste, « Pour ce statut » propose le modèle qui colle à la fiche (refus pour une proposition refusée, demande d'infos pour une proposition à trier…). Chaque copie est notée sur la fiche (« Déjà copiés ») pour éviter que deux personnes envoient le même message. Pour un refus, remplis le champ <b>Motif du refus</b> : il est repris dans le message.</p>
+    <h3>Revoir un refus plus tard</h3>
+    <p>Sur une proposition refusée ou abandonnée, la section <b>Revoir plus tard</b> programme un rappel dans 3, 6 ou 12 mois. Le jour venu, elle apparaît dans tes rappels du jour et dans le message Discord de 9 h ; si la chaîne a progressé, clique sur <b>Reproposer</b> (le rappel est retiré tout seul).</p>
     <h3>Ne rien oublier : les rappels</h3>
     <p>Dans une fiche, section <b>Rappels</b> : choisis une date et écris quoi faire (« recontacter après ses vacances »). Le jour venu, le rappel apparaît sur l'Accueil (« Rappels du jour », filtre « Les miens »), une 🔔 s'affiche dans les tableaux, et le robot te mentionne à 9 h. Clique sur <b>Fait</b> une fois traité.</p>
     <h3>Modifier plusieurs fiches</h3>
@@ -1992,7 +2080,7 @@ function viewAide(){
     <p class="astuce">Tout s'enregistre automatiquement pour tout le staff. Le point en haut à droite passe au vert (« Synchronisé ») quand c'est fait.</p>`)}
   ${sec("evenements", "Événements", `
     <h3>Créer un événement</h3>
-    <p>Onglet <b>Événements</b> → <b>Créer un événement</b> : titre, date, heure, durée, type, lien, description et participants. Coché « vitrine », il apparaît sur la page publique (avec « Ajouter à mon agenda »).</p>
+    <p>Onglet <b>Événements</b> → <b>Créer un événement</b> : titre, date, heure, durée, type, lien, description et participants. Coché « vitrine », il apparaît sur la page publique (avec « Ajouter à mon agenda »). Le bouton <b>🔗 Lien</b> de sa carte copie son lien direct sur la vitrine : la page s'ouvre sur l'événement, bouton d'inscription compris. Ce lien est aussi celui du titre du message Discord (sauf si l'événement a son propre lien).</p>
     <h3>Le partager sur Discord</h3>
     <p>Coche <b>Partager sur Discord</b> : le robot le publie dans le salon événements une à deux minutes après l'enregistrement. Si la date ou l'heure change, un message de mise à jour part, et le message d'origine est tenu à jour (participants, description). S'il a une heure, il est aussi créé dans l'onglet <b>Événements du serveur Discord</b> ; le supprimer ici le supprime là-bas. Avec <b>Rappels</b> coché, le robot le rappelle la veille à 18 h et le jour même à 9 h, en <b>mentionnant les inscrits</b> dont le compte Discord est relié.</p>
     <h3>Inscriptions</h3>
@@ -2021,7 +2109,8 @@ function viewAide(){
       <li>Section <b>Rejoindre</b> (critères, état d'esprit) : à activer et écrire dans Réglages → Vitrine publique.</li>
       <li>Les changements apparaissent au passage suivant du robot.</li></ul>`)}
   ${sec("admin", "Réglages et sécurité", `
-    <ul><li><b>Santé</b> : un voyant par branchement (robot, webhooks, bot Discord, inscriptions, vitrine, jetons, sauvegardes, minutes GitHub, données). En rouge, la ligne dit quoi faire.</li>
+    <ul><li><b>Santé</b> : un voyant par branchement (robot, Raspberry Pi, webhooks, bot Discord, inscriptions, vitrine, jetons, sauvegardes, minutes GitHub, données). En rouge, la ligne dit quoi faire. Un problème s'affiche aussi en haut de l'<b>Accueil</b>.</li>
+      <li><b>Raspberry Pi</b> : il lance le robot toutes les heures. S'il se tait plus de 3 h, ou si son jeton GitHub expire dans moins de 7 jours, Santé passe au rouge et Commandes est prévenu.</li>
       <li><b>Admins de la page</b> : seuls eux peuvent restaurer une sauvegarde, supprimer définitivement, importer des données et modifier les Réglages. Personne de coché = tout le monde est admin.</li>
       <li><b>Sauvegardes</b> : chaque dimanche (8 gardées) et à la demande ; <b>Restaurer</b> remplace toutes les données (l'état actuel est sauvegardé juste avant).</li>
       <li><b>Archives</b> : les vieilles données déplacées par le robot, téléchargeables.</li>
@@ -2030,12 +2119,14 @@ function viewAide(){
     <p>La page s'installe comme une application :</p>
     <ul><li><b>Android (Chrome)</b> : menu ⋮ → <b>Installer l'application</b>.</li>
       <li><b>iPhone (Safari)</b> : bouton Partager → <b>Sur l'écran d'accueil</b>.</li></ul>
+    <p>Le bouton <b>Installer La Cabane</b> apparaît aussi dans Réglages → Application quand le navigateur le permet. Une fois installée, la page s'ouvre même sans réseau, sur la dernière copie des données (il faut avoir coché « Mémoriser le jeton »). Ce que tu modifies hors ligne part au retour du réseau : garde la page ouverte jusque-là.</p>
     <p>Les tableaux s'affichent en cartes sur petit écran. La recherche 🔍 est au bout du menu (fais-le défiler).</p>`)}
   ${sec("probleme", "En cas de problème", `
     <ul><li><b>« Jeton refusé »</b> : ton jeton a expiré ou a été supprimé. Demande-en un nouveau à Olivier (ou régénère le tien), puis colle-le dans Réglages.</li>
       <li><b>« Erreur de synchro »</b> : vérifie ta connexion internet, puis clique sur <b>Recharger maintenant</b> dans Réglages. Tes modifications restent en attente et repartent toutes seules.</li>
       <li><b>La page ne montre pas la dernière version</b> : fais <b>Ctrl+F5</b> (ou ferme et rouvre l'application sur téléphone).</li>
       <li><b>Un chiffre semble faux</b> : les follows et le live viennent de Twitch. Clique sur <b>Actualiser Twitch</b> ; les relevés du robot se font trois fois par jour.</li>
+      <li><b>« Le robot ne passe plus »</b> en haut de l'Accueil : clique sur <b>Relancer le robot</b>. Si ça revient, vérifie que le Raspberry Pi est allumé et connecté.</li>
       <li><b>Un voyant rouge dans Santé</b> ou une alerte dans Commandes : suis le conseil affiché ; sinon regarde l'onglet <b>Actions</b> du dépôt ${esc(repo)} sur GitHub.</li>
       <li><b>Une inscription ou une publication Discord n'arrive pas</b> : clique sur <b>Relever les inscriptions maintenant</b> (Événements) et attends deux minutes.</li>
       <li><b>Un bouton est grisé</b> : il est réservé aux admins de la page (Réglages → Admins).</li></ul>
@@ -2153,7 +2244,7 @@ function evCarte(e, passe){
       ${ppl.length ? `<div class="ppl">${ppl.map(m => `<span class="who" title="${esc(m.login)}${(e.viaDiscord || []).includes(m.login) ? " · inscrit via Discord" : ""}">${avatarHtml(m.login)}<span class="muted" style="font-size:14px">${esc(m.login)}${(e.viaDiscord || []).includes(m.login) ? " ✅" : ""}</span></span>`).join("")}</div>` : `<p class="meta" style="margin:4px 0 0">Pas encore de participant.${!passe && e.publieDiscord?.msg ? " Les inscriptions se font par ✅ sous le message Discord ou sur la vitrine." : ""}</p>`}
       ${!passe && (e.discordInconnus || []).length ? `<div class="inconnus"><p class="meta" style="margin:6px 0 2px">✅ ou « Intéressé » sur Discord, compte non reconnu : à qui est-il ?</p>${e.discordInconnus.map(x => `<label class="meta" style="display:flex;gap:6px;align-items:center;margin:2px 0"><b style="color:var(--text)">${esc(x.nom)}</b><select data-evlier="${e.id}" data-did="${esc(x.id)}" data-dnom="${esc(x.nom)}"><option value="">Choisir le streamer…</option>${S.data.membres.filter(m => m.statut !== "Parti").sort((a, b) => a.login.localeCompare(b.login)).map(m => `<option value="${m.id}">${esc(m.login)}</option>`).join("")}</select></label>`).join("")}</div>` : ""}
       ${e.par ? `<p class="meta" style="margin:6px 0 0">Créé par ${esc(e.par)}</p>` : ""}</div>
-    <div class="acts" style="display:flex;gap:6px;flex-wrap:wrap"><button class="btn ghost" data-evedit="${e.id}">Modifier</button><button class="btn danger" data-evdel="${e.id}">Supprimer</button></div>
+    <div class="acts" style="display:flex;gap:6px;flex-wrap:wrap">${!passe && e.public !== false && S.data.settings.vitrine?.active ? `<button class="btn ghost" data-evlien="${e.id}" title="Lien direct vers cet événement sur la vitrine (inscription comprise)">🔗 Lien</button>` : ""}<button class="btn ghost" data-evedit="${e.id}">Modifier</button><button class="btn danger" data-evdel="${e.id}">Supprimer</button></div>
   </article>`;
 }
 function evForm(){
@@ -2346,11 +2437,25 @@ function santePanel(d){
   const lignes = [{ok:p ? h <= 2 : false, txt:p ? `Robot : dernier passage ${fmtStamp(p)}` : "Robot : jamais passé", conseil:"Onglet Actions du dépôt cabane : regarde le dernier passage en erreur. La page le relance d'elle-même toutes les heures."}, ...(sa?.checks || [])];
   const ko = lignes.filter(x => x.ok === false).length;
   const pt = x => x.ok === false ? `<span class="down">●</span>` : x.ok ? `<span class="up">●</span>` : `<span class="muted">○</span>`;
-  return `<section class="panel">
+  return `<section class="panel" id="sante">
     <h2>Santé${ko ? ` <span class="n" style="background:var(--ko)">${ko}</span>` : ""}</h2>
     <p>Le robot vérifie chaque branchement à chaque passage. Un problème qui apparaît, ou qui se règle, est signalé dans le salon Discord <b>Commandes</b>${sa ? ` · dernière vérification ${fmtStamp(sa.le)}` : " (pas encore de vérification : il faut la dernière version du robot)"}.</p>
     <ul class="todo" style="list-style:none;padding:0;margin:0">${lignes.map(x => `<li style="display:block;padding:6px 0">${pt(x)} ${esc(x.txt)}${x.ok === false && x.conseil ? `<br><span class="meta" style="margin-left:18px">↳ ${esc(x.conseil)}</span>` : ""}</li>`).join("")}</ul>
   </section>`;
+}
+// Bandeau en haut de l'accueil : robot qui ne passe plus (plus de 3 h) ou problème signalé par la santé
+function alerteRobot(d){
+  if(S.mode !== "github" || S.horsLigne) return "";
+  const p = d.robot?.passage || d.robot?.derniereExecution, h = p ? Math.floor((Date.now() - new Date(p)) / 36e5) : null;
+  const ko = (d.robot?.sante?.checks || []).filter(c => c.ok === false);
+  const arrete = p ? h >= 3 : true;
+  if(!arrete && !ko.length) return "";
+  return `<section class="alerte-robot ${arrete ? "" : "warn"}" role="status"><span class="tx">
+    ${arrete ? `<b>⚠ Le robot ne passe plus${p ? ` depuis ${h} h` : ""}</b>
+      <span class="meta">Dernier passage : ${p ? fmtStamp(p) : "jamais"}. Pas d'annonces Discord, de relevés ni de vitrine à jour tant qu'il ne repasse pas.${d.robot?.pi ? " Le Raspberry Pi est peut-être éteint ou débranché." : ""}</span>`
+      : `<b>🩺 ${ko.length} problème${ko.length > 1 ? "s" : ""} signalé${ko.length > 1 ? "s" : ""} par le robot</b>`}
+    ${ko.length ? `<ul>${ko.slice(0, 4).map(c => `<li>${esc(c.txt)}</li>`).join("")}${ko.length > 4 ? `<li>…</li>` : ""}</ul>` : ""}</span>
+    ${arrete ? `<button class="btn primary" id="relancerRobot">Relancer le robot</button>` : ""}<button class="btn ghost" data-goto="reglages" data-ancre="sante">Voir la santé</button></section>`;
 }
 /* ============ Nettoyage ============ */
 const INACTIF_JOURS = 90;
@@ -2523,6 +2628,10 @@ document.addEventListener("click", e => {
   if(t.id === "evNew"){ S.sansRestaurer = true; S.evEdit = {participants:[], type:"Raid train", public:true, discord:true}; render(); setTimeout(() => $("#ev_titre")?.focus(), 0); return; }
   if(t.id === "evRelever"){ if(S.mode !== "github"){ toast("Il faut être connecté à GitHub.", true); return; } notifyRobot(); toast("Robot lancé : les nouvelles inscriptions arrivent d'ici une à deux minutes."); return; }
   if(t.id === "evCancel"){ S.evEdit = null; render(); return; }
+  const evl = t.closest("[data-evlien]");
+  if(evl){ const e = (S.data.agenda || []).find(x => x.id === evl.dataset.evlien); if(!e) return;
+    const url = `${VITRINE_URL()}?ev=${encodeURIComponent(e.id)}`, ok = () => toast(joursAvant(e.date) > 60 ? "Lien copié. L'événement apparaîtra sur la vitrine 60 jours avant sa date." : "Lien copié : colle-le où tu veux (Discord, réseaux…)");
+    (navigator.clipboard?.writeText(url) || Promise.reject()).then(ok, () => prompt("Copie ce lien :", url)); return; }
   const eed = t.closest("[data-evedit]"); if(eed){ S.sansRestaurer = true; S.evEdit = JSON.parse(JSON.stringify((S.data.agenda || []).find(x => x.id === eed.dataset.evedit) || null)); if(S.evEdit) S.evEdit._pplAvant = [...(S.evEdit.participants || [])]; render(); window.scrollTo(0, 0); return; }
   const edl = t.closest("[data-evdel]"); if(edl){ const e = (S.data.agenda || []).find(x => x.id === edl.dataset.evdel); if(e && confirm(`Supprimer l'événement « ${e.titre} » ?`)){ dispatch({t:"agendaDel", id:e.id, notify:true, txt:`Événement supprimé : ${e.titre}`}); toast("Événement supprimé"); } return; }
   const epl = t.closest("[data-evppl]"); if(epl && S.evEdit){ S.evEdit = {...lireEvForm(), participants:(S.evEdit.participants || []).filter(l => l !== epl.dataset.evppl)}; render(); return; }
@@ -2543,6 +2652,16 @@ document.addEventListener("click", e => {
   if(rpd){ e.stopPropagation(); const c = rpd.dataset.rpc || S.drawer?.c, id = rpd.dataset.rpid || S.drawer?.id; const r = S.data[c]?.find(x => x.id === id); if(!r) return;
     const rp = (r.rappels || []).find(x => x.id === rpd.dataset.rpdone); if(!rp) return;
     dispatch({t:"rappelDel", c, id, rid:rp.id, txt:`${r.login} · Rappel fait : ${rp.texte}`}); renderDrawer(); toast("Rappel marqué comme fait"); return; }
+  const rvo = t.closest("[data-revoir]");
+  if(rvo && S.drawer?.c === "propositions"){ const r = S.data.propositions.find(x => x.id === S.drawer.id); if(!r) return;
+    const n = Number(rvo.dataset.revoir), dt = new Date(); dt.setDate(1); dt.setMonth(dt.getMonth() + n);
+    dt.setDate(Math.min(new Date().getDate(), new Date(dt.getFullYear(), dt.getMonth() + 1, 0).getDate()));   // 31 août + 6 mois = 28 février
+    const date = jourLocal(dt), texte = `Revoir ce refus${r.motifRefus ? ` (motif : ${r.motifRefus})` : ""} : où en est la chaîne ? Reproposer si ça vaut le coup.`.slice(0, 200);
+    S.lot = true;
+    try { for(const x of (r.rappels || []).filter(x => x.revoir)) dispatch({t:"rappelDel", c:"propositions", id:r.id, rid:x.id});
+      dispatch({t:"rappelAdd", c:"propositions", id:r.id, rp:{id:uid("rp_"), date, texte, revoir:true}, txt:`${r.login} · à revoir le ${fmtDate(date)}`}); }
+    finally { S.lot = false; }
+    updateSync(); render(); renderDrawer(); toast(`${r.login} : à revoir le ${fmtDate(date)}`); return; }
   if(t.id === "rpAdd" && S.drawer){ const {c, id} = S.drawer; const r = S.data[c].find(x => x.id === id); if(!r) return;
     const date = $("#rpDate").value, texte = $("#rpTexte").value.trim();
     if(!date || !texte){ toast("Indique une date et ce qu'il faudra faire.", true); return; }
@@ -2600,8 +2719,9 @@ document.addEventListener("click", e => {
     }
     if(act.dataset.act === "repropose"){
       if(!confirm(`Reproposer ${r.login} ? La candidature actuelle (statut, avis, commentaire) sera archivée dans l'historique.`)) return;
-      const arch = {le:todayISO(), statut:r.statut, proposePar:r.proposePar, dateProposition:r.dateProposition, avis:r.avis || {}, commentaire:r.commentaire || ""};
-      patch("propositions", id, {historique:[...(r.historique || []), arch], statut:"Proposition à faire", proposePar:cfg.me || "", dateProposition:todayISO(), dateRevue:null, dateInvitation:null, avis:{}, commentaire:""}, `${r.login} reproposé (ancienne candidature : ${r.statut})`);
+      const arch = {le:todayISO(), statut:r.statut, proposePar:r.proposePar, dateProposition:r.dateProposition, avis:r.avis || {}, commentaire:r.commentaire || "", ...(r.motifRefus ? {motifRefus:r.motifRefus} : {})};
+      patch("propositions", id, {historique:[...(r.historique || []), arch], statut:"Proposition à faire", proposePar:cfg.me || "", dateProposition:todayISO(), dateRevue:null, dateInvitation:null, avis:{}, commentaire:"", motifRefus:""}, `${r.login} reproposé (ancienne candidature : ${r.statut})`);
+      for(const x of (r.rappels || []).filter(x => x.revoir)) dispatch({t:"rappelDel", c:"propositions", id, rid:x.id, txt:`${r.login} · rappel « à revoir » retiré (reproposé)`});
       toast(`${r.login} est de nouveau en proposition`); return;
     }
     if(act.dataset.act === "transfer"){
@@ -2661,11 +2781,14 @@ document.addEventListener("click", e => {
   const ancre = t.closest('.aide nav.som a'); if(ancre){ e.preventDefault(); document.querySelector(ancre.getAttribute("href"))?.scrollIntoView({behavior:"smooth"}); return; }
   const go = t.closest("[data-goto]"); if(go){ e.preventDefault(); S.view = go.dataset.goto; S.drawer = null;
     if(go.dataset.mst !== undefined) S.f.mst = go.dataset.mst; if(go.dataset.pst !== undefined) S.f.pst = go.dataset.pst;
-    render(); window.scrollTo(0,0); return; }
+    render(); const an = go.dataset.ancre && document.getElementById(go.dataset.ancre); if(an) an.scrollIntoView({block:"start"}); else window.scrollTo(0,0); return; }
+  if(t.id === "installApp" && installEvt){ const ev = installEvt; installEvt = null; ev.prompt(); ev.userChoice?.finally(() => render()); return; }
+  if(t.id === "relancerRobot"){ t.disabled = true; notifyRobot().then(ok => { t.disabled = false;
+      toast(ok ? "Robot relancé : il passe d'ici 1 à 2 minutes, la page se mettra à jour toute seule." : "Relance refusée par GitHub : vérifie ton jeton (Réglages) ou relance depuis l'onglet Actions du dépôt cabane.", !ok); }); return; }
   if(t.id === "c_pull"){ if(S.pending.length){ toast("Envoi des modifications en attente…"); save(); } else pull(false); return; }
   if(t.id === "c_logout"){ if(S.saving){ toast("Enregistrement en cours : réessaie dans un instant.", true); return; }
     if(S.pending.length && !confirm("Des modifications ne sont pas encore enregistrées : elles seront perdues. Se déconnecter quand même ?")) return;
-    clearTimeout(saveTimer); clearTimeout(reveilT); reveilT = null; S.pending = []; S.backups = null; S.conflits = [];
+    clearTimeout(saveTimer); clearTimeout(reveilT); reveilT = null; S.pending = []; S.backups = null; S.conflits = []; store.del(HL_KEY); S.horsLigne = null; S.copieSha = null;
     cfg.token = ""; saveCfg(); S.mode = "none"; S.data = null; S.sha = null; render(); updateSync(); return; }
   if(t.id === "exportBtn"){ exportJson(); return; }
   if(t.id === "recapGo"){
@@ -2704,8 +2827,14 @@ document.addEventListener("click", e => {
   if(t.id === "tplReset"){ S.sansRestaurer = true; S.tplEdit = JSON.parse(JSON.stringify(MODELES_DEFAUT)); render(); toast("Modèles d'origine remis : clique sur Enregistrer pour les garder"); return; }
   if(t.id === "tplSave"){ const m = lireModeles(); dispatch({t:"settings", p:{modeles:m}, txt:`Modèles de messages modifiés (${m.length})`}); S.tplEdit = null; toast("Modèles enregistrés"); return; }
   if(t.id === "msgClose"){ S.msgSel = null; renderDrawer(); return; }
+  const msu = t.closest("[data-msgsugg]"); if(msu && S.drawer){ S.msgSel = {id:S.drawer.id, i:Number(msu.dataset.msgsugg)}; renderDrawer(); return; }
   if(t.id === "msgCopy"){ const txt = $("#msgText").value;
-    const ok = () => toast("Message copié : colle-le dans Discord (Ctrl+V)");
+    const ok = () => { toast("Message copié : colle-le dans Discord (Ctrl+V)");
+      // trace sur la fiche : évite que deux membres du staff envoient le même message
+      const dr = S.drawer, r = dr && S.data[dr.c]?.find(x => x.id === dr.id), nom = modeles()[S.msgSel?.i]?.nom;
+      if(r && nom){ const der = (r.messages || []).at(-1);
+        if(!(der && der.nom === nom && der.par === (cfg.me || "?") && Date.now() - new Date(der.le) < 30 * 60e3))
+          dispatch({t:"patch", c:dr.c, id:r.id, p:{messages:[...(r.messages || []).slice(-9), {nom, le:new Date().toISOString(), par:cfg.me || "?"}]}, noUndo:true, txt:`${r.login} · message « ${nom} » copié`}); } };
     (navigator.clipboard?.writeText(txt) || Promise.reject()).then(ok, () => { const ta = $("#msgText"); ta.focus(); ta.select(); try { document.execCommand("copy") ? ok() : toast("Copie refusée : sélectionne le texte et copie-le à la main.", true); } catch { toast("Copie refusée : sélectionne le texte et copie-le à la main.", true); } });
     return; }
   if(t.id === "s_jetsave"){
@@ -2827,7 +2956,7 @@ document.addEventListener("change", e => {
 });
 function saveCfg(){
   const c = {...cfg};
-  try { if(!cfg.remember){ sessionStorage.setItem("cabane.token", cfg.token); c.token = ""; } else sessionStorage.removeItem("cabane.token"); } catch {}
+  try { if(!cfg.remember){ sessionStorage.setItem("cabane.token", cfg.token); c.token = ""; store.del(HL_KEY); S.copieSha = null; } else sessionStorage.removeItem("cabane.token"); } catch {}
   store.set(CFG_KEY, c);
 }
 function exportJson(){
