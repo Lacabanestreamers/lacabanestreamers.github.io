@@ -230,7 +230,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 7,
     "jeu": "DREDGE",
     "titre": "On retourne naviguer, pêcher et fuir les ... Anomalies?",
     "depuis": "2026-10-05T12:50:43Z",
@@ -302,7 +302,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "Dead by Daylight",
     "titre": "🔞Tuer ou être tuer ?  entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-05T12:38:22Z",
@@ -513,5 +513,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-05T15:53:02.438Z"
+ "maj": "2026-10-05T16:07:15.098Z"
 }
