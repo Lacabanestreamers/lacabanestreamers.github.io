@@ -8,10 +8,10 @@
   "affilies": 21,
   "nouveaux30": 23,
   "heuresLive30": 206,
-  "followsGagnes30": 302,
+  "followsGagnes30": 303,
   "periode": {
    "du": "2026-09-23",
-   "au": "2026-10-05"
+   "au": "2026-10-06"
   }
  },
  "agenda": [],
@@ -270,7 +270,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Makers & Crafting",
+    "titre": "🐰maquette la grande salle de poudlard",
+    "depuis": "2026-10-06T06:59:21Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
+   },
    "premierStream": "2022-04-19",
    "succes": [],
    "jeux": [
@@ -297,7 +303,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Baldur's Gate 3",
+    "titre": "🔞[DROP Perso] BG3 aujourd'hui avec @wiill_ entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-10-06T06:31:30Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [],
    "jeux": [
@@ -340,7 +352,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Aniimo",
+    "titre": "On s'occupe des aniimos ensemble ?   !discord !regles !don !wishlist",
+    "depuis": "2026-10-06T06:50:04Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -436,7 +454,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Animal Crossing: New Horizons",
+    "titre": "ACNH [FR] | Welcome Dinos'Land 🦖 On continue le déco de l'île toussa toussa🏝️ | !discord !habitants",
+    "depuis": "2026-10-06T07:02:05Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
+   },
    "premierStream": "2025-09-10",
    "succes": [],
    "jeux": [
@@ -499,5 +523,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-06T01:07:21.244Z"
+ "maj": "2026-10-06T07:07:12.456Z"
 }
