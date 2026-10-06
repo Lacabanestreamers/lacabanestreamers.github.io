@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 227,
+  "heuresLive30": 230,
   "followsGagnes30": 312,
   "periode": {
    "du": "2026-09-23",
@@ -270,13 +270,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 4,
-    "jeu": "Resonance: A Plague Tale Legacy",
-    "titre": "🐰Ils sont où les rats ?",
-    "depuis": "2026-10-06T12:26:54Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": [],
    "jeux": [
@@ -304,8 +298,8 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
-    "jeu": "Chuxie",
+    "viewers": 8,
+    "jeu": "PANICORE",
     "titre": "🔞[DROP Perso]  On part en roue libre !!  entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-06T11:49:00Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
@@ -377,13 +371,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 1,
-    "jeu": "Nine Sols",
-    "titre": "Nouveau jeu découverte totale",
-    "depuis": "2026-10-06T13:25:09Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -519,5 +507,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-06T15:07:15.011Z"
+ "maj": "2026-10-06T16:07:17.406Z"
 }
