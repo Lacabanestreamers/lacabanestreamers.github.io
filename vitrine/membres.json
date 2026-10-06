@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 235,
+  "heuresLive30": 240,
   "followsGagnes30": 312,
   "periode": {
    "du": "2026-09-23",
@@ -198,7 +198,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
+    "viewers": 5,
     "jeu": "Sprout Valley",
     "titre": "😸Sprout Valley ~ On continue notre petite vie ! - !réseaux",
     "depuis": "2026-10-06T18:16:28Z",
@@ -209,8 +209,8 @@
    "jeux": [
     "Minecraft",
     "Splatoon 3",
-    "Gartic Phone",
-    "Sprout Valley"
+    "Sprout Valley",
+    "Gartic Phone"
    ],
    "clip": null
   },
@@ -222,13 +222,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 10,
-    "jeu": "Huglings",
-    "titre": "🌸🧸 PREMIÈRE DÉCOUVERTE | Huglings, des câlins et des bêtises 💕 | !lurk !clip !commandes",
-    "depuis": "2026-10-06T18:47:18Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
@@ -245,7 +239,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 8,
     "jeu": "Abiotic Factor",
     "titre": "Le mardi, c'est survie ! On tente de continuer à échapper aux monstres avec @asakha ! Venez vous poser avec nous <3 ! Jeu surprise!",
     "depuis": "2026-10-06T19:35:51Z",
@@ -256,7 +250,8 @@
    "jeux": [
     "DREDGE",
     "R.E.P.O.",
-    "Writing & Reading"
+    "Writing & Reading",
+    "Abiotic Factor"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/TenuousCogentCardKappaWealth-FX0yIc8uGYrPEvlt",
@@ -276,7 +271,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 8,
+    "viewers": 10,
     "jeu": "Just Chatting",
     "titre": "RÉACT🍿 : On regarde l'émission 90 Days Fiancé USA, avec des couples complétement fous 🤯 | React émissions, reportages & docus sur YouTube",
     "depuis": "2026-10-06T19:38:30Z",
@@ -285,7 +280,8 @@
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
-    "Sovereign Tower"
+    "Sovereign Tower",
+    "Just Chatting"
    ],
    "clip": null
   },
@@ -430,8 +426,8 @@
    "depuis": "2026-09-20",
    "live": {
     "viewers": 5,
-    "jeu": "Bily'Sine",
-    "titre": "[FR] ~ Bily'Sine - On se le fait ce boss ? ~",
+    "jeu": "Horror Game",
+    "titre": "[FR] ~ Mascoterium - Découverte d'une petit jeu ~",
     "depuis": "2026-10-06T19:05:07Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
    },
@@ -439,8 +435,8 @@
    "succes": [],
    "jeux": [
     "The Sims 4",
-    "R.E.P.O.",
-    "Bily'Sine"
+    "Bily'Sine",
+    "R.E.P.O."
    ],
    "clip": {
     "url": "https://www.twitch.tv/mysti94/clip/ShinyCourteousParrot4Head-Zpdg9B2p2iwhG-As",
@@ -547,5 +543,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-06T20:07:14.238Z"
+ "maj": "2026-10-06T21:07:14.302Z"
 }
