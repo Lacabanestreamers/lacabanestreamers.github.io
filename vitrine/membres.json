@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 216,
+  "heuresLive30": 218,
   "followsGagnes30": 303,
   "periode": {
    "du": "2026-09-23",
@@ -315,9 +315,9 @@
    "jeux": [
     "Dead by Daylight",
     "The Quarry",
+    "Baldur's Gate 3",
     "Just Chatting",
-    "Phasmophobia",
-    "Baldur's Gate 3"
+    "Phasmophobia"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/LongMuddyBaconArgieB8-8x7THMeRXw7sbmyN",
@@ -512,5 +512,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-06T10:05:49.819Z"
+ "maj": "2026-10-06T10:07:13.149Z"
 }
