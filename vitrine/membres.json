@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 206,
+  "heuresLive30": 210,
   "followsGagnes30": 303,
   "periode": {
    "du": "2026-09-23",
@@ -271,7 +271,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Makers & Crafting",
     "titre": "🐰maquette la grande salle de poudlard",
     "depuis": "2026-10-06T06:59:21Z",
@@ -281,9 +281,9 @@
    "succes": [],
    "jeux": [
     "WheelMates",
+    "Makers & Crafting",
     "Sort Them Ducks",
     "Resonance: A Plague Tale Legacy",
-    "Makers & Crafting",
     "BOMBANANA!"
    ],
    "clip": {
@@ -304,7 +304,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 12,
     "jeu": "Baldur's Gate 3",
     "titre": "🔞[DROP Perso] BG3 aujourd'hui avec @wiill_ entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-06T06:31:30Z",
@@ -455,7 +455,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 1,
+    "viewers": 10,
     "jeu": "Animal Crossing: New Horizons",
     "titre": "ACNH [FR] | Welcome Dinos'Land 🦖 On continue le déco de l'île toussa toussa🏝️ | !discord !habitants",
     "depuis": "2026-10-06T07:02:05Z",
@@ -465,7 +465,8 @@
    "succes": [],
    "jeux": [
     "The Sims 4",
-    "Just Chatting"
+    "Just Chatting",
+    "Animal Crossing: New Horizons"
    ],
    "clip": null
   },
@@ -523,5 +524,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-06T07:07:12.456Z"
+ "maj": "2026-10-06T08:07:14.424Z"
 }
