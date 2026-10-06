@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 240,
+  "heuresLive30": 244,
   "followsGagnes30": 312,
   "periode": {
    "du": "2026-09-23",
@@ -197,13 +197,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 5,
-    "jeu": "Sprout Valley",
-    "titre": "😸Sprout Valley ~ On continue notre petite vie ! - !réseaux",
-    "depuis": "2026-10-06T18:16:28Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [],
    "jeux": [
@@ -250,8 +244,8 @@
    "jeux": [
     "DREDGE",
     "R.E.P.O.",
-    "Writing & Reading",
-    "Abiotic Factor"
+    "Abiotic Factor",
+    "Writing & Reading"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/TenuousCogentCardKappaWealth-FX0yIc8uGYrPEvlt",
@@ -271,7 +265,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 10,
+    "viewers": 12,
     "jeu": "Just Chatting",
     "titre": "RÉACT🍿 : On regarde l'émission 90 Days Fiancé USA, avec des couples complétement fous 🤯 | React émissions, reportages & docus sur YouTube",
     "depuis": "2026-10-06T19:38:30Z",
@@ -436,7 +430,8 @@
    "jeux": [
     "The Sims 4",
     "Bily'Sine",
-    "R.E.P.O."
+    "R.E.P.O.",
+    "Horror Game"
    ],
    "clip": {
     "url": "https://www.twitch.tv/mysti94/clip/ShinyCourteousParrot4Head-Zpdg9B2p2iwhG-As",
@@ -498,7 +493,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": null,
-   "premierStream": null,
+   "premierStream": "2023-03-23",
    "succes": [],
    "jeux": [
     "The Witcher 3: Wild Hunt Remastered"
@@ -543,5 +538,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-06T21:07:14.302Z"
+ "maj": "2026-10-06T21:34:48.787Z"
 }
