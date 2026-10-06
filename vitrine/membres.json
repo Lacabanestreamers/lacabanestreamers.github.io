@@ -7,8 +7,8 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 219,
-  "followsGagnes30": 303,
+  "heuresLive30": 221,
+  "followsGagnes30": 309,
   "periode": {
    "du": "2026-09-23",
    "au": "2026-10-06"
@@ -125,9 +125,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
-    "jeu": "R.E.P.O.",
-    "titre": "🎃 Octobre continue fort ! R.E.P.O solo 😱",
+    "viewers": 9,
+    "jeu": "Just Chatting",
+    "titre": "Petite pause react",
     "depuis": "2026-10-06T09:43:00Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
    },
@@ -276,7 +276,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Resonance: A Plague Tale Legacy",
+    "titre": "🐰Ils sont où les rats ?",
+    "depuis": "2026-10-06T12:26:54Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
+   },
    "premierStream": "2022-04-19",
    "succes": [],
    "jeux": [
@@ -304,7 +310,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 10,
     "jeu": "Fall Guys",
     "titre": "🔞[DROP Perso]  On part en roue libre !!  entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-06T11:49:00Z",
@@ -512,5 +518,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-06T12:07:15.746Z"
+ "maj": "2026-10-06T13:07:15.040Z"
 }
