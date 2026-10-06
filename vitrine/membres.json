@@ -232,13 +232,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 8,
-    "jeu": "Abiotic Factor",
-    "titre": "Le mardi, c'est survie ! On tente de continuer à échapper aux monstres avec @asakha ! Venez vous poser avec nous <3 ! Jeu surprise!",
-    "depuis": "2026-10-06T19:35:51Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -265,7 +259,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 12,
+    "viewers": 13,
     "jeu": "Just Chatting",
     "titre": "RÉACT🍿 : On regarde l'émission 90 Days Fiancé USA, avec des couples complétement fous 🤯 | React émissions, reportages & docus sur YouTube",
     "depuis": "2026-10-06T19:38:30Z",
@@ -418,13 +412,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 5,
-    "jeu": "Horror Game",
-    "titre": "[FR] ~ Mascoterium - Découverte d'une petit jeu ~",
-    "depuis": "2026-10-06T19:05:07Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -538,5 +526,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-06T21:34:48.787Z"
+ "maj": "2026-10-06T22:07:16.010Z"
 }
