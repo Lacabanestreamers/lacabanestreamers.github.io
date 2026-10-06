@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 232,
+  "heuresLive30": 235,
   "followsGagnes30": 312,
   "periode": {
    "du": "2026-09-23",
@@ -209,7 +209,8 @@
    "jeux": [
     "Minecraft",
     "Splatoon 3",
-    "Gartic Phone"
+    "Gartic Phone",
+    "Sprout Valley"
    ],
    "clip": null
   },
@@ -222,7 +223,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 10,
     "jeu": "Huglings",
     "titre": "🌸🧸 PREMIÈRE DÉCOUVERTE | Huglings, des câlins et des bêtises 💕 | !lurk !clip !commandes",
     "depuis": "2026-10-06T18:47:18Z",
@@ -230,7 +231,9 @@
    },
    "premierStream": "2025-05-25",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Huglings"
+   ],
    "clip": null
   },
   {
@@ -241,7 +244,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Abiotic Factor",
+    "titre": "Le mardi, c'est survie ! On tente de continuer à échapper aux monstres avec @asakha ! Venez vous poser avec nous <3 ! Jeu surprise!",
+    "depuis": "2026-10-06T19:35:51Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -266,7 +275,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "Just Chatting",
+    "titre": "RÉACT🍿 : On regarde l'émission 90 Days Fiancé USA, avec des couples complétement fous 🤯 | React émissions, reportages & docus sur YouTube",
+    "depuis": "2026-10-06T19:38:30Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
+   },
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
@@ -360,7 +375,7 @@
    "login": "melpastelplay",
    "nom": "melpastelplay",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/3c3103aa-24ee-483b-8c2f-a1c1798ca53b-profile_image-300x300.png",
-   "bio": "Bienvenue sur MelPastelPlay 🌼 Ici on est en mode Gaming Chill , Cozy & Fun ! ✨N’hésite pas à parler dans le chat on peut échanger sur tout et surtout sur rien !! 😂 🐱 Alors GO ! Rejoins la Team Pastel 👏❤️",
+   "bio": "Bienvenue sur MelPastelPlay 🌼 Ici c’est du Cozy tout doux le jour et des jeux d’horreurs le soir ! ✨ N’hésite pas à parler dans le chat on peut échanger sur tout et surtout sur rien !! 😂 🐱 Alors GO ! Rejoins la Team Pastel 👏❤️",
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
@@ -414,7 +429,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 1,
+    "viewers": 5,
     "jeu": "Bily'Sine",
     "titre": "[FR] ~ Bily'Sine - On se le fait ce boss ? ~",
     "depuis": "2026-10-06T19:05:07Z",
@@ -424,7 +439,8 @@
    "succes": [],
    "jeux": [
     "The Sims 4",
-    "R.E.P.O."
+    "R.E.P.O.",
+    "Bily'Sine"
    ],
    "clip": {
     "url": "https://www.twitch.tv/mysti94/clip/ShinyCourteousParrot4Head-Zpdg9B2p2iwhG-As",
@@ -531,5 +547,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-06T19:07:16.568Z"
+ "maj": "2026-10-06T20:07:14.238Z"
 }
