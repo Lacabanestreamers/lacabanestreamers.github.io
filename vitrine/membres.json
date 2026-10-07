@@ -315,7 +315,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 8,
     "jeu": "7 Days to Die",
     "titre": "🔞[DROP Perso]  On essai de survivre !!  entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-07T06:26:57Z",
@@ -394,13 +394,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 1,
-    "jeu": "Nine Sols",
-    "titre": "Je suis têtu !",
-    "depuis": "2026-10-07T07:54:25Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -538,5 +532,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-07T08:32:51.649Z"
+ "maj": "2026-10-07T09:07:16.033Z"
 }
