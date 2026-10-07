@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 259,
+  "heuresLive30": 262,
   "followsGagnes30": 322,
   "periode": {
    "du": "2026-09-23",
@@ -172,7 +172,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Rise of the Tomb Raider",
     "titre": "🏺 Exploration de tombes perdues sur Rise of the Tomb Raider ! (On est à 22%)",
     "depuis": "2026-10-07T18:39:26Z",
@@ -184,7 +184,8 @@
     "Parisian Brasserie Simulator",
     "Aniimo",
     "Dead by Daylight",
-    "Paver: Tidy Up Together"
+    "Paver: Tidy Up Together",
+    "Rise of the Tomb Raider"
    ],
    "clip": {
     "url": "https://www.twitch.tv/cristal578/clip/DependableHyperHamburgerYouWHY-CRfaF0pXxX8ocip7",
@@ -222,7 +223,8 @@
     "Minecraft",
     "Splatoon 3",
     "Sprout Valley",
-    "Gartic Phone"
+    "Gartic Phone",
+    "Tomodachi Life: Living the Dream"
    ],
    "clip": null
   },
@@ -235,7 +237,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 12,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🏰 Soirée cosy sur Disney Dreamlight Valley ✨ | !lurk !clip !commandes",
     "depuis": "2026-10-07T18:45:04Z",
@@ -244,7 +246,8 @@
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
-    "Huglings"
+    "Huglings",
+    "Disney Dreamlight Valley"
    ],
    "clip": null
   },
@@ -544,5 +547,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-07T19:07:16.277Z"
+ "maj": "2026-10-07T20:07:15.299Z"
 }
