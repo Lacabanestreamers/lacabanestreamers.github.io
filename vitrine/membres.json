@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 253,
+  "heuresLive30": 255,
   "followsGagnes30": 314,
   "periode": {
    "du": "2026-09-23",
@@ -124,13 +124,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 8,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "💖 DISNEY DREAMLIGHT VALLEY | Farming de l'événement et chasse aux récompenses !",
-    "depuis": "2026-10-07T09:47:21Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -321,7 +315,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 9,
     "jeu": "7 Days to Die",
     "titre": "🔞[DROP Perso]  On essai de survivre !!  entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-07T12:53:20Z",
@@ -337,9 +331,9 @@
    ],
    "jeux": [
     "Dead by Daylight",
+    "7 Days to Die",
     "The Quarry",
     "Baldur's Gate 3",
-    "7 Days to Die",
     "Just Chatting"
    ],
    "clip": {
@@ -450,7 +444,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "SONG OF HORROR",
+    "titre": "[FR] Stream horreur - Sophie on va te sortir de la en vie !  [!bs !steam !insta !discord ]",
+    "depuis": "2026-10-07T13:59:13Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
+   },
    "premierStream": "2025-09-24",
    "succes": [],
    "jeux": [
@@ -538,5 +538,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-07T13:07:12.967Z"
+ "maj": "2026-10-07T14:07:15.496Z"
 }
