@@ -171,7 +171,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Rise of the Tomb Raider",
+    "titre": "🏺 Exploration de tombes perdues sur Rise of the Tomb Raider ! (On est à 22%)",
+    "depuis": "2026-10-07T18:39:26Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
+   },
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -197,7 +203,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Tomodachi Life: Living the Dream",
+    "titre": "🌐Tomodachi Life 2 ~ On continue notre vie ! - !réseaux",
+    "depuis": "2026-10-07T18:17:02Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -222,7 +234,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 14,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "🏰 Soirée cosy sur Disney Dreamlight Valley ✨ | !lurk !clip !commandes",
+    "depuis": "2026-10-07T18:45:04Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
+   },
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
@@ -526,5 +544,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-07T18:07:15.655Z"
+ "maj": "2026-10-07T19:07:16.277Z"
 }
