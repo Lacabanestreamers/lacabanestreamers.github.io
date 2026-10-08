@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 291,
+  "heuresLive30": 293,
   "followsGagnes30": 334,
   "periode": {
    "du": "2026-09-23",
@@ -442,13 +442,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 8,
-    "jeu": "MECCHA CHAMELEON",
-    "titre": "[FR] Petit cache cache tranquillou en bonne compagnie ✨  [!bs !steam !insta !discord ]",
-    "depuis": "2026-10-08T18:51:48Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -497,13 +491,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 3,
-    "jeu": "The Witcher 3: Wild Hunt Remastered",
-    "titre": "Que nous cache ce beau et sombre monde ? [DROP ✅] !discord",
-    "depuis": "2026-10-08T19:21:18Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_r3skyo-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2023-03-23",
    "succes": [],
    "jeux": [
@@ -549,5 +537,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-08T22:07:13.452Z"
+ "maj": "2026-10-08T23:07:14.538Z"
 }
