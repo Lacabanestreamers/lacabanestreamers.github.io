@@ -317,7 +317,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "🔞[DROP Perso] Apres-midi en musique !!  entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-10-08T12:40:14Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -535,5 +541,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-08T11:07:12.932Z"
+ "maj": "2026-10-08T13:07:15.491Z"
 }
