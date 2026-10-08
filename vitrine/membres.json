@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 281,
+  "heuresLive30": 286,
   "followsGagnes30": 334,
   "periode": {
    "du": "2026-09-23",
@@ -125,7 +125,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 11,
     "jeu": "SO CLOSE",
     "titre": "SO CLOSE : Plus proches que jamais... jusqu'à la catastrophe 💥 ft @aly0806 & @geijei_jeux",
     "depuis": "2026-10-08T18:21:02Z",
@@ -191,7 +191,7 @@
     "Rise of the Tomb Raider",
     "Aniimo",
     "Dead by Daylight",
-    "Paver: Tidy Up Together"
+    "Cat Mail Co."
    ],
    "clip": {
     "url": "https://www.twitch.tv/cristal578/clip/JoyousHealthyMosquitoThunBeast-8sicnfCqWMFxk1bm",
@@ -461,7 +461,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 5,
     "jeu": "MECCHA CHAMELEON",
     "titre": "[FR] Petit cache cache tranquillou en bonne compagnie ✨  [!bs !steam !insta !discord ]",
     "depuis": "2026-10-08T18:51:48Z",
@@ -477,8 +477,8 @@
    ],
    "jeux": [
     "SONG OF HORROR",
-    "R.E.P.O.",
-    "MECCHA CHAMELEON"
+    "MECCHA CHAMELEON",
+    "R.E.P.O."
    ],
    "clip": {
     "url": "https://www.twitch.tv/oko_san_/clip/DepressedBovineFrogShazBotstix-eSND5ygqXaUl2VfS",
@@ -516,7 +516,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "The Witcher 3: Wild Hunt Remastered",
     "titre": "Que nous cache ce beau et sombre monde ? [DROP ✅] !discord",
     "depuis": "2026-10-08T19:21:18Z",
@@ -567,5 +567,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-08T20:07:14.420Z"
+ "maj": "2026-10-08T21:07:16.983Z"
 }
