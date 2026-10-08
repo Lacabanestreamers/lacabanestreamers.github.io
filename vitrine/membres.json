@@ -59,14 +59,7 @@
     }
    ],
    "jeux": [],
-   "clip": {
-    "url": "https://www.twitch.tv/asalie/clip/PricklySleepyCormorantPrimeMe-NbljdSCrNAMCQ6uI",
-    "titre": "je me doooooone tout ce que je ....",
-    "vues": 4,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/daa1fd1f-4991-419c-bd20-3a4a38b3f545/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-09-30",
-    "duree": 8
-   }
+   "clip": null
   },
   {
    "login": "aulit42369",
@@ -143,7 +136,7 @@
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/CooperativeSucculentRaisinKappaWealth-gM1O2FgPRlAGDzxv",
     "titre": "WzBot CLIP | 🎃 OCTOBRE EST LÀ ! | On va dévourer ou sursauter 👻🐔 (by honinbo_)",
-    "vues": 6,
+    "vues": 8,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/45b25206-bd4e-47e9-8193-4e397dc0db59/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-02",
     "duree": 60
@@ -182,12 +175,12 @@
     "Paver: Tidy Up Together"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/cristal578/clip/DependableHyperHamburgerYouWHY-CRfaF0pXxX8ocip7",
-    "titre": "Et une mort bête",
+    "url": "https://www.twitch.tv/cristal578/clip/JoyousHealthyMosquitoThunBeast-8sicnfCqWMFxk1bm",
+    "titre": "Il n'y a pas eu tant de chutes !",
     "vues": 5,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6956110b-cca8-49f5-8ed8-903bdc4f957c/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-09-30",
-    "duree": 18
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/3ae4465f-b063-49ee-8533-7ffe0a718f6c/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-07",
+    "duree": 31
    }
   },
   {
@@ -214,7 +207,14 @@
     "Tomodachi Life: Living the Dream",
     "Gartic Phone"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/elegaming__/clip/MagnificentCautiousBunnyFailFish-0xnz5Xfx4NPTzt-c",
+    "titre": "Coco divorce de Nook ????",
+    "vues": 1,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/7bffeecd-f212-432d-ae16-3e5be0789092/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-07",
+    "duree": 60
+   }
   },
   {
    "login": "emmamarmotte",
@@ -251,11 +251,11 @@
     "Writing & Reading"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/galyssiane/clip/TenuousCogentCardKappaWealth-FX0yIc8uGYrPEvlt",
-    "titre": "WzBot CLIP | On retourne naviguer, pêcher et fuir les ... Anomalies? (by galyssiane)",
-    "vues": 5,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cf872ce8-6534-4f3f-a5bd-11831faa94b6/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-05",
+    "url": "https://www.twitch.tv/galyssiane/clip/PeacefulCorrectClintmullinsDatSheffy-sCxfdMMGoMYjN3yr",
+    "titre": "WzBot CLIP | Le mardi, c'est survie ! On tente de continuer à échapper aux monstres av (by galyssian",
+    "vues": 7,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5514ffa8-c585-4c37-ba1e-b92f7f455d06/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-06",
     "duree": 60
    }
   },
@@ -301,11 +301,11 @@
     "BOMBANANA!"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/liiapin/clip/SullenAlertRamenCoolStoryBob-1lQi1GongGY1U-FC",
+    "url": "https://www.twitch.tv/liiapin/clip/AssiduousSourGerbilResidentSleeper-kswFrsF8RY1HBu53",
     "titre": "Clip by inStreamly",
     "vues": 1,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b504812e-f812-49d2-8418-9d5d371f858a/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-06",
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e7a6457e-2b5a-41d4-b67c-bb2abbde9c4d/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-04",
     "duree": 25
    }
   },
@@ -336,7 +336,7 @@
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/TsundereSteamySwallowOMGScoots-RmZpbZpk2TT10ZNX",
     "titre": "un des rare moment ou en observe lilyth sursautant 😇😇",
-    "vues": 4,
+    "vues": 6,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b882e0b8-5ad0-4144-90b2-b6f392e8b099/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-06",
     "duree": 19
@@ -427,7 +427,7 @@
    "clip": {
     "url": "https://www.twitch.tv/mysti94/clip/GeniusFamousCocoaPhilosoraptor-DOH3-sReOrfAjcUX",
     "titre": "WOOOHOUHOU",
-    "vues": 4,
+    "vues": 7,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/67673dc3-2bd6-4d41-99ea-33399c238c1d/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-06",
     "duree": 11
@@ -451,7 +451,7 @@
    "clip": {
     "url": "https://www.twitch.tv/oko_san_/clip/DepressedBovineFrogShazBotstix-eSND5ygqXaUl2VfS",
     "titre": "Bad timing pour Nyandou",
-    "vues": 18,
+    "vues": 19,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/32fc2d26-3328-4731-93d8-80511155150e/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-05",
     "duree": 41
@@ -529,5 +529,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-08T00:07:18.637Z"
+ "maj": "2026-10-08T01:07:20.685Z"
 }
