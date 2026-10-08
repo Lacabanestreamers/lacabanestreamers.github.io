@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 286,
+  "heuresLive30": 291,
   "followsGagnes30": 334,
   "periode": {
    "du": "2026-09-23",
@@ -24,20 +24,14 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 6,
-    "jeu": "SO CLOSE",
-    "titre": "🎃 Mois de l'horreur🎃 ✨On part de le rire et la joie avec les coupaing🔥",
-    "depuis": "2026-10-08T18:29:28Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
     "Raft",
+    "SO CLOSE",
     "Phasmophobia",
-    "DEVOUR",
-    "SO CLOSE"
+    "DEVOUR"
    ],
    "clip": {
     "url": "https://www.twitch.tv/aly0806/clip/LachrymoseCuriousClamBlargNaut-d4t3eVIWh8nFmOje",
@@ -124,13 +118,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 11,
-    "jeu": "SO CLOSE",
-    "titre": "SO CLOSE : Plus proches que jamais... jusqu'à la catastrophe 💥 ft @aly0806 & @geijei_jeux",
-    "depuis": "2026-10-08T18:21:02Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -143,8 +131,8 @@
     "Disney Dreamlight Valley",
     "The Quarry",
     "Raft",
-    "DEVOUR",
-    "Just Chatting"
+    "SO CLOSE",
+    "DEVOUR"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/CooperativeSucculentRaisinKappaWealth-gM1O2FgPRlAGDzxv",
@@ -177,21 +165,15 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": {
-    "viewers": 2,
-    "jeu": "Cat Mail Co.",
-    "titre": "☕C’est parti pour expédier des colis avec des chats trop cute ! 🤎",
-    "depuis": "2026-10-08T18:33:54Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
     "Parisian Brasserie Simulator",
     "Rise of the Tomb Raider",
+    "Cat Mail Co.",
     "Aniimo",
-    "Dead by Daylight",
-    "Cat Mail Co."
+    "Dead by Daylight"
    ],
    "clip": {
     "url": "https://www.twitch.tv/cristal578/clip/JoyousHealthyMosquitoThunBeast-8sicnfCqWMFxk1bm",
@@ -461,7 +443,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 9,
     "jeu": "MECCHA CHAMELEON",
     "titre": "[FR] Petit cache cache tranquillou en bonne compagnie ✨  [!bs !steam !insta !discord ]",
     "depuis": "2026-10-08T18:51:48Z",
@@ -516,7 +498,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 3,
     "jeu": "The Witcher 3: Wild Hunt Remastered",
     "titre": "Que nous cache ce beau et sombre monde ? [DROP ✅] !discord",
     "depuis": "2026-10-08T19:21:18Z",
@@ -567,5 +549,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-08T21:07:16.983Z"
+ "maj": "2026-10-08T21:59:23.277Z"
 }
