@@ -120,7 +120,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "DEVOUR",
+    "titre": "👹 DEVOUR SOLO : Personne pour me réanimer ... 😱",
+    "depuis": "2026-10-09T13:03:00Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -320,7 +326,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 14,
+    "jeu": "CODE VEIN II",
+    "titre": "🔞[DROP Perso] Entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-10-09T12:25:14Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -539,5 +551,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-09T11:00:57.396Z"
+ "maj": "2026-10-09T13:07:20.590Z"
 }
