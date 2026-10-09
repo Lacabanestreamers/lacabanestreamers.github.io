@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 302,
+  "heuresLive30": 306,
   "followsGagnes30": 332,
   "periode": {
    "du": "2026-09-23",
@@ -120,13 +120,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 8,
-    "jeu": "DEVOUR",
-    "titre": "👹 DEVOUR SOLO : Personne pour me réanimer ... 😱",
-    "depuis": "2026-10-09T13:03:00Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -138,8 +132,8 @@
    "jeux": [
     "Disney Dreamlight Valley",
     "The Quarry",
-    "Raft",
     "DEVOUR",
+    "Raft",
     "SO CLOSE"
    ],
    "clip": {
@@ -200,7 +194,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Splatoon 3",
+    "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
+    "depuis": "2026-10-09T14:13:00Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -251,8 +251,8 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
-    "jeu": "Haunted Paws",
+    "viewers": 8,
+    "jeu": "Wyldheart",
     "titre": "Cet aprem on teste des démos avec @sakkiel! Venez nombreux-ses !",
     "depuis": "2026-10-09T13:16:47Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
@@ -263,7 +263,8 @@
     "DREDGE",
     "R.E.P.O.",
     "Abiotic Factor",
-    "Writing & Reading"
+    "Writing & Reading",
+    "Haunted Paws"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/PeacefulCorrectClintmullinsDatSheffy-sCxfdMMGoMYjN3yr",
@@ -463,7 +464,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 0,
+    "viewers": 13,
     "jeu": "Art",
     "titre": "[FR] Vient te poser au calme ! On discute pendant que je fais ma   lino ✨  [!bs !steam !insta !discord ]",
     "depuis": "2026-10-09T14:06:04Z",
@@ -480,7 +481,8 @@
    "jeux": [
     "SONG OF HORROR",
     "MECCHA CHAMELEON",
-    "R.E.P.O."
+    "R.E.P.O.",
+    "Art"
    ],
    "clip": {
     "url": "https://www.twitch.tv/oko_san_/clip/DepressedBovineFrogShazBotstix-eSND5ygqXaUl2VfS",
@@ -563,5 +565,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-09T14:07:14.113Z"
+ "maj": "2026-10-09T15:07:15.939Z"
 }
