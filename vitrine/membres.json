@@ -7,7 +7,7 @@
   "membres": 24,
   "affilies": 21,
   "nouveaux30": 24,
-  "heuresLive30": 321,
+  "heuresLive30": 328,
   "followsGagnes30": 339,
   "periode": {
    "du": "2026-09-23",
@@ -25,7 +25,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 10,
     "jeu": "The Other Side",
     "titre": "🎃 Mois de l'horreur🎃 ✨On chasse les fantômes entre Reines🔥",
     "depuis": "2026-10-09T19:24:50Z",
@@ -37,7 +37,8 @@
     "Raft",
     "SO CLOSE",
     "Phasmophobia",
-    "DEVOUR"
+    "DEVOUR",
+    "The Other Side"
    ],
    "clip": {
     "url": "https://www.twitch.tv/aly0806/clip/CovertCovertMangoMrDestructoid-pI-kd1PS4Y2J58pf",
@@ -174,7 +175,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 4,
+    "viewers": 3,
     "jeu": "Cat Mail Co.",
     "titre": "☕ C'est reparti pour préparer des colis dans Cat Mail Co !",
     "depuis": "2026-10-09T18:27:07Z",
@@ -183,10 +184,10 @@
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
+    "Cat Mail Co.",
     "Aniimo",
     "Parisian Brasserie Simulator",
     "Rise of the Tomb Raider",
-    "Cat Mail Co.",
     "Dead by Daylight"
    ],
    "clip": {
@@ -207,7 +208,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Minecraft",
     "titre": "🏹MC Be ~ On continue la 🏕survie entre potes ! - !réseaux",
     "depuis": "2026-10-09T16:53:35Z",
@@ -320,13 +321,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 4,
-    "jeu": "BOMBANANA!",
-    "titre": "🐰Quif era exploser la bombe ? avec @ryolee_saeba et @raisin_fr",
-    "depuis": "2026-10-09T18:33:54Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -338,8 +333,8 @@
    "jeux": [
     "Resonance: A Plague Tale Legacy",
     "Makers & Crafting",
-    "WheelMates",
     "BOMBANANA!",
+    "WheelMates",
     "Sort Them Ducks"
    ],
    "clip": {
@@ -361,7 +356,7 @@
    "depuis": "2026-09-20",
    "live": {
     "viewers": 9,
-    "jeu": "Lunch Lady",
+    "jeu": "R.E.P.O.",
     "titre": "🔞[DROP Perso] Entre papote et éclat de fun avec @kuroen_16e et @hyroshimaeu !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-09T18:17:19Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
@@ -414,13 +409,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": {
-    "viewers": 3,
-    "jeu": "Poppy Playtime: Chapter 3 - Deep Sleep",
-    "titre": "SOIREE HORREUR // On commence le chapitre 3 de Poppy, HELP!!!   !discord !regles !don !wishlist",
-    "depuis": "2026-10-09T18:15:35Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -497,7 +486,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 5,
     "jeu": "The Other Side",
     "titre": "[FR] Ce soir on chasse des fantômes... J'ai déjà peur !  [!bs !steam !insta !discord ]",
     "depuis": "2026-10-09T19:55:51Z",
@@ -515,7 +504,8 @@
     "SONG OF HORROR",
     "MECCHA CHAMELEON",
     "Art",
-    "R.E.P.O."
+    "R.E.P.O.",
+    "The Other Side"
    ],
    "clip": {
     "url": "https://www.twitch.tv/oko_san_/clip/DepressedBovineFrogShazBotstix-eSND5ygqXaUl2VfS",
@@ -598,5 +588,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-09T20:07:15.855Z"
+ "maj": "2026-10-09T20:49:56.532Z"
 }
