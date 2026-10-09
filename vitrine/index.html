@@ -246,6 +246,11 @@ const fmtD = iso => { const [y, m, d] = iso.split("-").map(Number); return new D
 function succesTxt(x){ return x.type === "palier" ? `a passé les <b>${Number(x.palier)} follows</b>` : x.type === "partenaire" ? `est devenu <b>partenaire Twitch</b>` : `est devenu <b>affilié Twitch</b>`; }
 const succesIc = x => x.type === "palier" ? "🚀" : "🎉";
 const pageUrl = l => `?m=${encodeURIComponent(l)}`;
+// Liens à partager : pages générées par le robot (aperçu avec avatar ou date dans Discord), qui renvoient ici
+const base = () => location.origin + location.pathname.replace(/[^/]*$/, "");
+const okNomPage = x => /^[A-Za-z0-9_-]{1,80}$/.test(x || "");
+const lienPartageMembre = l => okNomPage(l) ? `${base()}s/${l}` : base() + pageUrl(l);
+const lienPartageEvt = id => okNomPage(id) ? `${base()}e/${id}` : `${base()}?ev=${encodeURIComponent(id)}`;
 // Anniversaire de stream : prochaine date (aujourd'hui compris), nombre de jours et d'années de stream fêtées
 function anniv(m, champ = "premierStream"){
   if(!/^\d{4}-\d{2}-\d{2}$/.test(m[champ] || "")) return null;
@@ -388,7 +393,7 @@ function renderProfil(m, d){
     return;
   }
   document.title = `${m.nom} · ${d.titre || "La Cabane"}`;
-  const lien = location.origin + location.pathname + pageUrl(m.login);
+  const lien = lienPartageMembre(m.login);
   const cache = Math.floor(Date.now() / 6e5);          // aperçus des lives rafraîchis toutes les 10 min
   const succes = m.succes || [];
   main.innerHTML = `<a class="back" href="./" data-nav>← Tous les streamers</a>
@@ -623,11 +628,11 @@ document.addEventListener("click", e => {
   if(ib){ ib.disabled = true; inscrire(ib.dataset.ins || ib.dataset.insout, ib.dataset.ins ? "in" : "out"); return; }
   const pg = e.target.closest("[data-partage]");
   if(pg){ const ev = (DATA?.agenda || []).find(x => x.id === pg.dataset.partage); if(!ev) return;
-    const url = `${location.origin}${location.pathname}?ev=${encodeURIComponent(ev.id)}`;
+    const url = lienPartageEvt(ev.id);
     if(navigator.share && matchMedia("(pointer:coarse)").matches){ navigator.share({title:ev.titre, text:`${ev.titre} · La Cabane`, url}).catch(() => {}); return; }
     const ok = () => { pg.textContent = "✓ Lien copié"; setTimeout(() => { pg.textContent = "🔗 Partager cet événement"; }, 2500); };
     (navigator.clipboard?.writeText(url) || Promise.reject()).then(ok, () => prompt("Copie ce lien :", url)); return; }
-  if(e.target.id === "copyLien"){ const t = location.href; const ok = () => { e.target.textContent = "Lien copié ✓"; setTimeout(() => { e.target.textContent = "Copier le lien de cette page"; }, 2500); };
+  if(e.target.id === "copyLien"){ const qui = (new URLSearchParams(location.search).get("m") || "").toLowerCase(), mm = (DATA?.membres || []).find(x => x.login.toLowerCase() === qui); const t = mm ? lienPartageMembre(mm.login) : location.href; const ok = () => { e.target.textContent = "Lien copié ✓"; setTimeout(() => { e.target.textContent = "Copier le lien de cette page"; }, 2500); };
     (navigator.clipboard?.writeText(t) || Promise.reject()).then(ok, () => prompt("Copie ce lien :", t)); }
 });
 let sessionScroll = 0;
