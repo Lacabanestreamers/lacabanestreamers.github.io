@@ -7,7 +7,7 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 300,
+  "heuresLive30": 302,
   "followsGagnes30": 332,
   "periode": {
    "du": "2026-09-23",
@@ -121,7 +121,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 1,
+    "viewers": 8,
     "jeu": "DEVOUR",
     "titre": "👹 DEVOUR SOLO : Personne pour me réanimer ... 😱",
     "depuis": "2026-10-09T13:03:00Z",
@@ -139,8 +139,8 @@
     "Disney Dreamlight Valley",
     "The Quarry",
     "Raft",
-    "SO CLOSE",
-    "DEVOUR"
+    "DEVOUR",
+    "SO CLOSE"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/CooperativeSucculentRaisinKappaWealth-gM1O2FgPRlAGDzxv",
@@ -250,7 +250,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "Haunted Paws",
+    "titre": "Cet aprem on teste des démos avec @sakkiel! Venez nombreux-ses !",
+    "depuis": "2026-10-09T13:16:47Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -327,7 +333,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 8,
     "jeu": "CODE VEIN II",
     "titre": "🔞[DROP Perso] Entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-09T12:25:14Z",
@@ -456,7 +462,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "Art",
+    "titre": "[FR] Vient te poser au calme ! On discute pendant que je fais ma   lino ✨  [!bs !steam !insta !discord ]",
+    "depuis": "2026-10-09T14:06:04Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
+   },
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -551,5 +563,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-09T13:07:20.590Z"
+ "maj": "2026-10-09T14:07:14.113Z"
 }
