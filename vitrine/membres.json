@@ -7,7 +7,7 @@
   "membres": 24,
   "affilies": 21,
   "nouveaux30": 24,
-  "heuresLive30": 333,
+  "heuresLive30": 335,
   "followsGagnes30": 339,
   "periode": {
    "du": "2026-09-23",
@@ -24,21 +24,15 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 7,
-    "jeu": "The Other Side",
-    "titre": "🎃 Mois de l'horreur🎃 ✨On chasse les fantômes entre Reines🔥",
-    "depuis": "2026-10-09T19:24:50Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
     "Raft",
     "SO CLOSE",
+    "The Other Side",
     "Phasmophobia",
-    "DEVOUR",
-    "The Other Side"
+    "DEVOUR"
    ],
    "clip": {
     "url": "https://www.twitch.tv/aly0806/clip/CovertCovertMangoMrDestructoid-pI-kd1PS4Y2J58pf",
@@ -467,13 +461,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 5,
-    "jeu": "The Other Side",
-    "titre": "[FR] Ce soir on chasse des fantômes... J'ai déjà peur !  [!bs !steam !insta !discord ]",
-    "depuis": "2026-10-09T19:55:51Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -570,5 +558,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-09T22:07:14.447Z"
+ "maj": "2026-10-09T23:07:12.496Z"
 }
