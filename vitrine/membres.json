@@ -195,10 +195,10 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 2,
-    "jeu": "Splatoon 3",
-    "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
-    "depuis": "2026-10-09T14:13:00Z",
+    "viewers": 1,
+    "jeu": "Minecraft",
+    "titre": "🏹MC Be ~ On continue la 🏕survie entre potes ! - !réseaux",
+    "depuis": "2026-10-09T16:53:35Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
    },
    "premierStream": "2024-08-12",
@@ -250,13 +250,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 10,
-    "jeu": "Wyldheart",
-    "titre": "Cet aprem on teste des démos avec @sakkiel! Venez nombreux-ses !",
-    "depuis": "2026-10-09T13:16:47Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -458,7 +452,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 16,
+    "viewers": 14,
     "jeu": "Art",
     "titre": "[FR] Vient te poser au calme ! On discute pendant que je fais ma   lino ✨  [!bs !steam !insta !discord ]",
     "depuis": "2026-10-09T14:06:04Z",
@@ -559,5 +553,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-09T16:07:15.623Z"
+ "maj": "2026-10-09T17:07:15.589Z"
 }
