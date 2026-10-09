@@ -7,11 +7,11 @@
   "membres": 23,
   "affilies": 21,
   "nouveaux30": 23,
-  "heuresLive30": 205,
-  "followsGagnes30": 302,
+  "heuresLive30": 299,
+  "followsGagnes30": 334,
   "periode": {
    "du": "2026-09-23",
-   "au": "2026-10-05"
+   "au": "2026-10-09"
   }
  },
  "agenda": [],
@@ -29,15 +29,16 @@
    "succes": [],
    "jeux": [
     "Raft",
+    "SO CLOSE",
     "Phasmophobia",
     "DEVOUR"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/aly0806/clip/LachrymoseCuriousClamBlargNaut-d4t3eVIWh8nFmOje",
-    "titre": "WzBot CLIP | 🎃 Mois de l'horreur🎃 ✨Aprem Horreur avec Elo et Lilyth🔥 (by aulit42369)",
+    "url": "https://www.twitch.tv/aly0806/clip/CovertCovertMangoMrDestructoid-pI-kd1PS4Y2J58pf",
+    "titre": "WzBot CLIP | 🎃 Mois de l'horreur🎃 ✨On part de le rire et la joie avec les coupai (by nezukochan974",
     "vues": 3,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/76aace28-0a3d-4323-b78d-1bfddb48b1b5/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-02",
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cb7ee0a0-056a-45ed-b74f-dacdba8f9a74/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-08",
     "duree": 60
    }
   },
@@ -59,14 +60,7 @@
     }
    ],
    "jeux": [],
-   "clip": {
-    "url": "https://www.twitch.tv/asalie/clip/PricklySleepyCormorantPrimeMe-NbljdSCrNAMCQ6uI",
-    "titre": "je me doooooone tout ce que je ....",
-    "vues": 3,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/daa1fd1f-4991-419c-bd20-3a4a38b3f545/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-09-30",
-    "duree": 8
-   }
+   "clip": null
   },
   {
    "login": "aulit42369",
@@ -113,7 +107,9 @@
    "live": null,
    "premierStream": "2026-06-05",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Disney Dreamlight Valley"
+   ],
    "clip": null
   },
   {
@@ -134,16 +130,16 @@
     }
    ],
    "jeux": [
+    "Disney Dreamlight Valley",
     "The Quarry",
     "Raft",
-    "DEVOUR",
-    "Disney Dreamlight Valley",
-    "Just Chatting"
+    "SO CLOSE",
+    "DEVOUR"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/CooperativeSucculentRaisinKappaWealth-gM1O2FgPRlAGDzxv",
     "titre": "WzBot CLIP | 🎃 OCTOBRE EST LÀ ! | On va dévourer ou sursauter 👻🐔 (by honinbo_)",
-    "vues": 5,
+    "vues": 8,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/45b25206-bd4e-47e9-8193-4e397dc0db59/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-02",
     "duree": 60
@@ -176,17 +172,18 @@
    "succes": [],
    "jeux": [
     "Parisian Brasserie Simulator",
+    "Rise of the Tomb Raider",
+    "Cat Mail Co.",
     "Aniimo",
-    "Dead by Daylight",
-    "Paver: Tidy Up Together"
+    "Dead by Daylight"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/cristal578/clip/DependableHyperHamburgerYouWHY-CRfaF0pXxX8ocip7",
-    "titre": "Et une mort bête",
+    "url": "https://www.twitch.tv/cristal578/clip/JoyousHealthyMosquitoThunBeast-8sicnfCqWMFxk1bm",
+    "titre": "Il n'y a pas eu tant de chutes !",
     "vues": 5,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6956110b-cca8-49f5-8ed8-903bdc4f957c/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-09-30",
-    "duree": 18
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/3ae4465f-b063-49ee-8533-7ffe0a718f6c/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-07",
+    "duree": 31
    }
   },
   {
@@ -199,13 +196,28 @@
    "depuis": "2026-09-27",
    "live": null,
    "premierStream": "2024-08-12",
-   "succes": [],
+   "succes": [
+    {
+     "type": "palier",
+     "palier": 200,
+     "date": "2026-10-07"
+    }
+   ],
    "jeux": [
     "Minecraft",
     "Splatoon 3",
+    "Sprout Valley",
+    "Tomodachi Life: Living the Dream",
     "Gartic Phone"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/elegaming__/clip/DarkFragileOwlTBCheesePull-29JZ8V1-OnoQfJ2X",
+    "titre": "Quelle est cette odeur ? 🤔",
+    "vues": 1,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/88a97f39-3c80-4b2a-9bc5-780decee4822/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-07",
+    "duree": 37
+   }
   },
   {
    "login": "emmamarmotte",
@@ -218,7 +230,10 @@
    "live": null,
    "premierStream": "2025-05-25",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Disney Dreamlight Valley",
+    "Huglings"
+   ],
    "clip": null
   },
   {
@@ -235,14 +250,15 @@
    "jeux": [
     "DREDGE",
     "R.E.P.O.",
+    "Abiotic Factor",
     "Writing & Reading"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/galyssiane/clip/VenomousConcernedBeanKappaPride-K96CCi26InwgJaft",
-    "titre": "WzBot CLIP | Le mardi : c'est survie !!! (En tout cas, on essaie fort fort) avec @asakha (by galyssi",
-    "vues": 3,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/bc482839-88f9-4cb0-85ff-ca23c532c780/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-09-29",
+    "url": "https://www.twitch.tv/galyssiane/clip/PeacefulCorrectClintmullinsDatSheffy-sCxfdMMGoMYjN3yr",
+    "titre": "WzBot CLIP | Le mardi, c'est survie ! On tente de continuer à échapper aux monstres av (by galyssian",
+    "vues": 7,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5514ffa8-c585-4c37-ba1e-b92f7f455d06/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-06",
     "duree": 60
    }
   },
@@ -258,7 +274,8 @@
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
-    "Sovereign Tower"
+    "Sovereign Tower",
+    "Just Chatting"
    ],
    "clip": null
   },
@@ -272,21 +289,27 @@
    "depuis": "2026-09-20",
    "live": null,
    "premierStream": "2022-04-19",
-   "succes": [],
+   "succes": [
+    {
+     "type": "palier",
+     "palier": 700,
+     "date": "2026-10-06"
+    }
+   ],
    "jeux": [
-    "WheelMates",
-    "Sort Them Ducks",
     "Resonance: A Plague Tale Legacy",
     "Makers & Crafting",
+    "WheelMates",
+    "Sort Them Ducks",
     "BOMBANANA!"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/liiapin/clip/AbnegateAwkwardCockroachTwitchRaid-oJNQfU_16ApgE9zJ",
-    "titre": "oooooh un liiapin xD !!!",
-    "vues": 5,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/88ef575e-93f2-4d8d-9e4b-63762a8aaa2f/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-09-28",
-    "duree": 15
+    "url": "https://www.twitch.tv/liiapin/clip/AssiduousSourGerbilResidentSleeper-kswFrsF8RY1HBu53",
+    "titre": "Clip by inStreamly",
+    "vues": 1,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e7a6457e-2b5a-41d4-b67c-bb2abbde9c4d/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-04",
+    "duree": 25
    }
   },
   {
@@ -297,23 +320,35 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 12,
+    "jeu": "R.E.P.O.",
+    "titre": "🔞[DROP Perso]  entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-10-09T07:37:34Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
-   "succes": [],
+   "succes": [
+    {
+     "type": "palier",
+     "palier": 500,
+     "date": "2026-10-06"
+    }
+   ],
    "jeux": [
     "Dead by Daylight",
+    "7 Days to Die",
     "The Quarry",
-    "Just Chatting",
-    "Phasmophobia",
-    "DEVOUR"
+    "Baldur's Gate 3",
+    "Disney Dreamlight Valley"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/lilyth_minerva/clip/SavoryTawdryKumquatPipeHype-tJciW3_byy04A-bZ",
-    "titre": "le var de arco",
-    "vues": 12,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/dde75eee-17ff-4503-be87-2fb3775a9bdf/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-09-28",
-    "duree": 30
+    "url": "https://www.twitch.tv/lilyth_minerva/clip/TsundereSteamySwallowOMGScoots-RmZpbZpk2TT10ZNX",
+    "titre": "un des rare moment ou en observe lilyth sursautant 😇😇",
+    "vues": 6,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b882e0b8-5ad0-4144-90b2-b6f392e8b099/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-06",
+    "duree": 19
    }
   },
   {
@@ -336,12 +371,12 @@
    "login": "melpastelplay",
    "nom": "melpastelplay",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/3c3103aa-24ee-483b-8c2f-a1c1798ca53b-profile_image-300x300.png",
-   "bio": "Bienvenue sur MelPastelPlay 🌼 Ici on est en mode Gaming Chill , Cozy & Fun ! ✨N’hésite pas à parler dans le chat on peut échanger sur tout et surtout sur rien !! 😂 🐱 Alors GO ! Rejoins la Team Pastel 👏❤️",
+   "bio": "Bienvenue sur MelPastelPlay 🌼 Ici c’est du Cozy tout doux le jour et des jeux d’horreurs le soir ! ✨ N’hésite pas à parler dans le chat on peut échanger sur tout et surtout sur rien !! 😂 🐱 Alors GO ! Rejoins la Team Pastel 👏❤️",
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
    "live": null,
-   "premierStream": null,
+   "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
     "Aniimo",
@@ -349,12 +384,12 @@
     "Poppy Playtime: Chapter 2 - Fly in a Web"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/melpastelplay/clip/StylishPowerfulPorcupineOhMyDog-h4Vci-BYZfaF3kj-",
-    "titre": "Noooon",
-    "vues": 3,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a396a9ce-9669-4c29-9009-050d2df799fb/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-09-28",
-    "duree": 36
+    "url": "https://www.twitch.tv/melpastelplay/clip/SeductiveHotGullKreygasm-I6h8yD15zA7bQQDH",
+    "titre": "poppy chapitre 3",
+    "vues": 1,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/ceb6ff0c-f7dd-4fd4-b0c7-707f397a0302/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-05",
+    "duree": 50
    }
   },
   {
@@ -369,7 +404,8 @@
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
-    "Apex Legends"
+    "Apex Legends",
+    "Nine Sols"
    ],
    "clip": {
     "url": "https://www.twitch.tv/morganokonrin/clip/BrainyHomelyHedgehogUncleNox-LckNAEri0NDM8R4h",
@@ -393,15 +429,17 @@
    "succes": [],
    "jeux": [
     "The Sims 4",
-    "R.E.P.O."
+    "Bily'Sine",
+    "R.E.P.O.",
+    "Horror Game"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/mysti94/clip/UgliestResourcefulMoonKappaPride-1lxZqV2tbRNN38Pp",
-    "titre": "Touc",
-    "vues": 12,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a91b0811-86b2-40a4-bfde-d2cbbf419357/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-09-28",
-    "duree": 12
+    "url": "https://www.twitch.tv/mysti94/clip/GeniusFamousCocoaPhilosoraptor-DOH3-sReOrfAjcUX",
+    "titre": "WOOOHOUHOU",
+    "vues": 7,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/67673dc3-2bd6-4d41-99ea-33399c238c1d/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-06",
+    "duree": 11
    }
   },
   {
@@ -414,18 +452,25 @@
    "depuis": "2026-09-20",
    "live": null,
    "premierStream": "2025-09-24",
-   "succes": [],
+   "succes": [
+    {
+     "type": "palier",
+     "palier": 350,
+     "date": "2026-10-08"
+    }
+   ],
    "jeux": [
     "SONG OF HORROR",
+    "MECCHA CHAMELEON",
     "R.E.P.O."
    ],
    "clip": {
-    "url": "https://www.twitch.tv/oko_san_/clip/RoughUninterestedDogJebaited-uA36F2iwIFtBkCIG",
-    "titre": "WzBot CLIP | [FR] On est pas la pour se REPOser ! @Calo_VT @Mysti94 [!bs !steam !insta ! (by bestimo",
-    "vues": 2,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/97cd2631-7b4d-4b17-a917-9e38201370ba/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-01",
-    "duree": 60
+    "url": "https://www.twitch.tv/oko_san_/clip/DepressedBovineFrogShazBotstix-eSND5ygqXaUl2VfS",
+    "titre": "Bad timing pour Nyandou",
+    "vues": 21,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/32fc2d26-3328-4731-93d8-80511155150e/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-05",
+    "duree": 41
    }
   },
   {
@@ -441,6 +486,7 @@
    "succes": [],
    "jeux": [
     "The Sims 4",
+    "Animal Crossing: New Horizons",
     "Just Chatting"
    ],
    "clip": null
@@ -453,14 +499,8 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 2,
-    "jeu": "The Witcher 3: Wild Hunt Remastered",
-    "titre": "A la découverte du beau et sombre monde de Geralt [DROP ✅] !discord",
-    "depuis": "2026-10-05T18:12:10Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_r3skyo-440x248.jpg"
-   },
-   "premierStream": null,
+   "live": null,
+   "premierStream": "2023-03-23",
    "succes": [],
    "jeux": [
     "The Witcher 3: Wild Hunt Remastered"
@@ -505,5 +545,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-05T22:32:22.641Z"
+ "maj": "2026-10-09T10:07:17.415Z"
 }
