@@ -7,7 +7,7 @@
   "membres": 24,
   "affilies": 21,
   "nouveaux30": 24,
-  "heuresLive30": 349,
+  "heuresLive30": 353,
   "followsGagnes30": 345,
   "periode": {
    "du": "2026-09-23",
@@ -121,13 +121,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 9,
-    "jeu": "R.E.P.O.",
-    "titre": "🔴 R.E.P.O. | La Team du Week-end est de retour... et rien n'est en sécurité ! 😆",
-    "depuis": "2026-10-10T12:01:23Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -138,10 +132,10 @@
    ],
    "jeux": [
     "Disney Dreamlight Valley",
+    "R.E.P.O.",
     "The Quarry",
     "DEVOUR",
-    "Raft",
-    "R.E.P.O."
+    "Raft"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/BillowingCallousCamelMrDestructoid-FBOt7FaJaIYZhI5Q",
@@ -315,13 +309,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 2,
-    "jeu": "Resonance: A Plague Tale Legacy",
-    "titre": "🐰Ils sont où les rats?",
-    "depuis": "2026-10-10T11:56:06Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -430,13 +418,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 2,
-    "jeu": "Clair Obscur: Expedition 33",
-    "titre": "Je me lance dans cette découverte !",
-    "depuis": "2026-10-10T13:31:48Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -584,5 +566,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-10T15:07:10.860Z"
+ "maj": "2026-10-10T16:07:15.548Z"
 }
