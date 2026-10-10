@@ -246,7 +246,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": null,
-   "premierStream": null,
+   "premierStream": "2024-08-10",
    "succes": [],
    "jeux": [],
    "clip": null
@@ -558,5 +558,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-10T01:07:19.816Z"
+ "maj": "2026-10-10T02:07:12.980Z"
 }
