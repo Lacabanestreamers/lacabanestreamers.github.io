@@ -7,7 +7,7 @@
   "membres": 24,
   "affilies": 21,
   "nouveaux30": 24,
-  "heuresLive30": 341,
+  "heuresLive30": 343,
   "followsGagnes30": 345,
   "periode": {
    "du": "2026-09-23",
@@ -122,7 +122,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "R.E.P.O.",
     "titre": "🔴 R.E.P.O. | La Team du Week-end est de retour... et rien n'est en sécurité ! 😆",
     "depuis": "2026-10-10T12:01:23Z",
@@ -141,7 +141,7 @@
     "The Quarry",
     "DEVOUR",
     "Raft",
-    "SO CLOSE"
+    "R.E.P.O."
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/BillowingCallousCamelMrDestructoid-FBOt7FaJaIYZhI5Q",
@@ -310,7 +310,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "Makers & Crafting",
     "titre": "🐰Maquette harry potter la grande salle, fin ?",
     "depuis": "2026-10-10T11:56:06Z",
@@ -397,7 +397,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Snack Factory Together",
+    "titre": "Petit live Chill, viens on papote...   !discord !regles !don !wishlist",
+    "depuis": "2026-10-10T13:17:22Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -423,7 +429,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "Clair Obscur: Expedition 33",
+    "titre": "Je me lance dans cette découverte !",
+    "depuis": "2026-10-10T13:31:48Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
+   },
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -570,5 +582,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-10T13:07:14.406Z"
+ "maj": "2026-10-10T13:33:00.454Z"
 }
