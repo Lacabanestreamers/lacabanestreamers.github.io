@@ -7,7 +7,7 @@
   "membres": 25,
   "affilies": 22,
   "nouveaux30": 25,
-  "heuresLive30": 395,
+  "heuresLive30": 396,
   "followsGagnes30": 363,
   "periode": {
    "du": "2026-09-23",
@@ -241,7 +241,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 38,
+    "viewers": 24,
     "jeu": "Art",
     "titre": "☕🍄 Ambiance plaid & coloriage 🖍️🍂 | !lurk !clip !commandes",
     "depuis": "2026-10-11T15:31:41Z",
@@ -321,7 +321,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Games + Demos",
+    "titre": "SOIRÉE TEST JEUX 🎮💫 : On joue à Beer Manufacture Simulator, Anomaly President & Sovereign Tower 🎯| Découverte Nouveauté jeu-vidéo",
+    "depuis": "2026-10-11T18:54:26Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
+   },
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
@@ -588,5 +594,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-11T18:07:11.819Z"
+ "maj": "2026-10-11T19:07:12.741Z"
 }
