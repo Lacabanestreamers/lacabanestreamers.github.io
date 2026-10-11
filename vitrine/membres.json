@@ -4,9 +4,9 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 24,
-  "affilies": 21,
-  "nouveaux30": 24,
+  "membres": 25,
+  "affilies": 22,
+  "nouveaux30": 25,
   "heuresLive30": 376,
   "followsGagnes30": 361,
   "periode": {
@@ -178,7 +178,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 10,
+    "viewers": 11,
     "jeu": "Dead by Daylight",
     "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
     "depuis": "2026-10-11T07:42:45Z",
@@ -261,7 +261,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] [RDR2] 👻 LA VALLÉE EST HANTÉE ! 🎃 | Événement Halloween",
     "depuis": "2026-10-11T08:03:56Z",
@@ -302,6 +302,20 @@
    }
   },
   {
+   "login": "hagosan",
+   "nom": "Hagosan",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/ec8488c3-09e4-4a21-b527-53a04251bda5-profile_image-300x300.png",
+   "bio": "🌻​ Je dessine rarement, je joue beaucoup, je brainfart tout le temps 🌻​                                                                                                           ❕ !commandes !lurk !wishlist !gameinfos 📧 ​Mail pro : purple.hagosan@gmail.com",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-11",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
+   "clip": null
+  },
+  {
    "login": "laelya_",
    "nom": "Laelya_",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/573b258c-b832-4e27-b719-827121afc530-profile_image-300x300.png",
@@ -327,7 +341,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "FragPunk",
     "titre": "🐰Clic clic pan pan pan",
     "depuis": "2026-10-11T08:57:24Z",
@@ -588,5 +602,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-11T09:21:55.262Z"
+ "maj": "2026-10-11T09:49:05.273Z"
 }
