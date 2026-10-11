@@ -7,7 +7,7 @@
   "membres": 24,
   "affilies": 21,
   "nouveaux30": 24,
-  "heuresLive30": 369,
+  "heuresLive30": 371,
   "followsGagnes30": 361,
   "periode": {
    "du": "2026-09-23",
@@ -178,7 +178,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 2,
+    "viewers": 7,
     "jeu": "Dead by Daylight",
     "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
     "depuis": "2026-10-11T07:42:45Z",
@@ -187,8 +187,8 @@
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
-    "Cat Mail Co.",
     "Dead by Daylight",
+    "Cat Mail Co.",
     "Aniimo",
     "Parisian Brasserie Simulator",
     "Rise of the Tomb Raider"
@@ -261,7 +261,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] [RDR2] 👻 LA VALLÉE EST HANTÉE ! 🎃 | Événement Halloween",
     "depuis": "2026-10-11T08:03:56Z",
@@ -269,7 +269,9 @@
    },
    "premierStream": "2024-08-10",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Disney Dreamlight Valley"
+   ],
    "clip": null
   },
   {
@@ -390,7 +392,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Dead Rising 3",
+    "titre": "Singe savoir zombie mort",
+    "depuis": "2026-10-11T08:09:14Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
+   },
    "premierStream": "2025-01-08",
    "succes": [],
    "jeux": [
@@ -574,5 +582,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-11T08:07:13.689Z"
+ "maj": "2026-10-11T08:40:40.005Z"
 }
