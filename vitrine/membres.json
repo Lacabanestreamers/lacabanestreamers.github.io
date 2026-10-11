@@ -7,7 +7,7 @@
   "membres": 25,
   "affilies": 22,
   "nouveaux30": 25,
-  "heuresLive30": 384,
+  "heuresLive30": 387,
   "followsGagnes30": 361,
   "periode": {
    "du": "2026-09-23",
@@ -52,9 +52,9 @@
    "staff": false,
    "depuis": "2026-09-22",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "Pao Pao",
-    "titre": "Chill sur Outbound avec Hanao et Rayth",
+    "titre": "Chill sur la démo de Pao Pao avec Hanao et Rayth",
     "depuis": "2026-10-11T12:00:31Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asalie-440x248.jpg"
    },
@@ -67,7 +67,8 @@
     }
    ],
    "jeux": [
-    "Just Chatting"
+    "Just Chatting",
+    "Pao Pao"
    ],
    "clip": null
   },
@@ -186,7 +187,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "Parisian Bistro Simulator",
     "titre": "Un peu de Demo et let's go sur Parisian Bistro",
     "depuis": "2026-10-11T12:30:28Z",
@@ -598,5 +599,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-11T14:07:13.954Z"
+ "maj": "2026-10-11T15:07:12.975Z"
 }
