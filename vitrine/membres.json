@@ -7,7 +7,7 @@
   "membres": 25,
   "affilies": 22,
   "nouveaux30": 25,
-  "heuresLive30": 398,
+  "heuresLive30": 400,
   "followsGagnes30": 363,
   "periode": {
    "du": "2026-09-23",
@@ -241,7 +241,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 22,
+    "viewers": 23,
     "jeu": "Disney Dreamlight Valley",
     "titre": "☕🍄 Ambiance plaid & DDV 🖍️🍂 | !lurk !clip !commandes",
     "depuis": "2026-10-11T15:31:41Z",
@@ -322,7 +322,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 13,
+    "viewers": 12,
     "jeu": "Games + Demos",
     "titre": "SOIRÉE TEST JEUX 🎮💫 : On joue à Beer Manufacture Simulator, Anomaly President & Sovereign Tower 🎯| Découverte Nouveauté jeu-vidéo",
     "depuis": "2026-10-11T18:54:26Z",
@@ -595,5 +595,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-11T20:07:13.426Z"
+ "maj": "2026-10-11T20:10:29.673Z"
 }
