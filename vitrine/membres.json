@@ -7,7 +7,7 @@
   "membres": 25,
   "affilies": 22,
   "nouveaux30": 25,
-  "heuresLive30": 416,
+  "heuresLive30": 420,
   "followsGagnes30": 373,
   "periode": {
    "du": "2026-09-23",
@@ -141,7 +141,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 10,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🌹 DISNEY DREAMLIGHT VALLEY | Enfin La Belle et la Bête ! + DreamSnaps 📸✨",
     "depuis": "2026-10-12T11:47:01Z",
@@ -254,7 +254,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 11,
     "jeu": "Disney Dreamlight Valley",
     "titre": "☕🍄 Ambiance plaid & DDV 🖍️🍂 | !lurk !clip !commandes",
     "depuis": "2026-10-12T12:02:07Z",
@@ -284,7 +284,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "[FR] [HGL] 🔮 Eleanor Silverwood : L'héritière des secrets de Poudlard 🏰 | Hogwarts Legacy",
+    "depuis": "2026-10-12T12:29:57Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
+   },
    "premierStream": "2024-08-10",
    "succes": [],
    "jeux": [
@@ -392,7 +398,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 12,
+    "jeu": "AION 2",
+    "titre": "🔞[DROP] Aion avec une partie de  la famille !! Entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-10-12T12:21:35Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -425,13 +437,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 4,
-    "jeu": "FTL: Faster Than Light",
-    "titre": "Plan B",
-    "depuis": "2026-10-12T08:00:11Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-08",
    "succes": [],
    "jeux": [
@@ -476,13 +482,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 4,
-    "jeu": "No Man's Sky",
-    "titre": "De retour sur NMS !",
-    "depuis": "2026-10-12T09:19:02Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -624,5 +624,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-12T12:07:13.486Z"
+ "maj": "2026-10-12T13:07:17.228Z"
 }
