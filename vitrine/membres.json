@@ -7,7 +7,7 @@
   "membres": 25,
   "affilies": 22,
   "nouveaux30": 25,
-  "heuresLive30": 438,
+  "heuresLive30": 441,
   "followsGagnes30": 385,
   "periode": {
    "du": "2026-09-23",
@@ -52,7 +52,7 @@
    "staff": false,
    "depuis": "2026-09-22",
    "live": {
-    "viewers": 8,
+    "viewers": 7,
     "jeu": "Fields of Mistria",
     "titre": "Petite session FoM",
     "depuis": "2026-10-12T17:30:11Z",
@@ -222,7 +222,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Sword Art Online: Hollow Realization",
     "titre": "⚔️SAO HR ~ On continue l'aventure ! - !réseaux",
     "depuis": "2026-10-12T17:16:25Z",
@@ -241,7 +241,7 @@
     "Splatoon 3",
     "Sprout Valley",
     "Tomodachi Life: Living the Dream",
-    "Gartic Phone"
+    "Sword Art Online: Hollow Realization"
    ],
    "clip": {
     "url": "https://www.twitch.tv/elegaming__/clip/MagnificentCautiousBunnyFailFish-0xnz5Xfx4NPTzt-c",
@@ -301,21 +301,15 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 10,
-    "jeu": "Writing & Reading",
-    "titre": "Live lecture ! Frankenstein Partie 3 ! Venez vous poser au calme et commencer la semaine en douceur <3",
-    "depuis": "2026-10-12T17:50:41Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
     "DREDGE",
     "R.E.P.O.",
+    "Writing & Reading",
     "Abiotic Factor",
-    "Wyldheart",
-    "Writing & Reading"
+    "Wyldheart"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/BitterElatedMinkPlanking-FkXmeU1xHr6W1aRq",
@@ -450,7 +444,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Poppy Playtime: Chapter 3 - Deep Sleep",
+    "titre": "Lundi HORREUR // J'ai peur, viens m'aider !!!   !discord !regles !don !wishlist",
+    "depuis": "2026-10-12T18:10:52Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -619,5 +619,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-12T18:07:18.490Z"
+ "maj": "2026-10-12T19:07:11.654Z"
 }
