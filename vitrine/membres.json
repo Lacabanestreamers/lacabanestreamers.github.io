@@ -7,7 +7,7 @@
   "membres": 25,
   "affilies": 22,
   "nouveaux30": 25,
-  "heuresLive30": 480,
+  "heuresLive30": 485,
   "followsGagnes30": 388,
   "periode": {
    "du": "2026-09-23",
@@ -83,7 +83,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 10,
     "jeu": "Graveyard Keeper II",
     "titre": "dressage de zombies pour bosser à notre place",
     "depuis": "2026-10-13T12:27:55Z",
@@ -149,7 +149,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 13,
     "jeu": "DEVOUR",
     "titre": "👻 DEVOUR : 3 filles, 1 démon et aucune expérience ou très peu !",
     "depuis": "2026-10-13T18:31:44Z",
@@ -165,9 +165,9 @@
    ],
    "jeux": [
     "Disney Dreamlight Valley",
+    "DEVOUR",
     "R.E.P.O.",
     "The Quarry",
-    "DEVOUR",
     "Raft"
    ],
    "clip": {
@@ -308,7 +308,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Terraria",
+    "titre": "Le mardi c'est survie ! avec @asakha ! ( ce stream est réalisé par des professionnels, ne pas reproduire à la maison !)",
+    "depuis": "2026-10-13T19:22:55Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -350,9 +356,9 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 12,
-    "jeu": "Planet Zoo 2",
-    "titre": "APREM' AU TOP 🍿 : On découvre le nouveau Planet Zoo 2, puis Réact à 90 Day Fiancé à 20H | Découverte Test FR Nouveauté - Jeu-vidéo français",
+    "viewers": 11,
+    "jeu": "Just Chatting",
+    "titre": "RÉACT🍿 : On regarde l'émission 90 Day Fiancé USA, avec des révélations incroyables 😱 | React émissions, reportages & docus sur YouTube",
     "depuis": "2026-10-13T15:18:28Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
    },
@@ -504,7 +510,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "The Sims 4",
+    "titre": "[FR] ~ Sims 4 - Challenge des Festivités- Halloween #2 ~",
+    "depuis": "2026-10-13T19:11:21Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
+   },
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -531,7 +543,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 6,
     "jeu": "DEVOUR",
     "titre": "[FR] On grille des chèvres entre Girls @ChezElodie @aemelis [!bs !steam !insta !discord ]",
     "depuis": "2026-10-13T18:24:23Z",
@@ -633,5 +645,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-13T19:07:15.888Z"
+ "maj": "2026-10-13T20:07:14.622Z"
 }
