@@ -7,7 +7,7 @@
   "membres": 25,
   "affilies": 22,
   "nouveaux30": 25,
-  "heuresLive30": 460,
+  "heuresLive30": 462,
   "followsGagnes30": 392,
   "periode": {
    "du": "2026-09-23",
@@ -109,18 +109,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 1,
-    "jeu": "Leafy Corner",
-    "titre": "🪴LEAFY CORNER • On ouvre un magasin de fleurs ?? • Démo 💗",
-    "depuis": "2026-10-13T08:02:06Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bichoune_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-04",
    "succes": [],
    "jeux": [
-    "Pokémon Mystery Dungeon: Explorers of Sky",
-    "Leafy Corner"
+    "Leafy Corner",
+    "Pokémon Mystery Dungeon: Explorers of Sky"
    ],
    "clip": null
   },
@@ -389,7 +383,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 20,
+    "viewers": 22,
     "jeu": "AION 2",
     "titre": "🔞[DROP] On suit les envies aujourd'hui !! Entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-13T06:25:43Z",
@@ -404,8 +398,8 @@
     }
    ],
    "jeux": [
-    "Dead by Daylight",
     "AION 2",
+    "Dead by Daylight",
     "7 Days to Die",
     "R.E.P.O.",
     "The Quarry"
@@ -614,5 +608,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-13T10:07:16.237Z"
+ "maj": "2026-10-13T11:07:14.837Z"
 }
