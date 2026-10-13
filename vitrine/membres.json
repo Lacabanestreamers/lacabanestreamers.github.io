@@ -7,7 +7,7 @@
   "membres": 25,
   "affilies": 22,
   "nouveaux30": 25,
-  "heuresLive30": 462,
+  "heuresLive30": 463,
   "followsGagnes30": 392,
   "periode": {
    "du": "2026-09-23",
@@ -382,13 +382,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 22,
-    "jeu": "AION 2",
-    "titre": "🔞[DROP] On suit les envies aujourd'hui !! Entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-10-13T06:25:43Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -608,5 +602,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-13T11:07:14.837Z"
+ "maj": "2026-10-13T12:07:18.069Z"
 }
