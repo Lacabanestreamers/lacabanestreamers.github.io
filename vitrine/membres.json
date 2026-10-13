@@ -7,7 +7,7 @@
   "membres": 25,
   "affilies": 22,
   "nouveaux30": 25,
-  "heuresLive30": 449,
+  "heuresLive30": 450,
   "followsGagnes30": 389,
   "periode": {
    "du": "2026-09-23",
@@ -109,7 +109,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Leafy Corner",
+    "titre": "🪴LEAFY CORNER • On ouvre un magasin de fleurs ?? • Démo 💗",
+    "depuis": "2026-10-13T08:02:06Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bichoune_-440x248.jpg"
+   },
    "premierStream": "2025-10-04",
    "succes": [],
    "jeux": [
@@ -349,7 +355,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Resonance: A Plague Tale Legacy",
     "titre": "🐰Ils sont où les rats ?",
     "depuis": "2026-10-13T07:01:18Z",
@@ -388,7 +394,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 15,
+    "viewers": 16,
     "jeu": "AION 2",
     "titre": "🔞[DROP] On suit les envies aujourd'hui !! Entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-13T06:25:43Z",
@@ -556,7 +562,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 15,
+    "viewers": 21,
     "jeu": "Animal Crossing: New Horizons",
     "titre": "ACNH [FR] | Bienvenue à Dinos'Land 🦖 On continue le déco de l'île toussa toussa🏝️| !discord !lurk !habitants",
     "depuis": "2026-10-13T07:11:14Z",
@@ -625,5 +631,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-13T07:37:40.127Z"
+ "maj": "2026-10-13T08:07:17.497Z"
 }
