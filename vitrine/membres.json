@@ -7,7 +7,7 @@
   "membres": 25,
   "affilies": 22,
   "nouveaux30": 25,
-  "heuresLive30": 492,
+  "heuresLive30": 497,
   "followsGagnes30": 388,
   "periode": {
    "du": "2026-09-23",
@@ -83,7 +83,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "Brotato",
     "titre": "On se bro le tato pour finir la soirée",
     "depuis": "2026-10-13T12:27:55Z",
@@ -344,7 +344,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 16,
+    "viewers": 15,
     "jeu": "Just Chatting",
     "titre": "RÉACT🍿 : On regarde l'émission 90 Day Fiancé USA, avec des révélations incroyables 😱 | React émissions, reportages & docus sur YouTube",
     "depuis": "2026-10-13T15:18:28Z",
@@ -354,8 +354,8 @@
    "succes": [],
    "jeux": [
     "Sovereign Tower",
-    "Planet Zoo 2",
     "Just Chatting",
+    "Planet Zoo 2",
     "Games + Demos"
    ],
    "clip": null
@@ -499,7 +499,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "The Sims 4",
     "titre": "[FR] ~ Sims 4 - Challenge des Festivités- Halloween #2 ~",
     "depuis": "2026-10-13T19:11:21Z",
@@ -633,5 +633,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-13T21:07:16.279Z"
+ "maj": "2026-10-13T21:10:40.766Z"
 }
