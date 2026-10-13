@@ -7,8 +7,8 @@
   "membres": 25,
   "affilies": 22,
   "nouveaux30": 25,
-  "heuresLive30": 455,
-  "followsGagnes30": 389,
+  "heuresLive30": 460,
+  "followsGagnes30": 392,
   "periode": {
    "du": "2026-09-23",
    "au": "2026-10-13"
@@ -110,7 +110,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Leafy Corner",
     "titre": "🪴LEAFY CORNER • On ouvre un magasin de fleurs ?? • Démo 💗",
     "depuis": "2026-10-13T08:02:06Z",
@@ -395,7 +395,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 19,
+    "viewers": 20,
     "jeu": "AION 2",
     "titre": "🔞[DROP] On suit les envies aujourd'hui !! Entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-13T06:25:43Z",
@@ -563,7 +563,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 13,
+    "viewers": 16,
     "jeu": "Animal Crossing: New Horizons",
     "titre": "ACNH [FR] | Bienvenue à Dinos'Land 🦖 On continue le déco de l'île toussa toussa🏝️| !discord !lurk !habitants",
     "depuis": "2026-10-13T07:11:14Z",
@@ -632,5 +632,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-13T09:07:15.254Z"
+ "maj": "2026-10-13T09:26:00.757Z"
 }
