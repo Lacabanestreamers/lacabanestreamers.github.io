@@ -110,7 +110,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "Leafy Corner",
     "titre": "🪴LEAFY CORNER • On ouvre un magasin de fleurs ?? • Démo 💗",
     "depuis": "2026-10-13T08:02:06Z",
@@ -355,13 +355,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 3,
-    "jeu": "Resonance: A Plague Tale Legacy",
-    "titre": "🐰Ils sont où les rats ?",
-    "depuis": "2026-10-13T07:01:18Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -451,13 +445,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": {
-    "viewers": 7,
-    "jeu": "Aniimo",
-    "titre": "On chill ensemble sur Aniimo, objectif 130 follows !!!   !discord !regles !don !wishlist",
-    "depuis": "2026-10-13T06:56:06Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -562,13 +550,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 16,
-    "jeu": "Animal Crossing: New Horizons",
-    "titre": "ACNH [FR] | Bienvenue à Dinos'Land 🦖 On continue le déco de l'île toussa toussa🏝️| !discord !lurk !habitants",
-    "depuis": "2026-10-13T07:11:14Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-10",
    "succes": [],
    "jeux": [
@@ -632,5 +614,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-13T09:26:00.757Z"
+ "maj": "2026-10-13T10:07:16.237Z"
 }
