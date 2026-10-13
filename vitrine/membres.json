@@ -8,10 +8,10 @@
   "affilies": 22,
   "nouveaux30": 25,
   "heuresLive30": 446,
-  "followsGagnes30": 385,
+  "followsGagnes30": 389,
   "periode": {
    "du": "2026-09-23",
-   "au": "2026-10-12"
+   "au": "2026-10-13"
   }
  },
  "agenda": [],
@@ -348,7 +348,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "Resonance: A Plague Tale Legacy",
+    "titre": "🐰Ils sont où les rats ?",
+    "depuis": "2026-10-13T07:01:18Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
+   },
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -381,7 +387,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 12,
+    "jeu": "AION 2",
+    "titre": "🔞[DROP] On suit les envies aujourd'hui !! Entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-10-13T06:25:43Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -432,7 +444,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "Aniimo",
+    "titre": "On chill ensemble sur Aniimo, objectif 120 follows !!!   !discord !regles !don !wishlist",
+    "depuis": "2026-10-13T06:56:06Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -601,5 +619,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-13T01:07:24.782Z"
+ "maj": "2026-10-13T07:07:14.205Z"
 }
