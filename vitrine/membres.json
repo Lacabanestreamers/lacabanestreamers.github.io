@@ -7,7 +7,7 @@
   "membres": 25,
   "affilies": 22,
   "nouveaux30": 25,
-  "heuresLive30": 485,
+  "heuresLive30": 492,
   "followsGagnes30": 388,
   "periode": {
    "du": "2026-09-23",
@@ -83,9 +83,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
-    "jeu": "Graveyard Keeper II",
-    "titre": "dressage de zombies pour bosser à notre place",
+    "viewers": 5,
+    "jeu": "Brotato",
+    "titre": "On se bro le tato pour finir la soirée",
     "depuis": "2026-10-13T12:27:55Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
    },
@@ -149,7 +149,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
+    "viewers": 6,
     "jeu": "DEVOUR",
     "titre": "👻 DEVOUR : 3 filles, 1 démon et aucune expérience ou très peu !",
     "depuis": "2026-10-13T18:31:44Z",
@@ -228,13 +228,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 2,
-    "jeu": "Sprout Valley",
-    "titre": "😸Sprout Valley ~ On continue notre petite vie ! - !réseaux",
-    "depuis": "2026-10-13T17:03:42Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -308,13 +302,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 5,
-    "jeu": "Terraria",
-    "titre": "Le mardi c'est survie ! avec @asakha ! ( ce stream est réalisé par des professionnels, ne pas reproduire à la maison !)",
-    "depuis": "2026-10-13T19:22:55Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -356,7 +344,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 11,
+    "viewers": 16,
     "jeu": "Just Chatting",
     "titre": "RÉACT🍿 : On regarde l'émission 90 Day Fiancé USA, avec des révélations incroyables 😱 | React émissions, reportages & docus sur YouTube",
     "depuis": "2026-10-13T15:18:28Z",
@@ -511,7 +499,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 3,
     "jeu": "The Sims 4",
     "titre": "[FR] ~ Sims 4 - Challenge des Festivités- Halloween #2 ~",
     "depuis": "2026-10-13T19:11:21Z",
@@ -543,7 +531,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 4,
     "jeu": "DEVOUR",
     "titre": "[FR] On grille des chèvres entre Girls @ChezElodie @aemelis [!bs !steam !insta !discord ]",
     "depuis": "2026-10-13T18:24:23Z",
@@ -562,7 +550,7 @@
     "MECCHA CHAMELEON",
     "Art",
     "The Other Side",
-    "R.E.P.O."
+    "DEVOUR"
    ],
    "clip": {
     "url": "https://www.twitch.tv/oko_san_/clip/OilyObeseSangSquadGoals-539zFeDnCtuy0Txo",
@@ -645,5 +633,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-13T20:07:14.622Z"
+ "maj": "2026-10-13T21:07:16.279Z"
 }
