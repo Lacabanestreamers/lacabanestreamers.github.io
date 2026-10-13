@@ -7,7 +7,7 @@
   "membres": 25,
   "affilies": 22,
   "nouveaux30": 25,
-  "heuresLive30": 450,
+  "heuresLive30": 455,
   "followsGagnes30": 389,
   "periode": {
    "du": "2026-09-23",
@@ -119,7 +119,8 @@
    "premierStream": "2025-10-04",
    "succes": [],
    "jeux": [
-    "Pokémon Mystery Dungeon: Explorers of Sky"
+    "Pokémon Mystery Dungeon: Explorers of Sky",
+    "Leafy Corner"
    ],
    "clip": null
   },
@@ -394,7 +395,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 16,
+    "viewers": 17,
     "jeu": "AION 2",
     "titre": "🔞[DROP] On suit les envies aujourd'hui !! Entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-13T06:25:43Z",
@@ -451,7 +452,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "Aniimo",
     "titre": "On chill ensemble sur Aniimo, objectif 130 follows !!!   !discord !regles !don !wishlist",
     "depuis": "2026-10-13T06:56:06Z",
@@ -562,7 +563,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 21,
+    "viewers": 15,
     "jeu": "Animal Crossing: New Horizons",
     "titre": "ACNH [FR] | Bienvenue à Dinos'Land 🦖 On continue le déco de l'île toussa toussa🏝️| !discord !lurk !habitants",
     "depuis": "2026-10-13T07:11:14Z",
@@ -631,5 +632,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-13T08:07:17.497Z"
+ "maj": "2026-10-13T08:47:05.164Z"
 }
