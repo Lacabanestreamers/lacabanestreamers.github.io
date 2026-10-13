@@ -83,7 +83,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "Brotato",
     "titre": "On se bro le tato pour finir la soirée",
     "depuis": "2026-10-13T12:27:55Z",
@@ -148,13 +148,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 6,
-    "jeu": "DEVOUR",
-    "titre": "👻 DEVOUR : 3 filles, 1 démon et aucune expérience ou très peu !",
-    "depuis": "2026-10-13T18:31:44Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -343,13 +337,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 15,
-    "jeu": "Just Chatting",
-    "titre": "RÉACT🍿 : On regarde l'émission 90 Day Fiancé USA, avec des révélations incroyables 😱 | React émissions, reportages & docus sur YouTube",
-    "depuis": "2026-10-13T15:18:28Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
@@ -498,13 +486,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 4,
-    "jeu": "The Sims 4",
-    "titre": "[FR] ~ Sims 4 - Challenge des Festivités- Halloween #2 ~",
-    "depuis": "2026-10-13T19:11:21Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -530,13 +512,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 4,
-    "jeu": "DEVOUR",
-    "titre": "[FR] On grille des chèvres entre Girls @ChezElodie @aemelis [!bs !steam !insta !discord ]",
-    "depuis": "2026-10-13T18:24:23Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -633,5 +609,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-13T21:10:40.766Z"
+ "maj": "2026-10-13T22:07:15.689Z"
 }
