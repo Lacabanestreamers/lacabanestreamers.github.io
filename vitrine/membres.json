@@ -7,7 +7,7 @@
   "membres": 28,
   "affilies": 25,
   "nouveaux30": 28,
-  "heuresLive30": 535,
+  "heuresLive30": 538,
   "followsGagnes30": 407,
   "periode": {
    "du": "2026-09-23",
@@ -90,7 +90,7 @@
    "staff": false,
    "depuis": "2026-09-22",
    "live": {
-    "viewers": 3,
+    "viewers": 11,
     "jeu": "Cat Mail Co.",
     "titre": "Enfin le stream gurlz",
     "depuis": "2026-10-14T18:02:29Z",
@@ -107,8 +107,8 @@
    "jeux": [
     "Fields of Mistria",
     "Pao Pao",
-    "Just Chatting",
-    "Cat Mail Co."
+    "Cat Mail Co.",
+    "Just Chatting"
    ],
    "clip": {
     "url": "https://www.twitch.tv/asalie/clip/BrightGleamingSangBigBrother-xaT3LHvbNBmrrCTd",
@@ -241,13 +241,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": {
-    "viewers": 2,
-    "jeu": "Rise of the Tomb Raider",
-    "titre": "🏺 Exploration de tombes perdues sur Rise of the Tomb Raider ! (On est à 33%)",
-    "depuis": "2026-10-14T18:28:04Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -308,9 +302,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
-    "jeu": "Huglings",
-    "titre": "🧸✨ NOUVEAU JEU ! Partons à la rencontre des Huglings 💕 | !lurk !clip !commandes",
+    "viewers": 10,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "🧸✨ on fini la soirée avec DDV 💕 | !lurk !clip !commandes",
     "depuis": "2026-10-14T18:34:03Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
    },
@@ -318,8 +312,8 @@
    "succes": [],
    "jeux": [
     "Disney Dreamlight Valley",
-    "Art",
-    "Huglings"
+    "Huglings",
+    "Art"
    ],
    "clip": {
     "url": "https://www.twitch.tv/emmamarmotte/clip/IcySweetPastaBrokeBack-8zOw0ROv6ljw1aZ7",
@@ -688,5 +682,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-14T20:07:23.271Z"
+ "maj": "2026-10-14T21:07:20.136Z"
 }
