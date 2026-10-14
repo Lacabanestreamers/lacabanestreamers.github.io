@@ -4,10 +4,10 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 28,
-  "affilies": 25,
-  "nouveaux30": 28,
-  "heuresLive30": 538,
+  "membres": 29,
+  "affilies": 26,
+  "nouveaux30": 29,
+  "heuresLive30": 540,
   "followsGagnes30": 407,
   "periode": {
    "du": "2026-09-23",
@@ -89,13 +89,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-22",
-   "live": {
-    "viewers": 11,
-    "jeu": "Cat Mail Co.",
-    "titre": "Enfin le stream gurlz",
-    "depuis": "2026-10-14T18:02:29Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asalie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-07-27",
    "succes": [
     {
@@ -106,8 +100,8 @@
    ],
    "jeux": [
     "Fields of Mistria",
-    "Pao Pao",
     "Cat Mail Co.",
+    "Pao Pao",
     "Just Chatting"
    ],
    "clip": {
@@ -301,13 +295,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 10,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "🧸✨ on fini la soirée avec DDV 💕 | !lurk !clip !commandes",
-    "depuis": "2026-10-14T18:34:03Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
@@ -377,6 +365,20 @@
    "depuis": "2026-10-11",
    "live": null,
    "premierStream": "2023-07-10",
+   "succes": [],
+   "jeux": [],
+   "clip": null
+  },
+  {
+   "login": "hyroshimaeu",
+   "nom": "HyroshimaEU",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/7373a379-0d3e-4897-aa20-3b045543c3a6-profile_image-300x300.png",
+   "bio": "Bienvenue sur Hyroshimaeu ! Nous sommes un duo de VTubers un peu improbable : une biche pleine d'énergie et un blaireau calme, réfléchi et patient, qui préfère analyser la situation avant de passer à l'action .Entre moments chaotiques, fous rires, découvertes gaming et discussions avec la commu :D ",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-15",
+   "live": null,
+   "premierStream": null,
    "succes": [],
    "jeux": [],
    "clip": null
@@ -682,5 +684,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-14T21:07:20.136Z"
+ "maj": "2026-10-14T22:03:34.146Z"
 }
