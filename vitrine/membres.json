@@ -4,9 +4,9 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 27,
-  "affilies": 24,
-  "nouveaux30": 27,
+  "membres": 28,
+  "affilies": 25,
+  "nouveaux30": 28,
   "heuresLive30": 529,
   "followsGagnes30": 407,
   "periode": {
@@ -68,6 +68,20 @@
    }
   },
   {
+   "login": "asakha",
+   "nom": "Asakha",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/f728b004-cdf4-46d8-9ed0-0e46f74d01ba-profile_image-300x300.png",
+   "bio": "Bienvenue voyageurs, dans notre modeste taverne 🍺 Ici, je suis Asakha, conteur d’aventures et explorateur de mondes !Entre jeux d’aventure, épopées pleines d’histoires, sandbox et des sessions fun entre amis.  Installez-vous au coin du feu, prenez une chope, et vivons ensemble des aventures !",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-14",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
+   "clip": null
+  },
+  {
    "login": "asalie",
    "nom": "Asalie",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/485d5d77-22b3-4fb7-b764-a85f69057353-profile_image-300x300.png",
@@ -76,7 +90,7 @@
    "staff": false,
    "depuis": "2026-09-22",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "Cat Mail Co.",
     "titre": "Enfin le stream gurlz",
     "depuis": "2026-10-14T18:02:29Z",
@@ -299,7 +313,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "Huglings",
+    "titre": "🧸✨ NOUVEAU JEU ! Partons à la rencontre des Huglings 💕 | !lurk !clip !commandes",
+    "depuis": "2026-10-14T18:34:03Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
+   },
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
@@ -499,7 +519,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 5,
+    "viewers": 2,
     "jeu": "Poppy Playtime: Chapter 3 - Deep Sleep",
     "titre": "Venez avoir peur avec moi !!!! Objectif 130 follows !!!   !discord !regles !don !wishlist",
     "depuis": "2026-10-14T17:56:27Z",
@@ -680,5 +700,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-14T18:33:04.027Z"
+ "maj": "2026-10-14T18:35:09.935Z"
 }
