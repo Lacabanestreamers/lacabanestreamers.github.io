@@ -7,7 +7,7 @@
   "membres": 25,
   "affilies": 22,
   "nouveaux30": 25,
-  "heuresLive30": 500,
+  "heuresLive30": 501,
   "followsGagnes30": 397,
   "periode": {
    "du": "2026-09-23",
@@ -149,7 +149,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "The Sims 4",
+    "titre": "😂 Episode 3 : De pauvre à riche... on est encore sur le \"pauvre\" (challenge by @aly0806 )",
+    "depuis": "2026-10-14T09:44:45Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -391,7 +397,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 16,
     "jeu": "The Quarry",
     "titre": "🔞[DROP] On essaie de pas avoir peur !! Entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-14T07:38:17Z",
@@ -408,9 +414,9 @@
    "jeux": [
     "Dead by Daylight",
     "AION 2",
+    "The Quarry",
     "7 Days to Die",
-    "R.E.P.O.",
-    "The Quarry"
+    "R.E.P.O."
    ],
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/RepleteCaringWasabiPeteZaroll-XmlT8aeUD4YcAYTD",
@@ -609,5 +615,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-14T09:07:14.855Z"
+ "maj": "2026-10-14T10:07:19.383Z"
 }
