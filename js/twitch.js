@@ -29,7 +29,8 @@ function twitchLogin(){
 }
 function twitchLogout(){ tw = null; store.del(TW_KEY); S.twIds = {}; render(); }
 async function helix(path){
-  const r = await fetch(`https://api.twitch.tv/helix/${path}`, {headers:{Authorization:`Bearer ${tw.token}`, "Client-Id":twClientId()}, cache:"no-store"});
+  // délai maximal : une requête bloquée ne doit pas figer la lecture Twitch (« Lecture Twitch… » sans fin)
+  const r = await fetch(`https://api.twitch.tv/helix/${path}`, {headers:{Authorization:`Bearer ${tw.token}`, "Client-Id":twClientId()}, cache:"no-store", signal:AbortSignal.timeout(12000)});
   if(r.status === 401){ tw = null; store.del(TW_KEY); const e = new Error("twitch-auth"); throw e; }
   if(!r.ok) throw new Error("twitch-" + r.status);
   return r.json();
@@ -37,7 +38,7 @@ async function helix(path){
 const chunks = (arr, n) => { const out = []; for(let i=0;i<arr.length;i+=n) out.push(arr.slice(i,i+n)); return out; };
 function durationMs(d){ const m = /(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s)?/.exec(d||""); return m ? ((+m[1]||0)*3600 + (+m[2]||0)*60 + (+m[3]||0))*1000 : 0; }
 function sinceTxt(iso){ const min = Math.max(0, Math.round((Date.now() - new Date(iso))/60000)); return min < 60 ? `${min} min` : `${Math.floor(min/60)} h ${String(min%60).padStart(2,"0")}`; }
-async function fetchText(url){ const r = await fetch(url, {cache:"no-store"}); if(!r.ok) throw 0; return (await r.text()).trim(); }
+async function fetchText(url){ const r = await fetch(url, {cache:"no-store", signal:AbortSignal.timeout(12000)}); if(!r.ok) throw 0; return (await r.text()).trim(); }
 async function pool(items, n, fn){ let i = 0; await Promise.all(Array.from({length:n}, async () => { while(i < items.length){ const it = items[i++]; await fn(it); if(i % 10 === 0) render(); } })); }
 
 async function loadHelix(logins, full){
@@ -126,6 +127,15 @@ function avatarHtml(login, big){
 }
 const liveStamp = () => S.liveAt ? ` · live vérifié à ${new Date(S.liveAt).toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"})}` : "";
 function currentFollows(m){ return m.followsMode === "manuel" ? (m.followsManuel ?? null) : (liveOf(m.login).follows ?? null); }
+// Dernier relevé du robot pour une chaîne (matin, midi ou soir) : affiché tant que la lecture Twitch en direct n'a pas répondu
+let relCache = {liste:null, map:null};
+function dernierReleve(login){
+  const l = S.data?.snapshots || [];
+  if(relCache.liste !== l || relCache.n !== l.length){ const map = {}; for(const s of l) for(const [k, v] of Object.entries(s.follows || {})) if(v != null) map[k] = {v, date:s.date}; relCache = {liste:l, n:l.length, map}; }
+  return relCache.map[login] || null;
+}
+// Follows affichés : en direct si possible, sinon le dernier relevé (même chiffre pour tout le staff)
+function followsVus(m){ const c = currentFollows(m); if(c != null) return {v:c, direct:true}; const r = m.followsMode === "manuel" ? null : dernierReleve(m.login); return r ? {v:r.v, date:r.date, direct:false} : null; }
 function refSnapshot(){
   const snaps = S.data.snapshots; if(!snaps.length) return null;
   if(S.f.ref) return snaps.find(s => s.date === S.f.ref) || null;

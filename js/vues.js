@@ -102,7 +102,14 @@ let colPrefs = store.get(COLS_KEY, {});
 const staffAvis = p => { const staff = S.data.settings.staff, v = voteInfo(p);
   return `<span class="avis" title="${esc(staff.map(s => `${s} : ${p.avis?.[s] || "—"}`).join("\n"))}">${staff.map(s => `<i class="${avisKind(p.avis?.[s])}"></i>`).join("")}</span><span class="avcount">${v.done}/${staff.length}</span>${v.suggestion && v.suggestion !== p.statut ? ` <span title="Suggestion d'après les avis : ${v.suggestion}">${v.suggestion === "Accepté" ? "👍" : "👎"}</span>` : ""}`; };
 const followsCell = (f, manuel) => f != null ? f + (manuel ? ` <span class="muted" title="Saisie manuelle">✎</span>` : "") : `<span class="muted">${S.liveLoading ? "…" : "–"}</span>`;
-function membreProg(m){ const ref = refSnapshot(), c = currentFollows(m), r = ref?.follows?.[m.login]; return c != null && r != null ? c - r : null; }
+function membreProg(m){ const ref = refSnapshot(), c = followsVus(m)?.v, r = ref?.follows?.[m.login]; return c != null && r != null ? c - r : null; }
+// Follows d'un streamer : en direct, sinon dernier relevé du robot (en gris, avec sa date au survol)
+function followsMembreCell(m){
+  const f = followsVus(m);
+  if(!f) return followsCell(null);
+  if(f.direct) return followsCell(f.v, m.followsMode === "manuel");
+  return `<span class="muted" title="Relevé du robot du ${fmtDate(f.date)}${S.liveLoading ? " · lecture Twitch en cours" : " · lecture Twitch en direct indisponible"}">${f.v}</span>`;
+}
 const COLS = {
   propositions:[
     {k:"statut", l:"Statut", s:"statut", td:p => pill(p.statut), x:p => p.statut || "À trier"},
@@ -123,7 +130,7 @@ const COLS = {
     {k:"referent", l:"Référent", s:"referent", off:1, td:m => esc(m.referent), x:m => m.referent},
     {k:"arrivee", l:"Arrivée", s:"arrivee", td:m => fmtDate(m.arrivee), x:m => m.arrivee || ""},
     {k:"last", l:"Dernier stream", s:"last", n:1, td:lastStreamCell, x:m => { const z = lastStream(m); return z ? (z.live ? "en live" : z.days + " j") : ""; }},
-    {k:"follows", l:"Follows", s:"follows", n:1, td:m => followsCell(currentFollows(m), m.followsMode === "manuel"), x:m => currentFollows(m) ?? ""},
+    {k:"follows", l:"Follows", s:"follows", n:1, td:followsMembreCell, x:m => followsVus(m)?.v ?? ""},
     {k:"viewers", l:"Viewers moy.", s:"viewers", n:1, td:viewersCell, x:m => viewersStats(m)?.avg ?? ""},
     {k:"prog", l:"Progression", s:"prog", n:1, td:m => { const p = membreProg(m); return p == null ? "" : `<span class="${p>0?"up":p<0?"down":""}">${p>0?"+":""}${p}</span>`; }, x:m => membreProg(m) ?? ""},
     {k:"anniv", l:"Anniv dans", s:"anniv", n:1, td:m => { const a = annivInfo(m.premierStream); return a ? (a.days === 0 ? "🎂 aujourd'hui" : a.days + " j") : ""; }, x:m => annivInfo(m.premierStream)?.days ?? ""},
@@ -224,7 +231,7 @@ function membreRows(){
     if(S.f.mtag && !hasTag(m, S.f.mtag)) return false;
     return !q || [m.login, m.discord, m.notes, m.referent, ...(m.tags || [])].some(x => String(x||"").toLowerCase().includes(q));
   });
-  return sortRows(rows, S.f.msort, {follows:currentFollows, prog:membreProg, anniv:m => annivInfo(m.premierStream)?.days ?? null, live:m => liveOf(m.login).live ? 0 : 1, last:m => { const x = lastStream(m); return x ? (x.live ? -1 : x.days) : null; }, viewers:m => viewersStats(m)?.avg ?? null});
+  return sortRows(rows, S.f.msort, {follows:m => followsVus(m)?.v ?? null, prog:membreProg, anniv:m => annivInfo(m.premierStream)?.days ?? null, live:m => liveOf(m.login).live ? 0 : 1, last:m => { const x = lastStream(m); return x ? (x.live ? -1 : x.days) : null; }, viewers:m => viewersStats(m)?.avg ?? null});
 }
 function viewMembres(){
   const d = S.data, all = d.membres, ref = refSnapshot();
