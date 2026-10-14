@@ -7,7 +7,7 @@
   "membres": 25,
   "affilies": 22,
   "nouveaux30": 25,
-  "heuresLive30": 504,
+  "heuresLive30": 508,
   "followsGagnes30": 396,
   "periode": {
    "du": "2026-09-23",
@@ -25,7 +25,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 9,
     "jeu": "R.E.P.O.",
     "titre": "🎃 Mois de l'horreur🎃 ✨On s'éclate entre copaing🔥",
     "depuis": "2026-10-14T11:57:11Z",
@@ -37,8 +37,8 @@
     "Raft",
     "SO CLOSE",
     "The Other Side",
-    "Phasmophobia",
-    "DEVOUR"
+    "R.E.P.O.",
+    "Phasmophobia"
    ],
    "clip": {
     "url": "https://www.twitch.tv/aly0806/clip/CovertCovertMangoMrDestructoid-pI-kd1PS4Y2J58pf",
@@ -156,7 +156,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 8,
     "jeu": "R.E.P.O.",
     "titre": "🎃 ON VA TOUT CASSER SUR R.E.P.O. ! (et sûrement mourir aussi...) 👻",
     "depuis": "2026-10-14T09:44:45Z",
@@ -403,7 +403,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 0,
+    "viewers": 6,
     "jeu": "R.E.P.O.",
     "titre": "🔞[DROP] Aprem horreur avec @aly0806 @hyroshimaeu !! Entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-14T12:06:04Z",
@@ -421,8 +421,8 @@
     "Dead by Daylight",
     "AION 2",
     "The Quarry",
-    "7 Days to Die",
-    "R.E.P.O."
+    "R.E.P.O.",
+    "7 Days to Die"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/RepleteCaringWasabiPeteZaroll-XmlT8aeUD4YcAYTD",
@@ -487,7 +487,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "No Man's Sky",
     "titre": "J'ai rangé mes coffres !",
     "depuis": "2026-10-14T11:38:26Z",
@@ -497,9 +497,9 @@
    "succes": [],
    "jeux": [
     "Apex Legends",
+    "No Man's Sky",
     "Nine Sols",
-    "Clair Obscur: Expedition 33",
-    "No Man's Sky"
+    "Clair Obscur: Expedition 33"
    ],
    "clip": null
   },
@@ -627,5 +627,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-14T12:07:13.486Z"
+ "maj": "2026-10-14T13:07:17.678Z"
 }
