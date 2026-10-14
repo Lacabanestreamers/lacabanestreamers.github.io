@@ -7,7 +7,7 @@
   "membres": 25,
   "affilies": 22,
   "nouveaux30": 25,
-  "heuresLive30": 503,
+  "heuresLive30": 504,
   "followsGagnes30": 396,
   "periode": {
    "du": "2026-09-23",
@@ -24,7 +24,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "R.E.P.O.",
+    "titre": "🎃 Mois de l'horreur🎃 ✨On s'éclate entre copaing🔥",
+    "depuis": "2026-10-14T11:57:11Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
+   },
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -150,9 +156,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
-    "jeu": "The Sims 4",
-    "titre": "😂 Episode 3 : De pauvre à riche... on est encore sur le \"pauvre\" (challenge by @aly0806 )",
+    "viewers": 9,
+    "jeu": "R.E.P.O.",
+    "titre": "🎃 ON VA TOUT CASSER SUR R.E.P.O. ! (et sûrement mourir aussi...) 👻",
     "depuis": "2026-10-14T09:44:45Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
    },
@@ -396,7 +402,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "R.E.P.O.",
+    "titre": "🔞[DROP] Aprem horreur avec @aly0806 @hyroshimaeu !! Entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-10-14T12:06:04Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -474,7 +486,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "No Man's Sky",
+    "titre": "J'ai rangé mes coffres !",
+    "depuis": "2026-10-14T11:38:26Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
+   },
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -609,5 +627,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-14T11:07:18.023Z"
+ "maj": "2026-10-14T12:07:13.486Z"
 }
