@@ -4,10 +4,10 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 25,
-  "affilies": 22,
-  "nouveaux30": 25,
-  "heuresLive30": 525,
+  "membres": 26,
+  "affilies": 23,
+  "nouveaux30": 26,
+  "heuresLive30": 528,
   "followsGagnes30": 407,
   "periode": {
    "du": "2026-09-23",
@@ -76,7 +76,7 @@
    "staff": false,
    "depuis": "2026-09-22",
    "live": {
-    "viewers": 4,
+    "viewers": 10,
     "jeu": "Cat Mail Co.",
     "titre": "Enfin le stream gurlz",
     "depuis": "2026-10-14T18:02:29Z",
@@ -93,7 +93,8 @@
    "jeux": [
     "Fields of Mistria",
     "Pao Pao",
-    "Just Chatting"
+    "Just Chatting",
+    "Cat Mail Co."
    ],
    "clip": {
     "url": "https://www.twitch.tv/asalie/clip/BrightGleamingSangBigBrother-xaT3LHvbNBmrrCTd",
@@ -272,8 +273,8 @@
     "Minecraft",
     "Splatoon 3",
     "Sprout Valley",
-    "Sword Art Online: Hollow Realization",
-    "Tomodachi Life: Living the Dream"
+    "Tomodachi Life: Living the Dream",
+    "Sword Art Online: Hollow Realization"
    ],
    "clip": {
     "url": "https://www.twitch.tv/elegaming__/clip/DarkFragileOwlTBCheesePull-29JZ8V1-OnoQfJ2X",
@@ -488,8 +489,8 @@
    "succes": [],
    "jeux": [
     "Aniimo",
-    "Stardew Valley",
     "Poppy Playtime: Chapter 3 - Deep Sleep",
+    "Stardew Valley",
     "Poppy Playtime: Chapter 2 - Fly in a Web",
     "Snack Factory Together"
    ],
@@ -637,6 +638,20 @@
    "succes": [],
    "jeux": [],
    "clip": null
+  },
+  {
+   "login": "zeylta",
+   "nom": "zeylta",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/e5bcac28-73b8-4757-b121-0759fb234930-profile_image-300x300.jpeg",
+   "bio": "Bienvenue sur ma chaîne,Ici pas de prise de tête, on chill et on papote !N'hésite pas à te manifester à ton arrivée !",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-14",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
+   "clip": null
   }
  ],
  "reussitesJours": 15,
@@ -645,5 +660,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-14T18:07:29.885Z"
+ "maj": "2026-10-14T18:13:46.920Z"
 }
