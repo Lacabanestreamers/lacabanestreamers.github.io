@@ -4,17 +4,41 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 25,
-  "affilies": 22,
-  "nouveaux30": 25,
-  "heuresLive30": 407,
-  "followsGagnes30": 365,
+  "membres": 28,
+  "affilies": 25,
+  "nouveaux30": 28,
+  "heuresLive30": 535,
+  "followsGagnes30": 407,
   "periode": {
    "du": "2026-09-23",
-   "au": "2026-10-12"
+   "au": "2026-10-14"
   }
  },
- "agenda": [],
+ "agenda": [
+  {
+   "id": "ev_576d1187",
+   "titre": "LIVE ANNIVERSAIRE 30 ANS",
+   "date": "2026-10-24",
+   "heure": "12:00",
+   "type": "Autre",
+   "description": "Le 24 octobre à 12h, je vous donne rendez-vous pour un live anniversaire rempli de bonne humeur 🥳 (danse, cuisine, jeux, react)",
+   "lien": "https://www.twitch.tv/chezelodie",
+   "duree": 360,
+   "discord": "https://discord.com/channels/1550885636322492476/1551942576230240287/1559984068550992066",
+   "participants": [
+    {
+     "login": "aly0806",
+     "nom": "aly0806",
+     "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/a82dd431-b906-4991-802b-e16ded62c062-profile_image-300x300.png"
+    },
+    {
+     "login": "aulit42369",
+     "nom": "Aulit42369",
+     "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/f33ce494-5527-426f-bc67-7a59bbf51609-profile_image-300x300.png"
+    }
+   ]
+  }
+ ],
  "membres": [
   {
    "login": "aly0806",
@@ -28,11 +52,11 @@
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
+    "R.E.P.O.",
     "Raft",
     "SO CLOSE",
     "The Other Side",
-    "Phasmophobia",
-    "DEVOUR"
+    "Phasmophobia"
    ],
    "clip": {
     "url": "https://www.twitch.tv/aly0806/clip/CovertCovertMangoMrDestructoid-pI-kd1PS4Y2J58pf",
@@ -44,6 +68,20 @@
    }
   },
   {
+   "login": "asakha",
+   "nom": "Asakha",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/f728b004-cdf4-46d8-9ed0-0e46f74d01ba-profile_image-300x300.png",
+   "bio": "Bienvenue voyageurs, dans notre modeste taverne 🍺 Ici, je suis Asakha, conteur d’aventures et explorateur de mondes !Entre jeux d’aventure, épopées pleines d’histoires, sandbox et des sessions fun entre amis.  Installez-vous au coin du feu, prenez une chope, et vivons ensemble des aventures !",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-14",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
+   "clip": null
+  },
+  {
    "login": "asalie",
    "nom": "Asalie",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/485d5d77-22b3-4fb7-b764-a85f69057353-profile_image-300x300.png",
@@ -51,7 +89,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-22",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Cat Mail Co.",
+    "titre": "Enfin le stream gurlz",
+    "depuis": "2026-10-14T18:02:29Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asalie-440x248.jpg"
+   },
    "premierStream": "2025-07-27",
    "succes": [
     {
@@ -61,8 +105,10 @@
     }
    ],
    "jeux": [
+    "Fields of Mistria",
     "Pao Pao",
-    "Just Chatting"
+    "Just Chatting",
+    "Cat Mail Co."
    ],
    "clip": {
     "url": "https://www.twitch.tv/asalie/clip/BrightGleamingSangBigBrother-xaT3LHvbNBmrrCTd",
@@ -86,9 +132,9 @@
    "succes": [],
    "jeux": [
     "Graveyard Keeper II",
+    "Brotato",
     "R.E.P.O.",
     "VALORANT",
-    "Brotato",
     "Carnaval Marbles"
    ],
    "clip": {
@@ -112,9 +158,17 @@
    "premierStream": "2025-10-04",
    "succes": [],
    "jeux": [
+    "Leafy Corner",
     "Pokémon Mystery Dungeon: Explorers of Sky"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/bichoune_/clip/SassyHeadstrongHareWoofer-xTkZtnogxsG0Xhox",
+    "titre": "JOURNAL DE BORD JOUR 60",
+    "vues": 10,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b61ffb51-1ab0-4be6-8a56-514de28cdf17/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-13",
+    "duree": 22
+   }
   },
   {
    "login": "brastentv",
@@ -152,14 +206,14 @@
    "jeux": [
     "Disney Dreamlight Valley",
     "R.E.P.O.",
-    "The Quarry",
     "DEVOUR",
+    "The Quarry",
     "Raft"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/ExuberantFrailSwordTwitchRPG-HJT-HV-v3wYNibXQ",
     "titre": "WzBot CLIP | 👹 DEVOUR SOLO : Personne pour me réanimer ... 😱 (by honinbo_)",
-    "vues": 2,
+    "vues": 3,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/dbbaa3d1-f8db-4f92-8ebf-3149a4f09b74/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-09",
     "duree": 60
@@ -187,15 +241,21 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Rise of the Tomb Raider",
+    "titre": "🏺 Exploration de tombes perdues sur Rise of the Tomb Raider ! (On est à 33%)",
+    "depuis": "2026-10-14T18:28:04Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
+   },
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
     "Dead by Daylight",
+    "Rise of the Tomb Raider",
     "Cat Mail Co.",
     "Aniimo",
-    "Parisian Brasserie Simulator",
-    "Rise of the Tomb Raider"
+    "Parisian Brasserie Simulator"
    ],
    "clip": {
     "url": "https://www.twitch.tv/cristal578/clip/JoyousHealthyMosquitoThunBeast-8sicnfCqWMFxk1bm",
@@ -228,15 +288,15 @@
     "Splatoon 3",
     "Sprout Valley",
     "Tomodachi Life: Living the Dream",
-    "Gartic Phone"
+    "Sword Art Online: Hollow Realization"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/elegaming__/clip/MagnificentCautiousBunnyFailFish-0xnz5Xfx4NPTzt-c",
-    "titre": "Coco divorce de Nook ????",
+    "url": "https://www.twitch.tv/elegaming__/clip/DarkFragileOwlTBCheesePull-29JZ8V1-OnoQfJ2X",
+    "titre": "Quelle est cette odeur ? 🤔",
     "vues": 1,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/7bffeecd-f212-432d-ae16-3e5be0789092/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/88a97f39-3c80-4b2a-9bc5-780decee4822/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-07",
-    "duree": 60
+    "duree": 37
    }
   },
   {
@@ -247,7 +307,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 11,
+    "jeu": "Huglings",
+    "titre": "🧸✨ NOUVEAU JEU ! Partons à la rencontre des Huglings 💕 | !lurk !clip !commandes",
+    "depuis": "2026-10-14T18:34:03Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
+   },
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
@@ -258,7 +324,7 @@
    "clip": {
     "url": "https://www.twitch.tv/emmamarmotte/clip/IcySweetPastaBrokeBack-8zOw0ROv6ljw1aZ7",
     "titre": "☕🍄 Ambiance plaid & coloriage 🖍️🍂 | !lurk !clip !commandes",
-    "vues": 2,
+    "vues": 7,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/3425540a-bba4-4463-95dc-fafb10fe404b/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-11",
     "duree": 30
@@ -294,14 +360,14 @@
    "jeux": [
     "DREDGE",
     "R.E.P.O.",
+    "Writing & Reading",
     "Abiotic Factor",
-    "Wyldheart",
-    "Writing & Reading"
+    "Wyldheart"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/BitterElatedMinkPlanking-FkXmeU1xHr6W1aRq",
     "titre": "WzBot CLIP | Ce soir R.E.P.O avec la team du samedi !! On déménage, on prend du dégat (by galyssiane",
-    "vues": 17,
+    "vues": 19,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/222bace2-c6b4-468b-8871-a47aa8967e3b/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-10",
     "duree": 60
@@ -335,6 +401,7 @@
    "jeux": [
     "Sovereign Tower",
     "Just Chatting",
+    "Planet Zoo 2",
     "Games + Demos"
    ],
    "clip": null
@@ -357,8 +424,8 @@
     }
    ],
    "jeux": [
-    "Makers & Crafting",
     "Resonance: A Plague Tale Legacy",
+    "Makers & Crafting",
     "BOMBANANA!",
     "WheelMates",
     "FragPunk"
@@ -366,7 +433,7 @@
    "clip": {
     "url": "https://www.twitch.tv/liiapin/clip/StylishNurturingPigeonTinyFace-t-nnKeINWJ5HjNJd",
     "titre": "Au secours",
-    "vues": 13,
+    "vues": 14,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/38f7bb10-272b-4b2b-8cac-99c7e74acdf7/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-10",
     "duree": 60
@@ -380,13 +447,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 10,
-    "jeu": "AION 2",
-    "titre": "🔞[DROP] On prend une dose D'Aion !! Entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-10-12T07:29:38Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -397,19 +458,33 @@
    ],
    "jeux": [
     "Dead by Daylight",
-    "7 Days to Die",
     "R.E.P.O.",
+    "AION 2",
     "The Quarry",
-    "Baldur's Gate 3"
+    "7 Days to Die"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/lilyth_minerva/clip/TsundereSteamySwallowOMGScoots-RmZpbZpk2TT10ZNX",
-    "titre": "un des rare moment ou en observe lilyth sursautant 😇😇",
-    "vues": 8,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b882e0b8-5ad0-4144-90b2-b6f392e8b099/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-06",
-    "duree": 19
+    "url": "https://www.twitch.tv/lilyth_minerva/clip/RepleteCaringWasabiPeteZaroll-XmlT8aeUD4YcAYTD",
+    "titre": "WzBot CLIP | 🔞[DROP Perso] Entre papote et éclat de fun !! kon-kon !! / !discord !cl (by nezukochan",
+    "vues": 2,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/8835e85f-e688-4bba-9d67-f3a08c4a1163/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-09",
+    "duree": 60
    }
+  },
+  {
+   "login": "mandouee",
+   "nom": "mandouee",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/86f2d065-4d84-452a-9f35-d44985d1b378-profile_image-300x300.png",
+   "bio": "🍋 • Why so serious? •🌼 • sweet vibes & chaotic energy • ✨ • Cozy & Chill Games •",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-14",
+   "live": null,
+   "premierStream": "2024-10-23",
+   "succes": [],
+   "jeux": [],
+   "clip": null
   },
   {
    "login": "mattmist2",
@@ -419,17 +494,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 4,
-    "jeu": "FTL: Faster Than Light",
-    "titre": "Plan B",
-    "depuis": "2026-10-12T08:00:11Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-08",
    "succes": [],
    "jeux": [
     "Dead Rising 3",
+    "FTL: Faster Than Light",
     "Strange Horticulture"
    ],
    "clip": null
@@ -447,9 +517,9 @@
    "succes": [],
    "jeux": [
     "Aniimo",
+    "Poppy Playtime: Chapter 3 - Deep Sleep",
     "Stardew Valley",
     "Poppy Playtime: Chapter 2 - Fly in a Web",
-    "Poppy Playtime: Chapter 3 - Deep Sleep",
     "Snack Factory Together"
    ],
    "clip": {
@@ -474,6 +544,7 @@
    "succes": [],
    "jeux": [
     "Apex Legends",
+    "No Man's Sky",
     "Nine Sols",
     "Clair Obscur: Expedition 33"
    ],
@@ -496,14 +567,7 @@
     "R.E.P.O.",
     "Horror Game"
    ],
-   "clip": {
-    "url": "https://www.twitch.tv/mysti94/clip/GeniusFamousCocoaPhilosoraptor-DOH3-sReOrfAjcUX",
-    "titre": "WOOOHOUHOU",
-    "vues": 10,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/67673dc3-2bd6-4d41-99ea-33399c238c1d/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-06",
-    "duree": 11
-   }
+   "clip": null
   },
   {
    "login": "oko_san_",
@@ -527,15 +591,15 @@
     "MECCHA CHAMELEON",
     "Art",
     "The Other Side",
-    "R.E.P.O."
+    "DEVOUR"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/oko_san_/clip/DepressedBovineFrogShazBotstix-eSND5ygqXaUl2VfS",
-    "titre": "Bad timing pour Nyandou",
-    "vues": 22,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/32fc2d26-3328-4731-93d8-80511155150e/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-05",
-    "duree": 41
+    "url": "https://www.twitch.tv/oko_san_/clip/FaithfulAwkwardPuddingTTours-XGAgIAmtypHNh-cy",
+    "titre": "Le bon timing de Elo",
+    "vues": 6,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/676a516e-cc4c-4cff-a15c-b33eb49214b7/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-12",
+    "duree": 49
    }
   },
   {
@@ -546,13 +610,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 12,
-    "jeu": "The Sims 4",
-    "titre": "THE SIMS 4 [FR] | Episode 10 : Agathe rentre à l'université, 1er petit boulot et grossesse... et dramaaaa 🏠| !lurk !discord !perfectlife",
-    "depuis": "2026-10-12T08:05:38Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-10",
    "succes": [],
    "jeux": [
@@ -608,6 +666,20 @@
    "succes": [],
    "jeux": [],
    "clip": null
+  },
+  {
+   "login": "zeylta",
+   "nom": "zeylta",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/e5bcac28-73b8-4757-b121-0759fb234930-profile_image-300x300.jpeg",
+   "bio": "Bienvenue sur ma chaîne,Ici pas de prise de tête, on chill et on papote !N'hésite pas à te manifester à ton arrivée !",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-14",
+   "live": null,
+   "premierStream": "2026-01-31",
+   "succes": [],
+   "jeux": [],
+   "clip": null
   }
  ],
  "reussitesJours": 15,
@@ -616,5 +688,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-12T09:07:14.209Z"
+ "maj": "2026-10-14T20:07:23.271Z"
 }
