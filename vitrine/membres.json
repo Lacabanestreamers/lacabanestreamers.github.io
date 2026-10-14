@@ -4,10 +4,10 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 26,
-  "affilies": 23,
-  "nouveaux30": 26,
-  "heuresLive30": 528,
+  "membres": 27,
+  "affilies": 24,
+  "nouveaux30": 27,
+  "heuresLive30": 529,
   "followsGagnes30": 407,
   "periode": {
    "du": "2026-09-23",
@@ -228,7 +228,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 0,
+    "viewers": 2,
     "jeu": "Rise of the Tomb Raider",
     "titre": "🏺 Exploration de tombes perdues sur Rise of the Tomb Raider ! (On est à 33%)",
     "depuis": "2026-10-14T18:28:04Z",
@@ -239,9 +239,9 @@
    "jeux": [
     "Dead by Daylight",
     "Cat Mail Co.",
+    "Rise of the Tomb Raider",
     "Aniimo",
-    "Parisian Brasserie Simulator",
-    "Rise of the Tomb Raider"
+    "Parisian Brasserie Simulator"
    ],
    "clip": {
     "url": "https://www.twitch.tv/cristal578/clip/JoyousHealthyMosquitoThunBeast-8sicnfCqWMFxk1bm",
@@ -261,7 +261,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 4,
+    "viewers": 3,
     "jeu": "Tomodachi Life: Living the Dream",
     "titre": "🌐Tomodachi Life 2 ~ On continue la vie de nos Mii - !réseaux",
     "depuis": "2026-10-14T17:26:25Z",
@@ -459,6 +459,20 @@
    }
   },
   {
+   "login": "mandouee",
+   "nom": "mandouee",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/86f2d065-4d84-452a-9f35-d44985d1b378-profile_image-300x300.png",
+   "bio": "🍋 • Why so serious? •🌼 • sweet vibes & chaotic energy • ✨ • Cozy & Chill Games •",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-14",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
+   "clip": null
+  },
+  {
    "login": "mattmist2",
    "nom": "mattmist2",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/872ccfb7-2c8f-4c16-9193-03acdf4a83df-profile_image-300x300.jpeg",
@@ -485,7 +499,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "Poppy Playtime: Chapter 3 - Deep Sleep",
     "titre": "Venez avoir peur avec moi !!!! Objectif 130 follows !!!   !discord !regles !don !wishlist",
     "depuis": "2026-10-14T17:56:27Z",
@@ -666,5 +680,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-14T18:30:12.656Z"
+ "maj": "2026-10-14T18:33:04.027Z"
 }
