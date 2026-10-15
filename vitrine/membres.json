@@ -155,7 +155,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "My Fashion Studio",
+    "titre": "Marie Passion STYLISTE🪡Zoe Créatrice de mode DS • ON A 9 ANS A NOUVEAU • 1 💗",
+    "depuis": "2026-10-15T07:54:26Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bichoune_-440x248.jpg"
+   },
    "premierStream": "2025-10-04",
    "succes": [],
    "jeux": [
@@ -529,7 +535,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 6,
+    "viewers": 5,
     "jeu": "Stardew Valley",
     "titre": "On poursuit Stardew autour d'un petit café et d'une session papotage !!!! Objectif 130 follows !!!   !discord !regles !don !wishlist",
     "depuis": "2026-10-15T06:40:16Z",
@@ -698,7 +704,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 3,
+    "viewers": 6,
     "jeu": "Gloomy Eyes",
     "titre": "On continue à essayer de retrouver le soleil ! #2 | !tiktok | !Discord | !clip |",
     "depuis": "2026-10-15T07:00:06Z",
@@ -725,5 +731,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-15T07:18:43.882Z"
+ "maj": "2026-10-15T08:07:22.353Z"
 }
