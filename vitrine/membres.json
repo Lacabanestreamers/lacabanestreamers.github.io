@@ -7,7 +7,7 @@
   "membres": 35,
   "affilies": 31,
   "nouveaux30": 35,
-  "heuresLive30": 574,
+  "heuresLive30": 579,
   "followsGagnes30": 514,
   "periode": {
    "du": "2026-09-23",
@@ -49,8 +49,8 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
-    "jeu": "SO CLOSE",
+    "viewers": 2,
+    "jeu": "R.E.P.O.",
     "titre": "🎃 Mois de l'horreur🎃 ✨On s'éclate entre copaing🔥",
     "depuis": "2026-10-15T18:25:48Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
@@ -58,9 +58,9 @@
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
+    "SO CLOSE",
     "R.E.P.O.",
     "Raft",
-    "SO CLOSE",
     "The Other Side",
     "Phasmophobia"
    ],
@@ -135,9 +135,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
-    "jeu": "SO CLOSE",
-    "titre": "Qui vas nous mettre dans le C...?",
+    "viewers": 7,
+    "jeu": "R.E.P.O.",
+    "titre": "On remplit des caddies, et on ce fait coursser par des méchants",
     "depuis": "2026-10-15T18:27:15Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
    },
@@ -148,7 +148,7 @@
     "Brotato",
     "R.E.P.O.",
     "VALORANT",
-    "Carnaval Marbles"
+    "SO CLOSE"
    ],
    "clip": {
     "url": "https://www.twitch.tv/aulit42369/clip/GentlePuzzledHerdStrawBeary-VSvFTskDDzHDRYyR",
@@ -209,9 +209,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
-    "jeu": "SO CLOSE",
-    "titre": "🔴 SO CLOSE EN COOP : On va se rapprocher... ou se détester ? 😅",
+    "viewers": 8,
+    "jeu": "R.E.P.O.",
+    "titre": "🎃 ON VA TOUT CASSER SUR R.E.P.O. ! (et sûrement mourir aussi...) 👻",
     "depuis": "2026-10-15T18:26:31Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
    },
@@ -227,8 +227,8 @@
     "Disney Dreamlight Valley",
     "R.E.P.O.",
     "DEVOUR",
-    "The Quarry",
-    "Raft"
+    "SO CLOSE",
+    "The Quarry"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/ExuberantFrailSwordTwitchRPG-HJT-HV-v3wYNibXQ",
@@ -288,13 +288,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 3,
-    "jeu": "The Survivalists",
-    "titre": "🏝The Survivalists ~ On continue notre survie ! - !réseaux",
-    "depuis": "2026-10-15T17:02:06Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -458,20 +452,15 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 8,
-    "jeu": "Foxy Dumplings",
-    "titre": "SOIRÉE TEST JEUX 🎮💫 : Semaine spéciale cuisine & gastronomie avec Foxy Dumplings, Chocolate Factory ... 🎯| Découverte Nouveauté jeu-vidéo",
-    "depuis": "2026-10-15T19:18:00Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
     "Sovereign Tower",
     "Just Chatting",
     "Planet Zoo 2",
-    "Games + Demos"
+    "Games + Demos",
+    "Foxy Dumplings"
    ],
    "clip": null
   },
@@ -826,5 +815,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-15T20:07:24.877Z"
+ "maj": "2026-10-15T21:07:30.107Z"
 }
