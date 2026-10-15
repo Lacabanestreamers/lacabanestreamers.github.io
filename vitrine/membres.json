@@ -4,11 +4,11 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 31,
-  "affilies": 28,
-  "nouveaux30": 31,
-  "heuresLive30": 551,
-  "followsGagnes30": 447,
+  "membres": 33,
+  "affilies": 29,
+  "nouveaux30": 33,
+  "heuresLive30": 552,
+  "followsGagnes30": 479,
   "periode": {
    "du": "2026-09-23",
    "au": "2026-10-15"
@@ -472,13 +472,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 13,
-    "jeu": "Dead by Daylight",
-    "titre": "🔞[DROP] On rage pas *pas promis* !! Entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-10-15T06:38:32Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -512,7 +506,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": null,
-   "premierStream": null,
+   "premierStream": "2017-03-05",
    "succes": [],
    "jeux": [],
    "clip": null
@@ -615,6 +609,20 @@
    "clip": null
   },
   {
+   "login": "nyxenfox",
+   "nom": "NyxenFox",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/36e7da5a-1f3a-48c8-904a-11cb1bf39234-profile_image-300x300.png",
+   "bio": "Salut à toi 👋Moi c’est NyxenFox, passionné de gaming .Ici, on joue  sans jamais se prendre au sérieux !🕹️ Au programme :⚔️ World of Warcraft – Aventures, donjons, raids et parfois… quelques wipes mémorables 😂: 🚛 Euro Truck Simulator 2 – Livraison tranquille (ou presque) à travers l’Europe",
+   "type": "",
+   "staff": false,
+   "depuis": "2026-10-15",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
+   "clip": null
+  },
+  {
    "login": "oko_san_",
    "nom": "Oko_san_",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/c803851b-3887-4362-8bc4-7518f7ea398c-profile_image-300x300.jpeg",
@@ -663,6 +671,20 @@
     "Animal Crossing: New Horizons",
     "Just Chatting"
    ],
+   "clip": null
+  },
+  {
+   "login": "paygadream",
+   "nom": "PaygaDream",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0e1714d9-2efc-4715-b287-eec51e76d674-profile_image-300x300.png",
+   "bio": "Bienvenue dans l’univers de PaygaDream ✨Ici, on se retrouve pour des lives cosy, chill et remplis de douceur, dans une ambiance lunaire, magique et bienveillante. On prend le temps, on papote, on rigole, on découvre, on construit, on rêve un peu… parfois beaucoup.",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-15",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
    "clip": null
   },
   {
@@ -742,5 +764,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-15T10:07:30.843Z"
+ "maj": "2026-10-15T10:46:21.699Z"
 }
