@@ -328,7 +328,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "[FR] [DDV] 🎃👻 HALLOWEEN 2026 : OOGIE BOOGIE DÉBARQUE ! 👹",
+    "depuis": "2026-10-15T13:46:52Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
+   },
    "premierStream": "2024-08-10",
    "succes": [],
    "jeux": [
@@ -407,7 +413,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": null,
-   "premierStream": "2025-06-26",
+   "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [],
    "clip": null
@@ -440,7 +446,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 1,
+    "viewers": 3,
     "jeu": "Little Nightmares: Enhanced Edition",
     "titre": "🐰Le retour de l'imperméable jaune",
     "depuis": "2026-10-15T12:11:53Z",
@@ -479,8 +485,8 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
-    "jeu": "Just Chatting",
+    "viewers": 14,
+    "jeu": "7 Days to Die",
     "titre": "🔞[DROP] Entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-15T12:21:39Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
@@ -642,7 +648,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "Bonjour, de retour dans  la valley  !!!!",
+    "depuis": "2026-10-15T13:43:18Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [],
@@ -790,5 +802,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-15T13:19:47.348Z"
+ "maj": "2026-10-15T14:07:29.569Z"
 }
