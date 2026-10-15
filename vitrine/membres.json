@@ -7,7 +7,7 @@
   "membres": 34,
   "affilies": 30,
   "nouveaux30": 34,
-  "heuresLive30": 556,
+  "heuresLive30": 560,
   "followsGagnes30": 503,
   "periode": {
    "du": "2026-09-23",
@@ -329,7 +329,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] [DDV] 🎃👻 HALLOWEEN 2026 : OOGIE BOOGIE DÉBARQUE ! 👹",
     "depuis": "2026-10-15T13:46:52Z",
@@ -445,13 +445,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 3,
-    "jeu": "Little Nightmares: Enhanced Edition",
-    "titre": "🐰Le retour de l'imperméable jaune",
-    "depuis": "2026-10-15T12:11:53Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -485,7 +479,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 17,
     "jeu": "7 Days to Die",
     "titre": "🔞[DROP] Entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-15T12:21:39Z",
@@ -649,7 +643,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 0,
+    "viewers": 1,
     "jeu": "Disney Dreamlight Valley",
     "titre": "Bonjour, de retour dans  la valley  !!!!",
     "depuis": "2026-10-15T13:43:18Z",
@@ -657,7 +651,9 @@
    },
    "premierStream": null,
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Disney Dreamlight Valley"
+   ],
    "clip": null
   },
   {
@@ -802,5 +798,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-15T14:07:29.569Z"
+ "maj": "2026-10-15T15:07:38.128Z"
 }
