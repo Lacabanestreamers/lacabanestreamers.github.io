@@ -4,9 +4,9 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 33,
-  "affilies": 29,
-  "nouveaux30": 33,
+  "membres": 34,
+  "affilies": 30,
+  "nouveaux30": 34,
   "heuresLive30": 552,
   "followsGagnes30": 479,
   "periode": {
@@ -439,7 +439,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Resonance: A Plague Tale Legacy",
+    "titre": "🐰Ils sont où les rats ?",
+    "depuis": "2026-10-15T12:11:53Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
+   },
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -472,7 +478,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "Just Chatting",
+    "titre": "🔞[DROP] Entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-10-15T12:21:39Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -606,6 +618,20 @@
     "R.E.P.O.",
     "Horror Game"
    ],
+   "clip": null
+  },
+  {
+   "login": "nabelle_",
+   "nom": "Nabelle_",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/4736c6b2-1a20-474e-843f-c5a1e0bd8284-profile_image-300x300.png",
+   "bio": "Bienvenue dans mon monde ! Disney Girl - Colo - Jeux Vidéos ",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-15",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
    "clip": null
   },
   {
@@ -764,5 +790,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-15T12:07:26.529Z"
+ "maj": "2026-10-15T12:23:10.179Z"
 }
