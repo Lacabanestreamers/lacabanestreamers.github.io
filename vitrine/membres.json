@@ -407,7 +407,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": null,
-   "premierStream": null,
+   "premierStream": "2025-06-26",
    "succes": [],
    "jeux": [],
    "clip": null
@@ -682,7 +682,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": null,
-   "premierStream": null,
+   "premierStream": "2026-05-02",
    "succes": [],
    "jeux": [],
    "clip": null
@@ -764,5 +764,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-15T10:46:21.699Z"
+ "maj": "2026-10-15T12:07:26.529Z"
 }
