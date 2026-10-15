@@ -48,7 +48,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 12,
+    "jeu": "SO CLOSE",
+    "titre": "🎃 Mois de l'horreur🎃 ✨On s'éclate entre copaing🔥",
+    "depuis": "2026-10-15T18:25:48Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
+   },
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -128,7 +134,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "SO CLOSE",
+    "titre": "Qui vas nous mettre dans le C...?",
+    "depuis": "2026-10-15T18:27:15Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
+   },
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -196,7 +208,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "SO CLOSE",
+    "titre": "🔴 SO CLOSE EN COOP : On va se rapprocher... ou se détester ? 😅",
+    "depuis": "2026-10-15T18:26:31Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -637,7 +655,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "Moonlight Peaks",
     "titre": "[FR] Découverte d'un nouveau cozy 🦇🪄 | Moonlight Peaks | !discord !commandes",
     "depuis": "2026-10-15T16:01:41Z",
@@ -808,5 +826,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-15T18:12:07.872Z"
+ "maj": "2026-10-15T19:07:26.058Z"
 }
