@@ -4,10 +4,10 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 29,
-  "affilies": 26,
-  "nouveaux30": 29,
-  "heuresLive30": 547,
+  "membres": 31,
+  "affilies": 28,
+  "nouveaux30": 31,
+  "heuresLive30": 551,
   "followsGagnes30": 447,
   "periode": {
    "du": "2026-09-23",
@@ -156,7 +156,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
+    "viewers": 3,
     "jeu": "My Fashion Studio",
     "titre": "Marie Passion STYLISTE🪡Zoe Créatrice de mode DS • ON A 9 ANS A NOUVEAU • 1 💗",
     "depuis": "2026-10-15T07:54:26Z",
@@ -405,6 +405,20 @@
    }
   },
   {
+   "login": "kristal_et_ses_ac",
+   "nom": "Kristal_et_ses_AC",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/3c431a1d-3bef-4fc4-bb12-f060b780f870-profile_image-300x300.png",
+   "bio": "👋 Bienvenu chez la team des Aberrations Chromatiques ! Moi, c'est Kristal (Alizée) ! Mon objectif : vivre de mon Art ! Ici, ça dessine, ça joue, ça discute, on se soutient les un les autres, et surtout, on s'amuse ! Rejoins-nous et fais parti de la team ! ✨",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-15",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
+   "clip": null
+  },
+  {
    "login": "laelya_",
    "nom": "Laelya_",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/573b258c-b832-4e27-b719-827121afc530-profile_image-300x300.png",
@@ -465,7 +479,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 12,
     "jeu": "Dead by Daylight",
     "titre": "🔞[DROP] On rage pas *pas promis* !! Entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-15T06:38:32Z",
@@ -494,6 +508,20 @@
     "date": "2026-10-14",
     "duree": 60
    }
+  },
+  {
+   "login": "luffishgaming",
+   "nom": "luffishgaming",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/46363e91-55c5-48cd-a61e-fcf46cc244ce-profile_image-300x300.png",
+   "bio": "Salut, moi c’est **Luffish** 🎮🎣 Streamer débutant, je partage mes 2 passions : **jeux vidéo & pêche** ! Retrouvez moi sur Call of Duty, Rocket League, Minecraft, ETS2, FS25, Fishing Planet et mes sessions de pêche IRL. Bienvenue à toi ! ",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-15",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
+   "clip": null
   },
   {
    "login": "mandouee",
@@ -536,7 +564,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 6,
+    "viewers": 10,
     "jeu": "Stardew Valley",
     "titre": "On poursuit Stardew autour d'un petit café et d'une session papotage !!!! Objectif 130 follows !!!   !discord !regles !don !wishlist",
     "depuis": "2026-10-15T06:40:16Z",
@@ -705,7 +733,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 11,
+    "viewers": 8,
     "jeu": "Gloomy Eyes",
     "titre": "On continue à essayer de retrouver le soleil ! #2 | !tiktok | !Discord | !clip |",
     "depuis": "2026-10-15T07:00:06Z",
@@ -732,5 +760,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-15T09:07:25.009Z"
+ "maj": "2026-10-15T09:33:50.728Z"
 }
