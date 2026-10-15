@@ -4,10 +4,10 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 34,
-  "affilies": 30,
-  "nouveaux30": 34,
-  "heuresLive30": 563,
+  "membres": 35,
+  "affilies": 31,
+  "nouveaux30": 35,
+  "heuresLive30": 565,
   "followsGagnes30": 503,
   "periode": {
    "du": "2026-09-23",
@@ -337,6 +337,20 @@
    "clip": null
   },
   {
+   "login": "galaadours",
+   "nom": "GalaadOurs",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/11ba0745-6b15-480c-bfa2-814d06a70c54-profile_image-300x300.png",
+   "bio": "J'aime beaucoup trop jouer faire ce qui me plaît ^^ Beauf, de bonne humeur et qui adore les blagues nulles, j'ai hâte XD",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-15",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
+   "clip": null
+  },
+  {
    "login": "galyssiane",
    "nom": "galyssiane",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5f1c037e-16a5-4a48-a01d-8d8a016dadc2-profile_image-300x300.jpeg",
@@ -473,7 +487,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 22,
+    "viewers": 20,
     "jeu": "7 Days to Die",
     "titre": "🔞[DROP] Entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-15T12:21:39Z",
@@ -623,7 +637,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Moonlight Peaks",
     "titre": "[FR] Découverte d'un nouveau cozy 🦇🪄 | Moonlight Peaks | !discord !commandes",
     "depuis": "2026-10-15T16:01:41Z",
@@ -631,7 +645,9 @@
    },
    "premierStream": null,
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Moonlight Peaks"
+   ],
    "clip": null
   },
   {
@@ -792,5 +808,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-15T16:07:25.270Z"
+ "maj": "2026-10-15T16:13:51.780Z"
 }
