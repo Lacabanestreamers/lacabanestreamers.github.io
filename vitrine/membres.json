@@ -7,7 +7,7 @@
   "membres": 35,
   "affilies": 31,
   "nouveaux30": 35,
-  "heuresLive30": 569,
+  "heuresLive30": 574,
   "followsGagnes30": 514,
   "periode": {
    "du": "2026-09-23",
@@ -49,7 +49,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 8,
     "jeu": "SO CLOSE",
     "titre": "🎃 Mois de l'horreur🎃 ✨On s'éclate entre copaing🔥",
     "depuis": "2026-10-15T18:25:48Z",
@@ -135,7 +135,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 9,
     "jeu": "SO CLOSE",
     "titre": "Qui vas nous mettre dans le C...?",
     "depuis": "2026-10-15T18:27:15Z",
@@ -209,7 +209,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 10,
     "jeu": "SO CLOSE",
     "titre": "🔴 SO CLOSE EN COOP : On va se rapprocher... ou se détester ? 😅",
     "depuis": "2026-10-15T18:26:31Z",
@@ -289,7 +289,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "The Survivalists",
     "titre": "🏝The Survivalists ~ On continue notre survie ! - !réseaux",
     "depuis": "2026-10-15T17:02:06Z",
@@ -458,7 +458,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "Foxy Dumplings",
+    "titre": "SOIRÉE TEST JEUX 🎮💫 : Semaine spéciale cuisine & gastronomie avec Foxy Dumplings, Chocolate Factory ... 🎯| Découverte Nouveauté jeu-vidéo",
+    "depuis": "2026-10-15T19:18:00Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
+   },
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
@@ -654,13 +660,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 7,
-    "jeu": "Moonlight Peaks",
-    "titre": "[FR] Découverte d'un nouveau cozy 🦇🪄 | Moonlight Peaks | !discord !commandes",
-    "depuis": "2026-10-15T16:01:41Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -826,5 +826,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-15T19:07:26.058Z"
+ "maj": "2026-10-15T20:07:24.877Z"
 }
