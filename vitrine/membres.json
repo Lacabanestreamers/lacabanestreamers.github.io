@@ -155,13 +155,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 1,
-    "jeu": "My Fashion Studio",
-    "titre": "Marie Passion STYLISTE🪡Zoe Créatrice de mode DS • ON A 9 ANS A NOUVEAU • 1 💗",
-    "depuis": "2026-10-15T07:54:26Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bichoune_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-04",
    "succes": [],
    "jeux": [
@@ -479,7 +473,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 13,
     "jeu": "Dead by Daylight",
     "titre": "🔞[DROP] On rage pas *pas promis* !! Entre papote et éclat de fun !! kon-kon !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-15T06:38:32Z",
@@ -748,5 +742,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-15T09:58:06.855Z"
+ "maj": "2026-10-15T10:07:30.843Z"
 }
