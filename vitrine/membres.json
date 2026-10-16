@@ -59,12 +59,12 @@
     "Phasmophobia"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/aly0806/clip/CovertCovertMangoMrDestructoid-pI-kd1PS4Y2J58pf",
-    "titre": "WzBot CLIP | 🎃 Mois de l'horreur🎃 ✨On part de le rire et la joie avec les coupai (by nezukochan974",
+    "url": "https://www.twitch.tv/aly0806/clip/SleepyEphemeralEndiveDBstyle-Vm77RgkvcykzgH2n",
+    "titre": "🎃 Mois de l'horreur🎃 ✨On s'éclate entre copaing🔥",
     "vues": 5,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cb7ee0a0-056a-45ed-b74f-dacdba8f9a74/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-08",
-    "duree": 60
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/8846afef-5af6-456f-bb1e-fa99710973d9/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-14",
+    "duree": 30
    }
   },
   {
@@ -345,7 +345,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": null,
-   "premierStream": null,
+   "premierStream": "2023-06-06",
    "succes": [],
    "jeux": [],
    "clip": null
@@ -621,7 +621,14 @@
     "R.E.P.O.",
     "Horror Game"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/mysti94/clip/ElegantTrustworthyConsoleOneHand--8d17mxVWkfLbBA8",
+    "titre": "bug 5",
+    "vues": 1,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6265b674-d31a-4c8b-b1ed-12e3146b8ae1/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-15",
+    "duree": 7
+   }
   },
   {
    "login": "nabelle_",
@@ -797,5 +804,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-16T00:07:23.593Z"
+ "maj": "2026-10-16T01:07:40.125Z"
 }
