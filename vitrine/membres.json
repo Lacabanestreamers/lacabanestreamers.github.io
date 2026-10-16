@@ -7,7 +7,7 @@
   "membres": 35,
   "affilies": 31,
   "nouveaux30": 35,
-  "heuresLive30": 584,
+  "heuresLive30": 586,
   "followsGagnes30": 516,
   "periode": {
    "du": "2026-09-23",
@@ -421,7 +421,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 15,
+    "viewers": 12,
     "jeu": "The Legend of Zelda: Tears of the Kingdom",
     "titre": "PYJA'MATINAL SUR HYRULE AVEC MÉMÉ KRIKRI ☕ | Bon matin à tous.tes 🌞 | !artchallenges !liens !bs",
     "depuis": "2026-10-16T05:36:16Z",
@@ -791,7 +791,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "inKONBINI: One Store. Many Stories",
     "titre": "On gère le magasin de la tante !#2 | !tiktok | !Discord | !clip |",
     "depuis": "2026-10-16T06:59:28Z",
@@ -800,7 +800,8 @@
    "premierStream": "2026-01-31",
    "succes": [],
    "jeux": [
-    "Gloomy Eyes"
+    "Gloomy Eyes",
+    "inKONBINI: One Store. Many Stories"
    ],
    "clip": {
     "url": "https://www.twitch.tv/zeylta/clip/WrongUgliestConsoleDuDudu-Koryuhg6Lpmpx7G1",
@@ -818,5 +819,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-16T07:02:45.002Z"
+ "maj": "2026-10-16T07:07:25.069Z"
 }
