@@ -7,8 +7,8 @@
   "membres": 35,
   "affilies": 31,
   "nouveaux30": 35,
-  "heuresLive30": 606,
-  "followsGagnes30": 519,
+  "heuresLive30": 608,
+  "followsGagnes30": 522,
   "periode": {
    "du": "2026-09-23",
    "au": "2026-10-16"
@@ -129,7 +129,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
+    "viewers": 9,
     "jeu": "7 Days to Die",
     "titre": "Promenade au milieu des zombies🧟‍♂️, fracassage de crâne💀, et loot à profusion",
     "depuis": "2026-10-16T07:22:53Z",
@@ -276,7 +276,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Minecraft",
+    "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings ! - !réseaux",
+    "depuis": "2026-10-16T17:09:19Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -648,7 +654,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 8,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] Cozy gaming rien de mieux 💜✨ | Disney Dreamlight Valley | !discord !commandes",
     "depuis": "2026-10-16T16:15:07Z",
@@ -657,7 +663,8 @@
    "premierStream": null,
    "succes": [],
    "jeux": [
-    "Moonlight Peaks"
+    "Moonlight Peaks",
+    "Disney Dreamlight Valley"
    ],
    "clip": null
   },
@@ -821,5 +828,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-16T17:07:31.161Z"
+ "maj": "2026-10-16T17:20:04.240Z"
 }
