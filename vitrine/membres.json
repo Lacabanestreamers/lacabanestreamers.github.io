@@ -7,7 +7,7 @@
   "membres": 36,
   "affilies": 32,
   "nouveaux30": 36,
-  "heuresLive30": 617,
+  "heuresLive30": 622,
   "followsGagnes30": 522,
   "periode": {
    "du": "2026-09-23",
@@ -48,13 +48,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 9,
-    "jeu": "The Headliners",
-    "titre": "🎃 Mois de l'horreur🎃 ✨On s'éclate entre copaing🔥",
-    "depuis": "2026-10-16T18:57:33Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -277,7 +271,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "Minecraft",
     "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings ! - !réseaux",
     "depuis": "2026-10-16T17:09:19Z",
@@ -413,7 +407,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 12,
+    "viewers": 15,
     "jeu": "The Headliners",
     "titre": "FR_VT - Headliners avec @aly0806 @lilyth_minerva @kuroen_16e",
     "depuis": "2026-10-16T18:59:42Z",
@@ -510,13 +504,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 8,
-    "jeu": "The Headliners",
-    "titre": "🔞[DROP]  Entre papote et éclat de fun !! avec @kuroen_16e @aly0806 et @hyroshimaeu / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-10-16T18:57:50Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -856,5 +844,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-16T20:07:24.796Z"
+ "maj": "2026-10-16T20:56:57.669Z"
 }
