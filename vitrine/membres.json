@@ -7,7 +7,7 @@
   "membres": 36,
   "affilies": 32,
   "nouveaux30": 36,
-  "heuresLive30": 611,
+  "heuresLive30": 617,
   "followsGagnes30": 522,
   "periode": {
    "du": "2026-09-23",
@@ -277,7 +277,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "Minecraft",
     "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings ! - !réseaux",
     "depuis": "2026-10-16T17:09:19Z",
@@ -413,7 +413,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 12,
     "jeu": "The Headliners",
     "titre": "FR_VT - Headliners avec @aly0806 @lilyth_minerva @kuroen_16e",
     "depuis": "2026-10-16T18:59:42Z",
@@ -421,7 +421,9 @@
    },
    "premierStream": null,
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "The Headliners"
+   ],
    "clip": {
     "url": "https://www.twitch.tv/hyroshimaeu/clip/HorribleTriangularSlothAsianGlow-2rUo1xUAY2ZLNGch",
     "titre": "Pas de chance, attention rire de sorcière x)",
@@ -509,7 +511,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 8,
     "jeu": "The Headliners",
     "titre": "🔞[DROP]  Entre papote et éclat de fun !! avec @kuroen_16e @aly0806 et @hyroshimaeu / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-16T18:57:50Z",
@@ -671,13 +673,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 13,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "[FR] Cozy gaming rien de mieux 💜✨ | Disney Dreamlight Valley | !discord !commandes",
-    "depuis": "2026-10-16T16:15:07Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -860,5 +856,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-16T19:07:27.146Z"
+ "maj": "2026-10-16T20:07:24.796Z"
 }
