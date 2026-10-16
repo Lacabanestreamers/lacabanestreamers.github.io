@@ -128,7 +128,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "7 Days to Die",
+    "titre": "Promenade au milieu des zombies🧟‍♂️, fracassage de crâne💀, et loot à profusion",
+    "depuis": "2026-10-16T07:22:53Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
+   },
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -421,7 +427,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 12,
+    "viewers": 9,
     "jeu": "The Legend of Zelda: Tears of the Kingdom",
     "titre": "PYJA'MATINAL SUR HYRULE AVEC MÉMÉ KRIKRI ☕ | Bon matin à tous.tes 🌞 | !artchallenges !liens !bs",
     "depuis": "2026-10-16T05:36:16Z",
@@ -662,7 +668,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "American Truck Simulator",
+    "titre": "Bonjour, je livre les bonbon d'hallowen  !!!!",
+    "depuis": "2026-10-16T08:04:38Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -791,7 +803,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 2,
+    "viewers": 4,
     "jeu": "inKONBINI: One Store. Many Stories",
     "titre": "On gère le magasin de la tante !#2 | !tiktok | !Discord | !clip |",
     "depuis": "2026-10-16T06:59:28Z",
@@ -819,5 +831,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-16T07:07:25.069Z"
+ "maj": "2026-10-16T08:07:33.737Z"
 }
