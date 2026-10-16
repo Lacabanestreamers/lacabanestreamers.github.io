@@ -420,7 +420,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "The Legend of Zelda: Tears of the Kingdom",
+    "titre": "PYJA'MATINAL SUR HYRULE AVEC MÉMÉ KRIKRI ☕ | Bon matin à tous.tes 🌞 | !artchallenges !liens !bs",
+    "depuis": "2026-10-16T05:36:16Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
+   },
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [],
@@ -804,5 +810,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-16T01:07:40.125Z"
+ "maj": "2026-10-16T06:07:30.944Z"
 }
