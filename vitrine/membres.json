@@ -4,14 +4,14 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 33,
-  "affilies": 29,
-  "nouveaux30": 33,
-  "heuresLive30": 552,
-  "followsGagnes30": 479,
+  "membres": 38,
+  "affilies": 34,
+  "nouveaux30": 38,
+  "heuresLive30": 642,
+  "followsGagnes30": 520,
   "periode": {
    "du": "2026-09-23",
-   "au": "2026-10-15"
+   "au": "2026-10-17"
   }
  },
  "agenda": [
@@ -53,18 +53,18 @@
    "succes": [],
    "jeux": [
     "R.E.P.O.",
-    "Raft",
     "SO CLOSE",
+    "Raft",
     "The Other Side",
     "Phasmophobia"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/aly0806/clip/CovertCovertMangoMrDestructoid-pI-kd1PS4Y2J58pf",
-    "titre": "WzBot CLIP | 🎃 Mois de l'horreur🎃 ✨On part de le rire et la joie avec les coupai (by nezukochan974",
-    "vues": 5,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cb7ee0a0-056a-45ed-b74f-dacdba8f9a74/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-08",
-    "duree": 60
+    "url": "https://www.twitch.tv/aly0806/clip/SleepyEphemeralEndiveDBstyle-Vm77RgkvcykzgH2n",
+    "titre": "🎃 Mois de l'horreur🎃 ✨On s'éclate entre copaing🔥",
+    "vues": 6,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/8846afef-5af6-456f-bb1e-fa99710973d9/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-14",
+    "duree": 30
    }
   },
   {
@@ -76,7 +76,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": null,
-   "premierStream": null,
+   "premierStream": "2021-12-06",
    "succes": [],
    "jeux": [],
    "clip": {
@@ -133,10 +133,10 @@
    "succes": [],
    "jeux": [
     "Graveyard Keeper II",
-    "Brotato",
+    "7 Days to Die",
     "R.E.P.O.",
-    "VALORANT",
-    "Carnaval Marbles"
+    "Brotato",
+    "VALORANT"
    ],
    "clip": {
     "url": "https://www.twitch.tv/aulit42369/clip/GentlePuzzledHerdStrawBeary-VSvFTskDDzHDRYyR",
@@ -209,15 +209,15 @@
     "Disney Dreamlight Valley",
     "R.E.P.O.",
     "DEVOUR",
-    "The Quarry",
-    "Raft"
+    "SO CLOSE",
+    "The Quarry"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/chezelodie/clip/ExuberantFrailSwordTwitchRPG-HJT-HV-v3wYNibXQ",
-    "titre": "WzBot CLIP | 👹 DEVOUR SOLO : Personne pour me réanimer ... 😱 (by honinbo_)",
-    "vues": 3,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/dbbaa3d1-f8db-4f92-8ebf-3149a4f09b74/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-09",
+    "url": "https://www.twitch.tv/chezelodie/clip/CoySuspiciousQuailPermaSmug-MZks7LLAa9CDpOKI",
+    "titre": "WzBot CLIP | 🎃 ON VA TOUT CASSER SUR R.E.P.O. ! (et sûrement mourir aussi...) 👻 (by oko_san_)",
+    "vues": 6,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d90192ad-3649-4f01-9488-fbe8682f794a/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-15",
     "duree": 60
    }
   },
@@ -263,6 +263,20 @@
    }
   },
   {
+   "login": "detectiverenard",
+   "nom": "DetectiveRenard",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/de3452b8-c2fc-47f0-9e13-ac191ba851f4-profile_image-300x300.png",
+   "bio": "Un simple détective qui aime enquêter sur des dossiers et s'amuser en compagnie de ses assistants. Ici on discute et on profite des jeux en Live ! Email Pro : inspecteur.renard@gmail.com   ",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-17",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
+   "clip": null
+  },
+  {
    "login": "elegaming__",
    "nom": "elegaming__",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0919dbcd-ed9e-4317-aa73-9b0aec619c5a-profile_image-300x300.jpeg",
@@ -270,7 +284,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Splatoon 3",
+    "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
+    "depuis": "2026-10-17T14:00:42Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -287,12 +307,12 @@
     "Sword Art Online: Hollow Realization"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/elegaming__/clip/SpoopyAbnegateSalmonMrDestructoid-3f_fOVun5WxgOMLv",
-    "titre": "Déclaration d'Hermione 2/2",
+    "url": "https://www.twitch.tv/elegaming__/clip/HonestInterestingKiwiTooSpicy-rqO16IiXI1-vVZVG",
+    "titre": "Baji nous désespère 😭 pauvre Bloom 🥲",
     "vues": 1,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/64f9047f-5fb9-40f7-b6e5-dea79e9d6eb1/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f4a5ea2a-3e7e-4b4d-bdfe-bfbc1f15bc2c/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-14",
-    "duree": 60
+    "duree": 50
    }
   },
   {
@@ -332,8 +352,23 @@
    "premierStream": "2024-08-10",
    "succes": [],
    "jeux": [
-    "Disney Dreamlight Valley"
+    "Disney Dreamlight Valley",
+    "Red Dead Redemption II"
    ],
+   "clip": null
+  },
+  {
+   "login": "galaadours",
+   "nom": "GalaadOurs",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/11ba0745-6b15-480c-bfa2-814d06a70c54-profile_image-300x300.png",
+   "bio": "J'aime beaucoup trop jouer faire ce qui me plaît ^^ Beauf, de bonne humeur et qui adore les blagues nulles, j'ai hâte XD",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-15",
+   "live": null,
+   "premierStream": "2023-06-06",
+   "succes": [],
+   "jeux": [],
    "clip": null
   },
   {
@@ -388,14 +423,17 @@
    "live": null,
    "premierStream": null,
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "The Headliners",
+    "R.E.P.O."
+   ],
    "clip": {
-    "url": "https://www.twitch.tv/hyroshimaeu/clip/HorribleTriangularSlothAsianGlow-2rUo1xUAY2ZLNGch",
-    "titre": "Pas de chance, attention rire de sorcière x)",
-    "vues": 12,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b65033c3-fccc-450a-982c-63bfa2a449ea/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-09",
-    "duree": 52
+    "url": "https://www.twitch.tv/hyroshimaeu/clip/CrazyModernPigDancingBaby-NH0-iGWyRMlN-uCN",
+    "titre": "FR_VT - Encore et toujours plus !!!",
+    "vues": 2,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f80b7da7-1b70-44f2-a34e-87e3c9de15b9/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-13",
+    "duree": 30
    }
   },
   {
@@ -407,9 +445,11 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": null,
-   "premierStream": null,
+   "premierStream": "2025-09-19",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "The Legend of Zelda: Tears of the Kingdom"
+   ],
    "clip": null
   },
   {
@@ -427,7 +467,8 @@
     "Sovereign Tower",
     "Just Chatting",
     "Planet Zoo 2",
-    "Games + Demos"
+    "Games + Demos",
+    "Foxy Dumplings"
    ],
    "clip": null
   },
@@ -485,13 +526,13 @@
     "Dead by Daylight",
     "R.E.P.O.",
     "AION 2",
-    "The Quarry",
-    "7 Days to Die"
+    "7 Days to Die",
+    "The Quarry"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/ResilientCarelessGorillaOpieOP-moJ4qqiL3m-snMBP",
     "titre": "WzBot CLIP | 🔞[DROP] On essaie de pas avoir peur !! Entre papote et éclat de fun !!  (by mystika14)",
-    "vues": 3,
+    "vues": 4,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/1d17a98f-2695-4127-851f-dfe1ada28e3b/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-14",
     "duree": 60
@@ -606,6 +647,30 @@
     "R.E.P.O.",
     "Horror Game"
    ],
+   "clip": {
+    "url": "https://www.twitch.tv/mysti94/clip/ResoluteFrigidMetalCclamChamp-LMD1ENuxVBR5THWX",
+    "titre": "bug 3",
+    "vues": 1,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5bd8d1b6-d499-40e1-a2af-47dfe6857f43/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-15",
+    "duree": 7
+   }
+  },
+  {
+   "login": "nabelle_",
+   "nom": "Nabelle_",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/4736c6b2-1a20-474e-843f-c5a1e0bd8284-profile_image-300x300.png",
+   "bio": "Bienvenue dans mon monde ! Disney Girl - Colo - Jeux Vidéos ",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-15",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [
+    "Moonlight Peaks",
+    "Disney Dreamlight Valley"
+   ],
    "clip": null
   },
   {
@@ -617,9 +682,12 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": null,
-   "premierStream": null,
+   "premierStream": "2025-08-17",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Disney Dreamlight Valley",
+    "American Truck Simulator"
+   ],
    "clip": null
   },
   {
@@ -682,6 +750,20 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": null,
+   "premierStream": "2026-05-02",
+   "succes": [],
+   "jeux": [],
+   "clip": null
+  },
+  {
+   "login": "ptit_grenouille",
+   "nom": "ptit_grenouille",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/ace5a270-6c5a-457d-a153-88627da0c4f2-profile_image-300x300.png",
+   "bio": "jeux du moment : dofus/wakfu, the hunter et restory chill !!! ",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-17",
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [],
@@ -701,6 +783,20 @@
    "jeux": [
     "The Witcher 3: Wild Hunt Remastered"
    ],
+   "clip": null
+  },
+  {
+   "login": "rinka_henbyou",
+   "nom": "Rinka_Henbyou",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/60c66429-384f-4798-a53e-40ec843ffdc9-profile_image-300x300.png",
+   "bio": " Gameuse et roleplayeuse aphone qui aime les survival horror et RPG ! Je me lance dans le stream en partageant tranquillement ma passion pour le gaming. :3 Je débute dans le domaine du streaming alors ça ne sera probablement pas très opti.",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-16",
+   "live": null,
+   "premierStream": "2025-06-23",
+   "succes": [],
+   "jeux": [],
    "clip": null
   },
   {
@@ -746,6 +842,7 @@
    "premierStream": "2026-01-31",
    "succes": [],
    "jeux": [
+    "inKONBINI: One Store. Many Stories",
     "Gloomy Eyes"
    ],
    "clip": {
@@ -764,5 +861,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-15T10:46:21.699Z"
+ "maj": "2026-10-17T16:07:19.517Z"
 }
