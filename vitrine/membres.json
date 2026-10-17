@@ -7,7 +7,7 @@
   "membres": 38,
   "affilies": 34,
   "nouveaux30": 38,
-  "heuresLive30": 638,
+  "heuresLive30": 640,
   "followsGagnes30": 520,
   "periode": {
    "du": "2026-09-23",
@@ -285,7 +285,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
+    "viewers": 4,
     "jeu": "Splatoon 3",
     "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
     "depuis": "2026-10-17T14:00:42Z",
@@ -691,8 +691,8 @@
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
-    "American Truck Simulator",
-    "Disney Dreamlight Valley"
+    "Disney Dreamlight Valley",
+    "American Truck Simulator"
    ],
    "clip": null
   },
@@ -867,5 +867,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-17T14:07:20.561Z"
+ "maj": "2026-10-17T15:07:20.057Z"
 }
