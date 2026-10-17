@@ -4,9 +4,9 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 36,
-  "affilies": 32,
-  "nouveaux30": 36,
+  "membres": 37,
+  "affilies": 33,
+  "nouveaux30": 37,
   "heuresLive30": 630,
   "followsGagnes30": 520,
   "periode": {
@@ -244,7 +244,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "Dead by Daylight",
     "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
     "depuis": "2026-10-17T07:34:13Z",
@@ -748,6 +748,20 @@
    "clip": null
   },
   {
+   "login": "ptit_grenouille",
+   "nom": "ptit_grenouille",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/ace5a270-6c5a-457d-a153-88627da0c4f2-profile_image-300x300.png",
+   "bio": "jeux du moment : dofus/wakfu, the hunter et restory chill !!! ",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-17",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
+   "clip": null
+  },
+  {
    "login": "r3skyo",
    "nom": "R3skyo",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/4506736c-9801-4b95-b2b3-b44fb201ab6d-profile_image-300x300.png",
@@ -839,5 +853,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-17T09:12:10.851Z"
+ "maj": "2026-10-17T09:23:04.108Z"
 }
