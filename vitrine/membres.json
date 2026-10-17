@@ -4,10 +4,10 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 37,
-  "affilies": 33,
-  "nouveaux30": 37,
-  "heuresLive30": 630,
+  "membres": 38,
+  "affilies": 34,
+  "nouveaux30": 38,
+  "heuresLive30": 632,
   "followsGagnes30": 520,
   "periode": {
    "du": "2026-09-23",
@@ -244,7 +244,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 39,
+    "viewers": 37,
     "jeu": "Dead by Daylight",
     "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
     "depuis": "2026-10-17T07:34:13Z",
@@ -267,6 +267,20 @@
     "date": "2026-10-14",
     "duree": 11
    }
+  },
+  {
+   "login": "detectiverenard",
+   "nom": "DetectiveRenard",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/de3452b8-c2fc-47f0-9e13-ac191ba851f4-profile_image-300x300.png",
+   "bio": "Un simple détective qui aime enquêter sur des dossiers et s'amuser en compagnie de ses assistants. Ici on discute et on profite des jeux en Live ! Email Pro : inspecteur.renard@gmail.com   ",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-17",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
+   "clip": null
   },
   {
    "login": "elegaming__",
@@ -667,13 +681,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "American Truck Simulator",
-    "titre": "Bonjour, je continue mai livraison au USA  !!!!",
-    "depuis": "2026-10-17T08:48:34Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -853,5 +861,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-17T10:07:27.866Z"
+ "maj": "2026-10-17T10:53:43.528Z"
 }
