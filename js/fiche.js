@@ -121,6 +121,7 @@ function drawerProp(p){
     ${fld("Viewers moyens (saisie)","viewersMoyens",p.viewersMoyens,"number")}
     <label class="f">Viewers moyens mesurés (30 j)<input disabled value="${(() => { const v = viewersStats(p); return v ? `${v.avg} (${v.n} mesures, ${v.days} j de live)` : "pas encore mesuré"; })()}"></label>
   </div>
+  ${reperesProp(p)}
   <fieldset><legend>Avis du staff</legend>${voteSummary(p)}${st.staff.map(avisRow).join("") || `<p class="muted">Ajoute les membres du staff dans Réglages.</p>`}</fieldset>
   ${revoirBlock(p)}
   ${rappelsBlock(p, "propositions")}
@@ -149,9 +150,10 @@ function rappelsBlock(r, c){
   const d7 = new Date(Date.now() + 7*864e5), def = new Date(d7.getTime() - d7.getTimezoneOffset()*60000).toISOString().slice(0,10);
   return `<fieldset><legend>Rappels</legend>
     ${list.length ? `<ul class="rappels">${list.map(x => { const j = joursAvant(x.date);
-      return `<li><span class="dt ${j < 0 ? "down" : j === 0 ? "warn" : ""}">${fmtDate(x.date)}</span><span class="tx">${esc(x.texte)}</span><span class="par">${esc(x.par || "?")}${j < 0 ? ` · en retard de ${-j} j` : j === 0 ? " · aujourd'hui" : ` · dans ${j} j`}</span>
+      return `<li><span class="dt ${j < 0 ? "down" : j === 0 ? "warn" : ""}">${fmtDate(x.date)}</span><span class="tx">${esc(x.texte)}${x.repete && REPETITIONS[x.repete] ? ` <span class="rep" title="Rappel qui revient tout seul">🔁 ${REPETITIONS[x.repete].toLowerCase()}</span>` : ""}</span><span class="par">${esc(x.par || "?")}${j < 0 ? ` · en retard de ${-j} j` : j === 0 ? " · aujourd'hui" : ` · dans ${j} j`}</span>
         <button type="button" class="btn ghost" data-rpdone="${x.id}" style="padding:2px 10px">Fait</button></li>`; }).join("")}</ul>` : `<p class="meta" style="margin-top:0">Aucun rappel. Ex. : « recontacter après ses vacances ».</p>`}
     <div class="rpadd"><input type="date" id="rpDate" value="${def}" aria-label="Date du rappel"><input type="text" id="rpTexte" placeholder="Quoi faire ce jour-là ?" maxlength="200" aria-label="Texte du rappel">
+      <select id="rpRep" aria-label="Répétition">${Object.entries(REPETITIONS).map(([k, l]) => `<option value="${k}">${l}</option>`).join("")}</select>
       <button type="button" class="btn" id="rpAdd">Ajouter le rappel</button></div>
   </fieldset>`;
 }
@@ -198,9 +200,10 @@ function drawerMembre(m){
       <label class="f">Mise à jour<select data-k="followsMode"><option value="auto" ${m.followsMode!=="manuel"?"selected":""}>Auto (Twitch)</option><option value="manuel" ${m.followsMode==="manuel"?"selected":""}>Manuelle</option></select></label>
       ${m.followsMode === "manuel" ? fld("Follows (saisie)","followsManuel",m.followsManuel,"number") : `<label class="f">Follows actuels<input disabled value="${esc(liveOf(m.login).follows ?? "non lu")}"></label>`}
     </div>
-    ${sparkline(m)}
+    ${courbeBascule()}${sparkline(m)}
     ${(() => { const pl = (S.data.paliers || []).filter(x => x.login === m.login).slice(-5).reverse(); return pl.length ? `<p class="meta" style="margin-top:2px">Paliers : ${pl.map(x => `<b>${x.palier}</b> le ${fmtDate(x.date)}`).join(" · ")}</p>` : ""; })()}
   </fieldset>
+  ${pauseBlock(m)}
   ${suiviBlock(m)}
   ${integrationBlock(m)}
   ${(() => { const l = evenementsRecents(3650).filter(x => x.login === m.login); return l.length ? `<fieldset><legend>Réussites (vitrine)</legend><ul style="list-style:none;padding:0;margin:0">${l.map(x => `<li style="display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;padding:3px 0"><span style="flex:1 1 160px;min-width:0">${x.kind === "palier" ? "🚀" : "🎉"} ${esc(x.txt)} · <span class="muted">${fmtDate(x.date)}</span>${x.masque ? ` · <b class="warn">masquée</b>` : ""}</span>${btnReussite(x)}</li>`).join("")}</ul></fieldset>` : ""; })()}

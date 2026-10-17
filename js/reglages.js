@@ -180,18 +180,19 @@ function aNettoyer(){
   const dupProps = [], dejaMembres = [];
   for(const p of ouvertes){
     const m = membreDe.get(cle(p)) || membreLogin.get(p.login.toLowerCase());
-    if(m) dejaMembres.push({r:p, c:"propositions", info:`déjà dans Streamers (${m.statut === "Parti" ? "parti" : "présent"})`});
-    const k = cle(p); if(vusProp.has(k)) dupProps.push({r:p, c:"propositions", info:`même chaîne que la proposition du ${fmtDate(vusProp.get(k).dateProposition || "") || "?"}`}); else vusProp.set(k, p);
+    if(m) dejaMembres.push({r:p, c:"propositions", info:`déjà dans Streamers (${m.statut === "Parti" ? "parti" : "présent"})`, fusion:{c:"membres", id:m.id}});
+    const k = cle(p); if(vusProp.has(k)) dupProps.push({r:p, c:"propositions", info:`même chaîne que la proposition du ${fmtDate(vusProp.get(k).dateProposition || "") || "?"}`, fusion:{c:"propositions", id:vusProp.get(k).id}}); else vusProp.set(k, p);
   }
   const introuvables = [...presents.map(r => ({r, c:"membres"})), ...ouvertes.map(r => ({r, c:"propositions"}))].filter(x => x.r.introuvable)
     .map(x => ({...x, info:`chaîne Twitch introuvable depuis le ${fmtDate(x.r.introuvable)} (supprimée, bannie ou renommée sans suivi)`}));
-  const inactifs = presents.filter(m => !["Admin","Modo"].includes(m.role)).map(m => ({m, x:lastStream(m)})).filter(({x}) => x && !x.live && x.days >= INACTIF_JOURS)
+  const inactifs = presents.filter(m => !["Admin","Modo"].includes(m.role) && !enPause(m)).map(m => ({m, x:lastStream(m)})).filter(({x}) => x && !x.live && x.days >= INACTIF_JOURS)
     .sort((a, b) => b.x.days - a.x.days).map(({m, x}) => ({r:m, c:"membres", info:`pas de live depuis ${x.days} jours (${x.src})`, inactif:true}));
   const incompletes = presents.filter(m => !["Admin","Modo"].includes(m.role)).map(m => ({r:m, c:"membres", manque:[!m.referent && "référent", !m.premierStream && "date du 1er stream", !m.arrivee && "date d'arrivée"].filter(Boolean)}))
     .filter(x => x.manque.length).map(x => ({...x, info:`manque : ${x.manque.join(", ")}`}));
   return [["Chaînes introuvables", introuvables, "Le robot ne trouve plus ces chaînes sur Twitch."],
     ["Propositions déjà dans Streamers", dejaMembres, "La proposition est restée ouverte alors que la chaîne est déjà membre."],
     ["Propositions en double", dupProps, "La même chaîne a été proposée plusieurs fois."],
+    ["Streamers en double", membresEnDouble(), "La même chaîne a deux fiches dans Streamers (souvent après un changement de pseudo)."],
     [`Sans live depuis plus de ${INACTIF_JOURS} jours`, inactifs, "Membres présents (hors Admin et Modo) qui ne streament plus."],
     ["Fiches incomplètes", incompletes, "Membres présents (hors Admin et Modo) à qui il manque des informations."]];
 }
@@ -200,7 +201,7 @@ function viewNettoyage(){
   const ligne = x => `<li class="netl">
     <a href="#" data-open="${x.c}:${x.r.id}" class="login">${avatarHtml(x.r.login)} ${esc(x.r.login)}</a>
     <span class="meta">${esc(x.info)}</span>
-    <span class="netb">${x.c === "membres" && x.inactif ? `<button class="btn ghost" data-netparti="${x.r.id}" >Marquer « Parti »</button>` : ""}${x.c === "propositions" ? `<button class="btn ghost" data-netclore="${x.r.id}">Clore (Abandonnée)</button><button class="btn danger" data-netdel="${x.r.id}">Supprimer</button>` : ""}<button class="btn" data-open="${x.c}:${x.r.id}">Ouvrir</button></span></li>`;
+    <span class="netb">${x.fusion ? `<button class="btn primary" data-fusion="${x.c}:${x.r.id}:${x.fusion.c}:${x.fusion.id}" title="Réunit tout dans une seule fiche ; l'autre part à la corbeille">Fusionner</button>` : ""}${x.c === "membres" && x.inactif ? `<button class="btn ghost" data-netparti="${x.r.id}" >Marquer « Parti »</button>` : ""}${x.c === "propositions" ? `<button class="btn ghost" data-netclore="${x.r.id}">Clore (Abandonnée)</button><button class="btn danger" data-netdel="${x.r.id}">Supprimer</button>` : ""}<button class="btn" data-open="${x.c}:${x.r.id}">Ouvrir</button></span></li>`;
   return `<h1>Nettoyage</h1>
   <p class="sub">${total ? `${total} point${total > 1 ? "s" : ""} à vérifier (la pastille du menu ne compte pas les fiches incomplètes).` : "Rien à nettoyer : tout est en ordre. 👌"} Rien n'est modifié tout seul : chaque action se fait ici, à la main, et reste visible dans l'historique.</p>
   ${groupes.map(([titre, l, aide]) => `<section class="panel netp"><h2>${esc(titre)}${l.length ? ` <span class="navn">${l.length}</span>` : ""}</h2><p class="meta" style="margin-top:0">${esc(aide)}</p>

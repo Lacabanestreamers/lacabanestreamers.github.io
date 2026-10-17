@@ -29,20 +29,36 @@ function viewAide(){
       <li><b>Réglages</b> : rangés en cinq groupes (Mon compte, Robot et santé, Équipe, Vitrine publique, Données). Chaque panneau se déplie avec sa flèche ; fermé, il affiche son état en un coup d'œil (connecté, 1 problème, dernière sauvegarde…). Ce que tu ouvres reste ouvert sur cet appareil ; « Tout ouvrir » / « Tout fermer » en haut.</li>
       <li><b>Vitrine ↗</b> ouvre la page publique. <b>Bot ↗</b> ouvre le site de gestion du bot Discord (adresse à mettre à jour dans Réglages → Site de gestion du bot quand elle change). <b>🔍</b> (ou <b>Ctrl+K</b>) cherche partout.</li></ul>`)}
   ${sec("quotidien", "Au quotidien", `
+    <h3>Ajouter une chaîne</h3>
+    <p><b>Ajouter une proposition</b> ou <b>Ajouter une chaîne</b> ouvre une petite fenêtre : en tapant le pseudo (ou en collant le lien), la page vérifie tout de suite sur Twitch que la chaîne existe et affiche son avatar, son nom, son statut (affilié, partenaire) et ses follows. Elle prévient aussi si la chaîne est déjà proposée ou déjà dans La Cabane.</p>
     <h3>Donner son avis sur une proposition</h3>
     <p>Ouvre la fiche, puis clique sur <b>Pour</b>, <b>Contre</b> ou <b>Neutre</b> sur ta ligne, ou écris un avis libre. Tu peux aussi réagir sous le message de la proposition dans le salon staff de Discord : 👍 Pour, 🤔 Neutre, 👎 Contre (ton compte Discord doit être noté dans Réglages → Comptes Discord du staff). L'avis arrive sur la fiche dans l'heure, marqué « (Discord) ». Quand une majorité se dégage, la fiche propose d'appliquer le statut correspondant.</p>
+    <h3>Repères chiffrés</h3>
+    <p>Sur chaque proposition, l'encadré <b>Repères (30 jours)</b> donne ce que le robot a mesuré : jours et heures de live, viewers moyens, follows et leur évolution, dernier stream. Ce sont des repères pour l'avis, pas une note automatique.</p>
     <h3>Prendre une proposition en charge</h3>
     <p>Sur la fiche, choisis le <b>Responsable</b> : celui qui contacte le streamer (la page suggère le moins chargé). Tes propositions apparaissent sur l'Accueil, et chaque matin à 9 h le robot te mentionne dans le salon staff si l'une d'elles stagne ou si un de tes rappels tombe.</p>
     <h3>Accepter une chaîne</h3>
     <p>Sur la fiche de la proposition, clique sur <b>Accepter et transférer dans Streamers</b>. La fiche passe dans Streamers et garde tout son historique (parrain, avis). Pense à lui choisir un <b>référent</b>.</p>
     <h3>Intégrer et suivre un nouveau</h3>
     <p>Sur la fiche d'un nouveau membre, coche les étapes d'<b>intégration</b> au fur et à mesure (ajouté au Discord, rôle donné…, liste réglable dans Réglages → Listes). Tant qu'elles ne sont pas toutes cochées (60 premiers jours), il apparaît sur l'Accueil. Le référent est aussi rappelé de prendre des nouvelles à J+7 et à J+30.</p>
+    <h3>Tes streamers (référent)</h3>
+    <p>À l'Accueil, la carte <b>Tes streamers</b> liste ceux dont tu es le référent, avec ce qui mérite ton attention : pas de live depuis 14 jours, intégration pas finie, prise de nouvelles J+7 / J+30, rappel, pause. « Voir dans Streamers » ouvre le tableau filtré (filtre <b>Référent</b>, qu'on peut enregistrer comme vue). Le <b>Tableau de bord</b> montre les suivis de chaque membre du staff.</p>
+    <h3>Mettre un streamer en pause</h3>
+    <p>Sur sa fiche, section <b>Pause</b> : « En pause jusqu'au… » (vacances, examens, santé). Jusqu'à cette date, il n'apparaît plus dans les inactifs (Accueil, Nettoyage). À la fin, il revient tout seul, et la carte <b>De retour de pause</b> le signale pendant 7 jours.</p>
+    <h3>Acceptés pas encore arrivés</h3>
+    <p>La carte de l'Accueil liste les propositions « Accepté » pas encore transférées dans Streamers, avec le nombre de jours depuis l'invitation : pratique pour relancer.</p>
     <h3>Contacter un streamer</h3>
     <p>Dans une fiche, choisis un modèle dans « Préparer un message… » (invitation, refus, bienvenue…), retouche le texte si besoin, puis clique sur <b>Copier</b> et colle le message dans Discord. Sous la liste, « Pour ce statut » propose le modèle qui colle à la fiche (refus pour une proposition refusée, demande d'infos pour une proposition à trier…). Chaque copie est notée sur la fiche (« Déjà copiés ») pour éviter que deux personnes envoient le même message. Pour un refus, remplis le champ <b>Motif du refus</b> : il est repris dans le message.</p>
     <h3>Revoir un refus plus tard</h3>
     <p>Sur une proposition refusée ou abandonnée, la section <b>Revoir plus tard</b> programme un rappel dans 3, 6 ou 12 mois. Le jour venu, elle apparaît dans tes rappels du jour et dans le message Discord de 9 h ; si la chaîne a progressé, clique sur <b>Reproposer</b> (le rappel est retiré tout seul).</p>
     <h3>Ne rien oublier : les rappels</h3>
     <p>Dans une fiche, section <b>Rappels</b> : choisis une date et écris quoi faire (« recontacter après ses vacances »). Le jour venu, le rappel apparaît sur l'Accueil (« Rappels du jour », filtre « Les miens »), une 🔔 s'affiche dans les tableaux, et le robot te mentionne à 9 h. Clique sur <b>Fait</b> une fois traité.</p>
+    <h3>Rappels qui se répètent</h3>
+    <p>En ajoutant un rappel, choisis <b>Chaque semaine</b>, <b>Chaque mois</b> ou <b>Tous les 3 mois</b> : quand tu cliques sur « Fait », il revient tout seul à la prochaine échéance (🔁 sur la fiche).</p>
+    <h3>Courbe des follows depuis le début</h3>
+    <p>Sur la fiche d'un streamer, au-dessus de la courbe : <b>Depuis le début</b> ajoute les relevés archivés (un par mois) pour voir toute son évolution, pas seulement les derniers mois.</p>
+    <h3>Fiches en double</h3>
+    <p>Onglet <b>Nettoyage</b> : une chaîne en double (proposée deux fois, proposition restée ouverte alors qu'elle est dans Streamers, deux fiches streamer) a un bouton <b>Fusionner</b>. Tout est réuni dans une seule fiche (avis, historique, rappels, étiquettes, notes) ; l'autre part à la corbeille, restaurable.</p>
     <h3>Modifier plusieurs fiches</h3>
     <p>Coche les fiches dans un tableau : une barre apparaît en bas pour changer d'un coup le statut, le rôle, le référent ou une étiquette.</p>
     <h3>Annuler, corbeille, modification simultanée</h3>

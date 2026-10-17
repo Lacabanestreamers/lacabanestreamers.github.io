@@ -2,11 +2,11 @@
 // Stratégie « réseau d'abord » : chaque mise à jour de index.html est prise dès qu'il y a du réseau.
 // Réseau trop lent (plus de 4 s) : la version en cache s'affiche tout de suite, la nouvelle est rangée pour la fois suivante.
 // Les données (GitHub, Twitch, decapi) ne passent jamais par ce cache.
-const CACHE = "cabane-v6";
+const CACHE = "cabane-v7";
 // la page est découpée en plusieurs fichiers : tous mis en cache à l'installation (même numéro de version que dans index.html)
-const V = "?v=20261014";
+const V = "?v=20261017";
 const FICHIERS = ["./", "index.html", "manifest.webmanifest", "icon-192.png", "icon-512.png", "icon-maskable-512.png", "commun.js" + V, "css/cabane.css" + V,
-  ...["donnees", "twitch", "vues", "fiche", "aide", "agenda", "reglages", "actions", "recherche", "demarrage"].map(n => `js/${n}.js${V}`)];
+  ...["donnees", "twitch", "vues", "fiche", "aide", "agenda", "reglages", "suivi", "ajout", "doublons", "actions", "recherche", "demarrage"].map(n => `js/${n}.js${V}`)];
 const DELAI = 4000;
 
 self.addEventListener("install", e => {

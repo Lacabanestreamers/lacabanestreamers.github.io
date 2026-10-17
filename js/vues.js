@@ -9,7 +9,7 @@ function render(){
   if(S.selView !== S.view){ S.sel.clear(); S.selView = S.view; }
   renderTicker();
   majLienBot();
-  { const nb = document.getElementById("navNet"); if(nb){ try { const n = aNettoyer().slice(0, 4).reduce((a, [, l]) => a + l.length, 0); nb.textContent = n ? String(n) : ""; /* fiches incomplètes non comptées */ } catch { nb.textContent = ""; } } }
+  { const nb = document.getElementById("navNet"); if(nb){ try { const n = aNettoyer().slice(0, 5).reduce((a, [, l]) => a + l.length, 0); nb.textContent = n ? String(n) : ""; /* fiches incomplètes non comptées */ } catch { nb.textContent = ""; } } }
   const v = {accueil:viewAccueil, propositions:viewPropositions, membres:viewMembres, anniv:viewAnniv, stats:viewStats, agenda:viewAgenda, nettoyage:viewNettoyage, reglages:viewReglages, aide:viewAide}[S.view];
   const focus = document.activeElement && document.activeElement.id; const caret = document.activeElement && document.activeElement.selectionStart;
   // Les rafraîchissements automatiques (live, synchro) ne doivent pas effacer ce qu'on est en train de saisir
@@ -142,7 +142,7 @@ const colOn = (view, c) => (colPrefs[view] || {})[c.k] ?? !c.off;
 const visibleCols = view => COLS[view].filter(c => colOn(view, c));
 /* ----- Vues enregistrées : filtres + tri d'un tableau, retrouvés en un clic ----- */
 // Personnelles (rangées sous le prénom choisi dans « Je suis », visibles sur tous tes appareils) ou communes à tout le staff
-const VUE_CHAMPS = {propositions:["pq", "pst", "ptag", "psort"], membres:["mq", "mst", "mrole", "mtag", "msort", "ref"]};
+const VUE_CHAMPS = {propositions:["pq", "pst", "ptag", "psort"], membres:["mq", "mst", "mrole", "mref", "mtag", "msort", "ref"]};
 const VUES_LOCAL = "cabane.vues";
 const etatVue = view => Object.fromEntries(VUE_CHAMPS[view].map(k => [k, S.f[k]]));
 const vuesPerso = () => cfg.me ? (S.data.settings.vues?.[cfg.me] || []) : store.get(VUES_LOCAL, []);
@@ -177,7 +177,7 @@ function tableHtml(view, rows, sort){
     <tbody>${rows.map(r => `
       <tr data-open="${c}:${r.id}" class="${S.sel.has(r.id) ? "picked" : ""}">
         ${selCell(r.id)}
-        ${cell("", `<span class="who">${avatarHtml(r.login)}<span class="login">${esc(r.login)}</span></span>${typeTag(r)}${aRappelEchu(r) ? `<span class="bell" title="Rappel à traiter">🔔</span>` : ""}${view === "propositions" && liveOf(r.login).live ? ` <span class="live">LIVE</span>` : ""}${view === "propositions" && STAG_STATUTS.includes(r.statut) && (depuisStatut(r) ?? 0) >= stagJours() ? `<span class="stag" title="Dans le statut « ${esc(r.statut)} » depuis ${depuisStatut(r)} jours">⏳ ${depuisStatut(r)} j</span>` : ""}`, "first")}
+        ${cell("", `<span class="who">${avatarHtml(r.login)}<span class="login">${esc(r.login)}</span></span>${typeTag(r)}${c === "membres" ? pauseBadge(r) : ""}${aRappelEchu(r) ? `<span class="bell" title="Rappel à traiter">🔔</span>` : ""}${view === "propositions" && liveOf(r.login).live ? ` <span class="live">LIVE</span>` : ""}${view === "propositions" && STAG_STATUTS.includes(r.statut) && (depuisStatut(r) ?? 0) >= stagJours() ? `<span class="stag" title="Dans le statut « ${esc(r.statut)} » depuis ${depuisStatut(r)} jours">⏳ ${depuisStatut(r)} j</span>` : ""}`, "first")}
         ${cols.map(col => cell(col.l, col.td(r), col.n ? "num" : "")).join("")}
       </tr>`).join("") || `<tr><td colspan="${cols.length + 2}" class="empty">Aucune fiche ne correspond à ce filtre.</td></tr>`}</tbody>
   </table></div>`;
@@ -228,6 +228,7 @@ function membreRows(){
     if(S.f.mst === "" && m.statut) return false;
     if(S.f.mst === "Parti" && m.statut !== "Parti") return false;
     if(S.f.mrole !== "__all" && (m.role||"") !== S.f.mrole) return false;
+    if(S.f.mref && S.f.mref !== "__all" && (S.f.mref === "__sans" ? !!m.referent : m.referent !== S.f.mref)) return false;
     if(S.f.mtag && !hasTag(m, S.f.mtag)) return false;
     return !q || [m.login, m.discord, m.notes, m.referent, ...(m.tags || [])].some(x => String(x||"").toLowerCase().includes(q));
   });
@@ -258,6 +259,7 @@ function viewMembres(){
   <div class="tools chips">
     ${chip("__actifs","Sans les partis",all.length-nParti)}${chip("Présent","Présents",nPres)}${chip("","À renseigner",nVide)}${chip("Parti","Partis",nParti)}
     <select id="roleSel" class="chip" aria-label="Rôle"><option value="__all">Tous les rôles</option>${d.settings.roles.map(r => `<option ${S.f.mrole===r?"selected":""}>${esc(r)}</option>`).join("")}</select>
+    <select id="refFiltre" class="chip" aria-label="Référent"><option value="__all">Tous les référents</option><option value="__sans" ${S.f.mref==="__sans"?"selected":""}>Sans référent</option>${d.settings.staff.map(r => `<option value="${esc(r)}" ${S.f.mref===r?"selected":""}>${r === cfg.me ? "Mes streamers" : "Suivis par " + esc(r)}</option>`).join("")}</select>
     ${tagFilter("mtagSel", S.f.mtag)}
   </div>
   ${vuesBar("membres")}
@@ -329,7 +331,8 @@ function viewAccueil(){
   const avis = me ? d.propositions.filter(p => p.statut === "Attente staff" && !p.avis?.[me])
                       .sort((a,b) => String(a.dateProposition||"").localeCompare(String(b.dateProposition||""))) : [];
   const annivs = actifs.filter(m => m.premierStream).map(m => ({m, a:annivInfo(m.premierStream)})).filter(x => x.a.days <= 7).sort((x,y) => x.a.days - y.a.days);
-  const inactifs = actifs.map(m => ({m, x:lastStream(m)})).filter(o => o.x && !o.x.live && o.x.days >= 30).sort((a,b) => b.x.days - a.x.days);
+  const inactifs = actifs.filter(m => !enPause(m)).map(m => ({m, x:lastStream(m)})).filter(o => o.x && !o.x.live && o.x.days >= 30).sort((a,b) => b.x.days - a.x.days);
+  const retours = retoursDePause();
   const inconnus = actifs.filter(m => !lastStream(m)).length;
   const need = m => [!m.statut && "statut", !m.role && "rôle", !m.discord && "Discord", !m.premierStream && "1er stream"].filter(Boolean);
   const incomplets = actifs.filter(m => need(m).length).sort((a,b) => need(b).length - need(a).length);
@@ -340,6 +343,9 @@ function viewAccueil(){
   <div class="home">
     ${me ? card("Tes avis en attente", avis, p => li("propositions", p, `${pill(p.statut)}${p.proposePar ? " · " + esc(p.proposePar) : ""}`), "Aucune proposition « Attente staff » n'attend ton avis.", `data-goto="propositions" data-pst="Attente staff"`)
          : `<section class="card"><h2>Tes avis en attente</h2><p class="none">Choisis ton prénom dans <a href="#" data-goto="reglages">Réglages</a> pour voir les propositions qui attendent ton avis.</p></section>`}
+    ${mesStreamersCard()}
+    ${acceptesCard()}
+    ${retours.length ? card("De retour de pause", retours, m => li("membres", m, `depuis le ${fmtDate(m.pauseJusqua)}${m.referent ? " · " + esc(m.referent) : ""}`), "", "") : ""}
     ${card("Anniversaires dans les 7 jours", annivs.map(x => x.m), m => { const a = annivInfo(m.premierStream); return li("membres", m, `${a.years} ${a.years>1?"ans":"an"} · <b class="${a.days===0?"up":""}">${a.days===0?"aujourd'hui":a.days===1?"demain":"dans "+a.days+" j"}</b>`); }, "Aucun anniversaire de stream cette semaine.", `data-goto="anniv"`)}
     ${card("Inactifs depuis 30 jours ou plus", inactifs.map(o => o.m), m => { const x = lastStream(m); return li("membres", m, `<span class="down">${x.days} j</span>`); }, "Tout le monde a streamé ce mois-ci." + (inconnus ? ` (${inconnus} chaîne${inconnus>1?"s":""} sans date connue)` : ""), `data-goto="membres"`)
        .replace("</section>", inconnus && inactifs.length ? `<p class="meta">${inconnus} chaîne${inconnus>1?"s":""} sans date de dernier stream connue.</p></section>` : "</section>")}
@@ -600,6 +606,7 @@ function viewStats(){
       const sans = S.data.membres.filter(m => m.statut !== "Parti" && !["Admin","Modo"].includes(m.role) && !m.referent && m.arrivee && (Date.now() - new Date(m.arrivee + "T12:00:00")) / 864e5 <= 60).length;
       return c.length ? c.map(x => `<div class="row"><span><b>${esc(x.nom)}</b></span><span class="bar" title="${x.nouveaux} nouveau(x) en suivi"><i style="width:${x.nouveaux / max * 100}%"></i></span><span class="muted">${x.nouveaux} nouveau${x.nouveaux > 1 ? "x" : ""} · ${x.total} au total</span></div>`).join("")
         + `<p class="meta">« Nouveaux » : arrivés depuis 60 jours ou moins (hors Admin et Modo).${sans ? ` <span class="warn">${sans} nouveau${sans > 1 ? "x" : ""} sans référent.</span>` : ""}</p>` : `<p class="none">Ajoute le staff dans Réglages.</p>`; })()}</section>
+    ${suivisParStaffCard()}
     <section class="card"><h2>Rôles</h2>${barChart(Object.entries(actifs.reduce((o,m) => (o[m.role || "Sans rôle"] = (o[m.role || "Sans rôle"]||0) + 1, o), {})).sort((a,b) => b[1]-a[1]).map(([l,v]) => ({l, v, c:"var(--cyan)"})))}</section>
   </div>`;
 }
@@ -636,7 +643,7 @@ function renderTicker(){
 
 /* ----- Courbe des follows ----- */
 function sparkline(m){
-  const pts = S.data.snapshots.filter(s => s.follows?.[m.login] != null).map(s => ({d:s.date, v:s.follows[m.login]}));
+  const pts = relevesCourbe().filter(s => s.follows?.[m.login] != null).map(s => ({d:s.date, v:s.follows[m.login]}));
   const cur = currentFollows(m), today = todayISO();
   if(cur != null && !pts.some(p => p.d === today)) pts.push({d:today, v:cur, now:true});
   if(pts.length < 2) return `<p class="meta">La courbe apparaîtra dès qu'il y aura deux relevés (le robot en fait matin, midi et soir).</p>`;

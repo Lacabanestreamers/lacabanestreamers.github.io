@@ -68,6 +68,7 @@ document.addEventListener("change", e => {
     toast(`${t.dataset.dnom} = ${m.login} : inscrit, et reconnu automatiquement la prochaine fois`); return; }
   if(t.id === "refSel"){ S.f.ref = t.value; render(); return; }
   if(t.id === "roleSel"){ S.f.mrole = t.value; render(); return; }
+  if(t.id === "refFiltre"){ S.f.mref = t.value; render(); return; }
   if(t.id === "ev_ppl" && S.evEdit){ const l = normLogin(t.value); if(!l) return;
     if(!S.data.membres.some(m => m.login === l)){ toast(`${l} n'est pas dans Streamers.`, true); return; }
     const e = lireEvForm(); if(!(e.participants || []).includes(l)) e.participants = [...(e.participants || []), l];

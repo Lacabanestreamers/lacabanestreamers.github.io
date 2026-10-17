@@ -417,3 +417,38 @@ nav a.navlink:hover{color:var(--cyan);text-decoration:none}
   .drawer{animation:slide .18s ease-out}
   @keyframes slide{from{transform:translateX(30px);opacity:.4}}
 }
+
+/* Pause d'un streamer */
+.tag.pause{color:var(--warn);border-color:rgba(255,200,87,.45);background:rgba(255,200,87,.08)}
+.pausef .grid{margin-top:4px}
+/* Rappels qui se répètent */
+.rappels .rep{font-size:13px;color:var(--cyan);white-space:nowrap}
+.rpadd select{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
+/* Mes streamers (référent) et suivis par staff */
+.card.mesref{border-color:rgba(61,227,255,.35);box-shadow:inset 3px 0 0 var(--cyan)}
+.card.mesref h2 .n{background:var(--cyan)}
+.refstaff details{border-top:1px solid var(--line);padding:6px 0}
+.refstaff details:first-of-type{border-top:0}
+.refstaff summary{display:flex;gap:10px;align-items:baseline;cursor:pointer;list-style:none;padding:4px 2px}
+.refstaff summary::-webkit-details-marker{display:none}
+.refstaff summary::before{content:"▸";color:var(--pink);transition:transform .15s}
+.refstaff details[open] summary::before{transform:rotate(90deg)}
+.refstaff summary .warn{margin-left:auto;font-size:14px}
+/* Repères chiffrés d'une proposition */
+.rep-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));gap:8px}
+.rep-grid>div{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px 10px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.rep-grid .l{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.rep-grid b{font:800 20px/1.1 Orbitron,sans-serif;color:var(--text)}
+.rep-grid .s{font-size:13px;color:var(--muted);overflow-wrap:anywhere}
+/* Courbe : récente / depuis le début */
+.courbe-tg{display:flex;gap:6px;margin:4px 0 6px;flex-wrap:wrap}
+.courbe-tg .chip{font-size:13px;padding:2px 10px}
+/* Fenêtre d'ajout d'une chaîne */
+.ajout-ov{position:fixed;inset:0;z-index:60;background:rgba(8,5,20,.72);backdrop-filter:blur(3px);display:grid;place-items:start center;padding:12vh 16px 16px}
+.ajout{width:min(520px,100%);background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:0 20px 60px rgba(0,0,0,.5),0 0 0 1px rgba(255,79,216,.15)}
+.ajout h2{margin:0 0 12px;font:800 19px/1.2 Orbitron,sans-serif}
+.ajout input{width:100%}
+.aj-apercu{margin-top:12px;min-height:74px}
+.aj-carte{display:flex;gap:12px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.aj-carte img,.aj-carte .av{width:56px;height:56px;border-radius:50%;flex:none;object-fit:cover;box-shadow:0 0 0 2px var(--bg),0 0 0 3px var(--pink)}
+.aj-carte .bio{display:block;font-size:14px;color:var(--muted);margin-top:4px}

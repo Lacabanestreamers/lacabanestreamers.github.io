@@ -38,7 +38,7 @@ const S = {
   pending:[], saving:false, dirtyLocal:false,
   live:{}, liveLoading:false, avatars:{},
   view:"accueil", drawer:null, sel:new Set(), selView:"", visible:[], tickerKey:"",
-  f:{ ptag:"", mtag:"", pq:"", pst:"__all", msort:["login",1], psort:["login",1], mq:"", mst:"__actifs", mrole:"__all", ref:"" }
+  f:{ ptag:"", mtag:"", pq:"", pst:"__all", msort:["login",1], psort:["login",1], mq:"", mst:"__actifs", mrole:"__all", mref:"__all", ref:"" }
 };
 
 /* ============ Modèle : opérations ============ */

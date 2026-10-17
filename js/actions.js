@@ -90,7 +90,15 @@ document.addEventListener("click", e => {
   const rpd = t.closest("[data-rpdone]");
   if(rpd){ e.stopPropagation(); const c = rpd.dataset.rpc || S.drawer?.c, id = rpd.dataset.rpid || S.drawer?.id; const r = S.data[c]?.find(x => x.id === id); if(!r) return;
     const rp = (r.rappels || []).find(x => x.id === rpd.dataset.rpdone); if(!rp) return;
+    if(rp.repete && REPETITIONS[rp.repete]){     // rappel qui se répète : il revient à la prochaine échéance
+      const date = prochaineDate(rp.date, rp.repete);
+      S.lot = true; try { dispatch({t:"rappelDel", c, id, rid:rp.id, txt:`${r.login} · Rappel fait : ${rp.texte}`}); dispatch({t:"rappelAdd", c, id, rp:{id:uid("rp_"), date, texte:rp.texte, repete:rp.repete}, noUndo:true}); } finally { S.lot = false; }
+      updateSync(); render(); renderDrawer(); toast(`Fait · prochain rappel le ${fmtDate(date)}`); return; }
     dispatch({t:"rappelDel", c, id, rid:rp.id, txt:`${r.login} · Rappel fait : ${rp.texte}`}); renderDrawer(); toast("Rappel marqué comme fait"); return; }
+  const fp = t.closest("[data-finpause]");
+  if(fp){ const m = S.data.membres.find(x => x.id === fp.dataset.finpause); if(m){ patch("membres", m.id, {pauseJusqua:enPause(m) ? Commun.plusJours(todayISO(), -1) : null, ...(enPause(m) ? {} : {pauseMotif:null})}, `${m.login} · ${enPause(m) ? "fin de pause" : "pause effacée"}`); renderDrawer(); } return; }
+  const cb = t.closest("[data-courbe]");
+  if(cb){ S.courbeLongue = cb.dataset.courbe === "1"; if(S.courbeLongue) chargerArchiveReleves(); renderDrawer(); return; }
   const rvo = t.closest("[data-revoir]");
   if(rvo && S.drawer?.c === "propositions"){ const r = S.data.propositions.find(x => x.id === S.drawer.id); if(!r) return;
     const n = Number(rvo.dataset.revoir), dt = new Date(); dt.setDate(1); dt.setMonth(dt.getMonth() + n);
@@ -104,7 +112,8 @@ document.addEventListener("click", e => {
   if(t.id === "rpAdd" && S.drawer){ const {c, id} = S.drawer; const r = S.data[c].find(x => x.id === id); if(!r) return;
     const date = $("#rpDate").value, texte = $("#rpTexte").value.trim();
     if(!date || !texte){ toast("Indique une date et ce qu'il faudra faire.", true); return; }
-    dispatch({t:"rappelAdd", c, id, rp:{id:uid("rp_"), date, texte}, txt:`${r.login} · Rappel ajouté pour le ${fmtDate(date)} : ${texte}`});
+    const repete = $("#rpRep")?.value || "";
+    dispatch({t:"rappelAdd", c, id, rp:{id:uid("rp_"), date, texte, ...(repete ? {repete} : {})}, txt:`${r.login} · Rappel ajouté pour le ${fmtDate(date)} : ${texte}${repete ? ` (${REPETITIONS[repete].toLowerCase()})` : ""}`});
     $("#rpTexte").value = ""; document.activeElement?.blur(); renderDrawer(); setTimeout(() => $("#rpTexte")?.focus(), 0); toast(`Rappel ajouté pour le ${fmtDate(date)}`); return; }
   const rp = t.closest("[data-refpick]");
   if(rp && S.drawer){ const r = S.data.membres.find(x => x.id === S.drawer.id); if(r){ patch("membres", r.id, {referent:rp.dataset.refpick}, `${r.login} · Référent staff : ${rp.dataset.refpick}`); renderDrawer(); } return; }
@@ -192,31 +201,7 @@ document.addEventListener("click", e => {
     }
     return;
   }
-  if(t.id === "addProp" || t.id === "addMember"){
-    const c = t.id === "addProp" ? "propositions" : "membres";
-    const raw = prompt("Nom de la chaîne Twitch ou lien de la chaîne :"); if(!raw) return;
-    const login = normLogin(raw); if(!/^[a-z0-9_]{2,25}$/.test(login)){ toast("Ce nom de chaîne n'est pas valide.", true); return; }
-    const dupP = S.data.propositions.find(p => p.login === login), dupM = S.data.membres.find(m => m.login === login);
-    const dup = c === "propositions" ? dupP : dupM;
-    if(dup && c === "propositions"){
-      const av = Object.entries(dupP.avis || {}).map(([k,v]) => `${k} : ${v}`).join(", ");
-      if(["Refusé","Abandonnée","Aucun contact"].includes(dupP.statut)){
-        if(confirm(`${login} a déjà été proposée${dupP.dateProposition ? " le " + fmtDate(dupP.dateProposition) : ""}${dupP.proposePar ? " par " + dupP.proposePar : ""}.\nStatut : ${dupP.statut}${av ? "\nAvis : " + av : ""}${dupP.commentaire ? "\nCommentaire : " + dupP.commentaire : ""}\n\nOuvrir sa fiche pour la reproposer ?`)){ S.drawer = {c, id:dup.id}; renderDrawer(); }
-        return;
-      }
-      toast(`${login} est déjà en proposition (${dupP.statut || "à trier"}).`); S.drawer = {c, id:dup.id}; renderDrawer(); return;
-    }
-    if(dup){ toast(`${login} est déjà dans la liste.`); S.drawer = {c, id:dup.id}; renderDrawer(); return; }
-    if(c === "propositions" && dupM && !confirm(dupM.statut === "Parti"
-      ? `${login} a quitté La Cabane${dupM.depart ? " le " + fmtDate(dupM.depart) : ""}. L'ajouter quand même aux propositions ?`
-      : `${login} fait déjà partie de La Cabane. L'ajouter quand même aux propositions ?`)) return;
-    const r = c === "propositions"
-      ? {id:uid("p_"), login, contact:"", proposePar:cfg.me||"", dateProposition:todayISO(), dateRevue:null, dateInvitation:null, hype:"", followsRevue:null, viewersMoyens:null, statut:"Proposition à faire", avis:{}, commentaire:""}
-      : {id:uid("m_"), login, discord:"", alerte:false, premierStream:null, annivConfirme:false, annivCommentaire:"", arrivee:todayISO(), depart:null, statut:"Présent", role:"Streamer", followsMode:"auto", followsManuel:null, notes:""};
-    if(c === "membres") r.creePar = cfg.me || "";
-    dispatch({t:"add", c, r, notify:true, txt:`Ajout de ${login} (${c === "propositions" ? "proposition" : "streamers"})`});
-    S.drawer = {c, id:r.id}; renderDrawer(); return;
-  }
+  if(t.id === "addProp" || t.id === "addMember"){ ouvrirAjout(t.id === "addProp" ? "propositions" : "membres"); return; }
   if(t.id === "snapBtn"){
     const follows = {}; let n = 0;
     S.data.membres.filter(m => m.statut !== "Parti").forEach(m => { const f = currentFollows(m); if(f != null){ follows[m.login] = f; n++; } });
@@ -234,7 +219,7 @@ document.addEventListener("click", e => {
   if(t.id === "s_twsave"){ dispatch({t:"settings", p:{twitchClientId:$("#s_twcid").value.trim()}, txt:"Client ID Twitch modifié"}); S.twIds = {}; toast("Client ID enregistré"); return; }
   const ancre = t.closest('.aide nav.som a'); if(ancre){ e.preventDefault(); document.querySelector(ancre.getAttribute("href"))?.scrollIntoView({behavior:"smooth"}); return; }
   const go = t.closest("[data-goto]"); if(go){ e.preventDefault(); S.view = go.dataset.goto; S.drawer = null;
-    if(go.dataset.mst !== undefined) S.f.mst = go.dataset.mst; if(go.dataset.pst !== undefined) S.f.pst = go.dataset.pst;
+    if(go.dataset.mst !== undefined) S.f.mst = go.dataset.mst; if(go.dataset.mref !== undefined){ S.f.mref = go.dataset.mref || "__sans"; S.f.mst = "__actifs"; } if(go.dataset.pst !== undefined) S.f.pst = go.dataset.pst;
     render(); if(go.dataset.ancre && document.getElementById(go.dataset.ancre)) ouvrirReglage(go.dataset.ancre); else window.scrollTo(0,0); return; }
   const pt = t.closest("[data-plitout]");
   if(pt){ const o = pt.dataset.plitout === "1"; document.querySelectorAll("details[data-pli]").forEach(x => { x.open = o; noterPli(x.dataset.pli, o); }); return; }
