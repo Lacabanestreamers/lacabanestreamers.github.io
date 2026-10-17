@@ -7,7 +7,7 @@
   "membres": 38,
   "affilies": 34,
   "nouveaux30": 38,
-  "heuresLive30": 658,
+  "heuresLive30": 663,
   "followsGagnes30": 521,
   "periode": {
    "du": "2026-09-23",
@@ -243,21 +243,15 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": {
-    "viewers": 3,
-    "jeu": "Raft",
-    "titre": "🌊 Au menu ce soir : du requin grillé ! Coop sur Raft avec @Titounetsan @Barba_Doug",
-    "depuis": "2026-10-17T17:56:26Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
     "Dead by Daylight",
     "Rise of the Tomb Raider",
     "Cat Mail Co.",
-    "Aniimo",
-    "Parisian Brasserie Simulator"
+    "Raft",
+    "Aniimo"
    ],
    "clip": {
     "url": "https://www.twitch.tv/cristal578/clip/ResourcefulSmallBaconKeyboardCat-DGWpc8g9vOXUvn_P",
@@ -291,7 +285,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 3,
+    "viewers": 1,
     "jeu": "Minecraft",
     "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings ! - !réseaux",
     "depuis": "2026-10-17T16:48:25Z",
@@ -330,7 +324,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 16,
+    "viewers": 17,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🏰 La tanière des marmottes ✨ | Aventure cosy sur Disney Dreamlight Valley 💛 !lurk !clip !commandes",
     "depuis": "2026-10-17T18:45:27Z",
@@ -433,7 +427,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 16,
+    "viewers": 13,
     "jeu": "Special Events",
     "titre": "FR_VT -  400 FOLLOWERS - Sauce ou pas sauce !!!",
     "depuis": "2026-10-17T19:00:07Z",
@@ -479,20 +473,14 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 8,
-    "jeu": "Games + Demos",
-    "titre": "SOIRÉE JEUX 🎮💫 : Semaine spéciale cuisine & gastronomie 🍜 puis Planet Zoo 2 ! | Découverte Test FR Nouveauté jeu-vidéo",
-    "depuis": "2026-10-17T18:20:28Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
     "Sovereign Tower",
     "Just Chatting",
-    "Planet Zoo 2",
     "Games + Demos",
+    "Planet Zoo 2",
     "Foxy Dumplings"
    ],
    "clip": null
@@ -886,5 +874,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-17T21:07:21.363Z"
+ "maj": "2026-10-17T22:07:17.866Z"
 }
