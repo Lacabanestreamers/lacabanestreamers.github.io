@@ -7,7 +7,7 @@
   "membres": 38,
   "affilies": 34,
   "nouveaux30": 38,
-  "heuresLive30": 692,
+  "heuresLive30": 697,
   "followsGagnes30": 530,
   "periode": {
    "du": "2026-09-23",
@@ -237,7 +237,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 5,
+    "viewers": 6,
     "jeu": "Cellar Keeper",
     "titre": "🍷Petit moment de détente sur Cellar Keeper ! 🍇",
     "depuis": "2026-10-18T12:52:43Z",
@@ -490,8 +490,8 @@
     }
    ],
    "jeux": [
-    "Resonance: A Plague Tale Legacy",
     "Makers & Crafting",
+    "Resonance: A Plague Tale Legacy",
     "BOMBANANA!",
     "WheelMates",
     "FragPunk"
@@ -547,7 +547,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 19,
+    "viewers": 16,
     "jeu": "Dune: Awakening",
     "titre": "⚔️ DUNE: AWAKENING | Prêts à affronter les dangers ?",
     "depuis": "2026-10-18T07:03:19Z",
@@ -885,5 +885,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-18T14:07:18.534Z"
+ "maj": "2026-10-18T14:29:29.229Z"
 }
