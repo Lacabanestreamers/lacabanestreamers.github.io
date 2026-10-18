@@ -7,7 +7,7 @@
   "membres": 38,
   "affilies": 34,
   "nouveaux30": 38,
-  "heuresLive30": 668,
+  "heuresLive30": 670,
   "followsGagnes30": 526,
   "periode": {
    "du": "2026-09-23",
@@ -236,7 +236,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Dead by Daylight",
+    "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
+    "depuis": "2026-10-18T07:53:31Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
+   },
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -535,7 +541,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 1,
+    "viewers": 5,
     "jeu": "Dune: Awakening",
     "titre": "⚔️ DUNE: AWAKENING | Prêts à affronter les dangers ?",
     "depuis": "2026-10-18T07:03:19Z",
@@ -543,7 +549,9 @@
    },
    "premierStream": "2017-03-05",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Dune: Awakening"
+   ],
    "clip": null
   },
   {
@@ -568,7 +576,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "The Elder Scrolls V: Skyrim - Special Edition",
+    "titre": "Mais qu'es ce qui se passe ?",
+    "depuis": "2026-10-18T07:59:39Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
+   },
    "premierStream": "2025-01-08",
    "succes": [],
    "jeux": [
@@ -659,7 +673,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 1,
+    "viewers": 6,
     "jeu": "Art",
     "titre": "[FR] On se reveille ensemble tranquillement 🥱☕ | Coloriage Mystère| !discord !commandes",
     "depuis": "2026-10-18T07:01:46Z",
@@ -669,7 +683,8 @@
    "succes": [],
    "jeux": [
     "Moonlight Peaks",
-    "Disney Dreamlight Valley"
+    "Disney Dreamlight Valley",
+    "Art"
    ],
    "clip": null
   },
@@ -861,5 +876,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-18T07:07:20.988Z"
+ "maj": "2026-10-18T08:07:18.418Z"
 }
