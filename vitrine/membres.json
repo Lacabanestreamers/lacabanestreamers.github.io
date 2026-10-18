@@ -7,7 +7,7 @@
   "membres": 38,
   "affilies": 34,
   "nouveaux30": 38,
-  "heuresLive30": 697,
+  "heuresLive30": 701,
   "followsGagnes30": 530,
   "periode": {
    "du": "2026-09-23",
@@ -407,7 +407,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "MarchMallows",
+    "titre": "FR_VT -  Découverte du dimanche !!!",
+    "depuis": "2026-10-18T15:31:29Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -468,13 +474,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 4,
-    "jeu": "Makers & Crafting",
-    "titre": "🐰Maquette allée de citrouilles #2",
-    "depuis": "2026-10-18T12:31:44Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -507,7 +507,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 11,
+    "jeu": "MarchMallows",
+    "titre": "🔞[DROP] Playtest avec @kuroen_16e et 2 pépites @hyroshimaeu !! Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-10-18T15:27:42Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -541,7 +547,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 20,
+    "viewers": 17,
     "jeu": "Dune: Awakening",
     "titre": "⚔️ DUNE: AWAKENING | Prêts à affronter les dangers ?",
     "depuis": "2026-10-18T07:03:19Z",
@@ -685,13 +691,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "Bonjour, je repart faire les quête au vallon des contes  !!!!",
-    "depuis": "2026-10-18T12:25:52Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -759,13 +759,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 3,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "On continue notre aventure sur l'île de l'Eternité ! En voc avec @nyxenfox",
-    "depuis": "2026-10-18T12:24:18Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_paygadream-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-05-02",
    "succes": [],
    "jeux": [
@@ -879,5 +873,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-18T15:07:20.599Z"
+ "maj": "2026-10-18T16:07:19.653Z"
 }
