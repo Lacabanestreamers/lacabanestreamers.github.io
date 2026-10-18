@@ -7,7 +7,7 @@
   "membres": 38,
   "affilies": 34,
   "nouveaux30": 38,
-  "heuresLive30": 706,
+  "heuresLive30": 708,
   "followsGagnes30": 529,
   "periode": {
    "du": "2026-09-23",
@@ -128,7 +128,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "7 Days to Die",
+    "titre": "Promenade au milieu des zombies🧟‍♂️, fracassage de crâne💀, et loot à profusion",
+    "depuis": "2026-10-18T18:04:24Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
+   },
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -508,13 +514,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 9,
-    "jeu": "MarchMallows",
-    "titre": "🔞[DROP] Playtest avec @kuroen_16e et 2 pépites @hyroshimaeu !! Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-10-18T15:27:42Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -687,7 +687,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "Project CARS",
     "titre": "Bonsoir, je rentre en renault clio cup !!!!",
     "depuis": "2026-10-18T17:17:12Z",
@@ -697,7 +697,8 @@
    "succes": [],
    "jeux": [
     "Disney Dreamlight Valley",
-    "American Truck Simulator"
+    "American Truck Simulator",
+    "Project CARS"
    ],
    "clip": null
   },
@@ -874,5 +875,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-18T18:00:47.920Z"
+ "maj": "2026-10-18T18:07:21.822Z"
 }
