@@ -237,7 +237,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "Cellar Keeper",
     "titre": "🍷Petit moment de détente sur Cellar Keeper ! 🍇",
     "depuis": "2026-10-18T12:52:43Z",
@@ -475,7 +475,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Makers & Crafting",
     "titre": "🐰Maquette allée de citrouilles #2",
     "depuis": "2026-10-18T12:31:44Z",
@@ -547,7 +547,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 17,
+    "viewers": 19,
     "jeu": "Dune: Awakening",
     "titre": "⚔️ DUNE: AWAKENING | Prêts à affronter les dangers ?",
     "depuis": "2026-10-18T07:03:19Z",
@@ -582,13 +582,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 3,
-    "jeu": "The Elder Scrolls V: Skyrim - Special Edition",
-    "titre": "Mais qu'es ce qui se passe ?",
-    "depuis": "2026-10-18T07:59:39Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-08",
    "succes": [],
    "jeux": [
@@ -772,7 +766,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Disney Dreamlight Valley",
     "titre": "On continue notre aventure sur l'île de l'Eternité ! En voc avec @nyxenfox",
     "depuis": "2026-10-18T12:24:18Z",
@@ -891,5 +885,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-18T13:26:05.953Z"
+ "maj": "2026-10-18T14:07:18.534Z"
 }
