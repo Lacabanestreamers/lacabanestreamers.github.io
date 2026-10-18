@@ -7,7 +7,7 @@
   "membres": 38,
   "affilies": 34,
   "nouveaux30": 38,
-  "heuresLive30": 712,
+  "heuresLive30": 714,
   "followsGagnes30": 529,
   "periode": {
    "du": "2026-09-23",
@@ -462,7 +462,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 10,
+    "viewers": 18,
     "jeu": "Planet Zoo 2",
     "titre": "SOIRÉE CHILL 🎮 : On créé notre franchise sur Planet Zoo 2 🦁 ! | Découverte Test FR Nouveauté jeu-vidéo",
     "depuis": "2026-10-18T18:14:20Z",
@@ -471,8 +471,8 @@
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
-    "Sovereign Tower",
     "Planet Zoo 2",
+    "Sovereign Tower",
     "Just Chatting",
     "Games + Demos",
     "Foxy Dumplings"
@@ -875,5 +875,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-18T20:07:21.489Z"
+ "maj": "2026-10-18T20:31:55.663Z"
 }
