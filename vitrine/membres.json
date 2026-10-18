@@ -7,7 +7,7 @@
   "membres": 38,
   "affilies": 34,
   "nouveaux30": 38,
-  "heuresLive30": 709,
+  "heuresLive30": 712,
   "followsGagnes30": 529,
   "periode": {
    "du": "2026-09-23",
@@ -138,8 +138,8 @@
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
-    "Graveyard Keeper II",
     "7 Days to Die",
+    "Graveyard Keeper II",
     "R.E.P.O.",
     "Brotato",
     "VALORANT"
@@ -462,7 +462,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 12,
+    "viewers": 10,
     "jeu": "Planet Zoo 2",
     "titre": "SOIRÉE CHILL 🎮 : On créé notre franchise sur Planet Zoo 2 🦁 ! | Découverte Test FR Nouveauté jeu-vidéo",
     "depuis": "2026-10-18T18:14:20Z",
@@ -472,9 +472,9 @@
    "succes": [],
    "jeux": [
     "Sovereign Tower",
+    "Planet Zoo 2",
     "Just Chatting",
     "Games + Demos",
-    "Planet Zoo 2",
     "Foxy Dumplings"
    ],
    "clip": null
@@ -692,13 +692,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "Project CARS",
-    "titre": "Bonsoir, je rentre en renault clio cup !!!!",
-    "depuis": "2026-10-18T17:17:12Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -881,5 +875,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-18T19:07:18.704Z"
+ "maj": "2026-10-18T20:07:21.489Z"
 }
