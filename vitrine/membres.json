@@ -7,7 +7,7 @@
   "membres": 38,
   "affilies": 34,
   "nouveaux30": 38,
-  "heuresLive30": 726,
+  "heuresLive30": 729,
   "followsGagnes30": 530,
   "periode": {
    "du": "2026-09-23",
@@ -183,7 +183,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
+    "viewers": 12,
     "jeu": "Disney Dreamlight Valley",
     "titre": "✨ DISNEY DREAMLIGHT VALLEY | Event + quêtes + Dreamsnap⭐",
     "depuis": "2026-10-19T12:01:23Z",
@@ -578,7 +578,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "The Elder Scrolls V: Skyrim - Special Edition",
     "titre": "it's aliiiive",
     "depuis": "2026-10-19T09:18:52Z",
@@ -710,7 +710,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "Backrooms: Inside the Escape",
+    "titre": "[FR] Balade dans les Backrooms avec @Calo_VT [!bs !steam !insta !discord ]",
+    "depuis": "2026-10-19T13:55:44Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
+   },
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -875,5 +881,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-19T13:07:23.647Z"
+ "maj": "2026-10-19T14:07:19.603Z"
 }
