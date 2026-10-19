@@ -7,7 +7,7 @@
   "membres": 38,
   "affilies": 34,
   "nouveaux30": 38,
-  "heuresLive30": 723,
+  "heuresLive30": 726,
   "followsGagnes30": 530,
   "periode": {
    "du": "2026-09-23",
@@ -183,7 +183,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 2,
+    "viewers": 16,
     "jeu": "Disney Dreamlight Valley",
     "titre": "✨ DISNEY DREAMLIGHT VALLEY | Event + quêtes + Dreamsnap⭐",
     "depuis": "2026-10-19T12:01:23Z",
@@ -345,7 +345,8 @@
    "succes": [],
    "jeux": [
     "Disney Dreamlight Valley",
-    "Red Dead Redemption II"
+    "Red Dead Redemption II",
+    "Hogwarts Legacy"
    ],
    "clip": null
   },
@@ -874,5 +875,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-19T12:07:20.764Z"
+ "maj": "2026-10-19T12:59:22.190Z"
 }
