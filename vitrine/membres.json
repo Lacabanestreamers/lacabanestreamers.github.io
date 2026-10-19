@@ -7,7 +7,7 @@
   "membres": 38,
   "affilies": 34,
   "nouveaux30": 38,
-  "heuresLive30": 750,
+  "heuresLive30": 755,
   "followsGagnes30": 533,
   "periode": {
    "du": "2026-09-23",
@@ -96,13 +96,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-22",
-   "live": {
-    "viewers": 4,
-    "jeu": "The Witch's Bakery",
-    "titre": "La sortie de mon chouchou",
-    "depuis": "2026-10-19T17:59:31Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asalie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-07-27",
    "succes": [
     {
@@ -115,8 +109,8 @@
     "Fields of Mistria",
     "Cat Mail Co.",
     "Pao Pao",
-    "Just Chatting",
-    "The Witch's Bakery"
+    "The Witch's Bakery",
+    "Just Chatting"
    ],
    "clip": null
   },
@@ -263,13 +257,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": {
-    "viewers": 2,
-    "jeu": "Lies of P",
-    "titre": "[Lies of P] On en voit la fin ?",
-    "depuis": "2026-10-19T17:56:10Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-09",
    "succes": [],
    "jeux": [
@@ -417,7 +405,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
+    "viewers": 9,
     "jeu": "Minecraft",
     "titre": "FR_VT -  Des frissons et du stresse ce soir !!!",
     "depuis": "2026-10-19T19:00:32Z",
@@ -435,8 +423,8 @@
     "The Headliners",
     "Special Events",
     "MarchMallows",
-    "R.E.P.O.",
-    "Minecraft"
+    "Minecraft",
+    "R.E.P.O."
    ],
    "clip": {
     "url": "https://www.twitch.tv/hyroshimaeu/clip/SplendidSuaveHerringRitzMitz-bVEWr3ybDHlHSixy",
@@ -653,9 +641,9 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
-    "jeu": "Horror Game",
-    "titre": "[FR] ~ Mascoterium - On se tente le chapitre 1 ? #1 ~",
+    "viewers": 5,
+    "jeu": "Decay: The Mare - Episode 1",
+    "titre": "[FR] ~ Decay : The Mare - On se tente le chapitre 1 ? #1 ~",
     "depuis": "2026-10-19T18:55:10Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
    },
@@ -663,8 +651,8 @@
    "succes": [],
    "jeux": [
     "The Sims 4",
-    "Bily'Sine",
     "Horror Game",
+    "Bily'Sine",
     "R.E.P.O."
    ],
    "clip": {
@@ -802,7 +790,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "The Witcher 3: Wild Hunt Remastered",
     "titre": "Que nous cache ce beau et sombre monde ? [DROP ✅] !discord",
     "depuis": "2026-10-19T19:01:40Z",
@@ -891,5 +879,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-19T20:07:22.694Z"
+ "maj": "2026-10-19T21:07:20.991Z"
 }
