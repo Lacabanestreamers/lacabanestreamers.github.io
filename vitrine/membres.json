@@ -7,7 +7,7 @@
   "membres": 38,
   "affilies": 34,
   "nouveaux30": 38,
-  "heuresLive30": 738,
+  "heuresLive30": 743,
   "followsGagnes30": 533,
   "periode": {
    "du": "2026-09-23",
@@ -97,7 +97,7 @@
    "staff": false,
    "depuis": "2026-09-22",
    "live": {
-    "viewers": 10,
+    "viewers": 11,
     "jeu": "The Witch's Bakery",
     "titre": "La sortie de mon chouchou",
     "depuis": "2026-10-19T17:59:31Z",
@@ -115,7 +115,8 @@
     "Fields of Mistria",
     "Cat Mail Co.",
     "Pao Pao",
-    "Just Chatting"
+    "Just Chatting",
+    "The Witch's Bakery"
    ],
    "clip": null
   },
@@ -263,7 +264,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 2,
+    "viewers": 4,
     "jeu": "Lies of P",
     "titre": "[Lies of P] On en voit la fin ?",
     "depuis": "2026-10-19T17:56:10Z",
@@ -271,7 +272,9 @@
    },
    "premierStream": "2026-03-09",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Lies of P"
+   ],
    "clip": null
   },
   {
@@ -283,7 +286,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 2,
+    "viewers": 4,
     "jeu": "Sword Art Online: Hollow Realization",
     "titre": "⚔️SAO HR ~ On continue l'aventure ! - !réseaux",
     "depuis": "2026-10-19T17:05:04Z",
@@ -301,8 +304,8 @@
     "Minecraft",
     "Splatoon 3",
     "Sprout Valley",
-    "Tomodachi Life: Living the Dream",
-    "Sword Art Online: Hollow Realization"
+    "Sword Art Online: Hollow Realization",
+    "Tomodachi Life: Living the Dream"
    ],
    "clip": {
     "url": "https://www.twitch.tv/elegaming__/clip/ArbitraryRoundSlothBrokeBack-7lK5OBmInsTX2yq8",
@@ -378,13 +381,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 13,
-    "jeu": "Writing & Reading",
-    "titre": "Live lecture cozy horreur: Frankenstein Episode 4 ! Découvrez avec moi le roman Frankenstein, avec une boisson chaude et un plaid ! <3",
-    "depuis": "2026-10-19T17:50:11Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -425,7 +422,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "Minecraft",
+    "titre": "FR_VT -  Des frissons et du stresse ce soir !!!",
+    "depuis": "2026-10-19T19:00:32Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [
     {
@@ -654,7 +657,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Horror Game",
+    "titre": "[FR] ~ Mascoterium - On se tente le chapitre 1 ? #1 ~",
+    "depuis": "2026-10-19T18:55:10Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
+   },
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -681,7 +690,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Moonlight Peaks",
     "titre": "[FR] Bon Lundi ! On continue la découverte de ce jeu 🦇🪄 | Moonlight Peaks | !discord !commandes",
     "depuis": "2026-10-19T16:00:39Z",
@@ -803,7 +812,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "The Witcher 3: Wild Hunt Remastered",
+    "titre": "Que nous cache ce beau et sombre monde ? [DROP ✅] !discord",
+    "depuis": "2026-10-19T19:01:40Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_r3skyo-440x248.jpg"
+   },
    "premierStream": "2023-03-23",
    "succes": [],
    "jeux": [
@@ -887,5 +902,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-19T18:07:19.815Z"
+ "maj": "2026-10-19T19:07:20.416Z"
 }
