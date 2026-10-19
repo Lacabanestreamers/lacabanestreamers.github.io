@@ -7,8 +7,8 @@
   "membres": 38,
   "affilies": 34,
   "nouveaux30": 38,
-  "heuresLive30": 736,
-  "followsGagnes30": 530,
+  "heuresLive30": 738,
+  "followsGagnes30": 533,
   "periode": {
    "du": "2026-09-23",
    "au": "2026-10-19"
@@ -96,7 +96,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-22",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "The Witch's Bakery",
+    "titre": "La sortie de mon chouchou",
+    "depuis": "2026-10-19T17:59:31Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asalie-440x248.jpg"
+   },
    "premierStream": "2025-07-27",
    "succes": [
     {
@@ -256,7 +262,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Lies of P",
+    "titre": "[Lies of P] On en voit la fin ?",
+    "depuis": "2026-10-19T17:56:10Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [],
    "jeux": [],
@@ -271,7 +283,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Sword Art Online: Hollow Realization",
     "titre": "⚔️SAO HR ~ On continue l'aventure ! - !réseaux",
     "depuis": "2026-10-19T17:05:04Z",
@@ -366,7 +378,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 13,
+    "jeu": "Writing & Reading",
+    "titre": "Live lecture cozy horreur: Frankenstein Episode 4 ! Découvrez avec moi le roman Frankenstein, avec une boisson chaude et un plaid ! <3",
+    "depuis": "2026-10-19T17:50:11Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -663,7 +681,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 3,
     "jeu": "Moonlight Peaks",
     "titre": "[FR] Bon Lundi ! On continue la découverte de ce jeu 🦇🪄 | Moonlight Peaks | !discord !commandes",
     "depuis": "2026-10-19T16:00:39Z",
@@ -869,5 +887,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-19T17:07:27.302Z"
+ "maj": "2026-10-19T18:07:19.815Z"
 }
