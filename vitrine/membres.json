@@ -7,8 +7,8 @@
   "membres": 38,
   "affilies": 34,
   "nouveaux30": 38,
-  "heuresLive30": 721,
-  "followsGagnes30": 529,
+  "heuresLive30": 722,
+  "followsGagnes30": 530,
   "periode": {
    "du": "2026-09-23",
    "au": "2026-10-19"
@@ -565,7 +565,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 5,
     "jeu": "The Elder Scrolls V: Skyrim - Special Edition",
     "titre": "it's aliiiive",
     "depuis": "2026-10-19T09:18:52Z",
@@ -862,5 +862,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-19T10:07:25.919Z"
+ "maj": "2026-10-19T11:07:21.960Z"
 }
