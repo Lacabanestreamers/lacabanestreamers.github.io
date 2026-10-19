@@ -7,7 +7,7 @@
   "membres": 38,
   "affilies": 34,
   "nouveaux30": 38,
-  "heuresLive30": 743,
+  "heuresLive30": 750,
   "followsGagnes30": 533,
   "periode": {
    "du": "2026-09-23",
@@ -97,7 +97,7 @@
    "staff": false,
    "depuis": "2026-09-22",
    "live": {
-    "viewers": 11,
+    "viewers": 9,
     "jeu": "The Witch's Bakery",
     "titre": "La sortie de mon chouchou",
     "depuis": "2026-10-19T17:59:31Z",
@@ -264,7 +264,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 4,
+    "viewers": 3,
     "jeu": "Lies of P",
     "titre": "[Lies of P] On en voit la fin ?",
     "depuis": "2026-10-19T17:56:10Z",
@@ -286,7 +286,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "Sword Art Online: Hollow Realization",
     "titre": "⚔️SAO HR ~ On continue l'aventure ! - !réseaux",
     "depuis": "2026-10-19T17:05:04Z",
@@ -423,7 +423,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 11,
     "jeu": "Minecraft",
     "titre": "FR_VT -  Des frissons et du stresse ce soir !!!",
     "depuis": "2026-10-19T19:00:32Z",
@@ -441,7 +441,8 @@
     "The Headliners",
     "Special Events",
     "MarchMallows",
-    "R.E.P.O."
+    "R.E.P.O.",
+    "Minecraft"
    ],
    "clip": {
     "url": "https://www.twitch.tv/hyroshimaeu/clip/SplendidSuaveHerringRitzMitz-bVEWr3ybDHlHSixy",
@@ -658,7 +659,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Horror Game",
     "titre": "[FR] ~ Mascoterium - On se tente le chapitre 1 ? #1 ~",
     "depuis": "2026-10-19T18:55:10Z",
@@ -669,8 +670,8 @@
    "jeux": [
     "The Sims 4",
     "Bily'Sine",
-    "R.E.P.O.",
-    "Horror Game"
+    "Horror Game",
+    "R.E.P.O."
    ],
    "clip": {
     "url": "https://www.twitch.tv/mysti94/clip/ResoluteFrigidMetalCclamChamp-LMD1ENuxVBR5THWX",
@@ -690,7 +691,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 6,
     "jeu": "Moonlight Peaks",
     "titre": "[FR] Bon Lundi ! On continue la découverte de ce jeu 🦇🪄 | Moonlight Peaks | !discord !commandes",
     "depuis": "2026-10-19T16:00:39Z",
@@ -813,7 +814,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 1,
+    "viewers": 3,
     "jeu": "The Witcher 3: Wild Hunt Remastered",
     "titre": "Que nous cache ce beau et sombre monde ? [DROP ✅] !discord",
     "depuis": "2026-10-19T19:01:40Z",
@@ -902,5 +903,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-19T19:07:20.416Z"
+ "maj": "2026-10-19T19:14:47.081Z"
 }
