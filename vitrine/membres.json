@@ -129,7 +129,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 6,
     "jeu": "Folded Fables: Tidy Up The Dragon Hoard",
     "titre": "C'est l'heure de ranger le bordel d'un dragon 🐲",
     "depuis": "2026-10-20T08:25:16Z",
@@ -424,7 +424,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 9,
+    "viewers": 8,
     "jeu": "Slay the Spire II",
     "titre": "FR_VT -  On va se slay le spire ???",
     "depuis": "2026-10-20T18:29:56Z",
@@ -494,7 +494,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 6,
+    "viewers": 12,
     "jeu": "Just Chatting",
     "titre": "RÉACT🍿 : On regarde 90 Day Fiancé USA, vont-ils enfin se mariés ou se quitter ?! 😱 | React émission 90 jours - 3 mois pour se marier",
     "depuis": "2026-10-20T18:59:25Z",
@@ -585,7 +585,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Call of Duty: Modern Warfare 4",
+    "titre": "🔴 MW4 EST LÀ ! 🔥 On débarque sur le champ de bataille | Luffish Gaming",
+    "depuis": "2026-10-20T19:48:12Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
+   },
    "premierStream": "2017-03-05",
    "succes": [],
    "jeux": [
@@ -642,7 +648,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 6,
+    "viewers": 4,
     "jeu": "Poppy Playtime: Chapter 3 - Deep Sleep",
     "titre": "Pendant 15j on se met au couleur d'Haloween... Ce soir on continue Poppyyyyyy.... HELP   !discord !regles !don !wishlist",
     "depuis": "2026-10-20T17:54:44Z",
@@ -934,5 +940,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-20T19:09:18.041Z"
+ "maj": "2026-10-20T19:59:44.726Z"
 }
