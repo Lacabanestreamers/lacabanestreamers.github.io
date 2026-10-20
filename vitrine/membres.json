@@ -7,7 +7,7 @@
   "membres": 38,
   "affilies": 34,
   "nouveaux30": 38,
-  "heuresLive30": 762,
+  "heuresLive30": 763,
   "followsGagnes30": 533,
   "periode": {
    "du": "2026-09-23",
@@ -241,12 +241,12 @@
     "Aniimo"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/cristal578/clip/CoweringSaltyCheesecakeNotLikeThis-MWz1vAWd3Y14Q_Kc",
-    "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
+    "url": "https://www.twitch.tv/cristal578/clip/ResourcefulSmallBaconKeyboardCat-DGWpc8g9vOXUvn_P",
+    "titre": "On est good !",
     "vues": 3,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/11fcc87c-8c51-4102-bf42-58eb05588794/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-18",
-    "duree": 30
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/2f8ae284-a2a9-407d-85eb-ace128bf8afe/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-14",
+    "duree": 11
    }
   },
   {
@@ -317,7 +317,7 @@
    "clip": {
     "url": "https://www.twitch.tv/emmamarmotte/clip/RudeBoxyWerewolfDoritosChip-AM9u1_txcWpUpyHM",
     "titre": "croua",
-    "vues": 2,
+    "vues": 3,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/0dbc44e3-7fb4-4c39-9f02-069893c4c992/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-14",
     "duree": 12
@@ -421,12 +421,12 @@
     "R.E.P.O."
    ],
    "clip": {
-    "url": "https://www.twitch.tv/hyroshimaeu/clip/SplendidSuaveHerringRitzMitz-bVEWr3ybDHlHSixy",
-    "titre": "Le clown est de sortit !!!",
-    "vues": 10,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5ef77700-9bc7-4a14-b390-e9825364ffaf/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-16",
-    "duree": 30
+    "url": "https://www.twitch.tv/hyroshimaeu/clip/SquareNicePeafowlTheThing-7oRrLZQONB-wTVvy",
+    "titre": "Nouveau model Chibi <3",
+    "vues": 15,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/29c88467-336d-490e-95ae-7b0273328f8e/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-17",
+    "duree": 17
    }
   },
   {
@@ -578,7 +578,14 @@
     "FTL: Faster Than Light",
     "Strange Horticulture"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/mattmist2/clip/ObedientPlausibleWrenPJSugar-nQd-ub35a2uoa2JP",
+    "titre": "Combattre, en toute légèreté",
+    "vues": 1,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/20c266f5-4d1e-429c-a563-46a88c97be83/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-19",
+    "duree": 30
+   }
   },
   {
    "login": "melpastelplay",
@@ -645,12 +652,12 @@
     "Decay: The Mare - Episode 1"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/mysti94/clip/ResoluteFrigidMetalCclamChamp-LMD1ENuxVBR5THWX",
-    "titre": "bug 3",
+    "url": "https://www.twitch.tv/mysti94/clip/PatientOddChipmunkCharlieBitMe-mnR3v1PNzNI1zCBN",
+    "titre": "WzBot CLIP | [FR] ~ Mascoterium - On se tente le chapitre 1 ? #1 ~ (by misschampignon)",
     "vues": 1,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5bd8d1b6-d499-40e1-a2af-47dfe6857f43/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-15",
-    "duree": 7
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e4792abf-8bf4-4102-9bee-8c92c4a8dc5e/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-19",
+    "duree": 60
    }
   },
   {
@@ -679,13 +686,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "American Truck Simulator",
-    "titre": "Bonsoir, je repart livrer pour halloween !!!!",
-    "depuis": "2026-10-19T22:18:01Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -720,12 +721,12 @@
     "DEVOUR"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/oko_san_/clip/FaithfulAwkwardPuddingTTours-XGAgIAmtypHNh-cy",
-    "titre": "Le bon timing de Elo",
-    "vues": 6,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/676a516e-cc4c-4cff-a15c-b33eb49214b7/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-12",
-    "duree": 49
+    "url": "https://www.twitch.tv/oko_san_/clip/EntertainingImpartialPidgeonBibleThump-2Ku2gyu3FCqUvc7m",
+    "titre": "WzBot CLIP | [FR] Balade dans les Backrooms avec @Calo_VT [!bs !steam !insta !discord ] (by chezelod",
+    "vues": 2,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/c947c409-5d82-42ef-b0bd-9fd2b09a8d08/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-19",
+    "duree": 60
    }
   },
   {
@@ -790,7 +791,14 @@
    "jeux": [
     "The Witcher 3: Wild Hunt Remastered"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/r3skyo/clip/SourArtsyGerbilBatChest-wazmafCgOfsTjiaS",
+    "titre": "Preuve, fatidique, numéro deux",
+    "vues": 2,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/450ec7de-3188-4abb-bd4d-7ef6c1a611be/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-19",
+    "duree": 14
+   }
   },
   {
    "login": "rinka_henbyou",
@@ -868,5 +876,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-20T00:07:22.459Z"
+ "maj": "2026-10-20T01:07:41.190Z"
 }
