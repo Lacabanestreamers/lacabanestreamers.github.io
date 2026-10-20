@@ -4,14 +4,14 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 38,
-  "affilies": 34,
-  "nouveaux30": 38,
+  "membres": 39,
+  "affilies": 35,
+  "nouveaux30": 39,
   "heuresLive30": 763,
-  "followsGagnes30": 533,
+  "followsGagnes30": 539,
   "periode": {
    "du": "2026-09-23",
-   "au": "2026-10-19"
+   "au": "2026-10-20"
   }
  },
  "agenda": [
@@ -257,7 +257,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "Lies of P",
+    "titre": "[Lies of P] On en voit la fin ?",
+    "depuis": "2026-10-20T06:57:26Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [],
    "jeux": [
@@ -430,6 +436,20 @@
    }
   },
   {
+   "login": "kialigator",
+   "nom": "kialigator",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/339d74b3-1405-41b9-acd8-fe53694244ef-profile_image-300x300.png",
+   "bio": "Juste une fille introvertie qui stream des cosy games, des jeux indépendants et de l’horreur 🍓  Bienvenue dans ton nouveau cocon chill, retrouve moi (presque) tous les jours de 21h30 à 1h du mat 🌷 email pro : kialigatortwitch@gmail.com",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-20",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
+   "clip": null
+  },
+  {
    "login": "kristal_et_ses_ac",
    "nom": "Kristal_et_ses_AC",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/3c431a1d-3bef-4fc4-bb12-f060b780f870-profile_image-300x300.png",
@@ -506,7 +526,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "FINAL FANTASY XIV ONLINE",
+    "titre": "🔞[DROP] Chill en musique !! Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-10-20T06:55:38Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -876,5 +902,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-20T01:07:41.190Z"
+ "maj": "2026-10-20T06:58:56.335Z"
 }
