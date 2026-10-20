@@ -7,7 +7,7 @@
   "membres": 39,
   "affilies": 35,
   "nouveaux30": 39,
-  "heuresLive30": 765,
+  "heuresLive30": 767,
   "followsGagnes30": 539,
   "periode": {
    "du": "2026-09-23",
@@ -258,7 +258,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 3,
+    "viewers": 7,
     "jeu": "Warframe",
     "titre": "[Warframe MR 26] Devoirs de debut de semaine et farm event !",
     "depuis": "2026-10-20T06:57:26Z",
@@ -267,7 +267,8 @@
    "premierStream": "2026-03-09",
    "succes": [],
    "jeux": [
-    "Lies of P"
+    "Lies of P",
+    "Warframe"
    ],
    "clip": null
   },
@@ -527,7 +528,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 11,
     "jeu": "R.E.P.O.",
     "titre": "🔞[DROP] Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-20T06:55:38Z",
@@ -565,7 +566,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Dune: Awakening",
+    "titre": "🔥 DUNE: AWAKENING | L'aventure continue, la survie aussi !",
+    "depuis": "2026-10-20T07:25:56Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
+   },
    "premierStream": "2017-03-05",
    "succes": [],
    "jeux": [
@@ -902,5 +909,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-20T07:07:25.306Z"
+ "maj": "2026-10-20T08:07:20.399Z"
 }
