@@ -7,8 +7,8 @@
   "membres": 39,
   "affilies": 35,
   "nouveaux30": 39,
-  "heuresLive30": 819,
-  "followsGagnes30": 553,
+  "heuresLive30": 823,
+  "followsGagnes30": 557,
   "periode": {
    "du": "2026-09-23",
    "au": "2026-10-20"
@@ -49,7 +49,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 11,
     "jeu": "Folded Fables: Tidy Up The Dragon Hoard",
     "titre": "🎃 Mois de l'horreur🎃 ✨Un peu de rangement avec @Aulit42369 @EmmaMarmotte 🔥",
     "depuis": "2026-10-20T08:26:00Z",
@@ -129,7 +129,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 7,
     "jeu": "Folded Fables: Tidy Up The Dragon Hoard",
     "titre": "C'est l'heure de ranger le bordel d'un dragon 🐲",
     "depuis": "2026-10-20T08:25:16Z",
@@ -287,7 +287,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 3,
+    "viewers": 1,
     "jeu": "Sprout Valley",
     "titre": "😸Sproot Valley ~ On continue notre petite vie ! - !réseaux",
     "depuis": "2026-10-20T17:01:56Z",
@@ -470,13 +470,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 19,
-    "jeu": "Art",
-    "titre": "✦ FAN ART CHALLENGE ✦ Gimli x PEAK | Ça dessine, ça chill, on s'met bien ☕ | Ven. 23, 18H :  giveaway 400 follows ! | !artchallenges !liens",
-    "depuis": "2026-10-20T12:22:24Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -635,7 +629,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Poppy Playtime: Chapter 3 - Deep Sleep",
+    "titre": "Pendant 15j on se met au couleur d'Haloween... Ce soir on continue Poppyyyyyy.... HELP   !discord !regles !don !wishlist",
+    "depuis": "2026-10-20T17:54:44Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -916,5 +916,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-20T17:12:30.624Z"
+ "maj": "2026-10-20T18:07:23.717Z"
 }
