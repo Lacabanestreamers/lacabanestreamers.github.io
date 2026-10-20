@@ -7,7 +7,7 @@
   "membres": 39,
   "affilies": 35,
   "nouveaux30": 39,
-  "heuresLive30": 805,
+  "heuresLive30": 813,
   "followsGagnes30": 553,
   "periode": {
    "du": "2026-09-23",
@@ -49,7 +49,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 5,
     "jeu": "Outbound",
     "titre": "🎃 Mois de l'horreur🎃 ✨Partir en voyage avec @Aulit42369 🔥",
     "depuis": "2026-10-20T08:26:00Z",
@@ -58,8 +58,8 @@
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
-    "R.E.P.O.",
     "Outbound",
+    "R.E.P.O.",
     "SO CLOSE",
     "Raft",
     "The Other Side"
@@ -319,13 +319,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 13,
-    "jeu": "Art",
-    "titre": "🎨 Coloriage d'octobre en cosy ! ✨ !lurk !clip !commandes",
-    "depuis": "2026-10-20T12:50:50Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
@@ -424,7 +418,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 21,
+    "viewers": 13,
     "jeu": "Valheim",
     "titre": "FR_VT -  Enfin le retour vers le Valhalla !!!",
     "depuis": "2026-10-20T12:29:33Z",
@@ -442,8 +436,8 @@
     "Minecraft",
     "The Headliners",
     "Special Events",
-    "MarchMallows",
-    "Valheim"
+    "Valheim",
+    "MarchMallows"
    ],
    "clip": {
     "url": "https://www.twitch.tv/hyroshimaeu/clip/SquareNicePeafowlTheThing-7oRrLZQONB-wTVvy",
@@ -477,7 +471,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 15,
+    "viewers": 18,
     "jeu": "Art",
     "titre": "✦ FAN ART CHALLENGE ✦ Gimli x PEAK | Ça dessine, ça chill, on s'met bien ☕ | Ven. 23, 18H :  giveaway 400 follows ! | !artchallenges !liens",
     "depuis": "2026-10-20T12:22:24Z",
@@ -553,7 +547,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 11,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "🔞[DROP]  Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-20T12:06:20Z",
@@ -813,13 +807,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 3,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "On continue notre aventure sur l'île de l'Eternité ! En voc avec @nyxenfox",
-    "depuis": "2026-10-20T12:25:14Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_paygadream-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-05-02",
    "succes": [],
    "jeux": [
@@ -940,5 +928,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-20T15:07:23.743Z"
+ "maj": "2026-10-20T16:07:20.671Z"
 }
