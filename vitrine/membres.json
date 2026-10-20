@@ -7,7 +7,7 @@
   "membres": 39,
   "affilies": 35,
   "nouveaux30": 39,
-  "heuresLive30": 796,
+  "heuresLive30": 805,
   "followsGagnes30": 553,
   "periode": {
    "du": "2026-09-23",
@@ -49,7 +49,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 9,
     "jeu": "Outbound",
     "titre": "🎃 Mois de l'horreur🎃 ✨Partir en voyage avec @Aulit42369 🔥",
     "depuis": "2026-10-20T08:26:00Z",
@@ -59,8 +59,8 @@
    "succes": [],
    "jeux": [
     "R.E.P.O.",
-    "SO CLOSE",
     "Outbound",
+    "SO CLOSE",
     "Raft",
     "The Other Side"
    ],
@@ -129,7 +129,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 8,
     "jeu": "Outbound",
     "titre": "On prend la route et on craft notre petite maison nomade",
     "depuis": "2026-10-20T08:25:16Z",
@@ -140,8 +140,8 @@
    "jeux": [
     "7 Days to Die",
     "Graveyard Keeper II",
-    "R.E.P.O.",
     "Outbound",
+    "R.E.P.O.",
     "Brotato"
    ],
    "clip": null
@@ -195,13 +195,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 7,
-    "jeu": "Just Chatting",
-    "titre": "On test un site de doublage pour samedi",
-    "depuis": "2026-10-20T10:59:52Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -326,7 +320,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 11,
     "jeu": "Art",
     "titre": "🎨 Coloriage d'octobre en cosy ! ✨ !lurk !clip !commandes",
     "depuis": "2026-10-20T12:50:50Z",
@@ -430,7 +424,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 9,
+    "viewers": 12,
     "jeu": "Valheim",
     "titre": "FR_VT -  Enfin le retour vers le Valhalla !!!",
     "depuis": "2026-10-20T12:29:33Z",
@@ -449,7 +443,7 @@
     "The Headliners",
     "Special Events",
     "MarchMallows",
-    "R.E.P.O."
+    "Valheim"
    ],
    "clip": {
     "url": "https://www.twitch.tv/hyroshimaeu/clip/SquareNicePeafowlTheThing-7oRrLZQONB-wTVvy",
@@ -483,7 +477,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 9,
+    "viewers": 21,
     "jeu": "Art",
     "titre": "✦ FAN ART CHALLENGE ✦ Gimli x PEAK | Ça dessine, ça chill, on s'met bien ☕ | Ven. 23, 18H :  giveaway 400 follows ! | !artchallenges !liens",
     "depuis": "2026-10-20T12:22:24Z",
@@ -559,7 +553,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 11,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "🔞[DROP]  Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-20T12:06:20Z",
@@ -745,7 +739,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Disney Dreamlight Valley",
     "titre": "Bonjour, je vais chercher maléfique  !!!!",
     "depuis": "2026-10-20T11:58:25Z",
@@ -946,5 +940,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-20T14:07:24.945Z"
+ "maj": "2026-10-20T14:57:14.302Z"
 }
