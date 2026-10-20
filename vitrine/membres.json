@@ -6,7 +6,7 @@
  "chiffres": {
   "membres": 39,
   "affilies": 35,
-  "nouveaux30": 39,
+  "nouveaux30": 28,
   "heuresLive30": 844,
   "followsGagnes30": 557,
   "periode": {
@@ -470,7 +470,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 12,
+    "viewers": 15,
     "jeu": "Just Chatting",
     "titre": "RÉACT🍿 : On regarde 90 Day Fiancé USA, vont-ils enfin se mariés ou se quitter ?! 😱 | React émission 90 jours - 3 mois pour se marier",
     "depuis": "2026-10-20T18:59:25Z",
@@ -562,7 +562,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
+    "viewers": 7,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "🔴 MW4 EST LÀ ! 🔥 On débarque sur le champ de bataille | Luffish Gaming",
     "depuis": "2026-10-20T19:48:12Z",
@@ -905,5 +905,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-20T21:57:54.642Z"
+ "maj": "2026-10-20T22:07:23.841Z"
 }
