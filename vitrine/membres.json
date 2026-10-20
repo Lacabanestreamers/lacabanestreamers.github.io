@@ -7,7 +7,7 @@
   "membres": 39,
   "affilies": 35,
   "nouveaux30": 39,
-  "heuresLive30": 813,
+  "heuresLive30": 819,
   "followsGagnes30": 553,
   "periode": {
    "du": "2026-09-23",
@@ -49,9 +49,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
-    "jeu": "Outbound",
-    "titre": "🎃 Mois de l'horreur🎃 ✨Partir en voyage avec @Aulit42369 🔥",
+    "viewers": 7,
+    "jeu": "Folded Fables: Tidy Up The Dragon Hoard",
+    "titre": "🎃 Mois de l'horreur🎃 ✨Un peu de rangement avec @Aulit42369 @EmmaMarmotte 🔥",
     "depuis": "2026-10-20T08:26:00Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
    },
@@ -129,9 +129,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
-    "jeu": "Outbound",
-    "titre": "On prend la route et on craft notre petite maison nomade",
+    "viewers": 10,
+    "jeu": "Folded Fables: Tidy Up The Dragon Hoard",
+    "titre": "C'est l'heure de ranger le bordel d'un dragon 🐲",
     "depuis": "2026-10-20T08:25:16Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
    },
@@ -286,7 +286,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Sprout Valley",
+    "titre": "😸Sproot Valley ~ On continue notre petite vie ! - !réseaux",
+    "depuis": "2026-10-20T17:01:56Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -417,13 +423,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 13,
-    "jeu": "Valheim",
-    "titre": "FR_VT -  Enfin le retour vers le Valhalla !!!",
-    "depuis": "2026-10-20T12:29:33Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [
     {
@@ -471,7 +471,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 18,
+    "viewers": 19,
     "jeu": "Art",
     "titre": "✦ FAN ART CHALLENGE ✦ Gimli x PEAK | Ça dessine, ça chill, on s'met bien ☕ | Ven. 23, 18H :  giveaway 400 follows ! | !artchallenges !liens",
     "depuis": "2026-10-20T12:22:24Z",
@@ -480,8 +480,8 @@
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
-    "The Legend of Zelda: Tears of the Kingdom",
-    "Art"
+    "Art",
+    "The Legend of Zelda: Tears of the Kingdom"
    ],
    "clip": null
   },
@@ -546,13 +546,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 11,
-    "jeu": "FINAL FANTASY XIV ONLINE",
-    "titre": "🔞[DROP]  Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-10-20T12:06:20Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -732,13 +726,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 2,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "Bonjour, je vais chercher maléfique  !!!!",
-    "depuis": "2026-10-20T11:58:25Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -928,5 +916,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-20T16:07:20.671Z"
+ "maj": "2026-10-20T17:12:30.624Z"
 }
