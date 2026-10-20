@@ -7,7 +7,7 @@
   "membres": 39,
   "affilies": 35,
   "nouveaux30": 39,
-  "heuresLive30": 770,
+  "heuresLive30": 775,
   "followsGagnes30": 539,
   "periode": {
    "du": "2026-09-23",
@@ -49,7 +49,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 3,
     "jeu": "Outbound",
     "titre": "🎃 Mois de l'horreur🎃 ✨Partir en voyage avec @Aulit42369 🔥",
     "depuis": "2026-10-20T08:26:00Z",
@@ -129,7 +129,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 9,
     "jeu": "Outbound",
     "titre": "On prend la route et on craft notre petite maison nomade",
     "depuis": "2026-10-20T08:25:16Z",
@@ -270,7 +270,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 10,
+    "viewers": 8,
     "jeu": "Warframe",
     "titre": "[Warframe MR 26] Devoirs de debut de semaine et farm event !",
     "depuis": "2026-10-20T06:57:26Z",
@@ -540,8 +540,8 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
-    "jeu": "Species: Unknown",
+    "viewers": 10,
+    "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "🔞[DROP] Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-20T06:55:38Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
@@ -579,7 +579,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 16,
+    "viewers": 8,
     "jeu": "Dune: Awakening",
     "titre": "🔥 DUNE: AWAKENING | L'aventure continue, la survie aussi !",
     "depuis": "2026-10-20T07:25:56Z",
@@ -921,5 +921,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-20T09:07:20.488Z"
+ "maj": "2026-10-20T09:57:26.698Z"
 }
