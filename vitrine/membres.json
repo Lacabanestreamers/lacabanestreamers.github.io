@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 29,
-  "heuresLive30": 884,
+  "heuresLive30": 891,
   "followsGagnes30": 571,
   "periode": {
    "du": "2026-09-23",
@@ -121,7 +121,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 9,
     "jeu": "7 Days to Die",
     "titre": "Suis moi si je te fuis, fuis moi si je te suis. Tatanage de zombie en vue .🧟‍♂️",
     "depuis": "2026-10-21T09:04:15Z",
@@ -341,8 +341,8 @@
    "succes": [],
    "jeux": [
     "Disney Dreamlight Valley",
-    "Red Dead Redemption II",
-    "Hogwarts Legacy"
+    "Hogwarts Legacy",
+    "Red Dead Redemption II"
    ],
    "clip": null
   },
@@ -403,7 +403,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 12,
+    "viewers": 13,
     "jeu": "R.E.P.O.",
     "titre": "FR_VT -  R.E.P.O avec @lilyth_minerva et les Tizètres",
     "depuis": "2026-10-21T12:04:54Z",
@@ -420,9 +420,9 @@
    "jeux": [
     "Minecraft",
     "The Headliners",
+    "R.E.P.O.",
     "Special Events",
-    "Valheim",
-    "R.E.P.O."
+    "Valheim"
    ],
    "clip": {
     "url": "https://www.twitch.tv/hyroshimaeu/clip/SquareNicePeafowlTheThing-7oRrLZQONB-wTVvy",
@@ -456,7 +456,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 15,
+    "viewers": 10,
     "jeu": "Art",
     "titre": "✦ FAN ART ✦ Gimli x PEAK | Est-ce que j'vais l'finir aujourd'hui ? (NON 👀) | Ven. 23, 18H : giveaway 400 follows ! | !artchallenges !liens",
     "depuis": "2026-10-21T12:52:00Z",
@@ -532,7 +532,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 6,
     "jeu": "R.E.P.O.",
     "titre": "🔞[DROP] Entre papote et éclat de fun !!  avec @hyroshimaeu  / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-21T12:10:31Z",
@@ -719,7 +719,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "Bonjour, go voir les nouveauté boutique et combien j'ai gagner au dreamsnap !!!!",
+    "depuis": "2026-10-21T14:08:44Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -738,7 +744,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "The Midnight Walk",
+    "titre": "[FR] On découvre The Midnight walk ensemble [!bs !steam !insta !discord ]",
+    "depuis": "2026-10-21T14:57:09Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
+   },
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -789,7 +801,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "On continue notre aventure sur l'île de l'Eternité ! En voc avec @nyxenfox",
+    "depuis": "2026-10-21T14:09:15Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_paygadream-440x248.jpg"
+   },
    "premierStream": "2026-05-02",
    "succes": [],
    "jeux": [
@@ -843,7 +861,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Cellar Keeper",
     "titre": "Cellar Keeper on range le vin",
     "depuis": "2026-10-21T13:44:27Z",
@@ -851,7 +869,9 @@
    },
    "premierStream": "2026-08-22",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Cellar Keeper"
+   ],
    "clip": null
   },
   {
@@ -876,13 +896,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": {
-    "viewers": 5,
-    "jeu": "Grand Theft Auto V",
-    "titre": "🌴[#3] JE DÉCOUVRE GTA V🌴 !rs !discord !instantgaming",
-    "depuis": "2026-10-21T13:00:13Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-19",
    "succes": [],
    "jeux": [
@@ -937,5 +951,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-21T14:07:25.404Z"
+ "maj": "2026-10-21T15:04:41.087Z"
 }
