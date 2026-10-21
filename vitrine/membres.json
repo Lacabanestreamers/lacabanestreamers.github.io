@@ -121,7 +121,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 12,
     "jeu": "7 Days to Die",
     "titre": "Suis moi si je te fuis, fuis moi si je te suis. Tatanage de zombie en vue .🧟‍♂️",
     "depuis": "2026-10-21T09:04:15Z",
@@ -330,7 +330,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "[FR] [DDV] 🎃👻 HALLOWEEN 2026 : OOGIE BOOGIE DÉBARQUE ! 👹 | Disney Dreamlight Valley",
+    "depuis": "2026-10-21T10:48:42Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
+   },
    "premierStream": "2024-08-10",
    "succes": [],
    "jeux": [
@@ -513,13 +519,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 9,
-    "jeu": "Palworld",
-    "titre": "🔞[DROP] Chill Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-10-21T07:44:40Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -609,7 +609,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Welcome to Elderfield",
+    "titre": "Aujourd'hui on teste un nouveau jeu... Du cozy & Horreur a la fois, est-ce possible ????   !discord !regles !don !wishlist",
+    "depuis": "2026-10-21T11:04:20Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -637,7 +643,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Rocket League",
     "titre": "J'essaie de m'améliorer !",
     "depuis": "2026-10-21T08:03:03Z",
@@ -759,7 +765,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 12,
+    "viewers": 10,
     "jeu": "The Sims 4",
     "titre": "THE SIMS 4 [FR] | Episode 11 : Agathe rentre à l'université... et dramaaaa ?🏠| !lurk !discord !perfectlife",
     "depuis": "2026-10-21T07:25:21Z",
@@ -918,5 +924,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-21T10:07:29.250Z"
+ "maj": "2026-10-21T11:07:26.506Z"
 }
