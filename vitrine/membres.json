@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 29,
-  "heuresLive30": 875,
+  "heuresLive30": 884,
   "followsGagnes30": 571,
   "periode": {
    "du": "2026-09-23",
@@ -121,7 +121,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 12,
     "jeu": "7 Days to Die",
     "titre": "Suis moi si je te fuis, fuis moi si je te suis. Tatanage de zombie en vue .🧟‍♂️",
     "depuis": "2026-10-21T09:04:15Z",
@@ -332,8 +332,8 @@
    "depuis": "2026-10-09",
    "live": {
     "viewers": 1,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "[FR] [DDV] 🎃👻 HALLOWEEN 2026 : OOGIE BOOGIE DÉBARQUE ! 👹 | Disney Dreamlight Valley",
+    "jeu": "Hogwarts Legacy",
+    "titre": "[FR] [HL] 🪄 Eleanor Silverwood : L'héritière des secrets de Poudlard 🏰✨ | Hogwarts Legacy",
     "depuis": "2026-10-21T10:48:42Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
    },
@@ -403,7 +403,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 12,
     "jeu": "R.E.P.O.",
     "titre": "FR_VT -  R.E.P.O avec @lilyth_minerva et les Tizètres",
     "depuis": "2026-10-21T12:04:54Z",
@@ -422,7 +422,7 @@
     "The Headliners",
     "Special Events",
     "Valheim",
-    "Slay the Spire II"
+    "R.E.P.O."
    ],
    "clip": {
     "url": "https://www.twitch.tv/hyroshimaeu/clip/SquareNicePeafowlTheThing-7oRrLZQONB-wTVvy",
@@ -456,7 +456,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 12,
+    "viewers": 15,
     "jeu": "Art",
     "titre": "✦ FAN ART ✦ Gimli x PEAK | Est-ce que j'vais l'finir aujourd'hui ? (NON 👀) | Ven. 23, 18H : giveaway 400 follows ! | !artchallenges !liens",
     "depuis": "2026-10-21T12:52:00Z",
@@ -532,7 +532,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 5,
     "jeu": "R.E.P.O.",
     "titre": "🔞[DROP] Entre papote et éclat de fun !!  avec @hyroshimaeu  / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-21T12:10:31Z",
@@ -627,21 +627,15 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": {
-    "viewers": 5,
-    "jeu": "Welcome to Elderfield",
-    "titre": "Aujourd'hui on teste un nouveau jeu... Du cozy & Horreur a la fois, est-ce possible ????   !discord !regles !don !wishlist",
-    "depuis": "2026-10-21T11:04:20Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
     "Aniimo",
     "Poppy Playtime: Chapter 3 - Deep Sleep",
     "Stardew Valley",
-    "Poppy Playtime: Chapter 2 - Fly in a Web",
-    "Snack Factory Together"
+    "Welcome to Elderfield",
+    "Poppy Playtime: Chapter 2 - Fly in a Web"
    ],
    "clip": {
     "url": "https://www.twitch.tv/melpastelplay/clip/HappyBlindingPassionfruitFloof-srV5iXMAUF1dnwg0",
@@ -660,13 +654,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 3,
-    "jeu": "Apex Legends",
-    "titre": "J'essaie de m'améliorer !",
-    "depuis": "2026-10-21T08:03:03Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -731,13 +719,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "Euro Truck Simulator 2",
-    "titre": "Bonjour,je finis les livraison halloween et je passe DDV vers 15h30  !!!!",
-    "depuis": "2026-10-21T11:51:50Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -860,7 +842,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Cellar Keeper",
+    "titre": "Cellar Keeper on range le vin",
+    "depuis": "2026-10-21T13:44:27Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
+   },
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [],
@@ -889,7 +877,7 @@
    "staff": false,
    "depuis": "2026-09-28",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "Grand Theft Auto V",
     "titre": "🌴[#3] JE DÉCOUVRE GTA V🌴 !rs !discord !instantgaming",
     "depuis": "2026-10-21T13:00:13Z",
@@ -898,8 +886,8 @@
    "premierStream": "2025-01-19",
    "succes": [],
    "jeux": [
-    "Cyberpunk 2077",
-    "Grand Theft Auto V"
+    "Grand Theft Auto V",
+    "Cyberpunk 2077"
    ],
    "clip": null
   },
@@ -949,5 +937,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-21T13:07:26.439Z"
+ "maj": "2026-10-21T14:07:25.404Z"
 }
