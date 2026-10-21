@@ -7,8 +7,8 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 29,
-  "heuresLive30": 909,
-  "followsGagnes30": 571,
+  "heuresLive30": 915,
+  "followsGagnes30": 581,
   "periode": {
    "du": "2026-09-23",
    "au": "2026-10-21"
@@ -120,13 +120,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 15,
-    "jeu": "7 Days to Die",
-    "titre": "Suis moi si je te fuis, fuis moi si je te suis. Tatanage de zombie en vue .🧟‍♂️",
-    "depuis": "2026-10-21T09:04:15Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -180,7 +174,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "Lotwick Hill",
+    "titre": "🥇 LOTWICK HILL | On joue en équipe... mais je veux gagner !",
+    "depuis": "2026-10-21T17:58:39Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -254,7 +254,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Lies of P",
+    "titre": "[lies of P] On reprends le DLC",
+    "depuis": "2026-10-21T17:55:49Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [],
    "jeux": [
@@ -272,7 +278,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Tomodachi Life: Living the Dream",
+    "titre": "🌐Tomodachi Life 2 ~ On continue la vie de l'île ! - !réseaux",
+    "depuis": "2026-10-21T17:13:24Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -305,7 +317,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 16,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "✨ Disney Dreamlight Valley | !lurk !clip !commandes",
+    "depuis": "2026-10-21T17:36:36Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
+   },
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
@@ -396,13 +414,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 11,
-    "jeu": "R.E.P.O.",
-    "titre": "FR_VT -  R.E.P.O avec @lilyth_minerva et les Tizètres",
-    "depuis": "2026-10-21T12:04:54Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -449,13 +461,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 22,
-    "jeu": "Art",
-    "titre": "✦ FAN ART ✦ Gimli x PEAK | Est-ce que j'vais l'finir aujourd'hui ? (NON 👀) | Ven. 23, 18H : giveaway 400 follows ! | !artchallenges !liens",
-    "depuis": "2026-10-21T12:52:00Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -690,7 +696,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] C'EST LE SHOWCAAAAAASE 😍🥳 | Disney Dreamlight Valley | !discord !commandes",
     "depuis": "2026-10-21T16:00:30Z",
@@ -713,20 +719,15 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "World of Warcraft",
-    "titre": "Bonsoir, retour sur azeroth !!!!",
-    "depuis": "2026-10-21T16:55:41Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
     "Disney Dreamlight Valley",
     "American Truck Simulator",
     "Project CARS",
-    "Euro Truck Simulator 2"
+    "Euro Truck Simulator 2",
+    "World of Warcraft"
    ],
    "clip": null
   },
@@ -843,7 +844,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 5,
+    "viewers": 8,
     "jeu": "Cellar Keeper",
     "titre": "Cellar Keeper on range le vin",
     "depuis": "2026-10-21T13:44:27Z",
@@ -933,5 +934,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-21T17:07:30.571Z"
+ "maj": "2026-10-21T18:07:30.568Z"
 }
