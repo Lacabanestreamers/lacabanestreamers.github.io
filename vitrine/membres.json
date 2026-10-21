@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 29,
-  "heuresLive30": 921,
+  "heuresLive30": 928,
   "followsGagnes30": 581,
   "periode": {
    "du": "2026-09-23",
@@ -175,7 +175,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
+    "viewers": 12,
     "jeu": "Lotwick Hill",
     "titre": "🥇 LOTWICK HILL | On joue en équipe... mais je veux gagner !",
     "depuis": "2026-10-21T17:58:39Z",
@@ -228,7 +228,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Rise of the Tomb Raider",
     "titre": "🏺 Exploration de tombes perdues sur Rise of the Tomb Raider ! (On est à 42%)",
     "depuis": "2026-10-21T18:31:58Z",
@@ -285,7 +285,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Tomodachi Life: Living the Dream",
     "titre": "🌐Tomodachi Life 2 ~ On continue la vie de l'île ! - !réseaux",
     "depuis": "2026-10-21T17:13:24Z",
@@ -303,8 +303,8 @@
     "Minecraft",
     "Splatoon 3",
     "Sprout Valley",
-    "Sword Art Online: Hollow Realization",
-    "Tomodachi Life: Living the Dream"
+    "Tomodachi Life: Living the Dream",
+    "Sword Art Online: Hollow Realization"
    ],
    "clip": {
     "url": "https://www.twitch.tv/elegaming__/clip/SpoopyAbnegateSalmonMrDestructoid-3f_fOVun5WxgOMLv",
@@ -324,7 +324,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
+    "viewers": 14,
     "jeu": "Disney Dreamlight Valley",
     "titre": "✨ Disney Dreamlight Valley | !lurk !clip !commandes",
     "depuis": "2026-10-21T17:36:36Z",
@@ -702,7 +702,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] C'EST LE SHOWCAAAAAASE 😍🥳 | Disney Dreamlight Valley | !discord !commandes",
     "depuis": "2026-10-21T16:00:30Z",
@@ -940,5 +940,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-21T19:07:31.248Z"
+ "maj": "2026-10-21T19:16:07.448Z"
 }
