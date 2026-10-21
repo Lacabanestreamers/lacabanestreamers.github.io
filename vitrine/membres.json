@@ -330,13 +330,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": {
-    "viewers": 1,
-    "jeu": "Hogwarts Legacy",
-    "titre": "[FR] [HL] 🪄 Eleanor Silverwood : L'héritière des secrets de Poudlard 🏰✨ | Hogwarts Legacy",
-    "depuis": "2026-10-21T10:48:42Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-10",
    "succes": [],
    "jeux": [
@@ -456,7 +450,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 11,
+    "viewers": 21,
     "jeu": "Art",
     "titre": "✦ FAN ART ✦ Gimli x PEAK | Est-ce que j'vais l'finir aujourd'hui ? (NON 👀) | Ven. 23, 18H : giveaway 400 follows ! | !artchallenges !liens",
     "depuis": "2026-10-21T12:52:00Z",
@@ -532,10 +526,10 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 5,
     "jeu": "R.E.P.O.",
     "titre": "🔞[DROP] Entre papote et éclat de fun !!  avec @hyroshimaeu  / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-10-21T12:10:31Z",
+    "depuis": "2026-10-21T15:23:31Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
    },
    "premierStream": "2018-08-08",
@@ -701,7 +695,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "[FR] C'EST LA SHOWCAAAAAASE 😍🥳 | Disney Dreamlight Valley | !discord !commandes",
+    "depuis": "2026-10-21T16:00:30Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
+   },
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -720,7 +720,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Disney Dreamlight Valley",
     "titre": "Bonjour, go voir les nouveauté boutique et combien j'ai gagner au dreamsnap !!!!",
     "depuis": "2026-10-21T14:08:44Z",
@@ -745,7 +745,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 5,
     "jeu": "The Midnight Walk",
     "titre": "[FR] On découvre The Midnight walk ensemble [!bs !steam !insta !discord ]",
     "depuis": "2026-10-21T14:57:09Z",
@@ -861,7 +861,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 3,
+    "viewers": 5,
     "jeu": "Cellar Keeper",
     "titre": "Cellar Keeper on range le vin",
     "depuis": "2026-10-21T13:44:27Z",
@@ -951,5 +951,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-21T15:07:24.390Z"
+ "maj": "2026-10-21T16:07:26.841Z"
 }
