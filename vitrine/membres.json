@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 29,
-  "heuresLive30": 891,
+  "heuresLive30": 900,
   "followsGagnes30": 571,
   "periode": {
    "du": "2026-09-23",
@@ -403,7 +403,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 13,
+    "viewers": 12,
     "jeu": "R.E.P.O.",
     "titre": "FR_VT -  R.E.P.O avec @lilyth_minerva et les Tizètres",
     "depuis": "2026-10-21T12:04:54Z",
@@ -418,9 +418,9 @@
     }
    ],
    "jeux": [
+    "R.E.P.O.",
     "Minecraft",
     "The Headliners",
-    "R.E.P.O.",
     "Special Events",
     "Valheim"
    ],
@@ -456,7 +456,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 10,
+    "viewers": 11,
     "jeu": "Art",
     "titre": "✦ FAN ART ✦ Gimli x PEAK | Est-ce que j'vais l'finir aujourd'hui ? (NON 👀) | Ven. 23, 18H : giveaway 400 follows ! | !artchallenges !liens",
     "depuis": "2026-10-21T12:52:00Z",
@@ -532,7 +532,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "R.E.P.O.",
     "titre": "🔞[DROP] Entre papote et éclat de fun !!  avec @hyroshimaeu  / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-21T12:10:31Z",
@@ -720,7 +720,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "Disney Dreamlight Valley",
     "titre": "Bonjour, go voir les nouveauté boutique et combien j'ai gagner au dreamsnap !!!!",
     "depuis": "2026-10-21T14:08:44Z",
@@ -861,7 +861,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 4,
+    "viewers": 3,
     "jeu": "Cellar Keeper",
     "titre": "Cellar Keeper on range le vin",
     "depuis": "2026-10-21T13:44:27Z",
@@ -951,5 +951,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-21T15:04:41.087Z"
+ "maj": "2026-10-21T15:07:24.390Z"
 }
