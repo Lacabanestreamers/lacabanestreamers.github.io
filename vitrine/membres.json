@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 29,
-  "heuresLive30": 974,
+  "heuresLive30": 978,
   "followsGagnes30": 603,
   "periode": {
    "du": "2026-09-23",
@@ -120,7 +120,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "VALORANT",
+    "titre": "Piou Piou Piou on est des stormtroopers",
+    "depuis": "2026-10-22T18:53:58Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
+   },
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -396,7 +402,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Among Us",
+    "titre": "FR_VT -  among us entre nous !!",
+    "depuis": "2026-10-22T18:16:58Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -561,7 +573,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 6,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "🔴 MW4 casser on part sur RL et maintenant sa re marche lol ou pas",
     "depuis": "2026-10-22T13:56:35Z",
@@ -623,7 +635,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Poppy Playtime: Chapter 3 - Deep Sleep",
+    "titre": "Prêts pour la course poursuite ????? Venez me tenir compagnie please !!! Objectif 130 followowow   !discord !regles !don !wishlist",
+    "depuis": "2026-10-22T18:21:30Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -697,13 +715,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 8,
-    "jeu": "Moonlight Peaks",
-    "titre": "[FR] Je suis accro à ce jeu 🦇🪄 | Moonlight Peaks | !discord !commandes",
-    "depuis": "2026-10-22T16:00:19Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -722,7 +734,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "American Truck Simulator",
     "titre": "Bonjour, je livre sur la route de glace !!!!",
     "depuis": "2026-10-22T15:02:02Z",
@@ -929,5 +941,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-22T18:07:25.252Z"
+ "maj": "2026-10-22T19:07:27.643Z"
 }
