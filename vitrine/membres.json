@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 29,
-  "heuresLive30": 937,
+  "heuresLive30": 940,
   "followsGagnes30": 592,
   "periode": {
    "du": "2026-09-23",
@@ -120,7 +120,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "7 Days to Die",
+    "titre": "Suis moi si je te fuis, fuis moi si je te suis. Tatanage de zombie en vue .🧟‍♂️",
+    "depuis": "2026-10-22T09:20:47Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
+   },
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -522,7 +528,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 11,
     "jeu": "The Quarry",
     "titre": "🔞[DROP] Nous peur ? Jamais !!! Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-22T07:04:08Z",
@@ -763,7 +769,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 10,
+    "viewers": 11,
     "jeu": "The Sims 4",
     "titre": "THE SIMS 4 [FR] | Episode 12 : Agathe passe jeune adulte, commence à nouer des liens avec son fils... et dramaaa 🏠| !discord !perfectlife",
     "depuis": "2026-10-22T07:00:13Z",
@@ -870,7 +876,7 @@
    "staff": false,
    "depuis": "2026-09-28",
    "live": {
-    "viewers": 4,
+    "viewers": 6,
     "jeu": "Cyberpunk 2077",
     "titre": "🧠[EP:40] CYBERPUNK 2077🧠 !rs !discord !instantgaming",
     "depuis": "2026-10-22T09:00:13Z",
@@ -923,5 +929,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-22T09:07:27.015Z"
+ "maj": "2026-10-22T09:33:21.178Z"
 }
