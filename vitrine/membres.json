@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 29,
-  "heuresLive30": 947,
+  "heuresLive30": 949,
   "followsGagnes30": 595,
   "periode": {
    "du": "2026-09-23",
@@ -121,7 +121,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
+    "viewers": 8,
     "jeu": "7 Days to Die",
     "titre": "Suis moi si je te fuis, fuis moi si je te suis. Tatanage de zombie en vue .🧟‍♂️",
     "depuis": "2026-10-22T09:20:47Z",
@@ -181,7 +181,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 14,
     "jeu": "The Sims 4",
     "titre": "🎃 LES 31 DÉFIS D'OCTOBRE | Je vais le regretter, non ? 😆",
     "depuis": "2026-10-22T10:44:34Z",
@@ -199,8 +199,8 @@
     "Disney Dreamlight Valley",
     "R.E.P.O.",
     "DEVOUR",
-    "SO CLOSE",
-    "The Sims 4"
+    "The Sims 4",
+    "SO CLOSE"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/CoySuspiciousQuailPermaSmug-MZks7LLAa9CDpOKI",
@@ -533,7 +533,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Pony Island",
+    "titre": "🔞[DROP] Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-10-22T12:09:12Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -839,7 +845,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Cellar Keeper",
+    "titre": "Cellar Keeper on range le vin",
+    "depuis": "2026-10-22T12:54:49Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
+   },
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -917,5 +929,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-22T12:07:30.581Z"
+ "maj": "2026-10-22T13:07:25.913Z"
 }
