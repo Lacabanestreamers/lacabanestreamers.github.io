@@ -6,8 +6,8 @@
  "chiffres": {
   "membres": 40,
   "affilies": 36,
-  "nouveaux30": 29,
-  "heuresLive30": 991,
+  "nouveaux30": 28,
+  "heuresLive30": 996,
   "followsGagnes30": 603,
   "periode": {
    "du": "2026-09-23",
@@ -133,8 +133,8 @@
     "7 Days to Die",
     "Graveyard Keeper II",
     "Outbound",
-    "R.E.P.O.",
-    "VALORANT"
+    "VALORANT",
+    "R.E.P.O."
    ],
    "clip": null
   },
@@ -396,13 +396,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 9,
-    "jeu": "Among Us",
-    "titre": "FR_VT -  among us entre nous !!",
-    "depuis": "2026-10-22T18:16:58Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -566,13 +560,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 8,
-    "jeu": "Call of Duty: Modern Warfare 4",
-    "titre": "🔴 MW4 casser on part sur RL et maintenant sa re marche lol ou pas",
-    "depuis": "2026-10-22T13:56:35Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2017-03-05",
    "succes": [],
    "jeux": [
@@ -676,13 +664,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 5,
-    "jeu": "The Sims 4",
-    "titre": "[FR] ~ Sims 4 - Rénovation des Mondes - Sulani #15 ~",
-    "depuis": "2026-10-22T19:30:05Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -829,7 +811,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 3,
     "jeu": "The Witcher 3: Wild Hunt Remastered",
     "titre": "Que nous cache ce beau et sombre monde ? [DROP ✅] !discord",
     "depuis": "2026-10-22T19:50:24Z",
@@ -935,5 +917,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-22T21:07:25.534Z"
+ "maj": "2026-10-22T22:07:25.642Z"
 }
