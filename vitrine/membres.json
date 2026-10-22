@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 29,
-  "heuresLive30": 945,
+  "heuresLive30": 947,
   "followsGagnes30": 595,
   "periode": {
    "du": "2026-09-23",
@@ -121,7 +121,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 13,
     "jeu": "7 Days to Die",
     "titre": "Suis moi si je te fuis, fuis moi si je te suis. Tatanage de zombie en vue .🧟‍♂️",
     "depuis": "2026-10-22T09:20:47Z",
@@ -181,7 +181,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 11,
     "jeu": "The Sims 4",
     "titre": "🎃 LES 31 DÉFIS D'OCTOBRE | Je vais le regretter, non ? 😆",
     "depuis": "2026-10-22T10:44:34Z",
@@ -200,7 +200,7 @@
     "R.E.P.O.",
     "DEVOUR",
     "SO CLOSE",
-    "The Quarry"
+    "The Sims 4"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/CoySuspiciousQuailPermaSmug-MZks7LLAa9CDpOKI",
@@ -917,5 +917,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-22T11:07:24.728Z"
+ "maj": "2026-10-22T12:07:30.581Z"
 }
