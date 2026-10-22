@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 29,
-  "heuresLive30": 935,
+  "heuresLive30": 937,
   "followsGagnes30": 592,
   "periode": {
    "du": "2026-09-23",
@@ -540,8 +540,8 @@
     "Dead by Daylight",
     "R.E.P.O.",
     "AION 2",
-    "7 Days to Die",
-    "The Quarry"
+    "The Quarry",
+    "7 Days to Die"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/BloodyUnusualTurnipChefFrank-MKhxfGsh7-X-yWLF",
@@ -763,7 +763,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 8,
+    "viewers": 10,
     "jeu": "The Sims 4",
     "titre": "THE SIMS 4 [FR] | Episode 12 : Agathe passe jeune adulte, commence à nouer des liens avec son fils... et dramaaa 🏠| !discord !perfectlife",
     "depuis": "2026-10-22T07:00:13Z",
@@ -869,7 +869,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Cyberpunk 2077",
+    "titre": "🧠[EP:40] CYBERPUNK 2077🧠 !rs !discord !instantgaming",
+    "depuis": "2026-10-22T09:00:13Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
+   },
    "premierStream": "2025-01-19",
    "succes": [],
    "jeux": [
@@ -917,5 +923,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-22T08:07:26.191Z"
+ "maj": "2026-10-22T09:07:27.015Z"
 }
