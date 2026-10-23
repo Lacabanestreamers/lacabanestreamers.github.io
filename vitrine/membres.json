@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 28,
-  "heuresLive30": 1034,
+  "heuresLive30": 1038,
   "followsGagnes30": 614,
   "periode": {
    "du": "2026-09-23",
@@ -174,7 +174,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "All Rats on Deck",
+    "titre": "🐀 ALL RATS ON DECK | Le gang des rats à becs est dans la place ! 🧀",
+    "depuis": "2026-10-23T18:49:00Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -221,7 +227,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Just Chatting",
+    "titre": "☕ Soirée Jeux démo, et on finira peut être sur du Dead by Daylight 🪓",
+    "depuis": "2026-10-23T18:34:10Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
+   },
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -363,8 +375,8 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
-    "jeu": "Just Chatting",
+    "viewers": 8,
+    "jeu": "MECCHA CHAMELEON",
     "titre": "On fête tous ensemble l'anniversaire de live de @laelya_! Venez donner de la force, et n'oubliez pas de la follow !! <3",
     "depuis": "2026-10-23T17:05:14Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
@@ -475,8 +487,8 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 17,
-    "jeu": "Just Chatting",
+    "viewers": 16,
+    "jeu": "MECCHA CHAMELEON",
     "titre": "STREAM 1 AN SUR TWITCH 🎉🎁: On fête l'event comme il se doit avec une Soirée Multi sur plein de jeux ✨! | Evenement spécial Anniversaire",
     "depuis": "2026-10-23T17:34:08Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
@@ -630,7 +642,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Poppy Playtime: Chapter 3 - Deep Sleep",
+    "titre": "Je cherche 1 petit viewver , tu viens ??? On va affronter les monstres !!!   !discord !regles !don !wishlist",
+    "depuis": "2026-10-23T18:11:36Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -697,7 +715,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "R.E.P.O.",
+    "titre": "[FR] Ca va crier 😨😱 | REPO | !discord !commandes",
+    "depuis": "2026-10-23T18:42:30Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
+   },
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -735,7 +759,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "All Rats on Deck",
+    "titre": "[FR] OP All rats on Deck, vos streamers à plumes se prennent pour des rats. [!bs !steam !insta !discord ]",
+    "depuis": "2026-10-23T18:48:39Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
+   },
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -839,13 +869,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": {
-    "viewers": 8,
-    "jeu": "Cellar Keeper",
-    "titre": "Cellar Keeper on range le vin",
-    "depuis": "2026-10-23T15:09:23Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -924,5 +948,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-23T18:07:26.216Z"
+ "maj": "2026-10-23T19:05:07.869Z"
 }
