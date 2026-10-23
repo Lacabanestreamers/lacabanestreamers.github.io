@@ -7,8 +7,8 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 28,
-  "heuresLive30": 1029,
-  "followsGagnes30": 611,
+  "heuresLive30": 1034,
+  "followsGagnes30": 614,
   "periode": {
    "du": "2026-09-23",
    "au": "2026-10-23"
@@ -267,7 +267,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 0,
+    "viewers": 1,
     "jeu": "Minecraft",
     "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings ! - !réseaux",
     "depuis": "2026-10-23T17:04:51Z",
@@ -363,7 +363,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 13,
     "jeu": "Just Chatting",
     "titre": "On fête tous ensemble l'anniversaire de live de @laelya_! Venez donner de la force, et n'oubliez pas de la follow !! <3",
     "depuis": "2026-10-23T17:05:14Z",
@@ -449,13 +449,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 23,
-    "jeu": "Just Chatting",
-    "titre": "✦ GIVEAWAY 400 FOLLOWS ✦ puis dessin après ? 👀 | !artchallenges !liens",
-    "depuis": "2026-10-23T15:50:36Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -480,7 +474,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 17,
+    "jeu": "Just Chatting",
+    "titre": "STREAM 1 AN SUR TWITCH 🎉🎁: On fête l'event comme il se doit avec une Soirée Multi sur plein de jeux ✨! | Evenement spécial Anniversaire",
+    "depuis": "2026-10-23T17:34:08Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
+   },
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
@@ -533,13 +533,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 13,
-    "jeu": "Invokyr",
-    "titre": "🔞[DROP] Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-10-23T12:29:23Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -846,7 +840,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 6,
+    "viewers": 8,
     "jeu": "Cellar Keeper",
     "titre": "Cellar Keeper on range le vin",
     "depuis": "2026-10-23T15:09:23Z",
@@ -930,5 +924,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-23T17:07:30.407Z"
+ "maj": "2026-10-23T18:07:26.216Z"
 }
