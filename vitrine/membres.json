@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 28,
-  "heuresLive30": 1047,
+  "heuresLive30": 1058,
   "followsGagnes30": 614,
   "periode": {
    "du": "2026-09-23",
@@ -53,7 +53,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 11,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "🎃 Mois de l'horreur🎃 ✨On fini ou pas ce DLC 2!!!🔥",
+    "depuis": "2026-10-23T20:59:20Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
+   },
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -175,7 +181,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 9,
     "jeu": "All Rats on Deck",
     "titre": "🐀 ALL RATS ON DECK | Le gang des rats à becs est dans la place ! 🧀",
     "depuis": "2026-10-23T18:49:00Z",
@@ -228,8 +234,8 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 3,
-    "jeu": "Just Chatting",
+    "viewers": 2,
+    "jeu": "Dead by Daylight",
     "titre": "☕ Soirée Jeux démo, et on finira peut être sur du Dead by Daylight 🪓",
     "depuis": "2026-10-23T18:34:10Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
@@ -278,13 +284,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 2,
-    "jeu": "Minecraft",
-    "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings ! - !réseaux",
-    "depuis": "2026-10-23T17:04:51Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -374,13 +374,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 6,
-    "jeu": "MECCHA CHAMELEON",
-    "titre": "On fête tous ensemble l'anniversaire de live de @laelya_! Venez donner de la force, et n'oubliez pas de la follow !! <3",
-    "depuis": "2026-10-23T17:05:14Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -448,7 +442,7 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "Slime Rancher",
     "titre": "On chill et je decouvre Slime Rancher 🍄",
     "depuis": "2026-10-23T19:23:53Z",
@@ -495,8 +489,8 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 18,
-    "jeu": "MECCHA CHAMELEON",
+    "viewers": 24,
+    "jeu": "skribbl.io",
     "titre": "STREAM 1 AN SUR TWITCH 🎉🎁: On fête l'event comme il se doit avec une Soirée Multi sur plein de jeux ✨! | Evenement spécial Anniversaire",
     "depuis": "2026-10-23T19:38:51Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
@@ -508,7 +502,7 @@
     "Planet Zoo 2",
     "Sovereign Tower",
     "Games + Demos",
-    "Foxy Dumplings"
+    "MECCHA CHAMELEON"
    ],
    "clip": {
     "url": "https://www.twitch.tv/laelya_/clip/CrunchyKitschyBulgogiChefFrank-Gsnu2HuzFp8NLzjs",
@@ -587,7 +581,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 8,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "🔴 LE NOUVEAU MW4 EST LÀ ! 🔥 On découvre le multijoueur ensemble !",
     "depuis": "2026-10-23T19:47:16Z",
@@ -657,7 +651,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 4,
+    "viewers": 9,
     "jeu": "Poppy Playtime: Chapter 3 - Deep Sleep",
     "titre": "Je cherche 1 petit viewver , tu viens ??? On va affronter les monstres !!!   !discord !regles !don !wishlist",
     "depuis": "2026-10-23T18:11:36Z",
@@ -730,7 +724,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 8,
     "jeu": "R.E.P.O.",
     "titre": "[FR] Ca va crier 😨😱 MOD Halloween 👻 | REPO | !discord !commandes",
     "depuis": "2026-10-23T18:42:30Z",
@@ -781,7 +775,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 5,
     "jeu": "All Rats on Deck",
     "titre": "[FR] OP All rats on Deck, vos streamers à plumes se prennent pour des rats. [!bs !steam !insta !discord ]",
     "depuis": "2026-10-23T18:48:39Z",
@@ -969,5 +963,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-23T20:07:27.173Z"
+ "maj": "2026-10-23T21:07:25.305Z"
 }
