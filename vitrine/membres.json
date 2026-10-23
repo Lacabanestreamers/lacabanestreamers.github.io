@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 28,
-  "heuresLive30": 1046,
+  "heuresLive30": 1047,
   "followsGagnes30": 614,
   "periode": {
    "du": "2026-09-23",
@@ -279,7 +279,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Minecraft",
     "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings ! - !réseaux",
     "depuis": "2026-10-23T17:04:51Z",
@@ -375,7 +375,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "MECCHA CHAMELEON",
     "titre": "On fête tous ensemble l'anniversaire de live de @laelya_! Venez donner de la force, et n'oubliez pas de la follow !! <3",
     "depuis": "2026-10-23T17:05:14Z",
@@ -448,7 +448,7 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": {
-    "viewers": 0,
+    "viewers": 4,
     "jeu": "Slime Rancher",
     "titre": "On chill et je decouvre Slime Rancher 🍄",
     "depuis": "2026-10-23T19:23:53Z",
@@ -456,7 +456,9 @@
    },
    "premierStream": null,
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Slime Rancher"
+   ],
    "clip": null
   },
   {
@@ -493,10 +495,10 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 17,
+    "viewers": 18,
     "jeu": "MECCHA CHAMELEON",
     "titre": "STREAM 1 AN SUR TWITCH 🎉🎁: On fête l'event comme il se doit avec une Soirée Multi sur plein de jeux ✨! | Evenement spécial Anniversaire",
-    "depuis": "2026-10-23T17:34:08Z",
+    "depuis": "2026-10-23T19:38:51Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
    },
    "premierStream": "2025-10-10",
@@ -584,7 +586,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Call of Duty: Modern Warfare 4",
+    "titre": "🔴 LE NOUVEAU MW4 EST LÀ ! 🔥 On découvre le multijoueur ensemble !",
+    "depuis": "2026-10-23T19:47:16Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
+   },
    "premierStream": "2017-03-05",
    "succes": [],
    "jeux": [
@@ -746,7 +754,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "American Truck Simulator",
+    "titre": "Bonsoir, je repart en livraison !!!!",
+    "depuis": "2026-10-23T19:26:45Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -955,5 +969,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-23T19:24:45.099Z"
+ "maj": "2026-10-23T20:07:27.173Z"
 }
