@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 28,
-  "heuresLive30": 1021,
+  "heuresLive30": 1024,
   "followsGagnes30": 611,
   "periode": {
    "du": "2026-09-23",
@@ -267,7 +267,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 5,
+    "viewers": 3,
     "jeu": "Splatoon 3",
     "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
     "depuis": "2026-10-23T14:00:32Z",
@@ -443,7 +443,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 13,
+    "jeu": "Just Chatting",
+    "titre": "✦ GIVEAWAY 400 FOLLOWS ✦ puis dessin après ? 👀 | !artchallenges !liens",
+    "depuis": "2026-10-23T15:50:36Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
+   },
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -521,8 +527,8 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
-    "jeu": "Dead by Daylight",
+    "viewers": 13,
+    "jeu": "Invokyr",
     "titre": "🔞[DROP] Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-23T12:29:23Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
@@ -709,7 +715,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 4,
     "jeu": "Disney Dreamlight Valley",
     "titre": "Bonjour, allons voir ce qui se passe dans la vallée !!!!",
     "depuis": "2026-10-23T11:34:11Z",
@@ -729,7 +735,7 @@
   {
    "login": "oko_san_",
    "nom": "Oko_san_",
-   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/c803851b-3887-4362-8bc4-7518f7ea398c-profile_image-300x300.jpeg",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/717c09b7-0ef8-4755-bc50-a9f84cc16605-profile_image-300x300.png",
    "bio": "Salut petit caneton !! ✨ Moi c'est Okko ( ou Oko) je suis une petite streameuse chill et souriante qui fait du multi gaming dans une ambiance cozy !! Alors n'hésite pas venir faire un petit coucou ! 💜Pour me contacter c'est par ici : contactpro@okkosan.fr  ✨",
    "type": "affiliate",
    "staff": false,
@@ -838,7 +844,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Cellar Keeper",
+    "titre": "Cellar Keeper on range le vin",
+    "depuis": "2026-10-23T15:09:23Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
+   },
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -917,5 +929,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-23T15:07:26.393Z"
+ "maj": "2026-10-23T16:07:27.583Z"
 }
