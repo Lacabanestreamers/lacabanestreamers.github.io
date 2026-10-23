@@ -19,7 +19,7 @@ function pauseBlock(m){
     <p class="meta" style="margin-top:0">${p ? `<b class="warn">En pause jusqu'au ${fmtDate(m.pauseJusqua)}</b> : pas compté comme inactif (Accueil, Nettoyage) d'ici là.`
       : fini ? `Revenu de pause le ${fmtDate(m.pauseJusqua)}.` : "Vacances, examens, santé… Un streamer en pause ne compte pas comme inactif jusqu'à la date indiquée."}</p>
     <div class="grid">${fld("En pause jusqu'au","pauseJusqua",m.pauseJusqua,"date")}${fld("Motif (facultatif)","pauseMotif",m.pauseMotif)}</div>
-    ${m.pauseJusqua ? `<button type="button" class="btn ghost" data-finpause="${m.id}" style="margin-top:8px">${p ? "Terminer la pause maintenant" : "Effacer la pause"}</button>` : ""}
+    ${m.pauseJusqua ? `<button type="button" class="btn ghost" data-finpause="${esc(m.id)}" style="margin-top:8px">${p ? "Terminer la pause maintenant" : "Effacer la pause"}</button>` : ""}
   </fieldset>`;
 }
 
@@ -44,7 +44,7 @@ function mesStreamersCard(){
   const me = cfg.me; if(!me) return "";
   const l = suivisDe(me), alertes = l.filter(aSurveiller).length;
   return `<section class="card mesref"><h2>Tes streamers (référent)<span class="n ${alertes ? "" : "zero"}" title="${alertes} à surveiller">${l.length}</span></h2>
-    ${l.length ? `<ul class="todo">${l.slice(0, 12).map(({m, s}) => `<li data-open="membres:${m.id}">${avatarHtml(m.login)}<span class="login">${esc(m.login)}</span>
+    ${l.length ? `<ul class="todo">${l.slice(0, 12).map(({m, s}) => `<li data-open="membres:${esc(m.id)}">${avatarHtml(m.login)}<span class="login">${esc(m.login)}</span>
       <span class="r w">${s.length ? s.slice(0, 2).map(x => `<span class="${x.cls}">${esc(x.h)}</span>`).join(" · ") : `<span class="muted">tout va bien</span>`}</span></li>`).join("")}</ul>
       ${l.length > 12 ? `<a href="#" class="more" data-goto="membres" data-mref="${esc(me)}">Voir les ${l.length}</a>` : `<a href="#" class="more" data-goto="membres" data-mref="${esc(me)}">Voir dans Streamers</a>`}`
       : `<p class="none">Tu n'es le référent de personne pour l'instant (champ « Référent staff » sur la fiche d'un streamer).</p>`}</section>`;
@@ -56,7 +56,7 @@ function suivisParStaffCard(){
   return `<section class="card refstaff"><h2>Suivis par référent</h2>
     ${staff.map(nom => { const l = suivisDe(nom), a = l.filter(aSurveiller).length;
       return `<details ${nom === cfg.me ? "open" : ""}><summary><b>${esc(nom)}</b><span class="muted">${l.length} streamer${l.length > 1 ? "s" : ""}</span>${a ? `<span class="warn">${a} à surveiller</span>` : ""}</summary>
-        ${l.length ? `<ul class="todo">${l.map(({m, s}) => `<li data-open="membres:${m.id}">${avatarHtml(m.login)}<span class="login">${esc(m.login)}</span><span class="r w">${s.slice(0, 2).map(x => `<span class="${x.cls}">${esc(x.h)}</span>`).join(" · ") || `<span class="muted">tout va bien</span>`}</span></li>`).join("")}</ul>` : `<p class="none">Personne.</p>`}</details>`; }).join("")}
+        ${l.length ? `<ul class="todo">${l.map(({m, s}) => `<li data-open="membres:${esc(m.id)}">${avatarHtml(m.login)}<span class="login">${esc(m.login)}</span><span class="r w">${s.slice(0, 2).map(x => `<span class="${x.cls}">${esc(x.h)}</span>`).join(" · ") || `<span class="muted">tout va bien</span>`}</span></li>`).join("")}</ul>` : `<p class="none">Personne.</p>`}</details>`; }).join("")}
     ${sans.length ? `<p class="meta"><span class="warn">${sans.length} streamer${sans.length > 1 ? "s" : ""} sans référent</span> (hors Admin et Modo) : <a href="#" data-goto="membres" data-mref="">les voir</a>.</p>` : ""}</section>`;
 }
 
@@ -70,7 +70,7 @@ function acceptesEnAttente(){
 function acceptesCard(){
   const l = acceptesEnAttente(); if(!l.length) return "";
   return `<section class="card"><h2>Acceptés, pas encore arrivés<span class="n">${l.length}</span></h2><ul class="todo">${l.slice(0, 10).map(({p, j}) =>
-    `<li data-open="propositions:${p.id}">${avatarHtml(p.login)}<span class="login">${esc(p.login)}</span><span class="r">${p.dateInvitation ? `invité le ${fmtDate(p.dateInvitation)}` : `<span class="warn">pas encore invité</span>`}${j != null ? ` · <b class="${j >= 14 ? "down" : j >= 7 ? "warn" : ""}">${j} j</b>` : ""}${p.responsable ? ` · ${esc(p.responsable)}` : ""}</span></li>`).join("")}</ul>
+    `<li data-open="propositions:${esc(p.id)}">${avatarHtml(p.login)}<span class="login">${esc(p.login)}</span><span class="r">${p.dateInvitation ? `invité le ${fmtDate(p.dateInvitation)}` : `<span class="warn">pas encore invité</span>`}${j != null ? ` · <b class="${j >= 14 ? "down" : j >= 7 ? "warn" : ""}">${j} j</b>` : ""}${p.responsable ? ` · ${esc(p.responsable)}` : ""}</span></li>`).join("")}</ul>
     <p class="meta">Ouvre la fiche puis « Transférer dans Streamers » quand la personne a rejoint le serveur.</p></section>`;
 }
 

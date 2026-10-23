@@ -151,7 +151,7 @@ function rappelsBlock(r, c){
   return `<fieldset><legend>Rappels</legend>
     ${list.length ? `<ul class="rappels">${list.map(x => { const j = joursAvant(x.date);
       return `<li><span class="dt ${j < 0 ? "down" : j === 0 ? "warn" : ""}">${fmtDate(x.date)}</span><span class="tx">${esc(x.texte)}${x.repete && REPETITIONS[x.repete] ? ` <span class="rep" title="Rappel qui revient tout seul">🔁 ${REPETITIONS[x.repete].toLowerCase()}</span>` : ""}</span><span class="par">${esc(x.par || "?")}${j < 0 ? ` · en retard de ${-j} j` : j === 0 ? " · aujourd'hui" : ` · dans ${j} j`}</span>
-        <button type="button" class="btn ghost" data-rpdone="${x.id}" style="padding:2px 10px">Fait</button></li>`; }).join("")}</ul>` : `<p class="meta" style="margin-top:0">Aucun rappel. Ex. : « recontacter après ses vacances ».</p>`}
+        <button type="button" class="btn ghost" data-rpdone="${esc(x.id)}" style="padding:2px 10px">Fait</button></li>`; }).join("")}</ul>` : `<p class="meta" style="margin-top:0">Aucun rappel. Ex. : « recontacter après ses vacances ».</p>`}
     <div class="rpadd"><input type="date" id="rpDate" value="${def}" aria-label="Date du rappel"><input type="text" id="rpTexte" placeholder="Quoi faire ce jour-là ?" maxlength="200" aria-label="Texte du rappel">
       <select id="rpRep" aria-label="Répétition">${Object.entries(REPETITIONS).map(([k, l]) => `<option value="${k}">${l}</option>`).join("")}</select>
       <button type="button" class="btn" id="rpAdd">Ajouter le rappel</button></div>
@@ -181,7 +181,7 @@ function drawerMembre(m){
   return `${linksFor(m.login)}${msgBox(m, "membres")}
   <div class="grid">
     ${fld("Pseudo Discord","discord",m.discord)}
-    <p class="meta full" style="margin:-4px 0 0">${m.discordId ? `✓ Compte Discord relié${m.discord ? ` (<b>${esc(m.discord)}</b>)` : ""} : ses ✅ et « Intéressé » comptent comme inscriptions, et il est mentionné dans les rappels. <button type="button" class="btn ghost" data-delier="${m.id}" style="padding:2px 10px">Délier</button>`
+    <p class="meta full" style="margin:-4px 0 0">${m.discordId ? `✓ Compte Discord relié${m.discord ? ` (<b>${esc(m.discord)}</b>)` : ""} : ses ✅ et « Intéressé » comptent comme inscriptions, et il est mentionné dans les rappels. <button type="button" class="btn ghost" data-delier="${esc(m.id)}" style="padding:2px 10px">Délier</button>`
       : m.discord ? `Pas encore relié : le robot cherchera « ${esc(m.discord)} » sur le serveur au prochain passage (nom d'utilisateur Discord, pas le pseudo affiché si possible).`
       : `Aucun compte Discord relié. Il se relie tout seul si son nom Discord ressemble à son pseudo Twitch, sinon note son nom d'utilisateur Discord ici.`}</p>
     ${selF("Rôle","role",m.role,st.roles,"—")}

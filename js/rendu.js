@@ -77,12 +77,12 @@ function renderTicker(){
   if(!shown.length && !pal.length && !aff.length){ el.classList.add("hidden"); el.innerHTML = ""; return; }
   const ans = n => `${n} ${n > 1 ? "ans" : "an"}`;
   let items = shown.map(({m,a}) => a.days === 0
-    ? `<span class="it" data-open="membres:${m.id}">🎂 Joyeux anniversaire de stream à <b>${esc(m.login)}</b> : ${ans(a.years)} de live aujourd'hui !</span>`
-    : `<span class="it" data-open="membres:${m.id}">🎂 <b>${esc(m.login)}</b> fêtera ses ${ans(a.years)} de stream ${a.days === 1 ? "demain" : `dans ${a.days} jours`} (${a.next.toLocaleDateString("fr-FR",{day:"numeric",month:"long"})})</span>`).join("");
+    ? `<span class="it" data-open="membres:${esc(m.id)}">🎂 Joyeux anniversaire de stream à <b>${esc(m.login)}</b> : ${ans(a.years)} de live aujourd'hui !</span>`
+    : `<span class="it" data-open="membres:${esc(m.id)}">🎂 <b>${esc(m.login)}</b> fêtera ses ${ans(a.years)} de stream ${a.days === 1 ? "demain" : `dans ${a.days} jours`} (${a.next.toLocaleDateString("fr-FR",{day:"numeric",month:"long"})})</span>`).join("");
   const palItems = pal.map(x => { const m = S.data.membres.find(y => y.login === x.login);
-    return `<span class="it" ${m ? `data-open="membres:${m.id}"` : ""}>🚀 <b>${esc(x.login)}</b> a passé les ${x.palier} follows${x.date === todayISO() ? " aujourd'hui" : ""} !</span>`; }).join("");
+    return `<span class="it" ${m ? `data-open="membres:${esc(m.id)}"` : ""}>🚀 <b>${esc(x.login)}</b> a passé les ${x.palier} follows${x.date === todayISO() ? " aujourd'hui" : ""} !</span>`; }).join("");
   const affItems = aff.map(x => { const m = S.data.membres.find(y => y.login === x.login);
-    return `<span class="it" ${m ? `data-open="membres:${m.id}"` : ""}>🎉 <b>${esc(x.login)}</b> est devenu ${x.type === "affilie" ? "affilié" : "partenaire"} Twitch !</span>`; }).join("");
+    return `<span class="it" ${m ? `data-open="membres:${esc(m.id)}"` : ""}>🎉 <b>${esc(x.login)}</b> est devenu ${x.type === "affilie" ? "affilié" : "partenaire"} Twitch !</span>`; }).join("");
   items = (today.length ? items + affItems + palItems : affItems + palItems + items);
   const len = items.replace(/<[^>]+>/g,"").length;
   el.innerHTML = `<div class="track" style="--dur:${Math.max(16, Math.round(len * 0.2))}s"><span>${items}</span><span class="dup" aria-hidden="true">${items}</span></div>`;
@@ -121,12 +121,12 @@ function historyBlock(r, c){
   if(c === "propositions"){
     (r.historique || []).slice().reverse().forEach(h => parts.push(`<li><span class="when">${fmtDate(h.le)}</span>candidature précédente : ${pill(h.statut)} ${h.proposePar ? "· proposée par " + esc(h.proposePar) : ""}${h.dateProposition ? " le " + fmtDate(h.dateProposition) : ""}${Object.keys(h.avis||{}).length ? "<br><span class='muted'>Avis : " + Object.entries(h.avis).map(([k,v]) => esc(k) + " " + esc(v)).join(", ") + "</span>" : ""}${h.motifRefus ? "<br><span class='muted'>Motif : " + esc(h.motifRefus) + "</span>" : ""}${h.commentaire ? "<br><span class='muted'>« " + esc(h.commentaire) + " »</span>" : ""}</li>`));
     const m = S.data.membres.find(x => x.login === r.login);
-    if(m) parts.unshift(`<li><span class="when">La Cabane</span>${m.statut === "Parti" ? `a quitté La Cabane${m.depart ? " le " + fmtDate(m.depart) : ""}` : `membre${m.arrivee ? " depuis le " + fmtDate(m.arrivee) : ""}`} · <a href="#" data-open="membres:${m.id}">voir la fiche</a></li>`);
+    if(m) parts.unshift(`<li><span class="when">La Cabane</span>${m.statut === "Parti" ? `a quitté La Cabane${m.depart ? " le " + fmtDate(m.depart) : ""}` : `membre${m.arrivee ? " depuis le " + fmtDate(m.arrivee) : ""}`} · <a href="#" data-open="membres:${esc(m.id)}">voir la fiche</a></li>`);
   } else {
     const cd = r.candidature;
     if(cd) parts.push(`<li><span class="when">${fmtDate(cd.transfereLe)}</span>transféré depuis les Propositions${cd.transferePar ? " par " + esc(cd.transferePar) : ""} · proposé${cd.proposePar ? " par " + esc(cd.proposePar) : ""}${cd.dateProposition ? " le " + fmtDate(cd.dateProposition) : ""}${Object.keys(cd.avis||{}).length ? "<br><span class='muted'>Avis : " + Object.entries(cd.avis).map(([k,v]) => esc(k) + " " + esc(v)).join(", ") + "</span>" : ""}${cd.commentaire ? "<br><span class='muted'>« " + esc(cd.commentaire) + " »</span>" : ""}${cd.contact ? "<br><span class='muted'>Contact : " + contactHtml(cd.contact) + "</span>" : ""}</li>`);
     const p = S.data.propositions.find(x => x.login === r.login);
-    if(p) parts.push(`<li><span class="when">Proposition</span>${pill(p.statut)}${p.proposePar ? " · proposée par " + esc(p.proposePar) : ""}${p.dateProposition ? " le " + fmtDate(p.dateProposition) : ""} · <a href="#" data-open="propositions:${p.id}">voir</a></li>`);
+    if(p) parts.push(`<li><span class="when">Proposition</span>${pill(p.statut)}${p.proposePar ? " · proposée par " + esc(p.proposePar) : ""}${p.dateProposition ? " le " + fmtDate(p.dateProposition) : ""} · <a href="#" data-open="propositions:${esc(p.id)}">voir</a></li>`);
   }
   journalFor(r.login).forEach(j => parts.push(`<li><span class="when">${fmtStamp(j.le)}</span><b>${esc(j.par)}</b> · ${esc(j.txt)}</li>`));
   return `<fieldset><legend>Historique</legend>${parts.length ? `<ul class="hist">${parts.join("")}</ul>` : `<p class="meta" style="margin-top:0">Aucun historique pour l'instant.</p>`}</fieldset>`;

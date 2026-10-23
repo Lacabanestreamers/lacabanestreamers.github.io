@@ -3,15 +3,15 @@
 /* ============ Aide ============ */
 function viewAide(){
   const owner = cfg.owner || "Lacabanestreamers", repo = cfg.repo || "cabane";
-  const sec = (id, titre, html) => `<section id="aide-${id}"><h2>${titre}</h2>${html}</section>`;
+  const sec = (id, titre, html) => `<section id="aide-${esc(id)}"><h2>${titre}</h2>${html}</section>`;
   const som = [["connexion","Se connecter"],["onglets","Les onglets"],["quotidien","Au quotidien"],["evenements","Événements"],["discord","Discord"],["robot","Le robot"],["vitrine","La vitrine"],["admin","Réglages et sécurité"],["telephone","Sur téléphone"],["probleme","En cas de problème"]];
   return `<div class="aide"><h1>Aide</h1><p class="sub">Tout ce qu'il faut savoir pour utiliser La Cabane côté staff.</p>
-  <nav class="som" aria-label="Sommaire">${som.map(([id, l]) => `<a href="#aide-${id}">${l}</a>`).join("")}</nav>
+  <nav class="som" aria-label="Sommaire">${som.map(([id, l]) => `<a href="#aide-${esc(id)}">${l}</a>`).join("")}</nav>
   ${sec("connexion", "Se connecter", `
     <p>Les données sont dans un dépôt GitHub privé. Pour y accéder, il te faut un <b>jeton</b> (une sorte de mot de passe) :</p>
     <ul><li><b>Soit Olivier te le donne</b> : tu n'as rien à créer.</li>
       <li><b>Soit tu le crées toi-même</b> avec ton compte GitHub (après avoir accepté l'invitation de l'organisation ${esc(owner)}) :
-        <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">créer un jeton</a>, puis Resource owner <code>${esc(owner)}</code>, Only select repositories <code>${esc(repo)}</code>, Permissions <code>Contents : Read and write</code>.</li></ul>
+        <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">créer un jeton</a>, puis Resource owner <code>${esc(owner)}</code>, Only select repositories <code>${esc(repo)}</code>, Permissions <code>Contents : Read and write</code>, et rien d'autre (surtout pas <code>Workflows</code>).</li></ul>
     <ol><li>Ouvre <a href="#" data-goto="reglages">Réglages</a>. Le propriétaire (<code>${esc(owner)}</code>), le dépôt (<code>${esc(repo)}</code>), la branche et le fichier sont déjà remplis.</li>
       <li>Colle le jeton, puis indique sa <b>date d'expiration</b> : la page te préviendra avant qu'il expire.</li>
       <li>Clique sur <b>Se connecter</b>, choisis ton prénom dans « Je suis », puis clique à nouveau sur <b>Se connecter</b>.</li></ol>

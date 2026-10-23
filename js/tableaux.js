@@ -8,7 +8,7 @@ function selHead(ids){
   const all = ids.length && ids.every(id => S.sel.has(id));
   return `<th class="sel"><input type="checkbox" data-selall aria-label="Tout sélectionner" ${all ? "checked" : ""}></th>`;
 }
-const selCell = id => `<td class="sel"><input type="checkbox" data-sel="${id}" aria-label="Sélectionner" ${S.sel.has(id) ? "checked" : ""}></td>`;
+const selCell = id => `<td class="sel"><input type="checkbox" data-sel="${esc(id)}" aria-label="Sélectionner" ${S.sel.has(id) ? "checked" : ""}></td>`;
 function bulkBar(kind){
   if(!S.sel.size) return "";
   const opt = (arr, empty) => `<option value="__keep">${empty}</option>` + arr.map(([v,l]) => `<option value="${esc(v)}">${esc(l)}</option>`).join("");
@@ -116,14 +116,14 @@ function tableHtml(view, rows, sort){
   return `<div class="tablewrap"><table>
     <thead><tr>${selHead(rows.map(r => r.id))}${th("Chaîne","login",sort)}${cols.map(col => col.s ? th(col.l, col.s, sort, col.n ? "num" : "") : `<th>${esc(col.l)}</th>`).join("")}</tr></thead>
     <tbody>${rows.map(r => `
-      <tr data-open="${c}:${r.id}" class="${S.sel.has(r.id) ? "picked" : ""}">
+      <tr data-open="${c}:${esc(r.id)}" class="${S.sel.has(r.id) ? "picked" : ""}">
         ${selCell(r.id)}
         ${cell("", `<span class="who">${avatarHtml(r.login)}<span class="login">${esc(r.login)}</span></span>${typeTag(r)}${c === "membres" ? pauseBadge(r) : ""}${aRappelEchu(r) ? `<span class="bell" title="Rappel à traiter">🔔</span>` : ""}${view === "propositions" && liveOf(r.login).live ? ` <span class="live">LIVE</span>` : ""}${view === "propositions" && STAG_STATUTS.includes(r.statut) && (depuisStatut(r) ?? 0) >= stagJours() ? `<span class="stag" title="Dans le statut « ${esc(r.statut)} » depuis ${depuisStatut(r)} jours">⏳ ${depuisStatut(r)} j</span>` : ""}`, "first")}
         ${cols.map(col => cell(col.l, col.td(r), col.n ? "num" : "")).join("")}
       </tr>`).join("") || `<tr><td colspan="${cols.length + 2}" class="empty">Aucune fiche ne correspond à ce filtre.</td></tr>`}</tbody>
   </table></div>`;
 }
-const tagFilter = (id, cur) => { const tags = allTags(); return tags.length ? `<select id="${id}" class="chip" aria-label="Étiquette"><option value="">Toutes les étiquettes</option>${tags.map(t => `<option ${cur === t ? "selected" : ""}>${esc(t)}</option>`).join("")}</select>` : ""; };
+const tagFilter = (id, cur) => { const tags = allTags(); return tags.length ? `<select id="${esc(id)}" class="chip" aria-label="Étiquette"><option value="">Toutes les étiquettes</option>${tags.map(t => `<option ${cur === t ? "selected" : ""}>${esc(t)}</option>`).join("")}</select>` : ""; };
 
 /* ----- Propositions ----- */
 function propRows(){
@@ -190,7 +190,7 @@ function viewMembres(){
     <button class="btn ghost" data-act="live" ${S.liveLoading?"disabled":""}>${S.liveLoading ? "Lecture Twitch…" : "Actualiser Twitch"}</button>
     <button class="btn ghost" id="snapBtn" ${S.liveLoading?"disabled":""} title="Le robot fait un relevé matin, midi et soir ; ce bouton en force un maintenant">Relevé maintenant</button>
     <label class="f" style="flex-direction:row;align-items:center;gap:8px">Comparer à
-      <select id="refSel">${`<option value="">Auto (≥ 7 jours)</option>` + d.snapshots.slice().reverse().map(s => `<option value="${s.date}" ${S.f.ref===s.date?"selected":""}>${fmtDate(s.date)}</option>`).join("")}</select>
+      <select id="refSel">${`<option value="">Auto (≥ 7 jours)</option>` + d.snapshots.slice().reverse().map(s => `<option value="${esc(s.date)}" ${S.f.ref===s.date?"selected":""}>${fmtDate(s.date)}</option>`).join("")}</select>
     </label>
     <span class="spacer"></span>
     <button class="btn ghost" data-colmenu="membres" aria-expanded="${S.colMenu === "membres"}">Colonnes ▾</button>
@@ -215,7 +215,8 @@ function exportCsv(view){
     : [["Contact", p => p.contact], ["Date de revue", p => p.dateRevue || ""], ["Date d'invitation", p => p.dateInvitation || ""], ...S.data.settings.staff.map(s => [`Avis ${s}`, p => p.avis?.[s] || ""]), ["Commentaire", p => p.commentaire]];
   const cols = [["Chaîne", r => r.login], ["Lien", r => `https://twitch.tv/${r.login}`], ...COLS[view].map(c => [c.l, c.x]), ...extra]
     .filter((c, i, arr) => arr.findIndex(z => z[0] === c[0]) === i);
-  const q = v => { const t = String(v ?? "").replace(/\r?\n/g, " "); return /[;"]/.test(t) ? `"${t.replace(/"/g, '""')}"` : t; };
+  // une cellule qui commence par = + - @ serait lue comme une formule par Excel (nom Discord piégé) : apostrophe devant, sauf un simple nombre
+  const q = v => { let t = String(v ?? "").replace(/\r?\n/g, " "); if(/^[=+\-@\t\r]/.test(t) && !/^[+-]?\d+([.,]\d+)?$/.test(t)) t = "'" + t; return /[;"]/.test(t) ? `"${t.replace(/"/g, '""')}"` : t; };
   const csv = "\ufeff" + [cols.map(c => q(c[0])).join(";"), ...rows.map(r => cols.map(c => q(c[1](r))).join(";"))].join("\r\n");
   const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([csv], {type:"text/csv;charset=utf-8"}));
   a.download = `la-cabane-${view === "membres" ? "streamers" : "propositions"}-${todayISO()}.csv`; a.click();
@@ -268,7 +269,7 @@ function viewAnniv(){
   list.forEach(e => { const k = e.a.next.toLocaleDateString("fr-FR",{month:"long", year:"numeric"}); if(!months.has(k)) months.set(k, []); months.get(k).push(e); });
   const week = list.filter(e => e.a.days <= 7).length;
   const card = ({m,a}) => `
-    <div class="ann ${a.days===0?"today":a.days<=7?"soon":""}" data-open="membres:${m.id}" tabindex="0" role="button">
+    <div class="ann ${a.days===0?"today":a.days<=7?"soon":""}" data-open="membres:${esc(m.id)}" tabindex="0" role="button">
       <div class="d"><b>${a.next.getDate()}</b><small>${a.next.toLocaleDateString("fr-FR",{month:"short"})}</small></div>
       <div><div class="login">${esc(m.login)}</div>
         <div class="muted">${a.years} ${a.years>1?"ans":"an"} de stream · ${a.days===0?"aujourd'hui !":a.days===1?"demain":"dans "+a.days+" jours"}</div>

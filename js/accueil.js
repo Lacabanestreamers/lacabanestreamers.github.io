@@ -6,7 +6,7 @@ function viewAccueil(){
   const actifs = d.membres.filter(m => m.statut !== "Parti");
   const card = (title, items, row, emptyTxt, more) => `<section class="card"><h2>${title}<span class="n ${items.length ? "" : "zero"}">${items.length}</span></h2>
     ${items.length ? `<ul class="todo">${items.slice(0, LIM).map(row).join("")}</ul>${items.length > LIM ? `<a href="#" class="more" ${more}>+ ${items.length - LIM} autres</a>` : ""}` : `<p class="none">${emptyTxt}</p>`}</section>`;
-  const li = (c, r, right, wrap) => `<li data-open="${c}:${r.id}">${avatarHtml(r.login)}<span class="login">${esc(r.login)}</span><span class="r${wrap ? " w" : ""}">${right}</span></li>`;
+  const li = (c, r, right, wrap) => `<li data-open="${c}:${esc(r.id)}">${avatarHtml(r.login)}<span class="login">${esc(r.login)}</span><span class="r${wrap ? " w" : ""}">${right}</span></li>`;
 
   const avis = me ? d.propositions.filter(p => p.statut === "Attente staff" && !p.avis?.[me])
                       .sort((a,b) => String(a.dateProposition||"").localeCompare(String(b.dateProposition||""))) : [];
@@ -32,9 +32,9 @@ function viewAccueil(){
     ${(() => { const tous = rappelsEchus(), miens = tous.filter(x => x.rp.par === me), list = S.f.rpMiens && me ? miens : tous; const t = todayISO();
       return `<section class="card"><h2>Rappels du jour<span class="seg2" role="group" aria-label="Filtre">${me ? `<button data-rpf="0" aria-pressed="${!S.f.rpMiens}">Tous</button><button data-rpf="1" aria-pressed="${!!S.f.rpMiens}">Les miens (${miens.length})</button>` : ""}</span><span class="n ${list.length ? "" : "zero"}">${list.length}</span></h2>
         ${list.length ? `<ul class="todo">${list.slice(0, 12).map(({c, r, rp}) => { const j = joursAvant(rp.date);
-          return `<li data-open="${c}:${r.id}">${avatarHtml(r.login)}<span style="min-width:0;flex:1"><span class="login">${esc(r.login)}</span><span class="muted" style="display:block;font-size:14px">${esc(rp.texte)}</span></span>
+          return `<li data-open="${c}:${esc(r.id)}">${avatarHtml(r.login)}<span style="min-width:0;flex:1"><span class="login">${esc(r.login)}</span><span class="muted" style="display:block;font-size:14px">${esc(rp.texte)}</span></span>
             <span class="r ${j < 0 ? "down" : "warn"}">${j < 0 ? `en retard de ${-j} j` : "aujourd'hui"}<br><span class="muted">${esc(rp.par || "?")}</span></span>
-            <button type="button" class="btn ghost" data-rpdone="${rp.id}" data-rpc="${c}" data-rpid="${r.id}" style="padding:2px 10px">Fait</button></li>`; }).join("")}</ul>${list.length > 12 ? `<p class="meta">+ ${list.length - 12} autres</p>` : ""}`
+            <button type="button" class="btn ghost" data-rpdone="${esc(rp.id)}" data-rpc="${c}" data-rpid="${esc(r.id)}" style="padding:2px 10px">Fait</button></li>`; }).join("")}</ul>${list.length > 12 ? `<p class="meta">+ ${list.length - 12} autres</p>` : ""}`
           : `<p class="none">${S.f.rpMiens ? "Aucun de tes rappels n'est prévu aujourd'hui." : "Aucun rappel prévu aujourd'hui."}</p>`}</section>`; })()}
     ${(() => { const soon = jetonsSoon(d); return soon.length ? `<section class="card"><h2>Jetons à renouveler<span class="n">${soon.length}</span></h2><ul class="todo">${soon.map(x => `<li data-goto="reglages"><span class="login">${esc(x.nom)}</span><span class="r ${x.j <= 2 ? "down" : "warn"}">${x.j < 0 ? "expiré le " + fmtDate(x.expire) : x.j === 0 ? "expire aujourd'hui" : "dans " + x.j + " j · " + fmtDate(x.expire)}</span></li>`).join("")}</ul></section>` : ""; })()}
     ${card(`Propositions qui stagnent (${stagJours()} j et +)`, stagnantes().map(x => x.p), p => li("propositions", p, `${pill(p.statut)} · <b class="warn">${depuisStatut(p)} j</b>`), "Aucune proposition bloquée dans le même statut.", `data-goto="propositions"`)}
@@ -47,7 +47,7 @@ function viewAccueil(){
       return card("Intégrations en cours", enCours, m => li("membres", m, `<b class="warn">${faitesIntegration(m)}/${etapes.length}</b>${m.referent ? " · " + esc(m.referent) : ` · <span class="down">sans référent</span>`}`), "Tous les nouveaux (60 derniers jours) sont intégrés.", `data-goto="membres"`); })()}
     ${suivisCard()}
     ${card("Réussites (14 jours)", evenementsRecents(14), x => { const m = S.data.membres.find(y => y.login === x.login) || {id:"", login:x.login};
-        return `<li ${m.id ? `data-open="membres:${m.id}"` : ""}>${avatarHtml(x.login)}<span class="login">${esc(x.login)}</span><span class="r">${x.kind === "palier" ? "🚀" : "🎉"} <b class="up">${esc(x.txt)}</b> · ${fmtDate(x.date)}${x.masque ? ` · <span class="muted">masquée</span>` : ""}</span></li>`; },
+        return `<li ${m.id ? `data-open="membres:${esc(m.id)}"` : ""}>${avatarHtml(x.login)}<span class="login">${esc(x.login)}</span><span class="r">${x.kind === "palier" ? "🚀" : "🎉"} <b class="up">${esc(x.txt)}</b> · ${fmtDate(x.date)}${x.masque ? ` · <span class="muted">masquée</span>` : ""}</span></li>`; },
       "Aucun palier ni affiliation ces 14 derniers jours.", `data-goto="membres"`)}
     ${(() => { const ko = [...d.membres.filter(m => m.statut !== "Parti"), ...d.propositions.filter(p => !CLOSED.includes(p.statut))].filter(r => r.introuvable);
       return ko.length ? card("Introuvables sur Twitch", ko, r => li(d.membres.includes(r) ? "membres" : "propositions", r, `${d.membres.includes(r) ? "" : "proposition · "}depuis le ${fmtDate(r.introuvable)}`), "", "") : ""; })()}
@@ -90,7 +90,7 @@ function suivisCard(){
   const items = [...aFaire.map(x => ({...x, t:"suivi"})), ...sansRef.map(x => ({...x, t:"ref"}))];
   const title = me ? "Tes suivis de nouveaux" : "Suivi des nouveaux";
   return `<section class="card"><h2>${title}<span class="n ${items.length ? "" : "zero"}">${items.length}</span></h2>${items.length
-    ? `<ul class="todo">${items.slice(0, 10).map(x => `<li data-open="membres:${x.m.id}">${avatarHtml(x.m.login)}<span class="login">${esc(x.m.login)}</span><span class="r">${x.t === "suivi"
+    ? `<ul class="todo">${items.slice(0, 10).map(x => `<li data-open="membres:${esc(x.m.id)}">${avatarHtml(x.m.login)}<span class="login">${esc(x.m.login)}</span><span class="r">${x.t === "suivi"
         ? `prendre des nouvelles <b class="warn">J+${x.k}</b>${me ? "" : " · " + esc(x.m.referent)}` : `<span class="warn">sans référent</span> · J+${x.j}`}</span></li>`).join("")}</ul>`
     : `<p class="none">${me ? "Aucune prise de nouvelles en attente pour toi." : "Rien en attente."}</p>`}</section>`;
 }

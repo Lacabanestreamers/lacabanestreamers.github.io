@@ -98,7 +98,7 @@ function staffDiscordPanel(d){
   const lignes = liste.map(x => `${x.nom} ; ${x.discord}`).join("\n");
   return `<section class="panel" id="staffDiscord">
     <h2>Comptes Discord du staff</h2>
-    <p>Chaque nouvelle proposition arrive dans le salon admin avec 👍 🤔 👎 : la réaction d'un membre du staff devient son avis <b>Pour</b>, <b>Neutre</b> ou <b>Contre</b> sur la fiche. Une réaction retirée retire l'avis. Si l'avis est ensuite modifié sur le site, c'est celui du site qui compte. Une ligne par personne : <b>Prénom ; nom d'utilisateur Discord</b> (le prénom tel qu'il est dans la liste du staff).</p>
+    <p>Chaque nouvelle proposition arrive dans le salon admin avec 👍 🤔 👎 : la réaction d'un membre du staff devient son avis <b>Pour</b>, <b>Neutre</b> ou <b>Contre</b> sur la fiche. Une réaction retirée retire l'avis. Si l'avis est ensuite modifié sur le site, c'est celui du site qui compte. Une ligne par personne : <b>Prénom ; nom d'utilisateur Discord</b> (le prénom tel qu'il est dans la liste du staff). Le nom d'utilisateur doit être exact (Discord → Profil, pas le nom affiché ni le surnom du serveur), ou mets l'identifiant Discord (clic droit sur le compte → Copier l'identifiant).</p>
     <label class="f full"><textarea id="s_staffdc" rows="4" placeholder="Aly ; aly_discord&#10;Galy ; galy">${esc(lignes)}</textarea></label>
     ${liste.length ? `<ul class="todo" style="list-style:none;padding:0;margin:8px 0 0">${liste.map(x => `<li style="display:block;padding:4px 0">${res[x.nom]?.id ? `<span class="up">●</span> <b>${esc(x.nom)}</b> relié à ${esc(x.discord)}` : `<span class="muted">○</span> <b>${esc(x.nom)}</b> : ${esc(x.discord)} pas encore trouvé sur le serveur (vérifie le nom d'utilisateur, le robot réessaie à chaque passage)`}${d.settings.staff.includes(x.nom) ? "" : ` <span class="warn">(« ${esc(x.nom)} » n'est pas dans la liste du staff)</span>`}</li>`).join("")}</ul>` : ""}
     <div class="tools" style="margin:10px 0 0"><button class="btn primary" id="s_staffdcSave">Enregistrer</button></div>
@@ -199,9 +199,9 @@ function aNettoyer(){
 function viewNettoyage(){
   const groupes = aNettoyer(), total = groupes.reduce((a, [, l]) => a + l.length, 0);
   const ligne = x => `<li class="netl">
-    <a href="#" data-open="${x.c}:${x.r.id}" class="login">${avatarHtml(x.r.login)} ${esc(x.r.login)}</a>
+    <a href="#" data-open="${x.c}:${esc(x.r.id)}" class="login">${avatarHtml(x.r.login)} ${esc(x.r.login)}</a>
     <span class="meta">${esc(x.info)}</span>
-    <span class="netb">${x.fusion ? `<button class="btn primary" data-fusion="${x.c}:${x.r.id}:${x.fusion.c}:${x.fusion.id}" title="Réunit tout dans une seule fiche ; l'autre part à la corbeille">Fusionner</button>` : ""}${x.c === "membres" && x.inactif ? `<button class="btn ghost" data-netparti="${x.r.id}" >Marquer « Parti »</button>` : ""}${x.c === "propositions" ? `<button class="btn ghost" data-netclore="${x.r.id}">Clore (Abandonnée)</button><button class="btn danger" data-netdel="${x.r.id}">Supprimer</button>` : ""}<button class="btn" data-open="${x.c}:${x.r.id}">Ouvrir</button></span></li>`;
+    <span class="netb">${x.fusion ? `<button class="btn primary" data-fusion="${x.c}:${esc(x.r.id)}:${x.fusion.c}:${esc(x.fusion.id)}" title="Réunit tout dans une seule fiche ; l'autre part à la corbeille">Fusionner</button>` : ""}${x.c === "membres" && x.inactif ? `<button class="btn ghost" data-netparti="${esc(x.r.id)}" >Marquer « Parti »</button>` : ""}${x.c === "propositions" ? `<button class="btn ghost" data-netclore="${esc(x.r.id)}">Clore (Abandonnée)</button><button class="btn danger" data-netdel="${esc(x.r.id)}">Supprimer</button>` : ""}<button class="btn" data-open="${x.c}:${esc(x.r.id)}">Ouvrir</button></span></li>`;
   return `<h1>Nettoyage</h1>
   <p class="sub">${total ? `${total} point${total > 1 ? "s" : ""} à vérifier (la pastille du menu ne compte pas les fiches incomplètes).` : "Rien à nettoyer : tout est en ordre. 👌"} Rien n'est modifié tout seul : chaque action se fait ici, à la main, et reste visible dans l'historique.</p>
   ${groupes.map(([titre, l, aide]) => `<section class="panel netp"><h2>${esc(titre)}${l.length ? ` <span class="navn">${l.length}</span>` : ""}</h2><p class="meta" style="margin-top:0">${esc(aide)}</p>
@@ -232,7 +232,7 @@ function trashPanel(d){
     <p>Les fiches supprimées restent ici 30 jours, puis disparaissent. La restauration remet la fiche telle qu'elle était, avec son historique.</p>
     ${t.length ? `<ul class="trash">${t.map(x => { const j = Math.max(0, 30 - Math.floor((Date.now() - new Date(x.le)) / 864e5));
       return `<li>${avatarHtml(x.r.login)}<span class="login">${esc(x.r.login)}</span><span class="muted">${x.c === "membres" ? "Streamers" : "Propositions"} · supprimée le ${fmtStamp(x.le)} par ${esc(x.par || "?")} · encore ${j} j</span>
-        <span class="r"><button class="btn" data-trash="restore" data-id="${x.r.id}">Restaurer</button><button class="btn danger" data-trash="purge" data-id="${x.r.id}">Supprimer définitivement</button></span></li>`; }).join("")}</ul>` : `<p class="none">La corbeille est vide.</p>`}
+        <span class="r"><button class="btn" data-trash="restore" data-id="${esc(x.r.id)}">Restaurer</button><button class="btn danger" data-trash="purge" data-id="${esc(x.r.id)}">Supprimer définitivement</button></span></li>`; }).join("")}</ul>` : `<p class="none">La corbeille est vide.</p>`}
   </section>`;
 }
 

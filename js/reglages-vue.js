@@ -25,7 +25,7 @@ function viewReglages(){
     ${S.lastError ? `<p style="color:var(--ko);margin-top:10px">${esc(S.lastError)}</p>` : ""}
   </section>`;
   if(!d) return `<h1>Réglages</h1>${pli("connexion", conn, "", true)}${pli("fichier", localPanel())}`;
-  const list = (id, label, arr, hint) => `<label class="f full">${label}<textarea id="${id}" rows="4">${esc(arr.join("\n"))}</textarea><span class="muted">${hint}</span></label>`;
+  const list = (id, label, arr, hint) => `<label class="f full">${label}<textarea id="${esc(id)}" rows="4">${esc(arr.join("\n"))}</textarea><span class="muted">${hint}</span></label>`;
   // résumé affiché à droite du titre quand le panneau est fermé
   const ko = santeKo(d), sv = d.robot?.derniereSauvegarde, adm = (d.settings.admins || []).length, nbJ = (d.settings.jetons || []).length, v = d.settings.vitrine || {};
   const pt = (cl, t) => `<span class="${cl}">●</span> ${t}`;

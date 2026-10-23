@@ -7,7 +7,8 @@ const esc = v => String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt
 const uid = p => p + Math.random().toString(16).slice(2, 10);
 const jourLocal = iso => { const d = iso ? new Date(iso) : new Date(); return isNaN(d) ? String(iso || "").slice(0, 10) : `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
 const todayISO = () => { const d = new Date(); return new Date(d.getTime() - d.getTimezoneOffset()*60000).toISOString().slice(0,10); };
-const fmtDate = iso => { if(!iso) return ""; const [y,m,d] = iso.split("-"); return `${d}/${m}/${y}`; };
+// échappé : la date vient des données (fichier ouvert, archive), jamais sûre pour innerHTML
+const fmtDate = iso => { if(!iso) return ""; const [y,m,d] = String(iso).split("-"); return esc(`${d}/${m}/${y}`); };
 const fmtStamp = iso => { if(!iso) return ""; const d = new Date(iso); return d.toLocaleDateString("fr-FR") + " " + d.toLocaleTimeString("fr-FR",{hour:"2-digit",minute:"2-digit"}); };
 const normLogin = v => String(v||"").trim().replace(/^@/,"").replace(/^https?:\/\/(www\.)?twitch\.tv\//i,"").replace(/[/?#].*$/,"").toLowerCase();
 const safeUrl = u => /^https?:\/\//i.test(u) ? u : null;

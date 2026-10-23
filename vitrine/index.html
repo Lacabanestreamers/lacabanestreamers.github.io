@@ -498,7 +498,7 @@ const SESSION = "cabane.vitrine.twitch", ATTENTE = "cabane.vitrine.attente", RET
 const lire = (st, k) => { try { return JSON.parse(st.getItem(k)); } catch { return null; } };
 const ecrire = (st, k, v) => { try { v == null ? st.removeItem(k) : st.setItem(k, JSON.stringify(v)); } catch {} };
 // l'adresse du webhook est publiée masquée (voir le robot) : on la reconstitue ici
-const webhookDe = ins => { try { return ins?.cle ? decodeURIComponent(escape(atob(ins.cle.split("").reverse().join("")))) : (ins?.webhook || ""); } catch { return ""; } };
+const webhookDe = ins => { try { return ins?.cle ? decodeURIComponent(escape(atob(ins.cle.split("").reverse().join("")))) : ""; } catch { return ""; } };   // jamais d'adresse en clair
 const okWebhook = u => /^https:\/\/(discord\.com|discordapp\.com)\/api\/webhooks\/\d+\/[\w-]+$/.test(u || "");
 const redirectUri = () => location.origin + "/";   // adresse déjà autorisée dans l'application Twitch (page staff), qui renvoie ici
 let toastT = null;
