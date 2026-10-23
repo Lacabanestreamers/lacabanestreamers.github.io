@@ -248,13 +248,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": {
-    "viewers": 3,
-    "jeu": "Warframe",
-    "titre": "[Warframe] (MR27) Coffee time en farmant l'event !",
-    "depuis": "2026-10-23T06:52:09Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-09",
    "succes": [],
    "jeux": [
@@ -521,7 +515,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 10,
     "jeu": "Invokyr",
     "titre": "🔞[DROP] On découvre !!  Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-23T07:36:20Z",
@@ -894,7 +888,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 9,
+    "viewers": 13,
     "jeu": "The Witch's Bakery",
     "titre": "On créé notre boulangerie ! | !tiktok | !Discord | !clip |",
     "depuis": "2026-10-23T06:49:08Z",
@@ -917,5 +911,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-23T08:10:52.722Z"
+ "maj": "2026-10-23T09:07:25.749Z"
 }
