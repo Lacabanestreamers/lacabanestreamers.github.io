@@ -7,8 +7,8 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 28,
-  "heuresLive30": 1008,
-  "followsGagnes30": 609,
+  "heuresLive30": 1009,
+  "followsGagnes30": 611,
   "periode": {
    "du": "2026-09-23",
    "au": "2026-10-23"
@@ -324,7 +324,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Red Dead Redemption II",
+    "titre": "[FR] [RDR2]🤠 LE FAR WEST NOUS APPELLE ! 🌵🐎 | Red Dead Redemption 2 – Mode Histoire 🇫🇷",
+    "depuis": "2026-10-23T11:03:17Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
+   },
    "premierStream": "2024-08-10",
    "succes": [],
    "jeux": [
@@ -514,13 +520,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 8,
-    "jeu": "Invokyr",
-    "titre": "🔞[DROP] On découvre !!  Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-10-23T07:36:20Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -905,5 +905,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-23T09:56:27.864Z"
+ "maj": "2026-10-23T11:07:25.729Z"
 }
