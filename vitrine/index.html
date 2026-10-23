@@ -500,6 +500,9 @@ const ecrire = (st, k, v) => { try { v == null ? st.removeItem(k) : st.setItem(k
 // l'adresse du webhook est publiée masquée (voir le robot) : on la reconstitue ici
 const webhookDe = ins => { try { return ins?.cle ? decodeURIComponent(escape(atob(ins.cle.split("").reverse().join("")))) : ""; } catch { return ""; } };   // jamais d'adresse en clair
 const okWebhook = u => /^https:\/\/(discord\.com|discordapp\.com)\/api\/webhooks\/\d+\/[\w-]+$/.test(u || "");
+// relais Cloudflare (garde le webhook secret) : prioritaire sur l'ancien webhook masqué
+const relaisDe = ins => /^https:\/\/[\w.-]+(\/[\w./-]*)?$/.test(ins?.relais || "") ? ins.relais : "";
+const inscrOk = ins => !!(relaisDe(ins) || okWebhook(webhookDe(ins)));
 const redirectUri = () => location.origin + "/";   // adresse déjà autorisée dans l'application Twitch (page staff), qui renvoie ici
 let toastT = null;
 function toast(t){ const el = $("#toast"); el.textContent = t; el.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => { el.hidden = true; }, 6000); }
@@ -512,7 +515,7 @@ function attentes(){
   ecrire(localStorage, ATTENTE, a); return a;
 }
 function actionsEvt(e, d){
-  const ins = d.inscriptions && okWebhook(webhookDe(d.inscriptions)) && e.id, dc = /^https:\/\/discord\.com\/channels\//.test(e.discord || "") ? e.discord : "";
+  const ins = inscrOk(d.inscriptions) && e.id, dc = /^https:\/\/discord\.com\/channels\//.test(e.discord || "") ? e.discord : "";
   if(!ins && !dc) return "";
   const s = lire(sessionStorage, SESSION), att = attentes()[e.id];
   const dedans = !!(s && (e.participants || []).some(p => p.login?.toLowerCase() === s.login.toLowerCase()));
@@ -525,7 +528,7 @@ function actionsEvt(e, d){
   </div>`;
 }
 async function inscrire(id, action){
-  const ins = DATA?.inscriptions, wh = webhookDe(ins); if(!ins || !okWebhook(wh)) return;
+  const ins = DATA?.inscriptions, relais = relaisDe(ins), wh = webhookDe(ins); if(!ins || !inscrOk(ins)) return;
   const s = lire(sessionStorage, SESSION);
   if(!s){   // d'abord : qui es-tu ? (connexion Twitch, sans aucune autorisation demandée)
     const etat = Math.random().toString(36).slice(2) + Date.now().toString(36);
@@ -536,12 +539,22 @@ async function inscrire(id, action){
   if(!(DATA.membres || []).some(m => m.login.toLowerCase() === s.login.toLowerCase())){
     render(); toast(`Les inscriptions sont réservées aux streamers de La Cabane (tu es connecté à Twitch en tant que ${s.login}). Si tu en fais partie mais n'apparais pas sur la vitrine, inscris-toi avec ✅ sous le message Discord.`); return; }
   if(!navigator.onLine){ render(); toast("Pas de connexion internet : réessaie dans un instant."); return; }
-  const fd = new FormData();
-  fd.append("payload_json", JSON.stringify({username:`Vitrine · ${s.login}`, allowed_mentions:{parse:[]},
-    content:JSON.stringify({cabane:"inscription", ev:id, action, jeton:s.jeton})}));
-  let ok = true;
-  try { const r = await fetch(wh, {method:"POST", body:fd}); ok = r.ok; } catch { /* réponse illisible (CORS) : la demande est quand même partie */ }
-  if(!ok){ render(); toast("La demande n'a pas pu être envoyée. Réessaie plus tard, ou réagis ✅ sur Discord."); return; }
+  if(relais){
+    let r = null; try { r = await fetch(relais, {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({ev:id, action, jeton:s.jeton})}); } catch {}
+    if(!r?.ok){
+      if(r?.status === 401) ecrire(sessionStorage, SESSION, null);   // jeton expiré : nouvelle connexion au prochain clic
+      render(); toast(!r ? "Le service des inscriptions ne répond pas. Réessaie plus tard, ou réagis ✅ sur Discord."
+        : r.status === 401 ? "Ta connexion Twitch a expiré. Clique à nouveau sur « Je participe » pour te reconnecter."
+        : r.status === 429 ? "Une demande vient déjà de partir : attends une minute avant de réessayer."
+        : "La demande n'a pas pu être envoyée. Réessaie plus tard, ou réagis ✅ sur Discord."); return; }
+  } else {
+    const fd = new FormData();
+    fd.append("payload_json", JSON.stringify({username:`Vitrine · ${s.login}`, allowed_mentions:{parse:[]},
+      content:JSON.stringify({cabane:"inscription", ev:id, action, jeton:s.jeton})}));
+    let ok = true;
+    try { const r = await fetch(wh, {method:"POST", body:fd}); ok = r.ok; } catch { /* réponse illisible (CORS) : la demande est quand même partie */ }
+    if(!ok){ render(); toast("La demande n'a pas pu être envoyée. Réessaie plus tard, ou réagis ✅ sur Discord."); return; }
+  }
   const a = attentes(); a[id] = {action, login:s.login, le:Date.now()}; ecrire(localStorage, ATTENTE, a);
   render();
   toast(action === "in" ? "C'est noté ! Ton inscription sera visible d'ici une heure." : "Désinscription envoyée, elle sera prise en compte d'ici une heure.");
