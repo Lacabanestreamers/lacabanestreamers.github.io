@@ -54,7 +54,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 15,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🎃 Mois de l'horreur🎃 ✨On fini ou pas ce DLC 2!!!🔥",
     "depuis": "2026-10-23T20:59:20Z",
@@ -227,13 +227,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": {
-    "viewers": 7,
-    "jeu": "Dead by Daylight",
-    "titre": "☕ Soirée Jeux démo, et on finira peut être sur du Dead by Daylight 🪓",
-    "depuis": "2026-10-23T18:34:10Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -436,7 +430,7 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": {
-    "viewers": 8,
+    "viewers": 6,
     "jeu": "Slime Rancher",
     "titre": "On chill et je decouvre Slime Rancher 🍄",
     "depuis": "2026-10-23T19:23:53Z",
@@ -483,7 +477,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 30,
+    "viewers": 26,
     "jeu": "skribbl.io",
     "titre": "STREAM 1 AN SUR TWITCH 🎉🎁: On fête l'event comme il se doit avec une Soirée Multi sur plein de jeux ✨! | Evenement spécial Anniversaire",
     "depuis": "2026-10-23T19:38:51Z",
@@ -575,7 +569,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
+    "viewers": 7,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "🔴 LE NOUVEAU MW4 EST LÀ ! 🔥 On découvre le multijoueur ensemble !",
     "depuis": "2026-10-23T19:47:16Z",
@@ -730,13 +724,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "American Truck Simulator",
-    "titre": "Bonsoir, je repart en livraison !!!!",
-    "depuis": "2026-10-23T19:26:45Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -939,5 +927,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-23T22:07:22.856Z"
+ "maj": "2026-10-23T23:07:28.775Z"
 }
