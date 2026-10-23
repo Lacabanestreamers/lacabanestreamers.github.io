@@ -6,11 +6,11 @@
  "chiffres": {
   "membres": 40,
   "affilies": 36,
-  "nouveaux30": 28,
-  "heuresLive30": 1058,
-  "followsGagnes30": 614,
+  "nouveaux30": 27,
+  "heuresLive30": 1068,
+  "followsGagnes30": 408,
   "periode": {
-   "du": "2026-09-23",
+   "du": "2026-09-24",
    "au": "2026-10-23"
   }
  },
@@ -54,7 +54,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 14,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🎃 Mois de l'horreur🎃 ✨On fini ou pas ce DLC 2!!!🔥",
     "depuis": "2026-10-23T20:59:20Z",
@@ -180,13 +180,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 9,
-    "jeu": "All Rats on Deck",
-    "titre": "🐀 ALL RATS ON DECK | Le gang des rats à becs est dans la place ! 🧀",
-    "depuis": "2026-10-23T18:49:00Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -234,7 +228,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 2,
+    "viewers": 7,
     "jeu": "Dead by Daylight",
     "titre": "☕ Soirée Jeux démo, et on finira peut être sur du Dead by Daylight 🪓",
     "depuis": "2026-10-23T18:34:10Z",
@@ -442,7 +436,7 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "Slime Rancher",
     "titre": "On chill et je decouvre Slime Rancher 🍄",
     "depuis": "2026-10-23T19:23:53Z",
@@ -489,7 +483,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 24,
+    "viewers": 34,
     "jeu": "skribbl.io",
     "titre": "STREAM 1 AN SUR TWITCH 🎉🎁: On fête l'event comme il se doit avec une Soirée Multi sur plein de jeux ✨! | Evenement spécial Anniversaire",
     "depuis": "2026-10-23T19:38:51Z",
@@ -581,7 +575,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
+    "viewers": 6,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "🔴 LE NOUVEAU MW4 EST LÀ ! 🔥 On découvre le multijoueur ensemble !",
     "depuis": "2026-10-23T19:47:16Z",
@@ -590,8 +584,8 @@
    "premierStream": "2017-03-05",
    "succes": [],
    "jeux": [
-    "Dune: Awakening",
-    "Call of Duty: Modern Warfare 4"
+    "Call of Duty: Modern Warfare 4",
+    "Dune: Awakening"
    ],
    "clip": {
     "url": "https://www.twitch.tv/luffishgaming/clip/MoistNimbleToadStrawBeary-F6YYFl81OTHaKI08",
@@ -650,13 +644,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": {
-    "viewers": 9,
-    "jeu": "Poppy Playtime: Chapter 3 - Deep Sleep",
-    "titre": "Je cherche 1 petit viewver , tu viens ??? On va affronter les monstres !!!   !discord !regles !don !wishlist",
-    "depuis": "2026-10-23T18:11:36Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -723,13 +711,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 8,
-    "jeu": "R.E.P.O.",
-    "titre": "[FR] Ca va crier 😨😱 MOD Halloween 👻 | REPO | !discord !commandes",
-    "depuis": "2026-10-23T18:42:30Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -774,13 +756,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 5,
-    "jeu": "All Rats on Deck",
-    "titre": "[FR] OP All rats on Deck, vos streamers à plumes se prennent pour des rats. [!bs !steam !insta !discord ]",
-    "depuis": "2026-10-23T18:48:39Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -963,5 +939,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-23T21:07:25.305Z"
+ "maj": "2026-10-23T22:03:01.594Z"
 }
