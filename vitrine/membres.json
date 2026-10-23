@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 28,
-  "heuresLive30": 1000,
+  "heuresLive30": 1002,
   "followsGagnes30": 609,
   "periode": {
    "du": "2026-09-23",
@@ -249,7 +249,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Warframe",
     "titre": "[Warframe] (MR27) Coffee time en farmant l'event !",
     "depuis": "2026-10-23T06:52:09Z",
@@ -520,7 +520,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Invokyr",
+    "titre": "🔞[DROP] On découvre !!  Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-10-23T07:36:20Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -888,7 +894,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 3,
+    "viewers": 7,
     "jeu": "The Witch's Bakery",
     "titre": "On créé notre boulangerie ! | !tiktok | !Discord | !clip |",
     "depuis": "2026-10-23T06:49:08Z",
@@ -899,7 +905,8 @@
    "jeux": [
     "inKONBINI: One Store. Many Stories",
     "Gloomy Eyes",
-    "Coffee Talk"
+    "Coffee Talk",
+    "The Witch's Bakery"
    ],
    "clip": null
   }
@@ -910,5 +917,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-23T07:07:29.028Z"
+ "maj": "2026-10-23T07:46:48.184Z"
 }
