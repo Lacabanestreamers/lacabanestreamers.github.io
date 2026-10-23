@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 28,
-  "heuresLive30": 1038,
+  "heuresLive30": 1046,
   "followsGagnes30": 614,
   "periode": {
    "du": "2026-09-23",
@@ -228,7 +228,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Just Chatting",
     "titre": "☕ Soirée Jeux démo, et on finira peut être sur du Dead by Daylight 🪓",
     "depuis": "2026-10-23T18:34:10Z",
@@ -375,7 +375,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 5,
     "jeu": "MECCHA CHAMELEON",
     "titre": "On fête tous ensemble l'anniversaire de live de @laelya_! Venez donner de la force, et n'oubliez pas de la follow !! <3",
     "depuis": "2026-10-23T17:05:14Z",
@@ -643,7 +643,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Poppy Playtime: Chapter 3 - Deep Sleep",
     "titre": "Je cherche 1 petit viewver , tu viens ??? On va affronter les monstres !!!   !discord !regles !don !wishlist",
     "depuis": "2026-10-23T18:11:36Z",
@@ -652,8 +652,8 @@
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
-    "Aniimo",
     "Poppy Playtime: Chapter 3 - Deep Sleep",
+    "Aniimo",
     "Stardew Valley",
     "Welcome to Elderfield",
     "Poppy Playtime: Chapter 2 - Fly in a Web"
@@ -727,7 +727,8 @@
    "jeux": [
     "Moonlight Peaks",
     "Disney Dreamlight Valley",
-    "Art"
+    "Art",
+    "R.E.P.O."
    ],
    "clip": null
   },
@@ -760,7 +761,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 6,
     "jeu": "All Rats on Deck",
     "titre": "[FR] OP All rats on Deck, vos streamers à plumes se prennent pour des rats. [!bs !steam !insta !discord ]",
     "depuis": "2026-10-23T18:48:39Z",
@@ -948,5 +949,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-23T19:05:07.869Z"
+ "maj": "2026-10-23T19:07:30.154Z"
 }
