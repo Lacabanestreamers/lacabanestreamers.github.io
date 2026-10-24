@@ -4,10 +4,10 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 40,
-  "affilies": 36,
-  "nouveaux30": 27,
-  "heuresLive30": 1097,
+  "membres": 41,
+  "affilies": 37,
+  "nouveaux30": 28,
+  "heuresLive30": 1101,
   "followsGagnes30": 422,
   "periode": {
    "du": "2026-09-24",
@@ -45,6 +45,20 @@
   }
  ],
  "membres": [
+  {
+   "login": "alf_de_melmac",
+   "nom": "alf_de_melmac",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/42ff4064-03b7-47c1-b408-94847a891d93-profile_image-300x300.jpeg",
+   "bio": "Salutations amis Terriens, c'est Alf. Suivez-moi dans mon expérience gaming (si vous le souhaitez) 🙏",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-24",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
+   "clip": null
+  },
   {
    "login": "aly0806",
    "nom": "aly0806",
@@ -181,7 +195,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 21,
+    "viewers": 18,
     "jeu": "Tomodachi Life: Living the Dream",
     "titre": "🐔✨ Niveau 30 débloqué ! On  fête mon anniversaire ensemble ! 🎂",
     "depuis": "2026-10-24T09:57:15Z",
@@ -955,5 +969,5 @@
   "relais": "https://cabane-inscriptions.tertereauolivier369.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-24T11:07:27.229Z"
+ "maj": "2026-10-24T11:23:36.624Z"
 }
