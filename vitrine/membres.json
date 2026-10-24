@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 27,
-  "heuresLive30": 1080,
+  "heuresLive30": 1082,
   "followsGagnes30": 408,
   "periode": {
    "du": "2026-09-24",
@@ -53,13 +53,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 9,
-    "jeu": "Pale Incense",
-    "titre": "🎃 Mois de l'horreur🎃 ✨Go on joue, on parle et on danse en zic!!!🔥",
-    "depuis": "2026-10-23T20:59:20Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -478,9 +472,9 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 20,
+    "viewers": 24,
     "jeu": "Just Chatting",
-    "titre": "STREAM 1 AN SUR TWITCH 🎉🎁: On regarde la meilleure comédie musicale de tous les temps✨! | Evenement spécial Anniversaire",
+    "titre": "STREAM 1 AN SUR TWITCH 🎉(15H non stop) 🎁: On regarde la meilleure comédie musicale de tous les temps : Molière ✨! | Evenement spécial",
     "depuis": "2026-10-23T19:38:51Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
    },
@@ -943,5 +937,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-24T01:07:50.230Z"
+ "maj": "2026-10-24T02:07:25.623Z"
 }
