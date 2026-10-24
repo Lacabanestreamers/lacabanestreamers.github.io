@@ -7,8 +7,8 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 28,
-  "heuresLive30": 1124,
-  "followsGagnes30": 422,
+  "heuresLive30": 1128,
+  "followsGagnes30": 433,
   "periode": {
    "du": "2026-09-24",
    "au": "2026-10-24"
@@ -53,17 +53,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": {
-    "viewers": 8,
-    "jeu": "Fortnite",
-    "titre": "Fortnite/PS5",
-    "depuis": "2026-10-24T16:21:53Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
-    "Rocket League"
+    "Rocket League",
+    "Fortnite"
    ],
    "clip": null
   },
@@ -75,13 +70,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 14,
-    "jeu": "7 Days to Die",
-    "titre": "🎃 Mois de l'horreur🎃 ✨Bon Go tester 7D2D en Solo!!!🔥",
-    "depuis": "2026-10-24T14:49:39Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -202,13 +191,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 27,
-    "jeu": "Just Chatting",
-    "titre": "🐔✨ Niveau 30 débloqué ! On  fête mon anniversaire ensemble ! 🎂",
-    "depuis": "2026-10-24T09:57:15Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -255,7 +238,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Raft",
+    "titre": "🌊Au menu ce soir : du requin grillé ! Coop sur Raft avec @Titounetsan @Barba_Doug",
+    "depuis": "2026-10-24T17:57:21Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
+   },
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -300,7 +289,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "Minecraft",
+    "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings ! - !réseaux",
+    "depuis": "2026-10-24T17:48:45Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -390,7 +385,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "Lotwick Hill",
+    "titre": "On se retrouve pour une Opé Lightquest sur un super jeu : Lotwick Hill ! Avec @lesjeuxducygne et @deapforce",
+    "depuis": "2026-10-24T17:50:08Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -879,13 +880,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": {
-    "viewers": 5,
-    "jeu": "Game Market Mayhem",
-    "titre": "Game Market Mayhem on range les jeux",
-    "depuis": "2026-10-24T16:15:27Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -972,5 +967,5 @@
   "relais": "https://cabane-inscriptions.tertereauolivier369.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-24T17:07:27.316Z"
+ "maj": "2026-10-24T18:03:04.378Z"
 }
