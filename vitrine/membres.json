@@ -7,7 +7,7 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 28,
-  "heuresLive30": 1128,
+  "heuresLive30": 1131,
   "followsGagnes30": 433,
   "periode": {
    "du": "2026-09-24",
@@ -239,7 +239,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "Raft",
     "titre": "🌊Au menu ce soir : du requin grillé ! Coop sur Raft avec @Titounetsan @Barba_Doug",
     "depuis": "2026-10-24T17:57:21Z",
@@ -386,7 +386,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 9,
     "jeu": "Lotwick Hill",
     "titre": "On se retrouve pour une Opé Lightquest sur un super jeu : Lotwick Hill ! Avec @lesjeuxducygne et @deapforce",
     "depuis": "2026-10-24T17:50:08Z",
@@ -967,5 +967,5 @@
   "relais": "https://cabane-inscriptions.tertereauolivier369.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-24T18:03:04.378Z"
+ "maj": "2026-10-24T18:07:19.725Z"
 }
