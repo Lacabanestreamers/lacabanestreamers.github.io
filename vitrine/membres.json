@@ -181,7 +181,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 27,
+    "viewers": 25,
     "jeu": "Just Chatting",
     "titre": "🐔✨ Niveau 30 débloqué ! On  fête mon anniversaire ensemble ! 🎂",
     "depuis": "2026-10-24T09:57:15Z",
@@ -233,7 +233,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "Dead by Daylight",
+    "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
+    "depuis": "2026-10-24T10:23:10Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
+   },
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -940,8 +946,8 @@
  "reussitesJours": 15,
  "rejoindre": null,
  "inscriptions": {
-  "cle": "=oAdyJWNSZkeHFldS5UbLxET61mYWJVYPZFOplkSpBFcLdlcG52ZMVXS3RlY0I3UPpWWU9EVt0yNwJEMDJzdHtWafx0Zs9iM1QjN0czNzMzM0kDN5QzM2UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
+  "relais": "https://cabane-inscriptions.tertereauolivier369.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-24T10:18:59.762Z"
+ "maj": "2026-10-24T10:24:12.850Z"
 }
