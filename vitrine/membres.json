@@ -7,7 +7,7 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 28,
-  "heuresLive30": 1101,
+  "heuresLive30": 1104,
   "followsGagnes30": 422,
   "periode": {
    "du": "2026-09-24",
@@ -189,8 +189,8 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 25,
-    "jeu": "Tomodachi Life: Living the Dream",
+    "viewers": 28,
+    "jeu": "Jackbox Party Packs",
     "titre": "🐔✨ Niveau 30 débloqué ! On  fête mon anniversaire ensemble ! 🎂",
     "depuis": "2026-10-24T09:57:15Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
@@ -242,7 +242,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 7,
+    "viewers": 8,
     "jeu": "Dead by Daylight",
     "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
     "depuis": "2026-10-24T10:23:10Z",
@@ -647,7 +647,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "The Sims 4",
+    "titre": "Viens faire avec moi une famille Sims Paranormale.. Viens papoter ! Me laisse pas seule !!!!!   !discord !regles !don !wishlist",
+    "depuis": "2026-10-24T12:13:35Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -748,7 +754,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "Disney Dreamlight Valley",
     "titre": "Bonjour, je continue le vallon des contes !!!!",
     "depuis": "2026-10-24T10:53:00Z",
@@ -963,5 +969,5 @@
   "relais": "https://cabane-inscriptions.tertereauolivier369.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-24T12:07:22.280Z"
+ "maj": "2026-10-24T13:07:20.992Z"
 }
