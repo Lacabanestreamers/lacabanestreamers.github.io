@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 27,
-  "heuresLive30": 1092,
+  "heuresLive30": 1093,
   "followsGagnes30": 422,
   "periode": {
    "du": "2026-09-24",
@@ -159,7 +159,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 1,
+    "viewers": 4,
     "jeu": "Disney Dreamlight Valley",
     "titre": "Chill sur DDV",
     "depuis": "2026-10-24T09:25:45Z",
@@ -180,7 +180,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Just Chatting",
+    "titre": "🐔✨ Niveau 30 débloqué ! On  fête mon anniversaire ensemble ! 🎂",
+    "depuis": "2026-10-24T09:57:15Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -478,7 +484,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 23,
+    "viewers": 15,
     "jeu": "Sovereign Tower",
     "titre": "STREAM 1 AN SUR TWITCH 🎉(15H non stop) 🎁: Dernière heure sur Sovereign Tower ! | Evenement spécial",
     "depuis": "2026-10-24T02:31:15Z",
@@ -510,13 +516,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 3,
-    "jeu": "Makers & Crafting",
-    "titre": "🐰Maquette allée de citrouille de action #3",
-    "depuis": "2026-10-24T07:34:41Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -949,5 +949,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-24T09:29:09.836Z"
+ "maj": "2026-10-24T10:07:32.392Z"
 }
