@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 27,
-  "heuresLive30": 1093,
+  "heuresLive30": 1096,
   "followsGagnes30": 422,
   "periode": {
    "du": "2026-09-24",
@@ -159,7 +159,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 4,
+    "viewers": 2,
     "jeu": "Disney Dreamlight Valley",
     "titre": "Chill sur DDV",
     "depuis": "2026-10-24T09:25:45Z",
@@ -181,7 +181,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 27,
     "jeu": "Just Chatting",
     "titre": "🐔✨ Niveau 30 débloqué ! On  fête mon anniversaire ensemble ! 🎂",
     "depuis": "2026-10-24T09:57:15Z",
@@ -200,7 +200,7 @@
     "R.E.P.O.",
     "The Sims 4",
     "DEVOUR",
-    "SO CLOSE"
+    "Just Chatting"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/SparklyOriginalSangSmoocherZ-RHuKc1v6Cs21hPle",
@@ -483,13 +483,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 15,
-    "jeu": "Sovereign Tower",
-    "titre": "STREAM 1 AN SUR TWITCH 🎉(15H non stop) 🎁: Dernière heure sur Sovereign Tower ! | Evenement spécial",
-    "depuis": "2026-10-24T02:31:15Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
@@ -946,8 +940,8 @@
  "reussitesJours": 15,
  "rejoindre": null,
  "inscriptions": {
-  "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
+  "cle": "=oAdyJWNSZkeHFldS5UbLxET61mYWJVYPZFOplkSpBFcLdlcG52ZMVXS3RlY0I3UPpWWU9EVt0yNwJEMDJzdHtWafx0Zs9iM1QjN0czNzMzM0kDN5QzM2UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-24T10:07:32.392Z"
+ "maj": "2026-10-24T10:18:59.762Z"
 }
