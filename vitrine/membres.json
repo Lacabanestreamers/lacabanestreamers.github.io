@@ -172,13 +172,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 0,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "Chill sur DDV",
-    "depuis": "2026-10-24T09:25:45Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brastentv-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-06-05",
    "succes": [],
    "jeux": [
@@ -195,7 +189,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 18,
+    "viewers": 25,
     "jeu": "Tomodachi Life: Living the Dream",
     "titre": "🐔✨ Niveau 30 débloqué ! On  fête mon anniversaire ensemble ! 🎂",
     "depuis": "2026-10-24T09:57:15Z",
@@ -248,7 +242,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "Dead by Daylight",
     "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
     "depuis": "2026-10-24T10:23:10Z",
@@ -754,7 +748,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 1,
+    "viewers": 4,
     "jeu": "Disney Dreamlight Valley",
     "titre": "Bonjour, je continue le vallon des contes !!!!",
     "depuis": "2026-10-24T10:53:00Z",
@@ -969,5 +963,5 @@
   "relais": "https://cabane-inscriptions.tertereauolivier369.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-24T11:23:36.624Z"
+ "maj": "2026-10-24T12:07:22.280Z"
 }
