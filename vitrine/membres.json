@@ -7,43 +7,14 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 28,
-  "heuresLive30": 1139,
-  "followsGagnes30": 433,
+  "heuresLive30": 1143,
+  "followsGagnes30": 227,
   "periode": {
-   "du": "2026-09-24",
+   "du": "2026-09-25",
    "au": "2026-10-24"
   }
  },
- "agenda": [
-  {
-   "id": "ev_576d1187",
-   "titre": "LIVE ANNIVERSAIRE 30 ANS",
-   "date": "2026-10-24",
-   "heure": "12:00",
-   "type": "Autre",
-   "description": "Le 24 octobre à 12h, je vous donne rendez-vous pour un live anniversaire rempli de bonne humeur 🥳 (danse, cuisine, jeux, react)",
-   "lien": "https://www.twitch.tv/chezelodie",
-   "duree": 360,
-   "discord": "https://discord.com/channels/1550885636322492476/1551942576230240287/1559984068550992066",
-   "participants": [
-    {
-     "login": "aly0806",
-     "nom": "aly0806",
-     "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/a82dd431-b906-4991-802b-e16ded62c062-profile_image-300x300.png"
-    },
-    {
-     "login": "aulit42369",
-     "nom": "Aulit42369",
-     "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/f33ce494-5527-426f-bc67-7a59bbf51609-profile_image-300x300.png"
-    },
-    {
-     "login": "rggk_obelix_14",
-     "nom": "RGGK_Obelix_14",
-     "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/addaa251-ad07-4f1d-b628-8611fd8c1bce-profile_image-300x300.png"
-    }
-   ]
-  }
- ],
+ "agenda": [],
  "membres": [
   {
    "login": "alf_de_melmac",
@@ -239,7 +210,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Raft",
     "titre": "🌊Au menu ce soir : du requin grillé ! Coop sur Raft avec @Titounetsan @Barba_Doug",
     "depuis": "2026-10-24T17:57:21Z",
@@ -460,7 +431,7 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": {
-    "viewers": 7,
+    "viewers": 8,
     "jeu": "Animal Crossing: New Horizons",
     "titre": "On continue la déco sur notre île Cinnamon #ACNH12🍁",
     "depuis": "2026-10-24T19:31:32Z",
@@ -594,7 +565,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "🔴 LE NOUVEAU MW4 EST LÀ ! Se soir on passe le prestige ?",
     "depuis": "2026-10-24T18:44:57Z",
@@ -974,5 +945,5 @@
   "relais": "https://cabane-inscriptions.tertereauolivier369.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-24T21:07:20.601Z"
+ "maj": "2026-10-24T22:07:19.963Z"
 }
