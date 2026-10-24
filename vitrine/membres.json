@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 27,
-  "heuresLive30": 1087,
+  "heuresLive30": 1088,
   "followsGagnes30": 422,
   "periode": {
    "du": "2026-09-24",
@@ -473,8 +473,8 @@
    "depuis": "2026-09-27",
    "live": {
     "viewers": 24,
-    "jeu": "Just Chatting",
-    "titre": "STREAM 1 AN SUR TWITCH 🎉(15H non stop) 🎁: On passe aux Réacts : Catfish, Vis ma vie et d'autres pépites ! | Evenement spécial",
+    "jeu": "Sovereign Tower",
+    "titre": "STREAM 1 AN SUR TWITCH 🎉(15H non stop) 🎁: Dernière heure sur Sovereign Tower ! | Evenement spécial",
     "depuis": "2026-10-24T02:31:15Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
    },
@@ -504,7 +504,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Makers & Crafting",
+    "titre": "🐰Maquette allée de citrouille de action #3",
+    "depuis": "2026-10-24T07:34:41Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
+   },
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -937,5 +943,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-24T07:07:29.621Z"
+ "maj": "2026-10-24T08:07:24.025Z"
 }
