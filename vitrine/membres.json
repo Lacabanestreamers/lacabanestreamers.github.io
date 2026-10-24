@@ -7,7 +7,7 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 28,
-  "heuresLive30": 1108,
+  "heuresLive30": 1112,
   "followsGagnes30": 422,
   "periode": {
    "du": "2026-09-24",
@@ -189,7 +189,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 19,
+    "viewers": 21,
     "jeu": "Jackbox Party Packs",
     "titre": "🐔✨ Niveau 30 débloqué ! On  fête mon anniversaire ensemble ! 🎂",
     "depuis": "2026-10-24T09:57:15Z",
@@ -242,7 +242,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "Dead by Daylight",
     "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
     "depuis": "2026-10-24T10:23:10Z",
@@ -292,7 +292,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Splatoon 3",
+    "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
+    "depuis": "2026-10-24T14:07:06Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -648,7 +654,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 8,
+    "viewers": 6,
     "jeu": "The Sims 4",
     "titre": "Viens faire avec moi une famille Sims Paranormale.. Viens papoter ! Me laisse pas seule !!!!!   !discord !regles !don !wishlist",
     "depuis": "2026-10-24T12:13:35Z",
@@ -969,5 +975,5 @@
   "relais": "https://cabane-inscriptions.tertereauolivier369.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-24T14:07:19.228Z"
+ "maj": "2026-10-24T14:26:09.323Z"
 }
