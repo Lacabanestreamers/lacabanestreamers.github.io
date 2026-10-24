@@ -239,7 +239,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Raft",
     "titre": "🌊Au menu ce soir : du requin grillé ! Coop sur Raft avec @Titounetsan @Barba_Doug",
     "depuis": "2026-10-24T17:57:21Z",
@@ -290,7 +290,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 0,
+    "viewers": 1,
     "jeu": "Minecraft",
     "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings ! - !réseaux",
     "depuis": "2026-10-24T17:48:45Z",
@@ -386,7 +386,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 21,
     "jeu": "Lotwick Hill",
     "titre": "On se retrouve pour une Opé Lightquest sur un super jeu : Lotwick Hill ! Avec @lesjeuxducygne et @deapforce",
     "depuis": "2026-10-24T17:50:08Z",
@@ -592,7 +592,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Call of Duty: Modern Warfare 4",
+    "titre": "🔴 LE NOUVEAU MW4 EST LÀ ! Se soir on passe le prestige ?",
+    "depuis": "2026-10-24T18:44:57Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
+   },
    "premierStream": "2017-03-05",
    "succes": [],
    "jeux": [
@@ -967,5 +973,5 @@
   "relais": "https://cabane-inscriptions.tertereauolivier369.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-24T18:07:19.725Z"
+ "maj": "2026-10-24T19:07:18.086Z"
 }
