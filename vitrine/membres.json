@@ -7,7 +7,7 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 28,
-  "heuresLive30": 1119,
+  "heuresLive30": 1124,
   "followsGagnes30": 422,
   "periode": {
    "du": "2026-09-24",
@@ -54,10 +54,10 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 6,
-    "jeu": "Rocket League",
-    "titre": "Rocket League/PS5",
-    "depuis": "2026-10-24T15:56:54Z",
+    "viewers": 8,
+    "jeu": "Fortnite",
+    "titre": "Fortnite/PS5",
+    "depuis": "2026-10-24T16:21:53Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
    },
    "premierStream": null,
@@ -76,7 +76,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 14,
     "jeu": "7 Days to Die",
     "titre": "🎃 Mois de l'horreur🎃 ✨Bon Go tester 7D2D en Solo!!!🔥",
     "depuis": "2026-10-24T14:49:39Z",
@@ -203,8 +203,8 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 26,
-    "jeu": "Kukoro: Stream Chat Games",
+    "viewers": 27,
+    "jeu": "Just Chatting",
     "titre": "🐔✨ Niveau 30 débloqué ! On  fête mon anniversaire ensemble ! 🎂",
     "depuis": "2026-10-24T09:57:15Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
@@ -300,13 +300,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 4,
-    "jeu": "Splatoon 3",
-    "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
-    "depuis": "2026-10-24T14:07:06Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -886,10 +880,10 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 6,
+    "viewers": 5,
     "jeu": "Game Market Mayhem",
     "titre": "Game Market Mayhem on range les jeux",
-    "depuis": "2026-10-24T14:29:22Z",
+    "depuis": "2026-10-24T16:15:27Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
    },
    "premierStream": "2026-08-22",
@@ -978,5 +972,5 @@
   "relais": "https://cabane-inscriptions.tertereauolivier369.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-24T16:07:20.949Z"
+ "maj": "2026-10-24T17:07:27.316Z"
 }
