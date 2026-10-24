@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 27,
-  "heuresLive30": 1084,
+  "heuresLive30": 1085,
   "followsGagnes30": 408,
   "periode": {
    "du": "2026-09-24",
@@ -472,7 +472,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 18,
+    "viewers": 32,
     "jeu": "Just Chatting",
     "titre": "STREAM 1 AN SUR TWITCH 🎉(15H non stop) 🎁: On passe aux Réacts : Catfish, Vis ma vie et d'autres pépites ! | Evenement spécial",
     "depuis": "2026-10-24T02:31:15Z",
@@ -937,5 +937,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-24T04:07:25.144Z"
+ "maj": "2026-10-24T05:07:25.959Z"
 }
