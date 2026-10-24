@@ -7,7 +7,7 @@
   "membres": 40,
   "affilies": 36,
   "nouveaux30": 27,
-  "heuresLive30": 1074,
+  "heuresLive30": 1078,
   "followsGagnes30": 408,
   "periode": {
    "du": "2026-09-24",
@@ -54,7 +54,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 15,
+    "viewers": 14,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🎃 Mois de l'horreur🎃 ✨On fini ou pas ce DLC 2!!!🔥",
     "depuis": "2026-10-23T20:59:20Z",
@@ -429,13 +429,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-20",
-   "live": {
-    "viewers": 6,
-    "jeu": "Slime Rancher",
-    "titre": "On chill et je decouvre Slime Rancher 🍄",
-    "depuis": "2026-10-23T19:23:53Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kialigator-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -477,7 +471,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 26,
+    "viewers": 20,
     "jeu": "skribbl.io",
     "titre": "STREAM 1 AN SUR TWITCH 🎉🎁: On fête l'event comme il se doit avec une Soirée Multi sur plein de jeux ✨! | Evenement spécial Anniversaire",
     "depuis": "2026-10-23T19:38:51Z",
@@ -490,7 +484,7 @@
     "Planet Zoo 2",
     "Sovereign Tower",
     "Games + Demos",
-    "MECCHA CHAMELEON"
+    "skribbl.io"
    ],
    "clip": {
     "url": "https://www.twitch.tv/laelya_/clip/CrunchyKitschyBulgogiChefFrank-Gsnu2HuzFp8NLzjs",
@@ -568,13 +562,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 7,
-    "jeu": "Call of Duty: Modern Warfare 4",
-    "titre": "🔴 LE NOUVEAU MW4 EST LÀ ! 🔥 On découvre le multijoueur ensemble !",
-    "depuis": "2026-10-23T19:47:16Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2017-03-05",
    "succes": [],
    "jeux": [
@@ -927,5 +915,5 @@
   "cle": "==QcXFDN1QWVY9lRahHZnt2a1dzY2V2bxZEcWlDax0mZvBlak1kSyE3R3gWZrx2aiRENm1CenhTTEhmW3lTZSdDTsxGWq9iMxgTOzcDM5QDN0IjMxkzM1UTMvM3av9GaiV2dvkGch9SbvNmLkJ3bjNXak9yL6MHc0RHa",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-23T23:07:28.775Z"
+ "maj": "2026-10-24T00:07:23.484Z"
 }
