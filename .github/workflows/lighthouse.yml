@@ -1,0 +1,28 @@
+# Contrôle qualité Lighthouse après chaque modification faite à la main (les commits des robots sont ignorés).
+# Ne bloque rien : affiche les notes (vitesse, accessibilité, bonnes pratiques, référencement) et un avertissement si une note baisse sous le seuil.
+name: Lighthouse
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "vitrine/membres.json"
+      - "vitrine/s/**"
+      - "vitrine/e/**"
+      - "vitrine/annee/**"
+      - "**.md"
+  workflow_dispatch:
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Attendre la mise en ligne GitHub Pages
+        run: sleep 150
+      - name: Mesurer avec Lighthouse
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          urls: |
+            https://lacabanestreamers.github.io/vitrine/
+          configPath: ./lighthouserc.json
+          uploadArtifacts: true
+          temporaryPublicStorage: true
