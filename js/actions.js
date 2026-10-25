@@ -252,6 +252,9 @@ document.addEventListener("click", e => {
       "vitrine.rejoindre":{actif:$("#v_rej").checked, titre:$("#v_rejtitre").value.trim() || "Rejoindre La Cabane", texte:$("#v_rejtexte").value.trim()}}, txt:`Vitrine publique ${$("#v_active").checked ? "activée / modifiée" : "désactivée"}`});
     toast($("#v_active").checked ? "Vitrine enregistrée : le robot la publiera à son prochain passage" : "Vitrine désactivée : le robot la retirera à son prochain passage"); return;
   }
+  if(t.id === "v_recap"){ const a = $("#v_recapAnnee").value;
+    dispatch({t:"settings", notify:true, p:{"vitrine.recapDemande":a}, txt:`Vitrine : récap « ton année » ${a} demandé`});
+    toast(`Récap ${a} demandé : en ligne d'ici 2 à 3 minutes (${VITRINE_URL()}annee/${a})`); return; }
   if(t.id === "bkRefresh"){ listerSauvegardes(); return; }
   if(t.id === "bkNow"){ t.disabled = true; sauvegarder("manuel").then(n => { toast("Sauvegarde faite"); listerSauvegardes(); }, e => { toast(e.message, true); t.disabled = false; }); return; }
   const bkb = t.closest("[data-bk]");

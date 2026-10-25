@@ -19,7 +19,21 @@ function vitrinePanel(d){
     </div>
     <p class="meta">${st ? (st.ok ? `<span class="up">Publiée</span> : le robot la tient à jour à chaque passage (depuis le ${fmtStamp(st.le)}).` : `<span class="down">Publication en échec depuis le ${fmtStamp(st.le)} : ${esc(st.erreur || "erreur inconnue")}</span>`) : v.active ? "En attente du prochain passage du robot (secret VITRINE_TOKEN nécessaire, voir le README)." : "Pas encore publiée."} Adresse : <a href="${VITRINE_URL()}" target="_blank" rel="noopener">${VITRINE_URL()}</a></p>
     <div class="tools" style="margin:10px 0 0"><button class="btn primary" id="v_save">Enregistrer</button></div>
+    ${recapPanel(d)}
   </section>`;
+}
+// « La Cabane, ton année » : récap public écrit par le robot dans vitrine/annee/AAAA.html (le staff peut le demander tout de suite)
+function recapPanel(d){
+  const v = d.settings.vitrine || {}, faits = d.robot?.recaps || {}, an = Number(todayISO().slice(0, 4));
+  const liens = Object.keys(faits).filter(a => /^\d{4}$/.test(a)).sort().reverse()
+    .map(a => `<a href="${VITRINE_URL()}annee/${a}" target="_blank" rel="noopener">${a}</a> (${fmtStamp(faits[a])})`).join(" · ");
+  return `<h3 style="margin:22px 0 6px">« La Cabane, ton année »</h3>
+    <p>Un récap public de l'année : paliers franchis, nouveaux affiliés et partenaires, arrivées, événements publics, follows gagnés. Seuls les membres visibles sur la vitrine y figurent, jamais d'avis, de notes ni de contacts. Le robot le refait chaque jour en décembre (et jusqu'au 7 janvier pour l'année finie) ; tu peux aussi le publier maintenant.</p>
+    <div class="tools" style="margin:6px 0 0">
+      <label class="f">Année<select id="v_recapAnnee">${[an, an - 1].map(a => `<option value="${a}">${a}</option>`).join("")}</select></label>
+      <button class="btn" id="v_recap" ${v.active ? "" : "disabled title=\"Active d'abord la vitrine\""}>Publier le récap</button>
+    </div>
+    <p class="meta">${v.recapDemande ? `Récap ${esc(v.recapDemande)} demandé : en ligne d'ici 2 à 3 minutes. ` : ""}${liens ? `En ligne : ${liens}` : "Aucun récap publié pour l'instant."}</p>`;
 }
 
 /* ============ Sauvegardes ============ */
