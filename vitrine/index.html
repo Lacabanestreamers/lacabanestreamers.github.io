@@ -3,24 +3,35 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>La Cabane · Nos streamers</title>
-<meta name="description" content="La Cabane, communauté d'entraide et de motivation entre streamers : découvre nos membres et qui est en live.">
+<title>Communauté de streamers francophones Twitch | La Cabane</title>
+<meta name="description" content="La Cabane, communauté de streamers francophones sur Twitch : entraide et motivation. Découvre nos membres, qui est en live et nos prochains événements.">
 <!-- Aperçu affiché quand le lien est collé sur Discord, X, WhatsApp… (adresses absolues obligatoires) -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="La Cabane">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:url" content="https://lacabanestreamers.github.io/vitrine/">
-<meta property="og:title" content="La Cabane · Nos streamers">
-<meta property="og:description" content="Communauté d'entraide et de motivation entre streamers : découvre nos membres, qui est en live et nos prochains événements.">
+<meta property="og:title" content="Communauté de streamers francophones Twitch | La Cabane">
+<meta property="og:description" content="La Cabane, communauté de streamers francophones sur Twitch : entraide et motivation. Découvre nos membres, qui est en live et nos prochains événements.">
 <meta property="og:image" content="https://lacabanestreamers.github.io/vitrine/apercu.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="La Cabane, communauté d'entraide entre streamers">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="La Cabane · Nos streamers">
-<meta name="twitter:description" content="Communauté d'entraide et de motivation entre streamers : découvre nos membres, qui est en live et nos prochains événements.">
+<meta name="twitter:title" content="Communauté de streamers francophones Twitch | La Cabane">
+<meta name="twitter:description" content="La Cabane, communauté de streamers francophones sur Twitch : entraide et motivation. Découvre nos membres, qui est en live et nos prochains événements.">
 <meta name="twitter:image" content="https://lacabanestreamers.github.io/vitrine/apercu.png">
 <link rel="canonical" href="https://lacabanestreamers.github.io/vitrine/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "La Cabane",
+  "alternateName": "La Cabane streamers",
+  "url": "https://lacabanestreamers.github.io/vitrine/",
+  "logo": "https://lacabanestreamers.github.io/icon-512.png",
+  "description": "La Cabane, communauté de streamers francophones sur Twitch : entraide et motivation. Découvre nos membres, qui est en live et nos prochains événements."
+}
+</script>
 <meta name="theme-color" content="#100B24">
 <link rel="icon" href="../icon-192.png">
 <link rel="apple-touch-icon" href="../icon-192.png">
@@ -46,6 +57,7 @@ a{color:var(--cyan)}
 /* En-tête */
 header{padding:56px 0 30px}
 h1{font:800 clamp(40px,8vw,76px)/1 Orbitron,sans-serif;margin:0;letter-spacing:.02em;text-shadow:0 0 18px rgba(255,79,216,.65),0 0 44px rgba(255,79,216,.25)}
+.h1-sous{display:block;margin-top:14px;font:700 clamp(15px,2.6vw,22px)/1.25 Rajdhani,"Segoe UI",system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);text-shadow:none}
 .intro{max-width:62ch;color:#D4CFF5;font-size:20px;margin:18px 0 0;white-space:pre-line}
 .cta{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:24px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:10px;font-weight:700;font-size:17px;text-decoration:none;border:1px solid var(--pink);background:var(--pink);color:#1a0716}
@@ -121,7 +133,7 @@ select.chip{appearance:none;padding-right:28px;background-image:linear-gradient(
 /* Page d'un membre */
 body.profil header{padding:26px 0 6px}
 body.profil h1{font-size:clamp(28px,5vw,40px)}
-body.profil .intro, body.profil #stats, body.profil #discord, body.profil #hasard{display:none!important}
+body.profil .h1-sous, body.profil .intro, body.profil #stats, body.profil #discord, body.profil #hasard{display:none!important}
 .back{display:inline-block;margin:6px 0 18px;font-weight:700;text-decoration:none}
 .prof{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:26px;display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start}
 .prof .av{width:128px;height:128px;font-size:48px;box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--pink),0 0 34px rgba(255,79,216,.45)}
@@ -210,8 +222,8 @@ footer{border-top:1px solid var(--line);margin-top:50px;padding:22px 0 40px;colo
 <body>
 <div class="wrap">
   <header>
-    <h1 id="titre">La Cabane</h1>
-    <p class="intro" id="texte"></p>
+    <h1><span id="titre">La Cabane</span> <span class="h1-sous">Communauté de streamers francophones</span></h1>
+    <p class="intro" id="texte">Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !</p>
     <div class="cta"><a class="btn hidden" id="discord" target="_blank" rel="noopener">Rejoindre le Discord</a><button class="btn alt hidden" id="hasard" type="button">🎲 Découvrir un streamer</button><span class="stats" id="stats"></span></div>
   </header>
 
@@ -284,7 +296,7 @@ function _render(){
     main.innerHTML = `<p class="empty">La vitrine n'est pas publiée pour le moment. Reviens bientôt !</p>`; dernierHtml = "";
     $("#stats").textContent = ""; return;
   }
-  document.title = `${d.titre || "La Cabane"} · Nos streamers`;
+  document.title = `Communauté de streamers francophones Twitch | ${d.titre || "La Cabane"}`;
   $("#titre").textContent = d.titre || "La Cabane";
   $("#texte").textContent = d.texte || "";
   const dc = $("#discord");
