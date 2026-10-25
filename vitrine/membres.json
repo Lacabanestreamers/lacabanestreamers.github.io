@@ -7,7 +7,7 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 28,
-  "heuresLive30": 1149,
+  "heuresLive30": 1152,
   "followsGagnes30": 228,
   "periode": {
    "du": "2026-09-25",
@@ -345,7 +345,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 15,
+    "viewers": 16,
     "jeu": "Forever Ago",
     "titre": "Hey! je suis tombée du lit ! Tu viens? Attrapes un plaid, une boisson, au programme : Live cozy et papotage <3 (tw: deuil)",
     "depuis": "2026-10-25T06:50:05Z",
@@ -493,7 +493,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Makers & Crafting",
+    "titre": "🐰Maquette allée de citrouille de action #4",
+    "depuis": "2026-10-25T08:19:13Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
+   },
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -553,7 +559,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 18,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "( DropActivés) 🎮🔥 ÉVÉNEMENT MW4 : PRISE DE CONTRÔLE – LUFFISH GAMING ! 🔥🎮",
     "depuis": "2026-10-25T07:42:47Z",
@@ -596,7 +602,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "The Elder Scrolls V: Skyrim - Special Edition",
+    "titre": "Skyrim avec Arcabsent",
+    "depuis": "2026-10-25T09:00:45Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
+   },
    "premierStream": "2025-01-08",
    "succes": [],
    "jeux": [
@@ -697,7 +709,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 1,
+    "viewers": 6,
     "jeu": "Art",
     "titre": "[FR] Bon on le termine ce colo !? 👻🎃 | REPO | !discord !commandes",
     "depuis": "2026-10-25T08:00:16Z",
@@ -939,5 +951,5 @@
   "relais": "https://cabane-inscriptions.tertereauolivier369.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-25T08:07:17.817Z"
+ "maj": "2026-10-25T09:07:19.113Z"
 }
