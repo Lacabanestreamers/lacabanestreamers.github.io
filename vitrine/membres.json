@@ -7,7 +7,7 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 27,
-  "heuresLive30": 1194,
+  "heuresLive30": 1197,
   "followsGagnes30": 252,
   "periode": {
    "du": "2026-09-26",
@@ -209,13 +209,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": {
-    "viewers": 5,
-    "jeu": "Dead by Daylight",
-    "titre": "💜 Entre cosy et horreur !☕On fait la démo de Pale Incense et aprés on part sur Dead by Daylight ! 🪓",
-    "depuis": "2026-10-25T19:00:33Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -473,13 +467,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 13,
-    "jeu": "Into the Crypt",
-    "titre": "SOIRÉE TEST JEUX 🎮💫 : On teste les démos du Néo Fest Steam, il y a plein de nouveautés Pépites 🎯! | Découverte Nouveauté Keymailer",
-    "depuis": "2026-10-25T19:12:28Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
@@ -948,5 +936,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-25T22:07:21.507Z"
+ "maj": "2026-10-25T23:07:20.900Z"
 }
