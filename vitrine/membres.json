@@ -547,7 +547,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 12,
+    "viewers": 6,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "( DropActivés) 🎮🔥 ÉVÉNEMENT MW4 : PRISE DE CONTRÔLE – LUFFISH GAMING ! 🔥🎮",
     "depuis": "2026-10-25T07:42:47Z",
@@ -591,9 +591,9 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
-    "jeu": "The Elder Scrolls V: Skyrim - Special Edition",
-    "titre": "Skyrim avec Arcabsent",
+    "viewers": 3,
+    "jeu": "Far Far West",
+    "titre": "Le retour du briquet",
     "depuis": "2026-10-25T09:00:45Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
    },
@@ -696,13 +696,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 6,
-    "jeu": "Art",
-    "titre": "[FR] Bon on le termine ce colo !? 👻🎃 | REPO | !discord !commandes",
-    "depuis": "2026-10-25T08:00:16Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -729,7 +723,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "American Truck Simulator",
     "titre": "Bonjour, une tempete de neige et arrivée au USA !!!!",
     "depuis": "2026-10-25T10:00:17Z",
@@ -946,5 +940,5 @@
   "relais": "https://cabane-inscriptions.tertereauolivier369.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-25T11:13:50.799Z"
+ "maj": "2026-10-25T12:07:20.257Z"
 }
