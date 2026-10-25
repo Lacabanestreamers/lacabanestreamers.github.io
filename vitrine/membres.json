@@ -7,7 +7,7 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 28,
-  "heuresLive30": 1178,
+  "heuresLive30": 1179,
   "followsGagnes30": 227,
   "periode": {
    "du": "2026-09-25",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 2,
+    "viewers": 9,
     "jeu": "Rocket League",
     "titre": "Rocket League/PS5",
     "depuis": "2026-10-25T16:04:54Z",
@@ -425,7 +425,7 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": {
-    "viewers": 4,
+    "viewers": 15,
     "jeu": "Slime Rancher",
     "titre": "Omg un stream pas du tout prevu sur slime rancher",
     "depuis": "2026-10-25T15:17:28Z",
@@ -525,7 +525,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 11,
+    "jeu": "Overwatch",
+    "titre": "🔞[DROP] Live sauvage  chill ou pas.....  Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-10-25T16:44:41Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -558,7 +564,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Call of Duty: Modern Warfare 4",
+    "titre": "( DropActivés) MW4 soirée multi et DMZ",
+    "depuis": "2026-10-25T16:17:54Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
+   },
    "premierStream": "2017-03-05",
    "succes": [],
    "jeux": [
@@ -935,5 +947,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-25T16:07:20.051Z"
+ "maj": "2026-10-25T17:07:19.361Z"
 }
