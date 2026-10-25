@@ -413,7 +413,7 @@
   {
    "login": "kialigator",
    "nom": "kialigator",
-   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/339d74b3-1405-41b9-acd8-fe53694244ef-profile_image-300x300.png",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/a0ee59e9-b437-4873-823f-72077fdddcfc-profile_image-300x300.png",
    "bio": "Juste une fille introvertie qui stream des cosy games, des jeux indépendants et de l’horreur 🍓  Bienvenue dans ton nouveau cocon chill, retrouve moi (presque) tous les jours de 21h30 à 1h du mat 🌷 email pro : kialigatortwitch@gmail.com",
    "type": "affiliate",
    "staff": false,
@@ -718,7 +718,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "American Truck Simulator",
     "titre": "Bonjour, une tempete de neige et arrivée au USA !!!!",
     "depuis": "2026-10-25T10:00:17Z",
@@ -935,5 +935,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-25T13:44:46.228Z"
+ "maj": "2026-10-25T14:07:19.643Z"
 }
