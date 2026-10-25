@@ -7,8 +7,8 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 28,
-  "heuresLive30": 1164,
-  "followsGagnes30": 228,
+  "heuresLive30": 1169,
+  "followsGagnes30": 227,
   "periode": {
    "du": "2026-09-25",
    "au": "2026-10-25"
@@ -487,13 +487,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 12,
-    "jeu": "Makers & Crafting",
-    "titre": "🐰Maquette allée de citrouille de action #4",
-    "depuis": "2026-10-25T08:19:13Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -553,7 +547,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 12,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "( DropActivés) 🎮🔥 ÉVÉNEMENT MW4 : PRISE DE CONTRÔLE – LUFFISH GAMING ! 🔥🎮",
     "depuis": "2026-10-25T07:42:47Z",
@@ -703,7 +697,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 6,
     "jeu": "Art",
     "titre": "[FR] Bon on le termine ce colo !? 👻🎃 | REPO | !discord !commandes",
     "depuis": "2026-10-25T08:00:16Z",
@@ -952,5 +946,5 @@
   "relais": "https://cabane-inscriptions.tertereauolivier369.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-25T11:07:24.622Z"
+ "maj": "2026-10-25T11:13:50.799Z"
 }
