@@ -344,7 +344,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Forever Ago",
+    "titre": "Hey! je suis tombée du lit ! Tu viens? Attrapes un plaid, une boisson, au programme : Live cozy et papotage <3",
+    "depuis": "2026-10-25T06:50:05Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -921,5 +927,5 @@
   "relais": "https://cabane-inscriptions.tertereauolivier369.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-25T02:07:45.929Z"
+ "maj": "2026-10-25T07:07:23.339Z"
 }
