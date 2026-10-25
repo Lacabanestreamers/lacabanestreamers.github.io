@@ -7,7 +7,7 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 28,
-  "heuresLive30": 1152,
+  "heuresLive30": 1157,
   "followsGagnes30": 228,
   "periode": {
    "du": "2026-09-25",
@@ -357,8 +357,8 @@
     "DREDGE",
     "R.E.P.O.",
     "Writing & Reading",
-    "Abiotic Factor",
-    "Wyldheart"
+    "Forever Ago",
+    "Abiotic Factor"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/CuriousColdTigerDoggo-k5kuNHBgb29sXpxn",
@@ -494,7 +494,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Makers & Crafting",
     "titre": "🐰Maquette allée de citrouille de action #4",
     "depuis": "2026-10-25T08:19:13Z",
@@ -559,7 +559,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 18,
+    "viewers": 8,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "( DropActivés) 🎮🔥 ÉVÉNEMENT MW4 : PRISE DE CONTRÔLE – LUFFISH GAMING ! 🔥🎮",
     "depuis": "2026-10-25T07:42:47Z",
@@ -603,7 +603,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 1,
+    "viewers": 4,
     "jeu": "The Elder Scrolls V: Skyrim - Special Edition",
     "titre": "Skyrim avec Arcabsent",
     "depuis": "2026-10-25T09:00:45Z",
@@ -709,7 +709,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 5,
     "jeu": "Art",
     "titre": "[FR] Bon on le termine ce colo !? 👻🎃 | REPO | !discord !commandes",
     "depuis": "2026-10-25T08:00:16Z",
@@ -951,5 +951,5 @@
   "relais": "https://cabane-inscriptions.tertereauolivier369.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-25T09:07:19.113Z"
+ "maj": "2026-10-25T09:51:04.020Z"
 }
