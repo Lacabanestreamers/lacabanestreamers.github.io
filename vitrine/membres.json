@@ -7,7 +7,7 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 28,
-  "heuresLive30": 1192,
+  "heuresLive30": 1196,
   "followsGagnes30": 230,
   "periode": {
    "du": "2026-09-25",
@@ -210,7 +210,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Dead by Daylight",
     "titre": "💜 Entre cosy et horreur !☕On fait la démo de Pale Incense et aprés on part sur Dead by Daylight ! 🪓",
     "depuis": "2026-10-25T19:00:33Z",
@@ -425,7 +425,7 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": {
-    "viewers": 7,
+    "viewers": 8,
     "jeu": "Stardew Valley",
     "titre": "on commence une nouvelle partie stardew valley sur une map spooky avec dydoux #SpookyStardew🎃",
     "depuis": "2026-10-25T20:27:11Z",
@@ -435,7 +435,8 @@
    "succes": [],
    "jeux": [
     "Slime Rancher",
-    "Animal Crossing: New Horizons"
+    "Animal Crossing: New Horizons",
+    "Stardew Valley"
    ],
    "clip": null
   },
@@ -474,7 +475,7 @@
    "depuis": "2026-09-27",
    "live": {
     "viewers": 13,
-    "jeu": "Cook, Serve, Delicious: Remustard!",
+    "jeu": "On the Rocks",
     "titre": "SOIRÉE TEST JEUX 🎮💫 : On teste les démos du Néo Fest Steam, il y a plein de nouveautés Pépites 🎯! | Découverte Nouveauté Keymailer",
     "depuis": "2026-10-25T19:12:28Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
@@ -953,5 +954,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-25T21:07:19.667Z"
+ "maj": "2026-10-25T21:39:47.133Z"
 }
