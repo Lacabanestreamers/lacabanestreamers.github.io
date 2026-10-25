@@ -7,7 +7,7 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 28,
-  "heuresLive30": 1169,
+  "heuresLive30": 1172,
   "followsGagnes30": 227,
   "periode": {
    "du": "2026-09-25",
@@ -547,7 +547,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 14,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "( DropActivés) 🎮🔥 ÉVÉNEMENT MW4 : PRISE DE CONTRÔLE – LUFFISH GAMING ! 🔥🎮",
     "depuis": "2026-10-25T07:42:47Z",
@@ -591,7 +591,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "Far Far West",
     "titre": "Le retour du briquet",
     "depuis": "2026-10-25T09:00:45Z",
@@ -603,7 +603,8 @@
     "Dead Rising 3",
     "The Elder Scrolls V: Skyrim - Special Edition",
     "FTL: Faster Than Light",
-    "Strange Horticulture"
+    "Strange Horticulture",
+    "Far Far West"
    ],
    "clip": {
     "url": "https://www.twitch.tv/mattmist2/clip/ObedientPlausibleWrenPJSugar-nQd-ub35a2uoa2JP",
@@ -940,5 +941,5 @@
   "relais": "https://cabane-inscriptions.tertereauolivier369.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-25T12:07:20.257Z"
+ "maj": "2026-10-25T13:07:18.409Z"
 }
