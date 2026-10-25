@@ -7,7 +7,7 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 28,
-  "heuresLive30": 1175,
+  "heuresLive30": 1177,
   "followsGagnes30": 227,
   "periode": {
    "du": "2026-09-25",
@@ -584,13 +584,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 2,
-    "jeu": "Far Far West",
-    "titre": "Le retour du briquet",
-    "depuis": "2026-10-25T09:00:45Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-08",
    "succes": [],
    "jeux": [
@@ -717,13 +711,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 5,
-    "jeu": "American Truck Simulator",
-    "titre": "Bonjour, une tempete de neige et arrivée au USA !!!!",
-    "depuis": "2026-10-25T10:00:17Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -935,5 +923,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-25T14:07:19.643Z"
+ "maj": "2026-10-25T15:07:18.597Z"
 }
