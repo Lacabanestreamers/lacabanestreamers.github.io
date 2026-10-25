@@ -1,0 +1,6 @@
+# La Cabane : la vitrine publique est à indexer. La page staff (racine) porte déjà « noindex » :
+# elle n'est pas bloquée ici, sinon les moteurs ne verraient pas ce noindex.
+User-agent: *
+Allow: /
+
+Sitemap: https://lacabanestreamers.github.io/sitemap.xml

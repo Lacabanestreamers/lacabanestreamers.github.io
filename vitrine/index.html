@@ -23,6 +23,7 @@
 <link rel="canonical" href="https://lacabanestreamers.github.io/vitrine/">
 <meta name="theme-color" content="#100B24">
 <link rel="icon" href="../icon-192.png">
+<link rel="apple-touch-icon" href="../icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://static-cdn.jtvnw.net">
@@ -60,7 +61,7 @@ h2 .dot{width:11px;height:11px;border-radius:50%;background:var(--ko);box-shadow
 @media (prefers-reduced-motion:no-preference){ h2 .dot{animation:pulse 1.6s ease-in-out infinite} @keyframes pulse{50%{opacity:.35}} }
 
 /* En live */
-.lives{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px}
+.lives{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(270px,100%),1fr));gap:16px}
 .lv{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:border-color .15s}
 .lv:hover{border-color:var(--ko)}
 .lv .img{aspect-ratio:16/9;background:#0b0820 center/cover no-repeat;position:relative}
@@ -95,7 +96,7 @@ h2 .dot{width:11px;height:11px;border-radius:50%;background:var(--ko);box-shadow
 .empty{color:var(--muted);padding:30px 0}
 
 /* Réussites */
-.clips{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.clips{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr));gap:14px}
 .clip{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column}
 .clip:hover,.clip:focus-visible{border-color:var(--pink)}
 .clip .img{aspect-ratio:16/9;background:#0a0718 center/cover no-repeat;position:relative}
@@ -109,7 +110,7 @@ h2 .dot{width:11px;height:11px;border-radius:50%;background:var(--ko);box-shadow
 select.chip{appearance:none;padding-right:28px;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 15px) 55%,calc(100% - 10px) 55%;background-size:5px 5px;background-repeat:no-repeat}
 .rejoindre{background:linear-gradient(135deg,rgba(255,79,216,.12),rgba(61,227,255,.08));border:1px solid var(--line);border-radius:16px;padding:22px 24px}
 .rejoindre p{white-space:pre-line;font-size:18px;margin:0 0 14px;max-width:70ch}
-.wins{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.wins{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:10px}
 .win{display:flex;gap:12px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px;text-decoration:none;color:inherit}
 .win:hover{border-color:var(--pink)}
 .win .av{width:40px;height:40px;font-size:16px}
@@ -145,7 +146,7 @@ body.profil .intro, body.profil #stats, body.profil #discord, body.profil #hasar
 }
 
 /* Anniversaires de stream */
-.annivs{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.annivs{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:10px}
 .ann{display:flex;gap:12px;align-items:center;background:linear-gradient(135deg,rgba(255,79,216,.16),rgba(61,227,255,.08));border:1px solid rgba(255,79,216,.5);border-radius:12px;padding:10px 14px;text-decoration:none;color:inherit}
 .ann.bientot{background:var(--panel);border-color:var(--line)}
 .ann:hover{border-color:var(--pink)}
@@ -167,7 +168,7 @@ body.profil .intro, body.profil #stats, body.profil #discord, body.profil #hasar
 .new .nm{font-size:15px;max-width:110px}
 .new .d{color:var(--muted);font-size:13px}
 /* Événements */
-.evts{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.evts{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:14px}
 .evt{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;grid-template-columns:70px 1fr;gap:14px}
 .evt.cible{border-color:var(--cyan);box-shadow:0 0 0 1px var(--cyan),0 0 28px rgba(61,227,255,.28)}
 @media (prefers-reduced-motion:no-preference){ .evt.cible{animation:cible 1.4s ease-out 2} @keyframes cible{0%{box-shadow:0 0 0 1px var(--cyan),0 0 0 rgba(61,227,255,0)}40%{box-shadow:0 0 0 1px var(--cyan),0 0 42px rgba(61,227,255,.55)}} }
@@ -217,7 +218,7 @@ footer{border-top:1px solid var(--line);margin-top:50px;padding:22px 0 40px;colo
   <main id="main"><p class="empty">Chargement…</p></main>
 
   <div id="toast" role="status" aria-live="polite" hidden></div>
-  <footer><span id="maj"></span><span>Données publiques Twitch · <a href="https://www.twitch.tv" target="_blank" rel="noopener">twitch.tv</a></span></footer>
+  <footer><span id="maj"></span><span>Données publiques Twitch · <a href="https://www.twitch.tv" target="_blank" rel="noopener">twitch.tv</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="cgu.html">Conditions d'utilisation</a></span></footer>
 </div>
 
 <script>
@@ -340,7 +341,7 @@ function _render(){
         <div class="q"><b>${e.dt.getDate()}</b><small>${e.dt.toLocaleDateString("fr-FR", {month:"short"})}</small><small>${esc((e.heure || "").replace(":", "h"))}${e.heure && horsParis ? `<br><abbr title="heure de Paris">Paris</abbr>` : ""}</small></div>
         <div style="min-width:0"><span class="ty">${esc(e.type || "Événement")} · ${e.j === 0 ? "aujourd'hui" : e.j === 1 ? "demain" : e.dt.toLocaleDateString("fr-FR", {weekday:"long"})}</span>
           <h3>${esc(e.titre)}</h3>${e.description ? `<p>${esc(e.description)}</p>` : ""}
-          ${(e.participants || []).filter(x => okLogin(x.login)).length ? `<div class="ppl">${e.participants.filter(x => okLogin(x.login)).map(x => `<a href="${pageUrl(x.login)}" data-nav title="${esc(x.nom)}">${av(x)}</a>`).join("")}</div>` : ""}
+          ${(e.participants || []).filter(x => okLogin(x.login)).length ? `<div class="ppl">${e.participants.filter(x => okLogin(x.login)).map(x => `<a href="${pageUrl(x.login)}" data-nav title="${esc(x.nom)}" aria-label="${esc(x.nom)}">${av(x)}</a>`).join("")}</div>` : ""}
           ${/^https:\/\//.test(e.lien || "") ? `<p><a href="${esc(e.lien)}" target="_blank" rel="noopener">Plus d'infos</a></p>` : ""}
           ${actionsEvt(e, d)}
           ${e.id ? `<details class="cal"><summary>📅 Ajouter à mon agenda</summary><a href="${esc(lienGoogle(e))}" target="_blank" rel="noopener">Google Agenda</a><a href="#" data-ics="${esc(e.id)}">Apple, Outlook… (.ics)</a></details><button class="partage" type="button" data-partage="${esc(e.id)}">🔗 Partager cet événement</button>` : ""}</div>

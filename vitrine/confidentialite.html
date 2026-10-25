@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Confidentialité · La Cabane</title>
+<meta name="description" content="Quelles données la vitrine de La Cabane affiche sur ses streamers, d'où elles viennent, ce qui reste dans ton navigateur et comment faire retirer ta chaîne.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="La Cabane">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://lacabanestreamers.github.io/vitrine/confidentialite.html">
+<meta property="og:title" content="Confidentialité · La Cabane">
+<meta property="og:description" content="Données affichées sur les streamers, leur origine, stockage local, services tiers et retrait d'une chaîne.">
+<meta property="og:image" content="https://lacabanestreamers.github.io/vitrine/apercu.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La Cabane, communauté d'entraide entre streamers">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://lacabanestreamers.github.io/vitrine/apercu.png">
+<link rel="canonical" href="https://lacabanestreamers.github.io/vitrine/confidentialite.html">
+<meta name="theme-color" content="#100B24">
+<link rel="icon" href="../icon-192.png">
+<link rel="apple-touch-icon" href="../icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="pages.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="./">← Retour à la vitrine</a>
+    <h1>Confidentialité</h1>
+    <p class="maj">Dernière mise à jour : 25 octobre 2026</p>
+  </header>
+  <main>
+    <h2>Qui est derrière ce site</h2>
+    <p>La vitrine est publiée par le staff de <b>La Cabane</b>, une communauté bénévole d'entraide entre streamers. Elle n'a aucun but commercial, n'affiche aucune publicité et ne vend aucune donnée.</p>
+
+    <h2>Ce que la vitrine affiche sur les streamers</h2>
+    <p>Pour chaque streamer membre de La Cabane :</p>
+    <ul>
+      <li><b>Repris de Twitch</b> (informations déjà publiques sur la chaîne) : pseudo, nom affiché, image de profil, description (bio, avec ce que la personne y a écrit elle-même), statut affilié ou partenaire, jeux streamés, date du premier stream, clip le plus vu de la semaine, live en cours (titre, jeu, nombre de spectateurs, aperçu).</li>
+      <li><b>Ajouté par La Cabane</b> : date d'arrivée dans la communauté, étiquette « Staff », réussites (paliers de follows, affiliation, partenariat), participation aux événements.</li>
+      <li><b>Chiffres d'ensemble</b> : nombre de membres, heures de live et follows gagnés sur 30 jours, tous membres confondus.</li>
+    </ul>
+    <p>Ces informations sont relevées par un robot qui interroge l'API publique de Twitch une fois par heure, puis publiées dans le fichier <code>membres.json</code>. Le live est aussi revérifié depuis ton navigateur via le service public decapi.me.</p>
+    <p>Une chaîne n'apparaît sur la vitrine que si son ou sa streamer a rejoint La Cabane. Le staff tient en plus un suivi interne, <b>jamais publié</b> (fichier privé) : statistiques Twitch relevées, référent, notes du staff, pseudo Discord.</p>
+
+    <h2>Pourquoi</h2>
+    <p>Faire découvrir les membres de la communauté et leurs lives : c'est l'intérêt légitime de La Cabane et la raison pour laquelle ses membres la rejoignent. Chaque membre peut demander à ne plus y figurer (voir « Tes droits »).</p>
+
+    <h2>Si tu visites la vitrine</h2>
+    <p>Aucun compte, aucun formulaire, aucune mesure d'audience, <b>aucun cookie</b>. Ton navigateur garde seulement, pour faire marcher le bouton « Je participe » des événements :</p>
+    <ul>
+      <li><code>cabane.vitrine.twitch</code> (stockage de session, effacé à la fermeture de l'onglet) : ton pseudo Twitch, ton identifiant Twitch et le jeton de connexion, seulement si tu t'es connecté pour t'inscrire à un événement. Ce jeton ne donne aucune autorisation sur ton compte.</li>
+      <li><code>cabane.vitrine.oauth</code> (stockage de session) : un code de vérification le temps de la connexion à Twitch.</li>
+      <li><code>cabane.vitrine.attente</code> (stockage local, 3 heures au plus) : les inscriptions envoyées qui n'apparaissent pas encore.</li>
+    </ul>
+    <p>Ces éléments sont strictement nécessaires à une fonction que tu demandes : ils ne demandent pas de consentement, d'où l'absence de bandeau cookies. Tu peux les effacer à tout moment depuis les réglages de ton navigateur (données du site).</p>
+
+    <h2>Inscription à un événement</h2>
+    <p>Quand un streamer de La Cabane clique sur « Je participe », il se connecte avec Twitch (aucune autorisation demandée). La demande (événement, ton jeton Twitch) passe par un petit relais hébergé chez Cloudflare, qui vérifie le jeton auprès de Twitch puis dépose la demande dans un salon Discord privé du staff. Le robot la revérifie, ajoute ton pseudo et ton image à la liste des participants affichée sur la vitrine, puis efface le message.</p>
+
+    <h2>Services tiers utilisés par la page</h2>
+    <ul>
+      <li><b>GitHub Pages</b> (GitHub, Inc., États-Unis) : hébergement du site. GitHub peut enregistrer l'adresse IP des visiteurs pour la sécurité du service (<a href="https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">déclaration de confidentialité de GitHub</a>).</li>
+      <li><b>Google Fonts</b> : les polices Orbitron et Rajdhani sont chargées depuis les serveurs de Google, qui reçoivent ton adresse IP.</li>
+      <li><b>Twitch</b> : images de profil, aperçus des lives et vignettes de clips (static-cdn.jtvnw.net), connexion pour les inscriptions.</li>
+      <li><b>decapi.me</b> : vérification en direct des lives.</li>
+      <li><b>Cloudflare</b> et <b>Discord</b> : seulement pour les inscriptions aux événements.</li>
+    </ul>
+    <p>Aucun lecteur vidéo ni contenu tiers intégré (iframe) : les liens vers Twitch, Discord ou Google Agenda ne s'ouvrent que si tu cliques dessus.</p>
+
+    <h2>Durée de conservation</h2>
+    <p>Les informations d'un membre restent publiées tant qu'il fait partie de La Cabane. Quand il part ou demande à être retiré, le robot les enlève de la vitrine et sa page de partage est supprimée au passage suivant (moins d'une heure). Les récaps annuels déjà publiés (« La Cabane, ton année ») peuvent encore le citer.</p>
+
+    <h2>Tes droits</h2>
+    <p>Tu peux demander à consulter, corriger ou supprimer les informations qui te concernent, ou t'opposer à leur affichage. Pour retirer ta chaîne de la vitrine, il suffit de le demander : le staff la masque, sans condition.</p>
+    <p><b>Contact</b> : écris à un membre du staff (étiquette « Staff » sur la <a href="./">vitrine</a>) en message privé sur Twitch ou sur le Discord de La Cabane. Tu peux aussi adresser une réclamation à la <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener">CNIL</a>.</p>
+  </main>
+  <footer><a href="./">Vitrine</a><a href="confidentialite.html" aria-current="page">Confidentialité</a><a href="cgu.html">Conditions d'utilisation</a></footer>
+</div>
+</body>
+</html>

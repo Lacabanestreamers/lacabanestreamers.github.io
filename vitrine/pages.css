@@ -1,0 +1,28 @@
+/* Pages annexes de la vitrine (confidentialité, conditions d'utilisation, 404) : mêmes couleurs que vitrine/index.html */
+:root{
+  --bg:#100B24; --panel:#18123A; --line:#2E2663; --text:#ECE9FF; --muted:#A59FD3;
+  --cyan:#3DE3FF; --pink:#FF4FD8;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:500 17px/1.55 Rajdhani,"Segoe UI",system-ui,sans-serif;min-height:100vh;
+  background-image:radial-gradient(900px 500px at 12% -10%, rgba(255,79,216,.20), transparent 60%),radial-gradient(900px 600px at 100% 0%, rgba(61,227,255,.12), transparent 60%);background-attachment:fixed}
+a{color:var(--cyan)}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:6px}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px}
+header{padding:48px 0 18px}
+.back{display:inline-block;margin-bottom:18px;font-weight:700;text-decoration:none}
+h1{font:800 clamp(30px,6vw,48px)/1.1 Orbitron,sans-serif;margin:0;letter-spacing:.02em;overflow-wrap:anywhere;text-shadow:0 0 18px rgba(255,79,216,.65),0 0 44px rgba(255,79,216,.25)}
+.maj{color:var(--muted);margin:12px 0 0}
+main{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:8px 26px 22px}
+h2{font:700 19px/1.25 Orbitron,sans-serif;margin:26px 0 10px;color:var(--text)}
+h2::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--pink);box-shadow:0 0 10px var(--pink);margin-right:10px;vertical-align:middle}
+p,li{color:#D4CFF5}
+ul{padding-left:22px}
+li{margin:4px 0}
+b,strong{color:var(--text)}
+code{font:600 15px ui-monospace,Consolas,monospace;background:rgba(61,227,255,.08);border:1px solid var(--line);border-radius:5px;padding:0 5px;overflow-wrap:anywhere}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:10px;font-weight:700;font-size:17px;text-decoration:none;border:1px solid var(--pink);background:var(--pink);color:#1a0716}
+.btn:hover{filter:brightness(1.1)}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:22px 0 40px;color:var(--muted);font-size:15px;display:flex;gap:10px 18px;flex-wrap:wrap}
+@media (max-width:600px){ header{padding:32px 0 14px} main{padding:4px 16px 18px} }
