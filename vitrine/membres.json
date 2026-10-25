@@ -7,11 +7,11 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 28,
-  "heuresLive30": 1148,
-  "followsGagnes30": 227,
+  "heuresLive30": 1149,
+  "followsGagnes30": 228,
   "periode": {
    "du": "2026-09-25",
-   "au": "2026-10-24"
+   "au": "2026-10-25"
   }
  },
  "agenda": [],
@@ -345,9 +345,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 15,
     "jeu": "Forever Ago",
-    "titre": "Hey! je suis tombée du lit ! Tu viens? Attrapes un plaid, une boisson, au programme : Live cozy et papotage <3",
+    "titre": "Hey! je suis tombée du lit ! Tu viens? Attrapes un plaid, une boisson, au programme : Live cozy et papotage <3 (tw: deuil)",
     "depuis": "2026-10-25T06:50:05Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
    },
@@ -552,7 +552,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Call of Duty: Modern Warfare 4",
+    "titre": "( DropActivés) 🎮🔥 ÉVÉNEMENT MW4 : PRISE DE CONTRÔLE – LUFFISH GAMING ! 🔥🎮",
+    "depuis": "2026-10-25T07:42:47Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
+   },
    "premierStream": "2017-03-05",
    "succes": [],
    "jeux": [
@@ -690,7 +696,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Art",
+    "titre": "[FR] Bon on le termine ce colo !? 👻🎃 | REPO | !discord !commandes",
+    "depuis": "2026-10-25T08:00:16Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
+   },
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -927,5 +939,5 @@
   "relais": "https://cabane-inscriptions.tertereauolivier369.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-25T07:07:23.339Z"
+ "maj": "2026-10-25T08:07:17.817Z"
 }
