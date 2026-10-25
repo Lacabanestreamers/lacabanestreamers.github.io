@@ -418,7 +418,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-20",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Slime Rancher",
+    "titre": "Omg un stream pas du tout prevu sur slime rancher",
+    "depuis": "2026-10-25T15:17:28Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kialigator-440x248.jpg"
+   },
    "premierStream": "2025-08-30",
    "succes": [],
    "jeux": [
@@ -923,5 +929,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-25T15:07:18.597Z"
+ "maj": "2026-10-25T16:01:18.103Z"
 }
