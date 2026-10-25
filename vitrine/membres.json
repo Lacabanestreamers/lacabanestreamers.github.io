@@ -7,7 +7,7 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 28,
-  "heuresLive30": 1172,
+  "heuresLive30": 1175,
   "followsGagnes30": 227,
   "periode": {
    "du": "2026-09-25",
@@ -419,7 +419,7 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": null,
-   "premierStream": null,
+   "premierStream": "2025-08-30",
    "succes": [],
    "jeux": [
     "Slime Rancher",
@@ -546,13 +546,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 14,
-    "jeu": "Call of Duty: Modern Warfare 4",
-    "titre": "( DropActivés) 🎮🔥 ÉVÉNEMENT MW4 : PRISE DE CONTRÔLE – LUFFISH GAMING ! 🔥🎮",
-    "depuis": "2026-10-25T07:42:47Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2017-03-05",
    "succes": [],
    "jeux": [
@@ -603,8 +597,8 @@
     "Dead Rising 3",
     "The Elder Scrolls V: Skyrim - Special Edition",
     "FTL: Faster Than Light",
-    "Strange Horticulture",
-    "Far Far West"
+    "Far Far West",
+    "Strange Horticulture"
    ],
    "clip": {
     "url": "https://www.twitch.tv/mattmist2/clip/ObedientPlausibleWrenPJSugar-nQd-ub35a2uoa2JP",
@@ -724,7 +718,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "American Truck Simulator",
     "titre": "Bonjour, une tempete de neige et arrivée au USA !!!!",
     "depuis": "2026-10-25T10:00:17Z",
@@ -938,8 +932,8 @@
  "reussitesJours": 15,
  "rejoindre": null,
  "inscriptions": {
-  "relais": "https://cabane-inscriptions.tertereauolivier369.workers.dev",
+  "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-25T13:07:18.409Z"
+ "maj": "2026-10-25T13:44:46.228Z"
 }
