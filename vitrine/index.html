@@ -52,6 +52,7 @@ body{margin:0;background:var(--bg);color:var(--text);font:500 17px/1.45 Rajdhani
 a{color:var(--cyan)}
 :focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:6px}
 .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+#main{min-height:100vh} /* réserve la place du contenu chargé en JS : évite que le pied de page saute (CLS) */
 .hidden{display:none!important}
 
 /* En-tête */
@@ -249,7 +250,9 @@ let DATA = null, filtre = "tous", q = "", chargerFait = false, jeuFiltre = "";
 let dernierHtml = "", evVise = null, evRecaler = 0, touche = false;
 for(const t of ["wheel", "touchstart", "keydown", "mousedown"]) addEventListener(t, () => { touche = true; }, {passive:true});      // dernier contenu affiché ; événement déjà visé par ?ev= (on n'y défile qu'une fois)
 
-function av(m){ return okImg(m.avatar) ? `<img class="av" src="${esc(m.avatar)}" alt="" width="56" height="56" loading="lazy" decoding="async" referrerpolicy="no-referrer">` : `<span class="av" aria-hidden="true">${esc((m.nom || m.login || "?")[0])}</span>`; }
+// Avatars Twitch : la CDN fournit 70x70 / 150x150 / 300x300 ; en 56 px, inutile de charger le 300x300 (~190 Ko)
+function avTaille(u, t){ return u.replace(/\d+x\d+(\.\w+)$/, t + "x" + t + "$1"); }
+function av(m){ return okImg(m.avatar) ? `<img class="av" src="${esc(avTaille(m.avatar, 70))}" srcset="${esc(avTaille(m.avatar, 70))} 1x, ${esc(avTaille(m.avatar, 150))} 2x" alt="" width="56" height="56" loading="lazy" decoding="async" referrerpolicy="no-referrer">` : `<span class="av" aria-hidden="true">${esc((m.nom || m.login || "?")[0])}</span>`; }
 function tags(m){
   return [m.live && `<span class="tag live">En live</span>`, m.type === "partner" && `<span class="tag par">Partenaire</span>`,
     m.type === "affiliate" && `<span class="tag aff">Affilié</span>`, m.staff && `<span class="tag staff">Staff</span>`].filter(Boolean).join("");
