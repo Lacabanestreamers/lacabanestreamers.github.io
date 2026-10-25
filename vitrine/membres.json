@@ -7,7 +7,7 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 28,
-  "heuresLive30": 1157,
+  "heuresLive30": 1164,
   "followsGagnes30": 228,
   "periode": {
    "du": "2026-09-25",
@@ -344,20 +344,14 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 18,
-    "jeu": "Forever Ago",
-    "titre": "Hey! je suis tombée du lit ! Tu viens? Attrapes un plaid, une boisson, au programme : Live cozy et papotage <3 (tw: deuil)",
-    "depuis": "2026-10-25T06:50:05Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
     "DREDGE",
     "R.E.P.O.",
-    "Writing & Reading",
     "Forever Ago",
+    "Writing & Reading",
     "Abiotic Factor"
    ],
    "clip": {
@@ -494,7 +488,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 12,
     "jeu": "Makers & Crafting",
     "titre": "🐰Maquette allée de citrouille de action #4",
     "depuis": "2026-10-25T08:19:13Z",
@@ -603,7 +597,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "The Elder Scrolls V: Skyrim - Special Edition",
     "titre": "Skyrim avec Arcabsent",
     "depuis": "2026-10-25T09:00:45Z",
@@ -709,7 +703,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "Art",
     "titre": "[FR] Bon on le termine ce colo !? 👻🎃 | REPO | !discord !commandes",
     "depuis": "2026-10-25T08:00:16Z",
@@ -741,7 +735,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 1,
+    "viewers": 4,
     "jeu": "American Truck Simulator",
     "titre": "Bonjour, une tempete de neige et arrivée au USA !!!!",
     "depuis": "2026-10-25T10:00:17Z",
@@ -817,17 +811,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 3,
-    "jeu": "The Sims 4",
-    "titre": "On va s'amuser un peu sur les sims ! En voc avec @nyxenfox",
-    "depuis": "2026-10-25T10:00:33Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_paygadream-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-05-02",
    "succes": [],
    "jeux": [
-    "Disney Dreamlight Valley"
+    "Disney Dreamlight Valley",
+    "The Sims 4"
    ],
    "clip": null
   },
@@ -963,5 +952,5 @@
   "relais": "https://cabane-inscriptions.tertereauolivier369.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-25T10:07:24.865Z"
+ "maj": "2026-10-25T11:07:24.622Z"
 }
