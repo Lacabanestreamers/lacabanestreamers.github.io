@@ -7,7 +7,7 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 28,
-  "heuresLive30": 1179,
+  "heuresLive30": 1183,
   "followsGagnes30": 227,
   "periode": {
    "du": "2026-09-25",
@@ -425,7 +425,7 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": {
-    "viewers": 15,
+    "viewers": 10,
     "jeu": "Slime Rancher",
     "titre": "Omg un stream pas du tout prevu sur slime rancher",
     "depuis": "2026-10-25T15:17:28Z",
@@ -526,7 +526,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 14,
     "jeu": "Overwatch",
     "titre": "🔞[DROP] Live sauvage  chill ou pas.....  Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-25T16:44:41Z",
@@ -565,7 +565,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 10,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "( DropActivés) MW4 soirée multi et DMZ",
     "depuis": "2026-10-25T16:17:54Z",
@@ -947,5 +947,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-25T17:07:19.361Z"
+ "maj": "2026-10-25T18:07:24.589Z"
 }
