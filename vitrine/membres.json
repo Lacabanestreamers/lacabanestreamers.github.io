@@ -7,8 +7,8 @@
   "membres": 42,
   "affilies": 38,
   "nouveaux30": 28,
-  "heuresLive30": 1215,
-  "followsGagnes30": 251,
+  "heuresLive30": 1216,
+  "followsGagnes30": 259,
   "periode": {
    "du": "2026-09-26",
    "au": "2026-10-26"
@@ -239,7 +239,13 @@
    "depuis": "2026-10-17",
    "live": null,
    "premierStream": "2026-03-09",
-   "succes": [],
+   "succes": [
+    {
+     "type": "palier",
+     "palier": 100,
+     "date": "2026-10-26"
+    }
+   ],
    "jeux": [
     "Lies of P",
     "Warframe",
@@ -345,7 +351,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 15,
+    "jeu": "",
+    "titre": "On teste des démos avec @sakkiel",
+    "depuis": "2026-10-26T11:09:57Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -954,5 +966,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T11:07:23.286Z"
+ "maj": "2026-10-26T12:07:18.528Z"
 }
