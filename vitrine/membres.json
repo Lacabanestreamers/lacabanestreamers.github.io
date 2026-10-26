@@ -4,10 +4,10 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 41,
-  "affilies": 37,
-  "nouveaux30": 27,
-  "heuresLive30": 1206,
+  "membres": 42,
+  "affilies": 38,
+  "nouveaux30": 28,
+  "heuresLive30": 1208,
   "followsGagnes30": 251,
   "periode": {
    "du": "2026-09-26",
@@ -244,7 +244,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Lies of P",
     "titre": "[Lies of P] On commence la semaine en douleur !",
     "depuis": "2026-10-26T07:58:02Z",
@@ -575,6 +575,20 @@
     "date": "2026-10-22",
     "duree": 30
    }
+  },
+  {
+   "login": "lylu_live",
+   "nom": "lylu_live",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/76f15dca-0cbc-47f9-b66d-3c99827fdb46-profile_image-300x300.png",
+   "bio": "💜 JEUX D’HORREUR ICI, mais je joue quand même à d’autres trucs hein, viens on rigole bien 👀",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-26",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
+   "clip": null
   },
   {
    "login": "mandouee",
@@ -946,5 +960,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T08:07:22.661Z"
+ "maj": "2026-10-26T08:36:47.637Z"
 }
