@@ -7,7 +7,7 @@
   "membres": 43,
   "affilies": 39,
   "nouveaux30": 26,
-  "heuresLive30": 1253,
+  "heuresLive30": 1257,
   "followsGagnes30": 293,
   "periode": {
    "du": "2026-09-27",
@@ -502,7 +502,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 7,
     "jeu": "VALORANT",
     "titre": "😂🎯 OBJECTIF SILVER 🥈 | On vise le rank up🔥 | VALORANT RANKED",
     "depuis": "2026-10-26T19:25:47Z",
@@ -583,7 +583,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 10,
+    "viewers": 5,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "🔥 SOLDAT, REJOINS LE LIVE ! 🔥 💀 DROP ACTIVÉ — ON EST LÀ POUR DOMINER !",
     "depuis": "2026-10-26T20:20:11Z",
@@ -612,13 +612,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 19,
-    "jeu": "Phasmophobia",
-    "titre": "Je me fait lylued ce soir ?PHASMOPHOBIA - !discord",
-    "depuis": "2026-10-26T19:31:06Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
@@ -997,5 +991,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T22:07:21.126Z"
+ "maj": "2026-10-26T22:43:04.975Z"
 }
