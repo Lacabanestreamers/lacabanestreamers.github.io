@@ -261,13 +261,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 3,
-    "jeu": "Sword Art Online: Hollow Realization",
-    "titre": "⚔️SAO HR ~ La fin de l'aventure ? - !réseaux",
-    "depuis": "2026-10-26T18:34:45Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -300,7 +294,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "✨ Soirée cocon sur DDV ✨| !lurk !clip !commandes",
+    "depuis": "2026-10-26T19:48:10Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
+   },
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
@@ -357,13 +357,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 3,
-    "jeu": "Writing & Reading",
-    "titre": "Live lecture Frankenstein - Episode 6 ! Rejoignez nous pour commencer la semaine au calme avec un peu de lecture <3",
-    "depuis": "2026-10-26T18:56:56Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -404,7 +398,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Special Events",
+    "titre": "FR_VT -  Choupiathon lancement !!!",
+    "depuis": "2026-10-26T20:03:48Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -508,10 +508,10 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 2,
+    "viewers": 4,
     "jeu": "VALORANT",
     "titre": "😂🎯 OBJECTIF SILVER 🥈 | On vise le rank up🔥 | VALORANT RANKED",
-    "depuis": "2026-10-26T18:35:42Z",
+    "depuis": "2026-10-26T19:25:47Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
    },
    "premierStream": "2027-08-31",
@@ -612,7 +612,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Phasmophobia",
+    "titre": "Je me fait lylued ce soir ?PHASMOPHOBIA - !discord",
+    "depuis": "2026-10-26T19:31:06Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
+   },
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [],
@@ -748,7 +754,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 8,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] BON LUNDI ! Dreamsnap, quête Oogie Boogie & Farm 🎃👻 | Disney Dreamlight Valley | !discord !commandes",
     "depuis": "2026-10-26T17:00:06Z",
@@ -881,7 +887,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Just Chatting",
+    "titre": "La surprise du piege photo maison !discord",
+    "depuis": "2026-10-26T19:50:57Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_r3skyo-440x248.jpg"
+   },
    "premierStream": "2023-03-23",
    "succes": [],
    "jeux": [
@@ -994,5 +1006,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T19:10:17.563Z"
+ "maj": "2026-10-26T20:07:22.146Z"
 }
