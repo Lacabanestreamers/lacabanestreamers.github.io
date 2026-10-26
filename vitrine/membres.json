@@ -393,7 +393,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 8,
     "jeu": "Special Events",
     "titre": "FR_VT -  Choupiathon lancement !!!",
     "depuis": "2026-10-26T20:03:48Z",
@@ -496,13 +496,13 @@
   {
    "login": "lagonbleu_976",
    "nom": "lagonbleu_976",
-   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/6f426971-b67a-4284-ad3f-1f3c7e6b1568-profile_image-300x300.png",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/3cc5c9da-cc8c-4507-a418-bb0e61eb7a20-profile_image-300x300.png",
    "bio": "L’esprit des îles et des bonnes vibes ! 🌴🌊Ici, pas de gameplay de pro, juste du pur plaisir et de la détente. Je viens des îles pour partager mon univers avec vous dans une ambiance 100% chill. Pose-toi, profite du lagon et viens t'amuser avec nous ! 🐚🎮",
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 7,
+    "viewers": 5,
     "jeu": "VALORANT",
     "titre": "😂🎯 OBJECTIF SILVER 🥈 | On vise le rank up🔥 | VALORANT RANKED",
     "depuis": "2026-10-26T19:25:47Z",
@@ -582,13 +582,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 5,
-    "jeu": "Call of Duty: Modern Warfare 4",
-    "titre": "🔥 SOLDAT, REJOINS LE LIVE ! 🔥 💀 DROP ACTIVÉ — ON EST LÀ POUR DOMINER !",
-    "depuis": "2026-10-26T20:20:11Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2017-03-05",
    "succes": [],
    "jeux": [
@@ -991,5 +985,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T22:43:04.975Z"
+ "maj": "2026-10-26T23:07:19.094Z"
 }
