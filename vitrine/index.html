@@ -35,11 +35,9 @@
 <meta name="theme-color" content="#100B24">
 <link rel="icon" href="../icon-192.png">
 <link rel="apple-touch-icon" href="../icon-192.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://static-cdn.jtvnw.net">
 <link rel="dns-prefetch" href="https://decapi.me">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../fonts.css">
 <style>
 :root{
   --bg:#100B24; --panel:#18123A; --panel2:#201951; --line:#2E2663; --text:#ECE9FF; --muted:#A59FD3;
@@ -123,6 +121,8 @@ h2 .dot{width:11px;height:11px;border-radius:50%;background:var(--ko);box-shadow
 select.chip{appearance:none;padding-right:28px;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 15px) 55%,calc(100% - 10px) 55%;background-size:5px 5px;background-repeat:no-repeat}
 .rejoindre{background:linear-gradient(135deg,rgba(255,79,216,.12),rgba(61,227,255,.08));border:1px solid var(--line);border-radius:16px;padding:22px 24px}
 .rejoindre p{white-space:pre-line;font-size:18px;margin:0 0 14px;max-width:70ch}
+.rejoindre p.rgpd{white-space:normal;font-size:15px;color:var(--muted, inherit);opacity:.9}
+.rejoindre p.rgpd a{color:inherit;text-decoration:underline}
 .wins{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:10px}
 .win{display:flex;gap:12px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px;text-decoration:none;color:inherit}
 .win:hover{border-color:var(--pink)}
@@ -231,7 +231,7 @@ footer{border-top:1px solid var(--line);margin-top:50px;padding:22px 0 40px;colo
   <main id="main"><p class="empty">Chargement…</p></main>
 
   <div id="toast" role="status" aria-live="polite" hidden></div>
-  <footer><span id="maj"></span><span>Données publiques Twitch · <a href="https://www.twitch.tv" target="_blank" rel="noopener">twitch.tv</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="cgu.html">Conditions d'utilisation</a></span></footer>
+  <footer><span id="maj"></span><span>Données publiques Twitch · <a href="https://www.twitch.tv" target="_blank" rel="noopener">twitch.tv</a> · <a href="mentions-legales.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="cgu.html">Conditions d'utilisation</a></span></footer>
 </div>
 
 <script>
@@ -384,6 +384,7 @@ function _render(){
       </a>`).join("")}</div>` : `<p class="empty">Aucun streamer ne correspond.</p>`}
     </section>
     ${d.rejoindre?.texte ? `<section aria-labelledby="h-rej"><div class="rejoindre"><h2 id="h-rej" style="margin-top:0">${esc(d.rejoindre.titre || "Rejoindre La Cabane")}</h2><p>${esc(d.rejoindre.texte)}</p>
+      <p class="rgpd">En rejoignant La Cabane, ta chaîne apparaît par défaut sur cette vitrine : pseudo, image de profil, bio et statut Twitch, lives en cours, clip de la semaine, date d'arrivée et réussites. Tu peux demander à tout moment à ne pas y figurer (au staff ou à aulit42369@gmail.com). Détails dans la page <a href="confidentialite.html">Confidentialité</a>.</p>
       ${/^https:\/\/(discord\.gg|discord\.com\/invite)\//i.test(d.lienDiscord || "") ? `<a class="btn" href="${esc(d.lienDiscord)}" target="_blank" rel="noopener">Rejoindre le Discord</a>` : ""}</div></section>` : ""}`;
   // rafraîchissement sans changement (toutes les 2 à 5 min) : rien n'est reconstruit (pas de clignotement des images)
   const change = html !== dernierHtml;
