@@ -7,7 +7,7 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 27,
-  "heuresLive30": 1200,
+  "heuresLive30": 1201,
   "followsGagnes30": 252,
   "periode": {
    "du": "2026-09-26",
@@ -25,10 +25,10 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 4,
-    "jeu": "Rocket League",
-    "titre": "Rocket League/PS5",
-    "depuis": "2026-10-26T00:30:53Z",
+    "viewers": 8,
+    "jeu": "A Plague Tale: Innocence",
+    "titre": "Plague Tale innocence/PS5",
+    "depuis": "2026-10-26T02:59:03Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
    },
    "premierStream": null,
@@ -939,5 +939,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T02:07:49.678Z"
+ "maj": "2026-10-26T03:07:20.919Z"
 }
