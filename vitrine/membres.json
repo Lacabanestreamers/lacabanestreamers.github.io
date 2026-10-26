@@ -319,13 +319,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": {
-    "viewers": 2,
-    "jeu": "Hogwarts Legacy",
-    "titre": "[FR] [HL] 🪄 Eleanor Silverwood : L'héritière des secrets de Poudlard 🏰✨ | Hogwarts Legacy",
-    "depuis": "2026-10-26T12:16:46Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-10",
    "succes": [],
    "jeux": [
@@ -358,9 +352,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
-    "jeu": "",
-    "titre": "On teste des démos avec @sakkiel",
+    "viewers": 5,
+    "jeu": "Shift at Midnight",
+    "titre": "On soigne notre animal en survivant aux imposteurs avec @sakkiel",
     "depuis": "2026-10-26T11:09:57Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
    },
@@ -508,7 +502,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": null,
-   "premierStream": null,
+   "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [],
    "clip": null
@@ -547,7 +541,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "FINAL FANTASY XVI",
+    "titre": "🔞[DROP] Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-10-26T13:28:41Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -634,7 +634,7 @@
    "depuis": "2026-09-20",
    "live": {
     "viewers": 2,
-    "jeu": "Archipelagos",
+    "jeu": "PowerWash Simulator",
     "titre": "c'est pas vrai mais dans le doute c'est a cause d'Arca",
     "depuis": "2026-10-26T09:54:50Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
@@ -771,7 +771,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "Bonjour et bon début de semaine, Ont continue l'aventure dans le valon des contes !!!!",
+    "depuis": "2026-10-26T13:13:54Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -986,5 +992,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T13:07:20.653Z"
+ "maj": "2026-10-26T14:07:25.694Z"
 }
