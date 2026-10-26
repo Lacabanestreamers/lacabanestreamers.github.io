@@ -7,7 +7,7 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 27,
-  "heuresLive30": 1198,
+  "heuresLive30": 1199,
   "followsGagnes30": 252,
   "periode": {
    "du": "2026-09-26",
@@ -429,8 +429,8 @@
    "succes": [],
    "jeux": [
     "Slime Rancher",
-    "Animal Crossing: New Horizons",
-    "Stardew Valley"
+    "Stardew Valley",
+    "Animal Crossing: New Horizons"
    ],
    "clip": null
   },
@@ -939,5 +939,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T00:07:19.644Z"
+ "maj": "2026-10-26T00:07:52.158Z"
 }
