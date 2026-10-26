@@ -7,7 +7,7 @@
   "membres": 43,
   "affilies": 39,
   "nouveaux30": 29,
-  "heuresLive30": 1258,
+  "heuresLive30": 1264,
   "followsGagnes30": 268,
   "periode": {
    "du": "2026-09-26",
@@ -295,7 +295,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 18,
     "jeu": "Disney Dreamlight Valley",
     "titre": "✨ Soirée cocon sur DDV ✨| !lurk !clip !commandes",
     "depuis": "2026-10-26T19:48:10Z",
@@ -399,7 +399,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 9,
+    "viewers": 10,
     "jeu": "Special Events",
     "titre": "FR_VT -  Choupiathon lancement !!!",
     "depuis": "2026-10-26T20:03:48Z",
@@ -415,9 +415,9 @@
    ],
    "jeux": [
     "R.E.P.O.",
+    "Special Events",
     "Minecraft",
     "The Headliners",
-    "Special Events",
     "Valheim"
    ],
    "clip": {
@@ -508,7 +508,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 7,
     "jeu": "VALORANT",
     "titre": "😂🎯 OBJECTIF SILVER 🥈 | On vise le rank up🔥 | VALORANT RANKED",
     "depuis": "2026-10-26T19:25:47Z",
@@ -588,7 +588,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Call of Duty: Modern Warfare 4",
+    "titre": "🔥 SOLDAT, REJOINS LE LIVE ! 🔥 💀 DROP ACTIVÉ — ON EST LÀ POUR DOMINER !",
+    "depuis": "2026-10-26T20:20:11Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
+   },
    "premierStream": "2017-03-05",
    "succes": [],
    "jeux": [
@@ -613,7 +619,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 5,
+    "viewers": 10,
     "jeu": "Phasmophobia",
     "titre": "Je me fait lylued ce soir ?PHASMOPHOBIA - !discord",
     "depuis": "2026-10-26T19:31:06Z",
@@ -621,7 +627,9 @@
    },
    "premierStream": "2025-10-29",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Phasmophobia"
+   ],
    "clip": null
   },
   {
@@ -753,18 +761,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 8,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "[FR] BON LUNDI ! Dreamsnap, quête Oogie Boogie & Farm 🎃👻 | Disney Dreamlight Valley | !discord !commandes",
-    "depuis": "2026-10-26T17:00:06Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
-    "Moonlight Peaks",
     "Disney Dreamlight Valley",
+    "Moonlight Peaks",
     "Art",
     "R.E.P.O."
    ],
@@ -888,7 +890,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 5,
     "jeu": "Just Chatting",
     "titre": "La surprise du piege photo maison !discord",
     "depuis": "2026-10-26T19:50:57Z",
@@ -897,7 +899,8 @@
    "premierStream": "2023-03-23",
    "succes": [],
    "jeux": [
-    "The Witcher 3: Wild Hunt Remastered"
+    "The Witcher 3: Wild Hunt Remastered",
+    "Just Chatting"
    ],
    "clip": {
     "url": "https://www.twitch.tv/r3skyo/clip/VenomousExuberantWrenRedCoat-uv_C0kLVCAaOwlL2",
@@ -1006,5 +1009,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T20:07:22.146Z"
+ "maj": "2026-10-26T21:07:22.463Z"
 }
