@@ -7,7 +7,7 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 27,
-  "heuresLive30": 1199,
+  "heuresLive30": 1200,
   "followsGagnes30": 252,
   "periode": {
    "du": "2026-09-26",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "Rocket League",
     "titre": "Rocket League/PS5",
     "depuis": "2026-10-26T00:30:53Z",
@@ -226,12 +226,12 @@
     "Aniimo"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/cristal578/clip/CoweringSaltyCheesecakeNotLikeThis-MWz1vAWd3Y14Q_Kc",
-    "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
-    "vues": 10,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/11fcc87c-8c51-4102-bf42-58eb05588794/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-18",
-    "duree": 30
+    "url": "https://www.twitch.tv/cristal578/clip/MoralAgitatedShallotCopyThis-5WnJ6cxApGa1WnEn",
+    "titre": "La mal traitance",
+    "vues": 2,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/dd5077fb-0228-4c6e-91fa-72892aae612a/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-23",
+    "duree": 17
    }
   },
   {
@@ -279,7 +279,7 @@
    "clip": {
     "url": "https://www.twitch.tv/elegaming__/clip/ImpossibleSnappyTurtleAMPEnergy-tFttMLSZbbI7LXqJ",
     "titre": "J'apprends à anarquer les gens apparemment 👀",
-    "vues": 2,
+    "vues": 5,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/4b58e018-6083-4d97-ac00-091ffcf8c2b8/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-21",
     "duree": 60
@@ -361,12 +361,12 @@
     "Abiotic Factor"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/galyssiane/clip/CuriousColdTigerDoggo-k5kuNHBgb29sXpxn",
-    "titre": "WzBot CLIP | On fête tous ensemble l'anniversaire de live de @laelya_! Venez donner de  (by galyssia",
-    "vues": 2,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/57337cc1-462d-49fd-9b2c-07dc4900f1b3/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-23",
-    "duree": 60
+    "url": "https://www.twitch.tv/galyssiane/clip/FamousSaltyPidgeonMingLee-Y2HwlZifQbpgg0Di",
+    "titre": "WzBot CLIP | Hey! je suis tombée du lit ! Tu viens? Attrapes un plaid, une boisson, au  (by galyssia",
+    "vues": 4,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/89c4fed3-59b7-4386-b01b-ad74fc0a9b12/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-25",
+    "duree": 14
    }
   },
   {
@@ -563,7 +563,7 @@
    "clip": {
     "url": "https://www.twitch.tv/luffishgaming/clip/MoistNimbleToadStrawBeary-F6YYFl81OTHaKI08",
     "titre": "🔴 MW4 casser on part sur RL et maintenant sa re marche lol ou pas",
-    "vues": 5,
+    "vues": 6,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6022132b-fcc1-4e75-a927-99feb900714f/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-22",
     "duree": 30
@@ -923,7 +923,7 @@
    "clip": {
     "url": "https://www.twitch.tv/zeylta/clip/FurryBitterScallionPicoMause-GjaC5l0qrizyDZmc",
     "titre": "On créé notre boulangerie ! | !tiktok | !Discord | !clip |",
-    "vues": 4,
+    "vues": 5,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/432f6c76-38c6-409b-800f-0c076fb3c051/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-23",
     "duree": 30
@@ -939,5 +939,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T01:07:20.030Z"
+ "maj": "2026-10-26T02:07:49.678Z"
 }
