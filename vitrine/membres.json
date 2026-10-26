@@ -4,10 +4,10 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 42,
-  "affilies": 38,
-  "nouveaux30": 28,
-  "heuresLive30": 1218,
+  "membres": 43,
+  "affilies": 39,
+  "nouveaux30": 29,
+  "heuresLive30": 1219,
   "followsGagnes30": 259,
   "periode": {
    "du": "2026-09-26",
@@ -320,7 +320,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Hogwarts Legacy",
     "titre": "[FR] [HL] 🪄 Eleanor Silverwood : L'héritière des secrets de Poudlard 🏰✨ | Hogwarts Legacy",
     "depuis": "2026-10-26T12:16:46Z",
@@ -330,8 +330,8 @@
    "succes": [],
    "jeux": [
     "Disney Dreamlight Valley",
-    "Red Dead Redemption II",
-    "Hogwarts Legacy"
+    "Hogwarts Legacy",
+    "Red Dead Redemption II"
    ],
    "clip": null
   },
@@ -358,7 +358,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 12,
     "jeu": "",
     "titre": "On teste des démos avec @sakkiel",
     "depuis": "2026-10-26T11:09:57Z",
@@ -500,6 +500,20 @@
    }
   },
   {
+   "login": "lagonbleu_976",
+   "nom": "lagonbleu_976",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/6f426971-b67a-4284-ad3f-1f3c7e6b1568-profile_image-300x300.png",
+   "bio": "L’esprit des îles et des bonnes vibes ! 🌴🌊Ici, pas de gameplay de pro, juste du pur plaisir et de la détente. Je viens des îles pour partager mon univers avec vous dans une ambiance 100% chill. Pose-toi, profite du lagon et viens t'amuser avec nous ! 🐚🎮",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-26",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
+   "clip": null
+  },
+  {
    "login": "liiapin",
    "nom": "Liiapin",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/2997b710-116d-46f1-849b-2ca55cac5b7a-profile_image-300x300.png",
@@ -634,8 +648,8 @@
     }
    ],
    "jeux": [
-    "The Elder Scrolls V: Skyrim - Special Edition",
     "Dead Rising 3",
+    "The Elder Scrolls V: Skyrim - Special Edition",
     "FTL: Faster Than Light",
     "Far Far West",
     "Strange Horticulture"
@@ -972,5 +986,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T12:47:23.636Z"
+ "maj": "2026-10-26T13:03:44.992Z"
 }
