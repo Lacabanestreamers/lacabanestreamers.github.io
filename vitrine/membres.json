@@ -7,7 +7,7 @@
   "membres": 43,
   "affilies": 39,
   "nouveaux30": 29,
-  "heuresLive30": 1232,
+  "heuresLive30": 1240,
   "followsGagnes30": 259,
   "periode": {
    "du": "2026-09-26",
@@ -211,7 +211,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 3,
+    "viewers": 5,
     "jeu": "Dead by Daylight",
     "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
     "depuis": "2026-10-26T15:59:01Z",
@@ -326,7 +326,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 1,
+    "viewers": 4,
     "jeu": "Hogwarts Legacy",
     "titre": "[FR] [HL] 🪄 Eleanor Silverwood : L'héritière des secrets de Poudlard 🏰✨ | Hogwarts Legacy",
     "depuis": "2026-10-26T15:07:38Z",
@@ -364,7 +364,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 6,
     "jeu": "Shift at Midnight",
     "titre": "On soigne notre animal en survivant aux imposteurs avec @sakkiel",
     "depuis": "2026-10-26T11:09:57Z",
@@ -377,7 +377,7 @@
     "R.E.P.O.",
     "Forever Ago",
     "Writing & Reading",
-    "Abiotic Factor"
+    "Shift at Midnight"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/FamousSaltyPidgeonMingLee-Y2HwlZifQbpgg0Di",
@@ -514,7 +514,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 5,
+    "viewers": 3,
     "jeu": "VALORANT",
     "titre": "😂🎯 OBJECTIF SILVER 🥈 | On vise le rank up🔥 | VALORANT RANKED",
     "depuis": "2026-10-26T14:27:25Z",
@@ -561,13 +561,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 9,
-    "jeu": "R.E.P.O.",
-    "titre": "🔞[DROP] Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-10-26T13:28:41Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -672,7 +666,7 @@
     "The Elder Scrolls V: Skyrim - Special Edition",
     "FTL: Faster Than Light",
     "Far Far West",
-    "Archipelagos"
+    "PowerWash Simulator"
    ],
    "clip": {
     "url": "https://www.twitch.tv/mattmist2/clip/ObedientPlausibleWrenPJSugar-nQd-ub35a2uoa2JP",
@@ -765,7 +759,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "[FR] BON LUNDI ! Dreamsnap, quête Oogie Boogie & Farm 🎃👻 | Disney Dreamlight Valley | !discord !commandes",
+    "depuis": "2026-10-26T17:00:06Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
+   },
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -818,7 +818,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "Inside the Backrooms",
     "titre": "[FR] Retour dans les backrooms avec @Calo_VT [!bs !steam !insta !discord ]",
     "depuis": "2026-10-26T14:53:10Z",
@@ -1018,5 +1018,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T16:07:19.696Z"
+ "maj": "2026-10-26T17:07:22.065Z"
 }
