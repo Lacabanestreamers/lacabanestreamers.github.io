@@ -7,7 +7,7 @@
   "membres": 42,
   "affilies": 38,
   "nouveaux30": 28,
-  "heuresLive30": 1216,
+  "heuresLive30": 1218,
   "followsGagnes30": 259,
   "periode": {
    "du": "2026-09-26",
@@ -319,7 +319,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Hogwarts Legacy",
+    "titre": "[FR] [HL] 🪄 Eleanor Silverwood : L'héritière des secrets de Poudlard 🏰✨ | Hogwarts Legacy",
+    "depuis": "2026-10-26T12:16:46Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
+   },
    "premierStream": "2024-08-10",
    "succes": [],
    "jeux": [
@@ -352,7 +358,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 15,
+    "viewers": 14,
     "jeu": "",
     "titre": "On teste des démos avec @sakkiel",
     "depuis": "2026-10-26T11:09:57Z",
@@ -613,8 +619,8 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
-    "jeu": "The Elder Scrolls V: Skyrim - Special Edition",
+    "viewers": 4,
+    "jeu": "Archipelagos",
     "titre": "c'est pas vrai mais dans le doute c'est a cause d'Arca",
     "depuis": "2026-10-26T09:54:50Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
@@ -628,8 +634,8 @@
     }
    ],
    "jeux": [
-    "Dead Rising 3",
     "The Elder Scrolls V: Skyrim - Special Edition",
+    "Dead Rising 3",
     "FTL: Faster Than Light",
     "Far Far West",
     "Strange Horticulture"
@@ -966,5 +972,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T12:07:18.528Z"
+ "maj": "2026-10-26T12:47:23.636Z"
 }
