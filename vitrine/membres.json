@@ -7,7 +7,7 @@
   "membres": 43,
   "affilies": 39,
   "nouveaux30": 29,
-  "heuresLive30": 1219,
+  "heuresLive30": 1222,
   "followsGagnes30": 259,
   "periode": {
    "du": "2026-09-26",
@@ -320,7 +320,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "Hogwarts Legacy",
     "titre": "[FR] [HL] 🪄 Eleanor Silverwood : L'héritière des secrets de Poudlard 🏰✨ | Hogwarts Legacy",
     "depuis": "2026-10-26T12:16:46Z",
@@ -358,7 +358,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 11,
     "jeu": "",
     "titre": "On teste des démos avec @sakkiel",
     "depuis": "2026-10-26T11:09:57Z",
@@ -633,7 +633,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 2,
     "jeu": "Archipelagos",
     "titre": "c'est pas vrai mais dans le doute c'est a cause d'Arca",
     "depuis": "2026-10-26T09:54:50Z",
@@ -652,7 +652,7 @@
     "The Elder Scrolls V: Skyrim - Special Edition",
     "FTL: Faster Than Light",
     "Far Far West",
-    "Strange Horticulture"
+    "Archipelagos"
    ],
    "clip": {
     "url": "https://www.twitch.tv/mattmist2/clip/ObedientPlausibleWrenPJSugar-nQd-ub35a2uoa2JP",
@@ -986,5 +986,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T13:03:44.992Z"
+ "maj": "2026-10-26T13:07:20.653Z"
 }
