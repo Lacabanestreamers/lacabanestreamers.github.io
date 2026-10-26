@@ -7,7 +7,7 @@
   "membres": 43,
   "affilies": 39,
   "nouveaux30": 29,
-  "heuresLive30": 1254,
+  "heuresLive30": 1258,
   "followsGagnes30": 268,
   "periode": {
    "du": "2026-09-26",
@@ -280,8 +280,8 @@
     "Minecraft",
     "Splatoon 3",
     "Sprout Valley",
-    "Tomodachi Life: Living the Dream",
-    "Sword Art Online: Hollow Realization"
+    "Sword Art Online: Hollow Realization",
+    "Tomodachi Life: Living the Dream"
    ],
    "clip": {
     "url": "https://www.twitch.tv/elegaming__/clip/ImpossibleSnappyTurtleAMPEnergy-tFttMLSZbbI7LXqJ",
@@ -358,7 +358,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 3,
     "jeu": "Writing & Reading",
     "titre": "Live lecture Frankenstein - Episode 6 ! Rejoignez nous pour commencer la semaine au calme avec un peu de lecture <3",
     "depuis": "2026-10-26T18:56:56Z",
@@ -370,8 +370,8 @@
     "DREDGE",
     "Shift at Midnight",
     "R.E.P.O.",
-    "Forever Ago",
-    "Writing & Reading"
+    "Writing & Reading",
+    "Forever Ago"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/FamousSaltyPidgeonMingLee-Y2HwlZifQbpgg0Di",
@@ -508,7 +508,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "VALORANT",
     "titre": "😂🎯 OBJECTIF SILVER 🥈 | On vise le rank up🔥 | VALORANT RANKED",
     "depuis": "2026-10-26T18:35:42Z",
@@ -994,5 +994,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T19:07:20.485Z"
+ "maj": "2026-10-26T19:10:17.563Z"
 }
