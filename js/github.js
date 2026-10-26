@@ -169,10 +169,24 @@ window.addEventListener("beforeunload", e => { if(S.pending.length || S.saving){
 
 // Filet de sécurité : GitHub saute parfois des passages programmés du robot.
 // Si le robot n'est pas passé depuis plus de 2 h, la page le relance (au plus une fois par heure et par navigateur).
-function relancerRobotSiBesoin(){
+// Date de la vitrine publique (écrite par le robot à chaque passage) : sert à reconnaître une page qui lit
+// un autre fichier que celui du robot (le robot tourne, mais la page croit qu'il est arrêté).
+let vitrineMajP = null;
+function vitrineMaj(){
+  if(!vitrineMajP) vitrineMajP = fetch(`vitrine/membres.json?_=${Date.now()}`, {cache:"no-store"})
+    .then(r => r.ok ? r.json() : null).then(j => { S.vitrineMaj = j?.maj || null; return S.vitrineMaj; })
+    .catch(() => { S.vitrineMaj = null; return null; });
+  return vitrineMajP;
+}
+// Vrai si la vitrine a été publiée plus de 3 h après le dernier passage que montre ce fichier.
+const mauvaisFichier = dernier => !!(S.vitrineMaj && (!dernier || new Date(S.vitrineMaj) - new Date(dernier) > 3 * 3600e3));
+async function relancerRobotSiBesoin(){
   if(S.mode !== "github" || !S.data) return;
   const dernier = S.data.robot?.passage || S.data.robot?.derniereExecution;
   if(dernier && Date.now() - new Date(dernier) < 2 * 3600e3) return;
+  await vitrineMaj();
+  if(mauvaisFichier(dernier)){ render(); return; }        // le robot tourne : c'est la page qui lit un autre fichier
+  if(S.mode !== "github" || !S.data) return;
   const k = "cabane.relanceRobot", avant = Number(store.get(k, 0));
   if(Date.now() - avant < 3600e3) return;
   store.set(k, Date.now());

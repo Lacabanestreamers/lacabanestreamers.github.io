@@ -176,6 +176,12 @@ function alerteRobot(d){
   const p = d.robot?.passage || d.robot?.derniereExecution, h = p ? Math.floor((Date.now() - new Date(p)) / 36e5) : null;
   const ko = (d.robot?.sante?.checks || []).filter(c => c.ok === false);
   const arrete = p ? h >= 3 : true;
+  if(arrete && S.vitrineMaj === undefined) vitrineMaj().then(() => render());
+  if(arrete && mauvaisFichier(p)) return `<section class="alerte-robot" role="status"><span class="tx">
+    <b>⚠ Ta page ne lit pas le bon fichier</b>
+    <span class="meta">Le robot tourne bien (vitrine publiée le ${fmtStamp(S.vitrineMaj)}), mais le fichier que lit ta page s'est arrêté le ${p ? fmtStamp(p) : "?"}. Tes modifications ne sont vues ni par le staff ni par le robot.</span>
+    <span class="meta">Fichier lu : <code>${esc(cfg.owner)}/${esc(cfg.repo)}</code> · branche <code>${esc(cfg.branch)}</code> · <code>${esc(cfg.path)}</code>. Compare ces 4 valeurs avec celles d'une page qui fonctionne (Réglages → Connexion), lettre par lettre.</span></span>
+    <button class="btn primary" data-goto="reglages" data-ancre="connexion">Ouvrir la connexion</button></section>`;
   if(!arrete && !ko.length) return "";
   return `<section class="alerte-robot ${arrete ? "" : "warn"}" role="status"><span class="tx">
     ${arrete ? `<b>⚠ Le robot ne passe plus${p ? ` depuis ${h} h` : ""}</b>

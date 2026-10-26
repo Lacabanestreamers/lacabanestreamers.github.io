@@ -216,6 +216,7 @@ details.pli,#sante,#appli{scroll-margin-top:90px}
 .alerte-robot .tx{flex:1 1 280px;min-width:0}
 .alerte-robot b{font:700 15px/1.3 Orbitron,sans-serif;letter-spacing:.02em}
 .alerte-robot .meta{display:block;margin:3px 0 0}
+.alerte-robot code{font:600 13px/1.4 ui-monospace,Consolas,monospace;color:var(--cyan);background:rgba(0,0,0,.25);padding:1px 5px;border-radius:5px;overflow-wrap:anywhere}
 .alerte-robot ul{margin:4px 0 0;padding-left:18px;color:var(--muted);font-size:15px}
 /* Messages : modèle suggéré, historique des messages copiés */
 .msgsugg{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:6px 0 0;font-size:14px;color:var(--muted)}

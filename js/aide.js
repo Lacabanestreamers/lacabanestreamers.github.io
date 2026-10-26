@@ -121,6 +121,7 @@ function viewAide(){
       <li><b>La page ne montre pas la dernière version</b> : fais <b>Ctrl+F5</b> (ou ferme et rouvre l'application sur téléphone).</li>
       <li><b>Un chiffre semble faux</b> : les follows et le live viennent de Twitch. Clique sur <b>Actualiser Twitch</b> ; les relevés du robot se font trois fois par jour.</li>
       <li><b>« Le robot ne passe plus »</b> en haut de l'Accueil : clique sur <b>Relancer le robot</b>. Si ça revient, vérifie que le Raspberry Pi est allumé et connecté.</li>
+      <li><b>« Ta page ne lit pas le bon fichier »</b> : le robot tourne, mais ta page lit un autre fichier que le sien (ses données s'arrêtent à une vieille date). Ouvre Réglages → Connexion et compare les 4 valeurs affichées avec celles d'une page qui fonctionne.</li>
       <li><b>Un voyant rouge dans Santé</b> ou une alerte dans Commandes : suis le conseil affiché ; sinon regarde l'onglet <b>Actions</b> du dépôt ${esc(repo)} sur GitHub.</li>
       <li><b>Une inscription ou une publication Discord n'arrive pas</b> : clique sur <b>Relever les inscriptions maintenant</b> (Événements) et attends deux minutes.</li>
       <li><b>Un bouton est grisé</b> : il est réservé aux admins de la page (Réglages → Admins).</li></ul>
