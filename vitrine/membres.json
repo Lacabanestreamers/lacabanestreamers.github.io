@@ -147,13 +147,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 1,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "On se réveille ensemble !",
-    "depuis": "2026-10-26T08:06:30Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brastentv-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-06-05",
    "succes": [],
    "jeux": [
@@ -243,13 +237,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": {
-    "viewers": 2,
-    "jeu": "Lies of P",
-    "titre": "[Lies of P] On commence la semaine en douleur !",
-    "depuis": "2026-10-26T07:58:02Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-09",
    "succes": [],
    "jeux": [
@@ -353,7 +341,7 @@
    "login": "galyssiane",
    "nom": "galyssiane",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5f1c037e-16a5-4a48-a01d-8d8a016dadc2-profile_image-300x300.jpeg",
-   "bio": "Salut, je vous embarque avec moi dans tous mes univers, que ce soie via des jeux d'horreur, des moments plus calmes, des périodes créatives, ou du multi!! Egalement Ormuu à temps partiel chez EmmaMarmotte - Email de contact : galyssianetwitch@gmail.com",
+   "bio": "Salut, je vous embarque avec moi dans tous mes univers, que ce soie via de la lecture, des jeux d'horreur, des moments plus calmes, des périodes créatives, des test de démosou du multi!!  Email de contact : galyssianetwitch@gmail.com",
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
@@ -527,13 +515,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 10,
-    "jeu": "SILENT HILL ƒ",
-    "titre": "🔞[DROP] Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-10-26T08:38:44Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -619,7 +601,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 3,
     "jeu": "The Elder Scrolls V: Skyrim - Special Edition",
     "titre": "c'est pas vrai mais dans le doute c'est a cause d'Arca",
     "depuis": "2026-10-26T09:54:50Z",
@@ -972,5 +954,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T10:07:20.185Z"
+ "maj": "2026-10-26T11:07:23.286Z"
 }
