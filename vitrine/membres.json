@@ -7,7 +7,7 @@
   "membres": 43,
   "affilies": 39,
   "nouveaux30": 29,
-  "heuresLive30": 1226,
+  "heuresLive30": 1232,
   "followsGagnes30": 259,
   "periode": {
    "du": "2026-09-26",
@@ -210,7 +210,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Dead by Daylight",
+    "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
+    "depuis": "2026-10-26T15:59:01Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
+   },
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -319,7 +325,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Hogwarts Legacy",
+    "titre": "[FR] [HL] 🪄 Eleanor Silverwood : L'héritière des secrets de Poudlard 🏰✨ | Hogwarts Legacy",
+    "depuis": "2026-10-26T15:07:38Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
+   },
    "premierStream": "2024-08-10",
    "succes": [],
    "jeux": [
@@ -510,7 +522,9 @@
    },
    "premierStream": "2027-08-31",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "VALORANT"
+   ],
    "clip": null
   },
   {
@@ -548,8 +562,8 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
-    "jeu": "FINAL FANTASY XVI",
+    "viewers": 9,
+    "jeu": "R.E.P.O.",
     "titre": "🔞[DROP] Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-26T13:28:41Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
@@ -778,7 +792,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 6,
     "jeu": "Disney Dreamlight Valley",
     "titre": "Bonjour et bon début de semaine, Ont continue l'aventure dans le valon des contes !!!!",
     "depuis": "2026-10-26T13:13:54Z",
@@ -804,7 +818,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "Inside the Backrooms",
     "titre": "[FR] Retour dans les backrooms avec @Calo_VT [!bs !steam !insta !discord ]",
     "depuis": "2026-10-26T14:53:10Z",
@@ -1004,5 +1018,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T15:07:23.489Z"
+ "maj": "2026-10-26T16:07:19.696Z"
 }
