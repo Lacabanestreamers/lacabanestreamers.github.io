@@ -7,7 +7,7 @@
   "membres": 43,
   "affilies": 39,
   "nouveaux30": 29,
-  "heuresLive30": 1222,
+  "heuresLive30": 1226,
   "followsGagnes30": 259,
   "periode": {
    "du": "2026-09-26",
@@ -352,7 +352,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 8,
     "jeu": "Shift at Midnight",
     "titre": "On soigne notre animal en survivant aux imposteurs avec @sakkiel",
     "depuis": "2026-10-26T11:09:57Z",
@@ -501,7 +501,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "VALORANT",
+    "titre": "😂🎯 OBJECTIF SILVER 🥈 | On vise le rank up🔥 | VALORANT RANKED",
+    "depuis": "2026-10-26T14:27:25Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [],
@@ -542,7 +548,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 11,
     "jeu": "FINAL FANTASY XVI",
     "titre": "🔞[DROP] Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-26T13:28:41Z",
@@ -605,7 +611,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": null,
-   "premierStream": null,
+   "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [],
    "clip": null
@@ -772,7 +778,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Disney Dreamlight Valley",
     "titre": "Bonjour et bon début de semaine, Ont continue l'aventure dans le valon des contes !!!!",
     "depuis": "2026-10-26T13:13:54Z",
@@ -781,8 +787,8 @@
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
-    "American Truck Simulator",
     "Disney Dreamlight Valley",
+    "American Truck Simulator",
     "Project CARS",
     "Euro Truck Simulator 2",
     "World of Warcraft"
@@ -797,7 +803,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "Inside the Backrooms",
+    "titre": "[FR] Retour dans les backrooms avec @Calo_VT [!bs !steam !insta !discord ]",
+    "depuis": "2026-10-26T14:53:10Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
+   },
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -992,5 +1004,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T14:07:25.694Z"
+ "maj": "2026-10-26T15:07:23.489Z"
 }
