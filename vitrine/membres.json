@@ -7,7 +7,7 @@
   "membres": 43,
   "affilies": 39,
   "nouveaux30": 26,
-  "heuresLive30": 1257,
+  "heuresLive30": 1259,
   "followsGagnes30": 293,
   "periode": {
    "du": "2026-09-27",
@@ -393,7 +393,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
+    "viewers": 12,
     "jeu": "Special Events",
     "titre": "FR_VT -  Choupiathon lancement !!!",
     "depuis": "2026-10-26T20:03:48Z",
@@ -408,8 +408,8 @@
     }
    ],
    "jeux": [
-    "R.E.P.O.",
     "Special Events",
+    "R.E.P.O.",
     "Minecraft",
     "The Headliners",
     "Valheim"
@@ -501,13 +501,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 5,
-    "jeu": "VALORANT",
-    "titre": "😂🎯 OBJECTIF SILVER 🥈 | On vise le rank up🔥 | VALORANT RANKED",
-    "depuis": "2026-10-26T19:25:47Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -985,5 +979,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T23:07:19.094Z"
+ "maj": "2026-10-26T23:45:26.226Z"
 }
