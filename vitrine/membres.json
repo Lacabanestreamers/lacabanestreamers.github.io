@@ -7,7 +7,7 @@
   "membres": 41,
   "affilies": 37,
   "nouveaux30": 27,
-  "heuresLive30": 1201,
+  "heuresLive30": 1202,
   "followsGagnes30": 252,
   "periode": {
    "du": "2026-09-26",
@@ -24,18 +24,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": {
-    "viewers": 8,
-    "jeu": "A Plague Tale: Innocence",
-    "titre": "Plague Tale innocence/PS5",
-    "depuis": "2026-10-26T02:59:03Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
     "Rocket League",
-    "Fortnite"
+    "Fortnite",
+    "A Plague Tale: Innocence"
    ],
    "clip": null
   },
@@ -724,7 +719,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "American Truck Simulator",
+    "titre": "Bonjour et bon début de semaine, je livre du lourd !!!!",
+    "depuis": "2026-10-26T03:59:15Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -939,5 +940,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T03:07:20.919Z"
+ "maj": "2026-10-26T04:07:20.444Z"
 }
