@@ -7,7 +7,7 @@
   "membres": 42,
   "affilies": 38,
   "nouveaux30": 28,
-  "heuresLive30": 1208,
+  "heuresLive30": 1211,
   "followsGagnes30": 251,
   "periode": {
    "du": "2026-09-26",
@@ -528,7 +528,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 9,
     "jeu": "SILENT HILL ƒ",
     "titre": "🔞[DROP] Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-26T08:38:44Z",
@@ -618,7 +618,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "The Elder Scrolls V: Skyrim - Special Edition",
+    "titre": "c'est pas vrai mais dans le doute c'est a cause d'Arca",
+    "depuis": "2026-10-26T09:54:50Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
+   },
    "premierStream": "2025-01-08",
    "succes": [
     {
@@ -966,5 +972,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T09:07:20.457Z"
+ "maj": "2026-10-26T10:05:09.518Z"
 }
