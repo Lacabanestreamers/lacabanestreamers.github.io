@@ -163,10 +163,10 @@ const pill = (s, empty="À trier") => `<span class="pill ${statutClass(s)}">${es
 function avisKind(v){ const t = String(v||"").toLowerCase(); if(!t) return ""; if(t.startsWith("pour")||t==="oui"||t==="👍") return "pour"; if(t.startsWith("contre")||t==="non"||t==="👎") return "contre"; if(t.startsWith("neutre")||t.startsWith("mitig")) return "neutre"; return "autre"; }
 function contactHtml(c){
   if(!c) return "";
-  if(/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(c)) return `<a href="mailto:${esc(c)}" onclick="event.stopPropagation()">${esc(c)}</a>`;
+  if(/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(c)) return `<a href="mailto:${esc(c)}">${esc(c)}</a>`;
   const u = safeUrl(c); if(!u) return esc(c);
   let label = u; try { const h = new URL(u).hostname.replace(/^www\./,""); label = h.includes("discord") ? "Discord" : h.includes("instagram") ? "Instagram" : (h === "x.com" || h.includes("twitter")) ? "X" : h.includes("tiktok") ? "TikTok" : h; } catch {}
-  return `<a href="${esc(u)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${esc(label)}</a>`;
+  return `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(label)}</a>`;
 }
 function sortRows(rows, [key, dir], getters){
   const g = getters[key] || (r => r[key]);
