@@ -7,7 +7,7 @@
   "membres": 43,
   "affilies": 39,
   "nouveaux30": 26,
-  "heuresLive30": 1265,
+  "heuresLive30": 1270,
   "followsGagnes30": 296,
   "periode": {
    "du": "2026-09-27",
@@ -180,8 +180,8 @@
    ],
    "jeux": [
     "Disney Dreamlight Valley",
-    "R.E.P.O.",
     "The Sims 4",
+    "R.E.P.O.",
     "DEVOUR",
     "Just Chatting"
    ],
@@ -244,7 +244,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 7,
+    "viewers": 8,
     "jeu": "Warframe",
     "titre": "[Warframe](MR27) On commence le farm de debut de semaine !",
     "depuis": "2026-10-27T07:52:53Z",
@@ -307,7 +307,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 15,
     "jeu": "Art",
     "titre": "🖍️ Matinée coloriage tout doux ❤️ | !lurk !clip !commandes",
     "depuis": "2026-10-27T09:12:26Z",
@@ -461,13 +461,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 17,
-    "jeu": "Art",
-    "titre": "✦ FAN ART CHALLENGE ✦Gimli x PEAK | Vais-je arriver au sommet avec cette illu moa ? 👀 | Bon matin à tous ☕ | !artchallenges !liens",
-    "depuis": "2026-10-27T07:08:28Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -569,7 +563,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 14,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "🔞[DROP] Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-27T08:28:30Z",
@@ -996,5 +990,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-27T10:07:19.938Z"
+ "maj": "2026-10-27T10:23:29.914Z"
 }
