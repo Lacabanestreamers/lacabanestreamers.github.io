@@ -164,7 +164,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 15,
     "jeu": "The Sims 4",
     "titre": "🎃 LES 31 DÉFIS D'OCTOBRE | Je vais le regretter, non ? part 2 😆",
     "depuis": "2026-10-27T09:04:26Z",
@@ -244,7 +244,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 8,
+    "viewers": 6,
     "jeu": "Warframe",
     "titre": "[Warframe](MR27) On commence le farm de debut de semaine !",
     "depuis": "2026-10-27T07:52:53Z",
@@ -307,7 +307,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 15,
+    "viewers": 14,
     "jeu": "Art",
     "titre": "🖍️ Matinée coloriage tout doux ❤️ | !lurk !clip !commandes",
     "depuis": "2026-10-27T09:12:26Z",
@@ -563,7 +563,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 12,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "🔞[DROP] Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-27T08:28:30Z",
@@ -990,5 +990,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-27T10:23:29.914Z"
+ "maj": "2026-10-27T11:07:25.720Z"
 }
