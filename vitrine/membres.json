@@ -7,8 +7,8 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 27,
-  "heuresLive30": 1305,
-  "followsGagnes30": 306,
+  "heuresLive30": 1309,
+  "followsGagnes30": 319,
   "periode": {
    "du": "2026-09-27",
    "au": "2026-10-27"
@@ -109,13 +109,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 9,
-    "jeu": "7 Days to Die",
-    "titre": "On retourne tabasser du zombie, mais de façon chill",
-    "depuis": "2026-10-27T13:56:55Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -278,7 +272,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Sprout Valley",
+    "titre": "😸Sprout Valley ~ La fin ? - !réseaux",
+    "depuis": "2026-10-27T18:17:21Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -517,9 +517,9 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "VALORANT",
-    "titre": "😂🎯 OBJECTIF SILVER 🥈 | On vise le rank up🔥 | VALORANT RANKED",
+    "titre": "« EST-CE QU’ON AURA CE SILVER ? 🥈👀 | VALORANT FR »",
     "depuis": "2026-10-27T16:13:15Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
    },
@@ -784,7 +784,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "American Truck Simulator",
+    "titre": "Bonsoir, je retourne livrer dans la tempête !!!!",
+    "depuis": "2026-10-27T18:54:06Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -935,7 +941,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 15,
+    "viewers": 12,
     "jeu": "Photomaly",
     "titre": "Soirée horreur! Découverte de Photomaly!",
     "depuis": "2026-10-27T16:20:05Z",
@@ -944,8 +950,8 @@
    "premierStream": null,
    "succes": [],
    "jeux": [
-    "Just Chatting",
-    "Photomaly"
+    "Photomaly",
+    "Just Chatting"
    ],
    "clip": null
   },
@@ -1016,5 +1022,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-27T18:07:26.171Z"
+ "maj": "2026-10-27T19:07:25.191Z"
 }
