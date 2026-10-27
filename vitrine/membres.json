@@ -7,7 +7,7 @@
   "membres": 43,
   "affilies": 39,
   "nouveaux30": 26,
-  "heuresLive30": 1261,
+  "heuresLive30": 1265,
   "followsGagnes30": 296,
   "periode": {
    "du": "2026-09-27",
@@ -164,7 +164,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 1,
+    "viewers": 10,
     "jeu": "The Sims 4",
     "titre": "🎃 LES 31 DÉFIS D'OCTOBRE | Je vais le regretter, non ? part 2 😆",
     "depuis": "2026-10-27T09:04:26Z",
@@ -306,7 +306,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Art",
+    "titre": "🖍️ Matinée coloriage tout doux ❤️ | !lurk !clip !commandes",
+    "depuis": "2026-10-27T09:12:26Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
+   },
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
@@ -456,7 +462,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 16,
+    "viewers": 17,
     "jeu": "Art",
     "titre": "✦ FAN ART CHALLENGE ✦Gimli x PEAK | Vais-je arriver au sommet avec cette illu moa ? 👀 | Bon matin à tous ☕ | !artchallenges !liens",
     "depuis": "2026-10-27T07:08:28Z",
@@ -563,7 +569,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 10,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "🔞[DROP] Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-27T08:28:30Z",
@@ -990,5 +996,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-27T09:07:19.126Z"
+ "maj": "2026-10-27T10:07:19.938Z"
 }
