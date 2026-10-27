@@ -89,7 +89,7 @@ function linksFor(login){
     <a href="https://www.twitch.tv/${encodeURIComponent(login)}" target="_blank" rel="noopener">Twitch</a>
     <a href="https://sullygnome.com/channel/${encodeURIComponent(login)}" target="_blank" rel="noopener">SullyGnome</a>
     <a href="https://twitchtracker.com/${encodeURIComponent(login)}" target="_blank" rel="noopener">TwitchTracker</a>
-    ${liveOf(login).follows != null ? `<span class="muted">${liveOf(login).follows} follows</span>` : ""}
+    ${liveOf(login).follows != null ? `<span class="muted">${esc(liveOf(login).follows)} follows</span>` : ""}
   </div>`;
 }
 function drawerProp(p){
@@ -201,7 +201,7 @@ function drawerMembre(m){
       ${m.followsMode === "manuel" ? fld("Follows (saisie)","followsManuel",m.followsManuel,"number") : `<label class="f">Follows actuels<input disabled value="${esc(liveOf(m.login).follows ?? "non lu")}"></label>`}
     </div>
     ${courbeBascule()}${sparkline(m)}
-    ${(() => { const pl = (S.data.paliers || []).filter(x => x.login === m.login).slice(-5).reverse(); return pl.length ? `<p class="meta" style="margin-top:2px">Paliers : ${pl.map(x => `<b>${x.palier}</b> le ${fmtDate(x.date)}`).join(" · ")}</p>` : ""; })()}
+    ${(() => { const pl = (S.data.paliers || []).filter(x => x.login === m.login).slice(-5).reverse(); return pl.length ? `<p class="meta" style="margin-top:2px">Paliers : ${pl.map(x => `<b>${esc(x.palier)}</b> le ${fmtDate(x.date)}`).join(" · ")}</p>` : ""; })()}
   </fieldset>
   ${pauseBlock(m)}
   ${suiviBlock(m)}

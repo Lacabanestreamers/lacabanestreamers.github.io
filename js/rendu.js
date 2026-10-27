@@ -80,7 +80,7 @@ function renderTicker(){
     ? `<span class="it" data-open="membres:${esc(m.id)}">🎂 Joyeux anniversaire de stream à <b>${esc(m.login)}</b> : ${ans(a.years)} de live aujourd'hui !</span>`
     : `<span class="it" data-open="membres:${esc(m.id)}">🎂 <b>${esc(m.login)}</b> fêtera ses ${ans(a.years)} de stream ${a.days === 1 ? "demain" : `dans ${a.days} jours`} (${a.next.toLocaleDateString("fr-FR",{day:"numeric",month:"long"})})</span>`).join("");
   const palItems = pal.map(x => { const m = S.data.membres.find(y => y.login === x.login);
-    return `<span class="it" ${m ? `data-open="membres:${esc(m.id)}"` : ""}>🚀 <b>${esc(x.login)}</b> a passé les ${x.palier} follows${x.date === todayISO() ? " aujourd'hui" : ""} !</span>`; }).join("");
+    return `<span class="it" ${m ? `data-open="membres:${esc(m.id)}"` : ""}>🚀 <b>${esc(x.login)}</b> a passé les ${esc(x.palier)} follows${x.date === todayISO() ? " aujourd'hui" : ""} !</span>`; }).join("");
   const affItems = aff.map(x => { const m = S.data.membres.find(y => y.login === x.login);
     return `<span class="it" ${m ? `data-open="membres:${esc(m.id)}"` : ""}>🎉 <b>${esc(x.login)}</b> est devenu ${x.type === "affilie" ? "affilié" : "partenaire"} Twitch !</span>`; }).join("");
   items = (today.length ? items + affItems + palItems : affItems + palItems + items);

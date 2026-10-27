@@ -42,14 +42,14 @@ const COLS_KEY = "cabane.cols";
 let colPrefs = store.get(COLS_KEY, {});
 const staffAvis = p => { const staff = S.data.settings.staff, v = voteInfo(p);
   return `<span class="avis" title="${esc(staff.map(s => `${s} : ${p.avis?.[s] || "—"}`).join("\n"))}">${staff.map(s => `<i class="${avisKind(p.avis?.[s])}"></i>`).join("")}</span><span class="avcount">${v.done}/${staff.length}</span>${v.suggestion && v.suggestion !== p.statut ? ` <span title="Suggestion d'après les avis : ${v.suggestion}">${v.suggestion === "Accepté" ? "👍" : "👎"}</span>` : ""}`; };
-const followsCell = (f, manuel) => f != null ? f + (manuel ? ` <span class="muted" title="Saisie manuelle">✎</span>` : "") : `<span class="muted">${S.liveLoading ? "…" : "–"}</span>`;
+const followsCell = (f, manuel) => f != null ? esc(f) + (manuel ? ` <span class="muted" title="Saisie manuelle">✎</span>` : "") : `<span class="muted">${S.liveLoading ? "…" : "–"}</span>`;
 function membreProg(m){ const ref = refSnapshot(), c = followsVus(m)?.v, r = ref?.follows?.[m.login]; return c != null && r != null ? c - r : null; }
 // Follows d'un streamer : en direct, sinon dernier relevé du robot (en gris, avec sa date au survol)
 function followsMembreCell(m){
   const f = followsVus(m);
   if(!f) return followsCell(null);
   if(f.direct) return followsCell(f.v, m.followsMode === "manuel");
-  return `<span class="muted" title="Relevé du robot du ${fmtDate(f.date)}${S.liveLoading ? " · lecture Twitch en cours" : " · lecture Twitch en direct indisponible"}">${f.v}</span>`;
+  return `<span class="muted" title="Relevé du robot du ${fmtDate(f.date)}${S.liveLoading ? " · lecture Twitch en cours" : " · lecture Twitch en direct indisponible"}">${esc(f.v)}</span>`;
 }
 const COLS = {
   propositions:[

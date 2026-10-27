@@ -29,7 +29,7 @@ function majAjout(){
     : AJ.etat === "absent" ? `<p class="down">Aucune chaîne Twitch « ${esc(l)} » : vérifie l'orthographe.</p>${dup}`
     : i ? `<div class="aj-carte">${i.avatar ? `<img src="${esc(i.avatar)}" alt="" referrerpolicy="no-referrer">` : `<span class="av big" aria-hidden="true">${esc(l[0])}</span>`}
         <div><b>${esc(i.nom || l)}</b> ${i.type === "partner" ? `<span class="tag par">partenaire</span>` : i.type === "affiliate" ? `<span class="tag aff">affilié</span>` : ""}
-        <span class="meta" style="display:block;margin:2px 0 0">${i.follows != null ? `${i.follows} follows` : "follows non lus"}${i.id ? " · chaîne vérifiée" : ""}</span>
+        <span class="meta" style="display:block;margin:2px 0 0">${i.follows != null ? `${esc(i.follows)} follows` : "follows non lus"}${i.id ? " · chaîne vérifiée" : ""}</span>
         ${i.bio ? `<span class="bio">${esc(i.bio.slice(0, 160))}</span>` : ""}</div></div>${dup}`
     : `<p class="meta">Impossible de vérifier pour l'instant (Twitch ne répond pas) : tu peux l'ajouter quand même.</p>${dup}`;
   ok.disabled = !valide || AJ.etat === "lecture";

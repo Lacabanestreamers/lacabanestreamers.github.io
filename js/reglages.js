@@ -93,7 +93,7 @@ function adminsPanel(d){
   </section>`;
 }
 // Réussites (paliers, affiliations) : le staff peut en masquer une sur la vitrine (réversible)
-const attrReussite = x => `data-reu="${x.kind === "palier" ? "palier" : "evt"}" data-rlogin="${esc(x.login)}" data-rpal="${x.palier ?? ""}" data-rtype="${esc(x.type || "")}" data-rdate="${esc(x.date)}" data-rmasque="${x.masque ? "1" : ""}"`;
+const attrReussite = x => `data-reu="${x.kind === "palier" ? "palier" : "evt"}" data-rlogin="${esc(x.login)}" data-rpal="${esc(x.palier ?? "")}" data-rtype="${esc(x.type || "")}" data-rdate="${esc(x.date)}" data-rmasque="${x.masque ? "1" : ""}"`;
 const btnReussite = x => `<button type="button" class="btn ghost" ${attrReussite(x)} style="padding:2px 10px" title="${x.masque ? "Réafficher sur la vitrine" : "Ne plus afficher sur la vitrine (réversible)"}">${x.masque ? "Réafficher" : "Masquer"}</button>`;
 function reussitesPanel(d){
   const v = d.settings.vitrine || {}, jours = v.reussitesJours != null && Number.isFinite(Number(v.reussitesJours)) ? Number(v.reussitesJours) : 30;

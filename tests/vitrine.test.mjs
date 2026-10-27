@@ -217,3 +217,8 @@ test("robots.txt : tout autorisé (le noindex de la page staff doit rester lisib
   assert.doesNotMatch(r, /^Disallow: *\S/m);
   assert.match(r, /Sitemap: https:\/\/lacabanestreamers\.github\.io\/sitemap\.xml/);
 });
+test("XSS : champs libres jamais injectés bruts dans un gabarit HTML (esc obligatoire)", () => {
+  const fichiers = [...readdirSync(join(racine, "js")).filter(f => f.endsWith(".js")).map(f => "js/" + f), "vitrine/index.html"];
+  const brut = /\$\{\s*[\w.?\[\]]*\.(bio|avatar|titre|description|palier|follows|vignette|apercu|jeu|lien)\s*\}/;
+  for (const f of fichiers) lire(f).split("\n").forEach((l, i) => l.includes("<") && assert.doesNotMatch(l, brut, `${f}:${i + 1} interpolation non échappée`));
+});
