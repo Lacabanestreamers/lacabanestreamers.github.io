@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 27,
-  "heuresLive30": 1314,
+  "heuresLive30": 1320,
   "followsGagnes30": 319,
   "periode": {
    "du": "2026-09-27",
@@ -69,7 +69,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Abiotic Factor",
+    "titre": "🧪 Deux cerveaux, toujours aucun protocole de sécurité ☢️ | Abiotic Factor w/ @galyssiane | ❗cmd ❗rs ❗clip",
+    "depuis": "2026-10-27T20:21:30Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asakha-440x248.jpg"
+   },
    "premierStream": "2021-12-06",
    "succes": [],
    "jeux": [],
@@ -215,13 +221,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": {
-    "viewers": 5,
-    "jeu": "Sort The Bunnies",
-    "titre": "🐰 Sort the Bunnies : Fraîchement sorti aujourd'hui ! C'est l'heure de ranger et d'organiser tout ça 🧹",
-    "depuis": "2026-10-27T16:05:52Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -229,7 +229,7 @@
     "Raft",
     "Rise of the Tomb Raider",
     "Cat Mail Co.",
-    "Aniimo"
+    "Sort The Bunnies"
    ],
    "clip": {
     "url": "https://www.twitch.tv/cristal578/clip/MoralAgitatedShallotCopyThis-5WnJ6cxApGa1WnEn",
@@ -372,7 +372,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "Abiotic Factor",
+    "titre": "Mardi survie avec @asakha - Abiotic Factor épisode 2 : On s'fait taper par tout le monde , dans la joie et la bonne humeur!",
+    "depuis": "2026-10-27T20:20:23Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -414,7 +420,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 9,
     "jeu": "Inkbound",
     "titre": "FR_VT - J-2 du Choupiathon !!! On test un nouveau jeu avec @obefenix",
     "depuis": "2026-10-27T19:29:36Z",
@@ -452,7 +458,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-20",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Stardew Valley",
+    "titre": "on continue stardew valley sur la map spooky avec dydoux #SpookyStardew🎃",
+    "depuis": "2026-10-27T20:28:28Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kialigator-440x248.jpg"
+   },
    "premierStream": "2025-08-30",
    "succes": [],
    "jeux": [
@@ -523,7 +535,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "VALORANT",
     "titre": "« EST-CE QU’ON AURA CE SILVER ? 🥈👀 | VALORANT FR »",
     "depuis": "2026-10-27T16:13:15Z",
@@ -744,7 +756,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "DEVOUR",
+    "titre": "[FR] ~ DEVOUR - Event Halloween - Avec Calo ~",
+    "depuis": "2026-10-27T20:58:31Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
+   },
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -791,7 +809,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "American Truck Simulator",
     "titre": "Bonsoir, je retourne livrer dans la tempête !!!!",
     "depuis": "2026-10-27T18:54:06Z",
@@ -1028,5 +1046,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-27T20:07:21.796Z"
+ "maj": "2026-10-27T21:07:18.844Z"
 }
