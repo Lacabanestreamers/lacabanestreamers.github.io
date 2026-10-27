@@ -109,7 +109,8 @@ test("manifest : icônes présentes, démarrage relatif", () => {
 });
 test("CSP de la page staff : empreinte du script en ligne à jour, pas d'unsafe-eval, noindex", () => {
   const csp = index.match(/Content-Security-Policy" content="([^"]+)"/)[1];
-  const script = index.match(/<script>([\s\S]*?)<\/script>/)[1];
+  // le navigateur normalise les fins de ligne avant l'empreinte (copie Windows en CRLF : même règle que la vitrine)
+  const script = index.match(/<script>([\s\S]*?)<\/script>/)[1].replace(/\r\n/g, "\n");
   const hash = createHash("sha256").update(script).digest("base64");
   assert.ok(csp.includes(`'sha256-${hash}'`), `l'empreinte du script en ligne a changé : 'sha256-${hash}'`);
   assert.doesNotMatch(csp, /unsafe-eval/);
