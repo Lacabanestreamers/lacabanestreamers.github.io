@@ -70,7 +70,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Abiotic Factor",
     "titre": "🧪 Deux cerveaux, toujours aucun protocole de sécurité ☢️ | Abiotic Factor w/ @galyssiane | ❗cmd ❗rs ❗clip",
     "depuis": "2026-10-27T20:21:30Z",
@@ -416,7 +416,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 8,
     "jeu": "Inkbound",
     "titre": "FR_VT - J-2 du Choupiathon !!! On test un nouveau jeu avec @obefenix",
     "depuis": "2026-10-27T19:29:36Z",
@@ -455,7 +455,7 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": {
-    "viewers": 4,
+    "viewers": 3,
     "jeu": "Stardew Valley",
     "titre": "on continue stardew valley sur la map spooky avec dydoux #SpookyStardew🎃",
     "depuis": "2026-10-27T20:28:28Z",
@@ -530,13 +530,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 6,
-    "jeu": "VALORANT",
-    "titre": "« EST-CE QU’ON AURA CE SILVER ? 🥈👀 | VALORANT FR »",
-    "depuis": "2026-10-27T16:13:15Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -753,7 +747,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "DEVOUR",
     "titre": "[FR] ~ DEVOUR - Event Halloween - Avec Calo ~",
     "depuis": "2026-10-27T20:58:31Z",
@@ -954,19 +948,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": {
-    "viewers": 11,
-    "jeu": "Just Chatting",
-    "titre": "Soirée horreur! React horreur pour finir la soirée!",
-    "depuis": "2026-10-27T16:20:05Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
     "Photomaly",
-    "Just Chatting",
-    "Deadpact"
+    "Just Chatting"
    ],
    "clip": null
   },
@@ -1037,5 +1024,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-27T22:22:59.775Z"
+ "maj": "2026-10-27T23:07:20.156Z"
 }
