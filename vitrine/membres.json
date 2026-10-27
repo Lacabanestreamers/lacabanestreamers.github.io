@@ -8,10 +8,10 @@
   "affilies": 39,
   "nouveaux30": 26,
   "heuresLive30": 1259,
-  "followsGagnes30": 293,
+  "followsGagnes30": 296,
   "periode": {
    "du": "2026-09-27",
-   "au": "2026-10-26"
+   "au": "2026-10-27"
   }
  },
  "agenda": [],
@@ -237,7 +237,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Warframe",
+    "titre": "[Warframe](MR27) On commence le farm de debut de semaine !",
+    "depuis": "2026-10-27T07:52:53Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -443,7 +449,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Art",
+    "titre": "✦ FAN ART CHALLENGE ✦Gimli x PEAK | Vais-je arriver au sommet avec cette illu moa ? 👀 | Bon matin à tous ☕ | !artchallenges !liens",
+    "depuis": "2026-10-27T07:08:28Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
+   },
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -966,5 +978,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-27T02:07:52.897Z"
+ "maj": "2026-10-27T08:07:21.067Z"
 }
