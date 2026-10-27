@@ -6,11 +6,11 @@
  "chiffres": {
   "membres": 44,
   "affilies": 40,
-  "nouveaux30": 27,
-  "heuresLive30": 1329,
-  "followsGagnes30": 319,
+  "nouveaux30": 22,
+  "heuresLive30": 1315,
+  "followsGagnes30": 318,
   "periode": {
-   "du": "2026-09-27",
+   "du": "2026-09-28",
    "au": "2026-10-27"
   }
  },
@@ -70,7 +70,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "Abiotic Factor",
     "titre": "🧪 Deux cerveaux, toujours aucun protocole de sécurité ☢️ | Abiotic Factor w/ @galyssiane | ❗cmd ❗rs ❗clip",
     "depuis": "2026-10-27T20:21:30Z",
@@ -274,13 +274,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 1,
-    "jeu": "Sprout Valley",
-    "titre": "😸Sprout Valley ~ La fin ? - !réseaux",
-    "depuis": "2026-10-27T18:17:21Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -375,7 +369,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 4,
     "jeu": "Abiotic Factor",
     "titre": "Mardi survie avec @asakha - Abiotic Factor épisode 2 : On s'fait taper par tout le monde , dans la joie et la bonne humeur!",
     "depuis": "2026-10-27T20:20:23Z",
@@ -422,7 +416,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 11,
+    "viewers": 10,
     "jeu": "Inkbound",
     "titre": "FR_VT - J-2 du Choupiathon !!! On test un nouveau jeu avec @obefenix",
     "depuis": "2026-10-27T19:29:36Z",
@@ -461,7 +455,7 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": {
-    "viewers": 3,
+    "viewers": 5,
     "jeu": "Stardew Valley",
     "titre": "on continue stardew valley sur la map spooky avec dydoux #SpookyStardew🎃",
     "depuis": "2026-10-27T20:28:28Z",
@@ -537,7 +531,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "VALORANT",
     "titre": "« EST-CE QU’ON AURA CE SILVER ? 🥈👀 | VALORANT FR »",
     "depuis": "2026-10-27T16:13:15Z",
@@ -961,9 +955,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 12,
-    "jeu": "Photomaly",
-    "titre": "Soirée horreur! Découverte de Photomaly!",
+    "viewers": 13,
+    "jeu": "Deadpact",
+    "titre": "Soirée horreur! Des démos pour finir la soirée!",
     "depuis": "2026-10-27T16:20:05Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1042,5 +1036,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-27T21:13:20.193Z"
+ "maj": "2026-10-27T22:07:21.595Z"
 }
