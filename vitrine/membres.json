@@ -7,7 +7,7 @@
   "membres": 43,
   "affilies": 39,
   "nouveaux30": 26,
-  "heuresLive30": 1274,
+  "heuresLive30": 1275,
   "followsGagnes30": 306,
   "periode": {
    "du": "2026-09-27",
@@ -42,7 +42,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 12,
+    "jeu": "Just Chatting",
+    "titre": "🎃 Mois de l'horreur🎃 ✨OP Grill & Grow découverte : Go Cuisiner!!!🔥",
+    "depuis": "2026-10-27T12:50:15Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
+   },
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -164,7 +170,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 25,
+    "viewers": 27,
     "jeu": "The Sims 4",
     "titre": "🎃 LES 31 DÉFIS D'OCTOBRE | Je vais le regretter, non ? part 2 😆",
     "depuis": "2026-10-27T09:04:26Z",
@@ -403,7 +409,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Valheim",
+    "titre": "FR_VT - J-2 du Choupiathon !!! C'est parti pour une seconde session de Vikings!!!",
+    "depuis": "2026-10-27T13:02:59Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -768,7 +780,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "American Truck Simulator",
+    "titre": "Bonjour, retour dans la tempête !!!!",
+    "depuis": "2026-10-27T12:32:54Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -977,5 +995,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-27T12:07:19.974Z"
+ "maj": "2026-10-27T13:07:18.994Z"
 }
