@@ -7,7 +7,7 @@
   "membres": 43,
   "affilies": 39,
   "nouveaux30": 26,
-  "heuresLive30": 1275,
+  "heuresLive30": 1279,
   "followsGagnes30": 306,
   "periode": {
    "du": "2026-09-27",
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 13,
     "jeu": "Just Chatting",
     "titre": "🎃 Mois de l'horreur🎃 ✨OP Grill & Grow découverte : Go Cuisiner!!!🔥",
     "depuis": "2026-10-27T12:50:15Z",
@@ -115,7 +115,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "7 Days to Die",
+    "titre": "On retourne tabasser du zombie, mais de façon chill",
+    "depuis": "2026-10-27T13:56:55Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
+   },
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -170,7 +176,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 27,
+    "viewers": 31,
     "jeu": "The Sims 4",
     "titre": "🎃 LES 31 DÉFIS D'OCTOBRE | Je vais le regretter, non ? part 2 😆",
     "depuis": "2026-10-27T09:04:26Z",
@@ -354,7 +360,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "Just Chatting",
+    "titre": "[DROP] LE RETOUR DE L'OURS MALADE !!! DES TRUCS A DIRE, A MONTRER ET A FAIRE !",
+    "depuis": "2026-10-27T14:06:54Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galaadours-440x248.jpg"
+   },
    "premierStream": "2023-06-06",
    "succes": [],
    "jeux": [],
@@ -410,7 +422,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 8,
     "jeu": "Valheim",
     "titre": "FR_VT - J-2 du Choupiathon !!! C'est parti pour une seconde session de Vikings!!!",
     "depuis": "2026-10-27T13:02:59Z",
@@ -428,8 +440,8 @@
     "Special Events",
     "R.E.P.O.",
     "Minecraft",
-    "The Headliners",
-    "Valheim"
+    "Valheim",
+    "The Headliners"
    ],
    "clip": {
     "url": "https://www.twitch.tv/hyroshimaeu/clip/JazzyShortLemurDAESuppy-3HVFivbvW9o2atpO",
@@ -567,7 +579,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "The Outlast Trials",
+    "titre": "🔞[DROP] On tente quelques games... Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-10-27T13:49:39Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -782,9 +800,9 @@
    "depuis": "2026-10-15",
    "live": {
     "viewers": 1,
-    "jeu": "American Truck Simulator",
-    "titre": "Bonjour, retour dans la tempête !!!!",
-    "depuis": "2026-10-27T12:32:54Z",
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "Bonjour, j'essaie de finir le vallon des contes !!!!",
+    "depuis": "2026-10-27T13:50:57Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
    },
    "premierStream": "2025-08-17",
@@ -995,5 +1013,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-27T13:07:18.994Z"
+ "maj": "2026-10-27T14:07:23.310Z"
 }
