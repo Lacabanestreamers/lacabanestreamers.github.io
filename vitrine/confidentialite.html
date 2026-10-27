@@ -60,13 +60,34 @@
     <p>Faire découvrir les membres de la communauté et leurs lives : c'est l'intérêt légitime de La Cabane et la raison pour laquelle ses membres la rejoignent. Chaque membre peut demander à ne plus y figurer (voir « Tes droits »).</p>
 
     <h2>Si tu visites la vitrine</h2>
-    <p>Aucun compte, aucun formulaire, aucune mesure d'audience, <b>aucun cookie</b>. Ton navigateur garde seulement, pour faire marcher le bouton « Je participe » des événements :</p>
+    <p>Aucun compte, aucun formulaire, <b>aucun cookie</b>. Ton navigateur garde seulement, pour faire marcher le bouton « Je participe » des événements :</p>
     <ul>
       <li><code>cabane.vitrine.twitch</code> (stockage de session, effacé à la fermeture de l'onglet) : ton pseudo Twitch, ton identifiant Twitch et le jeton de connexion, seulement si tu t'es connecté pour t'inscrire à un événement. Ce jeton ne donne aucune autorisation sur ton compte.</li>
       <li><code>cabane.vitrine.oauth</code> (stockage de session) : un code de vérification le temps de la connexion à Twitch.</li>
       <li><code>cabane.vitrine.attente</code> (stockage local, 3 heures au plus) : les inscriptions envoyées qui n'apparaissent pas encore.</li>
     </ul>
     <p>Ces éléments sont strictement nécessaires à une fonction que tu demandes : ils ne demandent pas de consentement, d'où l'absence de bandeau cookies. Tu peux les effacer à tout moment depuis les réglages de ton navigateur (données du site).</p>
+
+    <h2>Statistiques de visite</h2>
+    <p>La vitrine utilise <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener">GoatCounter</a>, service de mesure d'audience exploité depuis l'Irlande et hébergé dans l'Union européenne (serveurs en Finlande et en Allemagne). Il compte les pages vues sans cookie et sans identifiant qui te suivrait d'une visite à l'autre. Ton adresse IP sert seulement à déduire le pays et à ne pas compter deux fois la même visite : elle n'est jamais enregistrée (gardée quelques heures au plus en mémoire, puis oubliée). Seules des statistiques globales sont conservées : pages vues, site d'origine, navigateur, pays et taille d'écran approximatifs. Cette mesure sert uniquement à connaître la fréquentation de la vitrine : elle est exemptée de consentement, selon les recommandations de la CNIL. Base légale : l'intérêt légitime à connaître la fréquentation du site. Tu peux t'y opposer à tout moment sur ce navigateur :</p>
+    <p><button type="button" class="btn" id="gc-toggle" aria-pressed="false">Ne pas être compté</button> <span id="gc-state"></span></p>
+    <script>
+    // GoatCounter (count.v4.js) ne compte rien quand localStorage.skipgc === 't' (même règle que le Site)
+    (function () {
+      var b = document.getElementById('gc-toggle'), s = document.getElementById('gc-state');
+      function off() { try { return localStorage.getItem('skipgc') === 't'; } catch (e) { return false; } }
+      function maj() {
+        b.textContent = off() ? 'Être compté de nouveau' : 'Ne pas être compté';
+        b.setAttribute('aria-pressed', String(off()));
+        s.textContent = off() ? 'Tes visites ne sont pas comptées sur ce navigateur.' : 'Tes visites sont comptées, de façon anonyme.';
+      }
+      b.addEventListener('click', function () {
+        try { if (off()) localStorage.removeItem('skipgc'); else localStorage.setItem('skipgc', 't'); } catch (e) { /* stockage bloqué */ }
+        maj();
+      });
+      maj();
+    })();
+    </script>
 
     <h2>Inscription à un événement</h2>
     <p>Quand un streamer de La Cabane clique sur « Je participe », il se connecte avec Twitch (aucune autorisation demandée). La demande (événement, ton jeton Twitch) passe par un petit relais hébergé chez Cloudflare, qui vérifie le jeton auprès de Twitch puis dépose la demande dans un salon Discord privé du staff. Le robot la revérifie, ajoute ton pseudo et ton image à la liste des participants affichée sur la vitrine, puis efface le message.</p>
@@ -76,6 +97,7 @@
       <li><b>GitHub Pages</b> (GitHub, Inc., États-Unis) : hébergement du site et du fichier privé du staff. GitHub peut enregistrer l'adresse IP des visiteurs pour la sécurité du service (<a href="https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">déclaration de confidentialité de GitHub</a>).</li>
       <li><b>Twitch</b> (Twitch Interactive, Inc., États-Unis) : images de profil, aperçus des lives et vignettes de clips (static-cdn.jtvnw.net), connexion pour les inscriptions.</li>
       <li><b>decapi.me</b> : vérification en direct des lives.</li>
+      <li><b>GoatCounter</b> (Irlande, hébergé dans l'Union européenne) : statistiques de visite anonymes (voir plus haut).</li>
       <li><b>Cloudflare</b> (Cloudflare, Inc., États-Unis) et <b>Discord</b> (Discord Inc., États-Unis) : seulement pour les inscriptions aux événements.</li>
       <li><b>Google</b> (Google LLC, États-Unis) : seulement si tu cliques sur « Ajouter à mon agenda » (Google Agenda) ou si tu écris à l'adresse de contact (Gmail).</li>
     </ul>
@@ -95,5 +117,8 @@
   </main>
   <footer><a href="./">Vitrine</a><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html" aria-current="page">Confidentialité</a><a href="cgu.html">Conditions d'utilisation</a></footer>
 </div>
+<script data-goatcounter="https://aulit42369.goatcounter.com/count"
+        async src="//gc.zgo.at/count.v4.js" crossorigin="anonymous"
+        integrity="sha384-nRw6qfbWyJha9LhsOtSb2YJDyZdKvvCFh0fJYlkquSFjUxp9FVNugbfy8q1jdxI+"></script>
 </body>
 </html>
