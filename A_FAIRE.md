@@ -7,7 +7,7 @@ Mis à jour le 27/10/2026. Le suivi du robot et des données est dans `cabane/A_
 
 ## À faire (dev)
 - Les fiches `vitrine/s/*` encore en ligne datent d'avant le 27/10 (redirection, e-mail visible chez `detectiverenard`) : attendre le prochain passage du robot, puis le test « aucune adresse e-mail » (marqué `todo`) doit passer ; retirer alors le `todo`.
-- La vitrine n'a pas de CSP (script en ligne + GoatCounter) : étudier une CSP avec empreintes, comme la page staff.
+- CSP de la vitrine posée le 27/10 (empreinte du script en ligne ; `style-src` garde `unsafe-inline` car les cartes posent des `style=` générés). À contrôler dans le navigateur : console sans erreur CSP (liste, live, Je participe, GoatCounter).
 - `sitemap.xml` ne contient pas encore les fiches membres (le robot les ajoutera) : étendre le test à ces lignes une fois publiées.
 - Lot E (contrôle XSS des `innerHTML`) : confié séparément, à rejouer avec `npm test` après.
 

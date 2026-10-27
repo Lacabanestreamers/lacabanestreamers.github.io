@@ -163,6 +163,16 @@ test("vitrine/index.html : titre, description, canonical, indexable, protections
   assert.doesNotMatch(v, /\beval\(|document\.write\(/);
   assert.doesNotMatch(v, /<meta name="robots" content="[^"]*noindex/, "la vitrine doit rester indexable");
 });
+test("CSP de la vitrine : empreinte du script en ligne à jour, pas d'unsafe-eval ni de script en ligne non couvert", () => {
+  const v = lire("vitrine/index.html");
+  const csp = v.match(/Content-Security-Policy" content="([^"]+)"/)[1];
+  const scripts = [...v.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m => m[1]);
+  assert.equal(scripts.length, 1);
+  const lf = scripts[0].replace(/\r\n/g, "\n");   // le navigateur normalise les fins de ligne avant l'empreinte
+  assert.ok(csp.includes(`'sha256-${createHash("sha256").update(lf).digest("base64")}'`), "l'empreinte du script de la vitrine a changé");
+  assert.doesNotMatch(csp, /script-src[^;]*unsafe-/);
+  assert.match(csp, /object-src 'none'/);
+});
 test("vitrine : les liens target=_blank portent rel=noopener", () => {
   for (const f of ["vitrine/index.html", "vitrine/cgu.html", "vitrine/confidentialite.html", "vitrine/mentions-legales.html"]) {
     for (const m of lire(f).matchAll(/<a\b[^>]*target="_blank"[^>]*>/g)) assert.match(m[0], /rel="[^"]*noopener/, `${f} : ${m[0].slice(0, 80)}`);
