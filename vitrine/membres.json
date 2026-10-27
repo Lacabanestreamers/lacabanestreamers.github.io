@@ -4,10 +4,10 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 43,
-  "affilies": 39,
-  "nouveaux30": 26,
-  "heuresLive30": 1286,
+  "membres": 44,
+  "affilies": 40,
+  "nouveaux30": 27,
+  "heuresLive30": 1292,
   "followsGagnes30": 306,
   "periode": {
    "du": "2026-09-27",
@@ -56,7 +56,7 @@
     "R.E.P.O.",
     "SO CLOSE",
     "Raft",
-    "The Other Side"
+    "Disney Dreamlight Valley"
    ],
    "clip": {
     "url": "https://www.twitch.tv/aly0806/clip/DaintyLittleSnoodDuDudu-1QGX4NkCoXaPcbOY",
@@ -116,7 +116,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 6,
     "jeu": "7 Days to Die",
     "titre": "On retourne tabasser du zombie, mais de façon chill",
     "depuis": "2026-10-27T13:56:55Z",
@@ -364,7 +364,8 @@
    "premierStream": "2023-06-06",
    "succes": [],
    "jeux": [
-    "Just Chatting"
+    "Just Chatting",
+    "World of Warcraft"
    ],
    "clip": null
   },
@@ -418,7 +419,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 11,
+    "viewers": 10,
     "jeu": "Valheim",
     "titre": "FR_VT - J-2 du Choupiathon !!! C'est parti pour une seconde session de Vikings!!!",
     "depuis": "2026-10-27T13:02:59Z",
@@ -943,6 +944,20 @@
    "clip": null
   },
   {
+   "login": "sakkiel",
+   "nom": "Sakkiel",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/5cd304bb-ea14-4428-a107-39390d6e05bf-profile_image-300x300.png",
+   "bio": "Hello! Jeune streameuse, adepte de jeux survie/horreur/énigmes/cosy/multi... Fan de dessin/jeux de société/jeux de rôle à mes heures perdues! Autiste/TDAH, LGBTQIA+ friendly (queer), ouverte à la discussion sur tout sujet, ici on est en safe place! Me contacter: Sakkiel@proton.me",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-10-27",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
+   "clip": null
+  },
+  {
    "login": "tata_gazouille",
    "nom": "tata_gazouille",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/e1ad1459-f3e6-4135-bc8c-6b249900a722-profile_image-300x300.png",
@@ -1009,5 +1024,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-27T15:07:21.894Z"
+ "maj": "2026-10-27T15:19:01.926Z"
 }
