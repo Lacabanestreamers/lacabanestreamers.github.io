@@ -7,7 +7,7 @@
   "membres": 43,
   "affilies": 39,
   "nouveaux30": 26,
-  "heuresLive30": 1279,
+  "heuresLive30": 1286,
   "followsGagnes30": 306,
   "periode": {
    "du": "2026-09-27",
@@ -43,9 +43,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
-    "jeu": "Just Chatting",
-    "titre": "🎃 Mois de l'horreur🎃 ✨OP Grill & Grow découverte : Go Cuisiner!!!🔥",
+    "viewers": 23,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "🎃 Mois de l'horreur🎃 ✨On le fini ou pas ce DLC 2🔥",
     "depuis": "2026-10-27T12:50:15Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
    },
@@ -116,7 +116,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 8,
     "jeu": "7 Days to Die",
     "titre": "On retourne tabasser du zombie, mais de façon chill",
     "depuis": "2026-10-27T13:56:55Z",
@@ -175,13 +175,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 31,
-    "jeu": "The Sims 4",
-    "titre": "🎃 LES 31 DÉFIS D'OCTOBRE | Je vais le regretter, non ? part 2 😆",
-    "depuis": "2026-10-27T09:04:26Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -196,8 +190,8 @@
     }
    ],
    "jeux": [
-    "Disney Dreamlight Valley",
     "The Sims 4",
+    "Disney Dreamlight Valley",
     "R.E.P.O.",
     "DEVOUR",
     "Just Chatting"
@@ -361,15 +355,17 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 0,
-    "jeu": "Just Chatting",
+    "viewers": 8,
+    "jeu": "World of Warcraft",
     "titre": "[DROP] LE RETOUR DE L'OURS MALADE !!! DES TRUCS A DIRE, A MONTRER ET A FAIRE !",
     "depuis": "2026-10-27T14:06:54Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galaadours-440x248.jpg"
    },
    "premierStream": "2023-06-06",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Just Chatting"
+   ],
    "clip": null
   },
   {
@@ -422,7 +418,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
+    "viewers": 11,
     "jeu": "Valheim",
     "titre": "FR_VT - J-2 du Choupiathon !!! C'est parti pour une seconde session de Vikings!!!",
     "depuis": "2026-10-27T13:02:59Z",
@@ -439,8 +435,8 @@
    "jeux": [
     "Special Events",
     "R.E.P.O.",
-    "Minecraft",
     "Valheim",
+    "Minecraft",
     "The Headliners"
    ],
    "clip": {
@@ -580,7 +576,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 10,
     "jeu": "The Outlast Trials",
     "titre": "🔞[DROP] On tente quelques games... Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-27T13:49:39Z",
@@ -1013,5 +1009,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-27T14:07:23.310Z"
+ "maj": "2026-10-27T15:07:21.894Z"
 }
