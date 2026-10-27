@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 27,
-  "heuresLive30": 1309,
+  "heuresLive30": 1314,
   "followsGagnes30": 319,
   "periode": {
    "du": "2026-09-27",
@@ -216,7 +216,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 3,
+    "viewers": 5,
     "jeu": "Sort The Bunnies",
     "titre": "🐰 Sort the Bunnies : Fraîchement sorti aujourd'hui ! C'est l'heure de ranger et d'organiser tout ça 🧹",
     "depuis": "2026-10-27T16:05:52Z",
@@ -413,7 +413,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "Inkbound",
+    "titre": "FR_VT - J-2 du Choupiathon !!! On test un nouveau jeu avec @obefenix",
+    "depuis": "2026-10-27T19:29:36Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -517,7 +523,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "VALORANT",
     "titre": "« EST-CE QU’ON AURA CE SILVER ? 🥈👀 | VALORANT FR »",
     "depuis": "2026-10-27T16:13:15Z",
@@ -785,7 +791,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "American Truck Simulator",
     "titre": "Bonsoir, je retourne livrer dans la tempête !!!!",
     "depuis": "2026-10-27T18:54:06Z",
@@ -941,7 +947,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 12,
+    "viewers": 9,
     "jeu": "Photomaly",
     "titre": "Soirée horreur! Découverte de Photomaly!",
     "depuis": "2026-10-27T16:20:05Z",
@@ -1022,5 +1028,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-27T19:07:25.191Z"
+ "maj": "2026-10-27T20:07:21.796Z"
 }
