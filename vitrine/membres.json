@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 22,
-  "heuresLive30": 1315,
+  "heuresLive30": 1322,
   "followsGagnes30": 318,
   "periode": {
    "du": "2026-09-28",
@@ -382,7 +382,7 @@
     "Shift at Midnight",
     "R.E.P.O.",
     "Writing & Reading",
-    "Forever Ago"
+    "Abiotic Factor"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/FamousSaltyPidgeonMingLee-Y2HwlZifQbpgg0Di",
@@ -416,7 +416,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 10,
+    "viewers": 7,
     "jeu": "Inkbound",
     "titre": "FR_VT - J-2 du Choupiathon !!! On test un nouveau jeu avec @obefenix",
     "depuis": "2026-10-27T19:29:36Z",
@@ -455,7 +455,7 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "Stardew Valley",
     "titre": "on continue stardew valley sur la map spooky avec dydoux #SpookyStardew🎃",
     "depuis": "2026-10-27T20:28:28Z",
@@ -765,8 +765,8 @@
     "The Sims 4",
     "Horror Game",
     "Bily'Sine",
-    "R.E.P.O.",
-    "Decay: The Mare - Episode 1"
+    "DEVOUR",
+    "R.E.P.O."
    ],
    "clip": null
   },
@@ -955,9 +955,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 13,
-    "jeu": "Deadpact",
-    "titre": "Soirée horreur! Des démos pour finir la soirée!",
+    "viewers": 11,
+    "jeu": "Just Chatting",
+    "titre": "Soirée horreur! React horreur pour finir la soirée!",
     "depuis": "2026-10-27T16:20:05Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -965,7 +965,8 @@
    "succes": [],
    "jeux": [
     "Photomaly",
-    "Just Chatting"
+    "Just Chatting",
+    "Deadpact"
    ],
    "clip": null
   },
@@ -1036,5 +1037,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-27T22:07:21.595Z"
+ "maj": "2026-10-27T22:22:59.775Z"
 }
