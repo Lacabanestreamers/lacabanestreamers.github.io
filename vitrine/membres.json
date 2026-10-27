@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 27,
-  "heuresLive30": 1298,
+  "heuresLive30": 1300,
   "followsGagnes30": 306,
   "periode": {
    "du": "2026-09-27",
@@ -110,7 +110,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 9,
     "jeu": "7 Days to Die",
     "titre": "On retourne tabasser du zombie, mais de façon chill",
     "depuis": "2026-10-27T13:56:55Z",
@@ -222,9 +222,9 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 2,
-    "jeu": "Toto's Journey",
-    "titre": "Toto's Journey (Démo) : On part découvrir ce petit jeu prometteur !",
+    "viewers": 4,
+    "jeu": "Sort The Bunnies",
+    "titre": "🐰 Sort the Bunnies : Fraîchement sorti aujourd'hui ! C'est l'heure de ranger et d'organiser tout ça 🧹",
     "depuis": "2026-10-27T16:05:52Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
    },
@@ -354,18 +354,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 10,
-    "jeu": "Deep Rock Galactic",
-    "titre": "LES NAINS ! ROCK AND STONE !",
-    "depuis": "2026-10-27T14:06:54Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galaadours-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2023-06-06",
    "succes": [],
    "jeux": [
+    "Just Chatting",
     "World of Warcraft",
-    "Just Chatting"
+    "Deep Rock Galactic"
    ],
    "clip": null
   },
@@ -419,7 +414,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 11,
+    "viewers": 7,
     "jeu": "Valheim",
     "titre": "FR_VT - J-2 du Choupiathon !!! C'est parti pour une seconde session de Vikings!!!",
     "depuis": "2026-10-27T13:02:59Z",
@@ -528,7 +523,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 7,
+    "viewers": 4,
     "jeu": "VALORANT",
     "titre": "😂🎯 OBJECTIF SILVER 🥈 | On vise le rank up🔥 | VALORANT RANKED",
     "depuis": "2026-10-27T16:13:15Z",
@@ -582,13 +577,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 8,
-    "jeu": "The Outlast Trials",
-    "titre": "🔞[DROP] On tente quelques games... Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-10-27T13:49:39Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -801,13 +790,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "Bonjour, j'essaie de finir le vallon des contes !!!!",
-    "depuis": "2026-10-27T13:50:57Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -958,15 +941,17 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 6,
-    "jeu": "Just Chatting",
+    "viewers": 12,
+    "jeu": "Photomaly",
     "titre": "Soirée horreur! Découverte de Photomaly!",
     "depuis": "2026-10-27T16:20:05Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
    "premierStream": null,
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Just Chatting"
+   ],
    "clip": null
   },
   {
@@ -1036,5 +1021,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-27T16:26:21.048Z"
+ "maj": "2026-10-27T17:07:19.738Z"
 }
