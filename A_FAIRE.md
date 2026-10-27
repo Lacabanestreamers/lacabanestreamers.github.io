@@ -1,7 +1,8 @@
 # La Cabane (site public) — suivi
-Mis à jour le 27/10/2026. Le suivi du robot et des données est dans `cabane/A_FAIRE.md` (dépôt privé).
+Mis à jour le 28/10/2026. Le suivi du robot et des données est dans `cabane/A_FAIRE.md` (dépôt privé).
 
 ## Fait
+- 28/10 — Page staff : pied de page avec les liens Mentions légales, Confidentialité et CGU de la vitrine (`css/cabane.css`, `?v=20261028`, cache `cabane-v16`). Vitrine : la vitrine n'a pas de menu d'ancres ; le seul groupe de liens de navigation (pied de page) est passé en `<nav aria-label="Sources et pages légales">` (script en ligne inchangé, empreinte CSP intacte). Documents `docs/` : PRD, TRD, APP_FLOW, DESIGN_BRIEF, BACKEND_SCHEMA, IMPLEMENTATION_PLAN.
 - 27/10 — `ARCHITECTURE.md`, `PIEGES.md`, `README.md` et tests de non-régression (`npm test`, 23 tests dont 1 « à faire »).
 - Voir l'historique git et `cabane/A_FAIRE.md` pour le reste (CSP, SEO des fiches, relais d'inscription, pages légales).
 

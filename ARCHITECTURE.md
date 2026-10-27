@@ -12,7 +12,7 @@ La description détaillée du robot, des données et de la sécurité est dans `
 | `vitrine/s/<pseudo>.html` | Fiche membre indexable. **Écrite par le robot.** |
 | `vitrine/e/*`, `vitrine/annee/*` | Pages de partage d'événement et récap annuel (robot, absentes tant qu'il n'y en a pas). |
 | `vitrine/confidentialite.html`, `cgu.html`, `mentions-legales.html`, `pages.css` | Pages légales ; `pages.css` reprend le `:root` de la vitrine. |
-| `index.html` + `css/cabane.css` | Page staff : coquille, ordre de chargement des 19 scripts (`?v=AAAAMMJJ`). |
+| `index.html` + `css/cabane.css` | Page staff : coquille, ordre de chargement des 19 scripts (`?v=AAAAMMJJ`), pied de page `.pied` vers les pages légales de la vitrine. |
 | `commun.js` | Calculs partagés avec le robot (dates de Paris, séries, stagnation, paliers, relevés). **Deux copies identiques** : ici et `cabane/robot/commun.js`. |
 | `js/*.js` | Page staff, un fichier par écran ou fonction (liste dans `cabane/ARCHITECTURE.md`). |
 | `sw.js` | Service worker de la page staff : réseau d'abord (4 s) puis cache `cabane-vN`. Ne met pas en cache la vitrine, ni les autres origines, ni les non-GET. |

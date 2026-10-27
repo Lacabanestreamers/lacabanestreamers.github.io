@@ -453,3 +453,8 @@ nav a.navlink:hover{color:var(--cyan);text-decoration:none}
 .aj-carte{display:flex;gap:12px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
 .aj-carte img,.aj-carte .av{width:56px;height:56px;border-radius:50%;flex:none;object-fit:cover;box-shadow:0 0 0 2px var(--bg),0 0 0 3px var(--pink)}
 .aj-carte .bio{display:block;font-size:14px;color:var(--muted);margin-top:4px}
+
+/* Pied de page : liens vers les pages légales de la vitrine */
+.pied{display:flex;gap:6px 18px;flex-wrap:wrap;justify-content:center;max-width:1500px;margin:30px auto 0;padding:18px 20px 28px;border-top:1px solid var(--line);font-size:14px}
+.pied a{color:var(--muted)}
+.pied a:hover{color:var(--cyan)}
