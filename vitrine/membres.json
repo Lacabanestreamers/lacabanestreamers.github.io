@@ -392,13 +392,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 12,
-    "jeu": "Special Events",
-    "titre": "FR_VT -  Choupiathon lancement !!!",
-    "depuis": "2026-10-26T20:03:48Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -979,5 +973,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-26T23:45:26.226Z"
+ "maj": "2026-10-27T00:07:19.655Z"
 }
