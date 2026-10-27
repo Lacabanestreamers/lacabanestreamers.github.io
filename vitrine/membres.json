@@ -42,13 +42,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 23,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "🎃 Mois de l'horreur🎃 ✨On le fini ou pas ce DLC 2🔥",
-    "depuis": "2026-10-27T12:50:15Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -116,7 +110,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 8,
     "jeu": "7 Days to Die",
     "titre": "On retourne tabasser du zombie, mais de façon chill",
     "depuis": "2026-10-27T13:56:55Z",
@@ -227,7 +221,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Toto's Journey",
+    "titre": "Toto's Journey (Démo) : On part découvrir ce petit jeu prometteur !",
+    "depuis": "2026-10-27T16:05:52Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
+   },
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -355,7 +355,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
+    "viewers": 10,
     "jeu": "World of Warcraft",
     "titre": "[DROP] LE RETOUR DE L'OURS MALADE !!! DES TRUCS A DIRE, A MONTRER ET A FAIRE !",
     "depuis": "2026-10-27T14:06:54Z",
@@ -577,7 +577,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 11,
     "jeu": "The Outlast Trials",
     "titre": "🔞[DROP] On tente quelques games... Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-27T13:49:39Z",
@@ -1024,5 +1024,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-27T15:19:01.926Z"
+ "maj": "2026-10-27T16:07:21.440Z"
 }
