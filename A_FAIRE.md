@@ -12,4 +12,3 @@ Mis à jour le 27/10/2026. Le suivi du robot et des données est dans `cabane/A_
 - Lot E fait le 27/10 : contrôle XSS des `innerHTML` (voir `ARCHITECTURE.md`), 7 interpolations de nombres/paliers issus des données maintenant passées par `esc()`, test de non-régression ajouté (25 tests).
 
 ## À faire (Olivier)
-- Changer le webhook « Relais vitrine » publié par erreur (voir `cabane/A_FAIRE.md`) : le test empêche une nouvelle fuite, pas l'ancienne.
