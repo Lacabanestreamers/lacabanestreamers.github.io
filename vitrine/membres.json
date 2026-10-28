@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 22,
-  "heuresLive30": 1322,
+  "heuresLive30": 1327,
   "followsGagnes30": 318,
   "periode": {
    "du": "2026-09-28",
@@ -69,13 +69,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": {
-    "viewers": 2,
-    "jeu": "Abiotic Factor",
-    "titre": "🧪 Deux cerveaux, toujours aucun protocole de sécurité ☢️ | Abiotic Factor w/ @galyssiane | ❗cmd ❗rs ❗clip",
-    "depuis": "2026-10-27T20:21:30Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asakha-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2021-12-06",
    "succes": [],
    "jeux": [
@@ -368,21 +362,15 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 4,
-    "jeu": "Abiotic Factor",
-    "titre": "Mardi survie avec @asakha - Abiotic Factor épisode 2 : On s'fait taper par tout le monde , dans la joie et la bonne humeur!",
-    "depuis": "2026-10-27T20:20:23Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
     "DREDGE",
+    "Abiotic Factor",
     "Shift at Midnight",
     "R.E.P.O.",
-    "Writing & Reading",
-    "Abiotic Factor"
+    "Writing & Reading"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/FamousSaltyPidgeonMingLee-Y2HwlZifQbpgg0Di",
@@ -415,13 +403,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 8,
-    "jeu": "Inkbound",
-    "titre": "FR_VT - J-2 du Choupiathon !!! On test un nouveau jeu avec @obefenix",
-    "depuis": "2026-10-27T19:29:36Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -455,7 +437,7 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": {
-    "viewers": 3,
+    "viewers": 9,
     "jeu": "Stardew Valley",
     "titre": "on continue stardew valley sur la map spooky avec dydoux #SpookyStardew🎃",
     "depuis": "2026-10-27T20:28:28Z",
@@ -746,20 +728,14 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 2,
-    "jeu": "DEVOUR",
-    "titre": "[FR] ~ DEVOUR - Event Halloween - Avec Calo ~",
-    "depuis": "2026-10-27T20:58:31Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
     "The Sims 4",
     "Horror Game",
-    "Bily'Sine",
     "DEVOUR",
+    "Bily'Sine",
     "R.E.P.O."
    ],
    "clip": null
@@ -1024,5 +1000,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-27T23:07:20.156Z"
+ "maj": "2026-10-28T00:07:20.957Z"
 }
