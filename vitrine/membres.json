@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 22,
-  "heuresLive30": 1329,
+  "heuresLive30": 1330,
   "followsGagnes30": 318,
   "periode": {
    "du": "2026-09-28",
@@ -492,13 +492,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 2,
-    "jeu": "League of Legends",
-    "titre": "« EST-CE QU’ON AURA CE BRONZE  ? 🥈👀 | LOL FR »",
-    "depuis": "2026-10-28T00:38:18Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -994,5 +988,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-28T02:08:00.510Z"
+ "maj": "2026-10-28T03:07:20.707Z"
 }
