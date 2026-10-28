@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 22,
-  "heuresLive30": 1351,
+  "heuresLive30": 1354,
   "followsGagnes30": 324,
   "periode": {
    "du": "2026-09-28",
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 2,
     "jeu": "DEVOUR",
     "titre": "🎃 Mois de l'horreur🎃 ✨Entre filles on crie ou non? 🔥",
     "depuis": "2026-10-28T12:59:13Z",
@@ -405,7 +405,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "DEVOUR",
     "titre": "FR_VT - J-3 du Choupiathon !!! Des frissons avec @aly0806 @lilyth_minerva",
     "depuis": "2026-10-28T12:59:24Z",
@@ -506,7 +506,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "VALORANT",
+    "titre": "« EST-CE QU’ON AURA CE SILVER  ? 🥈👀 | VALORANT FR »",
+    "depuis": "2026-10-28T13:18:41Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -556,7 +562,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "DEVOUR",
+    "titre": "🔞[DROP] Apres-midi frissons !! Entre papote et éclat de fun!! avec @aly0806 et @hyroshimaeu / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-10-28T13:07:12Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -777,7 +789,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "Bonjour, ouverture de la recompense dreamsnap et on decouvre the Honeyglow Adventure  !!!!",
+    "depuis": "2026-10-28T14:01:59Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -831,7 +849,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 10,
+    "viewers": 11,
     "jeu": "The Sims 4",
     "titre": "THE SIMS 4 [FR] | Episode 13 : Agathe commence à nouer des liens avec son fils... et dramaaa 🏠| !discord !perfectlife",
     "depuis": "2026-10-28T12:15:27Z",
@@ -854,7 +872,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "On découvre l'extension avec Winnie ! En voc avec @nyxenfox",
+    "depuis": "2026-10-28T14:02:17Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_paygadream-440x248.jpg"
+   },
    "premierStream": "2026-05-02",
    "succes": [],
    "jeux": [
@@ -1016,5 +1040,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-28T13:07:22.021Z"
+ "maj": "2026-10-28T14:07:21.388Z"
 }
