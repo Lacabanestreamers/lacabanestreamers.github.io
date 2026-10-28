@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 22,
-  "heuresLive30": 1328,
+  "heuresLive30": 1329,
   "followsGagnes30": 318,
   "periode": {
    "du": "2026-09-28",
@@ -507,7 +507,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "League of Legends",
     "titre": "« EST-CE QU’ON AURA CE BRONZE  ? 🥈👀 | LOL FR »",
     "depuis": "2026-10-28T00:38:18Z",
@@ -516,7 +516,8 @@
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
-    "VALORANT"
+    "VALORANT",
+    "League of Legends"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lagonbleu_976/clip/SnappyWittyTubersHoneyBadger-nSLCLb8GrYFmboZt",
@@ -1000,5 +1001,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-28T01:07:20.259Z"
+ "maj": "2026-10-28T01:10:25.366Z"
 }
