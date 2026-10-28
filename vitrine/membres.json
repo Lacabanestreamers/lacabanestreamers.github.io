@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 22,
-  "heuresLive30": 1333,
+  "heuresLive30": 1334,
   "followsGagnes30": 319,
   "periode": {
    "du": "2026-09-28",
@@ -143,8 +143,8 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 1,
-    "jeu": "Just Chatting",
+    "viewers": 4,
+    "jeu": "Disney Dreamlight Valley",
     "titre": "On se réveille ensemble !",
     "depuis": "2026-10-28T08:14:19Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brastentv-440x248.jpg"
@@ -152,7 +152,8 @@
    "premierStream": "2026-06-05",
    "succes": [],
    "jeux": [
-    "Disney Dreamlight Valley"
+    "Disney Dreamlight Valley",
+    "Just Chatting"
    ],
    "clip": null
   },
@@ -244,7 +245,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 2,
+    "viewers": 5,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "[FF14] On retourne faire l'histoire ! road to lvl 60 !",
     "depuis": "2026-10-28T07:56:27Z",
@@ -461,7 +462,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 10,
+    "viewers": 16,
     "jeu": "Art",
     "titre": "✦ FAN ART CHALLENGE ✦Gimli x PEAK | On y est presque... | 🎁 10H : Giveaway dédicace digitale ! | !artchallenges !liens",
     "depuis": "2026-10-28T06:43:26Z",
@@ -561,7 +562,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "Invokyr",
+    "titre": "🔞[DROP] Des fails ? oui  toujours !!!!  Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-10-28T08:37:31Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -594,7 +601,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Call of Duty: Modern Warfare 4",
+    "titre": "🔴 MW4 EST LÀ ! 🔥 On débarque sur le champ de bataille | Luffish Gaming",
+    "depuis": "2026-10-28T08:35:45Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
+   },
    "premierStream": "2017-03-05",
    "succes": [],
    "jeux": [
@@ -1007,5 +1020,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-28T08:18:13.787Z"
+ "maj": "2026-10-28T09:07:19.799Z"
 }
