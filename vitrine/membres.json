@@ -6,11 +6,11 @@
  "chiffres": {
   "membres": 44,
   "affilies": 40,
-  "nouveaux30": 22,
-  "heuresLive30": 1427,
-  "followsGagnes30": 330,
+  "nouveaux30": 21,
+  "heuresLive30": 1413,
+  "followsGagnes30": 318,
   "periode": {
-   "du": "2026-09-28",
+   "du": "2026-09-29",
    "au": "2026-10-28"
   }
  },
@@ -212,7 +212,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Dead by Daylight",
     "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
     "depuis": "2026-10-28T19:34:38Z",
@@ -438,9 +438,9 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": {
-    "viewers": 6,
+    "viewers": 10,
     "jeu": "Animal Crossing: New Horizons",
-    "titre": "On continue de décorer notre île Cinnamon #ACNH13",
+    "titre": "Ça part en chasse à l'habitant! #ACNH13",
     "depuis": "2026-10-28T20:26:20Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kialigator-440x248.jpg"
    },
@@ -507,7 +507,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "VALORANT",
     "titre": "« EST-CE QU’ON AURA CE SILVER  ? 🥈👀 | VALORANT FR »",
     "depuis": "2026-10-28T17:53:58Z",
@@ -596,7 +596,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "💀 MW4 😂 | Je vise comme un grille-pain 🔥 ! Défis d'armes, kills et gros fails 🎯",
     "depuis": "2026-10-28T17:21:52Z",
@@ -631,13 +631,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 5,
-    "jeu": "Demonologist",
-    "titre": "On se fait kk dessus ! DEMONOLOGIST Ft @calo_vt !discord",
-    "depuis": "2026-10-28T16:30:08Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
@@ -703,13 +697,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": {
-    "viewers": 4,
-    "jeu": "The Baby In Yellow",
-    "titre": "On fait du babysitting ensemble ??? Viens vite !!!   !discord !regles !don !wishlist",
-    "depuis": "2026-10-28T18:58:52Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -717,7 +705,7 @@
     "Aniimo",
     "Stardew Valley",
     "Welcome to Elderfield",
-    "Poppy Playtime: Chapter 2 - Fly in a Web"
+    "The Baby In Yellow"
    ],
    "clip": {
     "url": "https://www.twitch.tv/melpastelplay/clip/NastyRoundDumplingsWOOP-GcMieiqElVDdvBi-",
@@ -803,7 +791,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "",
     "titre": "Bonsoir, je continue les livraison  !!!!",
     "depuis": "2026-10-28T19:34:46Z",
@@ -968,7 +956,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 16,
+    "viewers": 11,
     "jeu": "Space Savory",
     "titre": "On gère un diner glauque dans l'espace! #spacesavory #keymailer",
     "depuis": "2026-10-28T16:13:00Z",
@@ -1057,5 +1045,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-28T21:07:18.682Z"
+ "maj": "2026-10-28T22:07:20.928Z"
 }
