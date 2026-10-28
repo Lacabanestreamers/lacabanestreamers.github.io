@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 22,
-  "heuresLive30": 1415,
+  "heuresLive30": 1425,
   "followsGagnes30": 330,
   "periode": {
    "du": "2026-09-28",
@@ -212,9 +212,9 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 4,
-    "jeu": "Rise of the Tomb Raider",
-    "titre": "🏺 Exploration de tombes perdues sur Rise of the Tomb Raider ! (On est à 46%)",
+    "viewers": 5,
+    "jeu": "Dead by Daylight",
+    "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
     "depuis": "2026-10-28T19:34:38Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
    },
@@ -222,8 +222,8 @@
    "succes": [],
    "jeux": [
     "Dead by Daylight",
-    "Raft",
     "Rise of the Tomb Raider",
+    "Raft",
     "Sort The Bunnies",
     "Cat Mail Co."
    ],
@@ -244,13 +244,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": {
-    "viewers": 5,
-    "jeu": "FINAL FANTASY XIV ONLINE",
-    "titre": "[FF14] Stream du soir, bonsoir ! road to lvl 60",
-    "depuis": "2026-10-28T18:54:34Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -275,13 +269,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 8,
-    "jeu": "Tomodachi Life: Living the Dream",
-    "titre": "🌐Tomodachi Life 2 ~ On continue la vie de nos Mii ! - !réseaux",
-    "depuis": "2026-10-28T18:00:14Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -449,7 +437,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-20",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "Animal Crossing: New Horizons",
+    "titre": "On continue de décorer notre île Cinnamon #ACNH13",
+    "depuis": "2026-10-28T20:26:20Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kialigator-440x248.jpg"
+   },
    "premierStream": "2025-08-30",
    "succes": [],
    "jeux": [
@@ -513,7 +507,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 6,
+    "viewers": 3,
     "jeu": "VALORANT",
     "titre": "« EST-CE QU’ON AURA CE SILVER  ? 🥈👀 | VALORANT FR »",
     "depuis": "2026-10-28T17:53:58Z",
@@ -602,7 +596,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 2,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "💀 MW4 😂 | Je vise comme un grille-pain 🔥 ! Défis d'armes, kills et gros fails 🎯",
     "depuis": "2026-10-28T17:21:52Z",
@@ -638,7 +632,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 10,
+    "viewers": 8,
     "jeu": "Demonologist",
     "titre": "On se fait kk dessus ! DEMONOLOGIST Ft @calo_vt !discord",
     "depuis": "2026-10-28T16:30:08Z",
@@ -647,8 +641,8 @@
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
-    "Phasmophobia",
-    "Demonologist"
+    "Demonologist",
+    "Phasmophobia"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lylu_live/clip/EnchantingBoxyCamelJebaited-Bu1lNORWAu7E2Jqp",
@@ -782,13 +776,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "[FR] LET'S GO ✨ Dernière Quête d'Oogie Boogie, Dreamsnap & décoration Terres Oubliés 👻 | Disney Dreamlight Valley | !discord !commandes",
-    "depuis": "2026-10-28T17:00:10Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -815,7 +803,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "",
     "titre": "Bonsoir, je continue les livraison  !!!!",
     "depuis": "2026-10-28T19:34:46Z",
@@ -957,7 +945,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-16",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "R.E.P.O.",
+    "titre": "Des cosmétiques et des trucs qui brillent :3",
+    "depuis": "2026-10-28T20:14:19Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rinka_henbyou-440x248.jpg"
+   },
    "premierStream": "2025-06-23",
    "succes": [],
    "jeux": [
@@ -974,7 +968,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 19,
+    "viewers": 15,
     "jeu": "Space Savory",
     "titre": "On gère un diner glauque dans l'espace! #spacesavory #keymailer",
     "depuis": "2026-10-28T16:13:00Z",
@@ -1063,5 +1057,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-28T20:07:21.881Z"
+ "maj": "2026-10-28T20:57:30.067Z"
 }
