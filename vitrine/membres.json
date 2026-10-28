@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 22,
-  "heuresLive30": 1334,
+  "heuresLive30": 1339,
   "followsGagnes30": 319,
   "periode": {
    "du": "2026-09-28",
@@ -143,7 +143,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "Disney Dreamlight Valley",
     "titre": "On se réveille ensemble !",
     "depuis": "2026-10-28T08:14:19Z",
@@ -244,13 +244,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": {
-    "viewers": 5,
-    "jeu": "FINAL FANTASY XIV ONLINE",
-    "titre": "[FF14] On retourne faire l'histoire ! road to lvl 60 !",
-    "depuis": "2026-10-28T07:56:27Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -563,7 +557,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 13,
     "jeu": "Invokyr",
     "titre": "🔞[DROP] Des fails ? oui  toujours !!!!  Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-28T08:37:31Z",
@@ -602,7 +596,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 14,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "🔴 MW4 EST LÀ ! 🔥 On débarque sur le champ de bataille | Luffish Gaming",
     "depuis": "2026-10-28T08:35:45Z",
@@ -654,7 +648,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Animal Crossing: New Horizons",
+    "titre": "🛫 EMBARQUEMENT POUR MANDÉSIA • Coastalcore • 🔜 3 étoiles ! (en retard comme d'hab!)",
+    "depuis": "2026-10-28T09:35:51Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mandouee-440x248.jpg"
+   },
    "premierStream": "2024-10-23",
    "succes": [],
    "jeux": [],
@@ -906,7 +906,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Game Market Mayhem",
+    "titre": "Game Market Mayhem on range les jeux",
+    "depuis": "2026-10-28T09:49:33Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
+   },
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -992,7 +998,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "Coffee Talk",
+    "titre": "Le bar ouvre ces portes #4 | !tiktok | !Discord | !clip |",
+    "depuis": "2026-10-28T09:17:57Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zeylta-440x248.jpg"
+   },
    "premierStream": "2026-01-31",
    "succes": [],
    "jeux": [
@@ -1020,5 +1032,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-28T09:07:19.799Z"
+ "maj": "2026-10-28T10:07:19.654Z"
 }
