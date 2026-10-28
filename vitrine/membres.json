@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 22,
-  "heuresLive30": 1372,
+  "heuresLive30": 1384,
   "followsGagnes30": 324,
   "periode": {
    "du": "2026-09-28",
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "DEVOUR",
     "titre": "🎃 Mois de l'horreur🎃 ✨Entre filles on crie ou non? 🔥",
     "depuis": "2026-10-28T12:59:13Z",
@@ -53,8 +53,8 @@
    "succes": [],
    "jeux": [
     "Outbound",
-    "R.E.P.O.",
     "DEVOUR",
+    "R.E.P.O.",
     "SO CLOSE",
     "Raft"
    ],
@@ -217,21 +217,15 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": {
-    "viewers": 4,
-    "jeu": "Sort The Bunnies",
-    "titre": "🐰 Sort the Bunnies : Fraîchement sorti aujourd'hui ! C'est l'heure de ranger et d'organiser tout ça 🧹",
-    "depuis": "2026-10-28T14:56:47Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
     "Dead by Daylight",
     "Raft",
     "Rise of the Tomb Raider",
-    "Cat Mail Co.",
-    "Sort The Bunnies"
+    "Sort The Bunnies",
+    "Cat Mail Co."
    ],
    "clip": {
     "url": "https://www.twitch.tv/cristal578/clip/MoralAgitatedShallotCopyThis-5WnJ6cxApGa1WnEn",
@@ -276,7 +270,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "Splatoon 3",
     "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
     "depuis": "2026-10-28T15:06:29Z",
@@ -417,7 +411,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 9,
+    "viewers": 7,
     "jeu": "DEVOUR",
     "titre": "FR_VT - J-3 du Choupiathon !!! Des frissons avec @aly0806 @lilyth_minerva",
     "depuis": "2026-10-28T12:59:24Z",
@@ -519,7 +513,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 8,
+    "viewers": 7,
     "jeu": "VALORANT",
     "titre": "« EST-CE QU’ON AURA CE SILVER  ? 🥈👀 | VALORANT FR »",
     "depuis": "2026-10-28T13:18:41Z",
@@ -575,7 +569,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 8,
     "jeu": "DEVOUR",
     "titre": "🔞[DROP] Apres-midi frissons !! Entre papote et éclat de fun!! avec @aly0806 et @hyroshimaeu / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-28T13:07:12Z",
@@ -643,7 +637,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Demonologist",
+    "titre": "On se fait kk dessus ! DEMONOLOGIST Ft @calo_vt !discord",
+    "depuis": "2026-10-28T16:30:08Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
+   },
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
@@ -775,7 +775,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "[FR] LET'S GO ✨ Dernière Quête d'Oogie Boogie, Dreamsnap & décoration Terres Oubliés 👻 | Disney Dreamlight Valley | !discord !commandes",
+    "depuis": "2026-10-28T17:00:10Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
+   },
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -801,13 +807,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 2,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "Bonjour, ouverture de la recompense dreamsnap et on decouvre the Honeyglow Adventure  !!!!",
-    "depuis": "2026-10-28T14:01:59Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -828,7 +828,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "The Other Side",
     "titre": "[FR]Changement de plan on chasse les fantômes entre girls[!bs !steam !insta !discord ]",
     "depuis": "2026-10-28T15:16:05Z",
@@ -844,9 +844,9 @@
    ],
    "jeux": [
     "SONG OF HORROR",
+    "The Other Side",
     "MECCHA CHAMELEON",
     "Art",
-    "The Other Side",
     "DEVOUR"
    ],
    "clip": {
@@ -866,13 +866,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 8,
-    "jeu": "The Sims 4",
-    "titre": "THE SIMS 4 [FR] | Episode 13 : Agathe commence à nouer des liens avec son fils... et dramaaa 🏠| !discord !perfectlife",
-    "depuis": "2026-10-28T12:15:27Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-10",
    "succes": [],
    "jeux": [
@@ -945,7 +939,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Dying Light",
     "titre": "Dying Light allons dégommer des infectés",
     "depuis": "2026-10-28T15:17:37Z",
@@ -968,7 +962,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-16",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "R.E.P.O.",
+    "titre": "Des cosmétiques et des trucs qui brillent :3",
+    "depuis": "2026-10-28T16:47:30Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rinka_henbyou-440x248.jpg"
+   },
    "premierStream": "2025-06-23",
    "succes": [],
    "jeux": [],
@@ -982,7 +982,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 12,
+    "jeu": "Space Savory",
+    "titre": "On gère un diner glauque dans l'espace! #spacesavory #keymailer",
+    "depuis": "2026-10-28T16:13:00Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1007,7 +1013,7 @@
    "staff": false,
    "depuis": "2026-09-28",
    "live": {
-    "viewers": 4,
+    "viewers": 7,
     "jeu": "Grand Theft Auto V",
     "titre": "🌴[#4] JE DÉCOUVRE GTA V🌴  !rs !discord !instantgaming",
     "depuis": "2026-10-28T16:00:11Z",
@@ -1016,8 +1022,8 @@
    "premierStream": "2025-01-19",
    "succes": [],
    "jeux": [
-    "Cyberpunk 2077",
-    "Grand Theft Auto V"
+    "Grand Theft Auto V",
+    "Cyberpunk 2077"
    ],
    "clip": null
   },
@@ -1071,5 +1077,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-28T16:07:27.656Z"
+ "maj": "2026-10-28T17:07:21.460Z"
 }
