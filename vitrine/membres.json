@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 22,
-  "heuresLive30": 1361,
+  "heuresLive30": 1370,
   "followsGagnes30": 324,
   "periode": {
    "du": "2026-09-28",
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 2,
+    "viewers": 6,
     "jeu": "DEVOUR",
     "titre": "🎃 Mois de l'horreur🎃 ✨Entre filles on crie ou non? 🔥",
     "depuis": "2026-10-28T12:59:13Z",
@@ -54,8 +54,8 @@
    "jeux": [
     "Outbound",
     "R.E.P.O.",
-    "SO CLOSE",
     "DEVOUR",
+    "SO CLOSE",
     "Raft"
    ],
    "clip": null
@@ -218,7 +218,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 2,
+    "viewers": 4,
     "jeu": "Sort The Bunnies",
     "titre": "🐰 Sort the Bunnies : Fraîchement sorti aujourd'hui ! C'est l'heure de ranger et d'organiser tout ça 🧹",
     "depuis": "2026-10-28T14:56:47Z",
@@ -276,7 +276,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 0,
+    "viewers": 6,
     "jeu": "Splatoon 3",
     "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
     "depuis": "2026-10-28T15:06:29Z",
@@ -417,7 +417,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 9,
     "jeu": "DEVOUR",
     "titre": "FR_VT - J-3 du Choupiathon !!! Des frissons avec @aly0806 @lilyth_minerva",
     "depuis": "2026-10-28T12:59:24Z",
@@ -519,7 +519,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 6,
+    "viewers": 8,
     "jeu": "VALORANT",
     "titre": "« EST-CE QU’ON AURA CE SILVER  ? 🥈👀 | VALORANT FR »",
     "depuis": "2026-10-28T13:18:41Z",
@@ -575,7 +575,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "DEVOUR",
     "titre": "🔞[DROP] Apres-midi frissons !! Entre papote et éclat de fun!! avec @aly0806 et @hyroshimaeu / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-28T13:07:12Z",
@@ -802,7 +802,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "Disney Dreamlight Valley",
     "titre": "Bonjour, ouverture de la recompense dreamsnap et on decouvre the Honeyglow Adventure  !!!!",
     "depuis": "2026-10-28T14:01:59Z",
@@ -827,7 +827,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "The Other Side",
+    "titre": "[FR]Changement de plan on chasse les fantômes entre girls[!bs !steam !insta !discord ]",
+    "depuis": "2026-10-28T15:16:05Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
+   },
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -938,7 +944,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Dying Light",
+    "titre": "Dying Light allons dégommer des infectés",
+    "depuis": "2026-10-28T15:17:37Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
+   },
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -1052,5 +1064,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-28T15:07:21.366Z"
+ "maj": "2026-10-28T15:55:23.847Z"
 }
