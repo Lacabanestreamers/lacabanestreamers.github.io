@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 22,
-  "heuresLive30": 1331,
+  "heuresLive30": 1333,
   "followsGagnes30": 319,
   "periode": {
    "du": "2026-09-28",
@@ -142,7 +142,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Just Chatting",
+    "titre": "On se réveille ensemble !",
+    "depuis": "2026-10-28T08:14:19Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brastentv-440x248.jpg"
+   },
    "premierStream": "2026-06-05",
    "succes": [],
    "jeux": [
@@ -255,7 +261,8 @@
    "jeux": [
     "Lies of P",
     "Warframe",
-    "Wuthering Waves"
+    "Wuthering Waves",
+    "FINAL FANTASY XIV ONLINE"
    ],
    "clip": null
   },
@@ -454,7 +461,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 12,
+    "viewers": 10,
     "jeu": "Art",
     "titre": "✦ FAN ART CHALLENGE ✦Gimli x PEAK | On y est presque... | 🎁 10H : Giveaway dédicace digitale ! | !artchallenges !liens",
     "depuis": "2026-10-28T06:43:26Z",
@@ -1000,5 +1007,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-28T08:07:25.192Z"
+ "maj": "2026-10-28T08:18:13.787Z"
 }
