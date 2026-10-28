@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 22,
-  "heuresLive30": 1339,
+  "heuresLive30": 1346,
   "followsGagnes30": 319,
   "periode": {
    "du": "2026-09-28",
@@ -142,13 +142,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 5,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "On se réveille ensemble !",
-    "depuis": "2026-10-28T08:14:19Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brastentv-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-06-05",
    "succes": [],
    "jeux": [
@@ -455,13 +449,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 16,
-    "jeu": "Art",
-    "titre": "✦ FAN ART CHALLENGE ✦Gimli x PEAK | On y est presque... | 🎁 10H : Giveaway dédicace digitale ! | !artchallenges !liens",
-    "depuis": "2026-10-28T06:43:26Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -556,13 +544,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 13,
-    "jeu": "Invokyr",
-    "titre": "🔞[DROP] Des fails ? oui  toujours !!!!  Entre papote et éclat de fun !! / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-10-28T08:37:31Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -596,7 +578,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 14,
+    "viewers": 4,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "🔴 MW4 EST LÀ ! 🔥 On débarque sur le champ de bataille | Luffish Gaming",
     "depuis": "2026-10-28T08:35:45Z",
@@ -649,7 +631,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 1,
+    "viewers": 4,
     "jeu": "Animal Crossing: New Horizons",
     "titre": "🛫 EMBARQUEMENT POUR MANDÉSIA • Coastalcore • 🔜 3 étoiles ! (en retard comme d'hab!)",
     "depuis": "2026-10-28T09:35:51Z",
@@ -657,7 +639,9 @@
    },
    "premierStream": "2024-10-23",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Animal Crossing: New Horizons"
+   ],
    "clip": null
   },
   {
@@ -999,7 +983,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 7,
+    "viewers": 15,
     "jeu": "Coffee Talk",
     "titre": "Le bar ouvre ces portes #4 | !tiktok | !Discord | !clip |",
     "depuis": "2026-10-28T09:17:57Z",
@@ -1009,8 +993,8 @@
    "succes": [],
    "jeux": [
     "inKONBINI: One Store. Many Stories",
-    "Gloomy Eyes",
     "Coffee Talk",
+    "Gloomy Eyes",
     "The Witch's Bakery"
    ],
    "clip": {
@@ -1032,5 +1016,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-28T10:07:19.654Z"
+ "maj": "2026-10-28T11:07:28.558Z"
 }
