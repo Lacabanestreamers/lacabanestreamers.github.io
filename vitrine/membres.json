@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 22,
-  "heuresLive30": 1384,
+  "heuresLive30": 1397,
   "followsGagnes30": 324,
   "periode": {
    "du": "2026-09-28",
@@ -42,13 +42,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 7,
-    "jeu": "DEVOUR",
-    "titre": "🎃 Mois de l'horreur🎃 ✨Entre filles on crie ou non? 🔥",
-    "depuis": "2026-10-28T12:59:13Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -270,10 +264,10 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 4,
-    "jeu": "Splatoon 3",
-    "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
-    "depuis": "2026-10-28T15:06:29Z",
+    "viewers": 1,
+    "jeu": "Tomodachi Life: Living the Dream",
+    "titre": "🌐Tomodachi Life 2 ~ On continue la vie de nos Mii ! - !réseaux",
+    "depuis": "2026-10-28T18:00:14Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
    },
    "premierStream": "2024-08-12",
@@ -411,8 +405,8 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
-    "jeu": "DEVOUR",
+    "viewers": 17,
+    "jeu": "R.E.P.O.",
     "titre": "FR_VT - J-3 du Choupiathon !!! Des frissons avec @aly0806 @lilyth_minerva",
     "depuis": "2026-10-28T12:59:24Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
@@ -430,7 +424,7 @@
     "Special Events",
     "R.E.P.O.",
     "Minecraft",
-    "The Headliners"
+    "DEVOUR"
    ],
    "clip": {
     "url": "https://www.twitch.tv/hyroshimaeu/clip/JazzyShortLemurDAESuppy-3HVFivbvW9o2atpO",
@@ -513,10 +507,10 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 7,
+    "viewers": 5,
     "jeu": "VALORANT",
     "titre": "« EST-CE QU’ON AURA CE SILVER  ? 🥈👀 | VALORANT FR »",
-    "depuis": "2026-10-28T13:18:41Z",
+    "depuis": "2026-10-28T17:53:58Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
    },
    "premierStream": "2027-08-31",
@@ -569,8 +563,8 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
-    "jeu": "DEVOUR",
+    "viewers": 4,
+    "jeu": "R.E.P.O.",
     "titre": "🔞[DROP] Apres-midi frissons !! Entre papote et éclat de fun!! avec @aly0806 et @hyroshimaeu / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-28T13:07:12Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
@@ -607,7 +601,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Call of Duty: Modern Warfare 4",
+    "titre": "💀 MW4 😂 | Je vise comme un grille-pain 🔥 ! Défis d'armes, kills et gros fails 🎯",
+    "depuis": "2026-10-28T17:21:52Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
+   },
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -638,7 +638,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 5,
+    "viewers": 11,
     "jeu": "Demonologist",
     "titre": "On se fait kk dessus ! DEMONOLOGIST Ft @calo_vt !discord",
     "depuis": "2026-10-28T16:30:08Z",
@@ -647,7 +647,8 @@
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
-    "Phasmophobia"
+    "Phasmophobia",
+    "Demonologist"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lylu_live/clip/EnchantingBoxyCamelJebaited-Bu1lNORWAu7E2Jqp",
@@ -776,7 +777,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] LET'S GO ✨ Dernière Quête d'Oogie Boogie, Dreamsnap & décoration Terres Oubliés 👻 | Disney Dreamlight Valley | !discord !commandes",
     "depuis": "2026-10-28T17:00:10Z",
@@ -828,7 +829,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "The Other Side",
     "titre": "[FR]Changement de plan on chasse les fantômes entre girls[!bs !steam !insta !discord ]",
     "depuis": "2026-10-28T15:16:05Z",
@@ -884,13 +885,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 3,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "On découvre l'extension avec Winnie ! En voc avec @nyxenfox",
-    "depuis": "2026-10-28T14:02:17Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_paygadream-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-05-02",
    "succes": [],
    "jeux": [
@@ -939,7 +934,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Dying Light",
     "titre": "Dying Light allons dégommer des infectés",
     "depuis": "2026-10-28T15:17:37Z",
@@ -962,16 +957,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-16",
-   "live": {
-    "viewers": 1,
-    "jeu": "R.E.P.O.",
-    "titre": "Des cosmétiques et des trucs qui brillent :3",
-    "depuis": "2026-10-28T16:47:30Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rinka_henbyou-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-06-23",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "R.E.P.O."
+   ],
    "clip": null
   },
   {
@@ -993,7 +984,8 @@
    "succes": [],
    "jeux": [
     "Photomaly",
-    "Just Chatting"
+    "Just Chatting",
+    "Space Savory"
    ],
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/RealCulturedMeatloafHassanChop-J1NQkVeYR2VmfdYr",
@@ -1012,13 +1004,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": {
-    "viewers": 7,
-    "jeu": "Grand Theft Auto V",
-    "titre": "🌴[#4] JE DÉCOUVRE GTA V🌴  !rs !discord !instantgaming",
-    "depuis": "2026-10-28T16:00:11Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-19",
    "succes": [],
    "jeux": [
@@ -1077,5 +1063,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-28T17:07:21.460Z"
+ "maj": "2026-10-28T18:07:26.209Z"
 }
