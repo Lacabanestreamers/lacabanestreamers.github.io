@@ -7,8 +7,8 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 22,
-  "heuresLive30": 1346,
-  "followsGagnes30": 319,
+  "heuresLive30": 1350,
+  "followsGagnes30": 324,
   "periode": {
    "du": "2026-09-28",
    "au": "2026-10-28"
@@ -578,14 +578,20 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 6,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "🔴 MW4 EST LÀ ! 🔥 On débarque sur le champ de bataille | Luffish Gaming",
     "depuis": "2026-10-28T08:35:45Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
    },
    "premierStream": "2017-03-05",
-   "succes": [],
+   "succes": [
+    {
+     "type": "palier",
+     "palier": 200,
+     "date": "2026-10-28"
+    }
+   ],
    "jeux": [
     "Call of Duty: Modern Warfare 4",
     "Dune: Awakening"
@@ -630,13 +636,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": {
-    "viewers": 4,
-    "jeu": "Animal Crossing: New Horizons",
-    "titre": "🛫 EMBARQUEMENT POUR MANDÉSIA • Coastalcore • 🔜 3 étoiles ! (en retard comme d'hab!)",
-    "depuis": "2026-10-28T09:35:51Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mandouee-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-10-23",
    "succes": [],
    "jeux": [
@@ -890,13 +890,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": {
-    "viewers": 3,
-    "jeu": "Game Market Mayhem",
-    "titre": "Game Market Mayhem on range les jeux",
-    "depuis": "2026-10-28T09:49:33Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -982,13 +976,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": {
-    "viewers": 15,
-    "jeu": "Coffee Talk",
-    "titre": "Le bar ouvre ces portes #4 | !tiktok | !Discord | !clip |",
-    "depuis": "2026-10-28T09:17:57Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zeylta-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-01-31",
    "succes": [],
    "jeux": [
@@ -1016,5 +1004,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-28T11:07:28.558Z"
+ "maj": "2026-10-28T12:07:18.008Z"
 }
