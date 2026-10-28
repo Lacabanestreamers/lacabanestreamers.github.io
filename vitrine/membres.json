@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 22,
-  "heuresLive30": 1327,
+  "heuresLive30": 1328,
   "followsGagnes30": 318,
   "periode": {
    "du": "2026-09-28",
@@ -436,13 +436,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-20",
-   "live": {
-    "viewers": 9,
-    "jeu": "Stardew Valley",
-    "titre": "on continue stardew valley sur la map spooky avec dydoux #SpookyStardew🎃",
-    "depuis": "2026-10-27T20:28:28Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kialigator-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-30",
    "succes": [],
    "jeux": [
@@ -512,7 +506,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "League of Legends",
+    "titre": "« EST-CE QU’ON AURA CE BRONZE  ? 🥈👀 | LOL FR »",
+    "depuis": "2026-10-28T00:38:18Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -1000,5 +1000,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-28T00:07:20.957Z"
+ "maj": "2026-10-28T01:07:20.259Z"
 }
