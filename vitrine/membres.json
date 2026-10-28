@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 22,
-  "heuresLive30": 1370,
+  "heuresLive30": 1372,
   "followsGagnes30": 324,
   "periode": {
    "du": "2026-09-28",
@@ -276,7 +276,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 6,
+    "viewers": 5,
     "jeu": "Splatoon 3",
     "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
     "depuis": "2026-10-28T15:06:29Z",
@@ -867,7 +867,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 11,
+    "viewers": 8,
     "jeu": "The Sims 4",
     "titre": "THE SIMS 4 [FR] | Episode 13 : Agathe commence à nouer des liens avec son fils... et dramaaa 🏠| !discord !perfectlife",
     "depuis": "2026-10-28T12:15:27Z",
@@ -955,7 +955,8 @@
    "succes": [],
    "jeux": [
     "Cellar Keeper",
-    "Game Market Mayhem"
+    "Game Market Mayhem",
+    "Dying Light"
    ],
    "clip": null
   },
@@ -1005,7 +1006,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Grand Theft Auto V",
+    "titre": "🌴[#4] JE DÉCOUVRE GTA V🌴  !rs !discord !instantgaming",
+    "depuis": "2026-10-28T16:00:11Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
+   },
    "premierStream": "2025-01-19",
    "succes": [],
    "jeux": [
@@ -1064,5 +1071,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-28T15:55:23.847Z"
+ "maj": "2026-10-28T16:07:27.656Z"
 }
