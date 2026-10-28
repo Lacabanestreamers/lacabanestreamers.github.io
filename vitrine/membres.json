@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1413,
+  "heuresLive30": 1420,
   "followsGagnes30": 318,
   "periode": {
    "du": "2026-09-29",
@@ -24,7 +24,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "A Plague Tale: Innocence",
+    "titre": "Plague Tale innocence/PS5",
+    "depuis": "2026-10-28T22:51:04Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -212,7 +218,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 3,
+    "viewers": 5,
     "jeu": "Dead by Daylight",
     "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
     "depuis": "2026-10-28T19:34:38Z",
@@ -438,7 +444,7 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": {
-    "viewers": 10,
+    "viewers": 6,
     "jeu": "Animal Crossing: New Horizons",
     "titre": "Ça part en chasse à l'habitant! #ACNH13",
     "depuis": "2026-10-28T20:26:20Z",
@@ -506,13 +512,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 4,
-    "jeu": "VALORANT",
-    "titre": "« EST-CE QU’ON AURA CE SILVER  ? 🥈👀 | VALORANT FR »",
-    "depuis": "2026-10-28T17:53:58Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -595,13 +595,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 4,
-    "jeu": "Call of Duty: Modern Warfare 4",
-    "titre": "💀 MW4 😂 | Je vise comme un grille-pain 🔥 ! Défis d'armes, kills et gros fails 🎯",
-    "depuis": "2026-10-28T17:21:52Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -933,13 +927,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-16",
-   "live": {
-    "viewers": 5,
-    "jeu": "R.E.P.O.",
-    "titre": "Des cosmétiques et des trucs qui brillent :3",
-    "depuis": "2026-10-28T20:14:19Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rinka_henbyou-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-06-23",
    "succes": [],
    "jeux": [
@@ -956,7 +944,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 11,
+    "viewers": 9,
     "jeu": "Space Savory",
     "titre": "On gère un diner glauque dans l'espace! #spacesavory #keymailer",
     "depuis": "2026-10-28T16:13:00Z",
@@ -965,8 +953,8 @@
    "premierStream": null,
    "succes": [],
    "jeux": [
-    "Photomaly",
     "Space Savory",
+    "Photomaly",
     "Just Chatting"
    ],
    "clip": {
@@ -1045,5 +1033,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-28T22:07:20.928Z"
+ "maj": "2026-10-28T23:07:18.331Z"
 }
