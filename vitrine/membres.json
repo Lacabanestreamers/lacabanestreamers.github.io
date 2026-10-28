@@ -7,8 +7,8 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 22,
-  "heuresLive30": 1397,
-  "followsGagnes30": 324,
+  "heuresLive30": 1407,
+  "followsGagnes30": 330,
   "periode": {
    "du": "2026-09-28",
    "au": "2026-10-28"
@@ -238,7 +238,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "FINAL FANTASY XIV ONLINE",
+    "titre": "[FF14] Stream du soir, bonsoir ! road to lvl 60",
+    "depuis": "2026-10-28T18:54:34Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -264,7 +270,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
+    "viewers": 4,
     "jeu": "Tomodachi Life: Living the Dream",
     "titre": "🌐Tomodachi Life 2 ~ On continue la vie de nos Mii ! - !réseaux",
     "depuis": "2026-10-28T18:00:14Z",
@@ -282,8 +288,8 @@
     "Minecraft",
     "Splatoon 3",
     "Sprout Valley",
-    "Sword Art Online: Hollow Realization",
-    "Tomodachi Life: Living the Dream"
+    "Tomodachi Life: Living the Dream",
+    "Sword Art Online: Hollow Realization"
    ],
    "clip": {
     "url": "https://www.twitch.tv/elegaming__/clip/TentativeIntelligentMuleGingerPower-aMz25OEpSLDDGtCT",
@@ -322,7 +328,7 @@
   {
    "login": "evodp",
    "nom": "evodp",
-   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0f0caa0d-f9d6-4f49-ac5a-0581c2fc456f-profile_image-300x300.jpeg",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/82de712c-55c5-449a-98fb-4f1ce4dfa8fb-profile_image-300x300.jpeg",
    "bio": "Bienvenue dans l’univers d’Evodp, passionné de jeux vidéo et de diamond painting.Entre l’univers magique de Hogwarts Legacy, les aventures de Disney Dreamlight Valley et l’action intense de Call of Duty, Evodp partage sa passion à travers des contenus variés, authentiques et divertissants.😊",
    "type": "",
    "staff": false,
@@ -404,13 +410,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 17,
-    "jeu": "R.E.P.O.",
-    "titre": "FR_VT - J-3 du Choupiathon !!! Des frissons avec @aly0806 @lilyth_minerva",
-    "depuis": "2026-10-28T12:59:24Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -421,8 +421,8 @@
    ],
    "jeux": [
     "Valheim",
-    "Special Events",
     "R.E.P.O.",
+    "Special Events",
     "Minecraft",
     "DEVOUR"
    ],
@@ -562,13 +562,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 4,
-    "jeu": "R.E.P.O.",
-    "titre": "🔞[DROP] Apres-midi frissons !! Entre papote et éclat de fun!! avec @aly0806 et @hyroshimaeu / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-10-28T13:07:12Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -602,7 +596,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
+    "viewers": 1,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "💀 MW4 😂 | Je vise comme un grille-pain 🔥 ! Défis d'armes, kills et gros fails 🎯",
     "depuis": "2026-10-28T17:21:52Z",
@@ -638,7 +632,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 11,
+    "viewers": 6,
     "jeu": "Demonologist",
     "titre": "On se fait kk dessus ! DEMONOLOGIST Ft @calo_vt !discord",
     "depuis": "2026-10-28T16:30:08Z",
@@ -709,7 +703,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "The Baby In Yellow",
+    "titre": "On fait du babysitting ensemble ??? Viens vite !!!   !discord !regles !don !wishlist",
+    "depuis": "2026-10-28T18:58:52Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -777,7 +777,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 6,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] LET'S GO ✨ Dernière Quête d'Oogie Boogie, Dreamsnap & décoration Terres Oubliés 👻 | Disney Dreamlight Valley | !discord !commandes",
     "depuis": "2026-10-28T17:00:10Z",
@@ -828,13 +828,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 7,
-    "jeu": "The Other Side",
-    "titre": "[FR]Changement de plan on chasse les fantômes entre girls[!bs !steam !insta !discord ]",
-    "depuis": "2026-10-28T15:16:05Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -933,13 +927,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": {
-    "viewers": 4,
-    "jeu": "Dying Light",
-    "titre": "Dying Light allons dégommer des infectés",
-    "depuis": "2026-10-28T15:17:37Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -974,7 +962,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 12,
+    "viewers": 15,
     "jeu": "Space Savory",
     "titre": "On gère un diner glauque dans l'espace! #spacesavory #keymailer",
     "depuis": "2026-10-28T16:13:00Z",
@@ -1063,5 +1051,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-28T18:07:26.209Z"
+ "maj": "2026-10-28T19:07:21.282Z"
 }
