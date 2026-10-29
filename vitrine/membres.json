@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1430,
+  "heuresLive30": 1433,
   "followsGagnes30": 318,
   "periode": {
    "du": "2026-09-29",
@@ -246,7 +246,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 1,
+    "viewers": 4,
     "jeu": "Aniimo",
     "titre": "[Aniimo] On decouvre la nouvelle MAJ",
     "depuis": "2026-10-29T07:53:53Z",
@@ -264,7 +264,8 @@
     "Lies of P",
     "Warframe",
     "FINAL FANTASY XIV ONLINE",
-    "Wuthering Waves"
+    "Wuthering Waves",
+    "Aniimo"
    ],
    "clip": null
   },
@@ -510,7 +511,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Makers & Crafting",
+    "titre": "🐰Maquette allée de citrouille de action #5",
+    "depuis": "2026-10-29T08:20:21Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
+   },
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -537,7 +544,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 18,
     "jeu": "Vampir",
     "titre": "🔞[DROP] On découvre!! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-29T07:30:56Z",
@@ -985,7 +992,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "Farm & Feast",
+    "titre": "On test la démo d'un jeu de ferme | !tiktok | !Discord | !clip |",
+    "depuis": "2026-10-29T08:24:34Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zeylta-440x248.jpg"
+   },
    "premierStream": "2026-01-31",
    "succes": [],
    "jeux": [
@@ -1013,5 +1026,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-29T08:07:22.774Z"
+ "maj": "2026-10-29T09:07:19.900Z"
 }
