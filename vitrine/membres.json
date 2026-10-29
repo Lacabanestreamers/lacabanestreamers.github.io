@@ -7,8 +7,8 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1443,
-  "followsGagnes30": 318,
+  "heuresLive30": 1446,
+  "followsGagnes30": 319,
   "periode": {
    "du": "2026-09-29",
    "au": "2026-10-29"
@@ -167,7 +167,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 10,
     "jeu": "The Sims 4",
     "titre": "🎃 LES 31 DÉFIS D'OCTOBRE | Je vais le regretter, non ? part 3 😆",
     "depuis": "2026-10-29T09:29:19Z",
@@ -328,7 +328,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "[FR] [DDV] 🎃👻 HALLOWEEN 2026 : OOGIE BOOGIE DÉBARQUE ! 👹 | Disney Dreamlight Valley",
+    "depuis": "2026-10-29T11:56:19Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
+   },
    "premierStream": "2024-08-10",
    "succes": [],
    "jeux": [
@@ -537,13 +543,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 13,
-    "jeu": "Vampir",
-    "titre": "🔞[DROP] Entre papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-10-29T07:30:56Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -818,13 +818,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 9,
-    "jeu": "The Sims 4",
-    "titre": "THE SIMS 4 [FR] | Episode 14 : Agathe récupère son fils et emménage au Mont Komorebi... et dramaaa 🏠| !discord !perfectlife",
-    "depuis": "2026-10-29T07:54:11Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-10",
    "succes": [],
    "jeux": [
@@ -1015,5 +1009,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-29T11:07:24.373Z"
+ "maj": "2026-10-29T12:07:20.487Z"
 }
