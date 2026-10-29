@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1451,
+  "heuresLive30": 1452,
   "followsGagnes30": 322,
   "periode": {
    "du": "2026-09-29",
@@ -166,13 +166,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 15,
-    "jeu": "The Sims 4",
-    "titre": "🎃 LES 31 DÉFIS D'OCTOBRE | Je vais le regretter, non ? part 3 😆",
-    "depuis": "2026-10-29T09:29:19Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -329,7 +323,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 1,
+    "viewers": 7,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] [DDV] 🎃👻 HALLOWEEN 2026 : OOGIE BOOGIE DÉBARQUE ! 👹 | Disney Dreamlight Valley",
     "depuis": "2026-10-29T11:56:19Z",
@@ -506,7 +500,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "VALORANT",
+    "titre": "« EST-CE QU’ON AURA CE SILVER  ? 🥈👀 | VALORANT FR »",
+    "depuis": "2026-10-29T13:55:15Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -550,7 +550,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 8,
     "jeu": "7 Days to Die",
     "titre": "🔞[DROP] Entre papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-29T13:16:03Z",
@@ -930,7 +930,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "Space Savory",
+    "titre": "Sweeney Todd dans l'espace? #spacesavory #keymailer",
+    "depuis": "2026-10-29T13:44:55Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1018,5 +1024,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-29T13:35:41.538Z"
+ "maj": "2026-10-29T14:07:24.545Z"
 }
