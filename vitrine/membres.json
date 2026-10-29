@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1467,
+  "heuresLive30": 1474,
   "followsGagnes30": 322,
   "periode": {
    "du": "2026-09-29",
@@ -219,7 +219,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 4,
+    "viewers": 2,
     "jeu": "Librarian: Tidy Up the Arcane Library!",
     "titre": "☕ Zéro pouvoir, tout à refaire : défi Librarian lancé ! 📖",
     "depuis": "2026-10-29T14:51:37Z",
@@ -277,7 +277,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "The Survivalists",
+    "titre": "🏝The Survivalists ~ On continue la survie ! - !réseaux",
+    "depuis": "2026-10-29T18:05:15Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -406,7 +412,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 11,
+    "viewers": 9,
     "jeu": "R.E.P.O.",
     "titre": "FR_VT - J-4 du Choupiathon !!! Nouvelle MAJ - R.E.P.O",
     "depuis": "2026-10-29T12:57:39Z",
@@ -501,7 +507,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "VALORANT",
     "titre": "« EST-CE QU’ON AURA CE SILVER  ? 🥈👀 | VALORANT FR »",
     "depuis": "2026-10-29T13:55:15Z",
@@ -550,7 +556,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 10,
     "jeu": "7 Days to Die",
     "titre": "🔞[DROP] Entre papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-29T13:16:03Z",
@@ -619,7 +625,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 9,
+    "viewers": 12,
     "jeu": "Phasmophobia",
     "titre": "PHASMOOOO - Ft @louisiana_rolleta !discord",
     "depuis": "2026-10-29T16:12:48Z",
@@ -943,7 +949,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 8,
+    "viewers": 21,
     "jeu": "Space Savory",
     "titre": "Sweeney Todd dans l'espace? #spacesavory #keymailer",
     "depuis": "2026-10-29T13:44:55Z",
@@ -1036,5 +1042,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-29T17:07:23.215Z"
+ "maj": "2026-10-29T18:07:24.764Z"
 }
