@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 16,
+    "viewers": 15,
     "jeu": "A Plague Tale: Innocence",
     "titre": "Plague Tale innocence/PS5",
     "depuis": "2026-10-28T22:51:04Z",
@@ -773,7 +773,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 1,
     "jeu": "",
     "titre": "Bonsoir, je continue les livraison  !!!!",
     "depuis": "2026-10-28T19:34:46Z",
@@ -1015,5 +1015,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-29T00:47:13.153Z"
+ "maj": "2026-10-29T01:07:19.499Z"
 }
