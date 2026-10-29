@@ -7,8 +7,8 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1448,
-  "followsGagnes30": 319,
+  "heuresLive30": 1451,
+  "followsGagnes30": 322,
   "periode": {
    "du": "2026-09-29",
    "au": "2026-10-29"
@@ -167,7 +167,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 18,
+    "viewers": 15,
     "jeu": "The Sims 4",
     "titre": "🎃 LES 31 DÉFIS D'OCTOBRE | Je vais le regretter, non ? part 3 😆",
     "depuis": "2026-10-29T09:29:19Z",
@@ -329,7 +329,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 8,
+    "viewers": 1,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] [DDV] 🎃👻 HALLOWEEN 2026 : OOGIE BOOGIE DÉBARQUE ! 👹 | Disney Dreamlight Valley",
     "depuis": "2026-10-29T11:56:19Z",
@@ -549,7 +549,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "7 Days to Die",
+    "titre": "🔞[DROP] Entre papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-10-29T13:16:03Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -1007,13 +1013,10 @@
   }
  ],
  "reussitesJours": 15,
- "rejoindre": {
-  "titre": "Rejoindre La Cabane",
-  "texte": "test"
- },
+ "rejoindre": null,
  "inscriptions": {
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-29T13:07:20.684Z"
+ "maj": "2026-10-29T13:35:41.538Z"
 }
