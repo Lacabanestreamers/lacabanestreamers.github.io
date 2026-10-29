@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1428,
+  "heuresLive30": 1430,
   "followsGagnes30": 318,
   "periode": {
    "du": "2026-09-29",
@@ -24,13 +24,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": {
-    "viewers": 15,
-    "jeu": "A Plague Tale: Innocence",
-    "titre": "Plague Tale innocence/PS5",
-    "depuis": "2026-10-28T22:51:04Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -58,7 +52,14 @@
     "SO CLOSE",
     "Raft"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/aly0806/clip/PlacidEagerFoxTheThing-eDhgafrw1YltdYAo",
+    "titre": "oh le sursaut",
+    "vues": 2,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/bbd2de51-b79b-421a-92c9-eefd590f8097/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-28",
+    "duree": 16
+   }
   },
   {
    "login": "asakha",
@@ -187,12 +188,12 @@
     "Just Chatting"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/chezelodie/clip/SourAuspiciousWolverineNinjaGrumpy-s3ErnafuYUOm4AXx",
-    "titre": "Un autre doubalge ...",
-    "vues": 4,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/7c88e2b0-5c4b-4617-9ccf-4e3789855176/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-21",
-    "duree": 12
+    "url": "https://www.twitch.tv/chezelodie/clip/HonestEnthusiasticBorkPeteZarollTie-VFy7s-fu_RrEtrOu",
+    "titre": "WzBot CLIP | 🎃 LES 31 DÉFIS D'OCTOBRE | Je vais le regretter, non ? part 2 😆 (by oko_san_)",
+    "vues": 3,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d1267997-9c8e-4902-82db-271e1f6dbfdc/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-27",
+    "duree": 60
    }
   },
   {
@@ -286,12 +287,12 @@
     "Sword Art Online: Hollow Realization"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/elegaming__/clip/TentativeIntelligentMuleGingerPower-aMz25OEpSLDDGtCT",
-    "titre": "Il pleut du Reggai",
-    "vues": 5,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/fd0b35e0-ae7d-4aae-a455-d3c77f35a997/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-21",
-    "duree": 49
+    "url": "https://www.twitch.tv/elegaming__/clip/AbstruseBlazingDragonflyNononoCat-ZLgsk5JURmO1gfck",
+    "titre": "🌐Louison la Tomate",
+    "vues": 1,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/47095c07-424e-49a9-a10b-39c29915d162/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-28",
+    "duree": 54
    }
   },
   {
@@ -310,14 +311,7 @@
     "Art",
     "Huglings"
    ],
-   "clip": {
-    "url": "https://www.twitch.tv/emmamarmotte/clip/GeniusPiliableSparrowBibleThump-QXHfs9_5CNvq7ylz",
-    "titre": "j'avooouee",
-    "vues": 12,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/0a1112c1-23ec-4b0c-b532-45794917224f/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-21",
-    "duree": 60
-   }
+   "clip": null
   },
   {
    "login": "evodp",
@@ -423,7 +417,7 @@
    "clip": {
     "url": "https://www.twitch.tv/hyroshimaeu/clip/JazzyShortLemurDAESuppy-3HVFivbvW9o2atpO",
     "titre": "AU secours !!!",
-    "vues": 8,
+    "vues": 9,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/9fb40cdf-3ddc-4e9e-b922-c006aab013ce/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-22",
     "duree": 33
@@ -463,14 +457,7 @@
     "The Legend of Zelda: Tears of the Kingdom",
     "Just Chatting"
    ],
-   "clip": {
-    "url": "https://www.twitch.tv/kristal_et_ses_ac/clip/RamshackleArbitraryTomatoDoggo-s8OfQntosqK1KgO-",
-    "titre": "team café ou pipi ?",
-    "vues": 6,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/2362cb5f-0067-4cf8-b68f-5e2ab447bb06/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-21",
-    "duree": 7
-   }
+   "clip": null
   },
   {
    "login": "laelya_",
@@ -507,14 +494,7 @@
     "VALORANT",
     "League of Legends"
    ],
-   "clip": {
-    "url": "https://www.twitch.tv/lagonbleu_976/clip/SnappyWittyTubersHoneyBadger-nSLCLb8GrYFmboZt",
-    "titre": "WzBot CLIP | 😂🎯 OBJECTIF SILVER 🥈 | On vise le rank up, pas le traumatisme 💀 (by lagonbleu_976)",
-    "vues": 1,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d953e20e-34be-4104-a525-f24d07c5a47e/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-21",
-    "duree": 60
-   }
+   "clip": null
   },
   {
    "login": "liiapin",
@@ -567,12 +547,12 @@
     "7 Days to Die"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/lilyth_minerva/clip/InspiringClearLocustOneHand-hfwqN2x98O5akRU-",
-    "titre": "🔞[DROP] Entre papote et éclat de fun !!  avec @hyroshimaeu  / !discord !clip !kitsune !zic !horreur",
-    "vues": 8,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e4c23102-8158-4f41-8bfa-3fccb2f19935/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-21",
-    "duree": 30
+    "url": "https://www.twitch.tv/lilyth_minerva/clip/AverageCourteousClipzSquadGoals-NHDKsU8ijM-A1GJQ",
+    "titre": "diable",
+    "vues": 4,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/ba0224ba-0d2a-4b2f-851d-f32372b5591d/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-22",
+    "duree": 16
    }
   },
   {
@@ -621,12 +601,12 @@
     "Phasmophobia"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/lylu_live/clip/EnchantingBoxyCamelJebaited-Bu1lNORWAu7E2Jqp",
-    "titre": "aveugleman",
+    "url": "https://www.twitch.tv/lylu_live/clip/PunchyRelatedSalsifyFreakinStinkin-yZSxYdMh7354RF4f",
+    "titre": "pas sadako aled",
     "vues": 3,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5be09c39-ac0f-4e63-a4f5-0c5cf9d31161/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-21",
-    "duree": 30
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b4a09bd6-2301-4d3e-a955-6e7fe6283375/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-27",
+    "duree": 60
    }
   },
   {
@@ -692,7 +672,7 @@
    "clip": {
     "url": "https://www.twitch.tv/melpastelplay/clip/NastyRoundDumplingsWOOP-GcMieiqElVDdvBi-",
     "titre": "🥰",
-    "vues": 6,
+    "vues": 7,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/41c27c1c-1f03-4920-a1b0-0db349122d17/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-24",
     "duree": 30
@@ -772,13 +752,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "",
-    "titre": "Bonsoir, je continue les livraison  !!!!",
-    "depuis": "2026-10-28T19:34:46Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -815,12 +789,12 @@
     "DEVOUR"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/oko_san_/clip/ThirstySpoopyPepperImGlitch-GmNV0FaT-o_unup6",
-    "titre": "1clip On découvre The Midnight walk ensemble [!bs !steam !insta !discord ] (by chezelodie)",
-    "vues": 6,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/7167c48f-120c-487a-87c4-af35bb9ddd74/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-21",
-    "duree": 22
+    "url": "https://www.twitch.tv/oko_san_/clip/CulturedSmallShrimpPunchTrees-PtBho4ftyLJ-l3Iw",
+    "titre": "WzBot CLIP | [FR] Retour dans les backrooms avec @Calo_VT [!bs !steam !insta !discord ] (by aemeilis",
+    "vues": 5,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/3bb29d06-5a1a-4060-b6c9-a619bea55562/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-26",
+    "duree": 60
    }
   },
   {
@@ -941,11 +915,11 @@
    ],
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/RealCulturedMeatloafHassanChop-J1NQkVeYR2VmfdYr",
-    "titre": "On fait le shift de minuit avec @galyssiane!",
-    "vues": 4,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5ff1dc94-a924-4c2c-a95a-eed11706cc2d/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "titre": "RIP le micro de @Galyssiane",
+    "vues": 5,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/c0ffb2f0-55bd-432f-8f6c-0f82e4c3a42b/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-26",
-    "duree": 30
+    "duree": 25
    }
   },
   {
@@ -1015,5 +989,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-29T01:07:19.499Z"
+ "maj": "2026-10-29T02:07:54.344Z"
 }
