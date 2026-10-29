@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1433,
+  "heuresLive30": 1438,
   "followsGagnes30": 318,
   "periode": {
    "du": "2026-09-29",
@@ -166,7 +166,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 14,
+    "jeu": "The Sims 4",
+    "titre": "🎃 LES 31 DÉFIS D'OCTOBRE | Je vais le regretter, non ? part 3 😆",
+    "depuis": "2026-10-29T09:29:19Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -245,13 +251,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": {
-    "viewers": 4,
-    "jeu": "Aniimo",
-    "titre": "[Aniimo] On decouvre la nouvelle MAJ",
-    "depuis": "2026-10-29T07:53:53Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -512,7 +512,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 7,
     "jeu": "Makers & Crafting",
     "titre": "🐰Maquette allée de citrouille de action #5",
     "depuis": "2026-10-29T08:20:21Z",
@@ -544,9 +544,9 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 18,
+    "viewers": 16,
     "jeu": "Vampir",
-    "titre": "🔞[DROP] On découvre!! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
+    "titre": "🔞[DROP] Entre papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-29T07:30:56Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
    },
@@ -825,7 +825,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 7,
+    "viewers": 9,
     "jeu": "The Sims 4",
     "titre": "THE SIMS 4 [FR] | Episode 14 : Agathe récupère son fils et emménage au Mont Komorebi... et dramaaa 🏠| !discord !perfectlife",
     "depuis": "2026-10-29T07:54:11Z",
@@ -1005,7 +1005,8 @@
     "inKONBINI: One Store. Many Stories",
     "Coffee Talk",
     "Gloomy Eyes",
-    "The Witch's Bakery"
+    "The Witch's Bakery",
+    "Farm & Feast"
    ],
    "clip": {
     "url": "https://www.twitch.tv/zeylta/clip/FurryBitterScallionPicoMause-GjaC5l0qrizyDZmc",
@@ -1026,5 +1027,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-29T09:07:19.900Z"
+ "maj": "2026-10-29T10:07:21.177Z"
 }
