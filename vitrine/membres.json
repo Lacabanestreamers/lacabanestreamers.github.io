@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1502,
+  "heuresLive30": 1509,
   "followsGagnes30": 319,
   "periode": {
    "du": "2026-09-30",
@@ -42,13 +42,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 6,
-    "jeu": "All Rats on Deck",
-    "titre": "🎃 Mois de l'horreur🎃 ✨OP LQ entre filles @galyssiane @DamePiouPiou 🔥",
-    "depuis": "2026-10-29T19:40:16Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -117,13 +111,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 6,
-    "jeu": "VALORANT",
-    "titre": "On retourne prendre des headshot, mais en team ^^",
-    "depuis": "2026-10-29T19:51:29Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -370,13 +358,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 8,
-    "jeu": "All Rats on Deck",
-    "titre": "Opé découverte sur All Rats On Deck avec @damepioupiou et @aly0806",
-    "depuis": "2026-10-29T19:46:34Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -487,7 +469,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 15,
+    "viewers": 19,
     "jeu": "Just Chatting",
     "titre": "RÉACT🍿 : Nouvelle saison de 90 Day Fiancé / 3 mois pour se marier, avec des couples complétement inédits ✨| React émission & docus",
     "depuis": "2026-10-29T20:17:07Z",
@@ -514,8 +496,8 @@
    "depuis": "2026-10-26",
    "live": {
     "viewers": 3,
-    "jeu": "VALORANT",
-    "titre": "« EST-CE QU’ON AURA CE SILVER  ? 🥈👀 | VALORANT FR »",
+    "jeu": "RuneScape: Dragonwilds",
+    "titre": "🐉 PREMIÈRE DÉCOUVERTE DE RUNESCAPE: DRAGONWILDS ! 🌲 SURVIE, CRAFT & EXPLORATION !",
     "depuis": "2026-10-29T13:55:15Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
    },
@@ -625,7 +607,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 7,
+    "viewers": 9,
     "jeu": "Sons of the Forest",
     "titre": "LES Q NUUUUUS - Ft  @sahaku_ !discord",
     "depuis": "2026-10-29T19:31:21Z",
@@ -945,7 +927,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 14,
+    "viewers": 12,
     "jeu": "Midnight Monitor: Anomaly Watch",
     "titre": "Des anomalies partouuuuut! #MidnightMonitor #keymailer",
     "depuis": "2026-10-29T13:44:55Z",
@@ -956,7 +938,8 @@
    "jeux": [
     "Space Savory",
     "Photomaly",
-    "Just Chatting"
+    "Just Chatting",
+    "Midnight Monitor: Anomaly Watch"
    ],
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/RealCulturedMeatloafHassanChop-J1NQkVeYR2VmfdYr",
@@ -1038,5 +1021,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-29T22:07:19.408Z"
+ "maj": "2026-10-29T23:07:19.094Z"
 }
