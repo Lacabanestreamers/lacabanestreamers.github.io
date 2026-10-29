@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1446,
+  "heuresLive30": 1448,
   "followsGagnes30": 319,
   "periode": {
    "du": "2026-09-29",
@@ -167,7 +167,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 18,
     "jeu": "The Sims 4",
     "titre": "🎃 LES 31 DÉFIS D'OCTOBRE | Je vais le regretter, non ? part 3 😆",
     "depuis": "2026-10-29T09:29:19Z",
@@ -329,7 +329,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 0,
+    "viewers": 8,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] [DDV] 🎃👻 HALLOWEEN 2026 : OOGIE BOOGIE DÉBARQUE ! 👹 | Disney Dreamlight Valley",
     "depuis": "2026-10-29T11:56:19Z",
@@ -411,7 +411,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Aniimo",
+    "titre": "FR_VT - J-4 du Choupiathon !!! Nouvelle MAJ - ANIIMO",
+    "depuis": "2026-10-29T12:57:39Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -1009,5 +1015,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-29T12:07:20.487Z"
+ "maj": "2026-10-29T13:07:20.684Z"
 }
