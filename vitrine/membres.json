@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1457,
+  "heuresLive30": 1462,
   "followsGagnes30": 322,
   "periode": {
    "du": "2026-09-29",
@@ -219,7 +219,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "Librarian: Tidy Up the Arcane Library!",
     "titre": "☕ Zéro pouvoir, tout à refaire : défi Librarian lancé ! 📖",
     "depuis": "2026-10-29T14:51:37Z",
@@ -406,8 +406,8 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
-    "jeu": "Aniimo",
+    "viewers": 5,
+    "jeu": "R.E.P.O.",
     "titre": "FR_VT - J-4 du Choupiathon !!! Nouvelle MAJ - ANIIMO",
     "depuis": "2026-10-29T12:57:39Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
@@ -501,7 +501,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "VALORANT",
     "titre": "« EST-CE QU’ON AURA CE SILVER  ? 🥈👀 | VALORANT FR »",
     "depuis": "2026-10-29T13:55:15Z",
@@ -550,7 +550,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 11,
     "jeu": "7 Days to Die",
     "titre": "🔞[DROP] Entre papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-29T13:16:03Z",
@@ -567,9 +567,9 @@
    "jeux": [
     "Dead by Daylight",
     "R.E.P.O.",
+    "7 Days to Die",
     "AION 2",
-    "The Quarry",
-    "7 Days to Die"
+    "The Quarry"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/AverageCourteousClipzSquadGoals-NHDKsU8ijM-A1GJQ",
@@ -931,7 +931,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 3,
+    "viewers": 8,
     "jeu": "Space Savory",
     "titre": "Sweeney Todd dans l'espace? #spacesavory #keymailer",
     "depuis": "2026-10-29T13:44:55Z",
@@ -1024,5 +1024,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-29T15:07:21.677Z"
+ "maj": "2026-10-29T16:07:21.507Z"
 }
