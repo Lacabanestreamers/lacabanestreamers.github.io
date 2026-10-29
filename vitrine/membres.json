@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1482,
+  "heuresLive30": 1488,
   "followsGagnes30": 323,
   "periode": {
    "du": "2026-09-29",
@@ -42,7 +42,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 11,
+    "jeu": "All Rats on Deck",
+    "titre": "🎃 Mois de l'horreur🎃 ✨OP LQ entre filles @galyssiane @DamePiouPiou 🔥",
+    "depuis": "2026-10-29T19:40:16Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
+   },
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -111,7 +117,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "VALORANT",
+    "titre": "On retourne prendre des headshot, mais en team ^^",
+    "depuis": "2026-10-29T19:51:29Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
+   },
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -272,7 +284,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "The Survivalists",
     "titre": "🏝The Survivalists ~ On continue la survie ! - !réseaux",
     "depuis": "2026-10-29T18:05:15Z",
@@ -291,7 +303,7 @@
     "Splatoon 3",
     "Sprout Valley",
     "Tomodachi Life: Living the Dream",
-    "Sword Art Online: Hollow Realization"
+    "The Survivalists"
    ],
    "clip": {
     "url": "https://www.twitch.tv/elegaming__/clip/AbstruseBlazingDragonflyNononoCat-ZLgsk5JURmO1gfck",
@@ -364,7 +376,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "All Rats on Deck",
+    "titre": "Opé découverte sur All Rats On Deck avec @damepioupiou et @aly0806",
+    "depuis": "2026-10-29T19:46:34Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -405,13 +423,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 8,
-    "jeu": "R.E.P.O.",
-    "titre": "FR_VT - J-4 du Choupiathon !!! Nouvelle MAJ - R.E.P.O",
-    "depuis": "2026-10-29T12:57:39Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -501,7 +513,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 8,
     "jeu": "VALORANT",
     "titre": "« EST-CE QU’ON AURA CE SILVER  ? 🥈👀 | VALORANT FR »",
     "depuis": "2026-10-29T13:55:15Z",
@@ -612,7 +624,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Sons of the Forest",
+    "titre": "LES Q NUUUUUS - Ft  @sahaku_ !discord",
+    "depuis": "2026-10-29T19:31:21Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
+   },
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
@@ -678,7 +696,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Poppy Playtime: Chapter 3 - Deep Sleep",
+    "titre": "On poursuit Poppy chapitre 3, tu viens m'aider ??!!!   !discord !regles !don !wishlist",
+    "depuis": "2026-10-29T19:07:07Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -746,7 +770,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "Moonlight Peaks",
     "titre": "[FR] Chill dans ce monde magique 🦇🪄 | Moonlight Peaks | !discord !commandes",
     "depuis": "2026-10-29T17:00:05Z",
@@ -789,8 +813,8 @@
    "jeux": [
     "Disney Dreamlight Valley",
     "American Truck Simulator",
-    "Project CARS",
     "Euro Truck Simulator 2",
+    "Project CARS",
     "World of Warcraft"
    ],
    "clip": null
@@ -885,7 +909,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Split Fiction",
+    "titre": "Où en est la synchro de notre duo ? !discord",
+    "depuis": "2026-10-29T19:42:27Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_r3skyo-440x248.jpg"
+   },
    "premierStream": "2023-03-23",
    "succes": [],
    "jeux": [
@@ -1030,5 +1060,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-29T19:07:21.209Z"
+ "maj": "2026-10-29T20:07:26.589Z"
 }
