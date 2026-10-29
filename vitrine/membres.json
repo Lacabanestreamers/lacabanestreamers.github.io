@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 13,
     "jeu": "All Rats on Deck",
     "titre": "🎃 Mois de l'horreur🎃 ✨OP LQ entre filles @galyssiane @DamePiouPiou 🔥",
     "depuis": "2026-10-29T19:40:16Z",
@@ -118,7 +118,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 9,
     "jeu": "VALORANT",
     "titre": "On retourne prendre des headshot, mais en team ^^",
     "depuis": "2026-10-29T19:51:29Z",
@@ -284,7 +284,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "The Survivalists",
     "titre": "🏝The Survivalists ~ On continue la survie ! - !réseaux",
     "depuis": "2026-10-29T18:05:15Z",
@@ -377,7 +377,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 9,
     "jeu": "All Rats on Deck",
     "titre": "Opé découverte sur All Rats On Deck avec @damepioupiou et @aly0806",
     "depuis": "2026-10-29T19:46:34Z",
@@ -492,7 +492,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 11,
+    "jeu": "Just Chatting",
+    "titre": "RÉACT🍿 : Nouvelle saison de 90 Day Fiancé / 3 mois pour se marier, avec des couples complétement inédits ✨| React émission & docus",
+    "depuis": "2026-10-29T20:17:07Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
+   },
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
@@ -513,7 +519,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 8,
+    "viewers": 9,
     "jeu": "VALORANT",
     "titre": "« EST-CE QU’ON AURA CE SILVER  ? 🥈👀 | VALORANT FR »",
     "depuis": "2026-10-29T13:55:15Z",
@@ -625,7 +631,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "Sons of the Forest",
     "titre": "LES Q NUUUUUS - Ft  @sahaku_ !discord",
     "depuis": "2026-10-29T19:31:21Z",
@@ -698,7 +704,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "Poppy Playtime: Chapter 3 - Deep Sleep",
     "titre": "On poursuit Poppy chapitre 3, tu viens m'aider ??!!!   !discord !regles !don !wishlist",
     "depuis": "2026-10-29T19:07:07Z",
@@ -797,9 +803,9 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 1,
-    "jeu": "Euro Truck Simulator 2",
-    "titre": "Bonsoir, la tempête de neige et sur l'europe  !!!!",
+    "viewers": 2,
+    "jeu": "American Truck Simulator",
+    "titre": "Bonsoir, la tempête de neige et toujours la  !!!!",
     "depuis": "2026-10-29T18:48:17Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
    },
@@ -905,7 +911,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 6,
     "jeu": "Split Fiction",
     "titre": "Où en est la synchro de notre duo ? !discord",
     "depuis": "2026-10-29T19:42:27Z",
@@ -963,7 +969,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 20,
+    "viewers": 17,
     "jeu": "Space Savory",
     "titre": "Sweeney Todd dans l'espace? #spacesavory #keymailer",
     "depuis": "2026-10-29T13:44:55Z",
@@ -1056,5 +1062,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-29T20:12:08.610Z"
+ "maj": "2026-10-29T21:07:19.984Z"
 }
