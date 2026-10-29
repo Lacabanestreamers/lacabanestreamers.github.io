@@ -38,4 +38,4 @@ Chiffres clés en dégradé rose → cyan (texte découpé). `color-scheme: dark
 Pulsation de la pastille live et mise en valeur de l'événement ciblé **seulement** si `prefers-reduced-motion` le permet. Contour de focus cyan 2 px. Mise en page en grilles `auto-fill` jusqu'à 250–320 px, une colonne sous 600 px.
 
 ## 6. Images
-Icône 🛖 (favicon de la page staff), `icon-192/512.png` et icône masquable, aperçu de partage `vitrine/apercu.png` (1200×630). Fichier source du logo : à confirmer par Olivier.
+Icône 🛖 (favicon de la page staff), `icon-192/512.png` et icône masquable, aperçu de partage `vitrine/apercu.png` (1200×630). Pas de source vectorielle dans le dépôt : la référence du logo est l'icône PNG `icon-512.png` (déclinée en `icon-192.png` et `icon-maskable-512.png`) (proposé par Claude le 29/10/2026, à corriger si besoin).
