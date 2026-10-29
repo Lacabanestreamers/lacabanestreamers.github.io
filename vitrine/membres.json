@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1438,
+  "heuresLive30": 1443,
   "followsGagnes30": 318,
   "periode": {
    "du": "2026-09-29",
@@ -167,7 +167,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 12,
     "jeu": "The Sims 4",
     "titre": "🎃 LES 31 DÉFIS D'OCTOBRE | Je vais le regretter, non ? part 3 😆",
     "depuis": "2026-10-29T09:29:19Z",
@@ -511,13 +511,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 7,
-    "jeu": "Makers & Crafting",
-    "titre": "🐰Maquette allée de citrouille de action #5",
-    "depuis": "2026-10-29T08:20:21Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -544,7 +538,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 16,
+    "viewers": 13,
     "jeu": "Vampir",
     "titre": "🔞[DROP] Entre papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-29T07:30:56Z",
@@ -992,13 +986,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": {
-    "viewers": 7,
-    "jeu": "Farm & Feast",
-    "titre": "On test la démo d'un jeu de ferme | !tiktok | !Discord | !clip |",
-    "depuis": "2026-10-29T08:24:34Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zeylta-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-01-31",
    "succes": [],
    "jeux": [
@@ -1027,5 +1015,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-29T10:07:21.177Z"
+ "maj": "2026-10-29T11:07:24.373Z"
 }
