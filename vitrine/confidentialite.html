@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://aulit42369.goatcounter.com; object-src 'none'; base-uri 'self'; form-action 'none'">
 <title>Confidentialité · La Cabane</title>
 <meta name="description" content="Quelles données la vitrine de La Cabane affiche sur ses streamers, d’où elles viennent, combien de temps elles restent, et comment faire retirer ta chaîne.">
 <meta property="og:type" content="website">
@@ -71,26 +72,10 @@
     <h2>Statistiques de visite</h2>
     <p>La vitrine utilise <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener">GoatCounter</a>, service de mesure d'audience exploité depuis l'Irlande et hébergé dans l'Union européenne (serveurs en Finlande et en Allemagne). Il compte les pages vues sans cookie et sans identifiant qui te suivrait d'une visite à l'autre. Ton adresse IP sert seulement à déduire le pays et à ne pas compter deux fois la même visite : elle n'est jamais enregistrée (gardée quelques heures au plus en mémoire, puis oubliée). Seules des statistiques globales sont conservées : pages vues, site d'origine, navigateur, pays et taille d'écran approximatifs. Cette mesure sert uniquement à connaître la fréquentation de la vitrine : elle est exemptée de consentement, selon les recommandations de la CNIL. Base légale : l'intérêt légitime à connaître la fréquentation du site. Tu peux t'y opposer à tout moment sur ce navigateur :</p>
     <p><button type="button" class="btn" id="gc-toggle" aria-pressed="false">Ne pas être compté</button> <span id="gc-state"></span></p>
-    <script>
-    // GoatCounter (count.v4.js) ne compte rien quand localStorage.skipgc === 't' (même règle que le Site)
-    (function () {
-      var b = document.getElementById('gc-toggle'), s = document.getElementById('gc-state');
-      function off() { try { return localStorage.getItem('skipgc') === 't'; } catch (e) { return false; } }
-      function maj() {
-        b.textContent = off() ? 'Être compté de nouveau' : 'Ne pas être compté';
-        b.setAttribute('aria-pressed', String(off()));
-        s.textContent = off() ? 'Tes visites ne sont pas comptées sur ce navigateur.' : 'Tes visites sont comptées, de façon anonyme.';
-      }
-      b.addEventListener('click', function () {
-        try { if (off()) localStorage.removeItem('skipgc'); else localStorage.setItem('skipgc', 't'); } catch (e) { /* stockage bloqué */ }
-        maj();
-      });
-      maj();
-    })();
-    </script>
+    <script src="gc-choix.js"></script>
 
     <h2>Inscription à un événement</h2>
-    <p>Quand un streamer de La Cabane clique sur « Je participe », il se connecte avec Twitch (aucune autorisation demandée). La demande (événement, ton jeton Twitch) passe par un petit relais hébergé chez Cloudflare, qui vérifie le jeton auprès de Twitch puis dépose la demande dans un salon Discord privé du staff. Le robot la revérifie, ajoute ton pseudo et ton image à la liste des participants affichée sur la vitrine, puis efface le message.</p>
+    <p>Quand un streamer de La Cabane clique sur « Je participe », il se connecte avec Twitch (aucune autorisation demandée). La demande (événement, ton jeton Twitch) passe par un petit relais hébergé chez Cloudflare, qui vérifie le jeton auprès de Twitch puis dépose dans un salon Discord privé du staff une demande signée qui ne contient que l'événement, ton identifiant et ton pseudo Twitch (ton jeton, lui, n'est jamais transmis à Discord ni gardé). Le robot vérifie la signature, ajoute ton pseudo et ton image à la liste des participants affichée sur la vitrine, puis efface le message.</p>
 
     <h2>Services tiers utilisés par la page</h2>
     <ul>
@@ -118,7 +103,7 @@
   <footer><a href="./">Vitrine</a><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html" aria-current="page">Confidentialité</a><a href="cgu.html">Conditions d'utilisation</a></footer>
 </div>
 <script data-goatcounter="https://aulit42369.goatcounter.com/count"
-        async src="//gc.zgo.at/count.v4.js" crossorigin="anonymous"
+        async src="https://gc.zgo.at/count.v4.js" crossorigin="anonymous"
         integrity="sha384-nRw6qfbWyJha9LhsOtSb2YJDyZdKvvCFh0fJYlkquSFjUxp9FVNugbfy8q1jdxI+"></script>
 </body>
 </html>

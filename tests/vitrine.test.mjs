@@ -198,8 +198,34 @@ test("fiches vitrine/s/* : une par membre, canonical présent, aucun script (ou 
     assert.ok(scripts.every(x => x === ancien), f);
   }
 });
-test("fiches vitrine/s/* : aucune adresse e-mail dans le texte public", { todo: "detectiverenard.html affiche encore un e-mail (« Email Pro »), à corriger dans le robot (dépôt cabane)" }, () => {
+test("fiches vitrine/s/* : aucune adresse e-mail dans le texte public", () => {
   for (const f of readdirSync(join(racine, "vitrine/s"))) assert.doesNotMatch(lire("vitrine/s/" + f), /[\w.+-]+@[\w-]+\.[a-z]{2,}/i, f);
+});
+
+/* ---------- CSP ---------- */
+test("toute page HTML a une CSP stricte ; chaque script en ligne est autorisé par son empreinte", () => {
+  const pages = [];
+  const parcourir = d => { for (const f of readdirSync(join(racine, d), { withFileTypes: true })) {
+    const p = d ? `${d}/${f.name}` : f.name;
+    if (f.isDirectory()) { if (!["node_modules", ".git", "tests", "docs"].includes(f.name)) parcourir(p); }
+    else if (f.name.endsWith(".html") && !/^google[0-9a-f]+\.html$/.test(f.name)) pages.push(p);
+  } };
+  parcourir("");
+  assert.ok(pages.length >= 8, pages.join(", "));
+  for (const p of pages) {
+    const h = lire(p);
+    const csp = h.match(/<meta http-equiv="Content-Security-Policy" content="([^"]+)">/)?.[1];
+    assert.ok(csp, `CSP absente : ${p}`);
+    const script = csp.match(/script-src ([^;]+)/)?.[1] || "";
+    assert.doesNotMatch(script, /unsafe-/, p);
+    assert.match(csp, /object-src 'none'/, p);
+    assert.match(csp, /base-uri 'self'/, p);
+    assert.doesNotMatch(h, /\son[a-z]+="/i, `attribut on…= dans ${p}`);
+    for (const [, corps] of h.matchAll(/<script(?![^>]*(?:ld\+json|\ssrc=))[^>]*>([\s\S]*?)<\/script>/gi)) {
+      const empreinte = createHash("sha256").update(corps.replace(/\r\n/g, "\n")).digest("base64");
+      assert.ok(script.includes(`'sha256-${empreinte}'`), `script en ligne non autorisé par la CSP dans ${p}`);
+    }
+  }
 });
 
 /* ---------- Référencement ---------- */
