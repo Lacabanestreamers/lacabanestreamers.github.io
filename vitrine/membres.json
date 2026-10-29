@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1420,
+  "heuresLive30": 1425,
   "followsGagnes30": 318,
   "periode": {
    "du": "2026-09-29",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 9,
+    "viewers": 16,
     "jeu": "A Plague Tale: Innocence",
     "titre": "Plague Tale innocence/PS5",
     "depuis": "2026-10-28T22:51:04Z",
@@ -35,8 +35,8 @@
    "succes": [],
    "jeux": [
     "Rocket League",
-    "Fortnite",
-    "A Plague Tale: Innocence"
+    "A Plague Tale: Innocence",
+    "Fortnite"
    ],
    "clip": null
   },
@@ -218,7 +218,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 5,
+    "viewers": 3,
     "jeu": "Dead by Daylight",
     "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
     "depuis": "2026-10-28T19:34:38Z",
@@ -443,13 +443,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-20",
-   "live": {
-    "viewers": 6,
-    "jeu": "Animal Crossing: New Horizons",
-    "titre": "Ça part en chasse à l'habitant! #ACNH13",
-    "depuis": "2026-10-28T20:26:20Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kialigator-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-30",
    "succes": [],
    "jeux": [
@@ -785,7 +779,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 1,
     "jeu": "",
     "titre": "Bonsoir, je continue les livraison  !!!!",
     "depuis": "2026-10-28T19:34:46Z",
@@ -943,13 +937,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": {
-    "viewers": 9,
-    "jeu": "Space Savory",
-    "titre": "On gère un diner glauque dans l'espace! #spacesavory #keymailer",
-    "depuis": "2026-10-28T16:13:00Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1033,5 +1021,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-28T23:07:18.331Z"
+ "maj": "2026-10-29T00:07:19.767Z"
 }
