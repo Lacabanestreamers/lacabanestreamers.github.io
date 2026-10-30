@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1575,
+  "heuresLive30": 1579,
   "followsGagnes30": 315,
   "periode": {
    "du": "2026-10-01",
@@ -174,7 +174,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 20,
+    "viewers": 18,
     "jeu": "Special Events",
     "titre": "🔥 Vous faites les dons, je relève les défis ! ❤️🎒 | Stream Mates 2026 pour l'asso \"Sur le chemin de l'école\"",
     "depuis": "2026-10-30T17:22:32Z",
@@ -452,7 +452,7 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": {
-    "viewers": 6,
+    "viewers": 9,
     "jeu": "DEVOUR",
     "titre": "SOIREE HORREUR HALLOWEEN avec makeup et screamers à volonté avec @psykofana 🎃",
     "depuis": "2026-10-30T20:29:17Z",
@@ -515,7 +515,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "VALORANT",
     "titre": "🔴 VALORANT 🔥 ON RÉCUPÈRE NOS RANGS ! 💪 OBJECTIF : REMONTER LE CLASSEMENT ! 🎯",
     "depuis": "2026-10-30T14:59:17Z",
@@ -597,13 +597,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 6,
-    "jeu": "Special Events",
-    "titre": "❤️ LE GAMING A DU CŒUR ! 🎮 Ensemble pour « Sur le chemin de l'école » 🎒 Chaque don peut changer une vie !",
-    "depuis": "2026-10-30T20:47:12Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -1043,5 +1037,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-30T23:07:22.170Z"
+ "maj": "2026-10-30T23:37:51.050Z"
 }
