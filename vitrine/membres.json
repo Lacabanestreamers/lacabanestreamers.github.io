@@ -8,10 +8,10 @@
   "affilies": 40,
   "nouveaux30": 21,
   "heuresLive30": 1515,
-  "followsGagnes30": 319,
+  "followsGagnes30": 329,
   "periode": {
    "du": "2026-09-30",
-   "au": "2026-10-29"
+   "au": "2026-10-30"
   }
  },
  "agenda": [],
@@ -457,7 +457,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "Art",
+    "titre": "DÉDICACE, OC CHALLENGE, 10H : TIRAGE ART CHALLENGE | Allez courage, c'est bientôt l'week end 😴 | !artchallenges !liens",
+    "depuis": "2026-10-30T07:27:54Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
+   },
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -1005,5 +1011,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-30T05:07:20.329Z"
+ "maj": "2026-10-30T08:07:22.178Z"
 }
