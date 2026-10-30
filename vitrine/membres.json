@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1528,
+  "heuresLive30": 1531,
   "followsGagnes30": 329,
   "periode": {
    "du": "2026-09-30",
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 12,
     "jeu": "Pacify",
     "titre": "🎃 Mois de l'horreur🎃 ✨Bon reussi cette fois ou on crie avec @lilyth_minerva 🔥",
     "depuis": "2026-10-30T13:00:04Z",
@@ -232,7 +232,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Tidy Up the Halloween Shop",
     "titre": "☕ C'est parti pour commencer Halloween ! Et quoi de mieux qu'un Tidy Up 🎃 👻",
     "depuis": "2026-10-30T13:07:36Z",
@@ -342,7 +342,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 2,
+    "viewers": 8,
     "jeu": "Red Dead Redemption II",
     "titre": "[FR] [RDR2] 🎂 32 ANS, UNE PRIME SUR MA TÊTE ET DU WHISKY À VOLONTÉ ! 🤠🍻 | ANNIVERSAIRE SUR RDR2",
     "depuis": "2026-10-30T13:44:37Z",
@@ -564,7 +564,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 5,
     "jeu": "Pacify",
     "titre": "🔞[DROP] Kitsune et Panda @aly0806 entre frisson, papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-30T13:03:25Z",
@@ -1042,5 +1042,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-30T13:59:29.054Z"
+ "maj": "2026-10-30T14:07:18.534Z"
 }
