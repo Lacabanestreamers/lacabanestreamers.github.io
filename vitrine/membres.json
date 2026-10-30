@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1509,
+  "heuresLive30": 1513,
   "followsGagnes30": 319,
   "periode": {
    "du": "2026-09-30",
@@ -468,13 +468,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 19,
-    "jeu": "Just Chatting",
-    "titre": "RÉACT🍿 : Nouvelle saison de 90 Day Fiancé / 3 mois pour se marier, avec des couples complétement inédits ✨| React émission & docus",
-    "depuis": "2026-10-29T20:17:07Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
@@ -494,18 +488,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 3,
-    "jeu": "RuneScape: Dragonwilds",
-    "titre": "🐉 PREMIÈRE DÉCOUVERTE DE RUNESCAPE: DRAGONWILDS ! 🌲 SURVIE, CRAFT & EXPLORATION !",
-    "depuis": "2026-10-29T13:55:15Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
     "VALORANT",
-    "League of Legends"
+    "League of Legends",
+    "RuneScape: Dragonwilds"
    ],
    "clip": null
   },
@@ -606,13 +595,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 9,
-    "jeu": "Sons of the Forest",
-    "titre": "LES Q NUUUUUS - Ft  @sahaku_ !discord",
-    "depuis": "2026-10-29T19:31:21Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
@@ -926,13 +909,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": {
-    "viewers": 12,
-    "jeu": "Midnight Monitor: Anomaly Watch",
-    "titre": "Des anomalies partouuuuut! #MidnightMonitor #keymailer",
-    "depuis": "2026-10-29T13:44:55Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1021,5 +998,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-29T23:07:19.094Z"
+ "maj": "2026-10-30T00:07:18.794Z"
 }
