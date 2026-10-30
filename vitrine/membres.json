@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1514,
+  "heuresLive30": 1515,
   "followsGagnes30": 319,
   "periode": {
    "du": "2026-09-30",
@@ -762,13 +762,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 2,
-    "jeu": "American Truck Simulator",
-    "titre": "Bonsoir, je repart en livraison  !!!!",
-    "depuis": "2026-10-30T02:51:26Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1011,5 +1005,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-30T04:07:22.923Z"
+ "maj": "2026-10-30T05:07:20.329Z"
 }
