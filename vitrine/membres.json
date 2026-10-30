@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1549,
+  "heuresLive30": 1558,
   "followsGagnes30": 330,
   "periode": {
    "du": "2026-09-30",
@@ -514,7 +514,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "VALORANT",
     "titre": "🔴 VALORANT 🔥 ON RÉCUPÈRE NOS RANGS ! 💪 OBJECTIF : REMONTER LE CLASSEMENT ! 🎯",
     "depuis": "2026-10-30T14:59:17Z",
@@ -564,7 +564,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 11,
     "jeu": "Just Chatting",
     "titre": "🔞[DROP] Entre frisson, papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-30T13:03:25Z",
@@ -768,7 +768,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "Moonlight Peaks",
     "titre": "[FR] On commence le week-end d'Halloween 🦇🪄 | Moonlight Peaks | !discord !commandes",
     "depuis": "2026-10-30T17:01:51Z",
@@ -800,7 +800,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "American Truck Simulator",
     "titre": "Bonsoir,je reprend mes livraison !!!!",
     "depuis": "2026-10-30T18:41:09Z",
@@ -877,7 +877,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Planet Zoo 2",
     "titre": "On crée un nouveau zoo dans ma franchise !! En voc avec @nyxenfox",
     "depuis": "2026-10-30T18:14:00Z",
@@ -887,7 +887,8 @@
    "succes": [],
    "jeux": [
     "Disney Dreamlight Valley",
-    "The Sims 4"
+    "The Sims 4",
+    "Planet Zoo 2"
    ],
    "clip": null
   },
@@ -914,7 +915,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 4,
     "jeu": "Pratfall",
     "titre": "Go creuser la tombe du duo ? !discord",
     "depuis": "2026-10-30T18:43:45Z",
@@ -925,7 +926,8 @@
    "jeux": [
     "The Witcher 3: Wild Hunt Remastered",
     "Just Chatting",
-    "Split Fiction"
+    "Split Fiction",
+    "Pratfall"
    ],
    "clip": null
   },
@@ -972,7 +974,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 10,
+    "viewers": 11,
     "jeu": "The Cabin Factory",
     "titre": "Y'a encore des anomalies?",
     "depuis": "2026-10-30T15:46:02Z",
@@ -1067,5 +1069,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-30T19:07:59.166Z"
+ "maj": "2026-10-30T19:10:40.465Z"
 }
