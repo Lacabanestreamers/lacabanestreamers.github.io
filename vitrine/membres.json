@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1558,
+  "heuresLive30": 1568,
   "followsGagnes30": 330,
   "periode": {
    "du": "2026-09-30",
@@ -174,7 +174,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 15,
+    "viewers": 14,
     "jeu": "Special Events",
     "titre": "🔥 Vous faites les dons, je relève les défis ! ❤️🎒 | Stream Mates 2026 pour l'asso \"Sur le chemin de l'école\"",
     "depuis": "2026-10-30T17:22:32Z",
@@ -232,7 +232,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 2,
+    "viewers": 5,
     "jeu": "Dead by Daylight",
     "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord 🎃 👻",
     "depuis": "2026-10-30T19:38:40Z",
@@ -324,7 +324,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 4,
     "jeu": "Disney Dreamlight Valley",
     "titre": "💕 Soirée cosy des marmottes sur DDV 🎮 | !lurk !clip !commandes",
     "depuis": "2026-10-30T19:51:57Z",
@@ -431,8 +431,8 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
-    "jeu": "Art",
+    "viewers": 5,
+    "jeu": "Far Far West",
     "titre": "FR_VT - J-5 du Choupiathon !!! Dessin du donation goal",
     "depuis": "2026-10-30T14:46:28Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
@@ -469,7 +469,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-20",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "DEVOUR",
+    "titre": "SOIREE HORREUR HALLOWEEN avec makeup et screamers à volonté avec @psykofana 🎃",
+    "depuis": "2026-10-30T20:29:17Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kialigator-440x248.jpg"
+   },
    "premierStream": "2025-08-30",
    "succes": [],
    "jeux": [
@@ -526,7 +532,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "VALORANT",
     "titre": "🔴 VALORANT 🔥 ON RÉCUPÈRE NOS RANGS ! 💪 OBJECTIF : REMONTER LE CLASSEMENT ! 🎯",
     "depuis": "2026-10-30T14:59:17Z",
@@ -608,7 +614,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Special Events",
+    "titre": "❤️ LE GAMING A DU CŒUR ! 🎮 Ensemble pour « Sur le chemin de l'école » 🎒 Chaque don peut changer une vie !",
+    "depuis": "2026-10-30T20:47:12Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
+   },
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -799,13 +811,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 3,
-    "jeu": "American Truck Simulator",
-    "titre": "Bonsoir,je reprend mes livraison !!!!",
-    "depuis": "2026-10-30T18:41:09Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -859,9 +865,9 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 7,
-    "jeu": "Demonologist",
-    "titre": "DEMONOLOGIST [FR] | Soirée horreur avant Halloween avec @melzebuth_ & @kneline sur pleins de jeux qui font peur 'boooouh\"👻| !discord",
+    "viewers": 9,
+    "jeu": "R.E.P.O.",
+    "titre": "R.E.P.O [FR] | Soirée horreur avant Halloween avec @melzebuth_ & @kneline sur pleins de jeux qui font peur 'boooouh\"👻| !discord",
     "depuis": "2026-10-30T19:52:32Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
    },
@@ -870,7 +876,8 @@
    "jeux": [
     "The Sims 4",
     "Animal Crossing: New Horizons",
-    "Just Chatting"
+    "Just Chatting",
+    "Demonologist"
    ],
    "clip": null
   },
@@ -882,19 +889,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 3,
-    "jeu": "Planet Zoo 2",
-    "titre": "On crée un nouveau zoo dans ma franchise !! En voc avec @nyxenfox",
-    "depuis": "2026-10-30T18:14:00Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_paygadream-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-05-02",
    "succes": [],
    "jeux": [
     "Disney Dreamlight Valley",
-    "The Sims 4",
-    "Planet Zoo 2"
+    "Planet Zoo 2",
+    "The Sims 4"
    ],
    "clip": null
   },
@@ -981,8 +982,8 @@
    "depuis": "2026-10-27",
    "live": {
     "viewers": 8,
-    "jeu": "Dead Signal",
-    "titre": "On a perdu le signal!",
+    "jeu": "The Beast Awoke to Eat Your Darlings",
+    "titre": "La bête qui mange quoi??? #bateyd  #keymailer",
     "depuis": "2026-10-30T15:46:02Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1075,5 +1076,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-30T20:07:19.306Z"
+ "maj": "2026-10-30T21:07:22.548Z"
 }
