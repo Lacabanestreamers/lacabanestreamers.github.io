@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1515,
+  "heuresLive30": 1516,
   "followsGagnes30": 329,
   "periode": {
    "du": "2026-09-30",
@@ -324,7 +324,7 @@
   {
    "login": "evodp",
    "nom": "evodp",
-   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/82de712c-55c5-449a-98fb-4f1ce4dfa8fb-profile_image-300x300.jpeg",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/b5293b7d-b1d6-48ea-9ee8-d2e92fa0f92e-profile_image-300x300.jpeg",
    "bio": "Bienvenue dans l’univers d’Evodp, passionné de jeux vidéo et de diamond painting.Entre l’univers magique de Hogwarts Legacy, les aventures de Disney Dreamlight Valley et l’action intense de Call of Duty, Evodp partage sa passion à travers des contenus variés, authentiques et divertissants.😊",
    "type": "",
    "staff": false,
@@ -458,7 +458,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 10,
+    "viewers": 16,
     "jeu": "Art",
     "titre": "DÉDICACE, OC CHALLENGE, 10H : TIRAGE ART CHALLENGE | Allez courage, c'est bientôt l'week end 😴 | !artchallenges !liens",
     "depuis": "2026-10-30T07:27:54Z",
@@ -545,7 +545,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Tomb Raider",
+    "titre": "🔞[DROP] Entre papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-10-30T08:36:47Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -633,7 +639,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Art",
+    "titre": "[ROAD TO 190] ~ 🍂Vendredi douceur | Café, cooloriage & papotages☕",
+    "depuis": "2026-10-30T09:04:10Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mandouee-440x248.jpg"
+   },
    "premierStream": "2024-10-23",
    "succes": [],
    "jeux": [
@@ -1011,5 +1023,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-30T08:07:22.178Z"
+ "maj": "2026-10-30T09:07:19.681Z"
 }
