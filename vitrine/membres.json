@@ -762,7 +762,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "American Truck Simulator",
+    "titre": "Bonsoir, je repart en livraison  !!!!",
+    "depuis": "2026-10-30T02:51:26Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1005,5 +1011,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-30T02:07:56.147Z"
+ "maj": "2026-10-30T03:07:18.967Z"
 }
