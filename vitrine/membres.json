@@ -7,8 +7,8 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1543,
-  "followsGagnes30": 329,
+  "heuresLive30": 1549,
+  "followsGagnes30": 330,
   "periode": {
    "du": "2026-09-30",
    "au": "2026-10-30"
@@ -174,7 +174,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 25,
+    "viewers": 15,
     "jeu": "Special Events",
     "titre": "🔥 Vous faites les dons, je relève les défis ! ❤️🎒 | Stream Mates 2026 pour l'asso \"Sur le chemin de l'école\"",
     "depuis": "2026-10-30T17:22:32Z",
@@ -337,7 +337,13 @@
    "depuis": "2026-10-09",
    "live": null,
    "premierStream": "2024-08-10",
-   "succes": [],
+   "succes": [
+    {
+     "type": "palier",
+     "palier": 100,
+     "date": "2026-10-30"
+    }
+   ],
    "jeux": [
     "Disney Dreamlight Valley",
     "Hogwarts Legacy",
@@ -413,7 +419,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 8,
     "jeu": "Art",
     "titre": "FR_VT - J-5 du Choupiathon !!! Dessin du donation goal",
     "depuis": "2026-10-30T14:46:28Z",
@@ -508,7 +514,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 7,
     "jeu": "VALORANT",
     "titre": "🔴 VALORANT 🔥 ON RÉCUPÈRE NOS RANGS ! 💪 OBJECTIF : REMONTER LE CLASSEMENT ! 🎯",
     "depuis": "2026-10-30T14:59:17Z",
@@ -558,8 +564,8 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
-    "jeu": "Tomb Raider",
+    "viewers": 10,
+    "jeu": "Just Chatting",
     "titre": "🔞[DROP] Entre frisson, papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-30T13:03:25Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
@@ -762,7 +768,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 6,
     "jeu": "Moonlight Peaks",
     "titre": "[FR] On commence le week-end d'Halloween 🦇🪄 | Moonlight Peaks | !discord !commandes",
     "depuis": "2026-10-30T17:01:51Z",
@@ -771,8 +777,8 @@
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
-    "Disney Dreamlight Valley",
     "Moonlight Peaks",
+    "Disney Dreamlight Valley",
     "Art",
     "R.E.P.O."
    ],
@@ -793,7 +799,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "American Truck Simulator",
+    "titre": "Bonsoir,je reprend mes livraison !!!!",
+    "depuis": "2026-10-30T18:41:09Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -864,7 +876,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Planet Zoo 2",
+    "titre": "On crée un nouveau zoo dans ma franchise !! En voc avec @nyxenfox",
+    "depuis": "2026-10-30T18:14:00Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_paygadream-440x248.jpg"
+   },
    "premierStream": "2026-05-02",
    "succes": [],
    "jeux": [
@@ -895,7 +913,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Pratfall",
+    "titre": "Go creuser la tombe du duo ? !discord",
+    "depuis": "2026-10-30T18:43:45Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_r3skyo-440x248.jpg"
+   },
    "premierStream": "2023-03-23",
    "succes": [],
    "jeux": [
@@ -948,7 +972,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 14,
+    "viewers": 10,
     "jeu": "The Cabin Factory",
     "titre": "Y'a encore des anomalies?",
     "depuis": "2026-10-30T15:46:02Z",
@@ -960,7 +984,8 @@
     "Space Savory",
     "Photomaly",
     "Just Chatting",
-    "Midnight Monitor: Anomaly Watch"
+    "Midnight Monitor: Anomaly Watch",
+    "The Cabin Factory"
    ],
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/RealCulturedMeatloafHassanChop-J1NQkVeYR2VmfdYr",
@@ -1042,5 +1067,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-30T18:08:00.624Z"
+ "maj": "2026-10-30T19:07:59.166Z"
 }
