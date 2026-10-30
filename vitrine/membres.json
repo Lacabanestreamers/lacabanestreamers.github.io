@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1522,
+  "heuresLive30": 1525,
   "followsGagnes30": 329,
   "periode": {
    "du": "2026-09-30",
@@ -539,13 +539,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 6,
-    "jeu": "Tomb Raider",
-    "titre": "🔞[DROP] Entre papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-10-30T08:36:47Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -633,18 +627,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": {
-    "viewers": 2,
-    "jeu": "Art",
-    "titre": "[ROAD TO 190] ~ 🍂Vendredi douceur | Café, cooloriage & papotages☕",
-    "depuis": "2026-10-30T09:04:10Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mandouee-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-10-23",
    "succes": [],
    "jeux": [
-    "Animal Crossing: New Horizons",
-    "Art"
+    "Art",
+    "Animal Crossing: New Horizons"
    ],
    "clip": null
   },
@@ -992,13 +980,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": {
-    "viewers": 11,
-    "jeu": "Allogloom",
-    "titre": "On commence un nouveau jeu #1 | !tiktok | !Discord | !clip |",
-    "depuis": "2026-10-30T09:46:54Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zeylta-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-01-31",
    "succes": [],
    "jeux": [
@@ -1024,5 +1006,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-30T11:07:22.186Z"
+ "maj": "2026-10-30T12:07:20.627Z"
 }
