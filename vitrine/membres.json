@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1537,
+  "heuresLive30": 1543,
   "followsGagnes30": 329,
   "periode": {
    "du": "2026-09-30",
@@ -42,18 +42,12 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 12,
-    "jeu": "DEVOUR",
-    "titre": "🎃 Mois de l'horreur🎃 ✨Go crié et sauter!🔥",
-    "depuis": "2026-10-30T13:00:04Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
-    "Outbound",
     "DEVOUR",
+    "Outbound",
     "R.E.P.O.",
     "SO CLOSE",
     "Raft"
@@ -179,7 +173,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 25,
+    "jeu": "Special Events",
+    "titre": "🔥 Vous faites les dons, je relève les défis ! ❤️🎒 | Stream Mates 2026 pour l'asso \"Sur le chemin de l'école\"",
+    "depuis": "2026-10-30T17:22:32Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -231,13 +231,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": {
-    "viewers": 6,
-    "jeu": "Tidy Up the Halloween Shop",
-    "titre": "☕ C'est parti pour commencer Halloween ! Et quoi de mieux qu'un Tidy Up 🎃 👻",
-    "depuis": "2026-10-30T13:07:36Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -419,9 +413,9 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
-    "jeu": "DEVOUR",
-    "titre": "FR_VT - J-5 du Choupiathon !!! Devour puis Art",
+    "viewers": 7,
+    "jeu": "Art",
+    "titre": "FR_VT - J-5 du Choupiathon !!! Dessin du donation goal",
     "depuis": "2026-10-30T14:46:28Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
    },
@@ -437,8 +431,8 @@
     "R.E.P.O.",
     "Valheim",
     "Special Events",
-    "Minecraft",
-    "DEVOUR"
+    "DEVOUR",
+    "Minecraft"
    ],
    "clip": {
     "url": "https://www.twitch.tv/hyroshimaeu/clip/AverageVibrantDugongPupper-Zs7qw49IIL3njNfB",
@@ -514,7 +508,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "VALORANT",
     "titre": "🔴 VALORANT 🔥 ON RÉCUPÈRE NOS RANGS ! 💪 OBJECTIF : REMONTER LE CLASSEMENT ! 🎯",
     "depuis": "2026-10-30T14:59:17Z",
@@ -564,9 +558,9 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
-    "jeu": "Pacify",
-    "titre": "🔞[DROP] Kitsune, Panda @aly0806 et biche @hyroshimaeu entre frisson, papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
+    "viewers": 9,
+    "jeu": "Tomb Raider",
+    "titre": "🔞[DROP] Entre frisson, papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-30T13:03:25Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
    },
@@ -767,7 +761,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Moonlight Peaks",
+    "titre": "[FR] On commence le week-end d'Halloween 🦇🪄 | Moonlight Peaks | !discord !commandes",
+    "depuis": "2026-10-30T17:01:51Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
+   },
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -931,13 +931,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-16",
-   "live": {
-    "viewers": 4,
-    "jeu": "R.E.P.O.",
-    "titre": "Des cosmétiques ou un sort ! C'est REPOWEEN :3",
-    "depuis": "2026-10-30T13:42:55Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rinka_henbyou-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-06-23",
    "succes": [],
    "jeux": [
@@ -953,7 +947,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 14,
+    "jeu": "The Cabin Factory",
+    "titre": "Y'a encore des anomalies?",
+    "depuis": "2026-10-30T15:46:02Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1042,5 +1042,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-30T15:07:36.643Z"
+ "maj": "2026-10-30T18:08:00.624Z"
 }
