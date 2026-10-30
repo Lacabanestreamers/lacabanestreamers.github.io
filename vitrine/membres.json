@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1566,
+  "heuresLive30": 1575,
   "followsGagnes30": 315,
   "periode": {
    "du": "2026-10-01",
@@ -174,7 +174,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 20,
     "jeu": "Special Events",
     "titre": "🔥 Vous faites les dons, je relève les défis ! ❤️🎒 | Stream Mates 2026 pour l'asso \"Sur le chemin de l'école\"",
     "depuis": "2026-10-30T17:22:32Z",
@@ -231,13 +231,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": {
-    "viewers": 4,
-    "jeu": "Dead by Daylight",
-    "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord 🎃 👻",
-    "depuis": "2026-10-30T19:38:40Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -424,13 +418,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 4,
-    "jeu": "Far Far West",
-    "titre": "FR_VT - J-5 du Choupiathon !!! Dessin du donation goal",
-    "depuis": "2026-10-30T14:46:28Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -610,7 +598,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
+    "viewers": 6,
     "jeu": "Special Events",
     "titre": "❤️ LE GAMING A DU CŒUR ! 🎮 Ensemble pour « Sur le chemin de l'école » 🎒 Chaque don peut changer une vie !",
     "depuis": "2026-10-30T20:47:12Z",
@@ -860,21 +848,15 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 8,
-    "jeu": "R.E.P.O.",
-    "titre": "R.E.P.O [FR] | Soirée horreur avant Halloween avec @melzebuth_ & @kneline sur pleins de jeux qui font peur 'boooouh\"👻| !discord",
-    "depuis": "2026-10-30T19:52:32Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-10",
    "succes": [],
    "jeux": [
     "The Sims 4",
     "Animal Crossing: New Horizons",
+    "R.E.P.O.",
     "Just Chatting",
-    "Demonologist",
-    "R.E.P.O."
+    "Demonologist"
    ],
    "clip": null
   },
@@ -918,19 +900,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 4,
-    "jeu": "Just Chatting",
-    "titre": "comment cha va vous ? !discord",
-    "depuis": "2026-10-30T18:43:45Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_r3skyo-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2023-03-23",
    "succes": [],
    "jeux": [
     "The Witcher 3: Wild Hunt Remastered",
-    "Pratfall",
     "Just Chatting",
+    "Pratfall",
     "Split Fiction"
    ],
    "clip": null
@@ -977,13 +953,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": {
-    "viewers": 7,
-    "jeu": "Grandma Left Me A Building",
-    "titre": "Mamie nous laisse un IMMEUBLE? #grandmaleftmeabuildingprologue #keymailer",
-    "depuis": "2026-10-30T21:31:39Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1073,5 +1043,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-30T22:07:21.417Z"
+ "maj": "2026-10-30T23:07:22.170Z"
 }
