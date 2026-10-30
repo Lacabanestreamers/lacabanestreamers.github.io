@@ -231,7 +231,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Dead by Daylight",
+    "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord 🎃 👻",
+    "depuis": "2026-10-30T19:38:40Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
+   },
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -317,7 +323,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "💕 Soirée cosy des marmottes sur DDV 🎮 | !lurk !clip !commandes",
+    "depuis": "2026-10-30T19:51:57Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
+   },
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
@@ -419,7 +431,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
+    "viewers": 7,
     "jeu": "Art",
     "titre": "FR_VT - J-5 du Choupiathon !!! Dessin du donation goal",
     "depuis": "2026-10-30T14:46:28Z",
@@ -514,7 +526,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "VALORANT",
     "titre": "🔴 VALORANT 🔥 ON RÉCUPÈRE NOS RANGS ! 💪 OBJECTIF : REMONTER LE CLASSEMENT ! 🎯",
     "depuis": "2026-10-30T14:59:17Z",
@@ -563,13 +575,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 11,
-    "jeu": "Just Chatting",
-    "titre": "🔞[DROP] Entre frisson, papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-10-30T13:03:25Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -767,13 +773,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 7,
-    "jeu": "Moonlight Peaks",
-    "titre": "[FR] On commence le week-end d'Halloween 🦇🪄 | Moonlight Peaks | !discord !commandes",
-    "depuis": "2026-10-30T17:01:51Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -800,7 +800,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 1,
+    "viewers": 3,
     "jeu": "American Truck Simulator",
     "titre": "Bonsoir,je reprend mes livraison !!!!",
     "depuis": "2026-10-30T18:41:09Z",
@@ -858,7 +858,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "Demonologist",
+    "titre": "DEMONOLOGIST [FR] | Soirée horreur avant Halloween avec @melzebuth_ & @kneline sur pleins de jeux qui font peur 'boooouh\"👻| !discord",
+    "depuis": "2026-10-30T19:52:32Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
+   },
    "premierStream": "2025-09-10",
    "succes": [],
    "jeux": [
@@ -877,7 +883,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 3,
     "jeu": "Planet Zoo 2",
     "titre": "On crée un nouveau zoo dans ma franchise !! En voc avec @nyxenfox",
     "depuis": "2026-10-30T18:14:00Z",
@@ -915,7 +921,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "Pratfall",
     "titre": "Go creuser la tombe du duo ? !discord",
     "depuis": "2026-10-30T18:43:45Z",
@@ -974,9 +980,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 11,
-    "jeu": "The Cabin Factory",
-    "titre": "Y'a encore des anomalies?",
+    "viewers": 8,
+    "jeu": "Dead Signal",
+    "titre": "On a perdu le signal!",
     "depuis": "2026-10-30T15:46:02Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1069,5 +1075,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-30T19:10:40.465Z"
+ "maj": "2026-10-30T20:07:19.306Z"
 }
