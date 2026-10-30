@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1519,
+  "heuresLive30": 1522,
   "followsGagnes30": 329,
   "periode": {
    "du": "2026-09-30",
@@ -993,7 +993,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 9,
+    "viewers": 11,
     "jeu": "Allogloom",
     "titre": "On commence un nouveau jeu #1 | !tiktok | !Discord | !clip |",
     "depuis": "2026-10-30T09:46:54Z",
@@ -1024,5 +1024,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-30T10:07:18.912Z"
+ "maj": "2026-10-30T11:07:22.186Z"
 }
