@@ -7,10 +7,10 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1568,
-  "followsGagnes30": 330,
+  "heuresLive30": 1566,
+  "followsGagnes30": 315,
   "periode": {
-   "du": "2026-09-30",
+   "du": "2026-10-01",
    "au": "2026-10-30"
   }
  },
@@ -232,7 +232,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "Dead by Daylight",
     "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord 🎃 👻",
     "depuis": "2026-10-30T19:38:40Z",
@@ -323,13 +323,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 4,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "💕 Soirée cosy des marmottes sur DDV 🎮 | !lurk !clip !commandes",
-    "depuis": "2026-10-30T19:51:57Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
@@ -431,7 +425,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "Far Far West",
     "titre": "FR_VT - J-5 du Choupiathon !!! Dessin du donation goal",
     "depuis": "2026-10-30T14:46:28Z",
@@ -470,7 +464,7 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": {
-    "viewers": 5,
+    "viewers": 6,
     "jeu": "DEVOUR",
     "titre": "SOIREE HORREUR HALLOWEEN avec makeup et screamers à volonté avec @psykofana 🎃",
     "depuis": "2026-10-30T20:29:17Z",
@@ -481,7 +475,8 @@
    "jeux": [
     "Slime Rancher",
     "Stardew Valley",
-    "Animal Crossing: New Horizons"
+    "Animal Crossing: New Horizons",
+    "DEVOUR"
    ],
    "clip": null
   },
@@ -532,7 +527,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 6,
+    "viewers": 4,
     "jeu": "VALORANT",
     "titre": "🔴 VALORANT 🔥 ON RÉCUPÈRE NOS RANGS ! 💪 OBJECTIF : REMONTER LE CLASSEMENT ! 🎯",
     "depuis": "2026-10-30T14:59:17Z",
@@ -615,7 +610,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 8,
     "jeu": "Special Events",
     "titre": "❤️ LE GAMING A DU CŒUR ! 🎮 Ensemble pour « Sur le chemin de l'école » 🎒 Chaque don peut changer une vie !",
     "depuis": "2026-10-30T20:47:12Z",
@@ -631,7 +626,8 @@
    ],
    "jeux": [
     "Call of Duty: Modern Warfare 4",
-    "Dune: Awakening"
+    "Dune: Awakening",
+    "Special Events"
    ],
    "clip": {
     "url": "https://www.twitch.tv/luffishgaming/clip/CrypticTangentialHamsterHeyGuys--O__PYKcVZRIm8-k",
@@ -865,7 +861,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 9,
+    "viewers": 8,
     "jeu": "R.E.P.O.",
     "titre": "R.E.P.O [FR] | Soirée horreur avant Halloween avec @melzebuth_ & @kneline sur pleins de jeux qui font peur 'boooouh\"👻| !discord",
     "depuis": "2026-10-30T19:52:32Z",
@@ -877,7 +873,8 @@
     "The Sims 4",
     "Animal Crossing: New Horizons",
     "Just Chatting",
-    "Demonologist"
+    "Demonologist",
+    "R.E.P.O."
    ],
    "clip": null
   },
@@ -922,9 +919,9 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
-    "jeu": "Pratfall",
-    "titre": "Go creuser la tombe du duo ? !discord",
+    "viewers": 4,
+    "jeu": "Just Chatting",
+    "titre": "comment cha va vous ? !discord",
     "depuis": "2026-10-30T18:43:45Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_r3skyo-440x248.jpg"
    },
@@ -932,9 +929,9 @@
    "succes": [],
    "jeux": [
     "The Witcher 3: Wild Hunt Remastered",
+    "Pratfall",
     "Just Chatting",
-    "Split Fiction",
-    "Pratfall"
+    "Split Fiction"
    ],
    "clip": null
   },
@@ -981,10 +978,10 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 8,
-    "jeu": "The Beast Awoke to Eat Your Darlings",
-    "titre": "La bête qui mange quoi??? #bateyd  #keymailer",
-    "depuis": "2026-10-30T15:46:02Z",
+    "viewers": 7,
+    "jeu": "Grandma Left Me A Building",
+    "titre": "Mamie nous laisse un IMMEUBLE? #grandmaleftmeabuildingprologue #keymailer",
+    "depuis": "2026-10-30T21:31:39Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
    "premierStream": null,
@@ -1076,5 +1073,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-30T21:07:22.548Z"
+ "maj": "2026-10-30T22:07:21.417Z"
 }
