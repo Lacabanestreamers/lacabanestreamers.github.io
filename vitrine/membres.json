@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1525,
+  "heuresLive30": 1528,
   "followsGagnes30": 329,
   "periode": {
    "du": "2026-09-30",
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 11,
     "jeu": "Pacify",
     "titre": "🎃 Mois de l'horreur🎃 ✨Bon reussi cette fois ou on crie avec @lilyth_minerva 🔥",
     "depuis": "2026-10-30T13:00:04Z",
@@ -231,7 +231,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Tidy Up the Halloween Shop",
+    "titre": "☕ C'est parti pour commencer Halloween ! Et quoi de mieux qu'un Tidy Up 🎃 👻",
+    "depuis": "2026-10-30T13:07:36Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
+   },
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -336,10 +342,10 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Red Dead Redemption II",
     "titre": "[FR] [RDR2] 🎂 32 ANS, UNE PRIME SUR MA TÊTE ET DU WHISKY À VOLONTÉ ! 🤠🍻 | ANNIVERSAIRE SUR RDR2",
-    "depuis": "2026-10-30T13:01:22Z",
+    "depuis": "2026-10-30T13:44:37Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
    },
    "premierStream": "2024-08-10",
@@ -507,7 +513,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "VALORANT",
+    "titre": "🔴 VALORANT 🔥 ON RÉCUPÈRE NOS RANGS ! 💪 OBJECTIF : REMONTER LE CLASSEMENT ! 🎯",
+    "depuis": "2026-10-30T13:40:21Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -552,7 +564,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 1,
+    "viewers": 7,
     "jeu": "Pacify",
     "titre": "🔞[DROP] Kitsune et Panda @aly0806 entre frisson, papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-30T13:03:25Z",
@@ -919,7 +931,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-16",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "R.E.P.O.",
+    "titre": "Des cosmétiques ou un sort ! C'est REPOWEEN :3",
+    "depuis": "2026-10-30T13:42:55Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rinka_henbyou-440x248.jpg"
+   },
    "premierStream": "2025-06-23",
    "succes": [],
    "jeux": [
@@ -1024,5 +1042,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-30T13:07:32.159Z"
+ "maj": "2026-10-30T13:59:29.054Z"
 }
