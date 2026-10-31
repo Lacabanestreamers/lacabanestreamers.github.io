@@ -7,8 +7,8 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1587,
-  "followsGagnes30": 317,
+  "heuresLive30": 1590,
+  "followsGagnes30": 320,
   "periode": {
    "du": "2026-10-01",
    "au": "2026-10-31"
@@ -193,7 +193,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 11,
     "jeu": "Special Events",
     "titre": "🔥   JOUR 2| Stream Mates 2026 pour l'asso \"Sur le chemin de l'école\" ❤️🎒",
     "depuis": "2026-10-31T08:55:45Z",
@@ -810,7 +810,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 4,
     "jeu": "American Truck Simulator",
     "titre": "Bonjour,  je rerprent la route venez papoter !!!!",
     "depuis": "2026-10-31T10:22:01Z",
@@ -819,8 +819,8 @@
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
-    "Disney Dreamlight Valley",
     "American Truck Simulator",
+    "Disney Dreamlight Valley",
     "Euro Truck Simulator 2",
     "Project CARS",
     "World of Warcraft"
@@ -1070,5 +1070,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-31T11:07:25.902Z"
+ "maj": "2026-10-31T12:07:20.766Z"
 }
