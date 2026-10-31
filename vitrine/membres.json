@@ -7,10 +7,10 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1683,
-  "followsGagnes30": 332,
+  "heuresLive30": 1661,
+  "followsGagnes30": 323,
   "periode": {
-   "du": "2026-10-01",
+   "du": "2026-10-02",
    "au": "2026-10-31"
   }
  },
@@ -62,7 +62,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 12,
     "jeu": "Just Chatting",
     "titre": "🎃 Live Halloween🎃 ✨Avec un peu de papotage on a la peur et des surprise🔥",
     "depuis": "2026-10-31T13:00:14Z",
@@ -212,13 +212,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 11,
-    "jeu": "Special Events",
-    "titre": "🔥   JOUR 2| Stream Mates 2026 pour l'asso \"Sur le chemin de l'école\" ❤️🎒",
-    "depuis": "2026-10-31T08:55:45Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -399,9 +393,9 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
-    "jeu": "Chicken Feet",
-    "titre": "SOIREE HALLOWEEN AVEC INDI !!!",
+    "viewers": 5,
+    "jeu": "Just Chatting",
+    "titre": "SOIREE HALLOWEEN AVEC INDI !!! Haunted Paws FAIT / Chicken Feet FAIT / Cocktail en cours",
     "depuis": "2026-10-31T13:54:32Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galaadours-440x248.jpg"
    },
@@ -425,7 +419,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "R.E.P.O.",
     "titre": "Live Halloween avec @sakkiel et les copains! <3 (j'ai eu un p'tit accident de chirurgie oupsi)",
     "depuis": "2026-10-31T17:51:24Z",
@@ -472,8 +466,8 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
-    "jeu": "Special Events",
+    "viewers": 6,
+    "jeu": "Far Far West",
     "titre": "FR_VT - J-6 du Choupiathon !!! Joyeux Halloween",
     "depuis": "2026-10-31T20:03:50Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
@@ -556,7 +550,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 10,
+    "viewers": 8,
     "jeu": "Fall Guys",
     "titre": "FALL GUYS 👑 : On s'entraine avec le Coach pour être meilleureau jeu avant 2027 (+ Discussions chill) ✨| Jeu-vidéo Party Game Course Coop",
     "depuis": "2026-10-31T19:56:33Z",
@@ -582,7 +576,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 6,
+    "viewers": 8,
     "jeu": "VALORANT",
     "titre": "🔴 VALORANT 🔥 ON RÉCUPÈRE NOS RANGS ! 💪 OBJECTIF : REMONTER LE CLASSEMENT ! 🎯",
     "depuis": "2026-10-31T14:59:24Z",
@@ -665,7 +659,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 9,
+    "viewers": 7,
     "jeu": "Special Events",
     "titre": "❤️ ENSEMBLE POUR LES ENFANTS ! 🎒 Live caritatif – Sur le chemin de l'école",
     "depuis": "2026-10-31T12:12:02Z",
@@ -1013,7 +1007,7 @@
    "staff": false,
    "depuis": "2026-10-16",
    "live": {
-    "viewers": 1,
+    "viewers": 3,
     "jeu": "R.E.P.O.",
     "titre": "Des cosmétiques ou un sort ! C'est REPOWEEN :3",
     "depuis": "2026-10-31T20:45:37Z",
@@ -1035,7 +1029,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 9,
+    "viewers": 10,
     "jeu": "R.E.P.O.",
     "titre": "This is Halloween! Le REPO de l'horreur!",
     "depuis": "2026-10-31T15:01:23Z",
@@ -1130,5 +1124,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-31T21:24:41.630Z"
+ "maj": "2026-10-31T22:07:21.180Z"
 }
