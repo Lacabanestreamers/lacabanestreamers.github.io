@@ -173,13 +173,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 18,
-    "jeu": "Special Events",
-    "titre": "🔥 Vous faites les dons, je relève les défis ! ❤️🎒 | Stream Mates 2026 pour l'asso \"Sur le chemin de l'école\"",
-    "depuis": "2026-10-30T17:22:32Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -452,7 +446,7 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": {
-    "viewers": 9,
+    "viewers": 6,
     "jeu": "DEVOUR",
     "titre": "SOIREE HORREUR HALLOWEEN avec makeup et screamers à volonté avec @psykofana 🎃",
     "depuis": "2026-10-30T20:29:17Z",
@@ -514,13 +508,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 5,
-    "jeu": "VALORANT",
-    "titre": "🔴 VALORANT 🔥 ON RÉCUPÈRE NOS RANGS ! 💪 OBJECTIF : REMONTER LE CLASSEMENT ! 🎯",
-    "depuis": "2026-10-30T14:59:17Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -1037,5 +1025,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-30T23:37:51.050Z"
+ "maj": "2026-10-31T00:07:21.519Z"
 }
