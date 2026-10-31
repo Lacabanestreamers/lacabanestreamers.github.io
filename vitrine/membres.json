@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1598,
+  "heuresLive30": 1605,
   "followsGagnes30": 320,
   "periode": {
    "du": "2026-10-01",
@@ -62,7 +62,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 15,
     "jeu": "R.E.P.O.",
     "titre": "🎃 Live Halloween🎃 ✨Avec un peu de papotage on a la peur et des surprise🔥",
     "depuis": "2026-10-31T13:00:14Z",
@@ -199,7 +199,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 15,
+    "viewers": 14,
     "jeu": "Special Events",
     "titre": "🔥   JOUR 2| Stream Mates 2026 pour l'asso \"Sur le chemin de l'école\" ❤️🎒",
     "depuis": "2026-10-31T08:55:45Z",
@@ -385,7 +385,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 8,
     "jeu": "Special Events",
     "titre": "DU QUIZ !!! QUI PUE LE PLUS : by @scottellow",
     "depuis": "2026-10-31T13:54:32Z",
@@ -396,7 +396,8 @@
    "jeux": [
     "Just Chatting",
     "World of Warcraft",
-    "Deep Rock Galactic"
+    "Deep Rock Galactic",
+    "Special Events"
    ],
    "clip": null
   },
@@ -450,7 +451,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 14,
+    "viewers": 12,
     "jeu": "R.E.P.O.",
     "titre": "FR_VT - J-6 du Choupiathon !!! Joyeux Halloween",
     "depuis": "2026-10-31T13:07:16Z",
@@ -552,7 +553,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "VALORANT",
+    "titre": "🔴 VALORANT 🔥 ON RÉCUPÈRE NOS RANGS ! 💪 OBJECTIF : REMONTER LE CLASSEMENT ! 🎯",
+    "depuis": "2026-10-31T14:59:24Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -570,13 +577,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 2,
-    "jeu": "Dead Space 2",
-    "titre": "🐰On continue le traditionnel dead space pour halloween",
-    "depuis": "2026-10-31T13:15:43Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -589,8 +590,8 @@
     "Makers & Crafting",
     "Resonance: A Plague Tale Legacy",
     "BOMBANANA!",
-    "WheelMates",
-    "FragPunk"
+    "Dead Space 2",
+    "WheelMates"
    ],
    "clip": null
   },
@@ -636,7 +637,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 13,
+    "viewers": 8,
     "jeu": "Special Events",
     "titre": "❤️ ENSEMBLE POUR LES ENFANTS ! 🎒 Live caritatif – Sur le chemin de l'école",
     "depuis": "2026-10-31T12:12:02Z",
@@ -741,7 +742,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 9,
+    "viewers": 7,
     "jeu": "The Baby In Yellow",
     "titre": "Happy Halloween !!! On fête ça en gardant un bébé tout mignon....  !discord !regles !don !wishlist",
     "depuis": "2026-10-31T12:47:13Z",
@@ -773,7 +774,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Starlit Adventures",
+    "titre": "J'essaie ce jeu au fin fond de ma bibliothèque !",
+    "depuis": "2026-10-31T14:20:23Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
+   },
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -1004,7 +1011,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Just Chatting",
+    "titre": "This is Halloween!",
+    "depuis": "2026-10-31T15:01:23Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1094,5 +1107,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-31T14:07:19.942Z"
+ "maj": "2026-10-31T15:07:18.762Z"
 }
