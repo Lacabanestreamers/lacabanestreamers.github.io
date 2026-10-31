@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1579,
+  "heuresLive30": 1580,
   "followsGagnes30": 315,
   "periode": {
    "du": "2026-10-01",
@@ -24,7 +24,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Rocket League",
+    "titre": "Rocket League/PS5",
+    "depuis": "2026-10-31T00:35:16Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -445,13 +451,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-20",
-   "live": {
-    "viewers": 6,
-    "jeu": "DEVOUR",
-    "titre": "SOIREE HORREUR HALLOWEEN avec makeup et screamers à volonté avec @psykofana 🎃",
-    "depuis": "2026-10-30T20:29:17Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kialigator-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-30",
    "succes": [],
    "jeux": [
@@ -1025,5 +1025,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-31T00:07:21.519Z"
+ "maj": "2026-10-31T01:07:18.987Z"
 }
