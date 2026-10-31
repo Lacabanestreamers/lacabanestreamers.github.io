@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1605,
+  "heuresLive30": 1614,
   "followsGagnes30": 320,
   "periode": {
    "du": "2026-10-01",
@@ -62,7 +62,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 15,
+    "viewers": 21,
     "jeu": "R.E.P.O.",
     "titre": "🎃 Live Halloween🎃 ✨Avec un peu de papotage on a la peur et des surprise🔥",
     "depuis": "2026-10-31T13:00:14Z",
@@ -72,8 +72,8 @@
    "succes": [],
    "jeux": [
     "DEVOUR",
-    "Outbound",
     "R.E.P.O.",
+    "Outbound",
     "SO CLOSE",
     "Raft"
    ],
@@ -199,7 +199,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 18,
     "jeu": "Special Events",
     "titre": "🔥   JOUR 2| Stream Mates 2026 pour l'asso \"Sur le chemin de l'école\" ❤️🎒",
     "depuis": "2026-10-31T08:55:45Z",
@@ -385,7 +385,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
+    "viewers": 5,
     "jeu": "Special Events",
     "titre": "DU QUIZ !!! QUI PUE LE PLUS : by @scottellow",
     "depuis": "2026-10-31T13:54:32Z",
@@ -394,10 +394,10 @@
    "premierStream": "2023-06-06",
    "succes": [],
    "jeux": [
+    "Special Events",
     "Just Chatting",
     "World of Warcraft",
-    "Deep Rock Galactic",
-    "Special Events"
+    "Deep Rock Galactic"
    ],
    "clip": null
   },
@@ -451,7 +451,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 12,
+    "viewers": 13,
     "jeu": "R.E.P.O.",
     "titre": "FR_VT - J-6 du Choupiathon !!! Joyeux Halloween",
     "depuis": "2026-10-31T13:07:16Z",
@@ -554,7 +554,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 2,
+    "viewers": 4,
     "jeu": "VALORANT",
     "titre": "🔴 VALORANT 🔥 ON RÉCUPÈRE NOS RANGS ! 💪 OBJECTIF : REMONTER LE CLASSEMENT ! 🎯",
     "depuis": "2026-10-31T14:59:24Z",
@@ -637,7 +637,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
+    "viewers": 6,
     "jeu": "Special Events",
     "titre": "❤️ ENSEMBLE POUR LES ENFANTS ! 🎒 Live caritatif – Sur le chemin de l'école",
     "depuis": "2026-10-31T12:12:02Z",
@@ -673,7 +673,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Just Chatting",
+    "titre": "HALLOWEEN ME VOILA ! Make up puis Uberxophobia Ft @manutension_13 discord",
+    "depuis": "2026-10-31T15:29:28Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
+   },
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
@@ -741,13 +747,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": {
-    "viewers": 7,
-    "jeu": "The Baby In Yellow",
-    "titre": "Happy Halloween !!! On fête ça en gardant un bébé tout mignon....  !discord !regles !don !wishlist",
-    "depuis": "2026-10-31T12:47:13Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -776,8 +776,8 @@
    "depuis": "2026-09-27",
    "live": {
     "viewers": 2,
-    "jeu": "Starlit Adventures",
-    "titre": "J'essaie ce jeu au fin fond de ma bibliothèque !",
+    "jeu": "Fall Guys",
+    "titre": "J'essaie de faire top 1 même si je suis nulle !",
     "depuis": "2026-10-31T14:20:23Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
    },
@@ -1012,8 +1012,8 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 6,
-    "jeu": "Just Chatting",
+    "viewers": 9,
+    "jeu": "Invokyr",
     "titre": "This is Halloween!",
     "depuis": "2026-10-31T15:01:23Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
@@ -1107,5 +1107,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-31T15:07:18.762Z"
+ "maj": "2026-10-31T16:07:21.928Z"
 }
