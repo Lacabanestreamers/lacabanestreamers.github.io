@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1584,
+  "heuresLive30": 1587,
   "followsGagnes30": 317,
   "periode": {
    "du": "2026-10-01",
@@ -193,7 +193,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 14,
     "jeu": "Special Events",
     "titre": "🔥   JOUR 2| Stream Mates 2026 pour l'asso \"Sur le chemin de l'école\" ❤️🎒",
     "depuis": "2026-10-31T08:55:45Z",
@@ -216,8 +216,8 @@
     "The Sims 4",
     "Disney Dreamlight Valley",
     "R.E.P.O.",
-    "DEVOUR",
-    "Special Events"
+    "Special Events",
+    "DEVOUR"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/HonestEnthusiasticBorkPeteZarollTie-VFy7s-fu_RrEtrOu",
@@ -250,7 +250,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "Dead by Daylight",
+    "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord 🎃 👻",
+    "depuis": "2026-10-31T10:08:02Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
+   },
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -552,13 +558,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 6,
-    "jeu": "Dead Space 2",
-    "titre": "🐰On continue le traditionnel dead space pour halloween",
-    "depuis": "2026-10-31T08:36:42Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -809,7 +809,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "American Truck Simulator",
+    "titre": "Bonjour,  je rerprent la route venez papoter !!!!",
+    "depuis": "2026-10-31T10:22:01Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1001,13 +1007,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": {
-    "viewers": 8,
-    "jeu": "Cyberpunk 2077",
-    "titre": "🧠[EP:41] CYBERPUNK 2077🧠  !rs !discord !instantgaming",
-    "depuis": "2026-10-31T09:08:31Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-19",
    "succes": [
     {
@@ -1070,5 +1070,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-31T10:07:20.662Z"
+ "maj": "2026-10-31T11:07:25.902Z"
 }
