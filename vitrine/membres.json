@@ -25,7 +25,13 @@
    "lien": "https://www.twitch.tv/aly0806",
    "duree": 720,
    "discord": "https://discord.com/channels/1550885636322492476/1551942576230240287/1565904170748354676",
-   "participants": []
+   "participants": [
+    {
+     "login": "rggk_obelix_14",
+     "nom": "RGGK_Obelix_14",
+     "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/addaa251-ad07-4f1d-b628-8611fd8c1bce-profile_image-300x300.png"
+    }
+   ]
   }
  ],
  "membres": [
@@ -1046,5 +1052,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-31T03:07:26.410Z"
+ "maj": "2026-10-31T05:07:21.544Z"
 }
