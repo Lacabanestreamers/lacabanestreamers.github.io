@@ -8,10 +8,10 @@
   "affilies": 40,
   "nouveaux30": 21,
   "heuresLive30": 1582,
-  "followsGagnes30": 315,
+  "followsGagnes30": 317,
   "periode": {
    "du": "2026-10-01",
-   "au": "2026-10-30"
+   "au": "2026-10-31"
   }
  },
  "agenda": [
@@ -1052,5 +1052,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-31T05:07:21.544Z"
+ "maj": "2026-10-31T08:07:20.742Z"
 }
