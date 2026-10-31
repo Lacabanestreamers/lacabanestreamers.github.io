@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1582,
+  "heuresLive30": 1584,
   "followsGagnes30": 317,
   "periode": {
    "du": "2026-10-01",
@@ -193,7 +193,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 6,
     "jeu": "Special Events",
     "titre": "🔥   JOUR 2| Stream Mates 2026 pour l'asso \"Sur le chemin de l'école\" ❤️🎒",
     "depuis": "2026-10-31T08:55:45Z",
@@ -217,7 +217,7 @@
     "Disney Dreamlight Valley",
     "R.E.P.O.",
     "DEVOUR",
-    "Just Chatting"
+    "Special Events"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/HonestEnthusiasticBorkPeteZarollTie-VFy7s-fu_RrEtrOu",
@@ -553,7 +553,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 6,
     "jeu": "Dead Space 2",
     "titre": "🐰On continue le traditionnel dead space pour halloween",
     "depuis": "2026-10-31T08:36:42Z",
@@ -1001,7 +1001,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "Cyberpunk 2077",
+    "titre": "🧠[EP:41] CYBERPUNK 2077🧠  !rs !discord !instantgaming",
+    "depuis": "2026-10-31T09:08:31Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
+   },
    "premierStream": "2025-01-19",
    "succes": [
     {
@@ -1064,5 +1070,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-31T09:07:20.026Z"
+ "maj": "2026-10-31T10:07:20.662Z"
 }
