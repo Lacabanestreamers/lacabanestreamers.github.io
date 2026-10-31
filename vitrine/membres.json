@@ -7,8 +7,8 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1636,
-  "followsGagnes30": 320,
+  "heuresLive30": 1649,
+  "followsGagnes30": 332,
   "periode": {
    "du": "2026-10-01",
    "au": "2026-10-31"
@@ -43,13 +43,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": {
-    "viewers": 5,
-    "jeu": "Rocket League",
-    "titre": "Rocket League/PS5",
-    "depuis": "2026-10-31T17:44:57Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -68,8 +62,8 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
-    "jeu": "R.E.P.O.",
+    "viewers": 11,
+    "jeu": "DEVOUR",
     "titre": "🎃 Live Halloween🎃 ✨Avec un peu de papotage on a la peur et des surprise🔥",
     "depuis": "2026-10-31T13:00:14Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
@@ -100,7 +94,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "R.E.P.O.",
+    "titre": "🎃 R.E.P.O. spécial Halloween : le vrai monstre, c’est notre coordination | avec @Galyssiane, @Sakkiel & @CelticRobin | ❗cmd ❗rs ❗clip",
+    "depuis": "2026-10-31T18:20:00Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asakha-440x248.jpg"
+   },
    "premierStream": "2021-12-06",
    "succes": [],
    "jeux": [
@@ -205,7 +205,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 17,
+    "viewers": 13,
     "jeu": "Special Events",
     "titre": "🔥   JOUR 2| Stream Mates 2026 pour l'asso \"Sur le chemin de l'école\" ❤️🎒",
     "depuis": "2026-10-31T08:55:45Z",
@@ -262,13 +262,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": {
-    "viewers": 6,
-    "jeu": "Until Dawn",
-    "titre": "🪓Live de 6h pour Halloween sur Until Down 🎃 👻",
-    "depuis": "2026-10-31T16:16:02Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -397,7 +391,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
+    "viewers": 5,
     "jeu": "Just Chatting",
     "titre": "SOIREE HALLOWEEN AVEC INDI !!!",
     "depuis": "2026-10-31T13:54:32Z",
@@ -406,8 +400,8 @@
    "premierStream": "2023-06-06",
    "succes": [],
    "jeux": [
-    "Special Events",
     "Just Chatting",
+    "Special Events",
     "World of Warcraft",
     "Deep Rock Galactic"
    ],
@@ -432,9 +426,9 @@
    "succes": [],
    "jeux": [
     "DREDGE",
+    "R.E.P.O.",
     "Abiotic Factor",
     "Shift at Midnight",
-    "R.E.P.O.",
     "Writing & Reading"
    ],
    "clip": {
@@ -469,8 +463,8 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 10,
-    "jeu": "R.E.P.O.",
+    "viewers": 9,
+    "jeu": "DEVOUR",
     "titre": "FR_VT - J-6 du Choupiathon !!! Joyeux Halloween",
     "depuis": "2026-10-31T13:07:16Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
@@ -507,13 +501,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-20",
-   "live": {
-    "viewers": 3,
-    "jeu": "Art",
-    "titre": "LIVE HALLOWEEN on se maquille ensemble, makeup squeleton (si je rate mon makeup my bad) 🎃",
-    "depuis": "2026-10-31T17:02:43Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kialigator-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-30",
    "succes": [],
    "jeux": [
@@ -579,7 +567,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 5,
+    "viewers": 3,
     "jeu": "VALORANT",
     "titre": "🔴 VALORANT 🔥 ON RÉCUPÈRE NOS RANGS ! 💪 OBJECTIF : REMONTER LE CLASSEMENT ! 🎯",
     "depuis": "2026-10-31T14:59:24Z",
@@ -630,7 +618,7 @@
    "depuis": "2026-09-20",
    "live": {
     "viewers": 5,
-    "jeu": "R.E.P.O.",
+    "jeu": "DEVOUR",
     "titre": "🔞[DROP] Entre frisson, papote et éclat de fun!! avec @aly0806 @hyroshimaeu / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-10-31T16:16:04Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
@@ -644,8 +632,8 @@
     }
    ],
    "jeux": [
-    "Dead by Daylight",
     "R.E.P.O.",
+    "Dead by Daylight",
     "7 Days to Die",
     "AION 2",
     "The Quarry"
@@ -668,7 +656,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "Special Events",
     "titre": "❤️ ENSEMBLE POUR LES ENFANTS ! 🎒 Live caritatif – Sur le chemin de l'école",
     "depuis": "2026-10-31T12:12:02Z",
@@ -705,7 +693,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 7,
+    "viewers": 10,
     "jeu": "Demonologist",
     "titre": "HALLOWEEN ME VOILA ! Make up puis DEMONOOOO Ft @manutension_13 discord",
     "depuis": "2026-10-31T15:29:28Z",
@@ -1038,9 +1026,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 18,
-    "jeu": "Invokyr",
-    "titre": "This is Halloween! Blind test horeur en attendant la soirée!",
+    "viewers": 13,
+    "jeu": "R.E.P.O.",
+    "titre": "This is Halloween! Le REPO de l'horreur!",
     "depuis": "2026-10-31T15:01:23Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1050,8 +1038,8 @@
     "Space Savory",
     "Photomaly",
     "Just Chatting",
-    "Midnight Monitor: Anomaly Watch",
-    "The Cabin Factory"
+    "Invokyr",
+    "Midnight Monitor: Anomaly Watch"
    ],
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/RealCulturedMeatloafHassanChop-J1NQkVeYR2VmfdYr",
@@ -1133,5 +1121,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-10-31T18:07:28.939Z"
+ "maj": "2026-10-31T19:07:18.536Z"
 }
