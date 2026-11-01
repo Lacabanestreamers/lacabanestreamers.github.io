@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1730,
+  "heuresLive30": 1738,
   "followsGagnes30": 330,
   "periode": {
    "du": "2026-10-02",
@@ -93,13 +93,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-22",
-   "live": {
-    "viewers": 9,
-    "jeu": "Outbound",
-    "titre": "Caravane ou maison, pourquoi choisir ?",
-    "depuis": "2026-11-01T13:00:45Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asalie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-07-27",
    "succes": [
     {
@@ -109,9 +103,9 @@
     }
    ],
    "jeux": [
+    "Outbound",
     "Fields of Mistria",
     "Cat Mail Co.",
-    "Outbound",
     "Pao Pao",
     "The Witch's Bakery"
    ],
@@ -188,13 +182,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 12,
-    "jeu": "Special Events",
-    "titre": "🔥 Dernière ligne droite | Stream Mates 2026 pour l'asso \"Sur le chemin de l'école\" ❤️🎒",
-    "depuis": "2026-11-01T08:52:26Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -246,13 +234,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": {
-    "viewers": 5,
-    "jeu": "Librarian: Tidy Up the Arcane Library!",
-    "titre": "☕ Zéro pouvoir, défi Librarian lancé ! 📖",
-    "depuis": "2026-11-01T14:26:42Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -442,7 +424,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 11,
     "jeu": "Minecraft",
     "titre": "FR_VT - J-7 du Choupiathon !!! Serveur Cobblemon nous voilà !",
     "depuis": "2026-11-01T16:43:10Z",
@@ -546,10 +528,10 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 3,
     "jeu": "VALORANT",
     "titre": "🔥 ON REPREND L'APOGÉE DE LA RANKED… LE SILVER N'EST PAS PRÊT 😭 | VALORANT",
-    "depuis": "2026-11-01T15:56:02Z",
+    "depuis": "2026-11-01T17:07:47Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
    },
    "premierStream": "2027-08-31",
@@ -604,7 +586,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 9,
     "jeu": "Minecraft",
     "titre": "🔞On soutient Wagana pour l'ouverture de sa boutique , papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-11-01T16:48:46Z",
@@ -889,20 +871,14 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 9,
-    "jeu": "Terrible Lizards",
-    "titre": "TERRIBLE LIZARDS [FR] | On continue de découvrir ensemble le jeux Terrible Lizards avec des dinos mais pas que... 🦖| !discord !lizards",
-    "depuis": "2026-11-01T15:20:16Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-10",
    "succes": [],
    "jeux": [
     "The Sims 4",
     "Animal Crossing: New Horizons",
-    "R.E.P.O.",
     "Terrible Lizards",
+    "R.E.P.O.",
     "Demonologist"
    ],
    "clip": null
@@ -973,13 +949,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": {
-    "viewers": 4,
-    "jeu": "Hunting Simulator 3",
-    "titre": "Hunting Simulator 3 on part a la chasse",
-    "depuis": "2026-11-01T15:27:36Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -1015,7 +985,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Whiskers of Yesterday",
+    "titre": "Pôtit chat moustachu dominera le monde! #WhiskersOfYesterday #keymailer",
+    "depuis": "2026-11-01T18:03:19Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1105,5 +1081,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-01T17:07:14.381Z"
+ "maj": "2026-11-01T18:07:19.856Z"
 }
