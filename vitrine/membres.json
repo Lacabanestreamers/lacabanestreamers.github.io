@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1711,
+  "heuresLive30": 1716,
   "followsGagnes30": 330,
   "periode": {
    "du": "2026-10-02",
@@ -94,7 +94,7 @@
    "staff": false,
    "depuis": "2026-09-22",
    "live": {
-    "viewers": 6,
+    "viewers": 9,
     "jeu": "Outbound",
     "titre": "Caravane ou maison, pourquoi choisir ?",
     "depuis": "2026-11-01T13:00:45Z",
@@ -195,7 +195,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 13,
     "jeu": "Special Events",
     "titre": "🔥 Dernière ligne droite | Stream Mates 2026 pour l'asso \"Sur le chemin de l'école\" ❤️🎒",
     "depuis": "2026-11-01T08:52:26Z",
@@ -623,13 +623,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 5,
-    "jeu": "Special Events",
-    "titre": "Jour 3 🎒 Live caritatif – Sur le chemin de l'école",
-    "depuis": "2026-11-01T10:33:48Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -731,7 +725,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 3,
+    "viewers": 5,
     "jeu": "The Baby In Yellow",
     "titre": "Faut-il se débarrasser du bébé ?????  !discord !regles !don !wishlist",
     "depuis": "2026-11-01T12:15:56Z",
@@ -742,8 +736,8 @@
    "jeux": [
     "Poppy Playtime: Chapter 3 - Deep Sleep",
     "Aniimo",
-    "Stardew Valley",
     "The Baby In Yellow",
+    "Stardew Valley",
     "Welcome to Elderfield"
    ],
    "clip": {
@@ -1085,5 +1079,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-01T13:07:19.079Z"
+ "maj": "2026-11-01T14:07:21.193Z"
 }
