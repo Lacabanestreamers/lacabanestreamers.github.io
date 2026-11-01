@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1723,
+  "heuresLive30": 1727,
   "followsGagnes30": 324,
   "periode": {
    "du": "2026-10-03",
@@ -423,13 +423,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 11,
-    "jeu": "Minecraft",
-    "titre": "FR_VT - J-7 du Choupiathon !!! Serveur Cobblemon nous voilà !",
-    "depuis": "2026-11-01T16:43:10Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -440,8 +434,8 @@
    ],
    "jeux": [
     "R.E.P.O.",
-    "Special Events",
     "Minecraft",
+    "Special Events",
     "Valheim",
     "DEVOUR"
    ],
@@ -508,7 +502,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 26,
+    "viewers": 20,
     "jeu": "Planet Zoo 2",
     "titre": "PLANET ZOO 2 CHILL 🦁 : On continue notre premier zoo, avant d'aller dans les Tropiques ! | Découverte Test FR Nouveauté jeu-vidéo",
     "depuis": "2026-11-01T19:43:03Z",
@@ -518,8 +512,8 @@
    "succes": [],
    "jeux": [
     "Just Chatting",
-    "Sovereign Tower",
     "Planet Zoo 2",
+    "Sovereign Tower",
     "Games + Demos",
     "skribbl.io"
    ],
@@ -533,20 +527,14 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 6,
-    "jeu": "Fortnite",
-    "titre": "👻 ON EST VENUS CHASSER DES ESPRITS… ON VA FINIR HANTÉS 😭 | FORTNITE MINI-SAISON",
-    "depuis": "2026-11-01T17:07:47Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
     "VALORANT",
     "League of Legends",
-    "RuneScape: Dragonwilds",
-    "Fortnite"
+    "Fortnite",
+    "RuneScape: Dragonwilds"
    ],
    "clip": null
   },
@@ -970,7 +958,7 @@
    "staff": false,
    "depuis": "2026-10-16",
    "live": {
-    "viewers": 3,
+    "viewers": 14,
     "jeu": "R.E.P.O.",
     "titre": "Des cosmétiques ou un sort ! C'est REPOWEEN :3",
     "depuis": "2026-11-01T20:15:02Z",
@@ -1081,5 +1069,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-01T22:07:13.572Z"
+ "maj": "2026-11-01T23:07:14.283Z"
 }
