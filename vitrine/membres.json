@@ -7,8 +7,8 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1738,
-  "followsGagnes30": 330,
+  "heuresLive30": 1742,
+  "followsGagnes30": 331,
   "periode": {
    "du": "2026-10-02",
    "au": "2026-11-01"
@@ -424,7 +424,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 11,
+    "viewers": 16,
     "jeu": "Minecraft",
     "titre": "FR_VT - J-7 du Choupiathon !!! Serveur Cobblemon nous voilà !",
     "depuis": "2026-11-01T16:43:10Z",
@@ -442,8 +442,8 @@
     "R.E.P.O.",
     "Special Events",
     "Valheim",
-    "DEVOUR",
-    "Minecraft"
+    "Minecraft",
+    "DEVOUR"
    ],
    "clip": {
     "url": "https://www.twitch.tv/hyroshimaeu/clip/EnthusiasticDeadBarracudaDoubleRainbow-dpuHYf5_97l_pYvP",
@@ -528,7 +528,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "VALORANT",
     "titre": "🔥 ON REPREND L'APOGÉE DE LA RANKED… LE SILVER N'EST PAS PRÊT 😭 | VALORANT",
     "depuis": "2026-11-01T17:07:47Z",
@@ -586,7 +586,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 8,
     "jeu": "Minecraft",
     "titre": "🔞On soutient Wagana pour l'ouverture de sa boutique , papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-11-01T16:48:46Z",
@@ -986,7 +986,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Whiskers of Yesterday",
     "titre": "Pôtit chat moustachu dominera le monde! #WhiskersOfYesterday #keymailer",
     "depuis": "2026-11-01T18:03:19Z",
@@ -1081,5 +1081,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-01T18:07:19.856Z"
+ "maj": "2026-11-01T19:07:14.429Z"
 }
