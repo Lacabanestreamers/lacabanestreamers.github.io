@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1679,
+  "heuresLive30": 1681,
   "followsGagnes30": 323,
   "periode": {
    "du": "2026-10-02",
@@ -139,13 +139,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 1,
-    "jeu": "Mazebound: Hunt, Gather, Run!",
-    "titre": "🎃Mazebounde • JOYEUX HALLOWEEN on va survivre parmi les monstres dans un labyrinthe avec @wati__bg et @kaycoo_ • 1 💗",
-    "depuis": "2026-10-31T20:04:38Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bichoune_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-04",
    "succes": [],
    "jeux": [
@@ -955,13 +949,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": {
-    "viewers": 8,
-    "jeu": "Invokyr",
-    "titre": "This is Halloween! Invokyr pour finir!",
-    "depuis": "2026-10-31T15:01:23Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1051,5 +1039,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-01T00:07:29.088Z"
+ "maj": "2026-11-01T00:58:48.816Z"
 }
