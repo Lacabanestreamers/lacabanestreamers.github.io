@@ -11,7 +11,7 @@
   "followsGagnes30": 323,
   "periode": {
    "du": "2026-10-02",
-   "au": "2026-10-31"
+   "au": "2026-11-01"
   }
  },
  "agenda": [],
@@ -736,11 +736,11 @@
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
-    "Apex Legends",
     "No Man's Sky",
     "Rocket League",
     "Nine Sols",
-    "Clair Obscur: Expedition 33"
+    "Clair Obscur: Expedition 33",
+    "Fall Guys"
    ],
    "clip": null
   },
@@ -760,7 +760,7 @@
     "Horror Game",
     "DEVOUR",
     "Bily'Sine",
-    "R.E.P.O."
+    "Decay: The Mare - Episode 1"
    ],
    "clip": null
   },
@@ -858,8 +858,8 @@
     "The Sims 4",
     "Animal Crossing: New Horizons",
     "R.E.P.O.",
-    "Just Chatting",
-    "Demonologist"
+    "Demonologist",
+    "Terrible Lizards"
    ],
    "clip": null
   },
@@ -1053,5 +1053,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-01T02:07:24.215Z"
+ "maj": "2026-11-01T07:23:37.916Z"
 }
