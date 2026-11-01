@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1742,
+  "heuresLive30": 1746,
   "followsGagnes30": 331,
   "periode": {
    "du": "2026-10-02",
@@ -424,7 +424,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 16,
+    "viewers": 15,
     "jeu": "Minecraft",
     "titre": "FR_VT - J-7 du Choupiathon !!! Serveur Cobblemon nous voilà !",
     "depuis": "2026-11-01T16:43:10Z",
@@ -585,13 +585,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 8,
-    "jeu": "Minecraft",
-    "titre": "🔞On soutient Wagana pour l'ouverture de sa boutique , papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-11-01T16:48:46Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -1081,5 +1075,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-01T19:07:14.429Z"
+ "maj": "2026-11-01T19:31:04.709Z"
 }
