@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1721,
+  "heuresLive30": 1724,
   "followsGagnes30": 330,
   "periode": {
    "du": "2026-10-02",
@@ -94,7 +94,7 @@
    "staff": false,
    "depuis": "2026-09-22",
    "live": {
-    "viewers": 8,
+    "viewers": 9,
     "jeu": "Outbound",
     "titre": "Caravane ou maison, pourquoi choisir ?",
     "depuis": "2026-11-01T13:00:45Z",
@@ -113,7 +113,7 @@
     "Cat Mail Co.",
     "Pao Pao",
     "The Witch's Bakery",
-    "Just Chatting"
+    "Outbound"
    ],
    "clip": null
   },
@@ -189,7 +189,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 17,
+    "viewers": 15,
     "jeu": "Special Events",
     "titre": "🔥 Dernière ligne droite | Stream Mates 2026 pour l'asso \"Sur le chemin de l'école\" ❤️🎒",
     "depuis": "2026-11-01T08:52:26Z",
@@ -260,7 +260,7 @@
     "Raft",
     "Rise of the Tomb Raider",
     "Sort The Bunnies",
-    "Cat Mail Co."
+    "Librarian: Tidy Up the Arcane Library!"
    ],
    "clip": {
     "url": "https://www.twitch.tv/cristal578/clip/SingleEntertainingEelFloof-zHHG11Y6cOyHM_d0",
@@ -539,7 +539,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Fortnite",
+    "titre": "- 🕵️‍♂️ MISSION : TROUVER LES ESPRITS ET SURVIVRE À LA MINI-SAISON !",
+    "depuis": "2026-11-01T15:56:02Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -870,7 +876,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Terrible Lizards",
+    "titre": "TERRIBLE LIZARDS [FR] | On continue de découvrir ensemble le jeux Terrible Lizards avec des dinos mais pas que... 🦖| !discord !lizards",
+    "depuis": "2026-11-01T15:20:16Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
+   },
    "premierStream": "2025-09-10",
    "succes": [],
    "jeux": [
@@ -948,7 +960,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Hunting Simulator 3",
+    "titre": "Hunting Simulator 3 on part a la chasse",
+    "depuis": "2026-11-01T15:27:36Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
+   },
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -1073,5 +1091,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-01T15:07:15.157Z"
+ "maj": "2026-11-01T16:07:15.429Z"
 }
