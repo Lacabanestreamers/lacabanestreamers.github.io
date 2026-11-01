@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1705,
+  "heuresLive30": 1711,
   "followsGagnes30": 330,
   "periode": {
    "du": "2026-10-02",
@@ -93,7 +93,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-22",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Outbound",
+    "titre": "Caravane ou maison, pourquoi choisir ?",
+    "depuis": "2026-11-01T13:00:45Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asalie-440x248.jpg"
+   },
    "premierStream": "2025-07-27",
    "succes": [
     {
@@ -165,7 +171,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "DDV + Récompense Ds + Déco",
+    "depuis": "2026-11-01T12:15:12Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brastentv-440x248.jpg"
+   },
    "premierStream": "2026-06-05",
    "succes": [],
    "jeux": [
@@ -183,7 +195,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 15,
+    "viewers": 12,
     "jeu": "Special Events",
     "titre": "🔥 Dernière ligne droite | Stream Mates 2026 pour l'asso \"Sur le chemin de l'école\" ❤️🎒",
     "depuis": "2026-11-01T08:52:26Z",
@@ -240,13 +252,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": {
-    "viewers": 7,
-    "jeu": "Dead by Daylight",
-    "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
-    "depuis": "2026-11-01T09:18:01Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -618,7 +624,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 17,
+    "viewers": 5,
     "jeu": "Special Events",
     "titre": "Jour 3 🎒 Live caritatif – Sur le chemin de l'école",
     "depuis": "2026-11-01T10:33:48Z",
@@ -680,19 +686,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": {
-    "viewers": 1,
-    "jeu": "Writing & Reading",
-    "titre": "⚔️ Plumes, mousquets & intrigues | Session écriture !👑",
-    "depuis": "2026-11-01T09:19:00Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mandouee-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-10-23",
    "succes": [],
    "jeux": [
     "Art",
-    "Animal Crossing: New Horizons",
-    "Writing & Reading"
+    "Writing & Reading",
+    "Animal Crossing: New Horizons"
    ],
    "clip": null
   },
@@ -704,13 +704,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 3,
-    "jeu": "PowerWash Simulator",
-    "titre": "Joyeux Halloween",
-    "depuis": "2026-11-01T08:49:33Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-08",
    "succes": [
     {
@@ -736,7 +730,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "The Baby In Yellow",
+    "titre": "Faut-il se débarrasser du bébé ?????  !discord !regles !don !wishlist",
+    "depuis": "2026-11-01T12:15:56Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -960,13 +960,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": {
-    "viewers": 1,
-    "jeu": "TCG Card Collection: Tidy Up",
-    "titre": "TCG Card Collection on range les cartes dans les vitrines",
-    "depuis": "2026-11-01T08:52:24Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -1091,5 +1085,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-01T12:07:21.773Z"
+ "maj": "2026-11-01T13:07:19.079Z"
 }
