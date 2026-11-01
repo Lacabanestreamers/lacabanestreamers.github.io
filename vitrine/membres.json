@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1746,
+  "heuresLive30": 1750,
   "followsGagnes30": 331,
   "periode": {
    "du": "2026-10-02",
@@ -424,7 +424,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 14,
+    "viewers": 11,
     "jeu": "Minecraft",
     "titre": "FR_VT - J-7 du Choupiathon !!! Serveur Cobblemon nous voilà !",
     "depuis": "2026-11-01T16:43:10Z",
@@ -441,8 +441,8 @@
    "jeux": [
     "R.E.P.O.",
     "Special Events",
-    "Valheim",
     "Minecraft",
+    "Valheim",
     "DEVOUR"
    ],
    "clip": {
@@ -508,7 +508,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 13,
+    "viewers": 20,
     "jeu": "Planet Zoo 2",
     "titre": "PLANET ZOO 2 CHILL 🦁 : On continue notre premier zoo, avant d'aller dans les Tropiques ! | Découverte Test FR Nouveauté jeu-vidéo",
     "depuis": "2026-11-01T19:43:03Z",
@@ -534,7 +534,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 5,
+    "viewers": 8,
     "jeu": "VALORANT",
     "titre": "🔥 ON REPREND L'APOGÉE DE LA RANKED… LE SILVER N'EST PAS PRÊT 😭 | VALORANT",
     "depuis": "2026-11-01T17:07:47Z",
@@ -969,7 +969,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-16",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "R.E.P.O.",
+    "titre": "Des cosmétiques ou un sort ! C'est REPOWEEN :3",
+    "depuis": "2026-11-01T20:15:02Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rinka_henbyou-440x248.jpg"
+   },
    "premierStream": "2025-06-23",
    "succes": [],
    "jeux": [
@@ -985,13 +991,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": {
-    "viewers": 8,
-    "jeu": "Whiskers of Yesterday",
-    "titre": "Pôtit chat moustachu dominera le monde! #WhiskersOfYesterday #keymailer",
-    "depuis": "2026-11-01T18:03:19Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1081,5 +1081,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-01T20:07:15.402Z"
+ "maj": "2026-11-01T21:07:14.769Z"
 }
