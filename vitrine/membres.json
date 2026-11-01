@@ -7,8 +7,8 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1696,
-  "followsGagnes30": 323,
+  "heuresLive30": 1705,
+  "followsGagnes30": 330,
   "periode": {
    "du": "2026-10-02",
    "au": "2026-11-01"
@@ -183,7 +183,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
+    "viewers": 15,
     "jeu": "Special Events",
     "titre": "🔥 Dernière ligne droite | Stream Mates 2026 pour l'asso \"Sur le chemin de l'école\" ❤️🎒",
     "depuis": "2026-11-01T08:52:26Z",
@@ -241,7 +241,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "Dead by Daylight",
     "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
     "depuis": "2026-11-01T09:18:01Z",
@@ -551,13 +551,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 5,
-    "jeu": "Dead Space 2",
-    "titre": "🐰Oust les aliens",
-    "depuis": "2026-11-01T08:44:50Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -624,7 +618,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 17,
     "jeu": "Special Events",
     "titre": "Jour 3 🎒 Live caritatif – Sur le chemin de l'école",
     "depuis": "2026-11-01T10:33:48Z",
@@ -687,7 +681,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 5,
+    "viewers": 1,
     "jeu": "Writing & Reading",
     "titre": "⚔️ Plumes, mousquets & intrigues | Session écriture !👑",
     "depuis": "2026-11-01T09:19:00Z",
@@ -711,7 +705,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 3,
     "jeu": "PowerWash Simulator",
     "titre": "Joyeux Halloween",
     "depuis": "2026-11-01T08:49:33Z",
@@ -809,13 +803,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 4,
-    "jeu": "Art",
-    "titre": "[FR] Matinée colo, on papote ☕✨ | Coloriages Mystères | !discord !commandes",
-    "depuis": "2026-11-01T08:00:28Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -1040,13 +1028,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": {
-    "viewers": 24,
-    "jeu": "Grand Theft Auto V",
-    "titre": "🌴[#5] JE DÉCOUVRE GTA V🌴 !rs !discord !instantgaming",
-    "depuis": "2026-11-01T09:00:10Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-19",
    "succes": [
     {
@@ -1109,5 +1091,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-01T11:07:23.109Z"
+ "maj": "2026-11-01T12:07:21.773Z"
 }
