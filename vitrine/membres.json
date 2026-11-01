@@ -772,7 +772,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Art",
+    "titre": "[FR] Matinée colo, on papote ☕✨ | Coloriages Mystères | !discord !commandes",
+    "depuis": "2026-11-01T08:00:28Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
+   },
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -1053,5 +1059,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-01T07:23:37.916Z"
+ "maj": "2026-11-01T08:07:20.211Z"
 }
