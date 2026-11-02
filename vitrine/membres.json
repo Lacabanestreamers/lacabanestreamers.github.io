@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1781,
+  "heuresLive30": 1786,
   "followsGagnes30": 329,
   "periode": {
    "du": "2026-10-03",
@@ -42,13 +42,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 10,
-    "jeu": "Outbound",
-    "titre": "✨On continue de voyager avec Aulit🔥",
-    "depuis": "2026-11-02T12:53:58Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -125,13 +119,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 6,
-    "jeu": "Outbound",
-    "titre": "On retourne camper avec @aly0806",
-    "depuis": "2026-11-02T12:56:07Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -533,7 +521,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 5,
+    "viewers": 3,
     "jeu": "Fortnite",
     "titre": "👻 ON EST VENUS CHASSER DES ESPRITS… ON VA FINIR HANTÉS 😭 | FORTNITE MINI-SAISON",
     "depuis": "2026-11-02T18:45:27Z",
@@ -676,18 +664,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 8,
-    "jeu": "Phasmophobia",
-    "titre": "La chasse est ouverte ! PHASMOPHOBIA Ft @despe_boy22 !discord",
-    "depuis": "2026-11-02T16:29:36Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
-    "Demonologist",
     "Phasmophobia",
+    "Demonologist",
     "Sons of the Forest",
     "Just Chatting"
    ],
@@ -779,7 +761,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Just Chatting",
+    "titre": "React documentaire Arte !",
+    "depuis": "2026-11-02T19:24:40Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
+   },
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -1014,8 +1002,8 @@
    "depuis": "2026-10-27",
    "live": {
     "viewers": 13,
-    "jeu": "Just Chatting",
-    "titre": "La pause avant le Pit of Goblins! #keymailer",
+    "jeu": "Pit of Goblin",
+    "titre": "Découverte de Pit of Goblins avec les coupaings! #pitofgoblin  #keymailer",
     "depuis": "2026-11-02T17:27:44Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1025,8 +1013,8 @@
     "Space Savory",
     "Photomaly",
     "Invokyr",
-    "R.E.P.O.",
-    "Just Chatting"
+    "Just Chatting",
+    "R.E.P.O."
    ],
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/RealCulturedMeatloafHassanChop-J1NQkVeYR2VmfdYr",
@@ -1108,5 +1096,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-02T19:07:14.495Z"
+ "maj": "2026-11-02T20:07:18.166Z"
 }
