@@ -7,10 +7,10 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1789,
-  "followsGagnes30": 329,
+  "heuresLive30": 1768,
+  "followsGagnes30": 325,
   "periode": {
-   "du": "2026-10-03",
+   "du": "2026-10-04",
    "au": "2026-11-02"
   }
  },
@@ -933,7 +933,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 3,
     "jeu": "The Witcher 3: Wild Hunt Remastered",
     "titre": "Quels secrets nous réserve Skellige ? !discord",
     "depuis": "2026-11-02T20:19:48Z",
@@ -1001,7 +1001,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 12,
+    "viewers": 15,
     "jeu": "Pit of Goblin",
     "titre": "Découverte de Pit of Goblins avec les coupaings! #pitofgoblin  #keymailer",
     "depuis": "2026-11-02T17:27:44Z",
@@ -1096,5 +1096,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-02T21:07:30.241Z"
+ "maj": "2026-11-02T22:07:24.137Z"
 }
