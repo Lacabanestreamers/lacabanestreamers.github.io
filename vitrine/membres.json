@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1731,
+  "heuresLive30": 1732,
   "followsGagnes30": 324,
   "periode": {
    "du": "2026-10-03",
@@ -501,13 +501,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 20,
-    "jeu": "Planet Zoo 2",
-    "titre": "PLANET ZOO 2 CHILL 🦁 : On continue notre premier zoo, avant d'aller dans les Tropiques ! | Découverte Test FR Nouveauté jeu-vidéo",
-    "depuis": "2026-11-01T19:43:03Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
@@ -1070,5 +1064,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-02T02:07:18.146Z"
+ "maj": "2026-11-02T03:07:18.244Z"
 }
