@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1738,
+  "heuresLive30": 1742,
   "followsGagnes30": 329,
   "periode": {
    "du": "2026-10-03",
@@ -24,13 +24,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": {
-    "viewers": 6,
-    "jeu": "Fortnite",
-    "titre": "Fortnite/PS5",
-    "depuis": "2026-11-02T09:21:35Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -266,13 +260,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": {
-    "viewers": 2,
-    "jeu": "Lies of P",
-    "titre": "[Lies of P] On essaie d'avancer ?",
-    "depuis": "2026-11-02T07:52:39Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -592,7 +580,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 10,
     "jeu": "Tomb Raider",
     "titre": "🔞On chill ce matin !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-11-02T07:41:00Z",
@@ -731,13 +719,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": {
-    "viewers": 8,
-    "jeu": "Aniimo",
-    "titre": "Le retour de la matinale Cozy !!!!!!  !discord !regles !don !wishlist",
-    "depuis": "2026-11-02T08:01:40Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -1087,5 +1069,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-02T10:07:15.037Z"
+ "maj": "2026-11-02T11:07:28.657Z"
 }
