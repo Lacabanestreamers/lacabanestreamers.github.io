@@ -7,8 +7,8 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1775,
-  "followsGagnes30": 328,
+  "heuresLive30": 1781,
+  "followsGagnes30": 329,
   "periode": {
    "du": "2026-10-03",
    "au": "2026-11-02"
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 10,
     "jeu": "Outbound",
     "titre": "✨On continue de voyager avec Aulit🔥",
     "depuis": "2026-11-02T12:53:58Z",
@@ -126,7 +126,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "Outbound",
     "titre": "On retourne camper avec @aly0806",
     "depuis": "2026-11-02T12:56:07Z",
@@ -533,10 +533,10 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 3,
-    "jeu": "Just Chatting",
-    "titre": "on attend la fin de l'installation",
-    "depuis": "2026-11-02T12:54:02Z",
+    "viewers": 5,
+    "jeu": "Fortnite",
+    "titre": "👻 ON EST VENUS CHASSER DES ESPRITS… ON VA FINIR HANTÉS 😭 | FORTNITE MINI-SAISON",
+    "depuis": "2026-11-02T18:45:27Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
    },
    "premierStream": "2027-08-31",
@@ -545,8 +545,8 @@
     "VALORANT",
     "Fortnite",
     "League of Legends",
-    "RuneScape: Dragonwilds",
-    "Just Chatting"
+    "Just Chatting",
+    "RuneScape: Dragonwilds"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lagonbleu_976/clip/WonderfulAcceptableJackalSoBayed-pC8xuB1us3TYHavq",
@@ -598,13 +598,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 15,
-    "jeu": "Tomb Raider",
-    "titre": "🔞On chill !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-11-02T13:24:46Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -617,8 +611,8 @@
     "R.E.P.O.",
     "Dead by Daylight",
     "7 Days to Die",
-    "AION 2",
-    "Tomb Raider"
+    "Tomb Raider",
+    "AION 2"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/SoftPopularJaguarAsianGlow-eQkaWixWZUJgxDKo",
@@ -683,7 +677,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 9,
+    "viewers": 8,
     "jeu": "Phasmophobia",
     "titre": "La chasse est ouverte ! PHASMOPHOBIA Ft @despe_boy22 !discord",
     "depuis": "2026-11-02T16:29:36Z",
@@ -1020,8 +1014,8 @@
    "depuis": "2026-10-27",
    "live": {
     "viewers": 13,
-    "jeu": "Octbuster: Video Rental Store Cleanup",
-    "titre": "Je range, vous dérangez!   #Octbuster #keymailer",
+    "jeu": "Just Chatting",
+    "titre": "La pause avant le Pit of Goblins! #keymailer",
     "depuis": "2026-11-02T17:27:44Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1114,5 +1108,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-02T18:07:21.023Z"
+ "maj": "2026-11-02T19:07:14.495Z"
 }
