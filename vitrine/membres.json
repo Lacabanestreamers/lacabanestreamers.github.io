@@ -502,7 +502,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 14,
+    "viewers": 17,
     "jeu": "Planet Zoo 2",
     "titre": "PLANET ZOO 2 CHILL 🦁 : On continue notre premier zoo, avant d'aller dans les Tropiques ! | Découverte Test FR Nouveauté jeu-vidéo",
     "depuis": "2026-11-01T19:43:03Z",
@@ -957,13 +957,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-16",
-   "live": {
-    "viewers": 11,
-    "jeu": "R.E.P.O.",
-    "titre": "Des cosmétiques ou un sort ! C'est REPOWEEN :3",
-    "depuis": "2026-11-01T20:15:02Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rinka_henbyou-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-06-23",
    "succes": [],
    "jeux": [
@@ -1069,5 +1063,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-01T23:29:37.688Z"
+ "maj": "2026-11-02T00:07:15.742Z"
 }
