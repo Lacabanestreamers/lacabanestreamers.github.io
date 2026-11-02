@@ -42,7 +42,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Outbound",
+    "titre": "✨On continue de voyager avec Aulit🔥",
+    "depuis": "2026-11-02T12:53:58Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
+   },
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -119,7 +125,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "Outbound",
+    "titre": "On retourne camper avec @aly0806",
+    "depuis": "2026-11-02T12:56:07Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
+   },
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -337,7 +349,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "Hogwarts Legacy",
+    "titre": "[FR] [HL] 🪄 LIVE HOGWARTS LEGACY | Un sorcier maladroit à Poudlard 😂 | Venez vivre l'aventure avec Evodp !",
+    "depuis": "2026-11-02T13:06:23Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
+   },
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -520,7 +538,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Fortnite",
+    "titre": "👻 ON EST VENUS CHASSER DES ESPRITS… ON VA FINIR HANTÉS 😭 | FORTNITE MINI-SAISON",
+    "depuis": "2026-11-02T12:54:02Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -806,7 +830,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "American Truck Simulator",
+    "titre": "Bonjour,  je reprent la route venez papoter !!!!",
+    "depuis": "2026-11-02T12:14:42Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1063,5 +1093,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-02T12:07:18.070Z"
+ "maj": "2026-11-02T13:07:15.728Z"
 }
