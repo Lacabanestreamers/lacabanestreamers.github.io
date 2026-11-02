@@ -4,9 +4,9 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 44,
-  "affilies": 40,
-  "nouveaux30": 21,
+  "membres": 45,
+  "affilies": 41,
+  "nouveaux30": 22,
   "heuresLive30": 1762,
   "followsGagnes30": 328,
   "periode": {
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 13,
     "jeu": "Outbound",
     "titre": "✨On continue de voyager avec Aulit🔥",
     "depuis": "2026-11-02T12:53:58Z",
@@ -539,7 +539,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 3,
     "jeu": "VALORANT",
     "titre": "MON AIM EST EN VACANCES, MAIS PAS LA RANKED 💀",
     "depuis": "2026-11-02T12:54:02Z",
@@ -604,7 +604,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 19,
+    "viewers": 14,
     "jeu": "Tomb Raider",
     "titre": "🔞On chill !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-11-02T13:24:46Z",
@@ -664,6 +664,20 @@
     "date": "2026-10-28",
     "duree": 51
    }
+  },
+  {
+   "login": "lupiozzi",
+   "nom": "Lupiozzi",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/d6dd5aa8-a421-4588-ad3b-3b34b1dc97b1-profile_image-300x300.png",
+   "bio": "🌞 Streameuse provençale de 29 ans, multigaming plusieurs fois/semaine, commu full bienveillante. Je suis celle qui trébuche sur de l'air et qui range ses clés dans le micro-onde. Charmé ? : streamlupio@outlook.fr",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-11-02",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
+   "clip": null
   },
   {
    "login": "lylu_live",
@@ -1010,7 +1024,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 11,
+    "viewers": 13,
     "jeu": "Love: Fall in Death",
     "titre": "Découverte FMV! #lovefallindeath #keymailer",
     "depuis": "2026-11-02T14:03:32Z",
@@ -1105,5 +1119,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-02T15:35:00.046Z"
+ "maj": "2026-11-02T15:45:52.299Z"
 }
