@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
+    "viewers": 10,
     "jeu": "Outbound",
     "titre": "✨On continue de voyager avec Aulit🔥",
     "depuis": "2026-11-02T12:53:58Z",
@@ -126,7 +126,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 11,
     "jeu": "Outbound",
     "titre": "On retourne camper avec @aly0806",
     "depuis": "2026-11-02T12:56:07Z",
@@ -350,7 +350,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 2,
+    "viewers": 12,
     "jeu": "Hogwarts Legacy",
     "titre": "[FR] [HL] 🪄 LIVE HOGWARTS LEGACY | Un sorcier maladroit à Poudlard 😂 | Venez vivre l'aventure avec Evodp !",
     "depuis": "2026-11-02T13:06:23Z",
@@ -539,7 +539,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 3,
+    "viewers": 5,
     "jeu": "VALORANT",
     "titre": "MON AIM EST EN VACANCES, MAIS PAS LA RANKED 💀",
     "depuis": "2026-11-02T12:54:02Z",
@@ -604,7 +604,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 16,
     "jeu": "Tomb Raider",
     "titre": "🔞On chill !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-11-02T13:24:46Z",
@@ -850,13 +850,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 2,
-    "jeu": "American Truck Simulator",
-    "titre": "Bonjour,  je reprent la route venez papoter !!!!",
-    "depuis": "2026-11-02T12:14:42Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1119,5 +1113,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-02T15:45:52.299Z"
+ "maj": "2026-11-02T16:07:16.502Z"
 }
