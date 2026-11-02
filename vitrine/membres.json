@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1732,
+  "heuresLive30": 1735,
   "followsGagnes30": 329,
   "periode": {
    "du": "2026-10-03",
@@ -261,7 +261,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Lies of P",
     "titre": "[Lies of P] On essaie d'avancer ?",
     "depuis": "2026-11-02T07:52:39Z",
@@ -726,7 +726,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 1,
+    "viewers": 10,
     "jeu": "Aniimo",
     "titre": "Le retour de la matinale Cozy !!!!!!  !discord !regles !don !wishlist",
     "depuis": "2026-11-02T08:01:40Z",
@@ -737,8 +737,8 @@
    "jeux": [
     "Poppy Playtime: Chapter 3 - Deep Sleep",
     "The Baby In Yellow",
-    "Stardew Valley",
     "Aniimo",
+    "Stardew Valley",
     "Welcome to Elderfield"
    ],
    "clip": {
@@ -1081,5 +1081,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-02T08:07:18.091Z"
+ "maj": "2026-11-02T09:07:15.507Z"
 }
