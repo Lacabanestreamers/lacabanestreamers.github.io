@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1742,
+  "heuresLive30": 1743,
   "followsGagnes30": 329,
   "periode": {
    "du": "2026-10-03",
@@ -579,13 +579,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 10,
-    "jeu": "Tomb Raider",
-    "titre": "🔞On chill ce matin !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
-    "depuis": "2026-11-02T07:41:00Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -1069,5 +1063,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-02T11:07:28.657Z"
+ "maj": "2026-11-02T12:07:18.070Z"
 }
