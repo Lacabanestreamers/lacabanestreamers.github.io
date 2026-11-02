@@ -8,10 +8,10 @@
   "affilies": 40,
   "nouveaux30": 21,
   "heuresLive30": 1732,
-  "followsGagnes30": 324,
+  "followsGagnes30": 329,
   "periode": {
    "du": "2026-10-03",
-   "au": "2026-11-01"
+   "au": "2026-11-02"
   }
  },
  "agenda": [],
@@ -47,9 +47,9 @@
    "succes": [],
    "jeux": [
     "R.E.P.O.",
-    "DEVOUR",
     "Outbound",
     "Just Chatting",
+    "DEVOUR",
     "SO CLOSE"
    ],
    "clip": {
@@ -125,8 +125,8 @@
    "jeux": [
     "7 Days to Die",
     "Graveyard Keeper II",
-    "VALORANT",
     "Outbound",
+    "VALORANT",
     "R.E.P.O."
    ],
    "clip": {
@@ -152,8 +152,7 @@
    "jeux": [
     "Mazebound: Hunt, Gather, Run!",
     "Leafy Corner",
-    "My Fashion Studio",
-    "Pokémon Mystery Dungeon: Explorers of Sky"
+    "My Fashion Studio"
    ],
    "clip": null
   },
@@ -201,7 +200,7 @@
     "The Sims 4",
     "Disney Dreamlight Valley",
     "R.E.P.O.",
-    "DEVOUR"
+    "Just Chatting"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/HonestEnthusiasticBorkPeteZarollTie-VFy7s-fu_RrEtrOu",
@@ -261,7 +260,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Lies of P",
+    "titre": "[Lies of P] On essaie d'avancer ?",
+    "depuis": "2026-11-02T07:52:39Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -387,9 +392,9 @@
    "succes": [],
    "jeux": [
     "R.E.P.O.",
-    "DREDGE",
     "Abiotic Factor",
     "Shift at Midnight",
+    "DREDGE",
     "Writing & Reading"
    ],
    "clip": {
@@ -561,7 +566,7 @@
     "Resonance: A Plague Tale Legacy",
     "Dead Space 2",
     "BOMBANANA!",
-    "WheelMates"
+    "FragPunk"
    ],
    "clip": {
     "url": "https://www.twitch.tv/liiapin/clip/AmusedNeighborlyWerewolfBCouch-LaBjIUSXMidjsnB9",
@@ -580,7 +585,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "Tomb Raider",
+    "titre": "🔞On chill ce matin !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-11-02T07:41:00Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -714,14 +725,20 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Aniimo",
+    "titre": "Le retour de la matinale Cozy !!!!!!  !discord !regles !don !wishlist",
+    "depuis": "2026-11-02T08:01:40Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
     "Poppy Playtime: Chapter 3 - Deep Sleep",
-    "Aniimo",
     "The Baby In Yellow",
     "Stardew Valley",
+    "Aniimo",
     "Welcome to Elderfield"
    ],
    "clip": {
@@ -1064,5 +1081,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-02T03:07:18.244Z"
+ "maj": "2026-11-02T08:07:18.091Z"
 }
