@@ -7,8 +7,8 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 21,
-  "heuresLive30": 1743,
-  "followsGagnes30": 329,
+  "heuresLive30": 1748,
+  "followsGagnes30": 328,
   "periode": {
    "du": "2026-10-03",
    "au": "2026-11-02"
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 10,
     "jeu": "Outbound",
     "titre": "✨On continue de voyager avec Aulit🔥",
     "depuis": "2026-11-02T12:53:58Z",
@@ -126,7 +126,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 8,
     "jeu": "Outbound",
     "titre": "On retourne camper avec @aly0806",
     "depuis": "2026-11-02T12:56:07Z",
@@ -136,8 +136,8 @@
    "succes": [],
    "jeux": [
     "7 Days to Die",
-    "Graveyard Keeper II",
     "Outbound",
+    "Graveyard Keeper II",
     "VALORANT",
     "R.E.P.O."
    ],
@@ -350,7 +350,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 0,
+    "viewers": 1,
     "jeu": "Hogwarts Legacy",
     "titre": "[FR] [HL] 🪄 LIVE HOGWARTS LEGACY | Un sorcier maladroit à Poudlard 😂 | Venez vivre l'aventure avec Evodp !",
     "depuis": "2026-11-02T13:06:23Z",
@@ -539,7 +539,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 2,
+    "viewers": 5,
     "jeu": "Fortnite",
     "titre": "👻 ON EST VENUS CHASSER DES ESPRITS… ON VA FINIR HANTÉS 😭 | FORTNITE MINI-SAISON",
     "depuis": "2026-11-02T12:54:02Z",
@@ -549,8 +549,8 @@
    "succes": [],
    "jeux": [
     "VALORANT",
-    "League of Legends",
     "Fortnite",
+    "League of Legends",
     "RuneScape: Dragonwilds"
    ],
    "clip": {
@@ -603,7 +603,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "Tomb Raider",
+    "titre": "🔞On chill !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
+    "depuis": "2026-11-02T13:24:46Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -1003,7 +1009,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Love: Fall in Death",
+    "titre": "Découverte FMV! #lovefallindeath #keymailer",
+    "depuis": "2026-11-02T14:03:32Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1093,5 +1105,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-02T13:07:15.728Z"
+ "maj": "2026-11-02T14:07:14.093Z"
 }
