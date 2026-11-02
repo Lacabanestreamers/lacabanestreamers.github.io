@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1768,
+  "heuresLive30": 1775,
   "followsGagnes30": 328,
   "periode": {
    "du": "2026-10-03",
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 11,
     "jeu": "Outbound",
     "titre": "✨On continue de voyager avec Aulit🔥",
     "depuis": "2026-11-02T12:53:58Z",
@@ -349,13 +349,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": {
-    "viewers": 1,
-    "jeu": "Hogwarts Legacy",
-    "titre": "[FR] [HL] 🪄 LIVE HOGWARTS LEGACY | Un sorcier maladroit à Poudlard 😂 | Venez vivre l'aventure avec Evodp !",
-    "depuis": "2026-11-02T13:06:23Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -365,8 +359,8 @@
     }
    ],
    "jeux": [
-    "Disney Dreamlight Valley",
     "Hogwarts Legacy",
+    "Disney Dreamlight Valley",
     "Red Dead Redemption II"
    ],
    "clip": null
@@ -539,7 +533,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 3,
     "jeu": "Just Chatting",
     "titre": "on attend la fin de l'installation",
     "depuis": "2026-11-02T12:54:02Z",
@@ -551,7 +545,8 @@
     "VALORANT",
     "Fortnite",
     "League of Legends",
-    "RuneScape: Dragonwilds"
+    "RuneScape: Dragonwilds",
+    "Just Chatting"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lagonbleu_976/clip/WonderfulAcceptableJackalSoBayed-pC8xuB1us3TYHavq",
@@ -604,7 +599,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
+    "viewers": 15,
     "jeu": "Tomb Raider",
     "titre": "🔞On chill !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic !horreur🔞",
     "depuis": "2026-11-02T13:24:46Z",
@@ -688,7 +683,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 11,
+    "viewers": 9,
     "jeu": "Phasmophobia",
     "titre": "La chasse est ouverte ! PHASMOPHOBIA Ft @despe_boy22 !discord",
     "depuis": "2026-11-02T16:29:36Z",
@@ -1027,7 +1022,7 @@
     "viewers": 13,
     "jeu": "Octbuster: Video Rental Store Cleanup",
     "titre": "Je range, vous dérangez!   #Octbuster #keymailer",
-    "depuis": "2026-11-02T14:03:32Z",
+    "depuis": "2026-11-02T17:27:44Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
    "premierStream": null,
@@ -1119,5 +1114,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-02T17:07:14.309Z"
+ "maj": "2026-11-02T18:07:21.023Z"
 }
