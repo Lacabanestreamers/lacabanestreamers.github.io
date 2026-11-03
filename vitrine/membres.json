@@ -7,8 +7,8 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1815,
-  "followsGagnes30": 329,
+  "heuresLive30": 1819,
+  "followsGagnes30": 330,
   "periode": {
    "du": "2026-10-04",
    "au": "2026-11-03"
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 12,
+    "viewers": 8,
     "jeu": "Fortnite",
     "titre": "Fortnite/PS5",
     "depuis": "2026-11-03T14:14:46Z",
@@ -239,7 +239,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Raft",
+    "titre": "🌊Au menu ce soir : du requin grillé ! Coop sur Raft avec @Titounetsan @Barba_Doug",
+    "depuis": "2026-11-03T18:58:29Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
+   },
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -325,7 +331,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "💕 Soirée cosy des marmottes sur DDV 🎮 | !lurk !clip !commandes",
+    "depuis": "2026-11-03T18:40:07Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
+   },
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
@@ -526,13 +538,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 6,
-    "jeu": "VALORANT",
-    "titre": "LES RANKED VONT NOUS RÉGALER… OU NOUS DÉTRUIRE ? 😭💀 | VALORANT",
-    "depuis": "2026-11-03T14:32:25Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -592,13 +598,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 13,
-    "jeu": "Special Events",
-    "titre": "🔞Kitsune Bazard Show + Live 500 Follows  !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
-    "depuis": "2026-11-03T07:33:23Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -839,7 +839,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "Bonjour, je retourne voir winnie avec @paygadream !!!!",
+    "depuis": "2026-11-03T18:57:36Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -912,7 +918,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "On continue l'aventure en compagnie de notre ami Winnie l'Ourson !! En voc avec @nyxenfox",
+    "depuis": "2026-11-03T18:57:28Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_paygadream-440x248.jpg"
+   },
    "premierStream": "2026-05-02",
    "succes": [],
    "jeux": [
@@ -1006,9 +1018,21 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 11,
+    "jeu": "Just Chatting",
+    "titre": "La battle Fall Guys!",
+    "depuis": "2026-11-03T18:29:28Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
-   "succes": [],
+   "succes": [
+    {
+     "type": "palier",
+     "palier": 500,
+     "date": "2026-11-03"
+    }
+   ],
    "jeux": [
     "Space Savory",
     "Photomaly",
@@ -1096,5 +1120,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-03T18:07:39.437Z"
+ "maj": "2026-11-03T19:07:28.606Z"
 }
