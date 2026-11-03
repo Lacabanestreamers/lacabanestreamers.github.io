@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1800,
+  "heuresLive30": 1805,
   "followsGagnes30": 329,
   "periode": {
    "du": "2026-10-04",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 10,
+    "viewers": 11,
     "jeu": "Fortnite",
     "titre": "Fortnite/PS5",
     "depuis": "2026-11-03T14:14:46Z",
@@ -35,8 +35,8 @@
    "succes": [],
    "jeux": [
     "Rocket League",
-    "A Plague Tale: Innocence",
-    "Fortnite"
+    "Fortnite",
+    "A Plague Tale: Innocence"
    ],
    "clip": null
   },
@@ -429,7 +429,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "Valheim",
     "titre": "FR_VT - J-9 du Choupiathon !!! C'est la survivance des Vikings !!!",
     "depuis": "2026-11-03T12:59:20Z",
@@ -445,8 +445,8 @@
    ],
    "jeux": [
     "R.E.P.O.",
-    "Minecraft",
     "Valheim",
+    "Minecraft",
     "Special Events",
     "DEVOUR"
    ],
@@ -533,7 +533,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 7,
     "jeu": "Fortnite",
     "titre": "🎟️ À LA RECHERCHE DU PRÉCIEUX JETON… ON NE LÂCHE RIEN !",
     "depuis": "2026-11-03T14:32:25Z",
@@ -599,7 +599,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 15,
+    "viewers": 16,
     "jeu": "Special Events",
     "titre": "🔞Kitsune Bazard Show + Live 500 Follows  !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-03T07:33:23Z",
@@ -781,7 +781,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Just Chatting",
     "titre": "React documentaire Arte !",
     "depuis": "2026-11-03T14:43:29Z",
@@ -1102,5 +1102,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-03T15:07:17.864Z"
+ "maj": "2026-11-03T16:07:26.690Z"
 }
