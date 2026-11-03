@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1776,
+  "heuresLive30": 1780,
   "followsGagnes30": 327,
   "periode": {
    "du": "2026-10-04",
@@ -24,13 +24,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": {
-    "viewers": 8,
-    "jeu": "Rocket League",
-    "titre": "Rocket League/PS5",
-    "depuis": "2026-11-03T07:44:19Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -267,7 +261,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 5,
+    "viewers": 6,
     "jeu": "Warframe",
     "titre": "[Warframe] (MR 27) On vise 500 plat pour Brysko !",
     "depuis": "2026-11-03T07:52:30Z",
@@ -494,13 +488,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 10,
-    "jeu": "Art",
-    "titre": "✦ OC CHALLENGE ✦ GALAXIIIIE ! | Il est trop tôt lààà 😴☕| Changement des obj. Art Challenges | !artchallenges !catfanart !liens",
-    "depuis": "2026-11-03T06:52:35Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -599,7 +587,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
+    "viewers": 11,
     "jeu": "Special Events",
     "titre": "🔞Kitsune Bazard Show + Live 500 Follows  !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-03T07:33:23Z",
@@ -708,7 +696,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Agent A: A Puzzle In Disguise",
+    "titre": "[FR] AGENT A 🔎 | On mène l'enquête jusqu'au bout !",
+    "depuis": "2026-11-03T09:27:15Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mandouee-440x248.jpg"
+   },
    "premierStream": "2024-10-23",
    "succes": [],
    "jeux": [
@@ -1069,7 +1063,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Allogloom",
+    "titre": "Il faut sauver notre frère ! #2 | !tiktok | !Discord | !clip |",
+    "depuis": "2026-11-03T09:33:52Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zeylta-440x248.jpg"
+   },
    "premierStream": "2026-01-31",
    "succes": [],
    "jeux": [
@@ -1095,5 +1095,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-03T09:07:17.639Z"
+ "maj": "2026-11-03T10:07:16.133Z"
 }
