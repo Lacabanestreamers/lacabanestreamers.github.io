@@ -7,8 +7,8 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1784,
-  "followsGagnes30": 327,
+  "heuresLive30": 1788,
+  "followsGagnes30": 329,
   "periode": {
    "du": "2026-10-04",
    "au": "2026-11-03"
@@ -261,7 +261,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 7,
+    "viewers": 10,
     "jeu": "Warframe",
     "titre": "[Warframe] (MR 27) On vise 500 plat pour Brysko !",
     "depuis": "2026-11-03T07:52:30Z",
@@ -276,8 +276,8 @@
     }
    ],
    "jeux": [
-    "Lies of P",
     "Warframe",
+    "Lies of P",
     "FINAL FANTASY XIV ONLINE",
     "Wuthering Waves",
     "Aniimo"
@@ -587,7 +587,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 16,
     "jeu": "Special Events",
     "titre": "🔞Kitsune Bazard Show + Live 500 Follows  !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-03T07:33:23Z",
@@ -696,13 +696,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": {
-    "viewers": 4,
-    "jeu": "Agent A: A Puzzle In Disguise",
-    "titre": "[FR] AGENT A 🔎 | On mène l'enquête jusqu'au bout !",
-    "depuis": "2026-11-03T09:27:15Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mandouee-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-10-23",
    "succes": [],
    "jeux": [
@@ -1065,7 +1059,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 7,
+    "viewers": 9,
     "jeu": "Allogloom",
     "titre": "Il faut sauver notre frère ! #2 | !tiktok | !Discord | !clip |",
     "depuis": "2026-11-03T09:33:52Z",
@@ -1076,9 +1070,9 @@
    "jeux": [
     "inKONBINI: One Store. Many Stories",
     "Coffee Talk",
+    "Allogloom",
     "Gloomy Eyes",
-    "The Witch's Bakery",
-    "Allogloom"
+    "The Witch's Bakery"
    ],
    "clip": {
     "url": "https://www.twitch.tv/zeylta/clip/BigModernNikudonArsonNoSexy-WG88Pl2g0AinJV3Y",
@@ -1096,5 +1090,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-03T11:07:21.314Z"
+ "maj": "2026-11-03T12:07:13.610Z"
 }
