@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1832,
+  "heuresLive30": 1839,
   "followsGagnes30": 323,
   "periode": {
    "du": "2026-10-05",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 8,
+    "viewers": 4,
     "jeu": "Fortnite",
     "titre": "Fortnite/PS5",
     "depuis": "2026-11-03T21:39:19Z",
@@ -99,13 +99,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-22",
-   "live": {
-    "viewers": 4,
-    "jeu": "PICO PARK",
-    "titre": "P'tit live avec les copains",
-    "depuis": "2026-11-03T20:00:48Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asalie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-07-27",
    "succes": [
     {
@@ -132,7 +126,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 9,
     "jeu": "Cinderia",
     "titre": "Découverte de Cinderia en mode tranquille, on explore et on admire le paysage ^^",
     "depuis": "2026-11-03T19:36:54Z",
@@ -441,7 +435,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 11,
     "jeu": "Moon Sweepers",
     "titre": "FR_VT - J-9 du Choupiathon !!!On va sur la lune ce soir",
     "depuis": "2026-11-03T19:30:14Z",
@@ -480,7 +474,7 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": {
-    "viewers": 8,
+    "viewers": 7,
     "jeu": "Stardew Valley",
     "titre": "on continue stardeeeeew avec dydoux",
     "depuis": "2026-11-03T20:24:13Z",
@@ -643,13 +637,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 3,
-    "jeu": "Call of Duty: Modern Warfare 4",
-    "titre": "Camos & armes full on se prépare pour le warzone",
-    "depuis": "2026-11-03T20:25:23Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -1019,9 +1007,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 9,
-    "jeu": "Fall Guys",
-    "titre": "La battle Fall Guys!",
+    "viewers": 14,
+    "jeu": "Hoosegow: Prison Survival",
+    "titre": "Michael Scofield est dans la place! #Hoosegow #keymailer",
     "depuis": "2026-11-03T18:29:28Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1120,5 +1108,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-03T22:07:18.219Z"
+ "maj": "2026-11-03T23:07:14.600Z"
 }
