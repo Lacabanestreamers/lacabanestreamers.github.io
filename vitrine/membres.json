@@ -482,7 +482,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Art",
+    "titre": "✦ OC CHALLENGE ✦ GALAXIIIIE ! | Il est trop tôt lààà 😴☕| Changement des obj. Art Challenges | !artchallenges !liens",
+    "depuis": "2026-11-03T06:52:35Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
+   },
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -1071,5 +1077,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-03T02:07:19.145Z"
+ "maj": "2026-11-03T07:07:18.934Z"
 }
