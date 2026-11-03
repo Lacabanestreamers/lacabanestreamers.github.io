@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1780,
+  "heuresLive30": 1784,
   "followsGagnes30": 327,
   "periode": {
    "du": "2026-10-04",
@@ -261,7 +261,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "Warframe",
     "titre": "[Warframe] (MR 27) On vise 500 plat pour Brysko !",
     "depuis": "2026-11-03T07:52:30Z",
@@ -587,7 +587,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 14,
     "jeu": "Special Events",
     "titre": "🔞Kitsune Bazard Show + Live 500 Follows  !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-03T07:33:23Z",
@@ -697,7 +697,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 2,
+    "viewers": 4,
     "jeu": "Agent A: A Puzzle In Disguise",
     "titre": "[FR] AGENT A 🔎 | On mène l'enquête jusqu'au bout !",
     "depuis": "2026-11-03T09:27:15Z",
@@ -708,7 +708,8 @@
    "jeux": [
     "Art",
     "Writing & Reading",
-    "Animal Crossing: New Horizons"
+    "Animal Crossing: New Horizons",
+    "Agent A: A Puzzle In Disguise"
    ],
    "clip": null
   },
@@ -1064,7 +1065,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 9,
+    "viewers": 7,
     "jeu": "Allogloom",
     "titre": "Il faut sauver notre frère ! #2 | !tiktok | !Discord | !clip |",
     "depuis": "2026-11-03T09:33:52Z",
@@ -1077,7 +1078,7 @@
     "Coffee Talk",
     "Gloomy Eyes",
     "The Witch's Bakery",
-    "Farm & Feast"
+    "Allogloom"
    ],
    "clip": {
     "url": "https://www.twitch.tv/zeylta/clip/BigModernNikudonArsonNoSexy-WG88Pl2g0AinJV3Y",
@@ -1095,5 +1096,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-03T10:07:16.133Z"
+ "maj": "2026-11-03T11:07:21.314Z"
 }
