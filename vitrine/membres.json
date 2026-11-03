@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1795,
+  "heuresLive30": 1798,
   "followsGagnes30": 329,
   "periode": {
    "du": "2026-10-04",
@@ -26,9 +26,9 @@
    "depuis": "2026-10-24",
    "live": {
     "viewers": 11,
-    "jeu": "Rocket League",
-    "titre": "Rocket League/PS5",
-    "depuis": "2026-11-03T12:56:38Z",
+    "jeu": "Fortnite",
+    "titre": "Fortnite/PS5",
+    "depuis": "2026-11-03T14:14:46Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
    },
    "premierStream": null,
@@ -429,7 +429,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "Valheim",
     "titre": "FR_VT - J-9 du Choupiathon !!! C'est la survivance des Vikings !!!",
     "depuis": "2026-11-03T12:59:20Z",
@@ -446,8 +446,8 @@
    "jeux": [
     "R.E.P.O.",
     "Minecraft",
-    "Special Events",
     "Valheim",
+    "Special Events",
     "DEVOUR"
    ],
    "clip": {
@@ -532,7 +532,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Fortnite",
+    "titre": "🎟️ À LA RECHERCHE DU PRÉCIEUX JETON… ON NE LÂCHE RIEN !",
+    "depuis": "2026-11-03T14:32:25Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -593,7 +599,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 16,
     "jeu": "Special Events",
     "titre": "🔞Kitsune Bazard Show + Live 500 Follows  !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-03T07:33:23Z",
@@ -774,7 +780,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Just Chatting",
+    "titre": "React documentaire Arte !",
+    "depuis": "2026-11-03T14:43:29Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
+   },
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -1090,5 +1102,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-03T14:07:14.654Z"
+ "maj": "2026-11-03T14:59:10.872Z"
 }
