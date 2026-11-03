@@ -7,11 +7,11 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1771,
-  "followsGagnes30": 325,
+  "heuresLive30": 1772,
+  "followsGagnes30": 327,
   "periode": {
    "du": "2026-10-04",
-   "au": "2026-11-02"
+   "au": "2026-11-03"
   }
  },
  "agenda": [],
@@ -24,7 +24,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Rocket League",
+    "titre": "Rocket League/PS5",
+    "depuis": "2026-11-03T07:44:19Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -260,7 +266,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Warframe",
+    "titre": "[Warframe] (MR 27) On vise 500 plat pour Brysko !",
+    "depuis": "2026-11-03T07:52:30Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -483,9 +495,9 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
+    "viewers": 7,
     "jeu": "Art",
-    "titre": "✦ OC CHALLENGE ✦ GALAXIIIIE ! | Il est trop tôt lààà 😴☕| Changement des obj. Art Challenges | !artchallenges !liens",
+    "titre": "✦ OC CHALLENGE ✦ GALAXIIIIE ! | Il est trop tôt lààà 😴☕| Changement des obj. Art Challenges | !artchallenges !catfanart !liens",
     "depuis": "2026-11-03T06:52:35Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
    },
@@ -586,7 +598,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Special Events",
+    "titre": "🔞Kitsune Bazard Show + Live 500 Follows  !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-03T07:33:23Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -1077,5 +1095,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-03T07:07:18.934Z"
+ "maj": "2026-11-03T08:07:15.586Z"
 }
