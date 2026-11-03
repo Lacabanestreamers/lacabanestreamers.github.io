@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1772,
+  "heuresLive30": 1776,
   "followsGagnes30": 327,
   "periode": {
    "du": "2026-10-04",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 9,
+    "viewers": 8,
     "jeu": "Rocket League",
     "titre": "Rocket League/PS5",
     "depuis": "2026-11-03T07:44:19Z",
@@ -267,7 +267,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 3,
+    "viewers": 5,
     "jeu": "Warframe",
     "titre": "[Warframe] (MR 27) On vise 500 plat pour Brysko !",
     "depuis": "2026-11-03T07:52:30Z",
@@ -495,7 +495,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 10,
     "jeu": "Art",
     "titre": "✦ OC CHALLENGE ✦ GALAXIIIIE ! | Il est trop tôt lààà 😴☕| Changement des obj. Art Challenges | !artchallenges !catfanart !liens",
     "depuis": "2026-11-03T06:52:35Z",
@@ -599,7 +599,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 13,
     "jeu": "Special Events",
     "titre": "🔞Kitsune Bazard Show + Live 500 Follows  !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-03T07:33:23Z",
@@ -1095,5 +1095,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-03T08:07:15.586Z"
+ "maj": "2026-11-03T09:07:17.639Z"
 }
