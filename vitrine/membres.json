@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1810,
+  "heuresLive30": 1815,
   "followsGagnes30": 329,
   "periode": {
    "du": "2026-10-04",
@@ -428,13 +428,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 9,
-    "jeu": "Valheim",
-    "titre": "FR_VT - J-9 du Choupiathon !!! C'est la survivance des Vikings !!!",
-    "depuis": "2026-11-03T12:59:20Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -534,8 +528,8 @@
    "depuis": "2026-10-26",
    "live": {
     "viewers": 6,
-    "jeu": "Fortnite",
-    "titre": "🎟️ À LA RECHERCHE DU PRÉCIEUX JETON… ON NE LÂCHE RIEN !",
+    "jeu": "VALORANT",
+    "titre": "LES RANKED VONT NOUS RÉGALER… OU NOUS DÉTRUIRE ? 😭💀 | VALORANT",
     "depuis": "2026-11-03T14:32:25Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
    },
@@ -599,7 +593,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 17,
+    "viewers": 13,
     "jeu": "Special Events",
     "titre": "🔞Kitsune Bazard Show + Live 500 Follows  !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-03T07:33:23Z",
@@ -781,7 +775,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Just Chatting",
     "titre": "React documentaire Arte sur Tchernobyl !",
     "depuis": "2026-11-03T17:00:04Z",
@@ -1102,5 +1096,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-03T17:07:15.611Z"
+ "maj": "2026-11-03T18:07:39.437Z"
 }
