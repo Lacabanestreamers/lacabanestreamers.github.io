@@ -120,9 +120,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
-    "jeu": "Brotato",
-    "titre": "On fini la soirée en évitant de finir en purée",
+    "viewers": 7,
+    "jeu": "Cinderia",
+    "titre": "On ne peux pas etre en puree donc on fini sur du cinderia",
     "depuis": "2026-11-04T19:53:05Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
    },
@@ -534,7 +534,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "VALORANT",
+    "titre": "RADIANT DANS LA TÊTE, FER DANS LA RÉALITÉ 😂",
+    "depuis": "2026-11-04T22:44:53Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -1003,9 +1009,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 9,
-    "jeu": "Killing Floor III",
-    "titre": "LA BAGAAARRE  #killingfloor3 #keymailer",
+    "viewers": 5,
+    "jeu": "Games + Demos",
+    "titre": "Détente avec les poissons! Session Démo #abysshaul #keymailer",
     "depuis": "2026-11-04T15:25:33Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1041,13 +1047,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": {
-    "viewers": 25,
-    "jeu": "Cyberpunk 2077",
-    "titre": "😈PROJECT R - Session BETA TEST Cyberpunk RP😈 !rs !discord !instantgaming",
-    "depuis": "2026-11-04T20:00:45Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-19",
    "succes": [
     {
@@ -1110,5 +1110,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-04T22:34:05.107Z"
+ "maj": "2026-11-04T23:07:15.121Z"
 }
