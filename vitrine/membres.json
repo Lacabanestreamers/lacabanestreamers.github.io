@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1839,
+  "heuresLive30": 1844,
   "followsGagnes30": 323,
   "periode": {
    "du": "2026-10-05",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 4,
+    "viewers": 10,
     "jeu": "Fortnite",
     "titre": "Fortnite/PS5",
     "depuis": "2026-11-03T21:39:19Z",
@@ -126,7 +126,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 5,
     "jeu": "Cinderia",
     "titre": "Découverte de Cinderia en mode tranquille, on explore et on admire le paysage ^^",
     "depuis": "2026-11-03T19:36:54Z",
@@ -434,13 +434,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 11,
-    "jeu": "Moon Sweepers",
-    "titre": "FR_VT - J-9 du Choupiathon !!!On va sur la lune ce soir",
-    "depuis": "2026-11-03T19:30:14Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -474,7 +468,7 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": {
-    "viewers": 7,
+    "viewers": 3,
     "jeu": "Stardew Valley",
     "titre": "on continue stardeeeeew avec dydoux",
     "depuis": "2026-11-03T20:24:13Z",
@@ -1007,7 +1001,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 14,
+    "viewers": 11,
     "jeu": "Hoosegow: Prison Survival",
     "titre": "Michael Scofield est dans la place! #Hoosegow #keymailer",
     "depuis": "2026-11-03T18:29:28Z",
@@ -1108,5 +1102,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-03T23:07:14.600Z"
+ "maj": "2026-11-04T00:07:15.703Z"
 }
