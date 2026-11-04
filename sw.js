@@ -4,7 +4,7 @@
 // Les données (GitHub, Twitch, decapi) ne passent jamais par ce cache.
 const CACHE = "cabane-v18";
 // la page est découpée en plusieurs fichiers : tous mis en cache à l'installation (même numéro de version que dans index.html)
-const V = "?v=20261104b";
+const V = "?v=2026110402";
 const FICHIERS = ["./", "index.html", "manifest.webmanifest", "fonts.css" + V, "fonts/orbitron-latin-variable.woff2", ...[500, 600, 700].flatMap(w => [`fonts/rajdhani-latin-${w}.woff2`, `fonts/rajdhani-latin-ext-${w}.woff2`]), "icon-192.png", "icon-512.png", "icon-maskable-512.png", "commun.js" + V, "css/cabane.css" + V,
   ...["etat-operations", "github", "twitch", "rendu", "tableaux", "accueil", "tableau-de-bord", "reglages-vue", "fiche", "aide", "agenda", "reglages", "suivi", "ajout", "doublons", "actions", "recherche", "demarrage"].map(n => `js/${n}.js${V}`)];
 const DELAI = 4000;
