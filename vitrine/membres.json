@@ -822,7 +822,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "American Truck Simulator",
+    "titre": "Bonjour,je reprend la route !!!!",
+    "depuis": "2026-11-04T03:07:14Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1085,5 +1091,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-04T02:07:20.536Z"
+ "maj": "2026-11-04T04:07:14.721Z"
 }
