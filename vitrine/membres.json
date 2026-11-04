@@ -292,13 +292,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 2,
-    "jeu": "Splatoon 3",
-    "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
-    "depuis": "2026-11-04T15:31:37Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -332,7 +326,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 9,
     "jeu": "Silver Service",
     "titre": "On commence un jeu en AVANCE !🎮 | !lurk !clip !commandes",
     "depuis": "2026-11-04T16:14:53Z",
@@ -449,7 +443,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 14,
+    "viewers": 12,
     "jeu": "Minecraft",
     "titre": "FR_VT - J-10 du Choupiathon !!!Cobblemon cet après-midi",
     "depuis": "2026-11-04T12:58:10Z",
@@ -515,7 +509,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 25,
+    "viewers": 34,
     "jeu": "Art",
     "titre": "✦ OC CHALLENGE ✦ GALAXIIIIE ! | Après-midi cosy/chill, on s'met bien ☕✨ | !artchallenges !catfanart !liens",
     "depuis": "2026-11-04T13:11:16Z",
@@ -558,7 +552,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Fortnite",
+    "titre": "ON CHERCHE CE JETON GO OUVRIR LES COFFRES ! 🔑🔥",
+    "depuis": "2026-11-04T17:26:55Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -619,7 +619,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 16,
+    "viewers": 12,
     "jeu": "Minecraft",
     "titre": "🔞En exploration !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-04T13:11:14Z",
@@ -709,8 +709,8 @@
    "depuis": "2026-10-26",
    "live": {
     "viewers": 9,
-    "jeu": "The Exit 8",
-    "titre": "Aveugleman le retour ! EXIT 8 - !lurk !discord",
+    "jeu": "Toilet 8",
+    "titre": "Aveugleman le retour ! TOILET 8 - !lurk !discord",
     "depuis": "2026-11-04T16:29:42Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
    },
@@ -853,7 +853,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] ✨ Dreamsnap, quêtes VDE & Farm ✨ | Disney Dreamlight Valley | !discord !commandes",
     "depuis": "2026-11-04T17:00:30Z",
@@ -1009,7 +1009,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "Sort A Lot",
     "titre": "Sort A Lot Sheep on va ramener les moutons dans leurs enclos",
     "depuis": "2026-11-04T15:15:11Z",
@@ -1051,7 +1051,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 12,
+    "viewers": 14,
     "jeu": "MyDear.exe",
     "titre": "Session test! #mydearexe #keymailer",
     "depuis": "2026-11-04T15:25:33Z",
@@ -1152,5 +1152,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-04T17:07:16.210Z"
+ "maj": "2026-11-04T18:07:19.572Z"
 }
