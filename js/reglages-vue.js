@@ -59,7 +59,6 @@ function viewReglages(){
       return ` · dernier passage ${fmtStamp(p)}${h > 2 ? ` <span class="warn">(en retard : la page le relance automatiquement)</span>` : ""}`; })()}</p>
     <div class="tools" style="margin:14px 0 0">
       <button class="btn primary" id="s_relancer" ${S.mode !== "github" || S.horsLigne || S.relance?.enCours ? "disabled" : ""}${S.relance?.enCours ? ` aria-busy="true">Relance en cours…` : ">Relancer le robot"}</button>
-      <a class="btn ghost" href="${esc(lienActions())}" target="_blank" rel="noopener">Ses passages sur GitHub ↗</a>
     </div>
     <p class="meta" id="s_relanceMsg" role="status" style="margin:8px 0 0">${relanceMsg()}</p>
     <p class="meta" style="margin:4px 0 0">Un passage coûte au moins 1 minute du quota GitHub (2000 par mois) : inutile de cliquer plusieurs fois.</p>
