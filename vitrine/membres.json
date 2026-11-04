@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1915,
+  "heuresLive30": 1920,
   "followsGagnes30": 336,
   "periode": {
    "du": "2026-10-05",
@@ -120,7 +120,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 10,
     "jeu": "Deep Rock Galactic",
     "titre": "Promenade spéléo, fracassage de bestioles et plein de minerais en duo avec Trichelieu 💀",
     "depuis": "2026-11-04T19:53:05Z",
@@ -750,7 +750,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 1,
+    "viewers": 3,
     "jeu": "Poppy Playtime: Chapter 4 - Safe Haven",
     "titre": "On debute le chapitre 4... Viens !!!!!!  !discord !regles !don",
     "depuis": "2026-11-04T19:05:04Z",
@@ -822,13 +822,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 7,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "[FR] ✨ Dreamsnap, quêtes VDE & Farm ✨ | Disney Dreamlight Valley | !discord !commandes",
-    "depuis": "2026-11-04T17:00:30Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -1015,7 +1009,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 11,
+    "viewers": 10,
     "jeu": "Killing Floor III",
     "titre": "LA BAGAAARRE  #killingfloor3 #keymailer",
     "depuis": "2026-11-04T15:25:33Z",
@@ -1054,7 +1048,7 @@
    "staff": false,
    "depuis": "2026-09-28",
    "live": {
-    "viewers": 11,
+    "viewers": 36,
     "jeu": "Cyberpunk 2077",
     "titre": "😈PROJECT R - Session BETA TEST Cyberpunk RP😈 !rs !discord !instantgaming",
     "depuis": "2026-11-04T20:00:45Z",
@@ -1122,5 +1116,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-04T20:07:16.983Z"
+ "maj": "2026-11-04T21:07:15.435Z"
 }
