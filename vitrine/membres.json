@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1844,
+  "heuresLive30": 1848,
   "followsGagnes30": 323,
   "periode": {
    "du": "2026-10-05",
@@ -25,10 +25,10 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 10,
-    "jeu": "Fortnite",
-    "titre": "Fortnite/PS5",
-    "depuis": "2026-11-03T21:39:19Z",
+    "viewers": 9,
+    "jeu": "A Plague Tale: Innocence",
+    "titre": "A Plague Tale innocence/PS5",
+    "depuis": "2026-11-04T00:10:19Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
    },
    "premierStream": null,
@@ -125,13 +125,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 5,
-    "jeu": "Cinderia",
-    "titre": "Découverte de Cinderia en mode tranquille, on explore et on admire le paysage ^^",
-    "depuis": "2026-11-03T19:36:54Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -467,13 +461,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-20",
-   "live": {
-    "viewers": 3,
-    "jeu": "Stardew Valley",
-    "titre": "on continue stardeeeeew avec dydoux",
-    "depuis": "2026-11-03T20:24:13Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kialigator-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-30",
    "succes": [],
    "jeux": [
@@ -1000,13 +988,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": {
-    "viewers": 11,
-    "jeu": "Hoosegow: Prison Survival",
-    "titre": "Michael Scofield est dans la place! #Hoosegow #keymailer",
-    "depuis": "2026-11-03T18:29:28Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [
     {
@@ -1102,5 +1084,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-04T00:07:15.703Z"
+ "maj": "2026-11-04T01:07:24.127Z"
 }
