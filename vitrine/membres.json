@@ -7,8 +7,8 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1898,
-  "followsGagnes30": 327,
+  "heuresLive30": 1908,
+  "followsGagnes30": 336,
   "periode": {
    "du": "2026-10-05",
    "au": "2026-11-04"
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 18,
     "jeu": "Silver Service",
     "titre": "✨On découvre un petit jeux tout chill🔥",
     "depuis": "2026-11-04T12:56:53Z",
@@ -56,7 +56,7 @@
     "R.E.P.O.",
     "Just Chatting",
     "DEVOUR",
-    "SO CLOSE"
+    "Silver Service"
    ],
    "clip": {
     "url": "https://www.twitch.tv/aly0806/clip/SparklingStrongArtichokeUWot-rNIulOtSxSv7viUd",
@@ -292,7 +292,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Tomodachi Life: Living the Dream",
+    "titre": "🌐Tomodachi Life 2 ~ On continue la vie de l'île !- !réseaux",
+    "depuis": "2026-11-04T18:10:21Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -325,13 +331,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 9,
-    "jeu": "Silver Service",
-    "titre": "On commence un jeu en AVANCE !🎮 | !lurk !clip !commandes",
-    "depuis": "2026-11-04T16:14:53Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
@@ -442,13 +442,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 12,
-    "jeu": "Minecraft",
-    "titre": "FR_VT - J-10 du Choupiathon !!!Cobblemon cet après-midi",
-    "depuis": "2026-11-04T12:58:10Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -508,13 +502,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 34,
-    "jeu": "Art",
-    "titre": "✦ OC CHALLENGE ✦ GALAXIIIIE ! | Après-midi cosy/chill, on s'met bien ☕✨ | !artchallenges !catfanart !liens",
-    "depuis": "2026-11-04T13:11:16Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -553,7 +541,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "Fortnite",
     "titre": "ON CHERCHE CE JETON GO OUVRIR LES COFFRES ! 🔑🔥",
     "depuis": "2026-11-04T17:26:55Z",
@@ -618,13 +606,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 12,
-    "jeu": "Minecraft",
-    "titre": "🔞En exploration !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
-    "depuis": "2026-11-04T13:11:14Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -708,9 +690,9 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 9,
-    "jeu": "Toilet 8",
-    "titre": "Aveugleman le retour ! TOILET 8 - !lurk !discord",
+    "viewers": 4,
+    "jeu": "Phasmophobia",
+    "titre": "Phasmo en déténte - !lurk !discord",
     "depuis": "2026-11-04T16:29:42Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
    },
@@ -785,7 +767,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Poppy Playtime: Chapter 3 - Deep Sleep",
+    "titre": "Est-ce que je vais arriver à finir ce chapitre???? Pas sûre... Viens !!!!!!  !discord !regles !don",
+    "depuis": "2026-11-04T19:05:04Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -853,7 +841,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] ✨ Dreamsnap, quêtes VDE & Farm ✨ | Disney Dreamlight Valley | !discord !commandes",
     "depuis": "2026-11-04T17:00:30Z",
@@ -862,8 +850,8 @@
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
-    "Moonlight Peaks",
     "Disney Dreamlight Valley",
+    "Moonlight Peaks",
     "Art",
     "R.E.P.O."
    ],
@@ -1008,13 +996,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": {
-    "viewers": 2,
-    "jeu": "Sort A Lot",
-    "titre": "Sort A Lot Sheep on va ramener les moutons dans leurs enclos",
-    "depuis": "2026-11-04T15:15:11Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -1022,7 +1004,7 @@
     "Game Market Mayhem",
     "Dying Light",
     "TCG Card Collection: Tidy Up",
-    "Hunting Simulator 3"
+    "Sort A Lot"
    ],
    "clip": null
   },
@@ -1051,7 +1033,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 14,
+    "viewers": 13,
     "jeu": "MyDear.exe",
     "titre": "Session test! #mydearexe #keymailer",
     "depuis": "2026-11-04T15:25:33Z",
@@ -1152,5 +1134,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-04T18:07:19.572Z"
+ "maj": "2026-11-04T19:07:18.353Z"
 }
