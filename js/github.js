@@ -78,13 +78,14 @@ async function ajouterReleves(nouveaux, message){
   throw new Error("Trop de conflits en enregistrant les relevés, réessaie dans un instant.");
 }
 // Réveille le robot (GitHub Actions) pour qu'il poste tout de suite sur Discord. En cas d'échec, son passage horaire rattrape.
+// Renvoie le code HTTP de GitHub (204 = lancé), 0 si le réseau a échoué. repository_dispatch : le jeton Contents (Read and write) suffit.
 async function notifyRobot(garder){
   try {
     const r = await fetch(`https://api.github.com/repos/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}/dispatches`,
       {method:"POST", headers:{...ghHeaders(), "Content-Type":"application/json"}, body:JSON.stringify({event_type:"cabane-notif"}), keepalive:!!garder});
     if(!r.ok) console.warn("Robot non déclenché (" + r.status + "), il passera à l'heure suivante.");
-    return r.ok;
-  } catch(e){ console.warn("Robot non déclenché", e); return false; }
+    return r.status;
+  } catch(e){ console.warn("Robot non déclenché", e); return 0; }
 }
 let saveTimer = null;
 function scheduleSave(){ clearTimeout(saveTimer); saveTimer = setTimeout(save, 1200); }

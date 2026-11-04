@@ -57,6 +57,12 @@ function viewReglages(){
       return `<p class="meta" style="margin:0 0 6px">${vus.length ? `Statut Twitch connu pour ${vus.length} fiche${vus.length>1?"s":""} sur ${f.length} : <b>${aff}</b> affilié${aff>1?"s":""}, <b>${par}</b> partenaire${par>1?"s":""} · identifiant Twitch enregistré pour ${ids} fiche${ids>1?"s":""}.` : `<span class="warn">Le robot n'a encore enregistré aucun statut affilié / partenaire ni identifiant Twitch.</span> Vérifie que le dépôt cabane contient la dernière version de robot/robot.mjs et qu'un passage a eu lieu depuis (onglet Actions).`}</p>`; })()}
     <p class="meta" style="margin:0">${d.robot?.dernierReleve ? `Dernier relevé : ${fmtDate(d.robot.dernierReleve.slice(0,10))} (${esc(d.robot.dernierReleve.slice(11))})` : d.robot?.lastDaily ? `Dernier relevé : ${fmtDate(d.robot.lastDaily)}` : "Le robot n'a pas encore tourné."}${d.robot?.annivAnnonce ? ` · anniversaires vérifiés le ${fmtDate(d.robot.annivAnnonce)}` : ""}${(() => { const p = d.robot?.passage || d.robot?.derniereExecution; if(!p) return ""; const h = (Date.now() - new Date(p)) / 36e5;
       return ` · dernier passage ${fmtStamp(p)}${h > 2 ? ` <span class="warn">(en retard : la page le relance automatiquement)</span>` : ""}`; })()}</p>
+    <div class="tools" style="margin:14px 0 0">
+      <button class="btn primary" id="s_relancer" ${S.mode !== "github" || S.horsLigne || S.relance?.enCours ? "disabled" : ""}${S.relance?.enCours ? ` aria-busy="true">Relance en cours…` : ">Relancer le robot"}</button>
+      <a class="btn ghost" href="${esc(lienActions())}" target="_blank" rel="noopener">Ses passages sur GitHub ↗</a>
+    </div>
+    <p class="meta" id="s_relanceMsg" role="status" style="margin:8px 0 0">${relanceMsg()}</p>
+    <p class="meta" style="margin:4px 0 0">Un passage coûte au moins 1 minute du quota GitHub (2000 par mois) : inutile de cliquer plusieurs fois.</p>
   </section>`, (() => { const p = d.robot?.passage || d.robot?.derniereExecution; return p ? "passage " + fmtStamp(p) : ""; })()),
       pli("lienbot", botPanel(), /^https:/.test(lienBot() || "") ? "lien actif" : "aucun lien"),
       pli("jetons", jetonsPanel(d), nbJ ? `${nbJ} jeton${nbJ > 1 ? "s" : ""}${jetonsSoon(d).length ? ` · <span class="warn">${jetonsSoon(d).length} à renouveler</span>` : ""}` : "")]],

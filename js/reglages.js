@@ -171,6 +171,17 @@ function santePanel(d){
     <ul class="todo" style="list-style:none;padding:0;margin:0">${lignes.map(x => `<li style="display:block;padding:6px 0">${pt(x)} ${esc(x.txt)}${x.ok === false && x.conseil ? `<br><span class="meta" style="margin-left:18px">↳ ${esc(x.conseil)}</span>` : ""}</li>`).join("")}</ul>
   </section>`;
 }
+// Relance à la main (Réglages → Robot quotidien, bandeau de l'Accueil) : texte selon la réponse de GitHub
+const texteRelance = code => code === 204 ? "Robot relancé : il passe d'ici 1 à 2 minutes, la page se mettra à jour toute seule."
+  : code === 401 ? "Refusé par GitHub : ton jeton a expiré ou a été révoqué. Colle un nouveau jeton dans Réglages → Connexion."
+  : code === 403 || code === 404 ? `Refusé par GitHub : ton jeton n'a pas le droit d'écrire dans le dépôt ${cfg.repo} (il faut Contents : Read and write sur ce dépôt).`
+  : code === 0 ? "La demande n'est pas partie (pas de réseau ?). Réessaie quand la connexion revient."
+  : `GitHub a répondu ${code} : réessaie dans un instant, ou lance-le depuis l'onglet Actions du dépôt ${cfg.repo}.`;
+const lienActions = () => `https://github.com/${encodeURIComponent(cfg.owner)}/${encodeURIComponent(cfg.repo)}/actions/workflows/robot.yml`;
+function relanceMsg(){
+  const r = S.relance; if(!r || r.enCours) return "";
+  return `<span class="${r.code === 204 ? "up" : "down"}">●</span> ${fmtStamp(r.le)} · ${esc(texteRelance(r.code))}${r.code === 204 ? ` <a href="${esc(lienActions())}" target="_blank" rel="noopener">Suivre le passage sur GitHub ↗</a>` : ""}`;
+}
 // Bandeau en haut de l'accueil : robot qui ne passe plus (plus de 3 h) ou problème signalé par la santé
 function alerteRobot(d){
   if(S.mode !== "github" || S.horsLigne) return "";

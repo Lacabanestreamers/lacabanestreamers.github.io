@@ -226,8 +226,13 @@ document.addEventListener("click", e => {
   const rg = t.closest("[data-reglgrp]");
   if(rg){ e.preventDefault(); document.getElementById("grp-" + rg.dataset.reglgrp)?.scrollIntoView({block:"start", behavior:matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"}); return; }
   if(t.id === "installApp" && installEvt){ const ev = installEvt; installEvt = null; ev.prompt(); ev.userChoice?.finally(() => render()); return; }
-  if(t.id === "relancerRobot"){ t.disabled = true; notifyRobot().then(ok => { t.disabled = false;
-      toast(ok ? "Robot relancé : il passe d'ici 1 à 2 minutes, la page se mettra à jour toute seule." : "Relance refusée par GitHub : vérifie ton jeton (Réglages) ou relance depuis l'onglet Actions du dépôt cabane.", !ok); }); return; }
+  if(t.id === "relancerRobot" || t.id === "s_relancer"){ if(S.relance?.enCours) return;
+    S.relance = {enCours:true}; t.disabled = true; t.setAttribute("aria-busy", "true"); t.textContent = "Relance en cours…";
+    const msg = $("#s_relanceMsg"); if(msg) msg.textContent = "Envoi de la demande à GitHub…";
+    notifyRobot().then(code => { S.relance = {code, le:new Date().toISOString()};
+      // dans Réglages : mise à jour sur place, pour que le lecteur d'écran annonce la zone role="status" ; ailleurs, un toast
+      if(t.isConnected && t.id === "s_relancer"){ t.disabled = false; t.removeAttribute("aria-busy"); t.textContent = "Relancer le robot"; msg.innerHTML = relanceMsg(); }
+      else { render(); toast(texteRelance(code), code !== 204); } }); return; }
   if(t.id === "c_pull"){ if(S.pending.length){ toast("Envoi des modifications en attente…"); save(); } else pull(false); return; }
   if(t.id === "c_logout"){ if(S.saving){ toast("Enregistrement en cours : réessaie dans un instant.", true); return; }
     if(S.pending.length && !confirm("Des modifications ne sont pas encore enregistrées : elles seront perdues. Se déconnecter quand même ?")) return;

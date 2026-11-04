@@ -1,7 +1,8 @@
 # La Cabane (site public) — suivi
-Mis à jour le 29/10/2026. Le suivi du robot et des données est dans `cabane/A_FAIRE.md` (dépôt privé).
+Mis à jour le 04/11/2026. Le suivi du robot et des données est dans `cabane/A_FAIRE.md` (dépôt privé).
 
 ## Fait
+- 04/11 — Réglages → Robot et santé → Robot quotidien : bouton « Relancer le robot » toujours visible (même jeton que la page : `repository_dispatch`, Contents : Read and write suffit, aucun droit Actions), retour dans une zone `role="status"` (lancé / jeton expiré / pas le droit / pas de réseau / autre code) et lien vers les passages du workflow sur GitHub. `notifyRobot()` renvoie maintenant le code HTTP. `?v=20261104`, cache `cabane-v17`. 26 tests verts.
 - 29/10 — CSP sur toutes les pages HTML : pages légales (GoatCounter seulement, bouton « Ne pas être compté » sorti dans `vitrine/gc-choix.js`), `404.html`, et fiches/événements/récaps écrits par le robot (gabarit dans `cabane`). Test « toute page HTML a une CSP ». Confidentialité : le relais ne transmet plus le jeton Twitch à Discord (demande signée). Fiches régénérées par le robot : le test « aucune adresse e-mail » passe, `todo` retiré. Sitemap : `lastmod` réel des fiches et de la vitrine (écrit par le robot). 26 tests verts.
 - 28/10 — Page staff : pied de page avec les liens Mentions légales, Confidentialité et CGU de la vitrine (`css/cabane.css`, `?v=20261028`, cache `cabane-v16`). Vitrine : la vitrine n'a pas de menu d'ancres ; le seul groupe de liens de navigation (pied de page) est passé en `<nav aria-label="Sources et pages légales">` (script en ligne inchangé, empreinte CSP intacte). Documents `docs/` : PRD, TRD, APP_FLOW, DESIGN_BRIEF, BACKEND_SCHEMA, IMPLEMENTATION_PLAN.
 - 27/10 — `ARCHITECTURE.md`, `PIEGES.md`, `README.md` et tests de non-régression (`npm test`, 23 tests dont 1 « à faire »).
