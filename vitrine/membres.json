@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1861,
+  "heuresLive30": 1862,
   "followsGagnes30": 327,
   "periode": {
    "du": "2026-10-05",
@@ -182,7 +182,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 6,
     "jeu": "Just Chatting",
     "titre": "DEBRIEF du week-end avec calo, pages du cahier de vacances et peintures des scultures !",
     "depuis": "2026-11-04T11:00:51Z",
@@ -777,7 +777,7 @@
    "live": {
     "viewers": 1,
     "jeu": "Just Chatting",
-    "titre": "React documentaire Arte sur la guerre en Ukraine !",
+    "titre": "React documentaire Arte sur les nazis !",
     "depuis": "2026-11-04T11:15:43Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
    },
@@ -1102,5 +1102,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-04T11:28:36.348Z"
+ "maj": "2026-11-04T12:07:14.579Z"
 }
