@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1874,
+  "heuresLive30": 1880,
   "followsGagnes30": 327,
   "periode": {
    "du": "2026-10-05",
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
+    "viewers": 15,
     "jeu": "Silver Service",
     "titre": "✨On découvre un petit jeux tout chill🔥",
     "depuis": "2026-11-04T12:56:53Z",
@@ -187,13 +187,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 11,
-    "jeu": "Just Chatting",
-    "titre": "DEBRIEF du week-end avec calo, pages du cahier de vacances et peintures des scultures !",
-    "depuis": "2026-11-04T11:00:51Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -211,8 +205,8 @@
     "Special Events",
     "The Sims 4",
     "Disney Dreamlight Valley",
-    "R.E.P.O.",
-    "Just Chatting"
+    "Just Chatting",
+    "R.E.P.O."
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/SavageRamshackleAppleImGlitch-ValstNXqm92c3_Ll",
@@ -298,7 +292,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Splatoon 3",
+    "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
+    "depuis": "2026-11-04T15:31:37Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -357,9 +357,9 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 6,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "[FR] [DDV] 🏰✨ EVODP débarque dans la Vallée ! Quêtes, magie et bonne humeur au rendez-vous ! 🌈🎮",
+    "viewers": 1,
+    "jeu": "Hogwarts Legacy",
+    "titre": "[FR] [HL] 🪄 LIVE HOGWARTS LEGACY | Un sorcier maladroit à Poudlard 😂 | Venez vivre l'aventure avec Evodp !",
     "depuis": "2026-11-04T13:21:21Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
    },
@@ -448,7 +448,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 11,
+    "viewers": 17,
     "jeu": "Minecraft",
     "titre": "FR_VT - J-10 du Choupiathon !!!Cobblemon cet après-midi",
     "depuis": "2026-11-04T12:58:10Z",
@@ -464,8 +464,8 @@
    ],
    "jeux": [
     "R.E.P.O.",
-    "Valheim",
     "Minecraft",
+    "Valheim",
     "Special Events",
     "DEVOUR"
    ],
@@ -514,7 +514,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 21,
+    "viewers": 25,
     "jeu": "Art",
     "titre": "✦ OC CHALLENGE ✦ GALAXIIIIE ! | Après-midi cosy/chill, on s'met bien ☕✨ | !artchallenges !catfanart !liens",
     "depuis": "2026-11-04T13:11:16Z",
@@ -994,7 +994,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Sort A Lot",
+    "titre": "Sort A Lot Sheep on va ramener les moutons dans leurs enclos",
+    "depuis": "2026-11-04T15:15:11Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
+   },
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -1030,7 +1036,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 18,
+    "jeu": "MyDear.exe",
+    "titre": "Session test! #mydearexe #keymailer",
+    "depuis": "2026-11-04T15:25:33Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [
     {
@@ -1126,5 +1138,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-04T15:07:16.634Z"
+ "maj": "2026-11-04T16:07:15.159Z"
 }
