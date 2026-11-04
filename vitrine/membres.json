@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1862,
+  "heuresLive30": 1864,
   "followsGagnes30": 327,
   "periode": {
    "du": "2026-10-05",
@@ -42,7 +42,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Silver Service",
+    "titre": "✨On découvre un petit jeux tout chill🔥",
+    "depuis": "2026-11-04T12:56:53Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
+   },
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -182,7 +188,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 8,
     "jeu": "Just Chatting",
     "titre": "DEBRIEF du week-end avec calo, pages du cahier de vacances et peintures des scultures !",
     "depuis": "2026-11-04T11:00:51Z",
@@ -435,7 +441,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Minecraft",
+    "titre": "FR_VT - J-10 du Choupiathon !!!Cobblemon cet après-midi",
+    "depuis": "2026-11-04T12:58:10Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -1102,5 +1114,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-04T12:07:14.579Z"
+ "maj": "2026-11-04T13:07:16.143Z"
 }
