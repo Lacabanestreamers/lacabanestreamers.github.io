@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1851,
+  "heuresLive30": 1852,
   "followsGagnes30": 325,
   "periode": {
    "du": "2026-10-05",
@@ -261,7 +261,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "[FF14 Online] En coffee time et épopée !",
     "depuis": "2026-11-04T07:54:13Z",
@@ -593,7 +593,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Pizzapoly",
+    "titre": "🔞Demo de Pizzapoly + Chill !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-04T08:30:24Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -1070,7 +1076,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Coffee Talk",
+    "titre": "Venez boire un coup ! #5 | !tiktok | !Discord | !clip |",
+    "depuis": "2026-11-04T08:26:21Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zeylta-440x248.jpg"
+   },
    "premierStream": "2026-01-31",
    "succes": [],
    "jeux": [
@@ -1096,5 +1108,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-04T08:07:16.185Z"
+ "maj": "2026-11-04T08:58:50.090Z"
 }
