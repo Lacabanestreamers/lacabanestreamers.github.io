@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1864,
+  "heuresLive30": 1868,
   "followsGagnes30": 327,
   "periode": {
    "du": "2026-10-05",
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 8,
     "jeu": "Silver Service",
     "titre": "✨On découvre un petit jeux tout chill🔥",
     "depuis": "2026-11-04T12:56:53Z",
@@ -188,7 +188,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 12,
     "jeu": "Just Chatting",
     "titre": "DEBRIEF du week-end avec calo, pages du cahier de vacances et peintures des scultures !",
     "depuis": "2026-11-04T11:00:51Z",
@@ -356,7 +356,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Hogwarts Legacy",
+    "titre": "[FR] [DDV] 🏰✨ EVODP débarque dans la Vallée ! Quêtes, magie et bonne humeur au rendez-vous ! 🌈🎮",
+    "depuis": "2026-11-04T13:21:21Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
+   },
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -507,7 +513,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 18,
+    "jeu": "Art",
+    "titre": "✦ OC CHALLENGE ✦ GALAXIIIIE ! | Après-midi cosy/chill, on s'met bien ☕✨ | !artchallenges !catfanart !liens",
+    "depuis": "2026-11-04T13:11:16Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
+   },
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -605,7 +617,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 13,
+    "jeu": "Minecraft",
+    "titre": "🔞En exploration !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-04T13:11:14Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -786,13 +804,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 1,
-    "jeu": "Just Chatting",
-    "titre": "React documentaire Arte sur les nazis !",
-    "depuis": "2026-11-04T11:15:43Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -1114,5 +1126,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-04T13:07:16.143Z"
+ "maj": "2026-11-04T14:07:14.703Z"
 }
