@@ -8,10 +8,10 @@
   "affilies": 41,
   "nouveaux30": 22,
   "heuresLive30": 1851,
-  "followsGagnes30": 323,
+  "followsGagnes30": 325,
   "periode": {
    "du": "2026-10-05",
-   "au": "2026-11-03"
+   "au": "2026-11-04"
   }
  },
  "agenda": [],
@@ -260,7 +260,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "FINAL FANTASY XIV ONLINE",
+    "titre": "[FF14 Online] En coffee time et épopée !",
+    "depuis": "2026-11-04T07:54:13Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -513,8 +519,8 @@
    "jeux": [
     "Just Chatting",
     "Planet Zoo 2",
-    "Sovereign Tower",
     "Games + Demos",
+    "Sovereign Tower",
     "skribbl.io"
    ],
    "clip": null
@@ -590,6 +596,11 @@
    "live": null,
    "premierStream": "2018-08-08",
    "succes": [
+    {
+     "type": "palier",
+     "palier": 550,
+     "date": "2026-11-04"
+    },
     {
      "type": "palier",
      "palier": 500,
@@ -720,8 +731,8 @@
     }
    ],
    "jeux": [
-    "Dead Rising 3",
     "The Elder Scrolls V: Skyrim - Special Edition",
+    "Dead Rising 3",
     "PowerWash Simulator",
     "FTL: Faster Than Light",
     "Far Far West"
@@ -1085,5 +1096,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-04T06:07:15.634Z"
+ "maj": "2026-11-04T08:07:16.185Z"
 }
