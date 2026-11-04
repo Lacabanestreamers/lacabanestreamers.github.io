@@ -24,13 +24,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": {
-    "viewers": 10,
-    "jeu": "A Plague Tale: Innocence",
-    "titre": "A Plague Tale innocence/PS5",
-    "depuis": "2026-11-04T00:10:19Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -138,7 +132,7 @@
    "clip": {
     "url": "https://www.twitch.tv/aulit42369/clip/ExpensiveTangentialSangChefFrank-dteSzYui5wEwIKBf",
     "titre": "et voila comment cut un noob",
-    "vues": 5,
+    "vues": 6,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/21af5805-9a0b-428e-9362-b73c25e2e699/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-29",
     "duree": 19
@@ -209,12 +203,12 @@
     "Just Chatting"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/chezelodie/clip/HonestEnthusiasticBorkPeteZarollTie-VFy7s-fu_RrEtrOu",
-    "titre": "WzBot CLIP | 🎃 LES 31 DÉFIS D'OCTOBRE | Je vais le regretter, non ? part 2 😆 (by oko_san_)",
-    "vues": 19,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d1267997-9c8e-4902-82db-271e1f6dbfdc/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-27",
-    "duree": 60
+    "url": "https://www.twitch.tv/chezelodie/clip/SavageRamshackleAppleImGlitch-ValstNXqm92c3_Ll",
+    "titre": "🔥   JOUR 2| Stream Mates 2026 pour l'asso \"Sur le chemin de l'école\" ❤️🎒",
+    "vues": 9,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/2b8c3c60-4258-4140-a626-c27fe583c74b/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-31",
+    "duree": 30
    }
   },
   {
@@ -333,7 +327,14 @@
     "Art",
     "Huglings"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/emmamarmotte/clip/WonderfulDeterminedBulgogiRaccAttack-qwi3yIHBDeQ8p_lC",
+    "titre": "💕 Soirée cosy des marmottes sur DDV 🎮 | !lurk !clip !commandes",
+    "vues": 1,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/7d3c7848-4b8e-40e5-8438-341cb6b0448a/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-03",
+    "duree": 30
+   }
   },
   {
    "login": "evodp",
@@ -398,11 +399,11 @@
     "Writing & Reading"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/galyssiane/clip/BusySpikyRamenMau5-alSQDyCjyRp9MA9B",
-    "titre": "WzBot CLIP | Mardi survie avec @asakha - Abiotic Factor épisode 2 : On s'fait taper par (by galyssia",
-    "vues": 4,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/54bb63f5-ae7c-47d8-9fc2-f17feca72c17/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-27",
+    "url": "https://www.twitch.tv/galyssiane/clip/GlamorousFrailMangetoutPraiseIt-WIepE-ODPw3BF9rc",
+    "titre": "WzBot CLIP | Opé découverte sur All Rats On Deck avec @damepioupiou et @aly0806 (by galyssiane)",
+    "vues": 3,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f3eea8d3-ae41-4b7f-bc83-46615416a8fa/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-29",
     "duree": 60
    }
   },
@@ -445,12 +446,12 @@
     "DEVOUR"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/hyroshimaeu/clip/AverageVibrantDugongPupper-Zs7qw49IIL3njNfB",
-    "titre": "Oh la vache !!!",
-    "vues": 4,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/eedd7198-54a6-42f6-aca3-916c08be4bc2/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-29",
-    "duree": 25
+    "url": "https://www.twitch.tv/hyroshimaeu/clip/CourteousSmoothEmuPeanutButterJellyTime-c3NFhHbmfvetZJ13",
+    "titre": "Vengeance driftée",
+    "vues": 7,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5cf5b319-dcb2-4df7-a9e4-7431413d7441/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-03",
+    "duree": 30
    }
   },
   {
@@ -570,11 +571,11 @@
     "FragPunk"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/liiapin/clip/AmusedNeighborlyWerewolfBCouch-LaBjIUSXMidjsnB9",
+    "url": "https://www.twitch.tv/liiapin/clip/HandsomeGeniusMangoYee-woAP71yns3QIdTfh",
     "titre": "Clip by inStreamly",
     "vues": 1,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/fe193ee9-8500-45df-b3cb-64c5132a5d0b/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-01",
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d821b0f6-7c66-4f48-aa3c-0ae110e4d0cd/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-31",
     "duree": 26
    }
   },
@@ -605,7 +606,7 @@
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/SoftPopularJaguarAsianGlow-eQkaWixWZUJgxDKo",
     "titre": "WzBot CLIP | 🔞[DROP] Apres-midi frissons !! Entre papote et éclat de fun!! avec @aly (by lilyth_min",
-    "vues": 4,
+    "vues": 5,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/bc4fa067-604a-4f05-9a25-773f6a805a6f/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-28",
     "duree": 60
@@ -676,7 +677,7 @@
    "clip": {
     "url": "https://www.twitch.tv/lylu_live/clip/AdorablePrettiestGullSquadGoals-lHzhclAk3l___Ctr",
     "titre": "WzBot CLIP | PHASMOOOO - Ft @louisiana_rolleta !discord (by shama_as)",
-    "vues": 4,
+    "vues": 5,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e0b0d58a-dc57-44ac-b356-fbb2e8a7c0d6/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-29",
     "duree": 60
@@ -1007,7 +1008,7 @@
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/FrigidBrightPlumageHassaanChop-DqrM5DNtlYxkSIGG",
     "titre": "Ptit pop corn 🤣🤣🤣",
-    "vues": 11,
+    "vues": 14,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/89b6fb9d-115b-4b8c-8ba1-e4e33efc6614/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-02",
     "duree": 30
@@ -1071,7 +1072,7 @@
    "clip": {
     "url": "https://www.twitch.tv/zeylta/clip/BigModernNikudonArsonNoSexy-WG88Pl2g0AinJV3Y",
     "titre": "Un nouveau métier ?",
-    "vues": 7,
+    "vues": 11,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/8fe03ddc-405d-413a-8d13-501cd3b13580/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-28",
     "duree": 13
@@ -1084,5 +1085,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-04T01:13:30.402Z"
+ "maj": "2026-11-04T02:07:20.536Z"
 }
