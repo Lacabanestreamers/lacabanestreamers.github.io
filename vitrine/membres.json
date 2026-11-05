@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1890,
+  "heuresLive30": 1893,
   "followsGagnes30": 324,
   "periode": {
    "du": "2026-10-06",
@@ -120,7 +120,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "Cinderia",
     "titre": "On ne peux pas etre en puree donc on fini sur du cinderia",
     "depuis": "2026-11-04T19:53:05Z",
@@ -535,7 +535,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 3,
     "jeu": "VALORANT",
     "titre": "RADIANT DANS LA TÊTE, FER DANS LA RÉALITÉ 😂",
     "depuis": "2026-11-04T22:44:53Z",
@@ -1009,10 +1009,10 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "Games + Demos",
     "titre": "Détente avec les poissons! Session Démo #abysshaul #keymailer",
-    "depuis": "2026-11-04T15:25:33Z",
+    "depuis": "2026-11-05T00:00:47Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
    "premierStream": null,
@@ -1110,5 +1110,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-04T23:07:15.121Z"
+ "maj": "2026-11-05T00:07:17.253Z"
 }
