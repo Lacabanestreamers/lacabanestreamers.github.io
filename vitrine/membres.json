@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1933,
+  "heuresLive30": 1937,
   "followsGagnes30": 337,
   "periode": {
    "du": "2026-10-06",
@@ -43,8 +43,8 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
-    "jeu": "House Builder 2",
+    "viewers": 13,
+    "jeu": "Project P.I.T.T.",
     "titre": "✨on chill🔥",
     "depuis": "2026-11-05T14:55:22Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
@@ -542,13 +542,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 1,
-    "jeu": "VALORANT",
-    "titre": "RADIANT DANS LA TÊTE, FER DANS LA RÉALITÉ 😂",
-    "depuis": "2026-11-05T16:29:02Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -610,7 +604,7 @@
    "depuis": "2026-09-20",
    "live": {
     "viewers": 9,
-    "jeu": "FINAL FANTASY XIV ONLINE",
+    "jeu": "Just Chatting",
     "titre": "🔞Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-05T13:28:53Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
@@ -1110,5 +1104,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-05T17:07:18.307Z"
+ "maj": "2026-11-05T18:07:20.255Z"
 }
