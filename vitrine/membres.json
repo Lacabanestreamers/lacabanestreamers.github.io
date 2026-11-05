@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1905,
+  "heuresLive30": 1911,
   "followsGagnes30": 335,
   "periode": {
    "du": "2026-10-06",
@@ -146,19 +146,14 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 5,
-    "jeu": "Stardew Valley",
-    "titre": "🐮STARDEW VALLEY • ON CONTINUE L'AVENTURE OU PO ?? • 8 💗",
-    "depuis": "2026-11-05T09:21:21Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bichoune_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-04",
    "succes": [],
    "jeux": [
     "Mazebound: Hunt, Gather, Run!",
     "Leafy Corner",
-    "My Fashion Studio"
+    "My Fashion Studio",
+    "Stardew Valley"
    ],
    "clip": null
   },
@@ -188,9 +183,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
-    "jeu": "Toto's Journey",
-    "titre": "🎒 Toto's Journey : l'aventure commence ! ✨",
+    "viewers": 12,
+    "jeu": "Naughty Baby",
+    "titre": "🎒 On test un nouveau jeux ; Je suis un bébé !✨",
     "depuis": "2026-11-05T09:54:47Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
    },
@@ -273,7 +268,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 9,
+    "viewers": 8,
     "jeu": "Warframe",
     "titre": "[Warframe](MR27) Road to 500 pl !",
     "depuis": "2026-11-05T07:56:18Z",
@@ -614,9 +609,9 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 17,
+    "viewers": 15,
     "jeu": "Baldur's Gate 3",
-    "titre": "🔞On reste gentil sur BG3 !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "titre": "🔞On reste gentil sur BG3  !!!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-05T08:34:10Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
    },
@@ -767,13 +762,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": {
-    "viewers": 6,
-    "jeu": "Stardew Valley",
-    "titre": "Matinale cozy à la ferme, petit café viens papoter avec nous!!  !discord !regles !don",
-    "depuis": "2026-11-05T07:40:01Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -1089,20 +1078,14 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": {
-    "viewers": 13,
-    "jeu": "The Witch's Bakery",
-    "titre": "On vas régler des problèmes de cœur #2 | !tiktok | !Discord | !clip |",
-    "depuis": "2026-11-05T07:54:14Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zeylta-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-01-31",
    "succes": [],
    "jeux": [
     "Coffee Talk",
     "inKONBINI: One Store. Many Stories",
-    "Allogloom",
     "The Witch's Bakery",
+    "Allogloom",
     "Gloomy Eyes"
    ],
    "clip": {
@@ -1121,5 +1104,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-05T10:07:23.548Z"
+ "maj": "2026-11-05T11:07:18.693Z"
 }
