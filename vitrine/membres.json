@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1898,
+  "heuresLive30": 1901,
   "followsGagnes30": 335,
   "periode": {
    "du": "2026-10-06",
@@ -261,7 +261,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 2,
+    "viewers": 9,
     "jeu": "Warframe",
     "titre": "[Warframe](MR27) Road to 500 pl !",
     "depuis": "2026-11-05T07:56:18Z",
@@ -601,7 +601,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "Baldur's Gate 3",
+    "titre": "🔞On reste gentil sur BG3 !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-05T08:34:10Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -750,7 +756,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 3,
+    "viewers": 6,
     "jeu": "Stardew Valley",
     "titre": "Matinale cozy à la ferme, petit café viens papoter avec nous!!  !discord !regles !don",
     "depuis": "2026-11-05T07:40:01Z",
@@ -1072,7 +1078,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 6,
+    "viewers": 12,
     "jeu": "The Witch's Bakery",
     "titre": "On vas régler des problèmes de cœur #2 | !tiktok | !Discord | !clip |",
     "depuis": "2026-11-05T07:54:14Z",
@@ -1084,8 +1090,8 @@
     "Coffee Talk",
     "inKONBINI: One Store. Many Stories",
     "Allogloom",
-    "Gloomy Eyes",
-    "The Witch's Bakery"
+    "The Witch's Bakery",
+    "Gloomy Eyes"
    ],
    "clip": {
     "url": "https://www.twitch.tv/zeylta/clip/OriginalAbrasiveChipmunkOptimizePrime-aR_6Ot_Rw7yJnDKP",
@@ -1103,5 +1109,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-05T08:07:16.577Z"
+ "maj": "2026-11-05T09:07:16.364Z"
 }
