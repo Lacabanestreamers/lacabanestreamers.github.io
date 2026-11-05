@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1932,
+  "heuresLive30": 1933,
   "followsGagnes30": 337,
   "periode": {
    "du": "2026-10-06",
@@ -549,7 +549,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "VALORANT",
     "titre": "RADIANT DANS LA TÊTE, FER DANS LA RÉALITÉ 😂",
     "depuis": "2026-11-05T16:29:02Z",
@@ -615,7 +615,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 12,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "🔞Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-05T13:28:53Z",
@@ -1116,5 +1116,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-05T16:34:17.970Z"
+ "maj": "2026-11-05T16:35:27.035Z"
 }
