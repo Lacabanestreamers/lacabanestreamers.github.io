@@ -183,7 +183,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 28,
+    "viewers": 25,
     "jeu": "Planet Zoo 2",
     "titre": "🎒 🦁 On m'a confié un zoo, quelle erreur |  Découverte Planet Zoo  2 🐾😁✨",
     "depuis": "2026-11-05T09:54:47Z",
@@ -777,7 +777,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Solarpunk",
+    "titre": "Petite session tranquille sur solarpunk !",
+    "depuis": "2026-11-05T12:23:45Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
+   },
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -836,7 +842,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "World of Warcraft",
+    "titre": "Bonjour, je reviens dans l'aventure en azeroth !!!!",
+    "depuis": "2026-11-05T12:29:16Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -996,7 +1008,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Color Me Crazy!",
+    "titre": "On fait de la peinture au numéro taille réelle!  #colormecrazyplaytest #keymailer",
+    "depuis": "2026-11-05T12:49:09Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [
     {
@@ -1092,5 +1110,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-05T12:09:33.925Z"
+ "maj": "2026-11-05T13:07:14.334Z"
 }
