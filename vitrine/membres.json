@@ -8,10 +8,10 @@
   "affilies": 41,
   "nouveaux30": 22,
   "heuresLive30": 1898,
-  "followsGagnes30": 324,
+  "followsGagnes30": 335,
   "periode": {
    "du": "2026-10-06",
-   "au": "2026-11-04"
+   "au": "2026-11-05"
   }
  },
  "agenda": [],
@@ -260,7 +260,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Warframe",
+    "titre": "[Warframe](MR27) Road to 500 pl !",
+    "depuis": "2026-11-05T07:56:18Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -396,7 +402,7 @@
     "R.E.P.O.",
     "Abiotic Factor",
     "Shift at Midnight",
-    "DREDGE",
+    "Forever Ago",
     "Writing & Reading"
    ],
    "clip": {
@@ -728,8 +734,8 @@
    ],
    "jeux": [
     "The Elder Scrolls V: Skyrim - Special Edition",
-    "Dead Rising 3",
     "PowerWash Simulator",
+    "Dead Rising 3",
     "FTL: Faster Than Light",
     "Far Far West"
    ],
@@ -743,7 +749,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Stardew Valley",
+    "titre": "Matinale cozy à la ferme, petit café viens papoter avec nous!!  !discord !regles !don",
+    "depuis": "2026-11-05T07:40:01Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -1059,7 +1071,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "The Witch's Bakery",
+    "titre": "On vas régler des problèmes de cœur #2 | !tiktok | !Discord | !clip |",
+    "depuis": "2026-11-05T07:54:14Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zeylta-440x248.jpg"
+   },
    "premierStream": "2026-01-31",
    "succes": [],
    "jeux": [
@@ -1085,5 +1103,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-05T03:07:15.115Z"
+ "maj": "2026-11-05T08:07:16.577Z"
 }
