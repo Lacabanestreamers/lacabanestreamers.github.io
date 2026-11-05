@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1940,
+  "heuresLive30": 1942,
   "followsGagnes30": 346,
   "periode": {
    "du": "2026-10-06",
@@ -288,7 +288,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "The Survivalists",
     "titre": "🏝The Survivalists ~ On continue notre survie ! - !réseaux",
     "depuis": "2026-11-05T18:35:56Z",
@@ -306,8 +306,8 @@
     "Minecraft",
     "Splatoon 3",
     "Sprout Valley",
-    "Tomodachi Life: Living the Dream",
-    "The Survivalists"
+    "The Survivalists",
+    "Tomodachi Life: Living the Dream"
    ],
    "clip": {
     "url": "https://www.twitch.tv/elegaming__/clip/CaringResoluteTirePJSalt-ZbtiA3OpE5SooGRB",
@@ -437,7 +437,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Fire Emblem: Fortune's Weave",
+    "titre": "FR_VT - J-10 du Choupiathon !!! Du fire emblem sa fait longtemps *-*",
+    "depuis": "2026-11-05T19:29:47Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -542,7 +548,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "VALORANT",
+    "titre": "RADIANT DANS LA TÊTE, FER DANS LA RÉALITÉ 😂",
+    "depuis": "2026-11-05T20:00:48Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -797,7 +809,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "PUMPKIN PANIC",
+    "titre": "[FR] ~ Pumpkin Panic - Le retour de notre citrouille fav ~ #1",
+    "depuis": "2026-11-05T19:55:11Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
+   },
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -997,7 +1015,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 23,
+    "viewers": 21,
     "jeu": "Kalanoro",
     "titre": "Découverte de Kalanoro! #kalanoro #keymailer",
     "depuis": "2026-11-05T12:49:09Z",
@@ -1098,5 +1116,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-05T19:07:14.292Z"
+ "maj": "2026-11-05T20:07:16.229Z"
 }
