@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1915,
+  "heuresLive30": 1919,
   "followsGagnes30": 337,
   "periode": {
    "du": "2026-10-06",
@@ -183,7 +183,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 25,
+    "viewers": 26,
     "jeu": "Planet Zoo 2",
     "titre": "🎒 🦁 On m'a confié un zoo, quelle erreur |  Découverte Planet Zoo  2 🐾😁✨",
     "depuis": "2026-11-05T09:54:47Z",
@@ -602,7 +602,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "Tomb Raider",
+    "titre": "🔞Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-05T13:28:53Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -777,13 +783,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 2,
-    "jeu": "Solarpunk",
-    "titre": "Petite session tranquille sur solarpunk !",
-    "depuis": "2026-11-05T12:23:45Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -843,7 +843,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
+    "viewers": 5,
     "jeu": "World of Warcraft",
     "titre": "Bonjour, je reviens dans l'aventure en azeroth !!!!",
     "depuis": "2026-11-05T12:29:16Z",
@@ -855,8 +855,8 @@
     "American Truck Simulator",
     "Disney Dreamlight Valley",
     "Euro Truck Simulator 2",
-    "Project CARS",
-    "World of Warcraft"
+    "World of Warcraft",
+    "Project CARS"
    ],
    "clip": null
   },
@@ -1009,7 +1009,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 3,
+    "viewers": 8,
     "jeu": "Color Me Crazy!",
     "titre": "On fait de la peinture au numéro taille réelle!  #colormecrazyplaytest #keymailer",
     "depuis": "2026-11-05T12:49:09Z",
@@ -1110,5 +1110,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-05T13:07:14.334Z"
+ "maj": "2026-11-05T14:07:18.033Z"
 }
