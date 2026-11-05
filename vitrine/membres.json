@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1942,
+  "heuresLive30": 1947,
   "followsGagnes30": 346,
   "periode": {
    "du": "2026-10-06",
@@ -288,7 +288,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "The Survivalists",
     "titre": "🏝The Survivalists ~ On continue notre survie ! - !réseaux",
     "depuis": "2026-11-05T18:35:56Z",
@@ -438,9 +438,9 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 5,
     "jeu": "Fire Emblem: Fortune's Weave",
-    "titre": "FR_VT - J-10 du Choupiathon !!! Du fire emblem sa fait longtemps *-*",
+    "titre": "FR_VT - J-11 du Choupiathon !!! Du fire emblem ça fait longtemps *-*",
     "depuis": "2026-11-05T19:29:47Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
    },
@@ -476,7 +476,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-20",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Leaf it Alone",
+    "titre": "on ramasse des feuilles 🍂",
+    "depuis": "2026-11-05T20:28:31Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kialigator-440x248.jpg"
+   },
    "premierStream": "2025-08-30",
    "succes": [],
    "jeux": [
@@ -528,7 +534,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "Just Chatting",
+    "titre": "RÉACT🍿 : Suite de 90 Day Fiancé / 3 mois pour se marier, avec des couples très spéciaux ✨| React émission & docus",
+    "depuis": "2026-11-05T20:16:06Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
+   },
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
@@ -549,7 +561,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 1,
+    "viewers": 5,
     "jeu": "VALORANT",
     "titre": "RADIANT DANS LA TÊTE, FER DANS LA RÉALITÉ 😂",
     "depuis": "2026-11-05T20:00:48Z",
@@ -1015,7 +1027,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 21,
+    "viewers": 16,
     "jeu": "Kalanoro",
     "titre": "Découverte de Kalanoro! #kalanoro #keymailer",
     "depuis": "2026-11-05T12:49:09Z",
@@ -1034,7 +1046,7 @@
     "Just Chatting",
     "Photomaly",
     "Invokyr",
-    "R.E.P.O."
+    "Kalanoro"
    ],
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/FrigidBrightPlumageHassaanChop-DqrM5DNtlYxkSIGG",
@@ -1116,5 +1128,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-05T20:07:16.229Z"
+ "maj": "2026-11-05T20:35:42.559Z"
 }
