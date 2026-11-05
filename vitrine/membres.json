@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1916,
+  "heuresLive30": 1922,
   "followsGagnes30": 336,
   "periode": {
    "du": "2026-10-07",
@@ -431,13 +431,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 6,
-    "jeu": "Fire Emblem: Fortune's Weave",
-    "titre": "FR_VT - J-11 du Choupiathon !!! Du fire emblem ça fait longtemps *-*",
-    "depuis": "2026-11-05T19:29:47Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -471,7 +465,7 @@
    "staff": false,
    "depuis": "2026-10-20",
    "live": {
-    "viewers": 12,
+    "viewers": 9,
     "jeu": "Leaf it Alone",
     "titre": "on ramasse des feuilles 🍂",
     "depuis": "2026-11-05T20:28:31Z",
@@ -484,7 +478,7 @@
     "Slime Rancher",
     "Animal Crossing: New Horizons",
     "DEVOUR",
-    "Art"
+    "Leaf it Alone"
    ],
    "clip": {
     "url": "https://www.twitch.tv/kialigator/clip/OddEnjoyableOrangeOMGScoots-ubtA-k8O7s20_7u5",
@@ -529,7 +523,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 12,
+    "viewers": 11,
     "jeu": "Just Chatting",
     "titre": "RÉACT🍿 : Suite de 90 Day Fiancé / 3 mois pour se marier, avec des couples très spéciaux ✨| React émission & docus",
     "depuis": "2026-11-05T20:16:06Z",
@@ -555,7 +549,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 6,
+    "viewers": 4,
     "jeu": "VALORANT",
     "titre": "RADIANT DANS LA TÊTE, FER DANS LA RÉALITÉ 😂",
     "depuis": "2026-11-05T20:00:48Z",
@@ -815,21 +809,15 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 5,
-    "jeu": "PUMPKIN PANIC",
-    "titre": "[FR] ~ Pumpkin Panic - Le retour de notre citrouille fav ~ #1",
-    "depuis": "2026-11-05T19:55:11Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
     "The Sims 4",
-    "Horror Game",
     "DEVOUR",
-    "Bily'Sine",
-    "PUMPKIN PANIC"
+    "PUMPKIN PANIC",
+    "Horror Game",
+    "Decay: The Mare - Episode 1"
    ],
    "clip": null
   },
@@ -1021,7 +1009,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 10,
+    "viewers": 9,
     "jeu": "Ramen Shop Simulator",
     "titre": "On fait des ramens! #ramenshopsim #keymailer",
     "depuis": "2026-11-05T12:49:09Z",
@@ -1122,5 +1110,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-05T22:07:13.174Z"
+ "maj": "2026-11-05T23:07:15.643Z"
 }
