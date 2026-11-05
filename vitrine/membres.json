@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1923,
+  "heuresLive30": 1932,
   "followsGagnes30": 337,
   "periode": {
    "du": "2026-10-06",
@@ -43,8 +43,8 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
-    "jeu": "Just Chatting",
+    "viewers": 7,
+    "jeu": "House Builder 2",
     "titre": "✨on chill🔥",
     "depuis": "2026-11-05T14:55:22Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
@@ -189,7 +189,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 19,
+    "viewers": 23,
     "jeu": "Planet Zoo 2",
     "titre": "🎒 🦁 On m'a confié un zoo, quelle erreur |  Découverte Planet Zoo  2 🐾😁✨",
     "depuis": "2026-11-05T09:54:47Z",
@@ -548,7 +548,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "VALORANT",
+    "titre": "RADIANT DANS LA TÊTE, FER DANS LA RÉALITÉ 😂",
+    "depuis": "2026-11-05T16:29:02Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -609,8 +615,8 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
-    "jeu": "Tomb Raider",
+    "viewers": 10,
+    "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "🔞Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-05T13:28:53Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
@@ -848,20 +854,14 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 4,
-    "jeu": "World of Warcraft",
-    "titre": "Bonjour, je reviens dans l'aventure en azeroth !!!!",
-    "depuis": "2026-11-05T12:29:16Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
     "American Truck Simulator",
     "Disney Dreamlight Valley",
-    "Euro Truck Simulator 2",
     "World of Warcraft",
+    "Euro Truck Simulator 2",
     "Project CARS"
    ],
    "clip": null
@@ -1015,9 +1015,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 11,
-    "jeu": "Color Me Crazy!",
-    "titre": "On fait de la peinture au numéro taille réelle!  #colormecrazyplaytest #keymailer",
+    "viewers": 30,
+    "jeu": "Kalanoro",
+    "titre": "Découverte de Kalanoro! #kalanoro #keymailer",
     "depuis": "2026-11-05T12:49:09Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1116,5 +1116,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-05T15:07:17.842Z"
+ "maj": "2026-11-05T16:34:17.970Z"
 }
