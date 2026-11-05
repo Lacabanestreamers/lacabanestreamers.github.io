@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1901,
+  "heuresLive30": 1905,
   "followsGagnes30": 335,
   "periode": {
    "du": "2026-10-06",
@@ -146,7 +146,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Stardew Valley",
+    "titre": "🐮STARDEW VALLEY • ON CONTINUE L'AVENTURE OU PO ?? • 8 💗",
+    "depuis": "2026-11-05T09:21:21Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bichoune_-440x248.jpg"
+   },
    "premierStream": "2025-10-04",
    "succes": [],
    "jeux": [
@@ -181,7 +187,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Toto's Journey",
+    "titre": "🎒 Toto's Journey : l'aventure commence ! ✨",
+    "depuis": "2026-11-05T09:54:47Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -602,7 +614,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 17,
     "jeu": "Baldur's Gate 3",
     "titre": "🔞On reste gentil sur BG3 !!  Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-05T08:34:10Z",
@@ -1078,7 +1090,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 12,
+    "viewers": 13,
     "jeu": "The Witch's Bakery",
     "titre": "On vas régler des problèmes de cœur #2 | !tiktok | !Discord | !clip |",
     "depuis": "2026-11-05T07:54:14Z",
@@ -1109,5 +1121,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-05T09:07:16.364Z"
+ "maj": "2026-11-05T10:07:23.548Z"
 }
