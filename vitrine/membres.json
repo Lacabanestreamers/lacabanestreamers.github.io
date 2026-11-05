@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1919,
+  "heuresLive30": 1923,
   "followsGagnes30": 337,
   "periode": {
    "du": "2026-10-06",
@@ -42,7 +42,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Just Chatting",
+    "titre": "✨on chill🔥",
+    "depuis": "2026-11-05T14:55:22Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
+   },
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -183,7 +189,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 26,
+    "viewers": 19,
     "jeu": "Planet Zoo 2",
     "titre": "🎒 🦁 On m'a confié un zoo, quelle erreur |  Découverte Planet Zoo  2 🐾😁✨",
     "depuis": "2026-11-05T09:54:47Z",
@@ -603,7 +609,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 9,
     "jeu": "Tomb Raider",
     "titre": "🔞Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-05T13:28:53Z",
@@ -843,7 +849,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "World of Warcraft",
     "titre": "Bonjour, je reviens dans l'aventure en azeroth !!!!",
     "depuis": "2026-11-05T12:29:16Z",
@@ -1009,7 +1015,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 8,
+    "viewers": 11,
     "jeu": "Color Me Crazy!",
     "titre": "On fait de la peinture au numéro taille réelle!  #colormecrazyplaytest #keymailer",
     "depuis": "2026-11-05T12:49:09Z",
@@ -1110,5 +1116,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-05T14:07:18.033Z"
+ "maj": "2026-11-05T15:07:17.842Z"
 }
