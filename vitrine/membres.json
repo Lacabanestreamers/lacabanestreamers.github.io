@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1948,
+  "heuresLive30": 1952,
   "followsGagnes30": 338,
   "periode": {
    "du": "2026-10-07",
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 13,
     "jeu": "Disney Dreamlight Valley",
     "titre": "✨on chill sur DDV🔥",
     "depuis": "2026-11-06T13:32:03Z",
@@ -196,7 +196,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
+    "viewers": 11,
     "jeu": "The Sims 4",
     "titre": "🔥 DONATION GOAL ATTEINT ✅ | 3H SUR LES SIMS : OBJECTIF HAREM GÉANT 👀💘",
     "depuis": "2026-11-06T12:43:14Z",
@@ -366,7 +366,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 1,
+    "viewers": 3,
     "jeu": "Red Dead Redemption II",
     "titre": "[FR] [RDR2] 🤠 LE FAR WEST NOUS APPELLE ! 🌵🐎 | Red Dead Redemption 2 – Mode Histoire 🇫🇷",
     "depuis": "2026-11-06T13:11:44Z",
@@ -621,13 +621,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 13,
-    "jeu": "Baldur's Gate 3",
-    "titre": "🔞Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
-    "depuis": "2026-11-06T13:10:02Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -1005,7 +999,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-16",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "R.E.P.O.",
+    "titre": "Des cosmétiques ou un sort ! C'est REPOWEEN :3",
+    "depuis": "2026-11-06T14:57:42Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rinka_henbyou-440x248.jpg"
+   },
    "premierStream": "2025-06-23",
    "succes": [],
    "jeux": [
@@ -1117,5 +1117,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-06T14:07:16.888Z"
+ "maj": "2026-11-06T15:07:14.870Z"
 }
