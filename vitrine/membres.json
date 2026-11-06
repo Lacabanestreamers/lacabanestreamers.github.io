@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1933,
+  "heuresLive30": 1939,
   "followsGagnes30": 337,
   "periode": {
    "du": "2026-10-07",
@@ -269,7 +269,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 1,
+    "viewers": 5,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "[FF14 Online] On entame Stormblood !",
     "depuis": "2026-11-06T07:53:34Z",
@@ -505,7 +505,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 17,
+    "viewers": 16,
     "jeu": "Art",
     "titre": "✦ OC CHALLENGE ✦ GALAXIIIIE ! | Dessinons dans les étoiles ! | C'est vendredi, courage à tous !| !artchallenges !catfanart !liens",
     "depuis": "2026-11-06T07:08:07Z",
@@ -616,7 +616,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 7,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "🔞On chill ce matin. Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-06T07:44:46Z",
@@ -640,7 +640,7 @@
     "7 Days to Die",
     "Dead by Daylight",
     "Tomb Raider",
-    "AION 2"
+    "FINAL FANTASY XIV ONLINE"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/YawningBumblingWatermelonPhilosoraptor-YQp2ViXc4PDbJIfb",
@@ -770,7 +770,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "Stardew Valley",
     "titre": "A la recherche de noix dans Stardew … rejoins nous , dépêche toi !!  !discord !regles !don",
     "depuis": "2026-11-06T07:49:39Z",
@@ -908,7 +908,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 5,
+    "viewers": 8,
     "jeu": "The Sims 4",
     "titre": "THE SIMS 4 [FR] | Défi Bingo 🎲: oui, ici, on aime souffrir ! Qui aura validé le plus de grilles entre @kneline et moi ?| !discord !bingo",
     "depuis": "2026-11-06T08:45:24Z",
@@ -1129,5 +1129,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-06T09:07:17.260Z"
+ "maj": "2026-11-06T09:15:21.494Z"
 }
