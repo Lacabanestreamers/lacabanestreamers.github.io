@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1973,
+  "heuresLive30": 1981,
   "followsGagnes30": 348,
   "periode": {
    "du": "2026-10-07",
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 11,
     "jeu": "Silver Service",
     "titre": "✨soirée chill🔥",
     "depuis": "2026-11-06T13:32:03Z",
@@ -55,8 +55,8 @@
     "Outbound",
     "R.E.P.O.",
     "Just Chatting",
-    "DEVOUR",
-    "Silver Service"
+    "Silver Service",
+    "DEVOUR"
    ],
    "clip": {
     "url": "https://www.twitch.tv/aly0806/clip/AgileGiantVultureWoofer-50NOiTPOI3zIC7wv",
@@ -247,21 +247,15 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": {
-    "viewers": 3,
-    "jeu": "Sort The Bunnies",
-    "titre": "🐰 Sort the Bunnies ! C'est l'heure de ranger et d'organiser tout ça 🧹",
-    "depuis": "2026-11-06T18:25:03Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
     "Dead by Daylight",
     "Raft",
     "Rise of the Tomb Raider",
-    "Librarian: Tidy Up the Arcane Library!",
-    "Sort The Bunnies"
+    "Sort The Bunnies",
+    "Librarian: Tidy Up the Arcane Library!"
    ],
    "clip": {
     "url": "https://www.twitch.tv/cristal578/clip/SingleEntertainingEelFloof-zHHG11Y6cOyHM_d0",
@@ -280,13 +274,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": {
-    "viewers": 3,
-    "jeu": "FINAL FANTASY XIV ONLINE",
-    "titre": "[FF14 Online] On entame Stormblood !",
-    "depuis": "2026-11-06T18:55:27Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -312,7 +300,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Minecraft",
+    "titre": "🏹MC Be ~ 🏕On va taper le dragon avec les coupings ! - !réseaux",
+    "depuis": "2026-11-06T19:42:27Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -456,7 +450,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "R.E.P.O.",
+    "titre": "FR_VT - J-12 du Choupiathon !!! Soirée Collab sur R.E.P.O",
+    "depuis": "2026-11-06T19:15:32Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -562,7 +562,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 6,
     "jeu": "VALORANT",
     "titre": "ON A TOUCHÉ LE FOND… OBJECTIF REMONTÉE ! 📈",
     "depuis": "2026-11-06T17:12:40Z",
@@ -704,7 +704,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 9,
+    "viewers": 4,
     "jeu": "Phasmophobia",
     "titre": "Phasmo en déténte, go se faire Calo'ed - Ft @calo_vt !lurk !discord",
     "depuis": "2026-11-06T16:28:28Z",
@@ -828,7 +828,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "The Sims 4",
+    "titre": "[FR] ~ Sims 4 - Rénovation des Mondes - Sulani #16 ~",
+    "depuis": "2026-11-06T19:54:21Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
+   },
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -848,18 +854,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 6,
-    "jeu": "Moonlight Peaks",
-    "titre": "[FR] Je continue l'aventure d'Halloween 🦇⚰️ | Moonlight Peaks | !discord !commandes",
-    "depuis": "2026-11-06T17:00:53Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
-    "Disney Dreamlight Valley",
     "Moonlight Peaks",
+    "Disney Dreamlight Valley",
     "Art",
     "R.E.P.O."
    ],
@@ -978,7 +978,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 5,
     "jeu": "The Dark Pictures Anthology: House of Ashes",
     "titre": "C'est parti pour les frissons | Ep 1 !discord",
     "depuis": "2026-11-06T17:48:18Z",
@@ -1048,7 +1048,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 13,
+    "viewers": 12,
     "jeu": "Mimic Busters",
     "titre": "It's MIMIC TIME!",
     "depuis": "2026-11-06T16:22:33Z",
@@ -1149,5 +1149,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-06T19:07:14.218Z"
+ "maj": "2026-11-06T20:07:15.833Z"
 }
