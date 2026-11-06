@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1947,
+  "heuresLive30": 1948,
   "followsGagnes30": 338,
   "periode": {
    "du": "2026-10-07",
@@ -42,7 +42,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "✨on chill sur DDV🔥",
+    "depuis": "2026-11-06T13:32:03Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
+   },
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -190,7 +196,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 17,
+    "viewers": 13,
     "jeu": "The Sims 4",
     "titre": "🔥 DONATION GOAL ATTEINT ✅ | 3H SUR LES SIMS : OBJECTIF HAREM GÉANT 👀💘",
     "depuis": "2026-11-06T12:43:14Z",
@@ -359,7 +365,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Red Dead Redemption II",
+    "titre": "[FR] [RDR2] 🤠 LE FAR WEST NOUS APPELLE ! 🌵🐎 | Red Dead Redemption 2 – Mode Histoire 🇫🇷",
+    "depuis": "2026-11-06T13:11:44Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
+   },
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -609,7 +621,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 13,
+    "jeu": "Baldur's Gate 3",
+    "titre": "🔞Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-06T13:10:02Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -1099,5 +1117,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-06T13:07:15.704Z"
+ "maj": "2026-11-06T14:07:16.888Z"
 }
