@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1963,
+  "heuresLive30": 1964,
   "followsGagnes30": 338,
   "periode": {
    "du": "2026-10-07",
@@ -43,8 +43,8 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
-    "jeu": "Just Chatting",
+    "viewers": 9,
+    "jeu": "AION 2",
     "titre": "✨Go l'aventure🔥",
     "depuis": "2026-11-06T13:32:03Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
@@ -550,7 +550,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "VALORANT",
     "titre": "ON A TOUCHÉ LE FOND… OBJECTIF REMONTÉE ! 📈",
     "depuis": "2026-11-06T17:12:40Z",
@@ -692,7 +692,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 7,
+    "viewers": 12,
     "jeu": "Phasmophobia",
     "titre": "Phasmo en déténte, go se faire Calo'ed - Ft @calo_vt !lurk !discord",
     "depuis": "2026-11-06T16:28:28Z",
@@ -837,7 +837,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "Moonlight Peaks",
     "titre": "[FR] Je continue l'aventure d'Halloween 🦇⚰️ | Moonlight Peaks | !discord !commandes",
     "depuis": "2026-11-06T17:00:53Z",
@@ -959,7 +959,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "The Dark Pictures Anthology: House of Ashes",
+    "titre": "C'est parti pour les frissons | Ep 1 !discord",
+    "depuis": "2026-11-06T17:48:18Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_r3skyo-440x248.jpg"
+   },
    "premierStream": "2023-03-23",
    "succes": [],
    "jeux": [
@@ -1006,7 +1012,7 @@
    "staff": false,
    "depuis": "2026-10-16",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "PEAK",
     "titre": "Rinka la scout escalade des sommets :3",
     "depuis": "2026-11-06T14:57:42Z",
@@ -1029,9 +1035,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 9,
-    "jeu": "The First Pixel",
-    "titre": "Session test avant la soirée! #TheFirstPixel #keymailer",
+    "viewers": 11,
+    "jeu": "Gacha Shop Simulator",
+    "titre": "Session test avant la soirée! #GachaShopSimulator #keymailer",
     "depuis": "2026-11-06T16:22:33Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1130,5 +1136,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-06T17:24:21.447Z"
+ "maj": "2026-11-06T18:07:21.495Z"
 }
