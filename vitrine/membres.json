@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1975,
+  "heuresLive30": 1982,
   "followsGagnes30": 336,
   "periode": {
    "du": "2026-10-08",
@@ -24,7 +24,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Rocket League",
+    "titre": "Rocket League/PS5",
+    "depuis": "2026-11-06T22:11:03Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -43,7 +49,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 8,
     "jeu": "Silver Service",
     "titre": "✨soirée chill🔥",
     "depuis": "2026-11-06T13:32:03Z",
@@ -54,8 +60,8 @@
    "jeux": [
     "Outbound",
     "R.E.P.O.",
-    "Just Chatting",
     "Silver Service",
+    "Just Chatting",
     "DEVOUR"
    ],
    "clip": {
@@ -300,13 +306,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 2,
-    "jeu": "Minecraft",
-    "titre": "🏹MC Be ~ 🏕On va taper le dragon avec les coupings ! - !réseaux",
-    "depuis": "2026-11-06T19:42:27Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -319,8 +319,8 @@
     "Minecraft",
     "Splatoon 3",
     "The Survivalists",
-    "Tomodachi Life: Living the Dream",
-    "Sprout Valley"
+    "Sprout Valley",
+    "Tomodachi Life: Living the Dream"
    ],
    "clip": {
     "url": "https://www.twitch.tv/elegaming__/clip/GeniusSmellyScorpionKreygasm-QMELzvnWWg4yDcpl",
@@ -451,7 +451,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 10,
+    "viewers": 8,
     "jeu": "R.E.P.O.",
     "titre": "FR_VT - J-12 du Choupiathon !!! Soirée Collab sur R.E.P.O",
     "depuis": "2026-11-06T19:15:32Z",
@@ -562,7 +562,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "VALORANT",
     "titre": "ON A TOUCHÉ LE FOND… OBJECTIF REMONTÉE ! 📈",
     "depuis": "2026-11-06T17:12:40Z",
@@ -666,7 +666,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 6,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "On découvre Warzone ensemble… La victoire ou le désastre !",
     "depuis": "2026-11-06T20:21:44Z",
@@ -828,13 +828,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 4,
-    "jeu": "The Sims 4",
-    "titre": "[FR] ~ Sims 4 - Rénovation des Mondes - Sulani #16 ~",
-    "depuis": "2026-11-06T19:54:21Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -1041,13 +1035,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": {
-    "viewers": 7,
-    "jeu": "Mimic Busters",
-    "titre": "It's MIMIC TIME!",
-    "depuis": "2026-11-06T16:22:33Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [
     {
@@ -1143,5 +1131,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-06T22:07:13.836Z"
+ "maj": "2026-11-06T22:59:34.670Z"
 }
