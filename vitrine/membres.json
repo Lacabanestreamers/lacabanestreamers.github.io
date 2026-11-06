@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1946,
+  "heuresLive30": 1947,
   "followsGagnes30": 338,
   "periode": {
    "du": "2026-10-07",
@@ -189,7 +189,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 17,
+    "jeu": "The Sims 4",
+    "titre": "🔥 DONATION GOAL ATTEINT ✅ | 3H SUR LES SIMS : OBJECTIF HAREM GÉANT 👀💘",
+    "depuis": "2026-11-06T12:43:14Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -883,13 +889,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 9,
-    "jeu": "The Sims 4",
-    "titre": "THE SIMS 4 [FR] | Défi Bingo 🎲: oui, ici, on aime souffrir ! Qui aura validé le plus de grilles entre @kneline et moi ?| !discord !bingo",
-    "depuis": "2026-11-06T08:45:24Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-10",
    "succes": [],
    "jeux": [
@@ -1099,5 +1099,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-06T12:07:14.713Z"
+ "maj": "2026-11-06T13:07:15.704Z"
 }
