@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1952,
+  "heuresLive30": 1956,
   "followsGagnes30": 338,
   "periode": {
    "du": "2026-10-07",
@@ -43,9 +43,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "✨on chill sur DDV🔥",
+    "viewers": 12,
+    "jeu": "Just Chatting",
+    "titre": "✨Go l'aventure🔥",
     "depuis": "2026-11-06T13:32:03Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
    },
@@ -195,13 +195,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 11,
-    "jeu": "The Sims 4",
-    "titre": "🔥 DONATION GOAL ATTEINT ✅ | 3H SUR LES SIMS : OBJECTIF HAREM GÉANT 👀💘",
-    "depuis": "2026-11-06T12:43:14Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -365,13 +359,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": {
-    "viewers": 3,
-    "jeu": "Red Dead Redemption II",
-    "titre": "[FR] [RDR2] 🤠 LE FAR WEST NOUS APPELLE ! 🌵🐎 | Red Dead Redemption 2 – Mode Histoire 🇫🇷",
-    "depuis": "2026-11-06T13:11:44Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -1000,7 +988,7 @@
    "staff": false,
    "depuis": "2026-10-16",
    "live": {
-    "viewers": 2,
+    "viewers": 4,
     "jeu": "R.E.P.O.",
     "titre": "Des cosmétiques ou un sort ! C'est REPOWEEN :3",
     "depuis": "2026-11-06T14:57:42Z",
@@ -1117,5 +1105,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-06T15:07:14.870Z"
+ "maj": "2026-11-06T16:07:14.750Z"
 }
