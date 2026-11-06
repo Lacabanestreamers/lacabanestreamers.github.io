@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1971,
+  "heuresLive30": 1973,
   "followsGagnes30": 348,
   "periode": {
    "du": "2026-10-07",
@@ -43,9 +43,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 15,
-    "jeu": "AION 2",
-    "titre": "✨Go l'aventure🔥",
+    "viewers": 12,
+    "jeu": "Silver Service",
+    "titre": "✨soirée chill🔥",
     "depuis": "2026-11-06T13:32:03Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
    },
@@ -281,7 +281,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 1,
+    "viewers": 3,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "[FF14 Online] On entame Stormblood !",
     "depuis": "2026-11-06T18:55:27Z",
@@ -704,7 +704,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 10,
+    "viewers": 9,
     "jeu": "Phasmophobia",
     "titre": "Phasmo en déténte, go se faire Calo'ed - Ft @calo_vt !lurk !discord",
     "depuis": "2026-11-06T16:28:28Z",
@@ -849,7 +849,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 6,
     "jeu": "Moonlight Peaks",
     "titre": "[FR] Je continue l'aventure d'Halloween 🦇⚰️ | Moonlight Peaks | !discord !commandes",
     "depuis": "2026-11-06T17:00:53Z",
@@ -978,7 +978,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 6,
     "jeu": "The Dark Pictures Anthology: House of Ashes",
     "titre": "C'est parti pour les frissons | Ep 1 !discord",
     "depuis": "2026-11-06T17:48:18Z",
@@ -1048,7 +1048,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 12,
+    "viewers": 13,
     "jeu": "Mimic Busters",
     "titre": "It's MIMIC TIME!",
     "depuis": "2026-11-06T16:22:33Z",
@@ -1149,5 +1149,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-06T18:57:40.572Z"
+ "maj": "2026-11-06T19:07:14.218Z"
 }
