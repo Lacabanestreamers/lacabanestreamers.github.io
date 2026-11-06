@@ -8,10 +8,10 @@
   "affilies": 41,
   "nouveaux30": 22,
   "heuresLive30": 1927,
-  "followsGagnes30": 336,
+  "followsGagnes30": 337,
   "periode": {
    "du": "2026-10-07",
-   "au": "2026-11-05"
+   "au": "2026-11-06"
   }
  },
  "agenda": [],
@@ -268,7 +268,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "FINAL FANTASY XIV ONLINE",
+    "titre": "[FF14 Online] On entame Stormblood !",
+    "depuis": "2026-11-06T07:53:34Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -307,8 +313,8 @@
     "Minecraft",
     "Splatoon 3",
     "The Survivalists",
-    "Sprout Valley",
-    "Tomodachi Life: Living the Dream"
+    "Tomodachi Life: Living the Dream",
+    "Sprout Valley"
    ],
    "clip": {
     "url": "https://www.twitch.tv/elegaming__/clip/GeniusSmellyScorpionKreygasm-QMELzvnWWg4yDcpl",
@@ -402,10 +408,10 @@
    "succes": [],
    "jeux": [
     "R.E.P.O.",
-    "Abiotic Factor",
     "Shift at Midnight",
     "Forever Ago",
-    "Writing & Reading"
+    "Writing & Reading",
+    "Abiotic Factor"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/FantasticSquareOwlDxAbomb-tVBnnuEI3goDObf7",
@@ -498,7 +504,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Art",
+    "titre": "✦ OC CHALLENGE ✦ GALAXIIIIE ! | Dessinons dans les étoiles ! | C'est vendredi, courage à tous !| !artchallenges !catfanart !liens",
+    "depuis": "2026-11-06T07:08:07Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
+   },
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -603,7 +615,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "FINAL FANTASY XIV ONLINE",
+    "titre": "🔞On chill ce matin. Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-06T07:44:46Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -619,8 +637,8 @@
    ],
    "jeux": [
     "R.E.P.O.",
-    "Dead by Daylight",
     "7 Days to Die",
+    "Dead by Daylight",
     "Tomb Raider",
     "AION 2"
    ],
@@ -751,13 +769,19 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "Aniimo",
+    "titre": "Des aniimos tout doux, une ambiance chill, dépêche toi !!  !discord !regles !don",
+    "depuis": "2026-11-06T07:49:39Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
     "Poppy Playtime: Chapter 3 - Deep Sleep",
-    "Aniimo",
     "The Baby In Yellow",
+    "Aniimo",
     "Stardew Valley",
     "Welcome to Elderfield"
    ],
@@ -785,8 +809,8 @@
     "Just Chatting",
     "No Man's Sky",
     "Rocket League",
-    "Nine Sols",
-    "Clair Obscur: Expedition 33"
+    "Clair Obscur: Expedition 33",
+    "Fall Guys"
    ],
    "clip": null
   },
@@ -837,7 +861,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "American Truck Simulator",
+    "titre": "Bonjour, retour en livraison USA !!!",
+    "depuis": "2026-11-06T07:46:50Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1067,7 +1097,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "the Berlin Apartment",
+    "titre": "Venez découvrir la vie des voisins ! #1 | !tiktok | !Discord | !clip |",
+    "depuis": "2026-11-06T07:58:38Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zeylta-440x248.jpg"
+   },
    "premierStream": "2026-01-31",
    "succes": [],
    "jeux": [
@@ -1093,5 +1129,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-06T02:07:21.372Z"
+ "maj": "2026-11-06T08:07:13.569Z"
 }
