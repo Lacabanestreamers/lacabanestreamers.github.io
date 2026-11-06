@@ -1,18 +1,18 @@
 /* Pages annexes de la vitrine (confidentialité, conditions d'utilisation, 404) : mêmes couleurs que vitrine/index.html */
 :root{
-  --bg:#100B24; --panel:#18123A; --line:#2E2663; --text:#ECE9FF; --muted:#A59FD3;
-  --cyan:#3DE3FF; --pink:#FF4FD8;
+  --bg:#120d24; --panel:#1c1640; --line:#3b2f72; --text:#f0edfb; --muted:#b0a5da;
+  --cyan:#3fe0da; --pink:#a66bff; --magenta:#ff5aa0;
   color-scheme:dark;
 }
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);font:500 17px/1.55 Rajdhani,"Segoe UI",system-ui,sans-serif;min-height:100vh;
-  background-image:radial-gradient(900px 500px at 12% -10%, rgba(255,79,216,.20), transparent 60%),radial-gradient(900px 600px at 100% 0%, rgba(61,227,255,.12), transparent 60%);background-attachment:fixed}
+  background-image:radial-gradient(900px 500px at 12% -10%, rgba(166,107,255,.20), transparent 60%),radial-gradient(900px 600px at 100% 0%, rgba(61,227,255,.12), transparent 60%);background-attachment:fixed}
 a{color:var(--cyan)}
 :focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:6px}
 .wrap{max-width:820px;margin:0 auto;padding:0 20px}
 header{padding:48px 0 18px}
 .back{display:inline-block;margin-bottom:18px;font-weight:700;text-decoration:none}
-h1{font:800 clamp(30px,6vw,48px)/1.1 Orbitron,sans-serif;margin:0;letter-spacing:.02em;overflow-wrap:anywhere;text-shadow:0 0 18px rgba(255,79,216,.65),0 0 44px rgba(255,79,216,.25)}
+h1{font:800 clamp(30px,6vw,48px)/1.1 Orbitron,sans-serif;margin:0;letter-spacing:.02em;overflow-wrap:anywhere;text-shadow:0 0 18px rgba(166,107,255,.65),0 0 44px rgba(166,107,255,.25)}
 .maj{color:var(--muted);margin:12px 0 0}
 main{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:8px 26px 22px}
 h2{font:700 19px/1.25 Orbitron,sans-serif;margin:26px 0 10px;color:var(--text)}
