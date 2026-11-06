@@ -7,8 +7,8 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1944,
-  "followsGagnes30": 337,
+  "heuresLive30": 1946,
+  "followsGagnes30": 338,
   "periode": {
    "du": "2026-10-07",
    "au": "2026-11-06"
@@ -603,13 +603,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 10,
-    "jeu": "FINAL FANTASY XIV ONLINE",
-    "titre": "🔞On chill ce matin. Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
-    "depuis": "2026-11-06T07:44:46Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -627,8 +621,8 @@
     "R.E.P.O.",
     "7 Days to Die",
     "Dead by Daylight",
-    "Tomb Raider",
-    "FINAL FANTASY XIV ONLINE"
+    "FINAL FANTASY XIV ONLINE",
+    "Tomb Raider"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/YawningBumblingWatermelonPhilosoraptor-YQp2ViXc4PDbJIfb",
@@ -890,7 +884,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 8,
+    "viewers": 9,
     "jeu": "The Sims 4",
     "titre": "THE SIMS 4 [FR] | Défi Bingo 🎲: oui, ici, on aime souffrir ! Qui aura validé le plus de grilles entre @kneline et moi ?| !discord !bingo",
     "depuis": "2026-11-06T08:45:24Z",
@@ -1105,5 +1099,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-06T11:07:19.517Z"
+ "maj": "2026-11-06T12:07:14.713Z"
 }
