@@ -79,7 +79,7 @@
    "clip": {
     "url": "https://www.twitch.tv/asakha/clip/KindRespectfulNightingaleImGlitch-VpVm3rfQ1GfU2UpC",
     "titre": "🎃 R.E.P.O. spécial Halloween : le vrai monstre, c’est notre coordination | avec @Galyssiane, @Sakki",
-    "vues": 4,
+    "vues": 5,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/3c9e1e34-df69-46de-8afc-cfd86a11046f/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-10-31",
     "duree": 30
@@ -130,12 +130,12 @@
     "R.E.P.O."
    ],
    "clip": {
-    "url": "https://www.twitch.tv/aulit42369/clip/ExpensiveTangentialSangChefFrank-dteSzYui5wEwIKBf",
-    "titre": "et voila comment cut un noob",
-    "vues": 6,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/21af5805-9a0b-428e-9362-b73c25e2e699/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-29",
-    "duree": 19
+    "url": "https://www.twitch.tv/aulit42369/clip/SquarePiliableHedgehogNinjaGrumpy-qi1PaTnf6jypreuo",
+    "titre": "2 débiles qui se batte",
+    "vues": 4,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f3c99492-07aa-450e-a0be-50a65ba727e4/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-04",
+    "duree": 12
    }
   },
   {
@@ -155,7 +155,14 @@
     "My Fashion Studio",
     "Stardew Valley"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/bichoune_/clip/WiseExuberantPeachPupper-x8liAlZbgX1pr0my",
+    "titre": "Il a pas aimé pour le slibard",
+    "vues": 2,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cd6e380d-a3b0-430b-a2b8-bfd469674218/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-05",
+    "duree": 36
+   }
   },
   {
    "login": "brastentv",
@@ -304,12 +311,12 @@
     "Tomodachi Life: Living the Dream"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/elegaming__/clip/CaringResoluteTirePJSalt-ZbtiA3OpE5SooGRB",
-    "titre": "Le pierre feuille ciseau le plus interminable",
+    "url": "https://www.twitch.tv/elegaming__/clip/GeniusSmellyScorpionKreygasm-QMELzvnWWg4yDcpl",
+    "titre": "Collisie se décla à Sam",
     "vues": 1,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/eb5d6c3f-af5d-4d57-8817-c7ef03a72b62/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/9a7edd6a-42ac-49c4-b925-73c3cfa7d218/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-04",
-    "duree": 45
+    "duree": 60
    }
   },
   {
@@ -332,7 +339,7 @@
    "clip": {
     "url": "https://www.twitch.tv/emmamarmotte/clip/WonderfulDeterminedBulgogiRaccAttack-qwi3yIHBDeQ8p_lC",
     "titre": "💕 Soirée cosy des marmottes sur DDV 🎮 | !lurk !clip !commandes",
-    "vues": 3,
+    "vues": 4,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/7d3c7848-4b8e-40e5-8438-341cb6b0448a/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-03",
     "duree": 30
@@ -401,11 +408,11 @@
     "Writing & Reading"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/galyssiane/clip/GlamorousFrailMangetoutPraiseIt-WIepE-ODPw3BF9rc",
-    "titre": "WzBot CLIP | Opé découverte sur All Rats On Deck avec @damepioupiou et @aly0806 (by galyssiane)",
-    "vues": 5,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f3eea8d3-ae41-4b7f-bc83-46615416a8fa/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-29",
+    "url": "https://www.twitch.tv/galyssiane/clip/FantasticSquareOwlDxAbomb-tVBnnuEI3goDObf7",
+    "titre": "WzBot CLIP | Live Halloween avec @sakkiel et les copains! <3 (j'ai eu un p'tit accident  (by galyssi",
+    "vues": 2,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/53a2af8d-486c-4fd3-8e67-4101d0e3560f/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-10-31",
     "duree": 60
    }
   },
@@ -450,7 +457,7 @@
    "clip": {
     "url": "https://www.twitch.tv/hyroshimaeu/clip/CourteousSmoothEmuPeanutButterJellyTime-c3NFhHbmfvetZJ13",
     "titre": "Vengeance driftée",
-    "vues": 7,
+    "vues": 8,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5cf5b319-dcb2-4df7-a9e4-7431413d7441/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-03",
     "duree": 30
@@ -618,12 +625,12 @@
     "AION 2"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/lilyth_minerva/clip/WrongTenderGoatFloof-tjuaUgyz6Syi5cM3",
-    "titre": "les atchoum les plus mignons du monde",
+    "url": "https://www.twitch.tv/lilyth_minerva/clip/YawningBumblingWatermelonPhilosoraptor-YQp2ViXc4PDbJIfb",
+    "titre": "🔞Kitsune Bazard Show + Live 500 Follows  !!  Entre papote et éclat de fun!! / !discord !clip !kitsu",
     "vues": 2,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/22c4a45c-4103-48c7-805d-86c981a7a919/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-29",
-    "duree": 13
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/3cfd2a56-c261-4d61-b148-3dead09768e9/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-03",
+    "duree": 30
    }
   },
   {
@@ -683,11 +690,11 @@
     "The Exit 8"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/lylu_live/clip/AdorablePrettiestGullSquadGoals-lHzhclAk3l___Ctr",
-    "titre": "WzBot CLIP | PHASMOOOO - Ft @louisiana_rolleta !discord (by shama_as)",
-    "vues": 5,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e0b0d58a-dc57-44ac-b356-fbb2e8a7c0d6/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-29",
+    "url": "https://www.twitch.tv/lylu_live/clip/NurturingSuperOryxTTours-UK5ZwThQArGSmVUF",
+    "titre": "la gamine",
+    "vues": 3,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/4c26fdbc-6734-4c65-abd2-28eea303ae09/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-03",
     "duree": 60
    }
   },
@@ -755,12 +762,12 @@
     "Welcome to Elderfield"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/melpastelplay/clip/CuriousFrigidTaroDAESuppy-PwcJRNVmLeNXvCP0",
-    "titre": "BOUUUUUHHHHH",
-    "vues": 6,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/265b7038-b63c-4b44-9748-6e453499982c/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-10-29",
-    "duree": 20
+    "url": "https://www.twitch.tv/melpastelplay/clip/VainDistinctEelGingerPower-rOuqwvGfbIkOiF5F",
+    "titre": "c le gros bb",
+    "vues": 4,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/18e3f165-2b23-453a-be0f-a4e6e96e7192/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-01",
+    "duree": 30
    }
   },
   {
@@ -1086,5 +1093,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-06T01:07:14.658Z"
+ "maj": "2026-11-06T02:07:21.372Z"
 }
