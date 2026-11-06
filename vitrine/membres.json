@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1956,
+  "heuresLive30": 1958,
   "followsGagnes30": 338,
   "periode": {
    "du": "2026-10-07",
@@ -685,7 +685,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Phasmophobia",
+    "titre": "Phasmo en déténte, go se faire Calo'ed - Ft @calo_vt !lurk !discord",
+    "depuis": "2026-11-06T16:28:28Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
+   },
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
@@ -824,7 +830,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Moonlight Peaks",
+    "titre": "[FR] Je continue l'aventure d'Halloween 🦇⚰️ | Moonlight Peaks | !discord !commandes",
+    "depuis": "2026-11-06T17:00:53Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
+   },
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -989,8 +1001,8 @@
    "depuis": "2026-10-16",
    "live": {
     "viewers": 4,
-    "jeu": "R.E.P.O.",
-    "titre": "Des cosmétiques ou un sort ! C'est REPOWEEN :3",
+    "jeu": "PEAK",
+    "titre": "Rinka la scout escalade des sommets :3",
     "depuis": "2026-11-06T14:57:42Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rinka_henbyou-440x248.jpg"
    },
@@ -1009,7 +1021,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "The First Pixel",
+    "titre": "Session test avant la soirée! #TheFirstPixel #keymailer",
+    "depuis": "2026-11-06T16:22:33Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [
     {
@@ -1105,5 +1123,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-06T16:07:14.750Z"
+ "maj": "2026-11-06T17:07:17.361Z"
 }
