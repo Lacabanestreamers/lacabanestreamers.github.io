@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1982,
+  "heuresLive30": 1983,
   "followsGagnes30": 336,
   "periode": {
    "du": "2026-10-08",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 6,
+    "viewers": 8,
     "jeu": "Rocket League",
     "titre": "Rocket League/PS5",
     "depuis": "2026-11-06T22:11:03Z",
@@ -48,13 +48,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 8,
-    "jeu": "Silver Service",
-    "titre": "✨soirée chill🔥",
-    "depuis": "2026-11-06T13:32:03Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -451,7 +445,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
+    "viewers": 11,
     "jeu": "R.E.P.O.",
     "titre": "FR_VT - J-12 du Choupiathon !!! Soirée Collab sur R.E.P.O",
     "depuis": "2026-11-06T19:15:32Z",
@@ -562,7 +556,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 2,
+    "viewers": 4,
     "jeu": "VALORANT",
     "titre": "ON A TOUCHÉ LE FOND… OBJECTIF REMONTÉE ! 📈",
     "depuis": "2026-11-06T17:12:40Z",
@@ -1131,5 +1125,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-06T22:59:34.670Z"
+ "maj": "2026-11-06T23:07:12.221Z"
 }
