@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1939,
+  "heuresLive30": 1944,
   "followsGagnes30": 337,
   "periode": {
    "du": "2026-10-07",
@@ -268,13 +268,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": {
-    "viewers": 3,
-    "jeu": "FINAL FANTASY XIV ONLINE",
-    "titre": "[FF14 Online] On entame Stormblood !",
-    "depuis": "2026-11-06T07:53:34Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -504,13 +498,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 16,
-    "jeu": "Art",
-    "titre": "✦ OC CHALLENGE ✦ GALAXIIIIE ! | Dessinons dans les étoiles ! | C'est vendredi, courage à tous !| !artchallenges !catfanart !liens",
-    "depuis": "2026-11-06T07:08:07Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -769,20 +757,14 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": {
-    "viewers": 7,
-    "jeu": "Stardew Valley",
-    "titre": "A la recherche de noix dans Stardew … rejoins nous , dépêche toi !!  !discord !regles !don",
-    "depuis": "2026-11-06T07:49:39Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
     "Poppy Playtime: Chapter 3 - Deep Sleep",
+    "Stardew Valley",
     "The Baby In Yellow",
     "Aniimo",
-    "Stardew Valley",
     "Welcome to Elderfield"
    ],
    "clip": {
@@ -908,7 +890,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 7,
+    "viewers": 8,
     "jeu": "The Sims 4",
     "titre": "THE SIMS 4 [FR] | Défi Bingo 🎲: oui, ici, on aime souffrir ! Qui aura validé le plus de grilles entre @kneline et moi ?| !discord !bingo",
     "depuis": "2026-11-06T08:45:24Z",
@@ -1123,5 +1105,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-06T10:07:13.897Z"
+ "maj": "2026-11-06T11:07:19.517Z"
 }
