@@ -7,10 +7,10 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1958,
-  "followsGagnes30": 338,
+  "heuresLive30": 1975,
+  "followsGagnes30": 336,
   "periode": {
-   "du": "2026-10-07",
+   "du": "2026-10-08",
    "au": "2026-11-06"
   }
  },
@@ -43,9 +43,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
-    "jeu": "Just Chatting",
-    "titre": "✨Go l'aventure🔥",
+    "viewers": 9,
+    "jeu": "Silver Service",
+    "titre": "✨soirée chill🔥",
     "depuis": "2026-11-06T13:32:03Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
    },
@@ -55,8 +55,8 @@
     "Outbound",
     "R.E.P.O.",
     "Just Chatting",
-    "DEVOUR",
-    "Silver Service"
+    "Silver Service",
+    "DEVOUR"
    ],
    "clip": {
     "url": "https://www.twitch.tv/aly0806/clip/AgileGiantVultureWoofer-50NOiTPOI3zIC7wv",
@@ -254,8 +254,8 @@
     "Dead by Daylight",
     "Raft",
     "Rise of the Tomb Raider",
-    "Librarian: Tidy Up the Arcane Library!",
-    "Sort The Bunnies"
+    "Sort The Bunnies",
+    "Librarian: Tidy Up the Arcane Library!"
    ],
    "clip": {
     "url": "https://www.twitch.tv/cristal578/clip/SingleEntertainingEelFloof-zHHG11Y6cOyHM_d0",
@@ -300,7 +300,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Minecraft",
+    "titre": "🏹MC Be ~ 🏕On va taper le dragon avec les coupings ! - !réseaux",
+    "depuis": "2026-11-06T19:42:27Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -444,7 +450,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "R.E.P.O.",
+    "titre": "FR_VT - J-12 du Choupiathon !!! Soirée Collab sur R.E.P.O",
+    "depuis": "2026-11-06T19:15:32Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -549,7 +561,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "VALORANT",
+    "titre": "ON A TOUCHÉ LE FOND… OBJECTIF REMONTÉE ! 📈",
+    "depuis": "2026-11-06T17:12:40Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -647,7 +665,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Call of Duty: Modern Warfare 4",
+    "titre": "On découvre Warzone ensemble… La victoire ou le désastre !",
+    "depuis": "2026-11-06T20:21:44Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
+   },
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -685,13 +709,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 6,
-    "jeu": "Phasmophobia",
-    "titre": "Phasmo en déténte, go se faire Calo'ed - Ft @calo_vt !lurk !discord",
-    "depuis": "2026-11-06T16:28:28Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
@@ -810,7 +828,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "The Sims 4",
+    "titre": "[FR] ~ Sims 4 - Rénovation des Mondes - Sulani #16 ~",
+    "depuis": "2026-11-06T19:54:21Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
+   },
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -830,18 +854,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 2,
-    "jeu": "Moonlight Peaks",
-    "titre": "[FR] Je continue l'aventure d'Halloween 🦇⚰️ | Moonlight Peaks | !discord !commandes",
-    "depuis": "2026-11-06T17:00:53Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
-    "Disney Dreamlight Valley",
     "Moonlight Peaks",
+    "Disney Dreamlight Valley",
     "Art",
     "R.E.P.O."
    ],
@@ -903,7 +921,13 @@
    "depuis": "2026-09-26",
    "live": null,
    "premierStream": "2025-09-10",
-   "succes": [],
+   "succes": [
+    {
+     "type": "palier",
+     "palier": 200,
+     "date": "2026-11-06"
+    }
+   ],
    "jeux": [
     "The Sims 4",
     "Animal Crossing: New Horizons",
@@ -958,6 +982,7 @@
    "succes": [],
    "jeux": [
     "The Witcher 3: Wild Hunt Remastered",
+    "The Dark Pictures Anthology: House of Ashes",
     "Just Chatting",
     "Pratfall",
     "Split Fiction"
@@ -999,17 +1024,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-16",
-   "live": {
-    "viewers": 4,
-    "jeu": "PEAK",
-    "titre": "Rinka la scout escalade des sommets :3",
-    "depuis": "2026-11-06T14:57:42Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rinka_henbyou-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-06-23",
    "succes": [],
    "jeux": [
-    "R.E.P.O."
+    "R.E.P.O.",
+    "PEAK"
    ],
    "clip": null
   },
@@ -1022,9 +1042,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 8,
-    "jeu": "The First Pixel",
-    "titre": "Session test avant la soirée! #TheFirstPixel #keymailer",
+    "viewers": 7,
+    "jeu": "Mimic Busters",
+    "titre": "It's MIMIC TIME!",
     "depuis": "2026-11-06T16:22:33Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1123,5 +1143,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-06T17:07:17.361Z"
+ "maj": "2026-11-06T22:07:13.836Z"
 }
