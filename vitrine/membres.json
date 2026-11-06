@@ -7,10 +7,10 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1998,
-  "followsGagnes30": 348,
+  "heuresLive30": 1975,
+  "followsGagnes30": 336,
   "periode": {
-   "du": "2026-10-07",
+   "du": "2026-10-08",
    "au": "2026-11-06"
   }
  },
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 9,
     "jeu": "Silver Service",
     "titre": "✨soirée chill🔥",
     "depuis": "2026-11-06T13:32:03Z",
@@ -301,7 +301,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "Minecraft",
     "titre": "🏹MC Be ~ 🏕On va taper le dragon avec les coupings ! - !réseaux",
     "depuis": "2026-11-06T19:42:27Z",
@@ -451,7 +451,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 10,
     "jeu": "R.E.P.O.",
     "titre": "FR_VT - J-12 du Choupiathon !!! Soirée Collab sur R.E.P.O",
     "depuis": "2026-11-06T19:15:32Z",
@@ -562,7 +562,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "VALORANT",
     "titre": "ON A TOUCHÉ LE FOND… OBJECTIF REMONTÉE ! 📈",
     "depuis": "2026-11-06T17:12:40Z",
@@ -709,13 +709,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 2,
-    "jeu": "Phasmophobia",
-    "titre": "Phasmo en déténte, go se faire Calo'ed - Ft @calo_vt !lurk !discord",
-    "depuis": "2026-11-06T16:28:28Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
@@ -835,7 +829,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 4,
     "jeu": "The Sims 4",
     "titre": "[FR] ~ Sims 4 - Rénovation des Mondes - Sulani #16 ~",
     "depuis": "2026-11-06T19:54:21Z",
@@ -983,13 +977,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 7,
-    "jeu": "The Dark Pictures Anthology: House of Ashes",
-    "titre": "C'est parti pour les frissons | Ep 1 !discord",
-    "depuis": "2026-11-06T17:48:18Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_r3skyo-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2023-03-23",
    "succes": [],
    "jeux": [
@@ -1054,7 +1042,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 9,
+    "viewers": 7,
     "jeu": "Mimic Busters",
     "titre": "It's MIMIC TIME!",
     "depuis": "2026-11-06T16:22:33Z",
@@ -1155,5 +1143,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-06T21:07:15.425Z"
+ "maj": "2026-11-06T22:07:13.836Z"
 }
