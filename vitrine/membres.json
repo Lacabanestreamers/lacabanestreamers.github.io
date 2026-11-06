@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1922,
+  "heuresLive30": 1926,
   "followsGagnes30": 336,
   "periode": {
    "du": "2026-10-07",
@@ -464,13 +464,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-20",
-   "live": {
-    "viewers": 9,
-    "jeu": "Leaf it Alone",
-    "titre": "on ramasse des feuilles 🍂",
-    "depuis": "2026-11-05T20:28:31Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kialigator-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-30",
    "succes": [],
    "jeux": [
@@ -523,7 +517,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 11,
+    "viewers": 13,
     "jeu": "Just Chatting",
     "titre": "RÉACT🍿 : Suite de 90 Day Fiancé / 3 mois pour se marier, avec des couples très spéciaux ✨| React émission & docus",
     "depuis": "2026-11-05T20:16:06Z",
@@ -548,13 +542,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 4,
-    "jeu": "VALORANT",
-    "titre": "RADIANT DANS LA TÊTE, FER DANS LA RÉALITÉ 😂",
-    "depuis": "2026-11-05T20:00:48Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -1008,13 +996,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": {
-    "viewers": 9,
-    "jeu": "Ramen Shop Simulator",
-    "titre": "On fait des ramens! #ramenshopsim #keymailer",
-    "depuis": "2026-11-05T12:49:09Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [
     {
@@ -1110,5 +1092,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-05T23:07:15.643Z"
+ "maj": "2026-11-06T00:07:16.929Z"
 }
