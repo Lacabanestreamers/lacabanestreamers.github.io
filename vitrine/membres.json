@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1958,
+  "heuresLive30": 1963,
   "followsGagnes30": 338,
   "periode": {
    "du": "2026-10-07",
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 13,
     "jeu": "Just Chatting",
     "titre": "✨Go l'aventure🔥",
     "depuis": "2026-11-06T13:32:03Z",
@@ -549,7 +549,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "VALORANT",
+    "titre": "ON A TOUCHÉ LE FOND… OBJECTIF REMONTÉE ! 📈",
+    "depuis": "2026-11-06T17:12:40Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -686,7 +692,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "Phasmophobia",
     "titre": "Phasmo en déténte, go se faire Calo'ed - Ft @calo_vt !lurk !discord",
     "depuis": "2026-11-06T16:28:28Z",
@@ -831,7 +837,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 5,
     "jeu": "Moonlight Peaks",
     "titre": "[FR] Je continue l'aventure d'Halloween 🦇⚰️ | Moonlight Peaks | !discord !commandes",
     "depuis": "2026-11-06T17:00:53Z",
@@ -1000,7 +1006,7 @@
    "staff": false,
    "depuis": "2026-10-16",
    "live": {
-    "viewers": 4,
+    "viewers": 3,
     "jeu": "PEAK",
     "titre": "Rinka la scout escalade des sommets :3",
     "depuis": "2026-11-06T14:57:42Z",
@@ -1009,7 +1015,8 @@
    "premierStream": "2025-06-23",
    "succes": [],
    "jeux": [
-    "R.E.P.O."
+    "R.E.P.O.",
+    "PEAK"
    ],
    "clip": null
   },
@@ -1022,7 +1029,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 8,
+    "viewers": 9,
     "jeu": "The First Pixel",
     "titre": "Session test avant la soirée! #TheFirstPixel #keymailer",
     "depuis": "2026-11-06T16:22:33Z",
@@ -1123,5 +1130,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-06T17:07:17.361Z"
+ "maj": "2026-11-06T17:24:21.447Z"
 }
