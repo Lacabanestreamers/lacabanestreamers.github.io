@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1995,
+  "heuresLive30": 1996,
   "followsGagnes30": 336,
   "periode": {
    "du": "2026-10-08",
@@ -823,13 +823,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "World of Warcraft",
-    "titre": "Bonjour, je continue de up mon druide !!!",
-    "depuis": "2026-11-07T03:09:16Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1093,5 +1087,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-07T06:07:13.874Z"
+ "maj": "2026-11-07T07:07:17.736Z"
 }
