@@ -255,11 +255,14 @@ details.pli,#sante,#appli{scroll-margin-top:90px}
 .gauge .gbar i{display:block;height:100%;background:var(--cyan)} .gauge .gbar i.ok{background:var(--ok)}
 .gauge .v{text-align:right;font-variant-numeric:tabular-nums}
 /* Tableau de bord */
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:16px}
-.kpi{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px}
-.kpi b{display:block;font:800 26px/1.1 Orbitron,sans-serif;margin-top:4px}
-.kpi span{color:var(--muted);font-size:14px;font-weight:600}
-.kpi small{display:block;color:var(--muted);font-size:13px;margin-top:2px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(176px,1fr));gap:12px;margin-bottom:18px}
+.kpi{position:relative;background:linear-gradient(180deg,color-mix(in srgb,var(--pink) 6%,var(--panel)),var(--panel));border:1px solid var(--line);padding:15px 16px 13px;overflow:hidden;
+  clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px))}
+.kpi::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,var(--pink),var(--cyan))}
+.kpi span{font:500 11px/1.3 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.kpi b{display:block;font:800 italic 30px/1 Orbitron,sans-serif;margin-top:7px;color:var(--text)}
+.kpi small{display:block;color:var(--muted);font-size:12.5px;line-height:1.35;margin-top:5px}
+.kpi .up{color:var(--ok)} .kpi .down{color:var(--ko)}
 .charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:14px}
 .chart{width:100%;height:auto;display:block}
 .chart .ax{stroke:var(--line);stroke-width:1} .chart text{fill:var(--muted);font:600 11px Rajdhani,sans-serif}
