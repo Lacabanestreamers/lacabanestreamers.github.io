@@ -150,9 +150,14 @@ function _render(){
     ${PAGE==="rejoindre" && d.rejoindre?.texte ? `<section aria-labelledby="h-rej"><div class="rejoindre"><h2 id="h-rej" style="margin-top:0">${esc(d.rejoindre.titre || "Rejoindre La Cabane")}</h2><p>${esc(d.rejoindre.texte)}</p>
       <p class="rgpd">En rejoignant La Cabane, ta chaîne apparaît par défaut sur cette vitrine : pseudo, image de profil, bio et statut Twitch, lives en cours, clip de la semaine, date d'arrivée et réussites. Tu peux demander à tout moment à ne pas y figurer (au staff ou à aulit42369@gmail.com). Détails dans la page <a href="confidentialite.html">Confidentialité</a>.</p>
       ${/^https:\/\/(discord\.gg|discord\.com\/invite)\//i.test(d.lienDiscord || "") ? `<a class="btn" href="${esc(d.lienDiscord)}" target="_blank" rel="noopener">Rejoindre le Discord</a>` : ""}</div></section>` : ""}`;
+  // état vide par page (sinon #main resterait sur « Chargement… » quand aucune section ne sort)
+  const vide = !html.trim();
+  const sortie = vide
+    ? `<p class="empty">${PAGE === "agenda" ? "Aucun événement ni anniversaire à venir pour l'instant. Reviens bientôt !" : PAGE === "rejoindre" ? "Les informations pour nous rejoindre arrivent bientôt." : "Rien à afficher pour le moment."}</p>`
+    : html;
   // rafraîchissement sans changement (toutes les 2 à 5 min) : rien n'est reconstruit (pas de clignotement des images)
-  const change = html !== dernierHtml;
-  if(change){ main.innerHTML = html; dernierHtml = html; }
+  const change = sortie !== dernierHtml;
+  if(change){ main.innerHTML = sortie; dernierHtml = sortie; }
   // ?ev= : la page s'ouvre sur l'événement. Les premiers rafraîchissements (live vérifié en direct) peuvent changer la hauteur
   // de ce qui est au-dessus : on se recale pendant quelques secondes, sauf si la personne a déjà fait défiler elle-même.
   if(evParam){ const el = evTrouve ? document.getElementById("ev-" + evParam) : $("#h-evts");
