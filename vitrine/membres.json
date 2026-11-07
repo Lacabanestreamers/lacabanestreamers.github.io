@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 9,
     "jeu": "7 Days to Die",
     "titre": "✨Go avec les copain taper du zombies🔥",
     "depuis": "2026-11-07T20:16:53Z",
@@ -126,7 +126,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 9,
     "jeu": "Mimic Busters",
     "titre": "Grand tatanage de zombies sur la nouvelle V3.4, session survie en multi avec la team 🧟‍♂️",
     "depuis": "2026-11-07T19:50:37Z",
@@ -312,7 +312,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Minecraft",
     "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings ! - !réseaux",
     "depuis": "2026-11-07T18:08:17Z",
@@ -421,7 +421,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 20,
+    "viewers": 12,
     "jeu": "7 Days to Die",
     "titre": "7 Days to die : Des zombies, des décès, et et des évènements impromptus avec les copains ! <3",
     "depuis": "2026-11-07T19:50:20Z",
@@ -468,7 +468,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 6,
     "jeu": "Super Meat Boy",
     "titre": "FR_VT - J-13 du Choupiathon !!!Go se partager la manette",
     "depuis": "2026-11-07T19:39:16Z",
@@ -1144,5 +1144,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-07T20:47:57.544Z"
+ "maj": "2026-11-07T21:07:14.762Z"
 }
