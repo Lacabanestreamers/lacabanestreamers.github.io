@@ -153,29 +153,39 @@ test("aucune adresse de webhook Discord complète dans le site publié (lot A)",
   assert.ok(fichiers.length > 50);
   for (const f of fichiers) assert.doesNotMatch(lire(f), re, "webhook en clair dans " + f);
 });
-test("vitrine/index.html : titre, description, canonical, indexable, protections d'affichage", () => {
-  const v = lire("vitrine/index.html");
-  assert.match(v, /<title>[^<]{10,}<\/title>/);
-  assert.match(v, /<meta name="description" content="[^"]{50,}"/);
-  assert.match(v, /<link rel="canonical" href="https:\/\/lacabanestreamers\.github\.io\/vitrine\/">/);
-  assert.match(v, /const esc = v => String\(v \?\? ""\)\.replace\(\/\[&<>"'\]\/g/);
-  assert.match(v, /const okLogin = /);
-  assert.match(v, /const okImg = /);
-  assert.doesNotMatch(v, /\beval\(|document\.write\(/);
-  assert.doesNotMatch(v, /<meta name="robots" content="[^"]*noindex/, "la vitrine doit rester indexable");
+test("vitrine : 4 pages (accueil, streamers, agenda, rejoindre), titre/description/canonical, indexables", () => {
+  const pages = { "index.html": "accueil", "streamers.html": "streamers", "agenda.html": "agenda", "rejoindre.html": "rejoindre" };
+  for (const [f, page] of Object.entries(pages)) {
+    const v = lire("vitrine/" + f);
+    assert.match(v, /<title>[^<]{10,}<\/title>/, f);
+    assert.match(v, /<meta name="description" content="[^"]{50,}"/, f);
+    assert.match(v, /<link rel="canonical" href="https:\/\/lacabanestreamers\.github\.io\/vitrine\//, f);
+    assert.match(v, new RegExp(`<body data-page="${page}">`), f);
+    assert.match(v, /<script src="app\.js\?v=\d+">/, f);                     // script externe partagé (plus d'inline)
+    assert.match(v, /<a class="vbrand"[\s\S]*?Nos streamers[\s\S]*?Agenda[\s\S]*?Rejoindre/, `${f} : barre de navigation des 4 pages`);
+    assert.doesNotMatch(v, /<meta name="robots" content="[^"]*noindex/, `${f} : la vitrine doit rester indexable`);
+  }
 });
-test("CSP de la vitrine : empreinte du script en ligne à jour, pas d'unsafe-eval ni de script en ligne non couvert", () => {
-  const v = lire("vitrine/index.html");
-  const csp = v.match(/Content-Security-Policy" content="([^"]+)"/)[1];
-  const scripts = [...v.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m => m[1]);
-  assert.equal(scripts.length, 1);
-  const lf = scripts[0].replace(/\r\n/g, "\n");   // le navigateur normalise les fins de ligne avant l'empreinte
-  assert.ok(csp.includes(`'sha256-${createHash("sha256").update(lf).digest("base64")}'`), "l'empreinte du script de la vitrine a changé");
-  assert.doesNotMatch(csp, /script-src[^;]*unsafe-/);
-  assert.match(csp, /object-src 'none'/);
+test("vitrine/app.js : protections d'affichage (esc, okLogin, okImg, pas d'eval ni document.write)", () => {
+  const a = lire("vitrine/app.js");
+  assert.match(a, /const esc = v => String\(v \?\? ""\)\.replace\(\/\[&<>"'\]\/g/);
+  assert.match(a, /const okLogin = /);
+  assert.match(a, /const okImg = /);
+  assert.doesNotMatch(a, /\beval\(|document\.write\(/);
+});
+test("CSP de la vitrine : script externe app.js, aucun script en ligne exécutable, pas d'unsafe-", () => {
+  for (const f of ["index.html", "streamers.html", "agenda.html", "rejoindre.html"]) {
+    const v = lire("vitrine/" + f);
+    const csp = v.match(/Content-Security-Policy" content="([^"]+)"/)[1];
+    const inline = [...v.matchAll(/<script(?![^>]*(?:ld\+json|\ssrc=))[^>]*>([\s\S]*?)<\/script>/gi)];
+    assert.equal(inline.length, 0, `${f} ne doit plus avoir de script en ligne`);
+    assert.match(csp, /script-src 'self' https:\/\/gc\.zgo\.at/, f);
+    assert.doesNotMatch(csp, /script-src[^;]*unsafe-/, f);
+    assert.match(csp, /object-src 'none'/, f);
+  }
 });
 test("vitrine : les liens target=_blank portent rel=noopener", () => {
-  for (const f of ["vitrine/index.html", "vitrine/cgu.html", "vitrine/confidentialite.html", "vitrine/mentions-legales.html"]) {
+  for (const f of ["vitrine/index.html", "vitrine/streamers.html", "vitrine/agenda.html", "vitrine/rejoindre.html", "vitrine/cgu.html", "vitrine/confidentialite.html", "vitrine/mentions-legales.html"]) {
     for (const m of lire(f).matchAll(/<a\b[^>]*target="_blank"[^>]*>/g)) assert.match(m[0], /rel="[^"]*noopener/, `${f} : ${m[0].slice(0, 80)}`);
   }
 });
@@ -245,7 +255,7 @@ test("robots.txt : tout autorisé (le noindex de la page staff doit rester lisib
   assert.match(r, /Sitemap: https:\/\/lacabanestreamers\.github\.io\/sitemap\.xml/);
 });
 test("XSS : champs libres jamais injectés bruts dans un gabarit HTML (esc obligatoire)", () => {
-  const fichiers = [...readdirSync(join(racine, "js")).filter(f => f.endsWith(".js")).map(f => "js/" + f), "vitrine/index.html"];
+  const fichiers = [...readdirSync(join(racine, "js")).filter(f => f.endsWith(".js")).map(f => "js/" + f), "vitrine/app.js"];
   const brut = /\$\{\s*[\w.?\[\]]*\.(bio|avatar|titre|description|palier|follows|vignette|apercu|jeu|lien)\s*\}/;
   for (const f of fichiers) lire(f).split("\n").forEach((l, i) => l.includes("<") && assert.doesNotMatch(l, brut, `${f}:${i + 1} interpolation non échappée`));
 });

@@ -21,8 +21,10 @@ Rédigé le 28/10/2026 à partir de `index.html`, `js/*.js`, `vitrine/index.html
 
 ## B. Vitrine (`/vitrine/`, publique, indexée)
 
-1. **Accueil** : en-tête (titre, sous-titre, texte, boutons « Rejoindre le Discord » et « 🎲 Découvrir un streamer », chiffres) → lecture de `membres.json` (rafraîchie toutes les 2 à 5 min, live vérifié toutes les 2 min).
-2. **Sections** (affichées seulement si elles ont du contenu) : En chiffres → En live maintenant → Clips de la semaine → Prochains événements → Anniversaires → Bienvenue aux nouveaux → Nos réussites → Nos streamers (recherche + filtres) → Rejoindre.
+**Structure en 4 pages** (depuis le 07/11/2026) : site multi-pages partageant une barre de navigation (Accueil · Nos streamers · Agenda · Rejoindre), le style `app.css` et le script `app.js`. `app.js` lit `document.body.dataset.page` et n'affiche que les sections de la page courante (une seule base de code, pas de duplication). Chaque page a ses propres `<title>`, description et URL canonique ; toutes dans `sitemap.xml`. Le script est externalisé (`<script src="app.js">`, CSP `script-src 'self'`, plus de hash inline).
+
+1. **Accueil** (`/vitrine/`, `data-page="accueil"`) : en-tête (titre, sous-titre, texte, boutons « Rejoindre le Discord » et « 🎲 Découvrir un streamer ») + **En chiffres → En live maintenant → Clips de la semaine → Bienvenue aux nouveaux → Nos réussites**. Lecture de `membres.json` (rafraîchie toutes les 2 à 5 min, live vérifié toutes les 2 min).
+2. **Nos streamers** (`streamers.html`, `data-page="streamers"`) : l'annuaire complet avec recherche + filtres (Tous / En live / Affiliés et partenaires / Staff) et filtre par jeu. · **Agenda** (`agenda.html`) : Prochains événements → Anniversaires (état vide propre si rien à venir). · **Rejoindre** (`rejoindre.html`) : texte d'accueil, mention RGPD, bouton Discord.
 3. **Page d'un membre** (`?m=<pseudo>`) : avatar, tags, bio, date d'arrivée, bouton Twitch, live en cours, clip, réussites. « ← Tous les streamers » ramène à la liste (navigation sans rechargement, `data-nav`).
 4. **Événement** (`?ev=<id>` ou `vitrine/e/<id>`) : la page défile jusqu'à l'événement et le met en valeur ; « Cet événement est terminé » s'il n'existe plus.
 5. **Je participe** : connexion Twitch (retour par la page staff, renvoyé ici) → envoi `{ev, action, jeton}` au relais Cloudflare → message « demande envoyée » ; le robot l'applique au passage suivant.
