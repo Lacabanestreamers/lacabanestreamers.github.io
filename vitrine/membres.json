@@ -7,8 +7,8 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 2010,
-  "followsGagnes30": 342,
+  "heuresLive30": 2018,
+  "followsGagnes30": 345,
   "periode": {
    "du": "2026-10-08",
    "au": "2026-11-07"
@@ -190,7 +190,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
+    "viewers": 38,
     "jeu": "Planet Zoo 2",
     "titre": "🔥🐘 Le zoo prend enfin vie ! | Suite de la découverte Planet Zoo 👀",
     "depuis": "2026-11-07T09:50:17Z",
@@ -214,7 +214,7 @@
     "The Sims 4",
     "Just Chatting",
     "R.E.P.O.",
-    "Disney Dreamlight Valley"
+    "Planet Zoo 2"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/SavageRamshackleAppleImGlitch-ValstNXqm92c3_Ll",
@@ -247,13 +247,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": {
-    "viewers": 6,
-    "jeu": "Dead by Daylight",
-    "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
-    "depuis": "2026-11-07T08:48:01Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -333,7 +327,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 18,
     "jeu": "Art",
     "titre": "🎨 C'est la FIN !  🖍️  On va y arriver ! 🏆 | !lurk !clip !commandes",
     "depuis": "2026-11-07T09:47:28Z",
@@ -646,7 +640,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 19,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "🔥 LUFFISH GAMING | 🎯 Chasse aux CAMOS – Multi & Warzone | Ça va FRAGUER ! 💀",
     "depuis": "2026-11-07T10:34:46Z",
@@ -716,13 +710,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": {
-    "viewers": 2,
-    "jeu": "Writing & Reading",
-    "titre": "[FR] ⚔️ Plumes, mousquets & intrigues | Session écriture  ~ pomodoro 25/5 !👑",
-    "depuis": "2026-11-07T09:57:26Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mandouee-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-10-23",
    "succes": [],
    "jeux": [
@@ -853,7 +841,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "American Truck Simulator",
+    "titre": "Bonjour, livraison de voiture  !!!",
+    "depuis": "2026-11-07T11:40:50Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -899,13 +893,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 15,
-    "jeu": "The Sims 4",
-    "titre": "THE SIMS 4 [FR] | Episode 15 : Agathe va devoir rattraper le temps perdu et ce faire aimé de son fils... et dramaaa 🏠| !perfectlife !agathe",
-    "depuis": "2026-11-07T08:16:52Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-10",
    "succes": [
     {
@@ -1001,8 +989,8 @@
    "succes": [],
    "jeux": [
     "Cellar Keeper",
-    "Game Market Mayhem",
     "Sort A Lot",
+    "Game Market Mayhem",
     "Dying Light",
     "TCG Card Collection: Tidy Up"
    ],
@@ -1066,13 +1054,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": {
-    "viewers": 11,
-    "jeu": "Cyberpunk 2077",
-    "titre": "🧠[EP:42] CYBERPUNK 2077🧠 !rs !discord !instantgaming",
-    "depuis": "2026-11-07T10:00:56Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-19",
    "succes": [
     {
@@ -1082,8 +1064,8 @@
     }
    ],
    "jeux": [
-    "Grand Theft Auto V",
-    "Cyberpunk 2077"
+    "Cyberpunk 2077",
+    "Grand Theft Auto V"
    ],
    "clip": null
   },
@@ -1135,5 +1117,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-07T11:07:17.761Z"
+ "maj": "2026-11-07T12:07:14.294Z"
 }
