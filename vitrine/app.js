@@ -147,7 +147,7 @@ function _render(){
         ${m.depuis ? `<span class="since">${depuis(m.depuis)}</span>` : ""}
       </a>`).join("")}</div>` : `<p class="empty">Aucun streamer ne correspond.</p>`}
     </section>` : ""}
-    ${PAGE==="rejoindre" && d.rejoindre?.texte ? `<section aria-labelledby="h-rej"><div class="rejoindre"><h2 id="h-rej" style="margin-top:0">${esc(d.rejoindre.titre || "Rejoindre La Cabane")}</h2><p>${esc(d.rejoindre.texte)}</p>
+    ${PAGE==="rejoindre" ? `<section aria-labelledby="h-rej"><div class="rejoindre"><h2 id="h-rej" style="margin-top:0">${esc(d.rejoindre?.titre || "Rejoindre La Cabane")}</h2><p>${esc(d.rejoindre?.texte || d.texte || "La Cabane est une communauté d'entraide et de motivation entre streamers francophones. Envie d'en faire partie ? Rejoins-nous sur Discord ou écris au staff — on t'explique tout.")}</p>
       <p class="rgpd">En rejoignant La Cabane, ta chaîne apparaît par défaut sur cette vitrine : pseudo, image de profil, bio et statut Twitch, lives en cours, clip de la semaine, date d'arrivée et réussites. Tu peux demander à tout moment à ne pas y figurer (au staff ou à aulit42369@gmail.com). Détails dans la page <a href="confidentialite.html">Confidentialité</a>.</p>
       ${/^https:\/\/(discord\.gg|discord\.com\/invite)\//i.test(d.lienDiscord || "") ? `<a class="btn" href="${esc(d.lienDiscord)}" target="_blank" rel="noopener">Rejoindre le Discord</a>` : ""}</div></section>` : ""}`;
   // état vide par page (sinon #main resterait sur « Chargement… » quand aucune section ne sort)
