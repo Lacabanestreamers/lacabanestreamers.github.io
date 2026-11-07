@@ -4,10 +4,10 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 45,
-  "affilies": 41,
-  "nouveaux30": 22,
-  "heuresLive30": 2029,
+  "membres": 46,
+  "affilies": 42,
+  "nouveaux30": 23,
+  "heuresLive30": 2033,
   "followsGagnes30": 345,
   "periode": {
    "du": "2026-10-08",
@@ -529,7 +529,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "VALORANT",
+    "titre": "ON A TOUCHÉ LE FOND… OBJECTIF REMONTÉE ! 📈",
+    "depuis": "2026-11-07T14:23:54Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -557,7 +563,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "Dead Space 2",
     "titre": "🐰Oust les aliens",
     "depuis": "2026-11-07T13:00:30Z",
@@ -634,7 +640,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 11,
+    "viewers": 4,
     "jeu": "Rocket League",
     "titre": "On va chercher le C2 sur RL",
     "depuis": "2026-11-07T10:34:46Z",
@@ -818,7 +824,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 9,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] J-12 DLC 4 | Je termine le musée d'Olaf & farming ☃️✨ | Disney Dreamlight Valley | !discord !commandes",
     "depuis": "2026-11-07T14:00:49Z",
@@ -827,8 +833,8 @@
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
-    "Moonlight Peaks",
     "Disney Dreamlight Valley",
+    "Moonlight Peaks",
     "Art",
     "R.E.P.O."
    ],
@@ -974,7 +980,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 3,
+    "viewers": 5,
     "jeu": "The Cozy Board Game Shop: Tidy Up",
     "titre": "The Cozy Board Game Shop on range les jeux de sociétés",
     "depuis": "2026-11-07T13:33:51Z",
@@ -1065,6 +1071,20 @@
    "clip": null
   },
   {
+   "login": "unoceandedouceur",
+   "nom": "unoceandedouceur",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0dee2fe5-5fbe-4dbb-b3bf-4c1b75587740-profile_image-300x300.png",
+   "bio": "Salut à toutes et à tous, moi c'est Unoceandedouceur et ici tu trouveras principalement des jeux cosy. N'hésite pas à venir passer un petit moment de douceur avec moi :) Tout le monde est le/la bienvenue ici alors installe-toi 🎮Mail : unoceandedouceurpro@gmail.com",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-11-07",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
+   "clip": null
+  },
+  {
    "login": "yukaho_35",
    "nom": "yukaho_35",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/734da5c5-0e7d-4544-a2d0-ba7d4735b7af-profile_image-300x300.png",
@@ -1112,5 +1132,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-07T14:07:15.109Z"
+ "maj": "2026-11-07T14:28:45.341Z"
 }
