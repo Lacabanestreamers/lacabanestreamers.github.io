@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1987,
+  "heuresLive30": 1989,
   "followsGagnes30": 336,
   "periode": {
    "du": "2026-10-08",
@@ -550,7 +550,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "VALORANT",
     "titre": "ON A TOUCHÉ LE FOND… OBJECTIF REMONTÉE ! 📈",
     "depuis": "2026-11-06T17:12:40Z",
@@ -1113,5 +1113,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-07T00:07:15.327Z"
+ "maj": "2026-11-07T01:07:14.358Z"
 }
