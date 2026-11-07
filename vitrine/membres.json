@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 23,
-  "heuresLive30": 2034,
+  "heuresLive30": 2040,
   "followsGagnes30": 345,
   "periode": {
    "du": "2026-10-08",
@@ -43,9 +43,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
-    "jeu": "Stone Simulator",
-    "titre": "✨On test un jeux offert par un Panda🔥",
+    "viewers": 8,
+    "jeu": "PowerWash Simulator",
+    "titre": "✨On chill🔥",
     "depuis": "2026-11-07T14:48:45Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
    },
@@ -535,13 +535,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 1,
-    "jeu": "VALORANT",
-    "titre": "ON A TOUCHÉ LE FOND… OBJECTIF REMONTÉE ! 📈",
-    "depuis": "2026-11-07T14:23:54Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -568,13 +562,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 1,
-    "jeu": "Dead Space 2",
-    "titre": "🐰Oust les aliens",
-    "depuis": "2026-11-07T13:00:30Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -830,7 +818,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
+    "viewers": 7,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] J-12 DLC 4 | Je termine le musée d'Olaf & farming ☃️✨ | Disney Dreamlight Valley | !discord !commandes",
     "depuis": "2026-11-07T14:00:49Z",
@@ -1138,5 +1126,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-07T15:07:13.133Z"
+ "maj": "2026-11-07T16:07:14.078Z"
 }
