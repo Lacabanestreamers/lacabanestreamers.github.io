@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 23,
-  "heuresLive30": 2050,
+  "heuresLive30": 2057,
   "followsGagnes30": 353,
   "periode": {
    "du": "2026-10-08",
@@ -43,10 +43,10 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 8,
     "jeu": "7 Days to Die",
     "titre": "✨Go avec les copain taper du zombies🔥",
-    "depuis": "2026-11-07T19:56:38Z",
+    "depuis": "2026-11-07T20:16:53Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
    },
    "premierStream": "2025-03-29",
@@ -126,7 +126,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 7,
     "jeu": "Mimic Busters",
     "titre": "Grand tatanage de zombies sur la nouvelle V3.4, session survie en multi avec la team 🧟‍♂️",
     "depuis": "2026-11-07T19:50:37Z",
@@ -159,7 +159,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Mazebound: Hunt, Gather, Run!",
     "titre": "☠️Mazebounde • ENCORE UNE SOIREE DANS LE LABYRINTHE • 2 💗",
     "depuis": "2026-11-07T20:02:10Z",
@@ -208,7 +208,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 8,
     "jeu": "Among Us",
     "titre": "🔥👀 AMONS US ; Les imposteurs sont parmi nous. Les neurones non. 🧠❌",
     "depuis": "2026-11-07T19:25:19Z",
@@ -421,7 +421,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 20,
     "jeu": "7 Days to Die",
     "titre": "7 Days to die : Des zombies, des décès, et et des évènements impromptus avec les copains ! <3",
     "depuis": "2026-11-07T19:50:20Z",
@@ -468,7 +468,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
+    "viewers": 5,
     "jeu": "Super Meat Boy",
     "titre": "FR_VT - J-13 du Choupiathon !!!Go se partager la manette",
     "depuis": "2026-11-07T19:39:16Z",
@@ -1144,5 +1144,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-07T20:07:15.443Z"
+ "maj": "2026-11-07T20:47:57.544Z"
 }
