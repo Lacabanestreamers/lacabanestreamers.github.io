@@ -7,8 +7,8 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 23,
-  "heuresLive30": 2048,
-  "followsGagnes30": 345,
+  "heuresLive30": 2049,
+  "followsGagnes30": 353,
   "periode": {
    "du": "2026-10-08",
    "au": "2026-11-07"
@@ -287,7 +287,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Minecraft",
+    "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings ! - !réseaux",
+    "depuis": "2026-11-07T18:08:17Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -955,21 +961,15 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": {
-    "viewers": 9,
-    "jeu": "The Cozy Board Game Shop: Tidy Up",
-    "titre": "The Cozy Board Game Shop on range les jeux de sociétés",
-    "depuis": "2026-11-07T13:33:51Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
     "Cellar Keeper",
     "Sort A Lot",
     "Game Market Mayhem",
-    "Dying Light",
-    "TCG Card Collection: Tidy Up"
+    "The Cozy Board Game Shop: Tidy Up",
+    "Dying Light"
    ],
    "clip": null
   },
@@ -1108,5 +1108,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-07T18:07:18.471Z"
+ "maj": "2026-11-07T19:07:13.320Z"
 }
