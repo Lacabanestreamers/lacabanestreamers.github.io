@@ -2,6 +2,20 @@
 // Scripts classiques chargés dans l'ordre par index.html : ils partagent les mêmes variables globales.
 /* ============ Vitrine publique ============ */
 const VITRINE_URL = () => `https://${(cfg.owner || "lacabanestreamers").toLowerCase()}.github.io/vitrine/`;
+// Modèle pré-rempli la 1re fois dans le texte « Rejoindre » (éditable) : une page accueillante sans avoir à tout écrire.
+const MODELE_REJOINDRE = `Tu streames régulièrement et tu cherches une communauté bienveillante pour progresser ensemble ? Tu es au bon endroit !
+
+Nos critères :
+• Streamer sur Twitch de façon régulière
+• Être bienveillant·e et respectueux·se
+• Avoir envie de participer à la vie de la communauté (entraide, événements, raids)
+
+Comment nous rejoindre :
+1. Rejoins notre Discord (bouton ci-dessous)
+2. Présente-toi dans le salon dédié : pseudo, jeux, horaires de stream
+3. Un membre du staff revient vers toi rapidement
+
+Une question ? Écris-nous sur le Discord, on répond à tout le monde.`;
 function vitrinePanel(d){
   const v = d.settings.vitrine || {}, st = d.robot?.vitrine;
   const nb = d.membres.filter(m => m.statut !== "Parti" && !m.masquerVitrine && !m.introuvable).length;
@@ -15,7 +29,7 @@ function vitrinePanel(d){
       <label class="f full">Lien d'invitation Discord (bouton « Rejoindre », facultatif)<input id="v_discord" value="${esc(v.lienDiscord || "")}" placeholder="https://discord.gg/…"></label>
       <label class="check full"><input type="checkbox" id="v_rej" ${v.rejoindre?.actif ? "checked" : ""}> Afficher la page « Rejoindre » de la vitrine (lien dans le menu + page dédiée)</label>
       <label class="f full">Titre de la section<input id="v_rejtitre" value="${esc(v.rejoindre?.titre || "Rejoindre La Cabane")}" maxlength="80"></label>
-      <label class="f full">Texte de la section (critères, état d'esprit, comment nous rejoindre)<textarea id="v_rejtexte" rows="5" placeholder="Tu streames régulièrement et tu cherches une communauté bienveillante ?&#10;Nos critères : …&#10;Pour nous rejoindre : passe sur le Discord et présente-toi.">${esc(v.rejoindre?.texte || "")}</textarea></label>
+      <label class="f full">Texte de la section (critères, état d'esprit, comment nous rejoindre)<textarea id="v_rejtexte" rows="8" placeholder="Tu streames régulièrement et tu cherches une communauté bienveillante ?&#10;Nos critères : …&#10;Pour nous rejoindre : passe sur le Discord et présente-toi.">${esc(v.rejoindre?.texte ?? MODELE_REJOINDRE)}</textarea><small class="mut">Un modèle est pré-rempli la première fois : garde-le, adapte-le ou remplace-le. Vide = page masquée.</small></label>
       <p class="meta full">Sous ce texte, la vitrine ajoute toujours une phrase fixe (obligation d'information du RGPD) : la fiche publique créée à l'arrivée, ce qu'elle contient, comment demander à ne pas y figurer, avec le lien vers la page Confidentialité.</p>
     </div>
     <p class="meta">${st ? (st.ok ? `<span class="up">Publiée</span> : le robot la tient à jour à chaque passage (depuis le ${fmtStamp(st.le)}).` : `<span class="down">Publication en échec depuis le ${fmtStamp(st.le)} : ${esc(st.erreur || "erreur inconnue")}</span>`) : v.active ? "En attente du prochain passage du robot (secret VITRINE_TOKEN nécessaire, voir le README)." : "Pas encore publiée."} Adresse : <a href="${VITRINE_URL()}" target="_blank" rel="noopener">${VITRINE_URL()}</a></p>
