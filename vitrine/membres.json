@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 23,
-  "heuresLive30": 2044,
+  "heuresLive30": 2048,
   "followsGagnes30": 345,
   "periode": {
    "du": "2026-10-08",
@@ -42,13 +42,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 11,
-    "jeu": "PowerWash Simulator",
-    "titre": "✨On chill🔥",
-    "depuis": "2026-11-07T14:48:45Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -633,13 +627,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 6,
-    "jeu": "Call of Duty: Modern Warfare 4",
-    "titre": "Hajin Warzone go les top 1",
-    "depuis": "2026-11-07T10:34:46Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -817,13 +805,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 4,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "[FR] J-12 DLC 4 | Je termine le musée d'Olaf & farming ☃️✨ | Disney Dreamlight Valley | !discord !commandes",
-    "depuis": "2026-11-07T14:00:49Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -974,7 +956,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 3,
+    "viewers": 9,
     "jeu": "The Cozy Board Game Shop: Tidy Up",
     "titre": "The Cozy Board Game Shop on range les jeux de sociétés",
     "depuis": "2026-11-07T13:33:51Z",
@@ -1126,5 +1108,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-07T17:07:14.366Z"
+ "maj": "2026-11-07T18:07:18.471Z"
 }
