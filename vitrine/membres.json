@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1991,
+  "heuresLive30": 1993,
   "followsGagnes30": 336,
   "periode": {
    "du": "2026-10-08",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "A Plague Tale: Innocence",
     "titre": "A Plague Tale innocence/PS5",
     "depuis": "2026-11-07T01:43:11Z",
@@ -535,13 +535,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 4,
-    "jeu": "VALORANT",
-    "titre": "ON A TOUCHÉ LE FOND… OBJECTIF REMONTÉE ! 📈",
-    "depuis": "2026-11-06T17:12:40Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -1099,5 +1093,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-07T02:07:26.453Z"
+ "maj": "2026-11-07T02:41:06.371Z"
 }
