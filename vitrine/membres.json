@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 2018,
+  "heuresLive30": 2023,
   "followsGagnes30": 345,
   "periode": {
    "du": "2026-10-08",
@@ -190,7 +190,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 38,
+    "viewers": 29,
     "jeu": "Planet Zoo 2",
     "titre": "🔥🐘 Le zoo prend enfin vie ! | Suite de la découverte Planet Zoo 👀",
     "depuis": "2026-11-07T09:50:17Z",
@@ -213,8 +213,8 @@
     "Special Events",
     "The Sims 4",
     "Just Chatting",
-    "R.E.P.O.",
-    "Planet Zoo 2"
+    "Planet Zoo 2",
+    "R.E.P.O."
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/SavageRamshackleAppleImGlitch-ValstNXqm92c3_Ll",
@@ -327,7 +327,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 18,
+    "viewers": 17,
     "jeu": "Art",
     "titre": "🎨 C'est la FIN !  🖍️  On va y arriver ! 🏆 | !lurk !clip !commandes",
     "depuis": "2026-11-07T09:47:28Z",
@@ -568,7 +568,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Dead Space 2",
+    "titre": "🐰Oust les aliens",
+    "depuis": "2026-11-07T13:00:30Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
+   },
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -640,9 +646,9 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 19,
-    "jeu": "Call of Duty: Modern Warfare 4",
-    "titre": "🔥 LUFFISH GAMING | 🎯 Chasse aux CAMOS – Multi & Warzone | Ça va FRAGUER ! 💀",
+    "viewers": 4,
+    "jeu": "Rocket League",
+    "titre": "On va chercher le C2 sur RL",
     "depuis": "2026-11-07T10:34:46Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
    },
@@ -979,7 +985,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 5,
+    "viewers": 1,
     "jeu": "Sort A Lot",
     "titre": "Sort A Lot Sheep on va ramener les moutons dans leurs enclos",
     "depuis": "2026-11-07T09:22:06Z",
@@ -1117,5 +1123,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-07T12:07:14.294Z"
+ "maj": "2026-11-07T13:07:16.265Z"
 }
