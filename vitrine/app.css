@@ -178,3 +178,13 @@ footer{border-top:1px solid var(--line);margin-top:50px;padding:22px 0 40px;colo
   .intro{font-size:18px}
   .grid{grid-template-columns:minmax(0,1fr)}
 }
+
+/* Barre de navigation du site (4 pages) — mono HUD, identité Aulit42369 */
+.vnav{display:flex;align-items:center;gap:12px 22px;flex-wrap:wrap;margin:0 0 22px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.vbrand{font:800 22px/1 Orbitron,sans-serif;letter-spacing:.03em;color:var(--text);text-shadow:0 0 12px rgba(166,107,255,.5);text-decoration:none}
+.vlinks{display:flex;gap:2px;flex-wrap:wrap}
+.vlinks a{font:600 12px/1 'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:8px 11px;border-radius:3px;text-decoration:none}
+.vlinks a:hover{color:var(--text);background:var(--panel)}
+.vlinks a[aria-current="page"]{color:var(--pink);background:color-mix(in srgb,var(--pink) 16%,transparent)}
+.ptitre{font:800 clamp(28px,5vw,40px)/1.05 Orbitron,sans-serif;margin:0 0 6px;letter-spacing:.01em}
+.pintro{color:var(--muted);max-width:62ch;margin:0 0 20px}
