@@ -70,6 +70,11 @@ h1{font:800 26px/1.1 Orbitron,sans-serif;margin:0 0 4px}
 table{border-collapse:collapse;width:100%;font-size:14px}
 /* padding resserré : les tableaux denses (jusqu'à 15 colonnes dans Streamers, toutes options cochées) tiennent sans rogner Alerte/Étiquettes ; au-delà, .tablewrap défile horizontalement */
 th,td{padding:6px 8px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+/* Puces d'étiquettes dans les cellules (sinon texte brut collé) + colonne Étiquettes qui revient à la ligne et plafonnée */
+.tg{display:inline-block;font-size:12px;padding:1px 7px;margin:1px 3px 1px 0;border-radius:999px;background:rgba(166,107,255,.14);border:1px solid rgba(166,107,255,.4);color:#C9A7FF;max-width:168px;white-space:normal;overflow-wrap:anywhere;vertical-align:top;line-height:1.3}
+td[data-l="Étiquettes"]{white-space:normal}
+/* Sur grand écran, les tableaux récupèrent la marge de main pour que la dernière colonne (Étiquettes) ne soit pas coupée */
+@media(min-width:760px){.tablewrap{margin-left:-20px;margin-right:-20px}}
 th{position:sticky;top:0;background:var(--panel2);color:var(--muted);font-weight:700;font-size:14px;cursor:pointer;user-select:none}
 th[data-sort]:hover{color:var(--text)}
 th .arrow{color:var(--cyan)}
