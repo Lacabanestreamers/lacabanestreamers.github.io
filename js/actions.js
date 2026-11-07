@@ -305,3 +305,10 @@ document.addEventListener("click", e => {
     ensureShape(); toast("Listes enregistrées"); return;
   }
 });
+
+// Clavier : activer un élément role="link"/data-goto focalisé (ex. le logo « La Cabane ») avec Entrée ou Espace.
+document.addEventListener("keydown", e => {
+  if(e.key !== "Enter" && e.key !== " ") return;
+  const go = e.target.closest?.("[data-goto][tabindex]"); if(!go) return;
+  e.preventDefault(); go.click();
+});
