@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 2023,
+  "heuresLive30": 2029,
   "followsGagnes30": 345,
   "periode": {
    "du": "2026-10-08",
@@ -189,13 +189,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 29,
-    "jeu": "Planet Zoo 2",
-    "titre": "🔥🐘 Le zoo prend enfin vie ! | Suite de la découverte Planet Zoo 👀",
-    "depuis": "2026-11-07T09:50:17Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -212,8 +206,8 @@
    "jeux": [
     "Special Events",
     "The Sims 4",
-    "Just Chatting",
     "Planet Zoo 2",
+    "Just Chatting",
     "R.E.P.O."
    ],
    "clip": {
@@ -326,13 +320,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 17,
-    "jeu": "Art",
-    "titre": "🎨 C'est la FIN !  🖍️  On va y arriver ! 🏆 | !lurk !clip !commandes",
-    "depuis": "2026-11-07T09:47:28Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
@@ -646,7 +634,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 11,
     "jeu": "Rocket League",
     "titre": "On va chercher le C2 sur RL",
     "depuis": "2026-11-07T10:34:46Z",
@@ -663,7 +651,8 @@
    "jeux": [
     "Call of Duty: Modern Warfare 4",
     "Special Events",
-    "Dune: Awakening"
+    "Dune: Awakening",
+    "Rocket League"
    ],
    "clip": null
   },
@@ -828,7 +817,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "[FR] J-12 DLC 4 | Je termine le musée d'Olaf & farming ☃️✨ | Disney Dreamlight Valley | !discord !commandes",
+    "depuis": "2026-11-07T14:00:49Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
+   },
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -847,13 +842,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "American Truck Simulator",
-    "titre": "Bonjour, livraison de voiture  !!!",
-    "depuis": "2026-11-07T11:40:50Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -985,10 +974,10 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 1,
-    "jeu": "Sort A Lot",
-    "titre": "Sort A Lot Sheep on va ramener les moutons dans leurs enclos",
-    "depuis": "2026-11-07T09:22:06Z",
+    "viewers": 3,
+    "jeu": "The Cozy Board Game Shop: Tidy Up",
+    "titre": "The Cozy Board Game Shop on range les jeux de sociétés",
+    "depuis": "2026-11-07T13:33:51Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
    },
    "premierStream": "2026-08-22",
@@ -1123,5 +1112,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-07T13:07:16.265Z"
+ "maj": "2026-11-07T14:07:15.109Z"
 }
