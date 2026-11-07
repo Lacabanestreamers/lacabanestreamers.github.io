@@ -7,7 +7,7 @@ La description détaillée du robot, des données et de la sécurité est dans `
 ## Modules
 | Fichier | Rôle |
 |---|---|
-| `vitrine/index.html` | Vitrine : page autonome (HTML + CSS + JS en ligne) qui lit `vitrine/membres.json`. Aide d'affichage : `esc`, `okLogin`, `okImg`. |
+| `vitrine/` (4 pages) | **Vitrine multi-pages depuis le 07/11/2026** : `index.html` (accueil), `streamers.html`, `agenda.html`, `rejoindre.html`, nav partagée. Script **externe** `vitrine/app.js` (plus d'inline figé par hash CSP) + `vitrine/app.css` ; `app.js` lit `document.body.dataset.page` et n'affiche que les sections de la page courante. Aide d'affichage (`esc`, `okLogin`, `okImg`) dans `app.js`. Lit `vitrine/membres.json`. Les événements vivent sur `agenda.html` (`?ev=` et pages robot `e/<id>` pointent vers `agenda.html?ev=`). CSP : `script-src 'self'` (plus de hash d'empreinte). |
 | `vitrine/membres.json` | Membres, chiffres, agenda, relais d'inscription. **Écrit par le robot.** |
 | `vitrine/s/<pseudo>.html` | Fiche membre indexable. **Écrite par le robot.** |
 | `vitrine/e/*`, `vitrine/annee/*` | Pages de partage d'événement et récap annuel (robot, absentes tant qu'il n'y en a pas). |
