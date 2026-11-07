@@ -67,8 +67,9 @@ h1{font:800 26px/1.1 Orbitron,sans-serif;margin:0 0 4px}
 
 /* Tableaux */
 .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel)}
-table{border-collapse:collapse;width:100%;font-size:15.5px}
-th,td{padding:8px 12px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+table{border-collapse:collapse;width:100%;font-size:14px}
+/* padding resserré : les tableaux denses (jusqu'à 15 colonnes dans Streamers, toutes options cochées) tiennent sans rogner Alerte/Étiquettes ; au-delà, .tablewrap défile horizontalement */
+th,td{padding:6px 8px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
 th{position:sticky;top:0;background:var(--panel2);color:var(--muted);font-weight:700;font-size:14px;cursor:pointer;user-select:none}
 th[data-sort]:hover{color:var(--text)}
 th .arrow{color:var(--cyan)}
@@ -240,7 +241,7 @@ details.pli,#sante,#appli{scroll-margin-top:90px}
 .hist .when{color:var(--muted);margin-right:6px}
 
 /* Badges Twitch */
-.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:1px 6px;border-radius:4px;margin-left:6px;vertical-align:middle;line-height:1.35}
+.tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:0 5px;border-radius:4px;margin-left:6px;vertical-align:middle;line-height:1.4}
 .tag.aff{background:rgba(169,112,255,.18);color:#C9A7FF;border:1px solid rgba(169,112,255,.5)}
 .tag.par{background:rgba(145,70,255,.9);color:#fff}
 .tag.ko{background:rgba(255,92,122,.15);color:var(--ko);border:1px solid rgba(255,92,122,.5)}
