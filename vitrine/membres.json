@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 23,
-  "heuresLive30": 2040,
+  "heuresLive30": 2044,
   "followsGagnes30": 345,
   "periode": {
    "du": "2026-10-08",
@@ -634,7 +634,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 15,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "On farm les CAMOS ! Les ennemis vont souffrir !",
     "depuis": "2026-11-07T10:34:46Z",
@@ -1126,5 +1126,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-07T16:07:14.078Z"
+ "maj": "2026-11-07T16:18:02.229Z"
 }
