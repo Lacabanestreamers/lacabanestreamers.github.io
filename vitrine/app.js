@@ -63,6 +63,9 @@ function _render(){
     main.innerHTML = `<p class="empty">La vitrine n'est pas publiée pour le moment. Reviens bientôt !</p>`; dernierHtml = "";
     { const st = $("#stats"); if(st) st.textContent = ""; } return;
   }
+  // Page/onglet « Rejoindre » : visible seulement si le staff l'a activée dans les réglages (le robot ne met d.rejoindre que si « Afficher Rejoindre » est coché).
+  { const navRej = document.querySelector('.vlinks a[href="rejoindre.html"]'); if(navRej) navRej.hidden = !d.rejoindre; }
+  if(PAGE === "rejoindre" && !d.rejoindre){ location.replace("./"); return; }
   if(PAGE === "accueil") document.title = `Communauté de streamers francophones Twitch | ${d.titre || "La Cabane"}`;
   const tt = $("#titre"); if(tt) tt.textContent = d.titre || "La Cabane";
   const tx = $("#texte"); if(tx) tx.textContent = d.texte || "";
@@ -147,7 +150,7 @@ function _render(){
         ${m.depuis ? `<span class="since">${depuis(m.depuis)}</span>` : ""}
       </a>`).join("")}</div>` : `<p class="empty">Aucun streamer ne correspond.</p>`}
     </section>` : ""}
-    ${PAGE==="rejoindre" ? `<section aria-labelledby="h-rej"><div class="rejoindre"><h2 id="h-rej" style="margin-top:0">${esc(d.rejoindre?.titre || "Rejoindre La Cabane")}</h2><p>${esc(d.rejoindre?.texte || d.texte || "La Cabane est une communauté d'entraide et de motivation entre streamers francophones. Envie d'en faire partie ? Rejoins-nous sur Discord ou écris au staff — on t'explique tout.")}</p>
+    ${PAGE==="rejoindre" && d.rejoindre ? `<section aria-labelledby="h-rej"><div class="rejoindre"><h2 id="h-rej" style="margin-top:0">${esc(d.rejoindre.titre || "Rejoindre La Cabane")}</h2><p>${esc(d.rejoindre.texte || "")}</p>
       <p class="rgpd">En rejoignant La Cabane, ta chaîne apparaît par défaut sur cette vitrine : pseudo, image de profil, bio et statut Twitch, lives en cours, clip de la semaine, date d'arrivée et réussites. Tu peux demander à tout moment à ne pas y figurer (au staff ou à aulit42369@gmail.com). Détails dans la page <a href="confidentialite.html">Confidentialité</a>.</p>
       ${/^https:\/\/(discord\.gg|discord\.com\/invite)\//i.test(d.lienDiscord || "") ? `<a class="btn" href="${esc(d.lienDiscord)}" target="_blank" rel="noopener">Rejoindre le Discord</a>` : ""}</div></section>` : ""}`;
   // état vide par page (sinon #main resterait sur « Chargement… » quand aucune section ne sort)

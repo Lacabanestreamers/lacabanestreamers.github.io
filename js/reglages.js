@@ -13,7 +13,7 @@ function vitrinePanel(d){
       <label class="f full">Titre<input id="v_titre" value="${esc(v.titre || "La Cabane")}"></label>
       <label class="f full">Texte de présentation<textarea id="v_texte" rows="3">${esc(v.texte ?? "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !")}</textarea></label>
       <label class="f full">Lien d'invitation Discord (bouton « Rejoindre », facultatif)<input id="v_discord" value="${esc(v.lienDiscord || "")}" placeholder="https://discord.gg/…"></label>
-      <label class="check full"><input type="checkbox" id="v_rej" ${v.rejoindre?.actif ? "checked" : ""}> Afficher la section « Rejoindre » en bas de la vitrine</label>
+      <label class="check full"><input type="checkbox" id="v_rej" ${v.rejoindre?.actif ? "checked" : ""}> Afficher la page « Rejoindre » de la vitrine (lien dans le menu + page dédiée)</label>
       <label class="f full">Titre de la section<input id="v_rejtitre" value="${esc(v.rejoindre?.titre || "Rejoindre La Cabane")}" maxlength="80"></label>
       <label class="f full">Texte de la section (critères, état d'esprit, comment nous rejoindre)<textarea id="v_rejtexte" rows="5" placeholder="Tu streames régulièrement et tu cherches une communauté bienveillante ?&#10;Nos critères : …&#10;Pour nous rejoindre : passe sur le Discord et présente-toi.">${esc(v.rejoindre?.texte || "")}</textarea></label>
       <p class="meta full">Sous ce texte, la vitrine ajoute toujours une phrase fixe (obligation d'information du RGPD) : la fiche publique créée à l'arrivée, ce qu'elle contient, comment demander à ne pas y figurer, avec le lien vers la page Confidentialité.</p>
