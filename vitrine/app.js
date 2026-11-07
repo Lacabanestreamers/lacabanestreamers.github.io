@@ -29,7 +29,7 @@ const pageUrl = l => `?m=${encodeURIComponent(l)}`;
 const base = () => location.origin + location.pathname.replace(/[^/]*$/, "");
 const okNomPage = x => /^[A-Za-z0-9_-]{1,80}$/.test(x || "");
 const lienPartageMembre = l => okNomPage(l) ? `${base()}s/${l}` : base() + pageUrl(l);
-const lienPartageEvt = id => okNomPage(id) ? `${base()}e/${id}` : `${base()}?ev=${encodeURIComponent(id)}`;
+const lienPartageEvt = id => okNomPage(id) ? `${base()}e/${id}` : `${base()}agenda.html?ev=${encodeURIComponent(id)}`;
 // Anniversaire de stream : prochaine date (aujourd'hui compris), nombre de jours et d'années de stream fêtées
 function anniv(m, champ = "premierStream"){
   if(!/^\d{4}-\d{2}-\d{2}$/.test(m[champ] || "")) return null;
@@ -318,7 +318,7 @@ async function inscrire(id, action){
   const s = lire(sessionStorage, SESSION);
   if(!s){   // d'abord : qui es-tu ? (connexion Twitch, sans aucune autorisation demandée)
     const etat = Math.random().toString(36).slice(2) + Date.now().toString(36);
-    ecrire(sessionStorage, RETOUR, {etat, id, action, retour:location.search});
+    ecrire(sessionStorage, RETOUR, {etat, id, action, retour:(location.pathname.split("/vitrine/")[1] || "") + location.search});
     location.href = `https://id.twitch.tv/oauth2/authorize?${new URLSearchParams({client_id:ins.clientId, redirect_uri:redirectUri(), response_type:"token", scope:"", state:etat})}`;
     return;
   }
@@ -439,6 +439,12 @@ window.addEventListener("popstate", () => { render(); if(!new URLSearchParams(lo
 document.addEventListener("change", e => { if(e.target.id === "jeuSel"){ jeuFiltre = e.target.value; render(); } });
 document.addEventListener("compositionend", e => { if(e.target.id === "q"){ q = e.target.value; const pos = e.target.selectionStart; render(); const el = $("#q"); el.focus(); el.setSelectionRange(pos, pos); } });
 document.addEventListener("input", e => { if(e.target.id === "q" && !e.isComposing){ q = e.target.value; const pos = e.target.selectionStart; render(); const el = $("#q"); el.focus(); el.setSelectionRange(pos, pos); } });
-charger();
-setInterval(() => { if(document.visibilityState === "visible") charger(); }, 5 * 60 * 1000);
-setInterval(() => { if(document.visibilityState === "visible") verifierLives(); }, 2 * 60 * 1000);
+// Les événements vivent sur agenda.html : un lien ?ev= arrivé ailleurs y est renvoyé (en gardant le # du retour Twitch)
+const _ev = new URLSearchParams(location.search).get("ev");
+if(_ev && (document.body.dataset.page || "accueil") !== "agenda"){
+  location.replace("agenda.html?ev=" + encodeURIComponent(_ev) + location.hash);
+} else {
+  charger();
+  setInterval(() => { if(document.visibilityState === "visible") charger(); }, 5 * 60 * 1000);
+  setInterval(() => { if(document.visibilityState === "visible") verifierLives(); }, 2 * 60 * 1000);
+}
