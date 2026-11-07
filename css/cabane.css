@@ -9,7 +9,7 @@
 }
 *,*::before,*::after{box-sizing:inherit}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
-body{margin:0;background:var(--bg);color:var(--text);font:500 16px/1.4 Rajdhani,"Segoe UI",system-ui,sans-serif;min-height:100vh}
+body{margin:0;background:radial-gradient(820px 420px at 92% -8%,rgba(166,107,255,.20),transparent 60%),radial-gradient(640px 360px at 0% 10%,rgba(63,224,218,.10),transparent 58%),radial-gradient(700px 400px at 60% 108%,rgba(255,90,160,.08),transparent 60%),var(--bg);background-attachment:fixed;color:var(--text);font:500 16px/1.4 Rajdhani,"Segoe UI",system-ui,sans-serif;min-height:100vh}
 a{color:var(--cyan);text-decoration:none}
 a:hover{text-decoration:underline}
 button,input,select,textarea{font:inherit;color:inherit}
@@ -90,7 +90,7 @@ td.num{text-align:right;font-variant-numeric:tabular-nums}
 .empty{padding:40px;text-align:center;color:var(--muted)}
 .up{color:var(--ok)} .down{color:var(--ko)} .warn{color:var(--warn)}
 
-.pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:14px;font-weight:700;border:1px solid currentColor}
+.pill{display:inline-block;padding:2px 10px;border-radius:4px;font-size:14px;font-weight:700;border:1px solid currentColor}
 .s-accepte{color:var(--ok)} .s-refuse{color:var(--ko)} .s-abandon{color:var(--grey)}
 .s-attente{color:var(--warn)} .s-encours{color:var(--cyan)} .s-afaire{color:#A99BFF} .s-aucun{color:var(--grey)} .s-vide{color:var(--muted);border-style:dashed}
 .s-present{color:var(--ok)} .s-parti{color:var(--grey)}
