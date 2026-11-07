@@ -61,7 +61,7 @@ function _render(){
   document.body.classList.toggle("profil", !!perso && !!d?.active);
   if(!d || !d.active){
     main.innerHTML = `<p class="empty">La vitrine n'est pas publiée pour le moment. Reviens bientôt !</p>`; dernierHtml = "";
-    $("#stats").textContent = ""; return;
+    { const st = $("#stats"); if(st) st.textContent = ""; } return;
   }
   if(PAGE === "accueil") document.title = `Communauté de streamers francophones Twitch | ${d.titre || "La Cabane"}`;
   const tt = $("#titre"); if(tt) tt.textContent = d.titre || "La Cabane";
@@ -81,7 +81,7 @@ function _render(){
   const wins = joursWins ? membres.flatMap(m => (m.succes || []).filter(x => x.date >= lim).map(x => ({m, x}))).sort((a, b) => b.x.date.localeCompare(a.x.date)).slice(0, 12) : [];
   const lives = membres.filter(m => m.live).sort((a, b) => (b.live.viewers || 0) - (a.live.viewers || 0));
   const aff = membres.filter(m => m.type === "affiliate" || m.type === "partner").length;
-  $("#stats").innerHTML = "";
+  { const st = $("#stats"); if(st) st.innerHTML = ""; }
 
   const qq = q.trim().toLowerCase();
   const tousJeux = (() => { const n = {}; for(const m of membres) for(const j of m.jeux || []) n[j] = (n[j] || 0) + 1; return Object.entries(n).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "fr")).slice(0, 30); })();
