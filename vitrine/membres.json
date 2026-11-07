@@ -8,10 +8,10 @@
   "affilies": 41,
   "nouveaux30": 22,
   "heuresLive30": 1996,
-  "followsGagnes30": 336,
+  "followsGagnes30": 342,
   "periode": {
    "du": "2026-10-08",
-   "au": "2026-11-06"
+   "au": "2026-11-07"
   }
  },
  "agenda": [],
@@ -206,9 +206,9 @@
    "jeux": [
     "Special Events",
     "The Sims 4",
-    "Disney Dreamlight Valley",
     "Just Chatting",
-    "R.E.P.O."
+    "R.E.P.O.",
+    "Disney Dreamlight Valley"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/SavageRamshackleAppleImGlitch-ValstNXqm92c3_Ll",
@@ -247,9 +247,9 @@
    "jeux": [
     "Dead by Daylight",
     "Raft",
-    "Rise of the Tomb Raider",
     "Sort The Bunnies",
-    "Librarian: Tidy Up the Arcane Library!"
+    "Librarian: Tidy Up the Arcane Library!",
+    "Cat Mail Co."
    ],
    "clip": null
   },
@@ -605,10 +605,10 @@
    ],
    "jeux": [
     "R.E.P.O.",
-    "7 Days to Die",
     "Dead by Daylight",
     "FINAL FANTASY XIV ONLINE",
-    "Tomb Raider"
+    "Tomb Raider",
+    "AION 2"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/TawdryLittleLegVoHiYo-_BEv6fPShPaE8kVa",
@@ -853,8 +853,8 @@
     }
    ],
    "jeux": [
-    "SONG OF HORROR",
     "The Other Side",
+    "SONG OF HORROR",
     "MECCHA CHAMELEON",
     "Art",
     "DEVOUR"
@@ -1087,5 +1087,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-07T07:07:17.736Z"
+ "maj": "2026-11-07T08:07:15.837Z"
 }
