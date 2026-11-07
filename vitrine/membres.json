@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 22,
-  "heuresLive30": 1983,
+  "heuresLive30": 1987,
   "followsGagnes30": 336,
   "periode": {
    "du": "2026-10-08",
@@ -444,13 +444,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 11,
-    "jeu": "R.E.P.O.",
-    "titre": "FR_VT - J-12 du Choupiathon !!! Soirée Collab sur R.E.P.O",
-    "depuis": "2026-11-06T19:15:32Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -659,13 +653,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 6,
-    "jeu": "Call of Duty: Modern Warfare 4",
-    "titre": "On découvre Warzone ensemble… La victoire ou le désastre !",
-    "depuis": "2026-11-06T20:21:44Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -1125,5 +1113,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-06T23:07:12.221Z"
+ "maj": "2026-11-07T00:07:15.327Z"
 }
