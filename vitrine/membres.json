@@ -823,7 +823,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "World of Warcraft",
+    "titre": "Bonjour, je continue de up mon druide !!!",
+    "depuis": "2026-11-07T03:09:16Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1087,5 +1093,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-07T03:07:13.657Z"
+ "maj": "2026-11-07T04:07:15.491Z"
 }
