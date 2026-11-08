@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 23,
-  "heuresLive30": 2103,
+  "heuresLive30": 2108,
   "followsGagnes30": 358,
   "periode": {
    "du": "2026-10-09",
@@ -234,13 +234,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": {
-    "viewers": 6,
-    "jeu": "Silver Service",
-    "titre": "🚢  C’est parti pour ranger un paquebot sur Silver Service ! 🛟⚓",
-    "depuis": "2026-11-08T13:38:55Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -438,7 +432,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 13,
+    "viewers": 14,
     "jeu": "Minecraft",
     "titre": "FR_VT - J-13 du Choupiathon !!! Objectif Lixy !!!",
     "depuis": "2026-11-08T12:59:06Z",
@@ -541,13 +535,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 3,
-    "jeu": "VALORANT",
-    "titre": "Mon préféré  LES GAMES VONT DONNER QUOI ? ON VA VITE LE SAVOIR ! 😂",
-    "depuis": "2026-11-08T14:36:36Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -889,7 +877,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 10,
+    "viewers": 12,
     "jeu": "Terrible Lizards",
     "titre": "TERRIBLE LIZARDS [FR] | On continue de découvrir ensemble le jeux Terrible Lizards avec des dinos mais pas que... 🦖| !discord !lizards",
     "depuis": "2026-11-08T15:15:49Z",
@@ -905,8 +893,8 @@
    ],
    "jeux": [
     "The Sims 4",
-    "Animal Crossing: New Horizons",
     "Terrible Lizards",
+    "Animal Crossing: New Horizons",
     "R.E.P.O.",
     "Demonologist"
    ],
@@ -1010,7 +998,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 21,
+    "viewers": 24,
     "jeu": "Loftia",
     "titre": "[DROPS] Enfin LOFTIAAAAAAA!",
     "depuis": "2026-11-08T10:19:07Z",
@@ -1125,5 +1113,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-08T16:07:13.581Z"
+ "maj": "2026-11-08T17:07:14.765Z"
 }
