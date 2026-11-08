@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 23,
-  "heuresLive30": 2049,
+  "heuresLive30": 2055,
   "followsGagnes30": 347,
   "periode": {
    "du": "2026-10-09",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 6,
+    "viewers": 2,
     "jeu": "Rocket League",
     "titre": "Rocket League/PS5",
     "depuis": "2026-11-07T21:56:47Z",
@@ -48,13 +48,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 8,
-    "jeu": "7 Days to Die",
-    "titre": "✨Go avec les copain taper du zombies🔥",
-    "depuis": "2026-11-07T20:16:53Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -131,13 +125,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 8,
-    "jeu": "7 Days to Die",
-    "titre": "Grand tatanage de zombies sur la nouvelle V3.4, session survie en multi avec la team 🧟‍♂️",
-    "depuis": "2026-11-07T19:50:37Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -456,7 +444,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 9,
     "jeu": "Super Meat Boy",
     "titre": "FR_VT - J-13 du Choupiathon !!!Go se partager la manette",
     "depuis": "2026-11-07T19:39:16Z",
@@ -1138,5 +1126,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-07T23:07:13.118Z"
+ "maj": "2026-11-08T00:07:15.717Z"
 }
