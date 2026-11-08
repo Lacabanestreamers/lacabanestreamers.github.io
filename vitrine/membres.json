@@ -8,10 +8,10 @@
   "affilies": 42,
   "nouveaux30": 23,
   "heuresLive30": 2065,
-  "followsGagnes30": 347,
+  "followsGagnes30": 357,
   "periode": {
    "du": "2026-10-09",
-   "au": "2026-11-07"
+   "au": "2026-11-08"
   }
  },
  "agenda": [],
@@ -242,7 +242,7 @@
     "Raft",
     "Sort The Bunnies",
     "Librarian: Tidy Up the Arcane Library!",
-    "Cat Mail Co."
+    "Rise of the Tomb Raider"
    ],
    "clip": {
     "url": "https://www.twitch.tv/cristal578/clip/StormyUninterestedBeefDxAbomb-u4RaovBUdmRd-DI7",
@@ -605,10 +605,10 @@
    ],
    "jeux": [
     "R.E.P.O.",
-    "Dead by Daylight",
     "FINAL FANTASY XIV ONLINE",
     "Tomb Raider",
-    "AION 2"
+    "AION 2",
+    "Dead by Daylight"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/TawdryLittleLegVoHiYo-_BEv6fPShPaE8kVa",
@@ -856,9 +856,9 @@
    "jeux": [
     "The Other Side",
     "SONG OF HORROR",
-    "MECCHA CHAMELEON",
     "Art",
-    "DEVOUR"
+    "DEVOUR",
+    "Backrooms: Inside the Escape"
    ],
    "clip": null
   },
@@ -1095,5 +1095,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-08T04:07:15.020Z"
+ "maj": "2026-11-08T07:10:42.307Z"
 }
