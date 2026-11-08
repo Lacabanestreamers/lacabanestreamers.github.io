@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 23,
-  "heuresLive30": 2108,
+  "heuresLive30": 2111,
   "followsGagnes30": 358,
   "periode": {
    "du": "2026-10-09",
@@ -432,10 +432,10 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 14,
+    "viewers": 9,
     "jeu": "Minecraft",
     "titre": "FR_VT - J-13 du Choupiathon !!! Objectif Lixy !!!",
-    "depuis": "2026-11-08T12:59:06Z",
+    "depuis": "2026-11-08T17:56:15Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
    },
    "premierStream": "2026-02-01",
@@ -447,8 +447,8 @@
     }
    ],
    "jeux": [
-    "R.E.P.O.",
     "Minecraft",
+    "R.E.P.O.",
     "Valheim",
     "Special Events",
     "DEVOUR"
@@ -960,7 +960,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "The Cozy Board Game Shop: Tidy Up",
+    "titre": "The Cozy Board Game Shop on range les jeux de sociétés",
+    "depuis": "2026-11-08T17:18:22Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
+   },
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -998,7 +1004,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 24,
+    "viewers": 20,
     "jeu": "Loftia",
     "titre": "[DROPS] Enfin LOFTIAAAAAAA!",
     "depuis": "2026-11-08T10:19:07Z",
@@ -1014,10 +1020,10 @@
    ],
    "jeux": [
     "Space Savory",
+    "Loftia",
     "Just Chatting",
     "Photomaly",
-    "Invokyr",
-    "Kalanoro"
+    "Invokyr"
    ],
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/FrigidBrightPlumageHassaanChop-DqrM5DNtlYxkSIGG",
@@ -1113,5 +1119,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-08T17:07:14.765Z"
+ "maj": "2026-11-08T18:07:18.836Z"
 }
