@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "Rocket League",
     "titre": "Rocket League/PS5",
     "depuis": "2026-11-07T21:56:47Z",
@@ -443,13 +443,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 7,
-    "jeu": "Super Meat Boy",
-    "titre": "FR_VT - J-13 du Choupiathon !!!Go se partager la manette",
-    "depuis": "2026-11-07T19:39:16Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -1126,5 +1120,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-08T00:24:49.027Z"
+ "maj": "2026-11-08T01:07:12.840Z"
 }
