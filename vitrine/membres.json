@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 23,
-  "heuresLive30": 2055,
+  "heuresLive30": 2059,
   "followsGagnes30": 347,
   "periode": {
    "du": "2026-10-09",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 2,
+    "viewers": 5,
     "jeu": "Rocket League",
     "titre": "Rocket League/PS5",
     "depuis": "2026-11-07T21:56:47Z",
@@ -444,7 +444,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 9,
+    "viewers": 7,
     "jeu": "Super Meat Boy",
     "titre": "FR_VT - J-13 du Choupiathon !!!Go se partager la manette",
     "depuis": "2026-11-07T19:39:16Z",
@@ -548,7 +548,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "VALORANT",
     "titre": "ON A TOUCHÉ LE FOND… OBJECTIF REMONTÉE ! 📈",
     "depuis": "2026-11-07T21:30:25Z",
@@ -1126,5 +1126,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-08T00:07:15.717Z"
+ "maj": "2026-11-08T00:24:49.027Z"
 }
