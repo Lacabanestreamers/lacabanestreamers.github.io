@@ -7,8 +7,8 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 23,
-  "heuresLive30": 2111,
-  "followsGagnes30": 358,
+  "heuresLive30": 2115,
+  "followsGagnes30": 364,
   "periode": {
    "du": "2026-10-09",
    "au": "2026-11-08"
@@ -432,14 +432,19 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 9,
-    "jeu": "Minecraft",
-    "titre": "FR_VT - J-13 du Choupiathon !!! Objectif Lixy !!!",
+    "viewers": 13,
+    "jeu": "Just Chatting",
+    "titre": "FR_VT - J-14 du Choupiathon !!! un peu de cobblemon  !!",
     "depuis": "2026-11-08T17:56:15Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
    },
    "premierStream": "2026-02-01",
    "succes": [
+    {
+     "type": "palier",
+     "palier": 500,
+     "date": "2026-11-08"
+    },
     {
      "type": "palier",
      "palier": 450,
@@ -535,7 +540,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "VALORANT",
+    "titre": "LES GAMES VONT DONNER QUOI ? ON VA VITE LE SAVOIR ! 😂",
+    "depuis": "2026-11-08T18:28:36Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -876,13 +887,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 12,
-    "jeu": "Terrible Lizards",
-    "titre": "TERRIBLE LIZARDS [FR] | On continue de découvrir ensemble le jeux Terrible Lizards avec des dinos mais pas que... 🦖| !discord !lizards",
-    "depuis": "2026-11-08T15:15:49Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-10",
    "succes": [
     {
@@ -960,19 +965,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": {
-    "viewers": 5,
-    "jeu": "The Cozy Board Game Shop: Tidy Up",
-    "titre": "The Cozy Board Game Shop on range les jeux de sociétés",
-    "depuis": "2026-11-08T17:18:22Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
     "Cellar Keeper",
-    "Sort A Lot",
     "The Cozy Board Game Shop: Tidy Up",
+    "Sort A Lot",
     "Game Market Mayhem",
     "Dying Light"
    ],
@@ -1004,7 +1003,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 20,
+    "viewers": 17,
     "jeu": "Loftia",
     "titre": "[DROPS] Enfin LOFTIAAAAAAA!",
     "depuis": "2026-11-08T10:19:07Z",
@@ -1119,5 +1118,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-08T18:07:18.836Z"
+ "maj": "2026-11-08T19:07:14.914Z"
 }
