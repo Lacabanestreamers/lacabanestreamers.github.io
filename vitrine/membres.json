@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 23,
-  "heuresLive30": 2065,
+  "heuresLive30": 2066,
   "followsGagnes30": 357,
   "periode": {
    "du": "2026-10-09",
@@ -712,7 +712,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Kingdom Hearts Birth by Sleep",
+    "titre": "He bah BBS voila",
+    "depuis": "2026-11-08T09:01:12Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
+   },
    "premierStream": "2025-01-08",
    "succes": [
     {
@@ -806,7 +812,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
+    "viewers": 7,
     "jeu": "Art",
     "titre": "[FR] On se réveille ensemble ☕☀️ | Coloriages | !discord !commandes",
     "depuis": "2026-11-08T08:00:11Z",
@@ -1101,5 +1107,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-08T08:07:15.114Z"
+ "maj": "2026-11-08T09:07:14.152Z"
 }
