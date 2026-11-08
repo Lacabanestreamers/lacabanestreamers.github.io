@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 23,
-  "heuresLive30": 2115,
+  "heuresLive30": 2118,
   "followsGagnes30": 364,
   "periode": {
    "du": "2026-10-09",
@@ -432,10 +432,10 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 13,
-    "jeu": "Just Chatting",
+    "viewers": 9,
+    "jeu": "Minecraft",
     "titre": "FR_VT - J-14 du Choupiathon !!! un peu de cobblemon  !!",
-    "depuis": "2026-11-08T17:56:15Z",
+    "depuis": "2026-11-08T19:09:20Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
    },
    "premierStream": "2026-02-01",
@@ -541,7 +541,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "VALORANT",
     "titre": "LES GAMES VONT DONNER QUOI ? ON VA VITE LE SAVOIR ! 😂",
     "depuis": "2026-11-08T18:28:36Z",
@@ -1003,7 +1003,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 17,
+    "viewers": 20,
     "jeu": "Loftia",
     "titre": "[DROPS] Enfin LOFTIAAAAAAA!",
     "depuis": "2026-11-08T10:19:07Z",
@@ -1118,5 +1118,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-08T19:07:14.914Z"
+ "maj": "2026-11-08T19:30:01.552Z"
 }
