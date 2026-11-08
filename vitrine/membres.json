@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 22,
-  "heuresLive30": 2083,
+  "heuresLive30": 2085,
   "followsGagnes30": 367,
   "periode": {
    "du": "2026-10-10",
@@ -183,7 +183,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 23,
+    "viewers": 18,
     "jeu": "Dispatch",
     "titre": "🗳️ DISPATCH | On vote ensemble chaque décision ! 👀",
     "depuis": "2026-11-08T19:31:05Z",
@@ -997,7 +997,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 10,
+    "viewers": 11,
     "jeu": "Loftia",
     "titre": "[DROPS] Enfin LOFTIAAAAAAA!",
     "depuis": "2026-11-08T10:19:07Z",
@@ -1112,5 +1112,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-08T22:07:15.938Z"
+ "maj": "2026-11-08T23:07:15.305Z"
 }
