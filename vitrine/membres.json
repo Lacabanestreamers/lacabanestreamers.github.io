@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 23,
-  "heuresLive30": 2068,
+  "heuresLive30": 2075,
   "followsGagnes30": 357,
   "periode": {
    "du": "2026-10-09",
@@ -235,7 +235,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "Librarian: Tidy Up the Arcane Library!",
     "titre": "☕ Zéro pouvoir, défi Librarian lancé ! 📖",
     "depuis": "2026-11-08T09:42:03Z",
@@ -246,8 +246,8 @@
    "jeux": [
     "Dead by Daylight",
     "Raft",
-    "Sort The Bunnies",
     "Librarian: Tidy Up the Arcane Library!",
+    "Sort The Bunnies",
     "Rise of the Tomb Raider"
    ],
    "clip": {
@@ -634,7 +634,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 6,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "Objectif CAMOS : Multi + Warzone – La chasse est ouverte !",
     "depuis": "2026-11-08T10:00:55Z",
@@ -706,7 +706,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "",
     "titre": "☕Work, Write & Read With Me | Cozy Productivity | Pomodoro 25/5 📚🤎",
     "depuis": "2026-11-08T09:40:48Z",
@@ -830,7 +830,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 5,
     "jeu": "Art",
     "titre": "[FR] On se réveille ensemble ☕☀️ | Coloriages | !discord !commandes",
     "depuis": "2026-11-08T08:00:11Z",
@@ -979,7 +979,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "The Cozy Board Game Shop: Tidy Up",
     "titre": "The Cozy Board Game Shop on range les jeux de sociétés",
     "depuis": "2026-11-08T10:00:22Z",
@@ -990,8 +990,8 @@
    "jeux": [
     "Cellar Keeper",
     "Sort A Lot",
-    "Game Market Mayhem",
     "The Cozy Board Game Shop: Tidy Up",
+    "Game Market Mayhem",
     "Dying Light"
    ],
    "clip": null
@@ -1021,7 +1021,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Into the Crypt",
+    "titre": "Session test avant LOFTIAAAAAAA!  #IntoTheCrypt #keymailer",
+    "depuis": "2026-11-08T10:19:07Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [
     {
@@ -1055,7 +1061,7 @@
    "staff": false,
    "depuis": "2026-09-28",
    "live": {
-    "viewers": 5,
+    "viewers": 18,
     "jeu": "Grand Theft Auto V",
     "titre": "🌴[#6] JE DÉCOUVRE GTA V 🌴!rs !discord !instantgaming",
     "depuis": "2026-11-08T10:00:30Z",
@@ -1070,8 +1076,8 @@
     }
    ],
    "jeux": [
-    "Cyberpunk 2077",
-    "Grand Theft Auto V"
+    "Grand Theft Auto V",
+    "Cyberpunk 2077"
    ],
    "clip": null
   },
@@ -1137,5 +1143,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-08T10:07:18.183Z"
+ "maj": "2026-11-08T11:07:20.839Z"
 }
