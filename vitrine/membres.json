@@ -7,8 +7,8 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 23,
-  "heuresLive30": 2075,
-  "followsGagnes30": 357,
+  "heuresLive30": 2083,
+  "followsGagnes30": 358,
   "periode": {
    "du": "2026-10-09",
    "au": "2026-11-08"
@@ -235,7 +235,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 7,
+    "viewers": 9,
     "jeu": "Librarian: Tidy Up the Arcane Library!",
     "titre": "☕ Zéro pouvoir, défi Librarian lancé ! 📖",
     "depuis": "2026-11-08T09:42:03Z",
@@ -634,7 +634,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "Objectif CAMOS : Multi + Warzone – La chasse est ouverte !",
     "depuis": "2026-11-08T10:00:55Z",
@@ -705,13 +705,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": {
-    "viewers": 3,
-    "jeu": "",
-    "titre": "☕Work, Write & Read With Me | Cozy Productivity | Pomodoro 25/5 📚🤎",
-    "depuis": "2026-11-08T09:40:48Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mandouee-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-10-23",
    "succes": [],
    "jeux": [
@@ -730,13 +724,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 2,
-    "jeu": "Kingdom Hearts Birth by Sleep",
-    "titre": "He bah BBS voila",
-    "depuis": "2026-11-08T09:01:12Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-08",
    "succes": [
     {
@@ -829,13 +817,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 5,
-    "jeu": "Art",
-    "titre": "[FR] On se réveille ensemble ☕☀️ | Coloriages | !discord !commandes",
-    "depuis": "2026-11-08T08:00:11Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -854,7 +836,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "World of Warcraft",
+    "titre": "Bonjour, je suis avec mon chasseur   !!!",
+    "depuis": "2026-11-08T11:48:39Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -979,7 +967,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "The Cozy Board Game Shop: Tidy Up",
     "titre": "The Cozy Board Game Shop on range les jeux de sociétés",
     "depuis": "2026-11-08T10:00:22Z",
@@ -1022,9 +1010,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 9,
-    "jeu": "Into the Crypt",
-    "titre": "Session test avant LOFTIAAAAAAA!  #IntoTheCrypt #keymailer",
+    "viewers": 17,
+    "jeu": "Loftia",
+    "titre": "[DROPS] Enfin LOFTIAAAAAAA!",
     "depuis": "2026-11-08T10:19:07Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1060,13 +1048,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": {
-    "viewers": 18,
-    "jeu": "Grand Theft Auto V",
-    "titre": "🌴[#6] JE DÉCOUVRE GTA V 🌴!rs !discord !instantgaming",
-    "depuis": "2026-11-08T10:00:30Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-19",
    "succes": [
     {
@@ -1143,5 +1125,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-08T11:07:20.839Z"
+ "maj": "2026-11-08T12:07:13.801Z"
 }
