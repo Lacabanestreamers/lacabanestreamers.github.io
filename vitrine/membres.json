@@ -182,7 +182,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Dispatch",
+    "titre": "🗳️ DISPATCH | On vote ensemble chaque décision ! 👀",
+    "depuis": "2026-11-08T19:31:05Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -432,7 +438,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 9,
+    "viewers": 8,
     "jeu": "Minecraft",
     "titre": "FR_VT - J-14 du Choupiathon !!! un peu de cobblemon  !!",
     "depuis": "2026-11-08T19:09:20Z",
@@ -541,7 +547,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "VALORANT",
     "titre": "LES GAMES VONT DONNER QUOI ? ON VA VITE LE SAVOIR ! 😂",
     "depuis": "2026-11-08T18:28:36Z",
@@ -1003,7 +1009,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 20,
+    "viewers": 18,
     "jeu": "Loftia",
     "titre": "[DROPS] Enfin LOFTIAAAAAAA!",
     "depuis": "2026-11-08T10:19:07Z",
@@ -1118,5 +1124,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-08T19:30:01.552Z"
+ "maj": "2026-11-08T20:07:14.687Z"
 }
