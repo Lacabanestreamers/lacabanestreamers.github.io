@@ -8,10 +8,10 @@
   "affilies": 42,
   "nouveaux30": 22,
   "heuresLive30": 2089,
-  "followsGagnes30": 367,
+  "followsGagnes30": 365,
   "periode": {
    "du": "2026-10-10",
-   "au": "2026-11-08"
+   "au": "2026-11-09"
   }
  },
  "agenda": [],
@@ -261,7 +261,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Lies of P",
+    "titre": "[Lies of P] On continue le DLC",
+    "depuis": "2026-11-09T07:55:37Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -574,8 +580,8 @@
     "Makers & Crafting",
     "Dead Space 2",
     "Resonance: A Plague Tale Legacy",
-    "BOMBANANA!",
-    "FragPunk"
+    "FragPunk",
+    "Little Nightmares: Enhanced Edition"
    ],
    "clip": {
     "url": "https://www.twitch.tv/liiapin/clip/CleanAuspiciousAlfalfaTBTacoLeft-4Ph8Vq6RMi4qlXVG",
@@ -829,7 +835,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "American Truck Simulator",
+    "titre": "Bonjour, je livre du lourd et encombrant    !!!",
+    "depuis": "2026-11-09T08:06:45Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -859,11 +871,11 @@
     }
    ],
    "jeux": [
-    "The Other Side",
     "SONG OF HORROR",
-    "Art",
+    "The Other Side",
     "DEVOUR",
-    "Backrooms: Inside the Escape"
+    "Backrooms: Inside the Escape",
+    "All Rats on Deck"
    ],
    "clip": null
   },
@@ -1100,5 +1112,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-09T02:07:27.718Z"
+ "maj": "2026-11-09T08:07:17.468Z"
 }
