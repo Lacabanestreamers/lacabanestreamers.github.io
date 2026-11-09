@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 22,
-  "heuresLive30": 2089,
+  "heuresLive30": 2091,
   "followsGagnes30": 365,
   "periode": {
    "du": "2026-10-10",
@@ -262,7 +262,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 2,
+    "viewers": 5,
     "jeu": "Lies of P",
     "titre": "[Lies of P] On continue le DLC",
     "depuis": "2026-11-09T07:55:37Z",
@@ -749,7 +749,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Stardew Valley",
+    "titre": "Petite matinale sur Stardew, on va prendre le soleil sur l'île gingembre !!  !discord !regles !don",
+    "depuis": "2026-11-09T08:17:57Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -835,13 +841,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 0,
-    "jeu": "American Truck Simulator",
-    "titre": "Bonjour, je livre du lourd et encombrant    !!!",
-    "depuis": "2026-11-09T08:06:45Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -887,7 +887,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "The Sims 4",
+    "titre": "THE SIMS 4 [FR] | Episode 16 : Agathe dois ce marier sous 7jours avec Jules, il ne lui reste que 3jrs... et dramaaa 🏠| !perfectlife !agathe",
+    "depuis": "2026-11-09T08:50:36Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
+   },
    "premierStream": "2025-09-10",
    "succes": [
     {
@@ -1112,5 +1118,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-09T08:07:17.468Z"
+ "maj": "2026-11-09T09:07:19.865Z"
 }
