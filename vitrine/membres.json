@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 22,
-  "heuresLive30": 2133,
+  "heuresLive30": 2141,
   "followsGagnes30": 361,
   "periode": {
    "du": "2026-10-11",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "A Plague Tale: Innocence",
     "titre": "A Plague Tale innocence/PS5",
     "depuis": "2026-11-09T21:54:57Z",
@@ -119,9 +119,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
-    "jeu": "VALORANT",
-    "titre": "On vise le Silver ce soir ! Reste juste à toucher nos balles pour changer 💀",
+    "viewers": 7,
+    "jeu": "Brotato",
+    "titre": "On fini la soirée en étant une patate de compétition",
     "depuis": "2026-11-09T19:16:51Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
    },
@@ -132,7 +132,7 @@
     "Outbound",
     "Graveyard Keeper II",
     "VALORANT",
-    "R.E.P.O."
+    "Cinderia"
    ],
    "clip": {
     "url": "https://www.twitch.tv/aulit42369/clip/SquarePiliableHedgehogNinjaGrumpy-qi1PaTnf6jypreuo",
@@ -151,21 +151,15 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 3,
-    "jeu": "Pokémon Mystery Dungeon: Explorers of Sky",
-    "titre": "⚡POKEMON DONGON MYSTERE : EXPLORATEUR DU CIEL DS • Je sais plus ce qu'on dois faire oupsi • 3 💗",
-    "depuis": "2026-11-09T20:12:05Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bichoune_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-04",
    "succes": [],
    "jeux": [
     "Mazebound: Hunt, Gather, Run!",
     "Leafy Corner",
     "My Fashion Studio",
-    "Stardew Valley",
-    "Pokémon Mystery Dungeon: Explorers of Sky"
+    "Pokémon Mystery Dungeon: Explorers of Sky",
+    "Stardew Valley"
    ],
    "clip": {
     "url": "https://www.twitch.tv/bichoune_/clip/ConcernedAbnegateTomatoMikeHogu-PoYmVo6PD3BlV9Kk",
@@ -696,13 +690,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 12,
-    "jeu": "Phasmophobia",
-    "titre": "Chasse aux fantômes !!- Ft @narberzoo_buzzleglaire !lurk !discord",
-    "depuis": "2026-11-09T19:52:24Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
@@ -821,13 +809,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 1,
-    "jeu": "The Sims 4",
-    "titre": "[FR] ~ Sims 4 - Challenge des Festivités- Halloween #4~",
-    "depuis": "2026-11-09T19:25:55Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -970,13 +952,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 4,
-    "jeu": "The Witcher 3: Wild Hunt Remastered",
-    "titre": "Quels secrets à Skellige ? !discord",
-    "depuis": "2026-11-09T19:04:06Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_r3skyo-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2023-03-23",
    "succes": [],
    "jeux": [
@@ -1034,7 +1010,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 23,
+    "viewers": 25,
     "jeu": "Loftia",
     "titre": "Loftia, le tunnel continue!",
     "depuis": "2026-11-09T12:19:20Z",
@@ -1149,5 +1125,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-09T22:07:16.623Z"
+ "maj": "2026-11-09T23:07:14.627Z"
 }
