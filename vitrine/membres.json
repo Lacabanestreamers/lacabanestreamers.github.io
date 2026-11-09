@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 22,
-  "heuresLive30": 2126,
+  "heuresLive30": 2130,
   "followsGagnes30": 373,
   "periode": {
    "du": "2026-10-10",
@@ -346,13 +346,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": {
-    "viewers": 5,
-    "jeu": "Hogwarts Legacy",
-    "titre": "[FR] [HL] 🪄 LIVE HOGWARTS LEGACY | Un sorcière maladroite à Poudlard 😂 | Venez vivre l'aventure avec Evodp !",
-    "depuis": "2026-11-09T15:11:44Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -376,13 +370,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 6,
-    "jeu": "World of Warcraft",
-    "titre": "[DROP] Des vaches en quête sur forever !",
-    "depuis": "2026-11-09T10:13:57Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galaadours-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2023-06-06",
    "succes": [],
    "jeux": [
@@ -861,13 +849,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 15,
-    "jeu": "Just Chatting",
-    "titre": "[FR ] On chill  [!bs !steam !insta !discord ]",
-    "depuis": "2026-11-09T15:07:24Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -1009,7 +991,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 15,
+    "viewers": 26,
     "jeu": "Loftia",
     "titre": "Loftia, le tunnel continue!",
     "depuis": "2026-11-09T12:19:20Z",
@@ -1124,5 +1106,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-09T17:07:16.924Z"
+ "maj": "2026-11-09T18:07:19.815Z"
 }
