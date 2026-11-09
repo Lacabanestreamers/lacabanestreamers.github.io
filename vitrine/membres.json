@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 22,
-  "heuresLive30": 2109,
+  "heuresLive30": 2115,
   "followsGagnes30": 373,
   "periode": {
    "du": "2026-10-10",
@@ -113,7 +113,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 9,
     "jeu": "Graveyard Keeper II",
     "titre": "On remet le tablier de thanatopracteur ! Autopsies propres et enterrements au poil 💀",
     "depuis": "2026-11-09T11:35:21Z",
@@ -189,7 +189,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 9,
     "jeu": "Deal Flipper",
     "titre": "💸 DEAL FLIPPER | Acheter, négocier, revendre... jusqu'à devenir riche ?",
     "depuis": "2026-11-09T14:01:14Z",
@@ -358,13 +358,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": {
-    "viewers": 2,
-    "jeu": "Hogwarts Legacy",
-    "titre": "[FR] [HL] 🪄 LIVE HOGWARTS LEGACY | Un sorcière maladroite à Poudlard 😂 | Venez vivre l'aventure avec Evodp !",
-    "depuis": "2026-11-09T11:56:21Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -389,9 +383,9 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
-    "jeu": "Dub Together",
-    "titre": "On se double des trucs, puis on repars sur Forever",
+    "viewers": 6,
+    "jeu": "World of Warcraft",
+    "titre": "[DROP] Des vaches en quête sur forever !",
     "depuis": "2026-11-09T10:13:57Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galaadours-440x248.jpg"
    },
@@ -854,7 +848,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "World of Warcraft",
     "titre": "Bonjour,  je up mon paladin a forgefer    !!!",
     "depuis": "2026-11-09T12:00:51Z",
@@ -1021,9 +1015,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 15,
-    "jeu": "Pixel Washer",
-    "titre": "On nettoie quelques pixels avant Loftia #pixelwasher #keymailer",
+    "viewers": 16,
+    "jeu": "Loftia",
+    "titre": "Loftia, le tunnel continue!",
     "depuis": "2026-11-09T12:19:20Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1136,5 +1130,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-09T14:07:16.535Z"
+ "maj": "2026-11-09T15:07:13.287Z"
 }
