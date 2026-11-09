@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 22,
-  "heuresLive30": 2120,
+  "heuresLive30": 2126,
   "followsGagnes30": 373,
   "periode": {
    "du": "2026-10-10",
@@ -113,7 +113,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 10,
     "jeu": "Graveyard Keeper II",
     "titre": "On remet le tablier de thanatopracteur ! Autopsies propres et enterrements au poil 💀",
     "depuis": "2026-11-09T11:35:21Z",
@@ -389,7 +389,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 5,
     "jeu": "World of Warcraft",
     "titre": "[DROP] Des vaches en quête sur forever !",
     "depuis": "2026-11-09T10:13:57Z",
@@ -398,8 +398,8 @@
    "premierStream": "2023-06-06",
    "succes": [],
    "jeux": [
-    "Just Chatting",
     "World of Warcraft",
+    "Just Chatting",
     "Special Events",
     "Chicken Feet",
     "Deep Rock Galactic"
@@ -874,7 +874,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 7,
     "jeu": "SONG OF HORROR",
     "titre": "[FR ] On se fais peur oui oui oui  [!bs !steam !insta !discord ]",
     "depuis": "2026-11-09T15:07:24Z",
@@ -1021,7 +1021,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 12,
+    "viewers": 13,
     "jeu": "Loftia",
     "titre": "Loftia, le tunnel continue!",
     "depuis": "2026-11-09T12:19:20Z",
@@ -1036,8 +1036,8 @@
     }
    ],
    "jeux": [
-    "Space Savory",
     "Loftia",
+    "Space Savory",
     "Just Chatting",
     "Photomaly",
     "Invokyr"
@@ -1136,5 +1136,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-09T16:00:11.187Z"
+ "maj": "2026-11-09T16:07:22.206Z"
 }
