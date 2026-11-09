@@ -7,8 +7,8 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 22,
-  "heuresLive30": 2097,
-  "followsGagnes30": 365,
+  "heuresLive30": 2100,
+  "followsGagnes30": 373,
   "periode": {
    "du": "2026-10-10",
    "au": "2026-11-09"
@@ -112,7 +112,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Graveyard Keeper II",
+    "titre": "On remet le tablier de thanatopracteur ! Autopsies propres et enterrements au poil 💀",
+    "depuis": "2026-11-09T11:35:21Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
+   },
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -346,7 +352,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Hogwarts Legacy",
+    "titre": "[FR] [HL] 🪄 LIVE HOGWARTS LEGACY | Un sorcière maladroite à Poudlard 😂 | Venez vivre l'aventure avec Evodp !",
+    "depuis": "2026-11-09T11:56:21Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
+   },
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -371,7 +383,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 7,
     "jeu": "World of Warcraft",
     "titre": "[DROP] WoW Forever ? Nan mais j'irais pas (cé fo)",
     "depuis": "2026-11-09T10:13:57Z",
@@ -382,8 +394,8 @@
    "jeux": [
     "Just Chatting",
     "Special Events",
-    "Chicken Feet",
     "World of Warcraft",
+    "Chicken Feet",
     "Deep Rock Galactic"
    ],
    "clip": null
@@ -835,7 +847,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "World of Warcraft",
+    "titre": "Bonjour,  je up mon paladin a forgefer    !!!",
+    "depuis": "2026-11-09T12:00:51Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -881,13 +899,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 10,
-    "jeu": "The Sims 4",
-    "titre": "THE SIMS 4 [FR] | Episode 16 : Agathe dois ce marier sous 7jours avec Jules, il ne lui reste que 3jrs... et dramaaa 🏠| !perfectlife !agathe",
-    "depuis": "2026-11-09T08:50:36Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-10",
    "succes": [
     {
@@ -1035,13 +1047,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": {
-    "viewers": 13,
-    "jeu": "Grand Theft Auto V",
-    "titre": "🌴[#7] JE DÉCOUVRE GTA V 🌴!rs !discord !instantgaming",
-    "depuis": "2026-11-09T10:30:20Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-19",
    "succes": [
     {
@@ -1118,5 +1124,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-09T11:07:22.873Z"
+ "maj": "2026-11-09T12:07:13.975Z"
 }
