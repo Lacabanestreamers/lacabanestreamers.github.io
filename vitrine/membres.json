@@ -112,13 +112,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 10,
-    "jeu": "Graveyard Keeper II",
-    "titre": "On remet le tablier de thanatopracteur ! Autopsies propres et enterrements au poil 💀",
-    "depuis": "2026-11-09T11:35:21Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -140,7 +134,7 @@
   {
    "login": "bichoune_",
    "nom": "Bichoune_",
-   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/ff3e595e-d998-4554-a3bd-39839664a3b0-profile_image-300x300.png",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/509f85be-6855-4737-8c48-12207942098f-profile_image-300x300.png",
    "bio": "☕️ Bienvenue à la maison ! Ici on fait nos meilleures jeux cosy et du coloriage💗Le planning change chaques semaines, fais un eye contact avec, sinon regarde dans programme 👀",
    "type": "affiliate",
    "staff": false,
@@ -188,13 +182,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 7,
-    "jeu": "Deal Flipper",
-    "titre": "💸 DEAL FLIPPER | Acheter, négocier, revendre... jusqu'à devenir riche ?",
-    "depuis": "2026-11-09T14:01:14Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -359,7 +347,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 1,
+    "viewers": 5,
     "jeu": "Hogwarts Legacy",
     "titre": "[FR] [HL] 🪄 LIVE HOGWARTS LEGACY | Un sorcière maladroite à Poudlard 😂 | Venez vivre l'aventure avec Evodp !",
     "depuis": "2026-11-09T15:11:44Z",
@@ -389,7 +377,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 6,
     "jeu": "World of Warcraft",
     "titre": "[DROP] Des vaches en quête sur forever !",
     "depuis": "2026-11-09T10:13:57Z",
@@ -874,9 +862,9 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
-    "jeu": "SONG OF HORROR",
-    "titre": "[FR ] On se fais peur oui oui oui  [!bs !steam !insta !discord ]",
+    "viewers": 15,
+    "jeu": "Just Chatting",
+    "titre": "[FR ] On chill  [!bs !steam !insta !discord ]",
     "depuis": "2026-11-09T15:07:24Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
    },
@@ -1021,7 +1009,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 13,
+    "viewers": 15,
     "jeu": "Loftia",
     "titre": "Loftia, le tunnel continue!",
     "depuis": "2026-11-09T12:19:20Z",
@@ -1136,5 +1124,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-09T16:07:22.206Z"
+ "maj": "2026-11-09T17:07:16.924Z"
 }
