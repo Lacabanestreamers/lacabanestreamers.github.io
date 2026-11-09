@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 22,
-  "heuresLive30": 2104,
+  "heuresLive30": 2109,
   "followsGagnes30": 373,
   "periode": {
    "du": "2026-10-10",
@@ -113,7 +113,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 8,
     "jeu": "Graveyard Keeper II",
     "titre": "On remet le tablier de thanatopracteur ! Autopsies propres et enterrements au poil 💀",
     "depuis": "2026-11-09T11:35:21Z",
@@ -188,7 +188,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "Deal Flipper",
+    "titre": "💸 DEAL FLIPPER | Acheter, négocier, revendre... jusqu'à devenir riche ?",
+    "depuis": "2026-11-09T14:01:14Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -383,9 +389,9 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
-    "jeu": "World of Warcraft",
-    "titre": "[DROP] WoW Forever ? Nan mais j'irais pas (cé fo)",
+    "viewers": 4,
+    "jeu": "Dub Together",
+    "titre": "On se double des trucs, puis on repars sur Forever",
     "depuis": "2026-11-09T10:13:57Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galaadours-440x248.jpg"
    },
@@ -1015,9 +1021,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 11,
-    "jeu": "Lucky Punk",
-    "titre": "Un deck builder qui a du PUNCH?  #PlayLuckyPunk #keymailer",
+    "viewers": 15,
+    "jeu": "Pixel Washer",
+    "titre": "On nettoie quelques pixels avant Loftia #pixelwasher #keymailer",
     "depuis": "2026-11-09T12:19:20Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1130,5 +1136,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-09T13:07:13.386Z"
+ "maj": "2026-11-09T14:07:16.535Z"
 }
