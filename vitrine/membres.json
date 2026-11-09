@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 22,
-  "heuresLive30": 2131,
+  "heuresLive30": 2137,
   "followsGagnes30": 377,
   "periode": {
    "du": "2026-10-10",
@@ -112,7 +112,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "VALORANT",
+    "titre": "On vise le Silver ce soir ! Reste juste à toucher nos balles pour changer 💀",
+    "depuis": "2026-11-09T19:16:51Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
+   },
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -235,7 +241,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 2,
+    "viewers": 4,
     "jeu": "Mimic Busters",
     "titre": "🔍 Quel objet est un monstre ? On nettoie tout avec @DamePiouPiou @galyssiane 🫧",
     "depuis": "2026-11-09T18:54:41Z",
@@ -268,7 +274,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 1,
+    "viewers": 5,
     "jeu": "Warframe",
     "titre": "[Warframe](MR27) On continue le farm de 500 pl !",
     "depuis": "2026-11-09T18:56:09Z",
@@ -332,7 +338,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "🌙 La tanière des marmottes 🐾 | Retour à Dreamlight Valley ✨ chill, quêtes & magie Disney | !lurk !clip !commandes",
+    "depuis": "2026-11-09T19:36:15Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
+   },
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
@@ -403,9 +415,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 3,
     "jeu": "Mimic Busters",
-    "titre": "Mimic Busters : Se déguiser, se cacher et SURTOUT passer inaperçu!  Avec @DamePiouPiou @Cristal578 et les copains!",
+    "titre": "Mimic Busters : Se déguiser, se cacher et SURTOUT passer inaperçu! Avec @DamePiouPiou @Cristal578 et les copains! clef obtenue via keymailer",
     "depuis": "2026-11-09T18:50:13Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
    },
@@ -814,7 +826,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "The Sims 4",
+    "titre": "[FR] ~ Sims 4 - Challenge des Festivités- Halloween #4~",
+    "depuis": "2026-11-09T19:25:55Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
+   },
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -958,7 +976,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "The Witcher 3: Wild Hunt Remastered",
     "titre": "Quels secrets à Skellige ? !discord",
     "depuis": "2026-11-09T19:04:06Z",
@@ -983,7 +1001,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Anime Shop Simulator ✨",
+    "titre": "Anime Shop Chaos on range les figurines",
+    "depuis": "2026-11-09T19:09:07Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
+   },
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -1021,7 +1045,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 45,
+    "viewers": 38,
     "jeu": "Loftia",
     "titre": "Loftia, le tunnel continue!",
     "depuis": "2026-11-09T12:19:20Z",
@@ -1136,5 +1160,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-09T19:07:18.541Z"
+ "maj": "2026-11-09T19:41:32.661Z"
 }
