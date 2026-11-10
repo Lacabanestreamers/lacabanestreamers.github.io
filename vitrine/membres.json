@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 22,
-  "heuresLive30": 2167,
+  "heuresLive30": 2170,
   "followsGagnes30": 371,
   "periode": {
    "du": "2026-10-11",
@@ -183,13 +183,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 16,
-    "jeu": "Planet Zoo 2",
-    "titre": "🐘Planet Zoo  |  Plus d'animaux, plus de visiteurs, plus de problèmes  😄",
-    "depuis": "2026-11-10T10:44:48Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -398,9 +392,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 2,
-    "jeu": "Boxroom",
-    "titre": "Live cozy ! Viens m'aider à ranger ma bibliothèque Steam! (!commandes !ttc) + tests de démos diverses",
+    "viewers": 11,
+    "jeu": "Abyssal Lapidary",
+    "titre": "Live cozy ! Viens faire des tests de démos diverses ! (!commandes !ttc) +",
     "depuis": "2026-11-10T12:58:50Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
    },
@@ -445,7 +439,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 7,
     "jeu": "Valheim",
     "titre": "FR_VT - Valhalla nous venons vers toi !!!",
     "depuis": "2026-11-10T13:00:00Z",
@@ -467,8 +461,8 @@
    "jeux": [
     "Minecraft",
     "R.E.P.O.",
-    "Special Events",
     "Valheim",
+    "Special Events",
     "DEVOUR"
    ],
    "clip": {
@@ -508,7 +502,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "Art",
+    "titre": "✦ OC CHALLENGE ✦ GALAXIIIIE ! ✨ | Allez j'essaye de l'finir làà ! | Vendredi, 18H : 🎁 Giveaway dédidcace ! | !artchallenges !liens",
+    "depuis": "2026-11-10T13:32:34Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
+   },
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -1023,7 +1023,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "Make the World Great Again",
+    "titre": "On va rendre le monde meilleur? #maketheworldgreatagain  #keymailer",
+    "depuis": "2026-11-10T13:07:06Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [
     {
@@ -1133,5 +1139,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-10T13:07:14.325Z"
+ "maj": "2026-11-10T14:07:13.352Z"
 }
