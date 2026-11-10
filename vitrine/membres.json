@@ -7,8 +7,8 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 22,
-  "heuresLive30": 2185,
-  "followsGagnes30": 371,
+  "heuresLive30": 2188,
+  "followsGagnes30": 377,
   "periode": {
    "du": "2026-10-11",
    "au": "2026-11-10"
@@ -235,7 +235,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Raft",
+    "titre": "🌊Au menu ce soir : du requin grillé ! Coop sur Raft avec @Titounetsan @Barba_Doug",
+    "depuis": "2026-11-10T19:00:59Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
+   },
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -392,8 +398,8 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
-    "jeu": "Adopt Me Please",
+    "viewers": 11,
+    "jeu": "As Long as She Forgot",
     "titre": "Live cozy ! Viens faire des tests de démos diverses ! (!commandes !ttc) +",
     "depuis": "2026-11-10T12:58:50Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
@@ -496,13 +502,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 23,
-    "jeu": "Art",
-    "titre": "✦ OC CHALLENGE ✦ GALAXIIIIE ! ✨ | Allez j'essaye de l'finir làà ! | Vendredi, 18H : 🎁 Giveaway dédidcace ! | !artchallenges !liens",
-    "depuis": "2026-11-10T13:32:34Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -1018,7 +1018,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 24,
+    "viewers": 26,
     "jeu": "Loftia",
     "titre": "Tunnel Loftia bonsoâr!",
     "depuis": "2026-11-10T13:07:06Z",
@@ -1133,5 +1133,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-10T18:07:31.104Z"
+ "maj": "2026-11-10T19:07:14.944Z"
 }
