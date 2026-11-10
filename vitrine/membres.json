@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 22,
-  "heuresLive30": 2182,
+  "heuresLive30": 2185,
   "followsGagnes30": 371,
   "periode": {
    "du": "2026-10-11",
@@ -392,8 +392,8 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
-    "jeu": "Just Chatting",
+    "viewers": 10,
+    "jeu": "Adopt Me Please",
     "titre": "Live cozy ! Viens faire des tests de démos diverses ! (!commandes !ttc) +",
     "depuis": "2026-11-10T12:58:50Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
@@ -403,9 +403,9 @@
    "jeux": [
     "Shift at Midnight",
     "R.E.P.O.",
+    "Just Chatting",
     "Forever Ago",
-    "Writing & Reading",
-    "Just Chatting"
+    "Writing & Reading"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/DirtyProudPicklesBrainSlug-AWG994WBBl1ojqnZ",
@@ -497,7 +497,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 27,
+    "viewers": 23,
     "jeu": "Art",
     "titre": "✦ OC CHALLENGE ✦ GALAXIIIIE ! ✨ | Allez j'essaye de l'finir làà ! | Vendredi, 18H : 🎁 Giveaway dédidcace ! | !artchallenges !liens",
     "depuis": "2026-11-10T13:32:34Z",
@@ -1018,9 +1018,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 16,
-    "jeu": "Make the World Great Again",
-    "titre": "On va rendre le monde meilleur? #maketheworldgreatagain  #keymailer",
+    "viewers": 24,
+    "jeu": "Loftia",
+    "titre": "Tunnel Loftia bonsoâr!",
     "depuis": "2026-11-10T13:07:06Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1133,5 +1133,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-10T17:07:19.718Z"
+ "maj": "2026-11-10T18:07:31.104Z"
 }
