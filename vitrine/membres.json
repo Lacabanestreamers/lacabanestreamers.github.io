@@ -263,7 +263,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 2,
+    "viewers": 5,
     "jeu": "Warframe",
     "titre": "[Warframe](MR27) On continue le farm de 500 pl !",
     "depuis": "2026-11-10T07:59:08Z",
@@ -751,7 +751,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "Poppy Playtime: Chapter 4 - Safe Haven",
     "titre": "La matinale de l'horreur, pourquoi pas?? On débute la journée avec Poppy playtime !!!!  !discord !regles !don",
     "depuis": "2026-11-10T07:59:16Z",
@@ -849,13 +849,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "American Truck Simulator",
-    "titre": "Bonjour, tempête de froid sur les USA mais je livre quand même  !!!",
-    "depuis": "2026-11-10T07:53:19Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -902,7 +896,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "The Sims 4",
     "titre": "THE SIMS 4 [FR] | Episode 17 : Agathe attend des triplés, Jules est parti avec l'héritage... et dramaaa 🏠| !perfectlife !agathe",
     "depuis": "2026-11-10T07:50:56Z",
@@ -1113,7 +1107,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Deal Flipper",
+    "titre": "Il est l'heure de devenir des as de la négociation ! | !tiktok | !Discord | !clip |",
+    "depuis": "2026-11-10T08:51:37Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zeylta-440x248.jpg"
+   },
    "premierStream": "2026-01-31",
    "succes": [],
    "jeux": [
@@ -1139,5 +1139,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-10T08:17:06.878Z"
+ "maj": "2026-11-10T09:07:17.631Z"
 }
