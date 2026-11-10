@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 22,
-  "heuresLive30": 2153,
+  "heuresLive30": 2157,
   "followsGagnes30": 369,
   "periode": {
    "du": "2026-10-11",
@@ -262,13 +262,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": {
-    "viewers": 5,
-    "jeu": "Warframe",
-    "titre": "[Warframe](MR27) On continue le farm de 500 pl !",
-    "depuis": "2026-11-10T07:59:08Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -751,7 +745,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Poppy Playtime: Chapter 4 - Safe Haven",
     "titre": "La matinale de l'horreur, pourquoi pas?? On débute la journée avec Poppy playtime !!!!  !discord !regles !don",
     "depuis": "2026-11-10T07:59:16Z",
@@ -764,7 +758,7 @@
     "Stardew Valley",
     "The Baby In Yellow",
     "Aniimo",
-    "Welcome to Elderfield"
+    "Poppy Playtime: Chapter 4 - Safe Haven"
    ],
    "clip": {
     "url": "https://www.twitch.tv/melpastelplay/clip/ArtsyDistinctWalrus4Head-VmhfPbyCTE5JHxLa",
@@ -986,7 +980,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Anime Shop Simulator ✨",
+    "titre": "Anime Shop Chaos on range les figurines",
+    "depuis": "2026-11-10T10:02:17Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
+   },
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -1108,7 +1108,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 4,
+    "viewers": 9,
     "jeu": "Deal Flipper",
     "titre": "Il est l'heure de devenir des as de la négociation ! | !tiktok | !Discord | !clip |",
     "depuis": "2026-11-10T08:51:37Z",
@@ -1139,5 +1139,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-10T09:07:17.631Z"
+ "maj": "2026-11-10T10:07:16.729Z"
 }
