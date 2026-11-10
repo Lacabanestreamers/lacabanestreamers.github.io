@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 22,
-  "heuresLive30": 2191,
+  "heuresLive30": 2197,
   "followsGagnes30": 377,
   "periode": {
    "du": "2026-10-11",
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 23,
+    "viewers": 24,
     "jeu": "Just Chatting",
     "titre": "🌙 PYJAMA PARTY ! Venez chill, rire et papoter avec nous 💜",
     "depuis": "2026-11-10T19:27:52Z",
@@ -53,8 +53,8 @@
    "succes": [],
    "jeux": [
     "Outbound",
-    "Silver Service",
     "Just Chatting",
+    "Silver Service",
     "R.E.P.O.",
     "DEVOUR"
    ],
@@ -75,7 +75,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "PEAK",
+    "titre": "⛰️ Les Petites Pierres et les Kallax prennent de l’altitude 🧗 | PEAK avec @Galyssiane | ❗cmd ❗rs ❗clip",
+    "depuis": "2026-11-10T20:16:13Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asakha-440x248.jpg"
+   },
    "premierStream": "2021-12-06",
    "succes": [],
    "jeux": [
@@ -242,7 +248,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "Raft",
     "titre": "🌊Au menu ce soir : du requin grillé ! Coop sur Raft avec @Titounetsan @Barba_Doug",
     "depuis": "2026-11-10T19:00:59Z",
@@ -404,9 +410,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
-    "jeu": "Games + Demos",
-    "titre": "Live cozy ! Viens faire des tests de démos diverses ! (!commandes !ttc) +",
+    "viewers": 14,
+    "jeu": "PEAK",
+    "titre": "Le mardi c'est survie ! avec @asakha , et notre énorme talent pour survivre !(sisi j'vous jure) (!commandes !ttc)",
     "depuis": "2026-11-10T12:58:50Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
    },
@@ -451,7 +457,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 9,
+    "viewers": 13,
     "jeu": "Moon Sweepers",
     "titre": "FR_VT - On est sur la lune ce soir !!",
     "depuis": "2026-11-10T19:33:37Z",
@@ -539,7 +545,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Just Chatting",
+    "titre": "RÉACT🍿 : On continue 90 Day Fiancé / 3 mois pour se marier, avec des rebondissements inédits 🤯 | React émission & docus",
+    "depuis": "2026-11-10T20:27:52Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
+   },
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
@@ -1036,7 +1048,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 24,
+    "viewers": 20,
     "jeu": "Loftia",
     "titre": "Tunnel Loftia bonsoâr!",
     "depuis": "2026-11-10T13:07:06Z",
@@ -1151,5 +1163,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-10T20:07:16.758Z"
+ "maj": "2026-11-10T21:07:18.328Z"
 }
