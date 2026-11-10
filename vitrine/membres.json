@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 22,
-  "heuresLive30": 2164,
+  "heuresLive30": 2167,
   "followsGagnes30": 371,
   "periode": {
    "du": "2026-10-11",
@@ -397,7 +397,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Boxroom",
+    "titre": "Live cozy ! Viens m'aider à ranger ma bibliothèque Steam! (!commandes !ttc) + tests de démos diverses",
+    "depuis": "2026-11-10T12:58:50Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -438,7 +444,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Valheim",
+    "titre": "FR_VT - Valhalla nous venons vers toi !!!",
+    "depuis": "2026-11-10T13:00:00Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -889,13 +901,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 21,
-    "jeu": "The Sims 4",
-    "titre": "THE SIMS 4 [FR] | Episode 17 : Agathe attend des triplés, Jules est parti avec l'héritage... et dramaaa 🏠| !perfectlife !agathe",
-    "depuis": "2026-11-10T07:50:56Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-10",
    "succes": [
     {
@@ -980,21 +986,15 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": {
-    "viewers": 2,
-    "jeu": "Anime Shop Simulator ✨",
-    "titre": "Anime Shop Chaos on range les figurines",
-    "depuis": "2026-11-10T10:02:17Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
     "Cellar Keeper",
     "The Cozy Board Game Shop: Tidy Up",
     "Sort A Lot",
-    "Game Market Mayhem",
-    "Anime Shop Simulator ✨"
+    "Anime Shop Simulator ✨",
+    "Game Market Mayhem"
    ],
    "clip": null
   },
@@ -1133,5 +1133,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-10T12:07:14.172Z"
+ "maj": "2026-11-10T13:07:14.325Z"
 }
