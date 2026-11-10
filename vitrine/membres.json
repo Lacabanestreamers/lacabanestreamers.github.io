@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 18,
+    "viewers": 13,
     "jeu": "Silver Service",
     "titre": "🌙 PYJAMA PARTY ! Venez chill, rire et papoter avec nous 💜",
     "depuis": "2026-11-10T19:27:52Z",
@@ -75,13 +75,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": {
-    "viewers": 4,
-    "jeu": "PEAK",
-    "titre": "⛰️ Les Petites Pierres et les Kallax prennent de l’altitude 🧗 | PEAK avec @Galyssiane | ❗cmd ❗rs ❗clip",
-    "depuis": "2026-11-10T20:16:13Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asakha-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2021-12-06",
    "succes": [],
    "jeux": [
@@ -410,13 +404,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 11,
-    "jeu": "PEAK",
-    "titre": "Le mardi c'est survie ! avec @asakha , et notre énorme talent pour survivre !(sisi j'vous jure) (!commandes !ttc)",
-    "depuis": "2026-11-10T12:58:50Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -458,7 +446,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 13,
+    "viewers": 11,
     "jeu": "Moon Sweepers",
     "titre": "FR_VT - On est sur la lune ce soir !!",
     "depuis": "2026-11-10T19:33:37Z",
@@ -547,7 +535,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 14,
+    "viewers": 12,
     "jeu": "Just Chatting",
     "titre": "RÉACT🍿 : On continue 90 Day Fiancé / 3 mois pour se marier, avec des rebondissements inédits 🤯 | React émission & docus",
     "depuis": "2026-11-10T20:27:52Z",
@@ -828,13 +816,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 4,
-    "jeu": "The Sims 4",
-    "titre": "[FR] ~ Sims 4 - Challenge des Festivités- Halloween #5~",
-    "depuis": "2026-11-10T19:46:26Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -1049,7 +1031,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 15,
+    "viewers": 11,
     "jeu": "Loftia",
     "titre": "Tunnel Loftia bonsoâr!",
     "depuis": "2026-11-10T13:07:06Z",
@@ -1164,5 +1146,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-10T22:16:59.431Z"
+ "maj": "2026-11-10T23:07:13.265Z"
 }
