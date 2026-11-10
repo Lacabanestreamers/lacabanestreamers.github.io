@@ -7,8 +7,8 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 22,
-  "heuresLive30": 2161,
-  "followsGagnes30": 369,
+  "heuresLive30": 2164,
+  "followsGagnes30": 371,
   "periode": {
    "du": "2026-10-11",
    "au": "2026-11-10"
@@ -184,7 +184,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 15,
+    "viewers": 16,
     "jeu": "Planet Zoo 2",
     "titre": "🐘Planet Zoo  |  Plus d'animaux, plus de visiteurs, plus de problèmes  😄",
     "depuis": "2026-11-10T10:44:48Z",
@@ -890,7 +890,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 7,
+    "viewers": 21,
     "jeu": "The Sims 4",
     "titre": "THE SIMS 4 [FR] | Episode 17 : Agathe attend des triplés, Jules est parti avec l'héritage... et dramaaa 🏠| !perfectlife !agathe",
     "depuis": "2026-11-10T07:50:56Z",
@@ -981,7 +981,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 6,
+    "viewers": 2,
     "jeu": "Anime Shop Simulator ✨",
     "titre": "Anime Shop Chaos on range les figurines",
     "depuis": "2026-11-10T10:02:17Z",
@@ -994,7 +994,7 @@
     "The Cozy Board Game Shop: Tidy Up",
     "Sort A Lot",
     "Game Market Mayhem",
-    "Dying Light"
+    "Anime Shop Simulator ✨"
    ],
    "clip": null
   },
@@ -1133,5 +1133,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-10T11:07:19.945Z"
+ "maj": "2026-11-10T12:07:14.172Z"
 }
