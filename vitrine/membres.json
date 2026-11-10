@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 22,
-  "heuresLive30": 2149,
+  "heuresLive30": 2153,
   "followsGagnes30": 369,
   "periode": {
    "du": "2026-10-11",
@@ -263,7 +263,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Warframe",
     "titre": "[Warframe](MR27) On continue le farm de 500 pl !",
     "depuis": "2026-11-10T07:59:08Z",
@@ -902,7 +902,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 6,
+    "viewers": 5,
     "jeu": "The Sims 4",
     "titre": "THE SIMS 4 [FR] | Episode 17 : Agathe attend des triplés, Jules est parti avec l'héritage... et dramaaa 🏠| !perfectlife !agathe",
     "depuis": "2026-11-10T07:50:56Z",
@@ -1139,5 +1139,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-10T08:07:13.905Z"
+ "maj": "2026-11-10T08:17:06.878Z"
 }
