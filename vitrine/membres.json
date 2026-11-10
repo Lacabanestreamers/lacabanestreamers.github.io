@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 22,
-  "heuresLive30": 2141,
+  "heuresLive30": 2145,
   "followsGagnes30": 361,
   "periode": {
    "du": "2026-10-11",
@@ -119,7 +119,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 4,
     "jeu": "Brotato",
     "titre": "On fini la soirée en étant une patate de compétition",
     "depuis": "2026-11-09T19:16:51Z",
@@ -132,7 +132,7 @@
     "Outbound",
     "Graveyard Keeper II",
     "VALORANT",
-    "Cinderia"
+    "Brotato"
    ],
    "clip": {
     "url": "https://www.twitch.tv/aulit42369/clip/SquarePiliableHedgehogNinjaGrumpy-qi1PaTnf6jypreuo",
@@ -444,13 +444,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 10,
-    "jeu": "Special Events",
-    "titre": "FR_VT - Dernier jour du Choupiathon !!! On fête l'aniversaire d'Affiliation !!",
-    "depuis": "2026-11-09T20:03:00Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -467,8 +461,8 @@
    "jeux": [
     "Minecraft",
     "R.E.P.O.",
-    "Valheim",
     "Special Events",
+    "Valheim",
     "DEVOUR"
    ],
    "clip": {
@@ -1010,7 +1004,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 25,
+    "viewers": 22,
     "jeu": "Loftia",
     "titre": "Loftia, le tunnel continue!",
     "depuis": "2026-11-09T12:19:20Z",
@@ -1125,5 +1119,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-09T23:07:14.627Z"
+ "maj": "2026-11-10T00:07:13.917Z"
 }
