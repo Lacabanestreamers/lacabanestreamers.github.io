@@ -8,10 +8,10 @@
   "affilies": 42,
   "nouveaux30": 22,
   "heuresLive30": 2149,
-  "followsGagnes30": 361,
+  "followsGagnes30": 369,
   "periode": {
    "du": "2026-10-11",
-   "au": "2026-11-09"
+   "au": "2026-11-10"
   }
  },
  "agenda": [],
@@ -47,9 +47,9 @@
    "succes": [],
    "jeux": [
     "Outbound",
-    "R.E.P.O.",
     "Silver Service",
     "Just Chatting",
+    "R.E.P.O.",
     "DEVOUR"
    ],
    "clip": {
@@ -202,7 +202,7 @@
     "The Sims 4",
     "Planet Zoo 2",
     "Just Chatting",
-    "R.E.P.O."
+    "Disney Dreamlight Valley"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/ImportantSmilingDiscRitzMitz-U1lqzaDEhv1rZv8z",
@@ -262,7 +262,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Warframe",
+    "titre": "[Warframe](MR27) On continue le farm de 500 pl !",
+    "depuis": "2026-11-10T07:59:08Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -395,8 +401,8 @@
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
-    "R.E.P.O.",
     "Shift at Midnight",
+    "R.E.P.O.",
     "Forever Ago",
     "Writing & Reading",
     "Abiotic Factor"
@@ -744,7 +750,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Poppy Playtime: Chapter 4 - Safe Haven",
+    "titre": "La matinale de l'horreur, pourquoi pas?? On débute la journée avec Poppy playtime !!!!  !discord !regles !don",
+    "depuis": "2026-11-10T07:59:16Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -778,8 +790,8 @@
     "Just Chatting",
     "No Man's Sky",
     "Rocket League",
-    "Clair Obscur: Expedition 33",
-    "Fall Guys"
+    "Fall Guys",
+    "Apex Legends"
    ],
    "clip": null
   },
@@ -837,7 +849,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "American Truck Simulator",
+    "titre": "Bonjour, tempête de froid sur les USA mais je livre quand même  !!!",
+    "depuis": "2026-11-10T07:53:19Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -883,7 +901,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "The Sims 4",
+    "titre": "THE SIMS 4 [FR] | Episode 17 : Agathe attend des triplés, Jules est parti avec l'héritage... et dramaaa 🏠| !perfectlife !agathe",
+    "depuis": "2026-11-10T07:50:56Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
+   },
    "premierStream": "2025-09-10",
    "succes": [
     {
@@ -1115,5 +1139,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-10T02:07:29.368Z"
+ "maj": "2026-11-10T08:07:13.905Z"
 }
