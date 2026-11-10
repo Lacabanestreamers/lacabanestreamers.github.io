@@ -24,13 +24,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": {
-    "viewers": 8,
-    "jeu": "A Plague Tale: Innocence",
-    "titre": "A Plague Tale innocence/PS5",
-    "depuis": "2026-11-09T21:54:57Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -119,7 +113,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 8,
     "jeu": "Brotato",
     "titre": "On fini la soirée en étant une patate de compétition",
     "depuis": "2026-11-09T19:16:51Z",
@@ -1003,13 +997,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": {
-    "viewers": 23,
-    "jeu": "Loftia",
-    "titre": "Loftia, le tunnel continue!",
-    "depuis": "2026-11-09T12:19:20Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [
     {
@@ -1119,5 +1107,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-10T00:08:46.067Z"
+ "maj": "2026-11-10T01:07:15.404Z"
 }
