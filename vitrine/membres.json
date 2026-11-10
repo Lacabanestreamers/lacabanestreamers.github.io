@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 22,
-  "heuresLive30": 2148,
+  "heuresLive30": 2149,
   "followsGagnes30": 361,
   "periode": {
    "du": "2026-10-11",
@@ -112,13 +112,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 8,
-    "jeu": "Brotato",
-    "titre": "On fini la soirée en étant une patate de compétition",
-    "depuis": "2026-11-09T19:16:51Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -156,12 +150,12 @@
     "Stardew Valley"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/bichoune_/clip/ConcernedAbnegateTomatoMikeHogu-PoYmVo6PD3BlV9Kk",
-    "titre": "Le piège......................",
-    "vues": 5,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/65fe7c9e-cc84-447f-9a82-66399c957cb4/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "url": "https://www.twitch.tv/bichoune_/clip/PluckyPlayfulNarwhalImGlitch-0lq5tpNeIkuq5czA",
+    "titre": "POV t'es jeune permis caddie 2",
+    "vues": 7,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/630993ea-b4a6-4568-9984-5af21a69e4f1/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-08",
-    "duree": 24
+    "duree": 32
    }
   },
   {
@@ -212,11 +206,11 @@
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/ImportantSmilingDiscRitzMitz-U1lqzaDEhv1rZv8z",
-    "titre": "WzBot CLIP | 🔥 DONATION GOAL ATTEINT ✅ | 3H SUR LES SIMS : OBJECTIF HAREM GÉANT ? (by aemeilis)",
-    "vues": 13,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/0d8c961e-6c6b-44eb-a089-d745fbce7de4/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "titre": "Le crac-crac qui tourne mal ...",
+    "vues": 14,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/40311116-c87b-432b-af31-14c25d4e0d99/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-06",
-    "duree": 60
+    "duree": 15
    }
   },
   {
@@ -339,7 +333,7 @@
    "clip": {
     "url": "https://www.twitch.tv/emmamarmotte/clip/WonderfulDeterminedBulgogiRaccAttack-qwi3yIHBDeQ8p_lC",
     "titre": "💕 Soirée cosy des marmottes sur DDV 🎮 | !lurk !clip !commandes",
-    "vues": 5,
+    "vues": 7,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/7d3c7848-4b8e-40e5-8438-341cb6b0448a/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-03",
     "duree": 30
@@ -462,7 +456,7 @@
    "clip": {
     "url": "https://www.twitch.tv/hyroshimaeu/clip/CourteousSmoothEmuPeanutButterJellyTime-c3NFhHbmfvetZJ13",
     "titre": "Vengeance driftée",
-    "vues": 14,
+    "vues": 15,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5cf5b319-dcb2-4df7-a9e4-7431413d7441/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-03",
     "duree": 30
@@ -585,10 +579,10 @@
     "Little Nightmares: Enhanced Edition"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/liiapin/clip/CleanAuspiciousAlfalfaTBTacoLeft-4Ph8Vq6RMi4qlXVG",
+    "url": "https://www.twitch.tv/liiapin/clip/DeadEncouragingKittenUWot-nekC2wKhEqqdT1yR",
     "titre": "Clip by inStreamly",
-    "vues": 1,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f281b5ca-8414-4fa6-9e14-9a86fa9b7965/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "vues": 2,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/db0b8b0d-661d-4380-aee3-904c7b6308b0/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-07",
     "duree": 26
    }
@@ -807,7 +801,14 @@
     "Horror Game",
     "Decay: The Mare - Episode 1"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/mysti94/clip/UninterestedRepleteKumquatBudBlast-qBtfj68aj3dq0pfZ",
+    "titre": "WzBot CLIP | [FR] ~ Sims 4 - Challenge des Festivités- Halloween #4~ (by misschampignon)",
+    "vues": 1,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d9239e96-8734-407b-a52c-7ae0b67b3463/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-09",
+    "duree": 60
+   }
   },
   {
    "login": "nabelle_",
@@ -898,7 +899,14 @@
     "R.E.P.O.",
     "Demonologist"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/p_xline_/clip/AlluringBashfulAniseYouDontSay-Fm7EQ7mRUAoJWHZ3",
+    "titre": "J'rigolerai qu'il dise non... il à dit non...",
+    "vues": 2,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a594071e-2f6a-46ab-8f5e-cf4e8ad42979/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-09",
+    "duree": 16
+   }
   },
   {
    "login": "paygadream",
@@ -1014,11 +1022,11 @@
     "Invokyr"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/sakkiel/clip/FrigidBrightPlumageHassaanChop-DqrM5DNtlYxkSIGG",
-    "titre": "Ptit pop corn 🤣🤣🤣",
-    "vues": 18,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/89b6fb9d-115b-4b8c-8ba1-e4e33efc6614/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-02",
+    "url": "https://www.twitch.tv/sakkiel/clip/FlirtyOnerousWaterJonCarnage-yCUbS8PHTx60CldX",
+    "titre": "La battle Fall Guys!",
+    "vues": 9,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6614775e-894f-467c-9f5c-0792b4a2d9d4/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-03",
     "duree": 30
    }
   },
@@ -1092,12 +1100,12 @@
     "Gloomy Eyes"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/zeylta/clip/SpeedyPrettyVanillaJonCarnage-JRBTSg9A_wIeJXPg",
-    "titre": "On vas régler des problèmes de cœur #2 | !tiktok | !Discord | !clip |",
+    "url": "https://www.twitch.tv/zeylta/clip/ScaryRockyGoldfishPoooound-HgzBmfOGS-8U4iwx",
+    "titre": "Toutoutou",
     "vues": 2,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d629a3b9-9b8f-4201-ac5c-bfe89331c0e2/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-05",
-    "duree": 30
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/96a89dc2-ee0a-4757-bd66-ed1a06aff6eb/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-03",
+    "duree": 8
    }
   }
  ],
@@ -1107,5 +1115,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-10T01:07:15.404Z"
+ "maj": "2026-11-10T02:07:29.368Z"
 }
