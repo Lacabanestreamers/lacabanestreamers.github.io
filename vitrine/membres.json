@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 22,
-  "heuresLive30": 2174,
+  "heuresLive30": 2178,
   "followsGagnes30": 371,
   "periode": {
    "du": "2026-10-11",
@@ -392,8 +392,8 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 18,
-    "jeu": "Abyssal Lapidary",
+    "viewers": 13,
+    "jeu": "Just Chatting",
     "titre": "Live cozy ! Viens faire des tests de démos diverses ! (!commandes !ttc) +",
     "depuis": "2026-11-10T12:58:50Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
@@ -439,7 +439,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 5,
     "jeu": "Valheim",
     "titre": "FR_VT - Valhalla nous venons vers toi !!!",
     "depuis": "2026-11-10T13:00:00Z",
@@ -503,7 +503,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 21,
+    "viewers": 20,
     "jeu": "Art",
     "titre": "✦ OC CHALLENGE ✦ GALAXIIIIE ! ✨ | Allez j'essaye de l'finir làà ! | Vendredi, 18H : 🎁 Giveaway dédidcace ! | !artchallenges !liens",
     "depuis": "2026-11-10T13:32:34Z",
@@ -1024,7 +1024,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 14,
+    "viewers": 16,
     "jeu": "Make the World Great Again",
     "titre": "On va rendre le monde meilleur? #maketheworldgreatagain  #keymailer",
     "depuis": "2026-11-10T13:07:06Z",
@@ -1139,5 +1139,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-10T15:07:16.351Z"
+ "maj": "2026-11-10T16:07:16.010Z"
 }
