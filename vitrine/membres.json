@@ -6,11 +6,11 @@
  "chiffres": {
   "membres": 46,
   "affilies": 42,
-  "nouveaux30": 22,
-  "heuresLive30": 2197,
-  "followsGagnes30": 377,
+  "nouveaux30": 21,
+  "heuresLive30": 2169,
+  "followsGagnes30": 355,
   "periode": {
-   "du": "2026-10-11",
+   "du": "2026-10-12",
    "au": "2026-11-10"
   }
  },
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 24,
+    "viewers": 19,
     "jeu": "Just Chatting",
     "titre": "🌙 PYJAMA PARTY ! Venez chill, rire et papoter avec nous 💜",
     "depuis": "2026-11-10T19:27:52Z",
@@ -76,7 +76,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "PEAK",
     "titre": "⛰️ Les Petites Pierres et les Kallax prennent de l’altitude 🧗 | PEAK avec @Galyssiane | ❗cmd ❗rs ❗clip",
     "depuis": "2026-11-10T20:16:13Z",
@@ -86,7 +86,8 @@
    "succes": [],
    "jeux": [
     "R.E.P.O.",
-    "Abiotic Factor"
+    "Abiotic Factor",
+    "PEAK"
    ],
    "clip": null
   },
@@ -410,7 +411,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 11,
     "jeu": "PEAK",
     "titre": "Le mardi c'est survie ! avec @asakha , et notre énorme talent pour survivre !(sisi j'vous jure) (!commandes !ttc)",
     "depuis": "2026-11-10T12:58:50Z",
@@ -457,7 +458,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 13,
+    "viewers": 12,
     "jeu": "Moon Sweepers",
     "titre": "FR_VT - On est sur la lune ce soir !!",
     "depuis": "2026-11-10T19:33:37Z",
@@ -546,7 +547,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 9,
+    "viewers": 13,
     "jeu": "Just Chatting",
     "titre": "RÉACT🍿 : On continue 90 Day Fiancé / 3 mois pour se marier, avec des rebondissements inédits 🤯 | React émission & docus",
     "depuis": "2026-11-10T20:27:52Z",
@@ -828,7 +829,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "The Sims 4",
     "titre": "[FR] ~ Sims 4 - Challenge des Festivités- Halloween #5~",
     "depuis": "2026-11-10T19:46:26Z",
@@ -1048,7 +1049,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 20,
+    "viewers": 16,
     "jeu": "Loftia",
     "titre": "Tunnel Loftia bonsoâr!",
     "depuis": "2026-11-10T13:07:06Z",
@@ -1163,5 +1164,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-10T21:07:18.328Z"
+ "maj": "2026-11-10T22:07:14.601Z"
 }
