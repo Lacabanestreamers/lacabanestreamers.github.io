@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2185,
+  "heuresLive30": 2186,
   "followsGagnes30": 355,
   "periode": {
    "du": "2026-10-12",
@@ -42,19 +42,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 5,
-    "jeu": "Just Chatting",
-    "titre": "🌙 PYJAMA PARTY ! Venez chill, rire et papoter avec nous 💜",
-    "depuis": "2026-11-10T19:27:52Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
     "Outbound",
-    "Silver Service",
     "Just Chatting",
+    "Silver Service",
     "R.E.P.O.",
     "DEVOUR"
    ],
@@ -1122,5 +1116,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-11T02:07:28.671Z"
+ "maj": "2026-11-11T02:41:52.277Z"
 }
