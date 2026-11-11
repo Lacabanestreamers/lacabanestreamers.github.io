@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2205,
+  "heuresLive30": 2213,
   "followsGagnes30": 358,
   "periode": {
    "du": "2026-10-12",
@@ -244,7 +244,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 4,
+    "viewers": 7,
     "jeu": "Librarian: Tidy Up the Arcane Library!",
     "titre": "☕ Zéro pouvoir, défi Librarian lancé ! 📖",
     "depuis": "2026-11-11T12:04:35Z",
@@ -355,7 +355,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Hogwarts Legacy",
     "titre": "[FR] [HL] 🪄 LIVE HOGWARTS LEGACY | Un sorcière maladroite à Poudlard 😂 | Venez vivre l'aventure avec Evodp !",
     "depuis": "2026-11-11T11:58:50Z",
@@ -405,8 +405,8 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
-    "jeu": "Just Chatting",
+    "viewers": 10,
+    "jeu": "Pig King",
     "titre": "On teste des démos avec @sakkiel et les copains !",
     "depuis": "2026-11-11T13:51:34Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
@@ -414,9 +414,9 @@
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
+    "Just Chatting",
     "Shift at Midnight",
     "R.E.P.O.",
-    "Just Chatting",
     "Forever Ago",
     "Writing & Reading"
    ],
@@ -454,7 +454,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 11,
+    "viewers": 9,
     "jeu": "DEVOUR",
     "titre": "FR_VT - Go se faire peur !!",
     "depuis": "2026-11-11T13:03:43Z",
@@ -478,7 +478,7 @@
     "R.E.P.O.",
     "Valheim",
     "Special Events",
-    "Moon Sweepers"
+    "DEVOUR"
    ],
    "clip": {
     "url": "https://www.twitch.tv/hyroshimaeu/clip/AnimatedCooperativeEchidnaKappaPride-5ODSQagyT7TgE6QK",
@@ -864,13 +864,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "Bonjour, de retour dans la vallée avec @paygadream en voc  !!!",
-    "depuis": "2026-11-11T13:37:13Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -949,13 +943,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "On se met à jour dans les VDE !! En voc avec @nyxenfox",
-    "depuis": "2026-11-11T13:37:17Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_paygadream-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-05-02",
    "succes": [],
    "jeux": [
@@ -1007,7 +995,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Dying Light",
+    "titre": "Dying Light on part a la chasse aux infectés",
+    "depuis": "2026-11-11T15:00:38Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
+   },
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -1045,9 +1039,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 13,
-    "jeu": "Loftia",
-    "titre": "On commence par Loftia avant les tests!",
+    "viewers": 11,
+    "jeu": "Pig King",
+    "titre": "Session découvertes!    #PigKing #keymailer",
     "depuis": "2026-11-11T12:27:16Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1134,18 +1128,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": {
-    "viewers": 12,
-    "jeu": "The Witch's Bakery",
-    "titre": "Sauvons nos clients de leurs regret ! | !tiktok | !Discord | !clip |",
-    "depuis": "2026-11-11T13:02:44Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zeylta-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-01-31",
    "succes": [],
    "jeux": [
-    "Coffee Talk",
     "The Witch's Bakery",
+    "Coffee Talk",
     "inKONBINI: One Store. Many Stories",
     "Allogloom",
     "Gloomy Eyes"
@@ -1166,5 +1154,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-11T14:07:14.295Z"
+ "maj": "2026-11-11T15:07:16.725Z"
 }
