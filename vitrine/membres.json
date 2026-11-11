@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2192,
+  "heuresLive30": 2195,
   "followsGagnes30": 357,
   "periode": {
    "du": "2026-10-12",
@@ -270,13 +270,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": {
-    "viewers": 2,
-    "jeu": "FINAL FANTASY XIV ONLINE",
-    "titre": "[FF14 online] On continue l'epopée !",
-    "depuis": "2026-11-11T08:09:42Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -426,7 +420,7 @@
    "staff": false,
    "depuis": "2026-10-11",
    "live": {
-    "viewers": 11,
+    "viewers": 14,
     "jeu": "Dressmaker (2026)",
     "titre": "[Découverte] Pendant que ma vraie machine à coudre prend la poussière... 🧵👗",
     "depuis": "2026-11-11T09:52:19Z",
@@ -434,7 +428,9 @@
    },
    "premierStream": "2023-07-10",
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "Dressmaker (2026)"
+   ],
    "clip": null
   },
   {
@@ -982,7 +978,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Bunker Tidy Up",
     "titre": "Bunker Tidy Up on remet de l'ordre dans notre bunker",
     "depuis": "2026-11-11T09:47:36Z",
@@ -1134,5 +1130,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-11T10:07:17.081Z"
+ "maj": "2026-11-11T10:42:44.318Z"
 }
