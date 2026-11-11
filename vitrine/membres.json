@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2236,
+  "heuresLive30": 2240,
   "followsGagnes30": 357,
   "periode": {
    "du": "2026-10-12",
@@ -270,7 +270,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "FINAL FANTASY XIV ONLINE",
+    "titre": "[FF14 online] On retrouve le main compte !",
+    "depuis": "2026-11-11T19:25:52Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -435,13 +441,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 14,
-    "jeu": "Supermarket Chaos",
-    "titre": "FR_VT - un peu de chill en équipe",
-    "depuis": "2026-11-11T18:02:49Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -545,7 +545,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 5,
+    "viewers": 3,
     "jeu": "VALORANT",
     "titre": "🔥 ON RÉCUP LE BRONZE 🥉 ET ON CE SILVER ! | VALORANT LIVE 🚀",
     "depuis": "2026-11-11T18:58:59Z",
@@ -834,7 +834,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 10,
+    "viewers": 21,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] J-7 DLC 4 | Est-ce que je vais finir le musée d'Olaf ? ☃️ | Disney Dreamlight Valley | !discord !commandes",
     "depuis": "2026-11-11T17:00:10Z",
@@ -1027,9 +1027,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 13,
-    "jeu": "CRACK",
-    "titre": "On casse un oeuf? #Crack",
+    "viewers": 10,
+    "jeu": "Just Chatting",
+    "titre": "La poiscaille! #GONEFishingGame #keymailer",
     "depuis": "2026-11-11T12:27:16Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1065,7 +1065,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "Cyberpunk 2077",
+    "titre": "😈 PROJECT R - Session BETA TEST Cyberpunk RP 😈 !projectr !rs !discord",
+    "depuis": "2026-11-11T20:00:16Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
+   },
    "premierStream": "2025-01-19",
    "succes": [
     {
@@ -1142,5 +1148,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-11T19:07:13.373Z"
+ "maj": "2026-11-11T20:07:14.405Z"
 }
