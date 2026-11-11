@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2240,
+  "heuresLive30": 2245,
   "followsGagnes30": 357,
   "periode": {
    "du": "2026-10-12",
@@ -271,9 +271,9 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 4,
+    "viewers": 2,
     "jeu": "FINAL FANTASY XIV ONLINE",
-    "titre": "[FF14 online] On retrouve le main compte !",
+    "titre": "[FF14/Endwalker] On retrouve le main compte !",
     "depuis": "2026-11-11T19:25:52Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
    },
@@ -287,8 +287,8 @@
    ],
    "jeux": [
     "Warframe",
-    "Lies of P",
     "FINAL FANTASY XIV ONLINE",
+    "Lies of P",
     "Wuthering Waves",
     "Aniimo"
    ],
@@ -545,7 +545,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "VALORANT",
     "titre": "🔥 ON RÉCUP LE BRONZE 🥉 ET ON CE SILVER ! | VALORANT LIVE 🚀",
     "depuis": "2026-11-11T18:58:59Z",
@@ -648,7 +648,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Rocket League",
+    "titre": "On part sur du classé Rocket League",
+    "depuis": "2026-11-11T20:08:01Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
+   },
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -833,13 +839,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 21,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "[FR] J-7 DLC 4 | Est-ce que je vais finir le musée d'Olaf ? ☃️ | Disney Dreamlight Valley | !discord !commandes",
-    "depuis": "2026-11-11T17:00:10Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -1027,8 +1027,8 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 10,
-    "jeu": "Just Chatting",
+    "viewers": 12,
+    "jeu": "GONE Fishing",
     "titre": "La poiscaille! #GONEFishingGame #keymailer",
     "depuis": "2026-11-11T12:27:16Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
@@ -1066,7 +1066,7 @@
    "staff": false,
    "depuis": "2026-09-28",
    "live": {
-    "viewers": 10,
+    "viewers": 23,
     "jeu": "Cyberpunk 2077",
     "titre": "😈 PROJECT R - Session BETA TEST Cyberpunk RP 😈 !projectr !rs !discord",
     "depuis": "2026-11-11T20:00:16Z",
@@ -1148,5 +1148,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-11T20:07:14.405Z"
+ "maj": "2026-11-11T21:07:30.463Z"
 }
