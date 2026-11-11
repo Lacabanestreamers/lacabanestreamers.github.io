@@ -420,7 +420,7 @@
    "staff": false,
    "depuis": "2026-10-11",
    "live": {
-    "viewers": 14,
+    "viewers": 16,
     "jeu": "Dressmaker (2026)",
     "titre": "[Découverte] Pendant que ma vraie machine à coudre prend la poussière... 🧵👗",
     "depuis": "2026-11-11T09:52:19Z",
@@ -978,7 +978,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Bunker Tidy Up",
     "titre": "Bunker Tidy Up on remet de l'ordre dans notre bunker",
     "depuis": "2026-11-11T09:47:36Z",
@@ -1130,5 +1130,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-11T10:42:44.318Z"
+ "maj": "2026-11-11T11:07:18.859Z"
 }
