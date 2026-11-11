@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2188,
+  "heuresLive30": 2189,
   "followsGagnes30": 355,
   "periode": {
    "du": "2026-10-12",
@@ -839,7 +839,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "Euro Truck Simulator 2",
     "titre": "Bonjour, je repart livrer venez faire coucou  !!!",
     "depuis": "2026-11-11T03:53:23Z",
@@ -1122,5 +1122,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-11T06:07:15.517Z"
+ "maj": "2026-11-11T07:07:17.370Z"
 }
