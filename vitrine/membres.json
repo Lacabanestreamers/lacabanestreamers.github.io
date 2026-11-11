@@ -838,7 +838,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "Euro Truck Simulator 2",
+    "titre": "Bonjour, je repart livrer venez faire coucou  !!!",
+    "depuis": "2026-11-11T03:53:23Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1116,5 +1122,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-11T02:41:52.277Z"
+ "maj": "2026-11-11T04:07:14.315Z"
 }
