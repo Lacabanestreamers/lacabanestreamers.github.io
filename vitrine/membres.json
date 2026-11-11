@@ -7,10 +7,10 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2245,
-  "followsGagnes30": 357,
+  "heuresLive30": 2206,
+  "followsGagnes30": 351,
   "periode": {
-   "du": "2026-10-12",
+   "du": "2026-10-13",
    "au": "2026-11-11"
   }
  },
@@ -270,13 +270,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": {
-    "viewers": 2,
-    "jeu": "FINAL FANTASY XIV ONLINE",
-    "titre": "[FF14/Endwalker] On retrouve le main compte !",
-    "depuis": "2026-11-11T19:25:52Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -544,13 +538,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 4,
-    "jeu": "VALORANT",
-    "titre": "🔥 ON RÉCUP LE BRONZE 🥉 ET ON CE SILVER ! | VALORANT LIVE 🚀",
-    "depuis": "2026-11-11T18:58:59Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -650,8 +638,8 @@
    "depuis": "2026-10-15",
    "live": {
     "viewers": 3,
-    "jeu": "Rocket League",
-    "titre": "On part sur du classé Rocket League",
+    "jeu": "Call of Duty: Modern Warfare 4",
+    "titre": "CAMO CAMO CAMO on va chercher l'or",
     "depuis": "2026-11-11T20:08:01Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
    },
@@ -1027,7 +1015,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 12,
+    "viewers": 11,
     "jeu": "GONE Fishing",
     "titre": "La poiscaille! #GONEFishingGame #keymailer",
     "depuis": "2026-11-11T12:27:16Z",
@@ -1066,7 +1054,7 @@
    "staff": false,
    "depuis": "2026-09-28",
    "live": {
-    "viewers": 23,
+    "viewers": 22,
     "jeu": "Cyberpunk 2077",
     "titre": "😈 PROJECT R - Session BETA TEST Cyberpunk RP 😈 !projectr !rs !discord",
     "depuis": "2026-11-11T20:00:16Z",
@@ -1148,5 +1136,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-11T21:07:30.463Z"
+ "maj": "2026-11-11T22:07:16.637Z"
 }
