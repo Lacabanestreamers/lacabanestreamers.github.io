@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2191,
+  "heuresLive30": 2192,
   "followsGagnes30": 357,
   "periode": {
    "du": "2026-10-12",
@@ -271,7 +271,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 4,
+    "viewers": 2,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "[FF14 online] On continue l'epopée !",
     "depuis": "2026-11-11T08:09:42Z",
@@ -425,7 +425,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-11",
-   "live": null,
+   "live": {
+    "viewers": 11,
+    "jeu": "Dressmaker (2026)",
+    "titre": "[Découverte] Pendant que ma vraie machine à coudre prend la poussière... 🧵👗",
+    "depuis": "2026-11-11T09:52:19Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hagosan-440x248.jpg"
+   },
    "premierStream": "2023-07-10",
    "succes": [],
    "jeux": [],
@@ -975,7 +981,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Bunker Tidy Up",
+    "titre": "Bunker Tidy Up on remet de l'ordre dans notre bunker",
+    "depuis": "2026-11-11T09:47:36Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
+   },
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -1122,5 +1134,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-11T09:07:15.827Z"
+ "maj": "2026-11-11T10:07:17.081Z"
 }
