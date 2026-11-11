@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2206,
+  "heuresLive30": 2209,
   "followsGagnes30": 351,
   "periode": {
    "du": "2026-10-13",
@@ -636,13 +636,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 3,
-    "jeu": "Call of Duty: Modern Warfare 4",
-    "titre": "CAMO CAMO CAMO on va chercher l'or",
-    "depuis": "2026-11-11T20:08:01Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -1054,7 +1048,7 @@
    "staff": false,
    "depuis": "2026-09-28",
    "live": {
-    "viewers": 22,
+    "viewers": 11,
     "jeu": "Cyberpunk 2077",
     "titre": "😈 PROJECT R - Session BETA TEST Cyberpunk RP 😈 !projectr !rs !discord",
     "depuis": "2026-11-11T20:00:16Z",
@@ -1069,8 +1063,8 @@
     }
    ],
    "jeux": [
-    "Grand Theft Auto V",
-    "Cyberpunk 2077"
+    "Cyberpunk 2077",
+    "Grand Theft Auto V"
    ],
    "clip": null
   },
@@ -1136,5 +1130,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-11T22:07:16.637Z"
+ "maj": "2026-11-11T23:07:17.835Z"
 }
