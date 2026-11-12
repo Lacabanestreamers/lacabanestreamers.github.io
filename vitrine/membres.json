@@ -119,13 +119,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 10,
-    "jeu": "VALORANT",
-    "titre": "Les canards ne veulent pas, donc on va prendre des headshots",
-    "depuis": "2026-11-12T11:16:12Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -301,7 +295,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "The Survivalists",
+    "titre": "🏝The Survivalists ~ On continue notre survie ! - !réseaux",
+    "depuis": "2026-11-12T18:08:43Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -492,13 +492,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 22,
-    "jeu": "Art",
-    "titre": "✦ FAN ART ✦ Ocarina Of Time et corgi ! En mode chill làà ☕ | Demain, 18H : 🎁 Giveaway dédidcace ! | !artchallenges !liens",
-    "depuis": "2026-11-12T12:55:04Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -826,7 +820,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Art",
+    "titre": "[FR] On finis la journée ensemble 🖍️☕️ | Coloriage Mystère | !discord !commandes",
+    "depuis": "2026-11-12T19:00:25Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
+   },
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -865,13 +865,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 9,
-    "jeu": "The Legend of Zelda: Ocarina of Time",
-    "titre": "[Ep1] Découverte totale de Ocarina of Time ! J'ai si hâte !! ✨-pas de backseat-✨ [!bs !fortune !insta !discord ]",
-    "depuis": "2026-11-12T14:49:22Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -1020,7 +1014,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 11,
+    "viewers": 15,
     "jeu": "The Transference",
     "titre": "Essayons de sortir d'ici! #TheTransference #keymailer",
     "depuis": "2026-11-12T12:41:07Z",
@@ -1135,5 +1129,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-12T18:08:55.858Z"
+ "maj": "2026-11-12T19:07:15.130Z"
 }
