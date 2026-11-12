@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2221,
+  "heuresLive30": 2223,
   "followsGagnes30": 362,
   "periode": {
    "du": "2026-10-13",
@@ -120,9 +120,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
-    "jeu": "Project P.I.T.T.",
-    "titre": "On nourris un trou avec des canards. Bizard?",
+    "viewers": 12,
+    "jeu": "VALORANT",
+    "titre": "Les canards ne veulent pas, donc on va prendre des headshots",
     "depuis": "2026-11-12T11:16:12Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
    },
@@ -390,7 +390,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Space Savory",
+    "titre": "Live Cozy cet aprem : 9 démos de jeux  à tester ! venez vous poser au calme, avec une tite boisson! (clef obtenue sur keymailer)",
+    "depuis": "2026-11-12T12:20:33Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -417,13 +423,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-11",
-   "live": {
-    "viewers": 10,
-    "jeu": "Dressmaker (2026)",
-    "titre": "[Découverte] Venez on va enrober des bourgeoises !🧵👗",
-    "depuis": "2026-11-12T09:24:27Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hagosan-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2023-07-10",
    "succes": [],
    "jeux": [
@@ -497,7 +497,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Art",
+    "titre": "✦ FAN ART ✦ Ocarina Of Time et corgi ! En mode chill làà ☕ | Demain, 18H : 🎁 Giveaway dédidcace ! | !artchallenges !liens",
+    "depuis": "2026-11-12T12:55:04Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
+   },
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -838,7 +844,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "World of Warcraft",
+    "titre": "Bonjour, je monte les level de ma hunt  !!!",
+    "depuis": "2026-11-12T12:24:07Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1006,7 +1018,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Thank You Bus Driver",
+    "titre": "RP chauffeur de bus!  #TYBD #keymailer",
+    "depuis": "2026-11-12T12:41:07Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [
     {
@@ -1116,5 +1134,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-12T12:07:17.077Z"
+ "maj": "2026-11-12T13:07:18.276Z"
 }
