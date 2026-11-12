@@ -7,10 +7,10 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2266,
-  "followsGagnes30": 363,
+  "heuresLive30": 2219,
+  "followsGagnes30": 342,
   "periode": {
-   "du": "2026-10-13",
+   "du": "2026-10-14",
    "au": "2026-11-12"
   }
  },
@@ -24,7 +24,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "A Plague Tale: Innocence",
+    "titre": "A Plague Tale innocence/PS5",
+    "depuis": "2026-11-12T21:51:06Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -295,13 +301,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 1,
-    "jeu": "The Survivalists",
-    "titre": "🏝The Survivalists ~ On continue notre survie ! - !réseaux",
-    "depuis": "2026-11-12T18:08:43Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -788,7 +788,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 1,
+    "viewers": 4,
     "jeu": "PUMPKIN PANIC",
     "titre": "[FR] ~ Pumpkin Panic - Finir le jeu en - de 25min, c'est possible ? ~ #2",
     "depuis": "2026-11-12T19:30:06Z",
@@ -951,7 +951,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 5,
     "jeu": "Split Fiction",
     "titre": "De nouvelles aventures en duo ✨ !discord",
     "depuis": "2026-11-12T19:42:21Z",
@@ -961,9 +961,9 @@
    "succes": [],
    "jeux": [
     "The Witcher 3: Wild Hunt Remastered",
+    "Split Fiction",
     "The Dark Pictures Anthology: House of Ashes",
     "Just Chatting",
-    "Split Fiction",
     "Pratfall"
    ],
    "clip": null
@@ -1014,7 +1014,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 10,
+    "viewers": 12,
     "jeu": "The Transference",
     "titre": "Essayons de sortir d'ici! #TheTransference #keymailer",
     "depuis": "2026-11-12T12:41:07Z",
@@ -1129,5 +1129,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-12T21:07:21.245Z"
+ "maj": "2026-11-12T22:07:22.326Z"
 }
