@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2257,
+  "heuresLive30": 2261,
   "followsGagnes30": 363,
   "periode": {
    "du": "2026-10-13",
@@ -668,7 +668,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 13,
+    "viewers": 9,
     "jeu": "Phasmophobia",
     "titre": "Go se faire bullylu ! PHASMOPHOBIA - !lurk !discord",
     "depuis": "2026-11-12T16:28:43Z",
@@ -821,7 +821,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 4,
     "jeu": "Art",
     "titre": "[FR] On finis la journée ensemble 🖍️☕️ | Coloriage Mystère | !discord !commandes",
     "depuis": "2026-11-12T19:00:25Z",
@@ -1014,7 +1014,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 15,
+    "viewers": 12,
     "jeu": "The Transference",
     "titre": "Essayons de sortir d'ici! #TheTransference #keymailer",
     "depuis": "2026-11-12T12:41:07Z",
@@ -1129,5 +1129,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-12T19:07:15.130Z"
+ "maj": "2026-11-12T19:25:14.250Z"
 }
