@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2228,
+  "heuresLive30": 2235,
   "followsGagnes30": 362,
   "periode": {
    "du": "2026-10-13",
@@ -120,7 +120,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 13,
     "jeu": "VALORANT",
     "titre": "Les canards ne veulent pas, donc on va prendre des headshots",
     "depuis": "2026-11-12T11:16:12Z",
@@ -392,7 +392,7 @@
    "depuis": "2026-09-20",
    "live": {
     "viewers": 9,
-    "jeu": "Townseek",
+    "jeu": "Book Nook",
     "titre": "Live Cozy cet aprem : 9 démos de jeux  à tester ! venez vous poser au calme, avec une tite boisson! (clef obtenue sur keymailer)",
     "depuis": "2026-11-12T12:20:33Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
@@ -498,7 +498,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 17,
+    "viewers": 18,
     "jeu": "Art",
     "titre": "✦ FAN ART ✦ Ocarina Of Time et corgi ! En mode chill làà ☕ | Demain, 18H : 🎁 Giveaway dédidcace ! | !artchallenges !liens",
     "depuis": "2026-11-12T12:55:04Z",
@@ -706,10 +706,10 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 3,
-    "jeu": "Fortnite",
-    "titre": "⚓ Pas de repos tant que le jeton One Piece n'est pas trouvé !",
-    "depuis": "2026-11-12T13:08:47Z",
+    "viewers": 1,
+    "jeu": "Genshin Impact",
+    "titre": "🔥 ON EXPLORE TEYVAT ! 🌸 | Genshin Impact | Exploration, quêtes et détente ✨",
+    "depuis": "2026-11-12T14:45:03Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mandouee-440x248.jpg"
    },
    "premierStream": "2024-10-23",
@@ -850,13 +850,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "World of Warcraft",
-    "titre": "Bonjour, je monte les level de ma hunt  !!!",
-    "depuis": "2026-11-12T12:24:07Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -880,7 +874,7 @@
     "viewers": 5,
     "jeu": "The Legend of Zelda: Ocarina of Time",
     "titre": "[Ep1] Découverte totale de Ocarina of Time ! J'ai si hâte !! ✨-pas de backseat-✨ [!bs !fortune !insta !discord ]",
-    "depuis": "2026-11-12T13:50:24Z",
+    "depuis": "2026-11-12T14:49:22Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
    },
    "premierStream": "2025-09-24",
@@ -1031,9 +1025,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 14,
-    "jeu": "Thank You Bus Driver",
-    "titre": "RP chauffeur de bus!  #TYBD #keymailer",
+    "viewers": 17,
+    "jeu": "Games + Demos",
+    "titre": "On s'échappe d'un labyrinthe #labyrinthawayout #keymailer",
     "depuis": "2026-11-12T12:41:07Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1146,5 +1140,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-12T14:07:17.202Z"
+ "maj": "2026-11-12T15:07:15.931Z"
 }
