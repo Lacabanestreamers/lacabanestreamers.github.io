@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2219,
+  "heuresLive30": 2223,
   "followsGagnes30": 342,
   "periode": {
    "du": "2026-10-14",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 4,
+    "viewers": 8,
     "jeu": "A Plague Tale: Innocence",
     "titre": "A Plague Tale innocence/PS5",
     "depuis": "2026-11-12T21:51:06Z",
@@ -787,13 +787,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 4,
-    "jeu": "PUMPKIN PANIC",
-    "titre": "[FR] ~ Pumpkin Panic - Finir le jeu en - de 25min, c'est possible ? ~ #2",
-    "depuis": "2026-11-12T19:30:06Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -950,13 +944,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 5,
-    "jeu": "Split Fiction",
-    "titre": "De nouvelles aventures en duo ✨ !discord",
-    "depuis": "2026-11-12T19:42:21Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_r3skyo-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2023-03-23",
    "succes": [],
    "jeux": [
@@ -1013,13 +1001,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": {
-    "viewers": 12,
-    "jeu": "The Transference",
-    "titre": "Essayons de sortir d'ici! #TheTransference #keymailer",
-    "depuis": "2026-11-12T12:41:07Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [
     {
@@ -1032,8 +1014,8 @@
     "Loftia",
     "Space Savory",
     "Just Chatting",
-    "Photomaly",
-    "Invokyr"
+    "The Transference",
+    "Photomaly"
    ],
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/YawningBraveMushroomCorgiDerp-LbZwVeN71DK68okD",
@@ -1129,5 +1111,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-12T22:07:22.326Z"
+ "maj": "2026-11-12T23:07:20.699Z"
 }
