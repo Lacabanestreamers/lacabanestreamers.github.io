@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2241,
+  "heuresLive30": 2247,
   "followsGagnes30": 362,
   "periode": {
    "du": "2026-10-13",
@@ -346,13 +346,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": {
-    "viewers": 0,
-    "jeu": "Call of Duty: Modern Warfare 4",
-    "titre": "[FR] [MW4] 🔥 MW4 : OBJECTIF CAMOS ! On monte toutes les armes 💀",
-    "depuis": "2026-11-12T16:05:35Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -364,7 +358,8 @@
    "jeux": [
     "Hogwarts Legacy",
     "Disney Dreamlight Valley",
-    "Red Dead Redemption II"
+    "Red Dead Redemption II",
+    "Call of Duty: Modern Warfare 4"
    ],
    "clip": null
   },
@@ -396,13 +391,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 9,
-    "jeu": "Grandma Left Me A Building",
-    "titre": "Live Cozy cet aprem : 9 démos de jeux  à tester ! venez vous poser au calme, avec une tite boisson! (clef obtenue sur keymailer)",
-    "depuis": "2026-11-12T12:20:33Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -684,7 +673,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 11,
+    "jeu": "Phasmophobia",
+    "titre": "Go se faire bullylu ! PHASMOPHOBIA - !lurk !discord",
+    "depuis": "2026-11-12T16:28:43Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
+   },
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
@@ -871,7 +866,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 9,
     "jeu": "The Legend of Zelda: Ocarina of Time",
     "titre": "[Ep1] Découverte totale de Ocarina of Time ! J'ai si hâte !! ✨-pas de backseat-✨ [!bs !fortune !insta !discord ]",
     "depuis": "2026-11-12T14:49:22Z",
@@ -1025,9 +1020,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 10,
-    "jeu": "Kritsana",
-    "titre": "Anomaly party #kritsana #keymailer",
+    "viewers": 12,
+    "jeu": "The Transference",
+    "titre": "Essayons de sortir d'ici! #TheTransference #keymailer",
     "depuis": "2026-11-12T12:41:07Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1140,5 +1135,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-12T16:07:35.233Z"
+ "maj": "2026-11-12T17:07:15.553Z"
 }
