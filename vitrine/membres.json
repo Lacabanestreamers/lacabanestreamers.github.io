@@ -296,7 +296,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 6,
+    "viewers": 2,
     "jeu": "The Survivalists",
     "titre": "🏝The Survivalists ~ On continue notre survie ! - !réseaux",
     "depuis": "2026-11-12T18:08:43Z",
@@ -667,13 +667,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 9,
-    "jeu": "Phasmophobia",
-    "titre": "Go se faire bullylu ! PHASMOPHOBIA - !lurk !discord",
-    "depuis": "2026-11-12T16:28:43Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
@@ -793,7 +787,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "PUMPKIN PANIC",
+    "titre": "[FR] ~ Pumpkin Panic - Finir le jeu en - de 25min, c'est possible ? ~ #2",
+    "depuis": "2026-11-12T19:30:06Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
+   },
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -821,7 +821,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 6,
     "jeu": "Art",
     "titre": "[FR] On finis la journée ensemble 🖍️☕️ | Coloriage Mystère | !discord !commandes",
     "depuis": "2026-11-12T19:00:25Z",
@@ -956,7 +956,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Split Fiction",
+    "titre": "De nouvelles aventures en duo ✨ !discord",
+    "depuis": "2026-11-12T19:42:21Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_r3skyo-440x248.jpg"
+   },
    "premierStream": "2023-03-23",
    "succes": [],
    "jeux": [
@@ -1014,7 +1020,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 12,
+    "viewers": 10,
     "jeu": "The Transference",
     "titre": "Essayons de sortir d'ici! #TheTransference #keymailer",
     "depuis": "2026-11-12T12:41:07Z",
@@ -1129,5 +1135,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-12T19:25:14.250Z"
+ "maj": "2026-11-12T20:07:18.644Z"
 }
