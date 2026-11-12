@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2212,
+  "heuresLive30": 2213,
   "followsGagnes30": 361,
   "periode": {
    "du": "2026-10-13",
@@ -687,7 +687,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Co-working & Studying",
+    "titre": "☕ CO-WORK TOGETHER | Pomodoro 25/5 📚🤎",
+    "depuis": "2026-11-12T08:34:03Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mandouee-440x248.jpg"
+   },
    "premierStream": "2024-10-23",
    "succes": [],
    "jeux": [
@@ -733,7 +739,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 1,
+    "viewers": 4,
     "jeu": "Stardew Valley",
     "titre": "Il pleut, viens on papote sur Stardew Valley ! OBJECTIF 140 MimiFOLLOWS.....  !discord !regles !don",
     "depuis": "2026-11-12T08:06:03Z",
@@ -1109,5 +1115,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-12T08:07:23.339Z"
+ "maj": "2026-11-12T09:07:19.569Z"
 }
