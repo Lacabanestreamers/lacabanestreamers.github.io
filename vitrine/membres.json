@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2216,
+  "heuresLive30": 2219,
   "followsGagnes30": 361,
   "periode": {
    "du": "2026-10-13",
@@ -412,7 +412,7 @@
    "staff": false,
    "depuis": "2026-10-11",
    "live": {
-    "viewers": 7,
+    "viewers": 9,
     "jeu": "Dressmaker (2026)",
     "titre": "[Découverte] Venez on va enrober des bourgeoises !🧵👗",
     "depuis": "2026-11-12T09:24:27Z",
@@ -693,13 +693,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": {
-    "viewers": 2,
-    "jeu": "Writing & Reading",
-    "titre": "☕ READ WITH ME | Pomodoro 25/5 📚🤎",
-    "depuis": "2026-11-12T08:34:03Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mandouee-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-10-23",
    "succes": [],
    "jeux": [
@@ -773,7 +767,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "Just Chatting",
     "titre": "React documentaire Arte sur les pédocriminalité avec tagami77",
     "depuis": "2026-11-12T10:00:09Z",
@@ -1122,5 +1116,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-12T10:07:14.443Z"
+ "maj": "2026-11-12T11:07:17.675Z"
 }
