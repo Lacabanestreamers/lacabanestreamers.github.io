@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2213,
+  "heuresLive30": 2215,
   "followsGagnes30": 361,
   "periode": {
    "du": "2026-10-13",
@@ -411,7 +411,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-11",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Dressmaker (2026)",
+    "titre": "[Découverte] Venez on va enrober des bourgeoises !🧵👗",
+    "depuis": "2026-11-12T09:24:27Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hagosan-440x248.jpg"
+   },
    "premierStream": "2023-07-10",
    "succes": [],
    "jeux": [
@@ -688,7 +694,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 1,
+    "viewers": 3,
     "jeu": "Co-working & Studying",
     "titre": "☕ CO-WORK TOGETHER | Pomodoro 25/5 📚🤎",
     "depuis": "2026-11-12T08:34:03Z",
@@ -700,7 +706,8 @@
     "Writing & Reading",
     "Art",
     "Animal Crossing: New Horizons",
-    "Agent A: A Puzzle In Disguise"
+    "Agent A: A Puzzle In Disguise",
+    "Co-working & Studying"
    ],
    "clip": null
   },
@@ -739,7 +746,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 4,
+    "viewers": 6,
     "jeu": "Stardew Valley",
     "titre": "Il pleut, viens on papote sur Stardew Valley ! OBJECTIF 140 MimiFOLLOWS.....  !discord !regles !don",
     "depuis": "2026-11-12T08:06:03Z",
@@ -1115,5 +1122,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-12T09:07:19.569Z"
+ "maj": "2026-11-12T09:41:32.072Z"
 }
