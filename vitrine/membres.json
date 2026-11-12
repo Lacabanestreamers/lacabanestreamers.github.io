@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2211,
+  "heuresLive30": 2212,
   "followsGagnes30": 351,
   "periode": {
    "du": "2026-10-13",
@@ -1041,13 +1041,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": {
-    "viewers": 16,
-    "jeu": "Cyberpunk 2077",
-    "titre": "😈 PROJECT R - Session BETA TEST Cyberpunk RP 😈 !projectr !rs !discord",
-    "depuis": "2026-11-11T20:00:16Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-19",
    "succes": [
     {
@@ -1124,5 +1118,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-12T00:07:14.634Z"
+ "maj": "2026-11-12T01:07:15.500Z"
 }
