@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2215,
+  "heuresLive30": 2216,
   "followsGagnes30": 361,
   "periode": {
    "du": "2026-10-13",
@@ -412,7 +412,7 @@
    "staff": false,
    "depuis": "2026-10-11",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "Dressmaker (2026)",
     "titre": "[Découverte] Venez on va enrober des bourgeoises !🧵👗",
     "depuis": "2026-11-12T09:24:27Z",
@@ -694,9 +694,9 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 3,
-    "jeu": "Co-working & Studying",
-    "titre": "☕ CO-WORK TOGETHER | Pomodoro 25/5 📚🤎",
+    "viewers": 2,
+    "jeu": "Writing & Reading",
+    "titre": "☕ READ WITH ME | Pomodoro 25/5 📚🤎",
     "depuis": "2026-11-12T08:34:03Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mandouee-440x248.jpg"
    },
@@ -745,13 +745,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": {
-    "viewers": 6,
-    "jeu": "Stardew Valley",
-    "titre": "Il pleut, viens on papote sur Stardew Valley ! OBJECTIF 140 MimiFOLLOWS.....  !discord !regles !don",
-    "depuis": "2026-11-12T08:06:03Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -778,7 +772,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Just Chatting",
+    "titre": "React documentaire Arte sur les pédocriminalité avec tagami77",
+    "depuis": "2026-11-12T10:00:09Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
+   },
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -1122,5 +1122,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-12T09:41:32.072Z"
+ "maj": "2026-11-12T10:07:14.443Z"
 }
