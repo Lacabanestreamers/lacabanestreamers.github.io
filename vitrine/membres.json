@@ -8,10 +8,10 @@
   "affilies": 42,
   "nouveaux30": 21,
   "heuresLive30": 2212,
-  "followsGagnes30": 351,
+  "followsGagnes30": 361,
   "periode": {
    "du": "2026-10-13",
-   "au": "2026-11-11"
+   "au": "2026-11-12"
   }
  },
  "agenda": [],
@@ -105,7 +105,6 @@
    ],
    "jeux": [
     "Outbound",
-    "Fields of Mistria",
     "Cat Mail Co.",
     "The Witch's Bakery",
     "PICO PARK"
@@ -210,7 +209,7 @@
     "The Sims 4",
     "Planet Zoo 2",
     "Just Chatting",
-    "Disney Dreamlight Valley"
+    "R.E.P.O."
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/ImportantSmilingDiscRitzMitz-U1lqzaDEhv1rZv8z",
@@ -393,7 +392,7 @@
     "Shift at Midnight",
     "R.E.P.O.",
     "Forever Ago",
-    "Writing & Reading"
+    "Abiotic Factor"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/DirtyProudPicklesBrainSlug-AWG994WBBl1ojqnZ",
@@ -510,9 +509,9 @@
    "jeux": [
     "Just Chatting",
     "Planet Zoo 2",
-    "Sovereign Tower",
     "skribbl.io",
-    "Games + Demos"
+    "Games + Demos",
+    "Sovereign Tower"
    ],
    "clip": null
   },
@@ -602,8 +601,8 @@
     "R.E.P.O.",
     "FINAL FANTASY XIV ONLINE",
     "Tomb Raider",
-    "AION 2",
-    "Dead by Daylight"
+    "Dead by Daylight",
+    "Special Events"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/TawdryLittleLegVoHiYo-_BEv6fPShPaE8kVa",
@@ -719,9 +718,9 @@
    "jeux": [
     "The Elder Scrolls V: Skyrim - Special Edition",
     "PowerWash Simulator",
-    "FTL: Faster Than Light",
     "Far Far West",
-    "Kingdom Hearts Birth by Sleep"
+    "Kingdom Hearts Birth by Sleep",
+    "Archipelagos"
    ],
    "clip": null
   },
@@ -733,7 +732,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Stardew Valley",
+    "titre": "Il pleut, viens on papote sur Stardew Valley ! OBJECTIF 140 MimiFOLLOWS.....  !discord !regles !don",
+    "depuis": "2026-11-12T08:06:03Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -765,8 +770,8 @@
    "succes": [],
    "jeux": [
     "Just Chatting",
-    "No Man's Sky",
     "Rocket League",
+    "No Man's Sky",
     "Fall Guys",
     "Apex Legends"
    ],
@@ -1104,5 +1109,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-12T02:07:29.373Z"
+ "maj": "2026-11-12T08:07:23.339Z"
 }
