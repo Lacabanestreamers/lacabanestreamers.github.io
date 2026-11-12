@@ -193,6 +193,7 @@ function renderProfil(m, d){
         <span class="tags">${tags(m)}</span>
         ${m.bio ? `<p class="bio">${esc(m.bio)}</p>` : ""}
         <span class="since">${m.depuis ? `🏠 ${depuis(m.depuis)} de <b>${esc(d.titre || "La Cabane")}</b>` : `🏠 Membre de <b>${esc(d.titre || "La Cabane")}</b>`}</span>
+        ${m.pack ? `<p class="pack-aulit">🎨 Overlays : <a href="https://pack.aulit42369.fr/" rel="noopener">Pack Aulit</a> (gratuit)</p>` : ""}
         ${(m.jeux || []).length ? `<div class="jeux" aria-label="Joue surtout à">🎮 ${m.jeux.map(j => `<span class="jeu">${esc(j)}</span>`).join("")}</div>` : ""}
         ${(() => { const a = anniv(m, "depuis"); return a && a.jours === 0 ? `<div class="fete">🏠 Aujourd'hui, ${esc(m.nom)} fête ${ansTxt(a.ans)} dans ${esc(d.titre || "La Cabane")} ! 💜</div>` : ""; })()}
         ${(() => { const a = anniv(m); if(!a) return "";
