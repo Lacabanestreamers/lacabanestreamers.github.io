@@ -193,7 +193,6 @@ function drawerMembre(m){
     ${m.statut === "Parti" ? fld("Départ","depart",m.depart,"date") : ""}
     ${m.statut === "Parti" ? `${selF("Raison du départ","raisonDepart",m.raisonDepart,RAISONS_DEPART,"— à préciser —")}${fld("Précision (facultatif)","raisonDetail",m.raisonDetail,"text","full")}` : ""}
     <label class="check" style="align-self:end"><input type="checkbox" data-k="alerte" ${m.alerte?"checked":""}> Alerte stream configurée</label>
-    <label class="check full"><input type="checkbox" data-k="packAulit" ${m.packAulit?"checked":""}> Utilise le Pack Aulit (à cocher seulement si le streamer l'a dit lui-même ; affiché sur sa page publique)</label>
     <label class="check full"><input type="checkbox" data-k="masquerVitrine" ${m.masquerVitrine?"checked":""}> Masquer de la vitrine publique${S.data.settings.vitrine?.active && !m.masquerVitrine ? ` · <a href="${VITRINE_URL()}?m=${encodeURIComponent(m.login)}" target="_blank" rel="noopener">sa page publique</a> · <button type="button" class="btn ghost" data-copier="${VITRINE_URL()}s/${esc(m.login)}" style="padding:1px 8px" title="Lien avec aperçu (avatar, bio) quand on le colle dans Discord">copier le lien de partage</button>` : ""}</label>
   </div>
   <fieldset><legend>Follows</legend>

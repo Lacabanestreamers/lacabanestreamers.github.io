@@ -188,5 +188,3 @@ footer{border-top:1px solid var(--line);margin-top:50px;padding:22px 0 40px;colo
 .vlinks a[aria-current="page"]{color:var(--pink);background:color-mix(in srgb,var(--pink) 16%,transparent)}
 .ptitre{font:800 clamp(28px,5vw,40px)/1.05 Orbitron,sans-serif;margin:0 0 6px;letter-spacing:.01em}
 .pintro{color:var(--muted);max-width:62ch;margin:0 0 20px}
-.prof .pack-aulit{margin:10px 0 0;font-size:15px;color:#C9C3EE}
-.prof .pack-aulit a{color:inherit;text-decoration:underline;text-underline-offset:3px}
