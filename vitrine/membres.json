@@ -7,8 +7,8 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2251,
-  "followsGagnes30": 340,
+  "heuresLive30": 2256,
+  "followsGagnes30": 336,
   "periode": {
    "du": "2026-10-14",
    "au": "2026-11-13"
@@ -42,7 +42,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "🌙 SOIREE TRANQUILLE!! Venez chill, rire et papoter avec nous 💜",
+    "depuis": "2026-11-13T18:55:33Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
+   },
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -190,7 +196,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 7,
     "jeu": "Party Animals",
     "titre": "⚡ 🐾 La Team du Week-end fait encore n'importe quoi 🐾💥",
     "depuis": "2026-11-13T17:31:01Z",
@@ -274,7 +280,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "FINAL FANTASY XIV ONLINE",
+    "titre": "[FF14/Endwalker] Ca devient interessant !",
+    "depuis": "2026-11-13T18:54:39Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -300,7 +312,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Minecraft",
+    "titre": "🏹MC Be ~ On continue la survie avec les coupings ! - !réseaux",
+    "depuis": "2026-11-13T18:12:23Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -390,7 +408,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Writing & Reading",
+    "titre": "Soirée lecture ! On se retrouve pour un nouvel épisode de Frankenstein ! Venez vous poser au calme et profiter d'un peu de douceur !",
+    "depuis": "2026-11-13T18:50:25Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -491,13 +515,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 19,
-    "jeu": "Art",
-    "titre": "✦ FAN ART ✦ Ocarina Of Time et corgi ! Courage c'est bientôt l'week-end ! | 18H : 🎁 Giveaway dédidcace ! | !artchallenges !liens",
-    "depuis": "2026-11-13T14:52:58Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -673,9 +691,9 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 7,
-    "jeu": "Toilet 8",
-    "titre": "Go speedrun ! (c'est faux) TOILET 8 - !lurk !discord",
+    "viewers": 8,
+    "jeu": "Phasmophobia",
+    "titre": "Phasmopholand ! - !lurk !discord",
     "depuis": "2026-11-13T18:01:03Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
    },
@@ -833,7 +851,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 15,
+    "viewers": 16,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] J-6 DLC 4 | WEEK END ! On farm & on papote ✨💜 | Coloriage Mystère | !discord !commandes",
     "depuis": "2026-11-13T17:00:45Z",
@@ -878,10 +896,10 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 14,
     "jeu": "Party Animals",
     "titre": "✨De la coop entre copaing✨ [!bs !fortune !insta !discord ]",
-    "depuis": "2026-11-13T17:32:18Z",
+    "depuis": "2026-11-13T19:05:34Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
    },
    "premierStream": "2025-09-24",
@@ -980,7 +998,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "The Dark Pictures Anthology: House of Ashes",
+    "titre": "La seconde partie contre ces créatures ! !discord",
+    "depuis": "2026-11-13T18:31:28Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_r3skyo-440x248.jpg"
+   },
    "premierStream": "2023-03-23",
    "succes": [],
    "jeux": [
@@ -1147,5 +1171,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-13T18:07:23.079Z"
+ "maj": "2026-11-13T19:07:23.868Z"
 }
