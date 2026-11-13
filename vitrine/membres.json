@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2231,
+  "heuresLive30": 2233,
   "followsGagnes30": 337,
   "periode": {
    "du": "2026-10-14",
@@ -269,7 +269,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 1,
+    "viewers": 5,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "[FF14/Endwalker] On retrouve le main compte !",
     "depuis": "2026-11-13T08:00:26Z",
@@ -417,7 +417,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-11",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "Dressmaker (2026)",
+    "titre": "[Découverte] L'atelier de couture continue🧵👗",
+    "depuis": "2026-11-13T09:21:32Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hagosan-440x248.jpg"
+   },
    "premierStream": "2023-07-10",
    "succes": [],
    "jeux": [
@@ -756,8 +762,8 @@
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
-    "Poppy Playtime: Chapter 3 - Deep Sleep",
     "Stardew Valley",
+    "Poppy Playtime: Chapter 3 - Deep Sleep",
     "The Baby In Yellow",
     "Poppy Playtime: Chapter 4 - Safe Haven",
     "Aniimo"
@@ -1129,5 +1135,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-13T09:07:24.500Z"
+ "maj": "2026-11-13T10:07:19.202Z"
 }
