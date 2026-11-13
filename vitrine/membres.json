@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2225,
+  "heuresLive30": 2226,
   "followsGagnes30": 342,
   "periode": {
    "du": "2026-10-14",
@@ -25,10 +25,10 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 11,
-    "jeu": "Rocket League",
-    "titre": "Rocket League/PS5",
-    "depuis": "2026-11-13T01:03:33Z",
+    "viewers": 6,
+    "jeu": "A Plague Tale: Innocence",
+    "titre": "A Plague Tale innocence/PS5",
+    "depuis": "2026-11-13T01:40:55Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
    },
    "premierStream": null,
@@ -61,7 +61,7 @@
    "clip": {
     "url": "https://www.twitch.tv/aly0806/clip/SnappyManlyStarlingBCouch-IZp-06wUH0kmbDoY",
     "titre": "WOup pinaise",
-    "vues": 9,
+    "vues": 10,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/71c9f79a-04a8-4d55-a0bd-2cd15dad4e73/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-07",
     "duree": 11
@@ -84,10 +84,10 @@
     "PEAK"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/asakha/clip/BovineTangentialKeyboardPastaThat-GWxw1ceut64LAd7d",
+    "url": "https://www.twitch.tv/asakha/clip/AuspiciousBreakableKoupreyTooSpicy-99KkUdNA65s23qSi",
     "titre": "⛰️ Les Petites Pierres et les Kallax prennent de l’altitude 🧗 | PEAK avec @Galyssiane | ❗cmd ❗rs ❗c",
     "vues": 3,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/11c8cf87-7563-4b82-8e15-885c66ae9d36/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f46a3c8c-1139-4d90-b002-e92488a2d1d2/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-10",
     "duree": 30
    }
@@ -138,7 +138,7 @@
    "clip": {
     "url": "https://www.twitch.tv/aulit42369/clip/SnappyOpenPieFeelsBadMan-se8d3-jCObl13q8U",
     "titre": "WzBot CLIP | On remet le tablier de thanatopracteur ! Autopsies propres et enterrements  (by chezelo",
-    "vues": 4,
+    "vues": 5,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/071d3b42-8550-4a50-ae22-3decb5375a70/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-09",
     "duree": 60
@@ -259,11 +259,11 @@
     "Rise of the Tomb Raider"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/cristal578/clip/StormyUninterestedBeefDxAbomb-u4RaovBUdmRd-DI7",
-    "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
+    "url": "https://www.twitch.tv/cristal578/clip/RealLachrymoseConsoleKAPOW-ItFwUGwuVqii6xYJ",
+    "titre": "🚢  C’est parti pour ranger un paquebot sur Silver Service ! 🛟⚓",
     "vues": 3,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b8058f19-9e2a-4b57-8ef8-18ff0e6f6a14/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-07",
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/7bb4812d-a6eb-49c3-a105-006cb6c6871d/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-08",
     "duree": 30
    }
   },
@@ -458,7 +458,7 @@
    "clip": {
     "url": "https://www.twitch.tv/hyroshimaeu/clip/AnimatedCooperativeEchidnaKappaPride-5ODSQagyT7TgE6QK",
     "titre": "WAOUh !!",
-    "vues": 11,
+    "vues": 12,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/14797478-fb2a-445a-93cd-225bcd81dbc2/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-06",
     "duree": 30
@@ -530,7 +530,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "League of Legends",
+    "titre": "🔥 ON RÉCUP LE BRONZE 🥉 ! |LOL LIVE 🚀",
+    "depuis": "2026-11-13T01:11:44Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -543,7 +549,7 @@
    "clip": {
     "url": "https://www.twitch.tv/lagonbleu_976/clip/FurryAgreeableClipsmomChefFrank-gZKZ4yPWHs66-o-N",
     "titre": "WzBot CLIP | LES GAMES VONT DONNER QUOI ? ON VA VITE LE SAVOIR ! 😂 (by lagonbleu_976)",
-    "vues": 3,
+    "vues": 4,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/c4fece4c-ac0b-4126-8913-89e779b7b3f8/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-08",
     "duree": 60
@@ -704,7 +710,14 @@
     "Agent A: A Puzzle In Disguise",
     "Co-working & Studying"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/mandouee/clip/AliveChillySnailWOOP-NffJHxh_Xm5Zve7-",
+    "titre": "J'respire la joie de vivre !",
+    "vues": 2,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/c6869bf3-9ef0-494a-b2d8-23cca5e1be97/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-12",
+    "duree": 21
+   }
   },
   {
    "login": "mattmist2",
@@ -869,7 +882,14 @@
     "DEVOUR",
     "Backrooms: Inside the Escape"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/oko_san_/clip/FancyIncredulousQuailBCWarrior-YNixp7mpgJjCgJRq",
+    "titre": "Qui qui se moque de moi ?",
+    "vues": 1,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/ec8e98c4-a4e9-4981-b22c-dd08a5c6d7f8/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-12",
+    "duree": 7
+   }
   },
   {
    "login": "p_xline_",
@@ -1111,5 +1131,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-13T01:07:24.177Z"
+ "maj": "2026-11-13T02:07:35.539Z"
 }
