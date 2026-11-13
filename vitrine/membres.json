@@ -25,10 +25,10 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 8,
-    "jeu": "A Plague Tale: Innocence",
-    "titre": "A Plague Tale innocence/PS5",
-    "depuis": "2026-11-12T21:51:06Z",
+    "viewers": 11,
+    "jeu": "Rocket League",
+    "titre": "Rocket League/PS5",
+    "depuis": "2026-11-13T01:03:33Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
    },
    "premierStream": null,
@@ -1111,5 +1111,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-13T00:08:38.517Z"
+ "maj": "2026-11-13T01:07:24.177Z"
 }
