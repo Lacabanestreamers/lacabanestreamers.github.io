@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2247,
+  "heuresLive30": 2251,
   "followsGagnes30": 340,
   "periode": {
    "du": "2026-10-14",
@@ -189,7 +189,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Party Animals",
+    "titre": "⚡ 🐾 La Team du Week-end fait encore n'importe quoi 🐾💥",
+    "depuis": "2026-11-13T17:31:01Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -294,13 +300,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 8,
-    "jeu": "Splatoon 3",
-    "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
-    "depuis": "2026-11-13T15:05:37Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -492,7 +492,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 22,
+    "viewers": 19,
     "jeu": "Art",
     "titre": "✦ FAN ART ✦ Ocarina Of Time et corgi ! Courage c'est bientôt l'week-end ! | 18H : 🎁 Giveaway dédidcace ! | !artchallenges !liens",
     "depuis": "2026-11-13T14:52:58Z",
@@ -673,10 +673,10 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 10,
+    "viewers": 7,
     "jeu": "Toilet 8",
     "titre": "Go speedrun ! (c'est faux) TOILET 8 - !lurk !discord",
-    "depuis": "2026-11-13T16:29:11Z",
+    "depuis": "2026-11-13T18:01:03Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
    },
    "premierStream": "2025-10-29",
@@ -685,8 +685,8 @@
     "Phasmophobia",
     "Demonologist",
     "Sons of the Forest",
-    "Just Chatting",
-    "The Exit 8"
+    "Toilet 8",
+    "Just Chatting"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lylu_live/clip/RudeSwissKoupreyFloof-dLXW74LFtfA_kGKs",
@@ -833,9 +833,9 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 15,
     "jeu": "Disney Dreamlight Valley",
-    "titre": "[FR] WEEK END ! On farm & on papote ✨💜 | Coloriage Mystère | !discord !commandes",
+    "titre": "[FR] J-6 DLC 4 | WEEK END ! On farm & on papote ✨💜 | Coloriage Mystère | !discord !commandes",
     "depuis": "2026-11-13T17:00:45Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
    },
@@ -877,7 +877,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Party Animals",
+    "titre": "✨De la coop entre copaing✨ [!bs !fortune !insta !discord ]",
+    "depuis": "2026-11-13T17:32:18Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
+   },
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -1141,5 +1147,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-13T17:07:21.969Z"
+ "maj": "2026-11-13T18:07:23.079Z"
 }
