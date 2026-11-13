@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2240,
+  "heuresLive30": 2241,
   "followsGagnes30": 340,
   "periode": {
    "du": "2026-10-14",
@@ -294,7 +294,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "Splatoon 3",
+    "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
+    "depuis": "2026-11-13T15:05:37Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -385,7 +391,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 18,
+    "viewers": 14,
     "jeu": "Grandma Left Me A Building",
     "titre": "Live Chill: On retourne s'occuper de l'héritage de mamie ! + tests de démos (jeu obtenu via Keymailer) (Boxroom entre 2 jeux)",
     "depuis": "2026-11-13T12:54:35Z",
@@ -491,7 +497,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 11,
+    "jeu": "Art",
+    "titre": "✦ FAN ART ✦ Ocarina Of Time et corgi ! Courage c'est bientôt l'week-end ! | 18H : 🎁 Giveaway dédidcace ! | !artchallenges !liens",
+    "depuis": "2026-11-13T14:52:58Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
+   },
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -1123,5 +1135,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-13T14:07:18.987Z"
+ "maj": "2026-11-13T15:07:29.783Z"
 }
