@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2265,
+  "heuresLive30": 2277,
   "followsGagnes30": 336,
   "periode": {
    "du": "2026-10-14",
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 12,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🌙 SOIREE TRANQUILLE!! Venez chill, rire et papoter avec nous 💜",
     "depuis": "2026-11-13T18:55:33Z",
@@ -126,7 +126,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 4,
     "jeu": "VALORANT",
     "titre": "On essaie de rester en silver, mais vu l'équipe ce soir, ce n'est pas gagné",
     "depuis": "2026-11-13T19:55:43Z",
@@ -287,7 +287,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "[FF14/Endwalker] Ca devient interessant !",
     "depuis": "2026-11-13T18:54:39Z",
@@ -415,7 +415,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 2,
+    "viewers": 4,
     "jeu": "Photomaly",
     "titre": "On passe de la lecture à un petit jeu sympa ! (changement d'ambiance!) (!commandes !ttc)",
     "depuis": "2026-11-13T18:50:25Z",
@@ -464,7 +464,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "MECCHA CHAMELEON",
     "titre": "FR_VT - Go dessiner ou être chasseur !!",
     "depuis": "2026-11-13T19:23:08Z",
@@ -702,13 +702,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 12,
-    "jeu": "Phasmophobia",
-    "titre": "Phasmopholand ! - !lurk !discord",
-    "depuis": "2026-11-13T18:01:03Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
@@ -836,7 +830,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 1,
+    "viewers": 4,
     "jeu": "The Sims 4",
     "titre": "[FR] ~ Sims 4 - Rénovation des Mondes - Sulani #17 ~",
     "depuis": "2026-11-13T19:52:26Z",
@@ -868,13 +862,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 12,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "[FR] J-6 DLC 4 | WEEK END ! On farm & on papote ✨💜 | Coloriage Mystère | !discord !commandes",
-    "depuis": "2026-11-13T17:00:45Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -914,7 +902,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 5,
     "jeu": "Codenames",
     "titre": "✨De la coop entre copaing✨ [!bs !fortune !insta !discord ]",
     "depuis": "2026-11-13T19:05:34Z",
@@ -1017,7 +1005,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "The Dark Pictures Anthology: House of Ashes",
     "titre": "La seconde partie contre ces créatures ! !discord",
     "depuis": "2026-11-13T18:31:28Z",
@@ -1027,8 +1015,8 @@
    "succes": [],
    "jeux": [
     "The Witcher 3: Wild Hunt Remastered",
-    "Split Fiction",
     "The Dark Pictures Anthology: House of Ashes",
+    "Split Fiction",
     "Just Chatting",
     "Pratfall"
    ],
@@ -1189,5 +1177,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-13T20:07:21.509Z"
+ "maj": "2026-11-13T21:07:40.183Z"
 }
