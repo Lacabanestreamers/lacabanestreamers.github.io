@@ -8,10 +8,10 @@
   "affilies": 42,
   "nouveaux30": 21,
   "heuresLive30": 2229,
-  "followsGagnes30": 342,
+  "followsGagnes30": 337,
   "periode": {
    "du": "2026-10-14",
-   "au": "2026-11-12"
+   "au": "2026-11-13"
   }
  },
  "agenda": [],
@@ -126,8 +126,8 @@
     "7 Days to Die",
     "VALORANT",
     "Outbound",
-    "Graveyard Keeper II",
-    "Brotato"
+    "Brotato",
+    "Cinderia"
    ],
    "clip": {
     "url": "https://www.twitch.tv/aulit42369/clip/SnappyOpenPieFeelsBadMan-se8d3-jCObl13q8U",
@@ -151,7 +151,6 @@
    "succes": [],
    "jeux": [
     "Mazebound: Hunt, Gather, Run!",
-    "Leafy Corner",
     "My Fashion Studio",
     "Pokémon Mystery Dungeon: Explorers of Sky",
     "Stardew Valley"
@@ -308,8 +307,8 @@
     "Minecraft",
     "Splatoon 3",
     "The Survivalists",
-    "Sprout Valley",
-    "Tomodachi Life: Living the Dream"
+    "Tomodachi Life: Living the Dream",
+    "Sprout Valley"
    ],
    "clip": null
   },
@@ -563,9 +562,9 @@
    "jeux": [
     "Makers & Crafting",
     "Dead Space 2",
-    "Resonance: A Plague Tale Legacy",
     "Little Nightmares: Enhanced Edition",
-    "Little Nightmares II"
+    "Little Nightmares II",
+    "Resonance: A Plague Tale Legacy"
    ],
    "clip": {
     "url": "https://www.twitch.tv/liiapin/clip/DeadEncouragingKittenUWot-nekC2wKhEqqdT1yR",
@@ -602,8 +601,8 @@
     "R.E.P.O.",
     "FINAL FANTASY XIV ONLINE",
     "Tomb Raider",
-    "Dead by Daylight",
-    "Special Events"
+    "Special Events",
+    "7 Days to Die"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/TawdryLittleLegVoHiYo-_BEv6fPShPaE8kVa",
@@ -748,8 +747,8 @@
     "Poppy Playtime: Chapter 3 - Deep Sleep",
     "Stardew Valley",
     "The Baby In Yellow",
-    "Aniimo",
-    "Poppy Playtime: Chapter 4 - Safe Haven"
+    "Poppy Playtime: Chapter 4 - Safe Haven",
+    "Aniimo"
    ],
    "clip": {
     "url": "https://www.twitch.tv/melpastelplay/clip/ArtsyDistinctWalrus4Head-VmhfPbyCTE5JHxLa",
@@ -867,8 +866,8 @@
     "The Legend of Zelda: Ocarina of Time",
     "SONG OF HORROR",
     "The Other Side",
-    "DEVOUR",
-    "Backrooms: Inside the Escape"
+    "Backrooms: Inside the Escape",
+    "All Rats on Deck"
    ],
    "clip": {
     "url": "https://www.twitch.tv/oko_san_/clip/FancyIncredulousQuailBCWarrior-YNixp7mpgJjCgJRq",
@@ -899,7 +898,6 @@
    "jeux": [
     "The Sims 4",
     "Terrible Lizards",
-    "Animal Crossing: New Horizons",
     "R.E.P.O.",
     "Demonologist"
    ],
@@ -1119,5 +1117,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-13T04:07:23.639Z"
+ "maj": "2026-11-13T07:47:58.179Z"
 }
