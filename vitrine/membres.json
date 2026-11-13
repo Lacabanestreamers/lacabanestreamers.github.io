@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2238,
+  "heuresLive30": 2239,
   "followsGagnes30": 340,
   "periode": {
    "du": "2026-10-14",
@@ -384,7 +384,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Grandma Left Me A Building",
+    "titre": "Live Chill: On retourne s'occuper de l'héritage de mamie ! + tests de démos (jeu obtenu via Keymailer) (Boxroom entre 2 jeux)",
+    "depuis": "2026-11-13T12:54:35Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -411,13 +417,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-11",
-   "live": {
-    "viewers": 9,
-    "jeu": "Dressmaker (2026)",
-    "titre": "[Découverte] L'atelier de couture continue🧵👗",
-    "depuis": "2026-11-13T09:21:32Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hagosan-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2023-07-10",
    "succes": [],
    "jeux": [
@@ -1123,5 +1123,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-13T12:07:20.827Z"
+ "maj": "2026-11-13T13:07:22.880Z"
 }
