@@ -268,7 +268,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "FINAL FANTASY XIV ONLINE",
+    "titre": "[FF14/Endwalker] On retrouve le main compte !",
+    "depuis": "2026-11-13T08:00:26Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -740,7 +746,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Stardew Valley",
+    "titre": "Matinale cozy sur Stardew Valley. Rejoins nous ! Objectif 140 Follows !!!!  !discord !regles !don",
+    "depuis": "2026-11-13T07:52:24Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -1117,5 +1129,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-13T07:47:58.179Z"
+ "maj": "2026-11-13T08:07:23.339Z"
 }
