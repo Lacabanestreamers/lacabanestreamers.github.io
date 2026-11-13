@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 21,
-  "heuresLive30": 2239,
+  "heuresLive30": 2240,
   "followsGagnes30": 340,
   "periode": {
    "du": "2026-10-14",
@@ -385,7 +385,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 18,
     "jeu": "Grandma Left Me A Building",
     "titre": "Live Chill: On retourne s'occuper de l'héritage de mamie ! + tests de démos (jeu obtenu via Keymailer) (Boxroom entre 2 jeux)",
     "depuis": "2026-11-13T12:54:35Z",
@@ -1123,5 +1123,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-13T13:07:22.880Z"
+ "maj": "2026-11-13T14:07:18.987Z"
 }
