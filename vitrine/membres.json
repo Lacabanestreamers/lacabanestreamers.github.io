@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 18,
-  "heuresLive30": 2244,
+  "heuresLive30": 2251,
   "followsGagnes30": 485,
   "periode": {
    "du": "2026-10-15",
@@ -43,7 +43,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 11,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🌙 SOIREE TRANQUILLE!! Venez chill, rire et papoter avec nous 💜",
     "depuis": "2026-11-13T18:55:33Z",
@@ -55,8 +55,8 @@
     "Outbound",
     "Just Chatting",
     "Silver Service",
-    "R.E.P.O.",
-    "Disney Dreamlight Valley"
+    "Disney Dreamlight Valley",
+    "DEVOUR"
    ],
    "clip": {
     "url": "https://www.twitch.tv/aly0806/clip/SnappyManlyStarlingBCouch-IZp-06wUH0kmbDoY",
@@ -126,7 +126,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 8,
     "jeu": "VALORANT",
     "titre": "On essaie de rester en silver, mais vu l'équipe ce soir, ce n'est pas gagné",
     "depuis": "2026-11-13T19:55:43Z",
@@ -138,8 +138,8 @@
     "7 Days to Die",
     "VALORANT",
     "Outbound",
-    "Brotato",
-    "Cinderia"
+    "Cinderia",
+    "Graveyard Keeper II"
    ],
    "clip": {
     "url": "https://www.twitch.tv/aulit42369/clip/SnappyOpenPieFeelsBadMan-se8d3-jCObl13q8U",
@@ -202,7 +202,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 4,
     "jeu": "Codenames",
     "titre": "⚡ 🐾 La Team du Week-end fait encore n'importe quoi 🐾💥",
     "depuis": "2026-11-13T17:31:01Z",
@@ -226,7 +226,7 @@
     "The Sims 4",
     "Planet Zoo 2",
     "Just Chatting",
-    "R.E.P.O."
+    "Dispatch"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/ImportantSmilingDiscRitzMitz-U1lqzaDEhv1rZv8z",
@@ -312,13 +312,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 1,
-    "jeu": "Minecraft",
-    "titre": "🏹MC Be ~ On continue la survie avec les coupings ! - !réseaux",
-    "depuis": "2026-11-13T18:12:23Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -331,8 +325,8 @@
     "Minecraft",
     "Splatoon 3",
     "The Survivalists",
-    "Tomodachi Life: Living the Dream",
-    "Sprout Valley"
+    "Sprout Valley",
+    "Tomodachi Life: Living the Dream"
    ],
    "clip": null
   },
@@ -452,7 +446,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "R.E.P.O.",
     "titre": "FR_VT - La chasse au objet ou être chasser",
     "depuis": "2026-11-13T19:23:08Z",
@@ -818,7 +812,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "The Sims 4",
     "titre": "[FR] ~ Sims 4 - Rénovation des Mondes - Sulani #17 ~",
     "depuis": "2026-11-13T19:52:26Z",
@@ -890,7 +884,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "Codenames",
     "titre": "✨De la coop entre copaing✨ [!bs !fortune !insta !discord ]",
     "depuis": "2026-11-13T19:05:34Z",
@@ -906,10 +900,10 @@
    ],
    "jeux": [
     "The Legend of Zelda: Ocarina of Time",
-    "SONG OF HORROR",
     "The Other Side",
     "Backrooms: Inside the Escape",
-    "All Rats on Deck"
+    "All Rats on Deck",
+    "Inside the Backrooms"
    ],
    "clip": {
     "url": "https://www.twitch.tv/oko_san_/clip/FancyIncredulousQuailBCWarrior-YNixp7mpgJjCgJRq",
@@ -1159,5 +1153,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-13T22:07:21.325Z"
+ "maj": "2026-11-13T22:29:51.702Z"
 }
