@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 18,
-  "heuresLive30": 2271,
+  "heuresLive30": 2275,
   "followsGagnes30": 496,
   "periode": {
    "du": "2026-10-15",
@@ -555,7 +555,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Fall Guys",
     "titre": "🐰On se detend  ! top 1 ?",
     "depuis": "2026-11-14T08:32:22Z",
@@ -1134,5 +1134,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-14T10:07:17.508Z"
+ "maj": "2026-11-14T10:09:20.712Z"
 }
