@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 18,
-  "heuresLive30": 2251,
+  "heuresLive30": 2255,
   "followsGagnes30": 485,
   "periode": {
    "du": "2026-10-15",
@@ -24,7 +24,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Rocket League",
+    "titre": "A Plague Tale innocence/PS5",
+    "depuis": "2026-11-14T00:01:17Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -43,7 +49,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 15,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🌙 SOIREE TRANQUILLE!! Venez chill, rire et papoter avec nous 💜",
     "depuis": "2026-11-13T18:55:33Z",
@@ -126,7 +132,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 6,
     "jeu": "VALORANT",
     "titre": "On essaie de rester en silver, mais vu l'équipe ce soir, ce n'est pas gagné",
     "depuis": "2026-11-13T19:55:43Z",
@@ -439,13 +445,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 7,
-    "jeu": "R.E.P.O.",
-    "titre": "FR_VT - La chasse au objet ou être chasser",
-    "depuis": "2026-11-13T19:23:08Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -541,7 +541,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "ROB RUN",
+    "titre": "😂 ROB RUN : JE VAIS SURVIVRE OU PAS ?!",
+    "depuis": "2026-11-13T23:37:06Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -805,13 +811,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 2,
-    "jeu": "The Sims 4",
-    "titre": "[FR] ~ Sims 4 - Rénovation des Mondes - Sulani #17 ~",
-    "depuis": "2026-11-13T19:52:26Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -1141,5 +1141,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-13T23:07:22.604Z"
+ "maj": "2026-11-14T00:07:20.852Z"
 }
