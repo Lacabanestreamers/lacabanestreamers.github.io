@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 13,
+    "viewers": 10,
     "jeu": "Fortnite",
     "titre": "Fortnite/PS5",
     "depuis": "2026-11-14T15:35:46Z",
@@ -49,7 +49,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
+    "viewers": 12,
     "jeu": "Tidy Up the Christmas Shop",
     "titre": "🌙 SAMEDI TRANQUILLE!! Venez chill, rire et papoter avec nous 💜",
     "depuis": "2026-11-14T13:36:44Z",
@@ -201,7 +201,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 21,
+    "viewers": 20,
     "jeu": "Planet Zoo 2",
     "titre": "🐘Planet Zoo  |  J'ai tout détruit pour tout reconstruire  😄",
     "depuis": "2026-11-14T11:27:02Z",
@@ -312,7 +312,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Splatoon 3",
     "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
     "depuis": "2026-11-14T15:02:59Z",
@@ -546,7 +546,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 3,
     "jeu": "VALORANT",
     "titre": "🔥 LIVE VALORANT : ON PART EN GAME ! 🎯 | DÉTENTE, ACTION ET HEADSHOTS ! ALLEZ LE BRONZE 3 !!!",
     "depuis": "2026-11-14T15:24:59Z",
@@ -1029,7 +1029,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 19,
+    "viewers": 20,
     "jeu": "Sloppy Forgeries",
     "titre": "On imite les plus grands peintres! #sloppyforgeries #keymailer",
     "depuis": "2026-11-14T14:47:29Z",
@@ -1146,5 +1146,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-14T16:58:12.035Z"
+ "maj": "2026-11-14T17:07:18.550Z"
 }
