@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 18,
-  "heuresLive30": 2255,
+  "heuresLive30": 2259,
   "followsGagnes30": 485,
   "periode": {
    "du": "2026-10-15",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 1,
+    "viewers": 3,
     "jeu": "Rocket League",
     "titre": "A Plague Tale innocence/PS5",
     "depuis": "2026-11-14T00:01:17Z",
@@ -49,7 +49,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 15,
+    "viewers": 11,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🌙 SOIREE TRANQUILLE!! Venez chill, rire et papoter avec nous 💜",
     "depuis": "2026-11-13T18:55:33Z",
@@ -131,13 +131,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 6,
-    "jeu": "VALORANT",
-    "titre": "On essaie de rester en silver, mais vu l'équipe ce soir, ce n'est pas gagné",
-    "depuis": "2026-11-13T19:55:43Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -542,9 +536,9 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 3,
-    "jeu": "ROB RUN",
-    "titre": "😂 ROB RUN : JE VAIS SURVIVRE OU PAS ?!",
+    "viewers": 8,
+    "jeu": "VALORANT",
+    "titre": "🔥 LIVE VALORANT : ON PART EN GAME ! 🎯 | DÉTENTE, ACTION ET HEADSHOTS !",
     "depuis": "2026-11-13T23:37:06Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
    },
@@ -1141,5 +1135,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-14T00:07:20.852Z"
+ "maj": "2026-11-14T01:07:20.270Z"
 }
