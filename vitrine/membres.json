@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 18,
-  "heuresLive30": 2266,
+  "heuresLive30": 2267,
   "followsGagnes30": 485,
   "periode": {
    "du": "2026-10-15",
@@ -523,13 +523,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 2,
-    "jeu": "VALORANT",
-    "titre": "🔥 LIVE VALORANT : ON PART EN GAME ! 🎯 | DÉTENTE, ACTION ET HEADSHOTS !",
-    "depuis": "2026-11-13T23:37:06Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -1116,5 +1110,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-14T05:07:20.328Z"
+ "maj": "2026-11-14T06:07:22.941Z"
 }
