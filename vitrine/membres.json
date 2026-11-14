@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 18,
-  "heuresLive30": 2322,
+  "heuresLive30": 2329,
   "followsGagnes30": 505,
   "periode": {
    "du": "2026-10-15",
@@ -24,13 +24,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": {
-    "viewers": 13,
-    "jeu": "Fortnite",
-    "titre": "Fortnite/PS5",
-    "depuis": "2026-11-14T15:35:46Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -124,7 +118,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Dice Hoarder",
+    "titre": "Allons ranger des dés ce soir, on est en mode chill",
+    "depuis": "2026-11-14T20:02:38Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
+   },
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -247,7 +247,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 4,
+    "viewers": 2,
     "jeu": "Raft",
     "titre": "🌊Au menu ce soir : du requin grillé ! Coop sur Raft avec @Titounetsan @Barba_Doug",
     "depuis": "2026-11-14T18:57:27Z",
@@ -306,7 +306,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Minecraft",
     "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings ! - !réseaux",
     "depuis": "2026-11-14T18:07:02Z",
@@ -337,7 +337,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 12,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "🌙 La tanière des marmottes 🐾 | Retour à Dreamlight Valley ✨ chill, quêtes & magie Disney | !lurk !clip !commandes",
+    "depuis": "2026-11-14T19:51:22Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
+   },
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
@@ -519,7 +525,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 12,
+    "jeu": "Saloon Simulator",
+    "titre": "SOIRÉE TEST JEUX 🎮 : On joue à Saloon Simulator : bar à boissons, enquête & la vraie vie du Far West 🍻 !  | Découverte Nouveauté jeu-vidéo",
+    "depuis": "2026-11-14T19:48:41Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
+   },
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
@@ -540,7 +552,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 11,
+    "viewers": 7,
     "jeu": "VALORANT",
     "titre": "🔥 LIVE VALORANT : ON PART EN GAME ! 🎯 | DÉTENTE, ACTION ET HEADSHOTS ! ALLEZ LE BRONZE 3 !!!",
     "depuis": "2026-11-14T15:24:59Z",
@@ -637,7 +649,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 9,
+    "viewers": 7,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "MW4 🔥 TRYHARD ACTIVÉ ! ON VISE LE TOP 🏆 DROP, KILLS & BONNE HUMEUR | Luffish Gaming",
     "depuis": "2026-11-14T17:18:50Z",
@@ -854,13 +866,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "Euro Truck Simulator 2",
-    "titre": "Bonsoir, je sort le bus !!!",
-    "depuis": "2026-11-14T18:46:36Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -880,7 +886,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "The Legend of Zelda: Ocarina of Time",
+    "titre": "EP2 ✨Zeldoooo oui ✨ [!bs !fortune !insta !discord ]",
+    "depuis": "2026-11-14T19:50:34Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
+   },
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -1035,9 +1047,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 20,
-    "jeu": "Grandma Left Me A Building",
-    "titre": "L'immeuble de mamie! #grandmaleftmeabuilding #keymailer",
+    "viewers": 19,
+    "jeu": "Redhowl",
+    "titre": "On découvre enfin RedHowl!",
     "depuis": "2026-11-14T14:47:29Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1152,5 +1164,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-14T19:07:19.147Z"
+ "maj": "2026-11-14T20:07:21.073Z"
 }
