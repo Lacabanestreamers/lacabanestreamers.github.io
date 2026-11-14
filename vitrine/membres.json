@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 18,
-  "heuresLive30": 2311,
+  "heuresLive30": 2317,
   "followsGagnes30": 497,
   "periode": {
    "du": "2026-10-15",
@@ -35,8 +35,8 @@
    "succes": [],
    "jeux": [
     "Rocket League",
-    "A Plague Tale: Innocence",
-    "Fortnite"
+    "Fortnite",
+    "A Plague Tale: Innocence"
    ],
    "clip": null
   },
@@ -48,13 +48,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 12,
-    "jeu": "Tidy Up the Christmas Shop",
-    "titre": "🌙 SAMEDI TRANQUILLE!! Venez chill, rire et papoter avec nous 💜",
-    "depuis": "2026-11-14T13:36:44Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -200,13 +194,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 20,
-    "jeu": "Planet Zoo 2",
-    "titre": "🐘Planet Zoo  |  J'ai tout détruit pour tout reconstruire  😄",
-    "depuis": "2026-11-14T11:27:02Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -312,10 +300,10 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 4,
-    "jeu": "Splatoon 3",
-    "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
-    "depuis": "2026-11-14T15:02:59Z",
+    "viewers": 0,
+    "jeu": "Minecraft",
+    "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings ! - !réseaux",
+    "depuis": "2026-11-14T18:07:02Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
    },
    "premierStream": "2024-08-12",
@@ -546,7 +534,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 3,
+    "viewers": 8,
     "jeu": "VALORANT",
     "titre": "🔥 LIVE VALORANT : ON PART EN GAME ! 🎯 | DÉTENTE, ACTION ET HEADSHOTS ! ALLEZ LE BRONZE 3 !!!",
     "depuis": "2026-11-14T15:24:59Z",
@@ -642,7 +630,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "Call of Duty: Modern Warfare 4",
+    "titre": "MW4 🔥 TRYHARD ACTIVÉ ! ON VISE LE TOP 🏆 DROP, KILLS & BONNE HUMEUR | Luffish Gaming",
+    "depuis": "2026-11-14T17:18:50Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
+   },
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -1029,9 +1023,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 20,
-    "jeu": "Sloppy Forgeries",
-    "titre": "On imite les plus grands peintres! #sloppyforgeries #keymailer",
+    "viewers": 16,
+    "jeu": "Grandma Left Me A Building",
+    "titre": "L'immeuble de mamie! #grandmaleftmeabuilding #keymailer",
     "depuis": "2026-11-14T14:47:29Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1146,5 +1140,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-14T17:07:18.550Z"
+ "maj": "2026-11-14T18:07:38.562Z"
 }
