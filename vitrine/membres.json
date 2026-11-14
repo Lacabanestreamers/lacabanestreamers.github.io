@@ -8,10 +8,10 @@
   "affilies": 42,
   "nouveaux30": 18,
   "heuresLive30": 2267,
-  "followsGagnes30": 485,
+  "followsGagnes30": 496,
   "periode": {
    "du": "2026-10-15",
-   "au": "2026-11-13"
+   "au": "2026-11-14"
   }
  },
  "agenda": [],
@@ -105,7 +105,6 @@
    ],
    "jeux": [
     "Outbound",
-    "Cat Mail Co.",
     "The Witch's Bakery",
     "PICO PARK"
    ],
@@ -249,7 +248,7 @@
     "Raft",
     "Librarian: Tidy Up the Arcane Library!",
     "Sort The Bunnies",
-    "Rise of the Tomb Raider"
+    "Tidy Up the Halloween Shop"
    ],
    "clip": {
     "url": "https://www.twitch.tv/cristal578/clip/RealLachrymoseConsoleKAPOW-ItFwUGwuVqii6xYJ",
@@ -326,7 +325,6 @@
    "jeux": [
     "Disney Dreamlight Valley",
     "Art",
-    "Huglings",
     "Silver Service"
    ],
    "clip": null
@@ -598,10 +596,10 @@
     }
    ],
    "jeux": [
-    "R.E.P.O.",
     "FINAL FANTASY XIV ONLINE",
     "Tomb Raider",
     "Special Events",
+    "R.E.P.O.",
     "7 Days to Die"
    ],
    "clip": null
@@ -766,9 +764,9 @@
    "jeux": [
     "Just Chatting",
     "Rocket League",
-    "No Man's Sky",
     "Fall Guys",
-    "Apex Legends"
+    "Apex Legends",
+    "Starlit Adventures"
    ],
    "clip": null
   },
@@ -1056,7 +1054,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-11-07",
-   "live": null,
+   "live": {
+    "viewers": 13,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "⭐ PAPOTE | Je suis de retour (pour vous jouer un mauvais tour) !discord !lurk",
+    "depuis": "2026-11-14T07:51:22Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_unoceandedouceur-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [],
@@ -1110,5 +1114,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-14T06:07:22.941Z"
+ "maj": "2026-11-14T08:07:22.577Z"
 }
