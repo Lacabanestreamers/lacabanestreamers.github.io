@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 18,
-  "heuresLive30": 2287,
+  "heuresLive30": 2294,
   "followsGagnes30": 497,
   "periode": {
    "du": "2026-10-15",
@@ -25,10 +25,10 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 1,
+    "viewers": 6,
     "jeu": "Rocket League",
     "titre": "Rocket League/PS5",
-    "depuis": "2026-11-14T13:06:21Z",
+    "depuis": "2026-11-14T14:11:26Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
    },
    "premierStream": null,
@@ -49,7 +49,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 10,
     "jeu": "Maquette",
     "titre": "🌙 SAMEDI TRANQUILLE!! Venez chill, rire et papoter avec nous 💜",
     "depuis": "2026-11-14T13:36:44Z",
@@ -201,7 +201,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 26,
+    "viewers": 18,
     "jeu": "Planet Zoo 2",
     "titre": "🐘Planet Zoo  |  J'ai tout détruit pour tout reconstruire  😄",
     "depuis": "2026-11-14T11:27:02Z",
@@ -317,7 +317,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Splatoon 3",
+    "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
+    "depuis": "2026-11-14T15:02:59Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -590,8 +596,8 @@
    "jeux": [
     "Makers & Crafting",
     "Dead Space 2",
-    "Little Nightmares: Enhanced Edition",
     "Little Nightmares II",
+    "Little Nightmares: Enhanced Edition",
     "Resonance: A Plague Tale Legacy"
    ],
    "clip": {
@@ -861,7 +867,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "World of Warcraft",
     "titre": "Bonjour, je joue avec ma démoniste !!!",
     "depuis": "2026-11-14T11:51:34Z",
@@ -1040,7 +1046,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "The Transference",
+    "titre": "On fini le jeu avant la session test! #TheTransference #keymailer",
+    "depuis": "2026-11-14T14:47:29Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [
     {
@@ -1152,5 +1164,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-14T14:07:24.827Z"
+ "maj": "2026-11-14T15:07:22.603Z"
 }
