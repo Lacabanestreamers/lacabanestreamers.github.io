@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 18,
-  "heuresLive30": 2303,
+  "heuresLive30": 2311,
   "followsGagnes30": 497,
   "periode": {
    "du": "2026-10-15",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 5,
+    "viewers": 13,
     "jeu": "Fortnite",
     "titre": "Fortnite/PS5",
     "depuis": "2026-11-14T15:35:46Z",
@@ -49,7 +49,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 13,
     "jeu": "Tidy Up the Christmas Shop",
     "titre": "🌙 SAMEDI TRANQUILLE!! Venez chill, rire et papoter avec nous 💜",
     "depuis": "2026-11-14T13:36:44Z",
@@ -201,7 +201,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 20,
+    "viewers": 21,
     "jeu": "Planet Zoo 2",
     "titre": "🐘Planet Zoo  |  J'ai tout détruit pour tout reconstruire  😄",
     "depuis": "2026-11-14T11:27:02Z",
@@ -258,13 +258,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": {
-    "viewers": 6,
-    "jeu": "Librarian: Tidy Up the Arcane Library!",
-    "titre": "☕ Défi Librarian lancé ! On termine le jeu en 3 heures ! 📖",
-    "depuis": "2026-11-14T13:30:29Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -318,7 +312,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Splatoon 3",
     "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
     "depuis": "2026-11-14T15:02:59Z",
@@ -552,7 +546,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "VALORANT",
     "titre": "🔥 LIVE VALORANT : ON PART EN GAME ! 🎯 | DÉTENTE, ACTION ET HEADSHOTS ! ALLEZ LE BRONZE 3 !!!",
     "depuis": "2026-11-14T15:24:59Z",
@@ -584,13 +578,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 4,
-    "jeu": "Little Nightmares II",
-    "titre": "🐰Retour dans les petits cauchemars",
-    "depuis": "2026-11-14T13:15:45Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -1041,9 +1029,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 14,
-    "jeu": "The Transference",
-    "titre": "On fini le jeu avant la session test! #TheTransference #keymailer",
+    "viewers": 19,
+    "jeu": "Sloppy Forgeries",
+    "titre": "On imite les plus grands peintres! #sloppyforgeries #keymailer",
     "depuis": "2026-11-14T14:47:29Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1158,5 +1146,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-14T16:07:16.306Z"
+ "maj": "2026-11-14T16:58:12.035Z"
 }
