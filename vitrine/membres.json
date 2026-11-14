@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 18,
-  "heuresLive30": 2278,
+  "heuresLive30": 2282,
   "followsGagnes30": 497,
   "periode": {
    "du": "2026-10-15",
@@ -24,7 +24,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "Rocket League",
+    "titre": "Rocket League/PS5",
+    "depuis": "2026-11-14T13:06:21Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -189,7 +195,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 17,
+    "viewers": 41,
     "jeu": "Planet Zoo 2",
     "titre": "🐘Planet Zoo  |  J'ai tout détruit pour tout reconstruire  😄",
     "depuis": "2026-11-14T11:27:02Z",
@@ -619,7 +625,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 8,
     "jeu": "Call of Duty: Modern Warfare 4",
     "titre": "Double XP on en profite Camo et rage assurer",
     "depuis": "2026-11-14T08:36:32Z",
@@ -744,7 +750,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 2,
+    "viewers": 4,
     "jeu": "Among the Sleep",
     "titre": "Découverte d'Among The Sleep !! Viens papoter avec nous, OBJECTIF 150 MimiFollows :)  !discord !regles !don",
     "depuis": "2026-11-14T12:00:00Z",
@@ -1134,5 +1140,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-14T12:07:17.152Z"
+ "maj": "2026-11-14T13:07:18.807Z"
 }
