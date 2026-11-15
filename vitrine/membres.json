@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 11,
-  "heuresLive30": 2332,
+  "heuresLive30": 2335,
   "followsGagnes30": 495,
   "periode": {
    "du": "2026-10-16",
@@ -239,7 +239,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Dead by Daylight",
+    "titre": "🪓On survit et on sacrifie sur Dead by Daylight 🩸Choisi ton killer !dbdkiller !discord",
+    "depuis": "2026-11-15T09:08:32Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
+   },
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -555,7 +561,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Little Nightmares II",
     "titre": "🐰Retour dans les petits cauchemars",
     "depuis": "2026-11-15T09:03:58Z",
@@ -723,7 +729,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "Slime Rancher",
+    "titre": "arcapelaGO",
+    "depuis": "2026-11-15T09:11:04Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
+   },
    "premierStream": "2025-01-08",
    "succes": [
     {
@@ -824,7 +836,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "Art",
     "titre": "[FR] Dimanche Chill : une boisson chaude & c'est parti ☕💜 | Coloriage Mystère | !discord !commandes",
     "depuis": "2026-11-15T08:00:14Z",
@@ -1140,5 +1152,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-15T09:07:20.122Z"
+ "maj": "2026-11-15T09:11:33.580Z"
 }
