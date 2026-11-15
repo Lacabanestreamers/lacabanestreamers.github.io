@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 11,
-  "heuresLive30": 2359,
+  "heuresLive30": 2364,
   "followsGagnes30": 496,
   "periode": {
    "du": "2026-10-16",
@@ -95,9 +95,9 @@
    "staff": false,
    "depuis": "2026-09-22",
    "live": {
-    "viewers": 8,
-    "jeu": "The Red Strings Club",
-    "titre": "On joue ? Pegi 18",
+    "viewers": 9,
+    "jeu": "Slay the Spire II",
+    "titre": "Petite run de Slay",
     "depuis": "2026-11-15T13:01:02Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asalie-440x248.jpg"
    },
@@ -113,8 +113,8 @@
     "Outbound",
     "The Witch's Bakery",
     "PICO PARK",
-    "Just Chatting",
-    "The Red Strings Club"
+    "The Red Strings Club",
+    "Just Chatting"
    ],
    "clip": null
   },
@@ -248,7 +248,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "Pirate Treasure",
     "titre": "☕ On range un bateau pirate ! Viens te poser sur PirateTreasure !",
     "depuis": "2026-11-15T13:43:20Z",
@@ -541,7 +541,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "VALORANT",
+    "titre": "🥈 SILVER EN APPROCHE… NE ME FAITES PAS REDESCENDRE ! 💀",
+    "depuis": "2026-11-15T15:21:43Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -733,7 +739,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 3,
     "jeu": "Slime Rancher",
     "titre": "arcapelaGO",
     "depuis": "2026-11-15T11:57:59Z",
@@ -858,7 +864,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "World of Warcraft",
     "titre": "Bonjour, bon dimanche a tous !!!",
     "depuis": "2026-11-15T11:10:30Z",
@@ -916,13 +922,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 11,
-    "jeu": "Hozy",
-    "titre": "HOZY [FR] | On chill sur Hozy 🦖| !discord",
-    "depuis": "2026-11-15T13:03:06Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-10",
    "succes": [
     {
@@ -935,7 +935,8 @@
     "The Sims 4",
     "Terrible Lizards",
     "R.E.P.O.",
-    "Demonologist"
+    "Demonologist",
+    "Hozy"
    ],
    "clip": {
     "url": "https://www.twitch.tv/p_xline_/clip/AlluringBashfulAniseYouDontSay-Fm7EQ7mRUAoJWHZ3",
@@ -1043,7 +1044,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Pet Pet Pet: Tidy Up!",
+    "titre": "Session découvertes cosy <3 #PetPetPetTidyUp #keymailer",
+    "depuis": "2026-11-15T15:12:28Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [
     {
@@ -1155,5 +1162,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-15T15:07:19.622Z"
+ "maj": "2026-11-15T16:07:18.842Z"
 }
