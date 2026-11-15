@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 11,
-  "heuresLive30": 2364,
+  "heuresLive30": 2370,
   "followsGagnes30": 496,
   "periode": {
    "du": "2026-10-16",
@@ -95,7 +95,7 @@
    "staff": false,
    "depuis": "2026-09-22",
    "live": {
-    "viewers": 9,
+    "viewers": 11,
     "jeu": "Slay the Spire II",
     "titre": "Petite run de Slay",
     "depuis": "2026-11-15T13:01:02Z",
@@ -126,7 +126,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "Dice Hoarder",
+    "titre": "Allons ranger des dés ce soir, on est en mode chill",
+    "depuis": "2026-11-15T16:15:17Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
+   },
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -247,13 +253,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": {
-    "viewers": 4,
-    "jeu": "Pirate Treasure",
-    "titre": "☕ On range un bateau pirate ! Viens te poser sur PirateTreasure !",
-    "depuis": "2026-11-15T13:43:20Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -607,7 +607,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Season of Mystery: The Cherry Blossom Murders",
+    "titre": "🔞Petit live sauvage chill pour reporendre en douceur !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-15T16:14:41Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -738,13 +744,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 3,
-    "jeu": "Slime Rancher",
-    "titre": "arcapelaGO",
-    "depuis": "2026-11-15T11:57:59Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-08",
    "succes": [
     {
@@ -863,13 +863,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 2,
-    "jeu": "World of Warcraft",
-    "titre": "Bonjour, bon dimanche a tous !!!",
-    "depuis": "2026-11-15T11:10:30Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1045,7 +1039,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 9,
+    "viewers": 14,
     "jeu": "Pet Pet Pet: Tidy Up!",
     "titre": "Session découvertes cosy <3 #PetPetPetTidyUp #keymailer",
     "depuis": "2026-11-15T15:12:28Z",
@@ -1162,5 +1156,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-15T16:07:18.842Z"
+ "maj": "2026-11-15T16:57:59.662Z"
 }
