@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 10,
-  "heuresLive30": 2352,
+  "heuresLive30": 2355,
   "followsGagnes30": 509,
   "periode": {
    "du": "2026-10-17",
@@ -190,7 +190,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 15,
     "jeu": "Dispatch",
     "titre": "🗳️ DISPATCH | On concrétise avec invisimeuf ? La fin ce soir ?  👀",
     "depuis": "2026-11-15T19:31:13Z",
@@ -247,13 +247,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": {
-    "viewers": 4,
-    "jeu": "Subnautica 2",
-    "titre": "🦑 Qu'est-ce qui se cache tout au fond ? Subnautica 2",
-    "depuis": "2026-11-15T18:25:51Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -261,7 +255,7 @@
     "Raft",
     "Librarian: Tidy Up the Arcane Library!",
     "Sort The Bunnies",
-    "Tidy Up the Halloween Shop"
+    "Subnautica 2"
    ],
    "clip": {
     "url": "https://www.twitch.tv/cristal578/clip/RealLachrymoseConsoleKAPOW-ItFwUGwuVqii6xYJ",
@@ -541,13 +535,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 8,
-    "jeu": "Fortnite",
-    "titre": "🌙 LIVE CHILL : QUELQUES GAMES TRANQUILLES SUR FOFO 🎮 | ON SE DÉTEND !",
-    "depuis": "2026-11-15T15:21:43Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -1144,5 +1132,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-15T22:07:19.653Z"
+ "maj": "2026-11-15T23:07:22.438Z"
 }
