@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 11,
-  "heuresLive30": 2354,
+  "heuresLive30": 2359,
   "followsGagnes30": 496,
   "periode": {
    "du": "2026-10-16",
@@ -95,7 +95,7 @@
    "staff": false,
    "depuis": "2026-09-22",
    "live": {
-    "viewers": 11,
+    "viewers": 8,
     "jeu": "The Red Strings Club",
     "titre": "On joue ? Pegi 18",
     "depuis": "2026-11-15T13:01:02Z",
@@ -113,7 +113,8 @@
     "Outbound",
     "The Witch's Bakery",
     "PICO PARK",
-    "Just Chatting"
+    "Just Chatting",
+    "The Red Strings Club"
    ],
    "clip": null
   },
@@ -248,7 +249,7 @@
    "depuis": "2026-09-23",
    "live": {
     "viewers": 5,
-    "jeu": "Island Sort",
+    "jeu": "Pirate Treasure",
     "titre": "☕ On range un bateau pirate ! Viens te poser sur PirateTreasure !",
     "depuis": "2026-11-15T13:43:20Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
@@ -732,7 +733,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "Slime Rancher",
     "titre": "arcapelaGO",
     "depuis": "2026-11-15T11:57:59Z",
@@ -857,7 +858,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "World of Warcraft",
     "titre": "Bonjour, bon dimanche a tous !!!",
     "depuis": "2026-11-15T11:10:30Z",
@@ -916,9 +917,9 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 10,
-    "jeu": "Terrible Lizards",
-    "titre": "TERRIBLE LIZARDS [FR] | Il faut que je sorte de cette grotte et de cet enfer... On veut me croquer les fesses 🦖| !discord !lizards",
+    "viewers": 11,
+    "jeu": "Hozy",
+    "titre": "HOZY [FR] | On chill sur Hozy 🦖| !discord",
     "depuis": "2026-11-15T13:03:06Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
    },
@@ -1154,5 +1155,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-15T14:07:20.947Z"
+ "maj": "2026-11-15T15:07:19.622Z"
 }
