@@ -11,7 +11,7 @@
   "followsGagnes30": 495,
   "periode": {
    "du": "2026-10-16",
-   "au": "2026-11-14"
+   "au": "2026-11-15"
   }
  },
  "agenda": [],
@@ -150,7 +150,6 @@
    "succes": [],
    "jeux": [
     "Mazebound: Hunt, Gather, Run!",
-    "My Fashion Studio",
     "Pokémon Mystery Dungeon: Explorers of Sky",
     "Stardew Valley"
    ],
@@ -568,8 +567,7 @@
     "Makers & Crafting",
     "Dead Space 2",
     "Little Nightmares II",
-    "Little Nightmares: Enhanced Edition",
-    "Resonance: A Plague Tale Legacy"
+    "Fall Guys"
    ],
    "clip": {
     "url": "https://www.twitch.tv/liiapin/clip/SassySpinelessBeefSmoocherZ-x6qDbut9r79hbC7l",
@@ -607,7 +605,7 @@
     "Tomb Raider",
     "Special Events",
     "R.E.P.O.",
-    "7 Days to Die"
+    "Invokyr"
    ],
    "clip": null
   },
@@ -819,13 +817,19 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Art",
+    "titre": "[FR] Dimanche Chill : une boisson chaude & c'est parti ☕💜 | Coloriage Mystère | !discord !commandes",
+    "depuis": "2026-11-15T08:00:14Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
+   },
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
     "Disney Dreamlight Valley",
-    "Moonlight Peaks",
     "Art",
+    "Moonlight Peaks",
     "R.E.P.O."
    ],
    "clip": null
@@ -838,7 +842,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "World of Warcraft",
+    "titre": "Bonjour, bon dimanche a tous !!!",
+    "depuis": "2026-11-15T07:57:33Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1106,7 +1116,7 @@
     "Coffee Talk",
     "inKONBINI: One Store. Many Stories",
     "Allogloom",
-    "Gloomy Eyes"
+    "Farm & Feast"
    ],
    "clip": {
     "url": "https://www.twitch.tv/zeylta/clip/SecretiveImportantLettuceBCouch-OwVdlGzD0xctP-2w",
@@ -1124,5 +1134,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-15T04:07:20.021Z"
+ "maj": "2026-11-15T08:07:18.843Z"
 }
