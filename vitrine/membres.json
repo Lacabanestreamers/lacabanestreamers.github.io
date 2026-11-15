@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 11,
-  "heuresLive30": 2370,
+  "heuresLive30": 2372,
   "followsGagnes30": 496,
   "periode": {
    "du": "2026-10-16",
@@ -95,7 +95,7 @@
    "staff": false,
    "depuis": "2026-09-22",
    "live": {
-    "viewers": 11,
+    "viewers": 12,
     "jeu": "Slay the Spire II",
     "titre": "Petite run de Slay",
     "depuis": "2026-11-15T13:01:02Z",
@@ -127,7 +127,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 8,
     "jeu": "Dice Hoarder",
     "titre": "Allons ranger des dés ce soir, on est en mode chill",
     "depuis": "2026-11-15T16:15:17Z",
@@ -542,7 +542,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 8,
     "jeu": "VALORANT",
     "titre": "🥈 SILVER EN APPROCHE… NE ME FAITES PAS REDESCENDRE ! 💀",
     "depuis": "2026-11-15T15:21:43Z",
@@ -608,7 +608,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 8,
     "jeu": "Season of Mystery: The Cherry Blossom Murders",
     "titre": "🔞Petit live sauvage chill pour reporendre en douceur !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-15T16:14:41Z",
@@ -1039,7 +1039,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 14,
+    "viewers": 13,
     "jeu": "Pet Pet Pet: Tidy Up!",
     "titre": "Session découvertes cosy <3 #PetPetPetTidyUp #keymailer",
     "depuis": "2026-11-15T15:12:28Z",
@@ -1156,5 +1156,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-15T16:57:59.662Z"
+ "maj": "2026-11-15T17:07:25.493Z"
 }
