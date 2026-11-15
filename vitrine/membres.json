@@ -32,7 +32,14 @@
     "Fortnite",
     "A Plague Tale: Innocence"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/alf_de_melmac/clip/EncouragingAmorphousFiddleheadsDatBoi-9m3pV_nVfd-eObz5",
+    "titre": "baffe dans sa tête 👊☠️",
+    "vues": 5,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/1b8c1c13-a13e-42a5-a748-b64a9e535981/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-14",
+    "duree": 18
+   }
   },
   {
    "login": "aly0806",
@@ -52,14 +59,7 @@
     "Disney Dreamlight Valley",
     "DEVOUR"
    ],
-   "clip": {
-    "url": "https://www.twitch.tv/aly0806/clip/SnappyManlyStarlingBCouch-IZp-06wUH0kmbDoY",
-    "titre": "WOup pinaise",
-    "vues": 11,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/71c9f79a-04a8-4d55-a0bd-2cd15dad4e73/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-07",
-    "duree": 11
-   }
+   "clip": null
   },
   {
    "login": "asakha",
@@ -78,10 +78,10 @@
     "PEAK"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/asakha/clip/SucculentVictoriousPuffinCclamChamp-hDyw5fJ_W8PzHMxk",
+    "url": "https://www.twitch.tv/asakha/clip/AuspiciousBreakableKoupreyTooSpicy-99KkUdNA65s23qSi",
     "titre": "⛰️ Les Petites Pierres et les Kallax prennent de l’altitude 🧗 | PEAK avec @Galyssiane | ❗cmd ❗rs ❗c",
     "vues": 3,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/9e4d0d80-cbcb-47d1-9475-a513738f9db3/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f46a3c8c-1139-4d90-b002-e92488a2d1d2/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-10",
     "duree": 30
    }
@@ -119,7 +119,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 10,
     "jeu": "Dice Hoarder",
     "titre": "Allons ranger des dés ce soir, on est en mode chill",
     "depuis": "2026-11-14T20:02:38Z",
@@ -137,7 +137,7 @@
    "clip": {
     "url": "https://www.twitch.tv/aulit42369/clip/SnappyOpenPieFeelsBadMan-se8d3-jCObl13q8U",
     "titre": "WzBot CLIP | On remet le tablier de thanatopracteur ! Autopsies propres et enterrements  (by chezelo",
-    "vues": 5,
+    "vues": 6,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/071d3b42-8550-4a50-ae22-3decb5375a70/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-09",
     "duree": 60
@@ -218,7 +218,7 @@
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/FrozenPiliableMacaroniMrDestructoid-urT2iDm8ea-yAdFo",
     "titre": "On comprend R mais tout va bien !",
-    "vues": 6,
+    "vues": 7,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/0e0fb84f-b4b7-47eb-8144-4f677bec21e4/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-08",
     "duree": 13
@@ -339,7 +339,14 @@
     "Art",
     "Silver Service"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/emmamarmotte/clip/CrowdedBoredPoxTheRinger-xXsPpM7V7M3IM9Rl",
+    "titre": "🌙 La tanière des marmottes 🐾 | Retour à Dreamlight Valley ✨ chill, quêtes & magie Disney | !lurk !",
+    "vues": 2,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f159a0e7-e38c-4e0e-be60-717e987fd1b1/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-14",
+    "duree": 30
+   }
   },
   {
    "login": "evodp",
@@ -405,12 +412,12 @@
     "Grandma Left Me A Building"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/galyssiane/clip/DirtyProudPicklesBrainSlug-AWG994WBBl1ojqnZ",
-    "titre": "WzBot CLIP | 7 Days to die : Des zombies, des décès, et et des évènements impromptus (by galyssiane)",
-    "vues": 10,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/7ab265eb-73f6-434e-80b8-a1d5d8bf535e/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-07",
-    "duree": 60
+    "url": "https://www.twitch.tv/galyssiane/clip/ObservantConcernedBeanNotATK-HbFBTUozGn2NRpc7",
+    "titre": "Et tu chantes, danses jusqu'au bout de la nuit !",
+    "vues": 4,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/231e4473-a238-4f0d-8db3-481f2da93484/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-09",
+    "duree": 30
    }
   },
   {
@@ -459,12 +466,12 @@
     "DEVOUR"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/hyroshimaeu/clip/TrappedRelievedLeopardNinjaGrumpy-kAo6SOFTX0MTVGnr",
-    "titre": "Hyro a la rage (j'en ai mal au oreille encore, c'était lunaire)",
-    "vues": 11,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e54c1af6-7e60-4115-9720-9ca5ed710ffe/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-08",
-    "duree": 22
+    "url": "https://www.twitch.tv/hyroshimaeu/clip/PeppyMiniatureHamburgerBloodTrail-Y8sH2xpdn0w9hQMm",
+    "titre": "Passe Partout",
+    "vues": 5,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cee6f12e-23fd-42ec-b065-2bef1dd2b63b/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-12",
+    "duree": 26
    }
   },
   {
@@ -577,11 +584,11 @@
     "Resonance: A Plague Tale Legacy"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/liiapin/clip/CleanAuspiciousAlfalfaTBTacoLeft-4Ph8Vq6RMi4qlXVG",
+    "url": "https://www.twitch.tv/liiapin/clip/SassySpinelessBeefSmoocherZ-x6qDbut9r79hbC7l",
     "titre": "Clip by inStreamly",
-    "vues": 2,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f281b5ca-8414-4fa6-9e14-9a86fa9b7965/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-07",
+    "vues": 1,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a9ff3682-4a1d-43fb-9d5d-35cb858121bf/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-14",
     "duree": 26
    }
   },
@@ -639,7 +646,14 @@
     "Dune: Awakening",
     "Rocket League"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/luffishgaming/clip/HeadstrongTenderClintBibleThump--MnnuQWSXbdNtBBm",
+    "titre": "Luffish future C2 ou pas ?",
+    "vues": 1,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/7b89227b-e11a-42a7-b33a-4993617bb451/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-14",
+    "duree": 30
+   }
   },
   {
    "login": "lupiozzi",
@@ -676,7 +690,7 @@
    "clip": {
     "url": "https://www.twitch.tv/lylu_live/clip/RudeSwissKoupreyFloof-dLXW74LFtfA_kGKs",
     "titre": "le cris version lylu",
-    "vues": 6,
+    "vues": 7,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/02461508-1e69-4b36-a8ad-5dc117d5387c/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-09",
     "duree": 7
@@ -803,7 +817,7 @@
    "clip": {
     "url": "https://www.twitch.tv/mysti94/clip/AnnoyingNiceMageKappa-CRiFHcBm0uj6KgtH",
     "titre": "Train de la Hype Niv 11 - Merci à Baylor !",
-    "vues": 5,
+    "vues": 6,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/37c0abeb-9356-4d3b-abb4-71e429f2b1bc/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-13",
     "duree": 33
@@ -873,12 +887,12 @@
     "Inside the Backrooms"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/oko_san_/clip/FunnyPlainTubersFunRun-Gi3kyq8GbGMx0K3p",
-    "titre": "Obligé de lui parler",
-    "vues": 1,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d8628805-d01a-4399-80ce-eedee74f2512/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "url": "https://www.twitch.tv/oko_san_/clip/FancyIncredulousQuailBCWarrior-YNixp7mpgJjCgJRq",
+    "titre": "Qui qui se moque de moi ?",
+    "vues": 2,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/ec8e98c4-a4e9-4981-b22c-dd08a5c6d7f8/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-12",
-    "duree": 17
+    "duree": 7
    }
   },
   {
@@ -1010,13 +1024,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": {
-    "viewers": 12,
-    "jeu": "Loftia",
-    "titre": "On fini tout doux sur Loftia!",
-    "depuis": "2026-11-14T14:47:29Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [
     {
@@ -1033,12 +1041,12 @@
     "Photomaly"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/sakkiel/clip/LivelyMoralHamsterPipeHype-asLn_9UVCnyzW2xg",
-    "titre": "La calvitie de la panique!",
+    "url": "https://www.twitch.tv/sakkiel/clip/ArborealAdventurousScallionCoolCat-MG_fjYzr6aoJ1q-c",
+    "titre": "Essayons de sortir d'ici! #TheTransference #keymailer",
     "vues": 6,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/c236a820-cbba-4b9f-ba47-53f29e584aad/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-08",
-    "duree": 20
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/bcf0838e-6cb9-4759-aa33-315e1244a4f0/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-12",
+    "duree": 30
    }
   },
   {
@@ -1128,5 +1136,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-15T01:46:10.718Z"
+ "maj": "2026-11-15T02:07:46.986Z"
 }
