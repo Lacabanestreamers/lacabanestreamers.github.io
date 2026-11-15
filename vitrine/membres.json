@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 11,
-  "heuresLive30": 2350,
+  "heuresLive30": 2354,
   "followsGagnes30": 496,
   "periode": {
    "du": "2026-10-16",
@@ -95,9 +95,9 @@
    "staff": false,
    "depuis": "2026-09-22",
    "live": {
-    "viewers": 4,
-    "jeu": "Just Chatting",
-    "titre": "On joue ?",
+    "viewers": 11,
+    "jeu": "The Red Strings Club",
+    "titre": "On joue ? Pegi 18",
     "depuis": "2026-11-15T13:01:02Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asalie-440x248.jpg"
    },
@@ -112,7 +112,8 @@
    "jeux": [
     "Outbound",
     "The Witch's Bakery",
-    "PICO PARK"
+    "PICO PARK",
+    "Just Chatting"
    ],
    "clip": null
   },
@@ -245,7 +246,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Island Sort",
+    "titre": "☕ On range un bateau pirate ! Viens te poser sur PirateTreasure !",
+    "depuis": "2026-11-15T13:43:20Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
+   },
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -725,7 +732,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "Slime Rancher",
     "titre": "arcapelaGO",
     "depuis": "2026-11-15T11:57:59Z",
@@ -909,7 +916,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 3,
+    "viewers": 10,
     "jeu": "Terrible Lizards",
     "titre": "TERRIBLE LIZARDS [FR] | Il faut que je sorte de cette grotte et de cet enfer... On veut me croquer les fesses 🦖| !discord !lizards",
     "depuis": "2026-11-15T13:03:06Z",
@@ -1147,5 +1154,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-15T13:07:19.827Z"
+ "maj": "2026-11-15T14:07:20.947Z"
 }
