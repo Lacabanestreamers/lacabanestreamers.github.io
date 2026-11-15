@@ -6,11 +6,11 @@
  "chiffres": {
   "membres": 46,
   "affilies": 42,
-  "nouveaux30": 11,
-  "heuresLive30": 2395,
-  "followsGagnes30": 500,
+  "nouveaux30": 10,
+  "heuresLive30": 2352,
+  "followsGagnes30": 509,
   "periode": {
-   "du": "2026-10-16",
+   "du": "2026-10-17",
    "au": "2026-11-15"
   }
  },
@@ -190,7 +190,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 21,
+    "viewers": 14,
     "jeu": "Dispatch",
     "titre": "🗳️ DISPATCH | On concrétise avec invisimeuf ? La fin ce soir ?  👀",
     "depuis": "2026-11-15T19:31:13Z",
@@ -542,7 +542,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 10,
+    "viewers": 8,
     "jeu": "Fortnite",
     "titre": "🌙 LIVE CHILL : QUELQUES GAMES TRANQUILLES SUR FOFO 🎮 | ON SE DÉTEND !",
     "depuis": "2026-11-15T15:21:43Z",
@@ -1144,5 +1144,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-15T21:40:03.697Z"
+ "maj": "2026-11-15T22:07:19.653Z"
 }
