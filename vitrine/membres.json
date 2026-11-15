@@ -7,8 +7,8 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 11,
-  "heuresLive30": 2377,
-  "followsGagnes30": 496,
+  "heuresLive30": 2382,
+  "followsGagnes30": 500,
   "periode": {
    "du": "2026-10-16",
    "au": "2026-11-15"
@@ -94,13 +94,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-22",
-   "live": {
-    "viewers": 11,
-    "jeu": "Slay the Spire II",
-    "titre": "Petite run de Slay",
-    "depuis": "2026-11-15T13:01:02Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asalie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-07-27",
    "succes": [
     {
@@ -113,8 +107,8 @@
     "Outbound",
     "The Witch's Bakery",
     "PICO PARK",
-    "The Red Strings Club",
-    "Slay the Spire II"
+    "Slay the Spire II",
+    "The Red Strings Club"
    ],
    "clip": null
   },
@@ -126,13 +120,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 9,
-    "jeu": "Dice Hoarder",
-    "titre": "Allons ranger des dés ce soir, on est en mode chill",
-    "depuis": "2026-11-15T16:15:17Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -253,7 +241,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-23",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Subnautica 2",
+    "titre": "🦑 Qu'est-ce qui se cache tout au fond ? Subnautica 2",
+    "depuis": "2026-11-15T18:25:51Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_cristal578-440x248.jpg"
+   },
    "premierStream": "2025-11-16",
    "succes": [],
    "jeux": [
@@ -521,7 +515,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Just Chatting",
+    "titre": "RÉACT MAXI CHILL🍿 : Soirée FrienZone, Catfish MTV & autres pépites d'émissions TV ✨ ! | React reportages & docus sur YouTube",
+    "depuis": "2026-11-15T19:03:39Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
+   },
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
@@ -542,7 +542,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 7,
+    "viewers": 12,
     "jeu": "VALORANT",
     "titre": "🥈 SILVER EN APPROCHE… NE ME FAITES PAS REDESCENDRE ! 💀",
     "depuis": "2026-11-15T15:21:43Z",
@@ -1039,7 +1039,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 10,
+    "viewers": 16,
     "jeu": "Mini Monuments",
     "titre": "Session découvertes cosy <3 #MiniMonuments #keymailer",
     "depuis": "2026-11-15T15:12:28Z",
@@ -1156,5 +1156,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-15T18:07:36.131Z"
+ "maj": "2026-11-15T19:07:41.950Z"
 }
