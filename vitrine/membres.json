@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 11,
-  "heuresLive30": 2382,
+  "heuresLive30": 2387,
   "followsGagnes30": 500,
   "periode": {
    "du": "2026-10-16",
@@ -189,7 +189,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "Dispatch",
+    "titre": "🗳️ DISPATCH | On concrétise avec invisimeuf ? La fin ce soir ?  👀",
+    "depuis": "2026-11-15T19:31:13Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -242,7 +248,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 4,
+    "viewers": 6,
     "jeu": "Subnautica 2",
     "titre": "🦑 Qu'est-ce qui se cache tout au fond ? Subnautica 2",
     "depuis": "2026-11-15T18:25:51Z",
@@ -516,7 +522,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
+    "viewers": 13,
     "jeu": "Just Chatting",
     "titre": "RÉACT MAXI CHILL🍿 : Soirée FrienZone, Catfish MTV & autres pépites d'émissions TV ✨ ! | React reportages & docus sur YouTube",
     "depuis": "2026-11-15T19:03:39Z",
@@ -542,7 +548,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 12,
+    "viewers": 15,
     "jeu": "VALORANT",
     "titre": "🥈 SILVER EN APPROCHE… NE ME FAITES PAS REDESCENDRE ! 💀",
     "depuis": "2026-11-15T15:21:43Z",
@@ -607,13 +613,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 9,
-    "jeu": "Season of Mystery: The Cherry Blossom Murders",
-    "titre": "🔞Petit live sauvage chill pour reporendre en douceur !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
-    "depuis": "2026-11-15T16:14:41Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -1039,9 +1039,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 16,
-    "jeu": "Mini Monuments",
-    "titre": "Session découvertes cosy <3 #MiniMonuments #keymailer",
+    "viewers": 13,
+    "jeu": "Loftia",
+    "titre": "On fini tranquillou sur Loftia (3e jeu demain du coup)",
     "depuis": "2026-11-15T15:12:28Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1156,5 +1156,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-15T19:07:41.950Z"
+ "maj": "2026-11-15T20:07:19.895Z"
 }
