@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 11,
-  "heuresLive30": 2347,
+  "heuresLive30": 2350,
   "followsGagnes30": 496,
   "periode": {
    "du": "2026-10-16",
@@ -94,7 +94,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-22",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Just Chatting",
+    "titre": "On joue ?",
+    "depuis": "2026-11-15T13:01:02Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asalie-440x248.jpg"
+   },
    "premierStream": "2025-07-27",
    "succes": [
     {
@@ -368,13 +374,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 10,
-    "jeu": "World of Warcraft",
-    "titre": "[DROP] On continu notre aventure pleine de pêche !",
-    "depuis": "2026-11-15T09:11:45Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galaadours-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2023-06-06",
    "succes": [],
    "jeux": [
@@ -725,7 +725,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Slime Rancher",
     "titre": "arcapelaGO",
     "depuis": "2026-11-15T11:57:59Z",
@@ -742,9 +742,9 @@
    "jeux": [
     "The Elder Scrolls V: Skyrim - Special Edition",
     "PowerWash Simulator",
+    "Slime Rancher",
     "Far Far West",
-    "Kingdom Hearts Birth by Sleep",
-    "Slime Rancher"
+    "Kingdom Hearts Birth by Sleep"
    ],
    "clip": null
   },
@@ -908,7 +908,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Terrible Lizards",
+    "titre": "TERRIBLE LIZARDS [FR] | Il faut que je sorte de cette grotte et de cet enfer... On veut me croquer les fesses 🦖| !discord !lizards",
+    "depuis": "2026-11-15T13:03:06Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
+   },
    "premierStream": "2025-09-10",
    "succes": [
     {
@@ -1141,5 +1147,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-15T12:07:20.165Z"
+ "maj": "2026-11-15T13:07:19.827Z"
 }
