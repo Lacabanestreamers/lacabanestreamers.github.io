@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 11,
-  "heuresLive30": 2329,
+  "heuresLive30": 2330,
   "followsGagnes30": 495,
   "periode": {
    "du": "2026-10-16",
@@ -118,13 +118,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 10,
-    "jeu": "Dice Hoarder",
-    "titre": "Allons ranger des dés ce soir, on est en mode chill",
-    "depuis": "2026-11-14T20:02:38Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -1130,5 +1124,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-15T03:07:25.619Z"
+ "maj": "2026-11-15T04:07:20.021Z"
 }
