@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 11,
-  "heuresLive30": 2327,
+  "heuresLive30": 2329,
   "followsGagnes30": 495,
   "periode": {
    "du": "2026-10-16",
@@ -299,13 +299,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 1,
-    "jeu": "Minecraft",
-    "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings ! - !réseaux",
-    "depuis": "2026-11-14T18:07:02Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -1136,5 +1130,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-15T02:07:46.986Z"
+ "maj": "2026-11-15T03:07:25.619Z"
 }
