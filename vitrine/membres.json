@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 11,
-  "heuresLive30": 2387,
+  "heuresLive30": 2392,
   "followsGagnes30": 500,
   "periode": {
    "du": "2026-10-16",
@@ -190,7 +190,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 14,
     "jeu": "Dispatch",
     "titre": "🗳️ DISPATCH | On concrétise avec invisimeuf ? La fin ce soir ?  👀",
     "depuis": "2026-11-15T19:31:13Z",
@@ -248,7 +248,7 @@
    "staff": false,
    "depuis": "2026-09-23",
    "live": {
-    "viewers": 6,
+    "viewers": 5,
     "jeu": "Subnautica 2",
     "titre": "🦑 Qu'est-ce qui se cache tout au fond ? Subnautica 2",
     "depuis": "2026-11-15T18:25:51Z",
@@ -521,13 +521,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 13,
-    "jeu": "Just Chatting",
-    "titre": "RÉACT MAXI CHILL🍿 : Soirée FrienZone, Catfish MTV & autres pépites d'émissions TV ✨ ! | React reportages & docus sur YouTube",
-    "depuis": "2026-11-15T19:03:39Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
@@ -548,9 +542,9 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 15,
-    "jeu": "VALORANT",
-    "titre": "🥈 SILVER EN APPROCHE… NE ME FAITES PAS REDESCENDRE ! 💀",
+    "viewers": 10,
+    "jeu": "Fortnite",
+    "titre": "🌙 LIVE CHILL : QUELQUES GAMES TRANQUILLES SUR FOFO 🎮 | ON SE DÉTEND !",
     "depuis": "2026-11-15T15:21:43Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
    },
@@ -1038,13 +1032,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": {
-    "viewers": 13,
-    "jeu": "Loftia",
-    "titre": "On fini tranquillou sur Loftia (3e jeu demain du coup)",
-    "depuis": "2026-11-15T15:12:28Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [
     {
@@ -1156,5 +1144,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-15T20:07:19.895Z"
+ "maj": "2026-11-15T21:07:19.105Z"
 }
