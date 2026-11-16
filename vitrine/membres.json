@@ -7,8 +7,8 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 10,
-  "heuresLive30": 2406,
-  "followsGagnes30": 507,
+  "heuresLive30": 2411,
+  "followsGagnes30": 512,
   "periode": {
    "du": "2026-10-17",
    "au": "2026-11-16"
@@ -294,7 +294,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "My Hero Ultra Rumble",
+    "titre": "On découvre des 🎮jeux Nintendo GRATUITS ! - !réseaux",
+    "depuis": "2026-11-16T18:07:37Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -345,13 +351,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": {
-    "viewers": 1,
-    "jeu": "Hogwarts Legacy",
-    "titre": "[FR] [HL] 🪄Une sorcière maladroite à Poudlard 😂 | Venez vivre l'aventure avec Evodp !**",
-    "depuis": "2026-11-16T11:59:12Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -403,7 +403,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Writing & Reading",
+    "titre": "Frankenstein - Episode 9 - Live lecture chill pour commencer la semaine en douceur :) (!ttc !commandes)",
+    "depuis": "2026-11-16T18:50:07Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -543,7 +549,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 8,
+    "viewers": 10,
     "jeu": "VALORANT",
     "titre": "🔥 LIVE VALORANT : OBJECTIF SILVER AUJOURD'HUI ! 🥈 | ON VA CHERCHER CE RANK UP !",
     "depuis": "2026-11-16T14:15:28Z",
@@ -840,7 +846,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 14,
+    "viewers": 13,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] J-2 DLC4 | On prépare la salle des coffres pour le DLC 🦜🏴‍☠️ | Coloriage Mystère | !discord !commandes",
     "depuis": "2026-11-16T17:00:19Z",
@@ -884,13 +890,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 16,
-    "jeu": "The Legend of Zelda: Ocarina of Time",
-    "titre": "EP3- Direction les Zora !!! [!bs !fortune !insta !discord ]",
-    "depuis": "2026-11-16T13:54:52Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -1046,7 +1046,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 18,
+    "viewers": 16,
     "jeu": "Potions Galore",
     "titre": "Session test! On trie des potions! #potionsgalore #madoctopus",
     "depuis": "2026-11-16T11:18:43Z",
@@ -1163,5 +1163,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-16T18:07:25.044Z"
+ "maj": "2026-11-16T19:07:20.496Z"
 }
