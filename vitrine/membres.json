@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 10,
-  "heuresLive30": 2411,
+  "heuresLive30": 2416,
   "followsGagnes30": 512,
   "periode": {
    "du": "2026-10-17",
@@ -268,7 +268,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Lies of P",
+    "titre": "[Lies of P] On approche de la fin ?",
+    "depuis": "2026-11-16T19:28:44Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -295,7 +301,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 3,
+    "viewers": 7,
     "jeu": "My Hero Ultra Rumble",
     "titre": "On découvre des 🎮jeux Nintendo GRATUITS ! - !réseaux",
     "depuis": "2026-11-16T18:07:37Z",
@@ -326,7 +332,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 22,
+    "jeu": "Art",
+    "titre": "🌙 Marmottes en mode COZY 🧸 | Coloriage relaxant du soir ✨ | !lurk !clip !commandes",
+    "depuis": "2026-11-16T19:13:31Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
+   },
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
@@ -403,13 +415,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 6,
-    "jeu": "Writing & Reading",
-    "titre": "Frankenstein - Episode 9 - Live lecture chill pour commencer la semaine en douceur :) (!ttc !commandes)",
-    "depuis": "2026-11-16T18:50:07Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -417,7 +423,7 @@
     "Shift at Midnight",
     "R.E.P.O.",
     "Photomaly",
-    "Forever Ago"
+    "Writing & Reading"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/ObservantConcernedBeanNotATK-HbFBTUozGn2NRpc7",
@@ -691,7 +697,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "R.E.P.O.",
+    "titre": "Go se faire chopper le kuku ! R.E.P.O - !lurk !discord ft @calo_vt @narberzoo_buzzleglaire",
+    "depuis": "2026-11-16T19:28:33Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
+   },
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
@@ -818,7 +830,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Psalm 2",
+    "titre": "[FR] ~ Lundécouverte - Démo - Plasm 2 ~",
+    "depuis": "2026-11-16T19:45:48Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
+   },
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -846,7 +864,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 13,
+    "viewers": 12,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] J-2 DLC4 | On prépare la salle des coffres pour le DLC 🦜🏴‍☠️ | Coloriage Mystère | !discord !commandes",
     "depuis": "2026-11-16T17:00:19Z",
@@ -1008,7 +1026,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Silver Service",
+    "titre": "Silver Service on range les buffets du bateaux",
+    "depuis": "2026-11-16T19:07:54Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
+   },
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -1046,7 +1070,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 16,
+    "viewers": 9,
     "jeu": "Potions Galore",
     "titre": "Session test! On trie des potions! #potionsgalore #madoctopus",
     "depuis": "2026-11-16T11:18:43Z",
@@ -1163,5 +1187,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-16T19:07:20.496Z"
+ "maj": "2026-11-16T20:07:22.989Z"
 }
