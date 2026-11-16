@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 10,
-  "heuresLive30": 2392,
+  "heuresLive30": 2399,
   "followsGagnes30": 507,
   "periode": {
    "du": "2026-10-17",
@@ -346,7 +346,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "Hogwarts Legacy",
     "titre": "[FR] [HL] 🪄Une sorcière maladroite à Poudlard 😂 | Venez vivre l'aventure avec Evodp !**",
     "depuis": "2026-11-16T11:59:12Z",
@@ -405,8 +405,8 @@
    "depuis": "2026-09-20",
    "live": {
     "viewers": 8,
-    "jeu": "Photomaly",
-    "titre": "Photomaly , la suite ! Des photos, et du flip ! Venez me rejoindre pour découvrir ce jeu ! (!ttc !commandes)",
+    "jeu": "Scawy Game",
+    "titre": "On se fait Scawy Game ! Des moments chelous, et du flip ! Venez me rejoindre pour découvrir ce jeu ! (!ttc !commandes)",
     "depuis": "2026-11-16T13:53:58Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
    },
@@ -416,8 +416,8 @@
     "Just Chatting",
     "Shift at Midnight",
     "R.E.P.O.",
-    "Forever Ago",
-    "Grandma Left Me A Building"
+    "Photomaly",
+    "Forever Ago"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/ObservantConcernedBeanNotATK-HbFBTUozGn2NRpc7",
@@ -436,13 +436,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-11",
-   "live": {
-    "viewers": 13,
-    "jeu": "Games + Demos",
-    "titre": "Des-des-des-déééémooooos 👾 On teste plein de trucs aujourd'hui 🎮",
-    "depuis": "2026-11-16T09:28:53Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hagosan-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2023-07-10",
    "succes": [],
    "jeux": [
@@ -555,7 +549,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 5,
+    "viewers": 9,
     "jeu": "VALORANT",
     "titre": "🔥 LIVE VALORANT : OBJECTIF SILVER AUJOURD'HUI ! 🥈 | ON VA CHERCHER CE RANK UP !",
     "depuis": "2026-11-16T14:15:28Z",
@@ -621,8 +615,8 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
-    "jeu": "Dead by Daylight",
+    "viewers": 15,
+    "jeu": "Tomb Raider",
     "titre": "🔞On reprend en douceur !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-16T13:22:32Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
@@ -645,7 +639,7 @@
     "Tomb Raider",
     "Special Events",
     "R.E.P.O.",
-    "Invokyr"
+    "Dead by Daylight"
    ],
    "clip": null
   },
@@ -857,7 +851,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "[FR] J-2 DLC4 | On prépare la salle des coffres pour le DLC 🦜🏴‍☠️ | Coloriage Mystère | !discord !commandes",
+    "depuis": "2026-11-16T17:00:19Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
+   },
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -897,7 +897,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 12,
     "jeu": "The Legend of Zelda: Ocarina of Time",
     "titre": "EP3- Direction les Zora !!! [!bs !fortune !insta !discord ]",
     "depuis": "2026-11-16T13:54:52Z",
@@ -1058,9 +1058,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 15,
-    "jeu": "Games + Demos",
-    "titre": "Session test! Démo de #StickerChaos #keymailer",
+    "viewers": 18,
+    "jeu": "Potions Galore",
+    "titre": "Session test! On trie des potions! #potionsgalore #madoctopus",
     "depuis": "2026-11-16T11:18:43Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1175,5 +1175,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-16T16:07:21.806Z"
+ "maj": "2026-11-16T17:07:21.934Z"
 }
