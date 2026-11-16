@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 10,
-  "heuresLive30": 2375,
+  "heuresLive30": 2379,
   "followsGagnes30": 507,
   "periode": {
    "du": "2026-10-17",
@@ -346,7 +346,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 4,
+    "viewers": 2,
     "jeu": "Hogwarts Legacy",
     "titre": "[FR] [HL] 🪄Une sorcière maladroite à Poudlard 😂 | Venez vivre l'aventure avec Evodp !**",
     "depuis": "2026-11-16T11:59:12Z",
@@ -403,7 +403,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Photomaly",
+    "titre": "Photomaly , la suite ! Des photos, et du flip ! Venez me rejoindre pour découvrir ce jeu ! (!ttc !commandes)",
+    "depuis": "2026-11-16T13:53:58Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -608,7 +614,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 12,
+    "jeu": "Dead by Daylight",
+    "titre": "🔞On reprend en douceur !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-16T13:22:32Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -739,13 +751,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 5,
-    "jeu": "Slime Rancher 2",
-    "titre": "Je m'excuse publiquement pour ce que j'ai pu faire à slime rancher premier du nom",
-    "depuis": "2026-11-16T09:24:28Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-08",
    "succes": [
     {
@@ -884,7 +890,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "The Legend of Zelda: Ocarina of Time",
+    "titre": "EP3- Direction les Zora !!! [!bs !fortune !insta !discord ]",
+    "depuis": "2026-11-16T13:54:52Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
+   },
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -1157,5 +1169,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-16T13:07:25.687Z"
+ "maj": "2026-11-16T14:07:19.944Z"
 }
