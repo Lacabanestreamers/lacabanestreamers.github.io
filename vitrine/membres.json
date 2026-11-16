@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 10,
-  "heuresLive30": 2355,
+  "heuresLive30": 2356,
   "followsGagnes30": 509,
   "periode": {
    "du": "2026-10-17",
@@ -190,7 +190,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 15,
+    "viewers": 10,
     "jeu": "Dispatch",
     "titre": "🗳️ DISPATCH | On concrétise avec invisimeuf ? La fin ce soir ?  👀",
     "depuis": "2026-11-15T19:31:13Z",
@@ -1132,5 +1132,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-15T23:07:22.438Z"
+ "maj": "2026-11-16T00:07:18.089Z"
 }
