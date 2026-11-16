@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 10,
-  "heuresLive30": 2360,
+  "heuresLive30": 2363,
   "followsGagnes30": 507,
   "periode": {
    "du": "2026-10-17",
@@ -269,7 +269,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Lies of P",
     "titre": "[Lies of P] On se venge du boss ?",
     "depuis": "2026-11-16T07:58:22Z",
@@ -732,7 +732,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Slime Rancher 2",
+    "titre": "Je m'excuse publiquement pour ce que j'ai pu faire à slime rancher premier du nom",
+    "depuis": "2026-11-16T09:24:28Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
+   },
    "premierStream": "2025-01-08",
    "succes": [
     {
@@ -759,7 +765,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Stardew Valley",
     "titre": "Joli lundi Cozy sur Stardew Valley. On fait les 150 Follows ???? Venez vite les MimiChats!!!!  !discord !regles !don",
     "depuis": "2026-11-16T08:01:24Z",
@@ -911,7 +917,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 13,
+    "viewers": 8,
     "jeu": "The Sims 4",
     "titre": "THE SIMS 4 [FR] | Episode 18 : Agathe divorce enfin... et dramaaa 🏠| !perfectlife !agathe",
     "depuis": "2026-11-16T07:54:45Z",
@@ -1150,5 +1156,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-16T09:07:20.615Z"
+ "maj": "2026-11-16T09:27:11.249Z"
 }
