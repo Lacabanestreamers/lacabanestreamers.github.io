@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 8,
-  "heuresLive30": 2288,
+  "heuresLive30": 2294,
   "followsGagnes30": 483,
   "periode": {
    "du": "2026-10-18",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 3,
+    "viewers": 7,
     "jeu": "God of War III: Remastered",
     "titre": "God of War 3 Remastered/PS4",
     "depuis": "2026-11-16T21:36:42Z",
@@ -36,7 +36,8 @@
    "jeux": [
     "Rocket League",
     "Fortnite",
-    "A Plague Tale: Innocence"
+    "A Plague Tale: Innocence",
+    "God of War III: Remastered"
    ],
    "clip": {
     "url": "https://www.twitch.tv/alf_de_melmac/clip/EncouragingAmorphousFiddleheadsDatBoi-9m3pV_nVfd-eObz5",
@@ -300,7 +301,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 21,
     "jeu": "Art",
     "titre": "🌙 Marmottes en mode COZY 🧸 | Coloriage relaxant du soir ✨ | !lurk !clip !commandes",
     "depuis": "2026-11-16T19:13:31Z",
@@ -521,13 +522,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 6,
-    "jeu": "VALORANT",
-    "titre": "🔥 LIVE VALORANT : OBJECTIF SILVER AUJOURD'HUI ! 🥈 | ON VA CHERCHER CE RANK UP !",
-    "depuis": "2026-11-16T14:15:28Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -664,13 +659,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 4,
-    "jeu": "R.E.P.O.",
-    "titre": "Go se faire chopper le kuku ! R.E.P.O - !lurk !discord ft @calo_vt @narberzoo_buzzleglaire",
-    "depuis": "2026-11-16T19:28:33Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
@@ -798,7 +787,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 7,
     "jeu": "Just Chatting",
     "titre": "[FR] ~ Lundécouverte - 1 sur 8 milliards ~",
     "depuis": "2026-11-16T19:45:48Z",
@@ -811,7 +800,7 @@
     "PUMPKIN PANIC",
     "DEVOUR",
     "Horror Game",
-    "Decay: The Mare - Episode 1"
+    "Just Chatting"
    ],
    "clip": {
     "url": "https://www.twitch.tv/mysti94/clip/AnnoyingNiceMageKappa-CRiFHcBm0uj6KgtH",
@@ -1025,7 +1014,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 15,
+    "viewers": 17,
     "jeu": "Loftia",
     "titre": "On finit sur Loftia! :)",
     "depuis": "2026-11-16T11:18:43Z",
@@ -1142,5 +1131,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-16T22:07:19.748Z"
+ "maj": "2026-11-16T23:07:21.009Z"
 }
