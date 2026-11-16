@@ -242,7 +242,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Lies of P",
     "titre": "[Lies of P] On approche de la fin ?",
     "depuis": "2026-11-16T19:28:44Z",
@@ -274,8 +274,8 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 3,
-    "jeu": "My Hero Ultra Rumble",
+    "viewers": 1,
+    "jeu": "The New Denpa Men",
     "titre": "On découvre des 🎮jeux Nintendo GRATUITS ! - !réseaux",
     "depuis": "2026-11-16T18:07:37Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
@@ -306,7 +306,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 18,
+    "viewers": 19,
     "jeu": "Art",
     "titre": "🌙 Marmottes en mode COZY 🧸 | Coloriage relaxant du soir ✨ | !lurk !clip !commandes",
     "depuis": "2026-11-16T19:13:31Z",
@@ -671,7 +671,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 9,
+    "viewers": 4,
     "jeu": "R.E.P.O.",
     "titre": "Go se faire chopper le kuku ! R.E.P.O - !lurk !discord ft @calo_vt @narberzoo_buzzleglaire",
     "depuis": "2026-11-16T19:28:33Z",
@@ -804,9 +804,9 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
-    "jeu": "Psalm 2",
-    "titre": "[FR] ~ Lundécouverte - Démo - Plasm 2 ~",
+    "viewers": 8,
+    "jeu": "Just Chatting",
+    "titre": "[FR] ~ Lundécouverte - 1 sur 8 milliards ~",
     "depuis": "2026-11-16T19:45:48Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
    },
@@ -836,13 +836,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 11,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "[FR] J-2 DLC4 | On prépare la salle des coffres pour le DLC 🦜🏴‍☠️ | Coloriage Mystère | !discord !commandes",
-    "depuis": "2026-11-16T17:00:19Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -1000,7 +994,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Silver Service",
     "titre": "Silver Service on range les buffets du bateaux",
     "depuis": "2026-11-16T19:07:54Z",
@@ -1043,7 +1037,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 10,
+    "viewers": 14,
     "jeu": "Potions Galore",
     "titre": "Session test! On trie des potions! #potionsgalore #madoctopus",
     "depuis": "2026-11-16T11:18:43Z",
@@ -1160,5 +1154,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-16T20:17:57.799Z"
+ "maj": "2026-11-16T21:07:21.652Z"
 }
