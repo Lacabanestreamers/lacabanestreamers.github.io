@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 10,
-  "heuresLive30": 2399,
+  "heuresLive30": 2406,
   "followsGagnes30": 507,
   "periode": {
    "du": "2026-10-17",
@@ -346,7 +346,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "Hogwarts Legacy",
     "titre": "[FR] [HL] 🪄Une sorcière maladroite à Poudlard 😂 | Venez vivre l'aventure avec Evodp !**",
     "depuis": "2026-11-16T11:59:12Z",
@@ -403,13 +403,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 8,
-    "jeu": "Scawy Game",
-    "titre": "On se fait Scawy Game ! Des moments chelous, et du flip ! Venez me rejoindre pour découvrir ce jeu ! (!ttc !commandes)",
-    "depuis": "2026-11-16T13:53:58Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -549,7 +543,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 9,
+    "viewers": 8,
     "jeu": "VALORANT",
     "titre": "🔥 LIVE VALORANT : OBJECTIF SILVER AUJOURD'HUI ! 🥈 | ON VA CHERCHER CE RANK UP !",
     "depuis": "2026-11-16T14:15:28Z",
@@ -614,13 +608,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 15,
-    "jeu": "Tomb Raider",
-    "titre": "🔞On reprend en douceur !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
-    "depuis": "2026-11-16T13:22:32Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -635,8 +623,8 @@
     }
    ],
    "jeux": [
-    "FINAL FANTASY XIV ONLINE",
     "Tomb Raider",
+    "FINAL FANTASY XIV ONLINE",
     "Special Events",
     "R.E.P.O.",
     "Dead by Daylight"
@@ -852,7 +840,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
+    "viewers": 14,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] J-2 DLC4 | On prépare la salle des coffres pour le DLC 🦜🏴‍☠️ | Coloriage Mystère | !discord !commandes",
     "depuis": "2026-11-16T17:00:19Z",
@@ -897,7 +885,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 16,
     "jeu": "The Legend of Zelda: Ocarina of Time",
     "titre": "EP3- Direction les Zora !!! [!bs !fortune !insta !discord ]",
     "depuis": "2026-11-16T13:54:52Z",
@@ -1175,5 +1163,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-16T17:07:21.934Z"
+ "maj": "2026-11-16T18:07:25.044Z"
 }
