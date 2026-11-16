@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 10,
-  "heuresLive30": 2364,
+  "heuresLive30": 2368,
   "followsGagnes30": 507,
   "periode": {
    "du": "2026-10-17",
@@ -425,7 +425,7 @@
    "staff": false,
    "depuis": "2026-10-11",
    "live": {
-    "viewers": 10,
+    "viewers": 12,
     "jeu": "Games + Demos",
     "titre": "Des-des-des-déééémooooos 👾 On teste plein de trucs aujourd'hui 🎮",
     "depuis": "2026-11-16T09:28:53Z",
@@ -434,7 +434,8 @@
    "premierStream": "2023-07-10",
    "succes": [],
    "jeux": [
-    "Dressmaker (2026)"
+    "Dressmaker (2026)",
+    "Games + Demos"
    ],
    "clip": null
   },
@@ -733,7 +734,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 8,
     "jeu": "Slime Rancher 2",
     "titre": "Je m'excuse publiquement pour ce que j'ai pu faire à slime rancher premier du nom",
     "depuis": "2026-11-16T09:24:28Z",
@@ -764,13 +765,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": {
-    "viewers": 3,
-    "jeu": "Stardew Valley",
-    "titre": "Joli lundi Cozy sur Stardew Valley. On fait les 150 Follows ???? Venez vite les MimiChats!!!!  !discord !regles !don",
-    "depuis": "2026-11-16T08:01:24Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -917,7 +912,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 9,
+    "viewers": 10,
     "jeu": "The Sims 4",
     "titre": "THE SIMS 4 [FR] | Episode 18 : Agathe divorce enfin... et dramaaa 🏠| !perfectlife !agathe",
     "depuis": "2026-11-16T07:54:45Z",
@@ -1156,5 +1151,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-16T10:07:18.470Z"
+ "maj": "2026-11-16T11:07:25.104Z"
 }
