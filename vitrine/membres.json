@@ -7,7 +7,7 @@
   "membres": 46,
   "affilies": 42,
   "nouveaux30": 10,
-  "heuresLive30": 2356,
+  "heuresLive30": 2357,
   "followsGagnes30": 509,
   "periode": {
    "du": "2026-10-17",
@@ -189,13 +189,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 10,
-    "jeu": "Dispatch",
-    "titre": "🗳️ DISPATCH | On concrétise avec invisimeuf ? La fin ce soir ?  👀",
-    "depuis": "2026-11-15T19:31:13Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -1132,5 +1126,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-16T00:07:18.089Z"
+ "maj": "2026-11-16T01:07:18.617Z"
 }
