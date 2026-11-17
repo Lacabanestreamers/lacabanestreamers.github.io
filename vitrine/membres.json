@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 8,
-  "heuresLive30": 2324,
+  "heuresLive30": 2326,
   "followsGagnes30": 509,
   "periode": {
    "du": "2026-10-18",
@@ -191,7 +191,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 6,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🚨 Retour sur Dreamlight Valley après une éternité... qu'est-ce que j'ai raté ? ✨🏰",
     "depuis": "2026-11-17T11:28:54Z",
@@ -384,7 +384,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "The Factory Must Fall",
+    "titre": "Opé Lightquest ! On découvre The Factory Must Fall avec @sakkiel ! Venez découvrir avec nous ! (!ttc !commandes)",
+    "depuis": "2026-11-17T12:50:09Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -412,7 +418,7 @@
    "staff": false,
    "depuis": "2026-10-11",
    "live": {
-    "viewers": 17,
+    "viewers": 14,
     "jeu": "Dressmaker (2026)",
     "titre": "P'tite session tranquille aujourd'hui 🧵👗",
     "depuis": "2026-11-17T10:23:47Z",
@@ -434,7 +440,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Valheim",
+    "titre": "FR_VT - Les marais sont a nous désormais!!!",
+    "depuis": "2026-11-17T13:00:47Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -839,7 +851,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Euro Truck Simulator 2",
+    "titre": "Salut tout le monde ! Aujourd’hui, on va parler d’une plateforme multijoueur que j’ai découverte récemment  Haulmp .",
+    "depuis": "2026-11-17T12:56:59Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1007,7 +1025,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "The Factory Must Fall",
+    "titre": "Découverte de The Factory must fall avec @galyssiane, [OPE Light Quest]",
+    "depuis": "2026-11-17T12:52:29Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [
     {
@@ -1119,5 +1143,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-17T12:07:22.780Z"
+ "maj": "2026-11-17T13:06:48.747Z"
 }
