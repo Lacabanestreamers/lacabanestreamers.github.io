@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 8,
-  "heuresLive30": 2304,
+  "heuresLive30": 2309,
   "followsGagnes30": 497,
   "periode": {
    "du": "2026-10-18",
@@ -243,7 +243,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 4,
+    "viewers": 9,
     "jeu": "Warframe",
     "titre": "[Warframe](MR27) On farm les plats pour brysko !",
     "depuis": "2026-11-17T07:52:39Z",
@@ -411,7 +411,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-11",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Dressmaker (2026)",
+    "titre": "P'tite session tranquille aujourd'hui 🧵👗",
+    "depuis": "2026-11-17T09:57:12Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hagosan-440x248.jpg"
+   },
    "premierStream": "2023-07-10",
    "succes": [],
    "jeux": [
@@ -487,7 +493,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 12,
+    "viewers": 20,
     "jeu": "Art",
     "titre": "✦ FAN ART ✦ Ocarina Of Time et corgi ! On's'réveille douc'ment 😴 | 🌟 Nv obj 500 follow ! | !artchallenges !liens",
     "depuis": "2026-11-17T06:47:36Z",
@@ -590,7 +596,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 11,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "🔞On Farm ce matin !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-17T08:44:49Z",
@@ -610,8 +616,8 @@
     }
    ],
    "jeux": [
-    "Tomb Raider",
     "FINAL FANTASY XIV ONLINE",
+    "Tomb Raider",
     "Special Events",
     "R.E.P.O.",
     "Dead by Daylight"
@@ -753,7 +759,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 4,
+    "viewers": 6,
     "jeu": "Stardew Valley",
     "titre": "On chill ensemble à la ferme ?  Venez on fait les 150 follows, on sera Bieeeeenng  !discord !regles !don",
     "depuis": "2026-11-17T08:07:30Z",
@@ -905,7 +911,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 7,
+    "viewers": 10,
     "jeu": "The Sims 4",
     "titre": "THE SIMS 4 [FR] | Episode 19 : Agathe divorce enfin... récupère son argent ?!... et dramaaa 🏠| !perfectlife !agathe",
     "depuis": "2026-11-17T07:56:43Z",
@@ -988,7 +994,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Silver Service",
+    "titre": "Silver Service on range les buffets du bateaux",
+    "depuis": "2026-11-17T09:48:33Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
+   },
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -1058,7 +1070,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": null,
+   "live": {
+    "viewers": 15,
+    "jeu": "Grand Theft Auto V",
+    "titre": "🌴[#8] JE DÉCOUVRE GTA V🌴!rs !discord !instantgaming",
+    "depuis": "2026-11-17T09:30:10Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
+   },
    "premierStream": "2025-01-19",
    "succes": [
     {
@@ -1137,5 +1155,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-17T09:07:19.398Z"
+ "maj": "2026-11-17T10:07:23.805Z"
 }
