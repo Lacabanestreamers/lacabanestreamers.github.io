@@ -7,11 +7,11 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 8,
-  "heuresLive30": 2300,
-  "followsGagnes30": 483,
+  "heuresLive30": 2301,
+  "followsGagnes30": 497,
   "periode": {
    "du": "2026-10-18",
-   "au": "2026-11-16"
+   "au": "2026-11-17"
   }
  },
  "agenda": [],
@@ -242,7 +242,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Warframe",
+    "titre": "[Warframe](MR27) On farm les plats pour brysko !",
+    "depuis": "2026-11-17T07:52:39Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -481,7 +487,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 11,
     "jeu": "Art",
     "titre": "✦ FAN ART ✦ Ocarina Of Time et corgi ! On's'réveille douc'ment 😴 | 🌟 Nv obj 500 follow ! | !artchallenges !liens",
     "depuis": "2026-11-17T06:47:36Z",
@@ -510,8 +516,8 @@
     "Just Chatting",
     "Planet Zoo 2",
     "skribbl.io",
-    "Games + Demos",
-    "Sovereign Tower"
+    "Sovereign Tower",
+    "Fall Guys"
    ],
    "clip": null
   },
@@ -560,8 +566,8 @@
     }
    ],
    "jeux": [
-    "Makers & Crafting",
     "Dead Space 2",
+    "Makers & Crafting",
     "Little Nightmares II",
     "Fall Guys",
     "Little Nightmares III"
@@ -886,7 +892,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "The Sims 4",
+    "titre": "THE SIMS 4 [FR] | Episode 19 : Agathe divorce enfin... récupère son argent ?!... et dramaaa 🏠| !perfectlife !agathe",
+    "depuis": "2026-11-17T07:56:43Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
+   },
    "premierStream": "2025-09-10",
    "succes": [
     {
@@ -1113,5 +1125,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-17T07:07:23.146Z"
+ "maj": "2026-11-17T08:07:20.940Z"
 }
