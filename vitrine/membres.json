@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 8,
-  "heuresLive30": 2347,
+  "heuresLive30": 2355,
   "followsGagnes30": 509,
   "periode": {
    "du": "2026-10-18",
@@ -190,13 +190,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 26,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "🚨 Retour sur Dreamlight Valley après une éternité... qu'est-ce que j'ai raté ? ✨🏰",
-    "depuis": "2026-11-17T11:28:54Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -333,7 +327,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 5,
+    "viewers": 3,
     "jeu": "Red Dead Redemption II",
     "titre": "[FR] [RDR2] 🤠 LE FAR WEST NOUS APPELLE ! 🌵🐎 | Red Dead Redemption 2 – Mode Histoire",
     "depuis": "2026-11-17T14:46:31Z",
@@ -390,13 +384,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 6,
-    "jeu": "The Factory Must Fall",
-    "titre": "Opé Lightquest ! On découvre The Factory Must Fall avec @sakkiel ! Venez découvrir avec nous ! (!ttc !commandes)",
-    "depuis": "2026-11-17T12:50:09Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -440,13 +428,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 10,
-    "jeu": "Valheim",
-    "titre": "FR_VT - Les marais sont a nous désormais!!!",
-    "depuis": "2026-11-17T13:23:19Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -462,8 +444,8 @@
    ],
    "jeux": [
     "Minecraft",
-    "R.E.P.O.",
     "Valheim",
+    "R.E.P.O.",
     "Special Events",
     "DEVOUR"
    ],
@@ -542,7 +524,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "VALORANT",
     "titre": "🔥 LIVE VALORANT : OBJECTIF SILVER AUJOURD'HUI ! 🥈 | ON VA CHERCHER CE RANK UP !",
     "depuis": "2026-11-17T15:26:49Z",
@@ -608,8 +590,8 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 16,
-    "jeu": "Tomb Raider",
+    "viewers": 14,
+    "jeu": "Baldur's Gate 3",
     "titre": "🔞 Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-17T14:52:18Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
@@ -628,8 +610,8 @@
     }
    ],
    "jeux": [
-    "FINAL FANTASY XIV ONLINE",
     "Tomb Raider",
+    "FINAL FANTASY XIV ONLINE",
     "Special Events",
     "R.E.P.O.",
     "Dead by Daylight"
@@ -1032,7 +1014,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 12,
+    "viewers": 23,
     "jeu": "The Factory Must Fall",
     "titre": "Découverte de The Factory must fall avec @galyssiane, [OPE Light Quest]",
     "depuis": "2026-11-17T12:52:29Z",
@@ -1123,21 +1105,15 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": {
-    "viewers": 9,
-    "jeu": "After the Wane",
-    "titre": "Découvrons ce nouveau jeu a la DA incroyable | !tiktok | !Discord | !clip |",
-    "depuis": "2026-11-17T13:08:29Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zeylta-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-01-31",
    "succes": [],
    "jeux": [
     "The Witch's Bakery",
     "Coffee Talk",
     "Allogloom",
-    "inKONBINI: One Store. Many Stories",
-    "Farm & Feast"
+    "After the Wane",
+    "inKONBINI: One Store. Many Stories"
    ],
    "clip": {
     "url": "https://www.twitch.tv/zeylta/clip/SecretiveImportantLettuceBCouch-OwVdlGzD0xctP-2w",
@@ -1155,5 +1131,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-17T16:07:25.114Z"
+ "maj": "2026-11-17T17:07:18.974Z"
 }
