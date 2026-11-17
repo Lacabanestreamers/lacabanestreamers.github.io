@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 8,
-  "heuresLive30": 2365,
+  "heuresLive30": 2370,
   "followsGagnes30": 530,
   "periode": {
    "du": "2026-10-18",
@@ -70,7 +70,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Demonologist",
+    "titre": "💀 Objectif : identifier le fantôme. Bonus : ressortir vivants. | Demonologist avec @Galyssiane | ❗cmd ❗rs ❗clip",
+    "depuis": "2026-11-17T20:27:18Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asakha-440x248.jpg"
+   },
    "premierStream": "2021-12-06",
    "succes": [],
    "jeux": [
@@ -148,7 +154,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Dressmaker (2026)",
+    "titre": "🪡DRESSMAKER • On va essayer de ne pas faire un carnage ce soir.... • 1 💗",
+    "depuis": "2026-11-17T20:26:39Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bichoune_-440x248.jpg"
+   },
    "premierStream": "2025-10-04",
    "succes": [],
    "jeux": [
@@ -280,13 +292,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 5,
-    "jeu": "Super Kirby Clash",
-    "titre": "On découvre des 🎮jeux Nintendo GRATUITS ! - !réseaux",
-    "depuis": "2026-11-17T18:04:47Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -389,7 +395,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Demonologist",
+    "titre": "Le mardi c'est SURVIE ! On tente donc de rester vivants avec @asakha [et parfois, on réussit!] Rejoignez nous! (!ttc !commandes)",
+    "depuis": "2026-11-17T20:22:47Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -434,7 +446,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 17,
     "jeu": "Moon Sweepers",
     "titre": "FR_VT - On retourne sur la lune !!",
     "depuis": "2026-11-17T19:59:41Z",
@@ -514,7 +526,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 12,
+    "jeu": "Just Chatting",
+    "titre": "RÉACT🍿 : Suite de 90 Day Fiancé / 3 mois pour se marier, rien ne va plus 😱 (le thé est intense haha) ! | React émission & docus YT",
+    "depuis": "2026-11-17T20:17:09Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
+   },
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
@@ -631,7 +649,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "ROB RUN",
+    "titre": "ROB RUN : Objectif gros braquage, zéro pitié !",
+    "depuis": "2026-11-17T20:25:05Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
+   },
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -805,7 +829,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 5,
     "jeu": "The Sims 4",
     "titre": "[FR] ~ Sims 4 - Challenge des Festivités- Halloween #6 ~",
     "depuis": "2026-11-17T19:45:29Z",
@@ -1025,9 +1049,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 14,
-    "jeu": "Grombo Card Shop Tycoon",
-    "titre": "On ouvre une boutique de cartes TCG! #grombocardshop #keymailer",
+    "viewers": 19,
+    "jeu": "Loftia",
+    "titre": "Loftiaaaa <3",
     "depuis": "2026-11-17T12:52:29Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1142,5 +1166,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-17T20:07:22.025Z"
+ "maj": "2026-11-17T21:07:28.756Z"
 }
