@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 8,
-  "heuresLive30": 2309,
+  "heuresLive30": 2317,
   "followsGagnes30": 497,
   "periode": {
    "du": "2026-10-18",
@@ -243,7 +243,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 9,
+    "viewers": 6,
     "jeu": "Warframe",
     "titre": "[Warframe](MR27) On farm les plats pour brysko !",
     "depuis": "2026-11-17T07:52:39Z",
@@ -412,10 +412,10 @@
    "staff": false,
    "depuis": "2026-10-11",
    "live": {
-    "viewers": 9,
+    "viewers": 16,
     "jeu": "Dressmaker (2026)",
     "titre": "P'tite session tranquille aujourd'hui 🧵👗",
-    "depuis": "2026-11-17T09:57:12Z",
+    "depuis": "2026-11-17T10:23:47Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hagosan-440x248.jpg"
    },
    "premierStream": "2023-07-10",
@@ -492,13 +492,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 20,
-    "jeu": "Art",
-    "titre": "✦ FAN ART ✦ Ocarina Of Time et corgi ! On's'réveille douc'ment 😴 | 🌟 Nv obj 500 follow ! | !artchallenges !liens",
-    "depuis": "2026-11-17T06:47:36Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -596,7 +590,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 15,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "🔞On Farm ce matin !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-17T08:44:49Z",
@@ -758,13 +752,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": {
-    "viewers": 6,
-    "jeu": "Stardew Valley",
-    "titre": "On chill ensemble à la ferme ?  Venez on fait les 150 follows, on sera Bieeeeenng  !discord !regles !don",
-    "depuis": "2026-11-17T08:07:30Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -857,7 +845,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Euro Truck Simulator 2",
+    "titre": "Salut tout le monde ! Aujourd’hui, on va parler d’une plateforme multijoueur que j’ai découverte récemment  Haulmp .",
+    "depuis": "2026-11-17T10:31:36Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -911,7 +905,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 10,
+    "viewers": 11,
     "jeu": "The Sims 4",
     "titre": "THE SIMS 4 [FR] | Episode 19 : Agathe divorce enfin... récupère son argent ?!... et dramaaa 🏠| !perfectlife !agathe",
     "depuis": "2026-11-17T07:56:43Z",
@@ -995,7 +989,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 3,
+    "viewers": 5,
     "jeu": "Silver Service",
     "titre": "Silver Service on range les buffets du bateaux",
     "depuis": "2026-11-17T09:48:33Z",
@@ -1071,7 +1065,7 @@
    "staff": false,
    "depuis": "2026-09-28",
    "live": {
-    "viewers": 15,
+    "viewers": 12,
     "jeu": "Grand Theft Auto V",
     "titre": "🌴[#8] JE DÉCOUVRE GTA V🌴!rs !discord !instantgaming",
     "depuis": "2026-11-17T09:30:10Z",
@@ -1155,5 +1149,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-17T10:07:23.805Z"
+ "maj": "2026-11-17T11:07:21.392Z"
 }
