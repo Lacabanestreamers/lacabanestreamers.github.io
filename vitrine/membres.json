@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 8,
-  "heuresLive30": 2370,
+  "heuresLive30": 2379,
   "followsGagnes30": 530,
   "periode": {
    "du": "2026-10-18",
@@ -71,7 +71,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 3,
+    "viewers": 6,
     "jeu": "Demonologist",
     "titre": "💀 Objectif : identifier le fantôme. Bonus : ressortir vivants. | Demonologist avec @Galyssiane | ❗cmd ❗rs ❗clip",
     "depuis": "2026-11-17T20:27:18Z",
@@ -82,7 +82,8 @@
    "jeux": [
     "R.E.P.O.",
     "Abiotic Factor",
-    "PEAK"
+    "PEAK",
+    "Demonologist"
    ],
    "clip": {
     "url": "https://www.twitch.tv/asakha/clip/BovineTangentialKeyboardPastaThat-GWxw1ceut64LAd7d",
@@ -155,7 +156,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "Dressmaker (2026)",
     "titre": "🪡DRESSMAKER • On va essayer de ne pas faire un carnage ce soir.... • 1 💗",
     "depuis": "2026-11-17T20:26:39Z",
@@ -166,7 +167,8 @@
    "jeux": [
     "Mazebound: Hunt, Gather, Run!",
     "Pokémon Mystery Dungeon: Explorers of Sky",
-    "Stardew Valley"
+    "Stardew Valley",
+    "Dressmaker (2026)"
    ],
    "clip": {
     "url": "https://www.twitch.tv/bichoune_/clip/TransparentEnthusiasticFriesArgieB8-OnLs78Bfd9RaXWuY",
@@ -396,7 +398,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 8,
     "jeu": "Demonologist",
     "titre": "Le mardi c'est SURVIE ! On tente donc de rester vivants avec @asakha [et parfois, on réussit!] Rejoignez nous! (!ttc !commandes)",
     "depuis": "2026-11-17T20:22:47Z",
@@ -446,7 +448,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 17,
+    "viewers": 11,
     "jeu": "Moon Sweepers",
     "titre": "FR_VT - On retourne sur la lune !!",
     "depuis": "2026-11-17T19:59:41Z",
@@ -470,7 +472,7 @@
     "Valheim",
     "R.E.P.O.",
     "Special Events",
-    "DEVOUR"
+    "Moon Sweepers"
    ],
    "clip": {
     "url": "https://www.twitch.tv/hyroshimaeu/clip/PeppyMiniatureHamburgerBloodTrail-Y8sH2xpdn0w9hQMm",
@@ -527,7 +529,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 12,
+    "viewers": 11,
     "jeu": "Just Chatting",
     "titre": "RÉACT🍿 : Suite de 90 Day Fiancé / 3 mois pour se marier, rien ne va plus 😱 (le thé est intense haha) ! | React émission & docus YT",
     "depuis": "2026-11-17T20:17:09Z",
@@ -553,7 +555,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 3,
+    "viewers": 1,
     "jeu": "VALORANT",
     "titre": "🔥 LIVE VALORANT : OBJECTIF SILVER AUJOURD'HUI ! 🥈 | ON VA CHERCHER CE RANK UP !",
     "depuis": "2026-11-17T15:26:49Z",
@@ -650,9 +652,9 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
-    "jeu": "ROB RUN",
-    "titre": "ROB RUN : Objectif gros braquage, zéro pitié !",
+    "viewers": 2,
+    "jeu": "Rocket League",
+    "titre": "C2 OU PAS sur Rocket League",
     "depuis": "2026-11-17T20:25:05Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
    },
@@ -668,7 +670,8 @@
     "Call of Duty: Modern Warfare 4",
     "Special Events",
     "Dune: Awakening",
-    "Rocket League"
+    "Rocket League",
+    "ROB RUN"
    ],
    "clip": {
     "url": "https://www.twitch.tv/luffishgaming/clip/HeadstrongTenderClintBibleThump--MnnuQWSXbdNtBBm",
@@ -1049,7 +1052,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 19,
+    "viewers": 14,
     "jeu": "Loftia",
     "titre": "Loftiaaaa <3",
     "depuis": "2026-11-17T12:52:29Z",
@@ -1166,5 +1169,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-17T21:07:28.756Z"
+ "maj": "2026-11-17T21:44:09.874Z"
 }
