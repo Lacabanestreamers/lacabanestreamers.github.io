@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 8,
-  "heuresLive30": 2299,
+  "heuresLive30": 2300,
   "followsGagnes30": 483,
   "periode": {
    "du": "2026-10-18",
@@ -24,13 +24,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": {
-    "viewers": 9,
-    "jeu": "Rocket League",
-    "titre": "Rocket League/PS5",
-    "depuis": "2026-11-17T00:48:53Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -85,10 +79,10 @@
     "PEAK"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/asakha/clip/SucculentVictoriousPuffinCclamChamp-hDyw5fJ_W8PzHMxk",
+    "url": "https://www.twitch.tv/asakha/clip/BovineTangentialKeyboardPastaThat-GWxw1ceut64LAd7d",
     "titre": "⛰️ Les Petites Pierres et les Kallax prennent de l’altitude 🧗 | PEAK avec @Galyssiane | ❗cmd ❗rs ❗c",
     "vues": 3,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/9e4d0d80-cbcb-47d1-9475-a513738f9db3/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/11c8cf87-7563-4b82-8e15-885c66ae9d36/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-10",
     "duree": 30
    }
@@ -138,11 +132,11 @@
     "Cinderia"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/aulit42369/clip/SnappyOpenPieFeelsBadMan-se8d3-jCObl13q8U",
-    "titre": "WzBot CLIP | On remet le tablier de thanatopracteur ! Autopsies propres et enterrements  (by chezelo",
-    "vues": 7,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/071d3b42-8550-4a50-ae22-3decb5375a70/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-09",
+    "url": "https://www.twitch.tv/aulit42369/clip/SweetFantasticHorseradishCclamChamp-tWN8pqvkEGr5BjVJ",
+    "titre": "WzBot CLIP | Allons ranger des dés ce soir, on est en mode chill (by chezelodie)",
+    "vues": 4,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5ba5bd22-5fac-4614-b93c-997db738fded/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-14",
     "duree": 60
    }
   },
@@ -220,7 +214,7 @@
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/EvilAmericanChamois4Head-vJvG5FvytNa4O_xq",
     "titre": "WzBot CLIP | 🐘Planet Zoo  |  Plus d'animaux, plus de visiteurs, plus de problèmes  ? (by sakkiel)",
-    "vues": 4,
+    "vues": 5,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/101aa4d5-cfaa-4064-bc10-e508dcc975ae/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-10",
     "duree": 60
@@ -264,7 +258,14 @@
     "Wuthering Waves",
     "Aniimo"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/detectiverenard/clip/MoistInspiringFishArgieB8-uF8e_PcV-_5q9O9H",
+    "titre": "WHAT!?",
+    "vues": 2,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/eba09e26-a579-4032-a80c-ba617f47e2d4/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-16",
+    "duree": 26
+   }
   },
   {
    "login": "elegaming__",
@@ -363,7 +364,7 @@
    "clip": {
     "url": "https://www.twitch.tv/galaadours/clip/OptimisticBlueSheepHeyGirl-GwLyY3X6iko9MNzB",
     "titre": "courir comme un dératé",
-    "vues": 4,
+    "vues": 5,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/c666fe9a-f621-4806-92ac-bc66d420169c/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-15",
     "duree": 40
@@ -388,12 +389,12 @@
     "Writing & Reading"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/galyssiane/clip/ObservantConcernedBeanNotATK-HbFBTUozGn2NRpc7",
-    "titre": "Et tu chantes, danses jusqu'au bout de la nuit !",
+    "url": "https://www.twitch.tv/galyssiane/clip/CooperativeZealousOstrichGingerPower-DIumfVqvanvHzevs",
+    "titre": "WzBot CLIP | Photomaly , la suite ! Des photos, et du flip ! Venez me rejoindre pour dé (by galyssia",
     "vues": 4,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/231e4473-a238-4f0d-8db3-481f2da93484/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-09",
-    "duree": 30
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/14272e52-68bb-422e-a80c-87f9a44c4f70/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-16",
+    "duree": 60
    }
   },
   {
@@ -527,11 +528,11 @@
     "RuneScape: Dragonwilds"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/lagonbleu_976/clip/AffluentZealousCoffeePeoplesChamp-uJCTddEPwZOJNcLR",
-    "titre": "🥈 SILVER EN APPROCHE… NE ME FAITES PAS REDESCENDRE ! 💀",
+    "url": "https://www.twitch.tv/lagonbleu_976/clip/HorribleLitigiousWrenFutureMan-WQ94SFbheOzenQxK",
+    "titre": "🔥 LIVE VALORANT : OBJECTIF SILVER AUJOURD'HUI ! 🥈 | ON VA CHERCHER CE RANK UP !",
     "vues": 1,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d9f06c9f-d9c9-4863-8e68-3e280eed1d8b/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-15",
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/452a735a-021a-45d2-a3b3-c2642fd8d420/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-16",
     "duree": 30
    }
   },
@@ -625,7 +626,7 @@
    "clip": {
     "url": "https://www.twitch.tv/luffishgaming/clip/HeadstrongTenderClintBibleThump--MnnuQWSXbdNtBBm",
     "titre": "Luffish future C2 ou pas ?",
-    "vues": 1,
+    "vues": 3,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/7b89227b-e11a-42a7-b33a-4993617bb451/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-14",
     "duree": 30
@@ -664,12 +665,12 @@
     "R.E.P.O."
    ],
    "clip": {
-    "url": "https://www.twitch.tv/lylu_live/clip/RudeSwissKoupreyFloof-dLXW74LFtfA_kGKs",
-    "titre": "le cris version lylu",
+    "url": "https://www.twitch.tv/lylu_live/clip/MoralHandsomeTurnipBIRB-KsUww1ibONTCQNRs",
+    "titre": "le gout du risque",
     "vues": 8,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/02461508-1e69-4b36-a8ad-5dc117d5387c/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-09",
-    "duree": 7
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/bc1163bb-b81e-4f22-b88f-035374e9620b/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-12",
+    "duree": 60
    }
   },
   {
@@ -863,12 +864,12 @@
     "Inside the Backrooms"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/oko_san_/clip/FancyIncredulousQuailBCWarrior-YNixp7mpgJjCgJRq",
-    "titre": "Qui qui se moque de moi ?",
-    "vues": 3,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/ec8e98c4-a4e9-4981-b22c-dd08a5c6d7f8/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-12",
-    "duree": 7
+    "url": "https://www.twitch.tv/oko_san_/clip/PluckyEmpathicTardigradeSaltBae-Hs2xKOOhHeZ_nn8p",
+    "titre": "WzBot CLIP | EP2 ✨Zeldoooo oui ✨ [!bs !fortune !insta !discord ] (by chezelodie)",
+    "vues": 4,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/7901406c-4cb6-405e-ac4c-2f6066af81e7/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-14",
+    "duree": 60
    }
   },
   {
@@ -895,14 +896,7 @@
     "Demonologist",
     "Hozy"
    ],
-   "clip": {
-    "url": "https://www.twitch.tv/p_xline_/clip/AlluringBashfulAniseYouDontSay-Fm7EQ7mRUAoJWHZ3",
-    "titre": "J'rigolerai qu'il dise non... il à dit non...",
-    "vues": 4,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a594071e-2f6a-46ab-8f5e-cf4e8ad42979/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-09",
-    "duree": 16
-   }
+   "clip": null
   },
   {
    "login": "paygadream",
@@ -1100,7 +1094,7 @@
    "clip": {
     "url": "https://www.twitch.tv/zeylta/clip/SecretiveImportantLettuceBCouch-OwVdlGzD0xctP-2w",
     "titre": "Le flop ultime la richesse s'éloigne peu a peu !",
-    "vues": 5,
+    "vues": 6,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/1e27234e-cf4c-40e6-a649-6b4fcdf4b661/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-10",
     "duree": 24
@@ -1113,5 +1107,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-17T01:07:17.731Z"
+ "maj": "2026-11-17T02:07:40.189Z"
 }
