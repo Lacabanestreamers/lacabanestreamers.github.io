@@ -191,7 +191,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 14,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🚨 Retour sur Dreamlight Valley après une éternité... qu'est-ce que j'ai raté ? ✨🏰",
     "depuis": "2026-11-17T11:28:54Z",
@@ -385,7 +385,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 5,
     "jeu": "The Factory Must Fall",
     "titre": "Opé Lightquest ! On découvre The Factory Must Fall avec @sakkiel ! Venez découvrir avec nous ! (!ttc !commandes)",
     "depuis": "2026-11-17T12:50:09Z",
@@ -417,13 +417,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-11",
-   "live": {
-    "viewers": 14,
-    "jeu": "Dressmaker (2026)",
-    "titre": "P'tite session tranquille aujourd'hui 🧵👗",
-    "depuis": "2026-11-17T10:23:47Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hagosan-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2023-07-10",
    "succes": [],
    "jeux": [
@@ -441,10 +435,10 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 10,
     "jeu": "Valheim",
     "titre": "FR_VT - Les marais sont a nous désormais!!!",
-    "depuis": "2026-11-17T13:00:47Z",
+    "depuis": "2026-11-17T13:23:19Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
    },
    "premierStream": "2026-02-01",
@@ -601,7 +595,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Tomb Raider",
+    "titre": "🔞 Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-17T13:55:09Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -1026,7 +1026,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 8,
+    "viewers": 11,
     "jeu": "The Factory Must Fall",
     "titre": "Découverte de The Factory must fall avec @galyssiane, [OPE Light Quest]",
     "depuis": "2026-11-17T12:52:29Z",
@@ -1117,7 +1117,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "After the Wane",
+    "titre": "Découvrons ce nouveau jeu a la DA incroyable | !tiktok | !Discord | !clip |",
+    "depuis": "2026-11-17T13:08:29Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zeylta-440x248.jpg"
+   },
    "premierStream": "2026-01-31",
    "succes": [],
    "jeux": [
@@ -1143,5 +1149,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-17T13:07:18.222Z"
+ "maj": "2026-11-17T14:07:33.293Z"
 }
