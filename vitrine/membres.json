@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 8,
-  "heuresLive30": 2355,
+  "heuresLive30": 2359,
   "followsGagnes30": 509,
   "periode": {
    "du": "2026-10-18",
@@ -275,7 +275,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "The New Denpa Men",
+    "titre": "On découvre des 🎮jeux Nintendo GRATUITS ! - !réseaux",
+    "depuis": "2026-11-17T18:04:47Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -326,13 +332,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": {
-    "viewers": 3,
-    "jeu": "Red Dead Redemption II",
-    "titre": "[FR] [RDR2] 🤠 LE FAR WEST NOUS APPELLE ! 🌵🐎 | Red Dead Redemption 2 – Mode Histoire",
-    "depuis": "2026-11-17T14:46:31Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -524,7 +524,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 1,
+    "viewers": 3,
     "jeu": "VALORANT",
     "titre": "🔥 LIVE VALORANT : OBJECTIF SILVER AUJOURD'HUI ! 🥈 | ON VA CHERCHER CE RANK UP !",
     "depuis": "2026-11-17T15:26:49Z",
@@ -589,13 +589,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 14,
-    "jeu": "Baldur's Gate 3",
-    "titre": "🔞 Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
-    "depuis": "2026-11-17T14:52:18Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -1014,9 +1008,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 23,
-    "jeu": "The Factory Must Fall",
-    "titre": "Découverte de The Factory must fall avec @galyssiane, [OPE Light Quest]",
+    "viewers": 19,
+    "jeu": "Arctic Shop Simulator",
+    "titre": "Session test démo! J'irais dormir chez l'Ours! #arcticshopsimulatordemo #keymailer",
     "depuis": "2026-11-17T12:52:29Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1131,5 +1125,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-17T17:07:18.974Z"
+ "maj": "2026-11-17T18:07:26.895Z"
 }
