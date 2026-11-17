@@ -480,7 +480,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Art",
+    "titre": "✦ FAN ART ✦ Ocarina Of Time et corgi ! On's'réveille douc'ment 😴 | 🌟 Nv obj 500 follow ! | !artchallenges !liens",
+    "depuis": "2026-11-17T06:47:36Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
+   },
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -1107,5 +1113,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-17T02:07:40.189Z"
+ "maj": "2026-11-17T07:07:23.146Z"
 }
