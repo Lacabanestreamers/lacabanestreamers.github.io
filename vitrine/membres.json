@@ -7,8 +7,8 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 8,
-  "heuresLive30": 2317,
-  "followsGagnes30": 497,
+  "heuresLive30": 2324,
+  "followsGagnes30": 509,
   "periode": {
    "du": "2026-10-18",
    "au": "2026-11-17"
@@ -190,7 +190,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "🚨 Retour sur Dreamlight Valley après une éternité... qu'est-ce que j'ai raté ? ✨🏰",
+    "depuis": "2026-11-17T11:28:54Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -242,13 +248,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": {
-    "viewers": 6,
-    "jeu": "Warframe",
-    "titre": "[Warframe](MR27) On farm les plats pour brysko !",
-    "depuis": "2026-11-17T07:52:39Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -412,7 +412,7 @@
    "staff": false,
    "depuis": "2026-10-11",
    "live": {
-    "viewers": 16,
+    "viewers": 17,
     "jeu": "Dressmaker (2026)",
     "titre": "P'tite session tranquille aujourd'hui 🧵👗",
     "depuis": "2026-11-17T10:23:47Z",
@@ -589,13 +589,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 15,
-    "jeu": "FINAL FANTASY XIV ONLINE",
-    "titre": "🔞On Farm ce matin !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
-    "depuis": "2026-11-17T08:44:49Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -845,13 +839,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 3,
-    "jeu": "Euro Truck Simulator 2",
-    "titre": "Salut tout le monde ! Aujourd’hui, on va parler d’une plateforme multijoueur que j’ai découverte récemment  Haulmp .",
-    "depuis": "2026-11-17T10:31:36Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -904,13 +892,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 11,
-    "jeu": "The Sims 4",
-    "titre": "THE SIMS 4 [FR] | Episode 19 : Agathe divorce enfin... récupère son argent ?!... et dramaaa 🏠| !perfectlife !agathe",
-    "depuis": "2026-11-17T07:56:43Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-10",
    "succes": [
     {
@@ -988,13 +970,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": {
-    "viewers": 5,
-    "jeu": "Silver Service",
-    "titre": "Silver Service on range les buffets du bateaux",
-    "depuis": "2026-11-17T09:48:33Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -1064,13 +1040,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": {
-    "viewers": 12,
-    "jeu": "Grand Theft Auto V",
-    "titre": "🌴[#8] JE DÉCOUVRE GTA V🌴!rs !discord !instantgaming",
-    "depuis": "2026-11-17T09:30:10Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-19",
    "succes": [
     {
@@ -1149,5 +1119,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-17T11:07:21.392Z"
+ "maj": "2026-11-17T12:07:22.780Z"
 }
