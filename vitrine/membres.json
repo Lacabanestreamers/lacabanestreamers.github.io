@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 8,
-  "heuresLive30": 2362,
+  "heuresLive30": 2365,
   "followsGagnes30": 530,
   "periode": {
    "du": "2026-10-18",
@@ -281,8 +281,8 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
-    "jeu": "Pokémon Quest",
+    "viewers": 5,
+    "jeu": "Super Kirby Clash",
     "titre": "On découvre des 🎮jeux Nintendo GRATUITS ! - !réseaux",
     "depuis": "2026-11-17T18:04:47Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
@@ -433,7 +433,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Moon Sweepers",
+    "titre": "FR_VT - On retourne sur la lune !!",
+    "depuis": "2026-11-17T19:59:41Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -529,7 +535,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 1,
+    "viewers": 3,
     "jeu": "VALORANT",
     "titre": "🔥 LIVE VALORANT : OBJECTIF SILVER AUJOURD'HUI ! 🥈 | ON VA CHERCHER CE RANK UP !",
     "depuis": "2026-11-17T15:26:49Z",
@@ -798,7 +804,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "The Sims 4",
+    "titre": "[FR] ~ Sims 4 - Challenge des Festivités- Halloween #6 ~",
+    "depuis": "2026-11-17T19:45:29Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
+   },
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -1013,7 +1025,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 17,
+    "viewers": 14,
     "jeu": "Grombo Card Shop Tycoon",
     "titre": "On ouvre une boutique de cartes TCG! #grombocardshop #keymailer",
     "depuis": "2026-11-17T12:52:29Z",
@@ -1130,5 +1142,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-17T19:07:21.529Z"
+ "maj": "2026-11-17T20:07:22.025Z"
 }
