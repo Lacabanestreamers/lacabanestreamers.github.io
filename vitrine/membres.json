@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 8,
-  "heuresLive30": 2326,
+  "heuresLive30": 2332,
   "followsGagnes30": 509,
   "periode": {
    "du": "2026-10-18",
@@ -385,7 +385,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 9,
     "jeu": "The Factory Must Fall",
     "titre": "Opé Lightquest ! On découvre The Factory Must Fall avec @sakkiel ! Venez découvrir avec nous ! (!ttc !commandes)",
     "depuis": "2026-11-17T12:50:09Z",
@@ -1143,5 +1143,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-17T13:06:48.747Z"
+ "maj": "2026-11-17T13:07:18.222Z"
 }
