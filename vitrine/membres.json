@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 8,
-  "heuresLive30": 2350,
+  "heuresLive30": 2353,
   "followsGagnes30": 530,
   "periode": {
    "du": "2026-10-19",
@@ -250,7 +250,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 1,
+    "viewers": 6,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "[FF14 online/Endwalker] Coffee time sur Endwalker !",
     "depuis": "2026-11-18T07:54:48Z",
@@ -590,7 +590,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 11,
+    "jeu": "FINAL FANTASY XVI",
+    "titre": "🔞 Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-18T08:52:37Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -1101,7 +1107,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 7,
+    "viewers": 10,
     "jeu": "Coffee Talk: Episode 2 - Hibiscus & Butterfly",
     "titre": "On retourne dans notre café #1 | !tiktok | !Discord | !clip |",
     "depuis": "2026-11-18T07:50:37Z",
@@ -1132,5 +1138,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-18T08:07:21.430Z"
+ "maj": "2026-11-18T09:07:18.465Z"
 }
