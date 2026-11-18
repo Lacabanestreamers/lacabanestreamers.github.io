@@ -32,7 +32,7 @@ function b64encodeUtf8(str){ const bytes = new TextEncoder().encode(str); let bi
 
 /* ============ État ============ */
 const CFG_KEY = "cabane.cfg", LOCAL_KEY = "cabane.localdata";
-let cfg = store.get(CFG_KEY, {owner:"Lacabanestreamers", repo:"cabane", branch:"main", path:"cabane-data.json", token:"", me:"", remember:true});
+let cfg = store.get(CFG_KEY, {owner:"Lacabanestreamers", repo:"cabane", branch:"main", path:"cabane-data.json", token:"", me:"", remember:false});   // jeton mémorisé seulement si la personne coche la case (appareil partagé)
 if(!cfg.token){ try { cfg.token = sessionStorage.getItem("cabane.token") || ""; } catch {} }
 const S = {
   data:null, sha:null, mode:"none",          // none | github | local

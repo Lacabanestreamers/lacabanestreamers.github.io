@@ -11,11 +11,14 @@ const horsParis = (() => { try { const p = new Intl.DateTimeFormat("en-GB", {tim
   return p !== `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`; } catch { return false; } })();
 let DATA = null, filtre = "tous", q = "", chargerFait = false, jeuFiltre = "";
 let dernierHtml = "", evVise = null, evRecaler = 0, touche = false;
-for(const t of ["wheel", "touchstart", "keydown", "mousedown"]) addEventListener(t, () => { touche = true; }, {passive:true});      // dernier contenu affiché ; événement déjà visé par ?ev= (on n'y défile qu'une fois)
+for(const t of ["wheel", "touchstart", "keydown", "mousedown"]) addEventListener(t, () => { touche = true; }, {passive:true});      // dernier contenu affiché ; événement déjà visé par ?ev= (on n’y défile qu’une fois)
 
-// Avatars Twitch : la CDN fournit 70x70 / 150x150 / 300x300 ; en 56 px, inutile de charger le 300x300 (~190 Ko)
+// Avatars Twitch : la CDN fournit 70x70 / 150x150 / 300x300. Les petits avatars (72 px au plus) prennent le 70x70 même
+// sur écran dense : le 150x150 pèse 30 à 50 Ko (PNG), 45 avatars dépassaient 1,4 Mo sur téléphone. Profil : 150x150.
 function avTaille(u, t){ return u.replace(/\d+x\d+(\.\w+)$/, t + "x" + t + "$1"); }
-function av(m){ return okImg(m.avatar) ? `<img class="av" src="${esc(avTaille(m.avatar, 70))}" srcset="${esc(avTaille(m.avatar, 70))} 1x, ${esc(avTaille(m.avatar, 150))} 2x" alt="" width="56" height="56" loading="lazy" decoding="async" referrerpolicy="no-referrer">` : `<span class="av" aria-hidden="true">${esc((m.nom || m.login || "?")[0])}</span>`; }
+function av(m){ return okImg(m.avatar) ? `<img class="av" src="${esc(avTaille(m.avatar, 70))}" alt="" width="56" height="56" loading="lazy" decoding="async" referrerpolicy="no-referrer">` : `<span class="av" aria-hidden="true">${esc((m.nom || m.login || "?")[0])}</span>`; }
+// Aperçu de live ou vignette de clip : vraie image (chargée seulement près de l’écran), pas un fond CSS
+const vignette = (u, l, h) => `<img class="vig" src="${esc(u)}" alt="" width="${l}" height="${h}" loading="lazy" decoding="async" referrerpolicy="no-referrer">`;
 function tags(m){
   return [m.live && `<span class="tag live">En live</span>`, m.type === "partner" && `<span class="tag par">Partenaire</span>`,
     m.type === "affiliate" && `<span class="tag aff">Affilié</span>`, m.staff && `<span class="tag staff">Staff</span>`].filter(Boolean).join("");
@@ -30,7 +33,7 @@ const base = () => location.origin + location.pathname.replace(/[^/]*$/, "");
 const okNomPage = x => /^[A-Za-z0-9_-]{1,80}$/.test(x || "");
 const lienPartageMembre = l => okNomPage(l) ? `${base()}s/${l}` : base() + pageUrl(l);
 const lienPartageEvt = id => okNomPage(id) ? `${base()}e/${id}` : `${base()}agenda.html?ev=${encodeURIComponent(id)}`;
-// Anniversaire de stream : prochaine date (aujourd'hui compris), nombre de jours et d'années de stream fêtées
+// Anniversaire de stream : prochaine date (aujourd’hui compris), nombre de jours et d’années de stream fêtées
 function anniv(m, champ = "premierStream"){
   if(!/^\d{4}-\d{2}-\d{2}$/.test(m[champ] || "")) return null;
   const [y, mo, d] = m[champ].split("-").map(Number);
@@ -60,10 +63,10 @@ function _render(){
   const perso = new URLSearchParams(location.search).get("m");
   document.body.classList.toggle("profil", !!perso && !!d?.active);
   if(!d || !d.active){
-    main.innerHTML = `<p class="empty">La vitrine n'est pas publiée pour le moment. Reviens bientôt !</p>`; dernierHtml = "";
+    main.innerHTML = `<p class="empty">La vitrine n’est pas publiée pour le moment. Reviens bientôt !</p>`; dernierHtml = "";
     { const st = $("#stats"); if(st) st.textContent = ""; } return;
   }
-  // Page/onglet « Rejoindre » : visible seulement si le staff l'a activée dans les réglages (le robot ne met d.rejoindre que si « Afficher Rejoindre » est coché).
+  // Page/onglet « Rejoindre » : visible seulement si le staff l’a activée dans les réglages (le robot ne met d.rejoindre que si « Afficher Rejoindre » est coché).
   { const navRej = document.querySelector('.vlinks a[href="rejoindre.html"]'); if(navRej) navRej.hidden = !d.rejoindre; }
   if(PAGE === "rejoindre" && !d.rejoindre){ location.replace("./"); return; }
   if(PAGE === "accueil") document.title = `Communauté de streamers francophones Twitch | ${d.titre || "La Cabane"}`;
@@ -76,7 +79,7 @@ function _render(){
   const membres = (d.membres || []).filter(m => okLogin(m.login));
   if(!perso) profilAffiche = null;
   if(perso){ dernierHtml = ""; renderProfil(membres.find(m => m.login.toLowerCase() === perso.toLowerCase()), d); return; }
-  // Anniversaires de stream : aujourd'hui, puis les 7 prochains jours
+  // Anniversaires de stream : aujourd’hui, puis les 7 prochains jours
   const annivs = [...membres.map(m => ({m, a:anniv(m)})), ...membres.map(m => ({m, a:anniv(m, "depuis"), cabane:true}))].filter(x => x.a && x.a.jours <= 7).sort((a, b) => a.a.jours - b.a.jours || a.m.nom.localeCompare(b.m.nom, "fr"));
   // Réussites des 30 derniers jours, tous membres confondus
   const joursWins = Number.isFinite(d.reussitesJours) ? d.reussitesJours : 30;     // réglable par le staff (0 = section cachée)
@@ -108,36 +111,36 @@ function _render(){
   const evTrouve = !evParam || agenda.some(e => e.id === evParam);
   const html = `
     ${PAGE==="agenda" && !evTrouve ? `<p class="note-ev" role="status">Cet événement est terminé ou pas encore annoncé.${agenda.length ? " Voici les prochains." : ""}</p>` : ""}
-    ${PAGE==="accueil" ? `<section aria-label="La Cabane en chiffres"><div class="kpis">${kpis.map(([v, l]) => `<div class="kpi"><b>${esc(v)}</b><span>${esc(l)}</span></div>`).join("")}</div></section>` : ""}
     ${PAGE==="accueil" && lives.length ? `<section aria-labelledby="h-live"><h2 id="h-live"><span class="dot" aria-hidden="true"></span>En live maintenant</h2>
       <div class="lives">${lives.map(m => `<a class="lv" href="${pageUrl(m.login)}" data-nav title="Voir la page de ${esc(m.nom)}">
-        <span class="img" style="${okImg(m.live.apercu) ? `background-image:url('${esc(m.live.apercu)}?t=${cache}')` : ""}"><span class="badge">LIVE</span><span class="vw">${Number(m.live.viewers) || 0} spectateur${(m.live.viewers || 0) > 1 ? "s" : ""}${m.live.depuis ? " · " + duree(m.live.depuis) : ""}</span></span>
+        <span class="img">${okImg(m.live.apercu) ? vignette(m.live.apercu + "?t=" + cache, 440, 248) : ""}<span class="badge">LIVE</span><span class="vw">${Number(m.live.viewers) || 0} spectateur${(m.live.viewers || 0) > 1 ? "s" : ""}${m.live.depuis ? " · " + duree(m.live.depuis) : ""}</span></span>
         <span class="b">${av(m)}<span style="min-width:0"><span class="nm" style="display:block;font-size:17px">${esc(m.nom)}</span>${m.live.jeu ? `<span class="g">${esc(m.live.jeu)}</span>` : ""}<span class="t">${esc(m.live.titre)}</span></span></span>
       </a>`).join("")}</div></section>` : ""}
+    ${PAGE==="accueil" ? `<section aria-label="La Cabane en chiffres"><div class="kpis">${kpis.map(([v, l]) => `<div class="kpi"><b>${esc(v)}</b><span>${esc(l)}</span></div>`).join("")}</div></section>` : ""}
     ${PAGE==="accueil" && clips.length ? `<section aria-labelledby="h-clips"><h2 id="h-clips">🎬 Clips de la semaine</h2>
-      <div class="clips">${clips.map(m => `<a class="clip" href="${esc(m.clip.url)}" target="_blank" rel="noopener" aria-label="Clip de ${esc(m.nom)} : ${esc(m.clip.titre)} (s'ouvre sur Twitch)">
-        <span class="img" style="${okClipImg(m.clip.vignette) ? `background-image:url('${esc(m.clip.vignette)}')` : ""}"><span class="vw">▶ ${Number(m.clip.vues) || 0} vue${(m.clip.vues || 0) > 1 ? "s" : ""}</span></span>
+      <div class="clips">${clips.map(m => `<a class="clip" href="${esc(m.clip.url)}" target="_blank" rel="noopener" aria-label="Clip de ${esc(m.nom)} : ${esc(m.clip.titre)} (s’ouvre sur Twitch)">
+        <span class="img">${okClipImg(m.clip.vignette) ? vignette(m.clip.vignette, 480, 272) : ""}<span class="vw">▶ ${Number(m.clip.vues) || 0} vue${(m.clip.vues || 0) > 1 ? "s" : ""}</span></span>
         <span class="b">${av(m)}<span style="min-width:0"><span class="t">${esc(m.clip.titre || "Clip")}</span><span class="n">${esc(m.nom)}</span></span></span></a>`).join("")}</div></section>` : ""}
     ${PAGE==="agenda" && agenda.length ? `<section aria-labelledby="h-evts"><h2 id="h-evts">📅 Prochains événements</h2>
       <div class="evts">${agenda.map(e => `<article class="evt ${e.j === 0 ? "today" : ""}${e.id && e.id === evParam ? " cible" : ""}" data-ev="${esc(e.id || "")}" ${e.id ? `id="ev-${esc(e.id)}"` : ""}>
         <div class="q"><b>${e.dt.getDate()}</b><small>${e.dt.toLocaleDateString("fr-FR", {month:"short"})}</small><small>${esc((e.heure || "").replace(":", "h"))}${e.heure && horsParis ? `<br><abbr title="heure de Paris">Paris</abbr>` : ""}</small></div>
-        <div style="min-width:0"><span class="ty">${esc(e.type || "Événement")} · ${e.j === 0 ? "aujourd'hui" : e.j === 1 ? "demain" : e.dt.toLocaleDateString("fr-FR", {weekday:"long"})}</span>
+        <div style="min-width:0"><span class="ty">${esc(e.type || "Événement")} · ${e.j === 0 ? "aujourd’hui" : e.j === 1 ? "demain" : e.dt.toLocaleDateString("fr-FR", {weekday:"long"})}</span>
           <h3>${esc(e.titre)}</h3>${e.description ? `<p>${esc(e.description)}</p>` : ""}
           ${(e.participants || []).filter(x => okLogin(x.login)).length ? `<div class="ppl">${e.participants.filter(x => okLogin(x.login)).map(x => `<a href="${pageUrl(x.login)}" data-nav title="${esc(x.nom)}" aria-label="${esc(x.nom)}">${av(x)}</a>`).join("")}</div>` : ""}
-          ${/^https:\/\//.test(e.lien || "") ? `<p><a href="${esc(e.lien)}" target="_blank" rel="noopener">Plus d'infos</a></p>` : ""}
+          ${/^https:\/\//.test(e.lien || "") ? `<p><a href="${esc(e.lien)}" target="_blank" rel="noopener">Plus d’infos</a></p>` : ""}
           ${actionsEvt(e, d)}
           ${e.id ? `<details class="cal"><summary>📅 Ajouter à mon agenda</summary><a href="${esc(lienGoogle(e))}" target="_blank" rel="noopener">Google Agenda</a><a href="#" data-ics="${esc(e.id)}">Apple, Outlook… (.ics)</a></details><button class="partage" type="button" data-partage="${esc(e.id)}">🔗 Partager cet événement</button>` : ""}</div>
       </article>`).join("")}</div></section>` : ""}
     ${PAGE==="agenda" && annivs.length ? `<section aria-labelledby="h-anniv"><h2 id="h-anniv">🎂 Anniversaires</h2>
       <div class="annivs">${annivs.map(({m, a, cabane}) => `<a class="ann ${a.jours ? "bientot" : ""}" href="${pageUrl(m.login)}" data-nav>${av(m)}<span>${a.jours === 0
-        ? (cabane ? `🏠 <b>${esc(m.nom)}</b> fête aujourd'hui <b>${ansTxt(a.ans)}</b> dans ${esc(d.titre || "La Cabane")} ! 💜<span class="d">Merci d'être avec nous</span>` : `<b>${esc(m.nom)}</b> fête aujourd'hui <b>${fete(a.ans)}</b> de stream ! 🎉<span class="d">Passe lui souhaiter en live ou sur sa chaîne</span>`)
+        ? (cabane ? `🏠 <b>${esc(m.nom)}</b> fête aujourd’hui <b>${ansTxt(a.ans)}</b> dans ${esc(d.titre || "La Cabane")} ! 💜<span class="d">Merci d’être avec nous</span>` : `<b>${esc(m.nom)}</b> fête aujourd’hui <b>${fete(a.ans)}</b> de stream ! 🎉<span class="d">Passe lui souhaiter en live ou sur sa chaîne</span>`)
         : cabane ? `🏠 <b>${esc(m.nom)}</b> fêtera ${ansTxt(a.ans)} dans ${esc(d.titre || "La Cabane")}<span class="d">${a.jours === 1 ? "demain" : `dans ${a.jours} jours`}, le ${a.date.toLocaleDateString("fr-FR", {day:"numeric", month:"long"})}</span>`
         : `<b>${esc(m.nom)}</b> fêtera ${fete(a.ans)} de stream<span class="d">${a.jours === 1 ? "demain" : `dans ${a.jours} jours`}, le ${a.date.toLocaleDateString("fr-FR", {day:"numeric", month:"long"})}</span>`}</span></a>`).join("")}</div></section>` : ""}
     ${PAGE==="accueil" && nouveaux.length ? `<section aria-labelledby="h-new"><h2 id="h-new">👋 Bienvenue aux nouveaux</h2>
       <div class="news">${nouveaux.map(m => `<a class="new" href="${pageUrl(m.login)}" data-nav>${av(m)}<span class="nm">${esc(m.nom)}</span><span class="d">depuis le ${new Date(m.depuis + "T12:00:00").toLocaleDateString("fr-FR", {day:"numeric", month:"long"})}</span></a>`).join("")}</div></section>` : ""}
     ${PAGE==="accueil" && wins.length ? `<section aria-labelledby="h-wins"><h2 id="h-wins">Nos réussites</h2>
       <div class="wins">${wins.map(({m, x}) => `<a class="win" href="${pageUrl(m.login)}" data-nav>${av(m)}<span><span class="ic" aria-hidden="true">${succesIc(x)}</span> <b>${esc(m.nom)}</b> ${succesTxt(x)}<span class="d">le ${fmtD(x.date)}</span></span></a>`).join("")}</div></section>` : ""}
-    ${PAGE==="streamers" ? `<section aria-labelledby="h-membres"><h2 id="h-membres">Nos streamers</h2>
+    ${PAGE==="streamers" ? `<section aria-label="Liste des streamers">
       <div class="tools">
         <input class="search" id="q" type="search" placeholder="Chercher un streamer, un jeu…" value="${esc(q)}" aria-label="Chercher un streamer">
         ${[["tous","Tous"],["live","En live"],["aff","Affiliés et partenaires"],["staff","Staff"]].map(([k,l]) => `<button class="chip" data-f="${k}" aria-pressed="${filtre === k}">${l}</button>`).join("")}
@@ -151,17 +154,17 @@ function _render(){
       </a>`).join("")}</div>` : `<p class="empty">Aucun streamer ne correspond.</p>`}
     </section>` : ""}
     ${PAGE==="rejoindre" && d.rejoindre ? `<section aria-labelledby="h-rej"><div class="rejoindre"><h2 id="h-rej" style="margin-top:0">${esc(d.rejoindre.titre || "Rejoindre La Cabane")}</h2><p>${esc(d.rejoindre.texte || "")}</p>
-      <p class="rgpd">En rejoignant La Cabane, ta chaîne apparaît par défaut sur cette vitrine : pseudo, image de profil, bio et statut Twitch, lives en cours, clip de la semaine, date d'arrivée et réussites. Tu peux demander à tout moment à ne pas y figurer (au staff ou à aulit42369@gmail.com). Détails dans la page <a href="confidentialite.html">Confidentialité</a>.</p>
+      <p class="rgpd">En rejoignant La Cabane, ta chaîne apparaît par défaut sur cette vitrine : pseudo, image de profil, bio et statut Twitch, lives en cours, clip de la semaine, date d’arrivée et réussites. Tu peux demander à tout moment à ne pas y figurer (au staff ou à aulit42369@gmail.com). Détails dans la page <a href="confidentialite.html">Confidentialité</a>.</p>
       ${/^https:\/\/(discord\.gg|discord\.com\/invite)\//i.test(d.lienDiscord || "") ? `<a class="btn" href="${esc(d.lienDiscord)}" target="_blank" rel="noopener">Rejoindre le Discord</a>` : ""}</div></section>` : ""}`;
   // état vide par page (sinon #main resterait sur « Chargement… » quand aucune section ne sort)
   const vide = !html.trim();
   const sortie = vide
-    ? `<p class="empty">${PAGE === "agenda" ? "Aucun événement ni anniversaire à venir pour l'instant. Reviens bientôt !" : PAGE === "rejoindre" ? "Les informations pour nous rejoindre arrivent bientôt." : "Rien à afficher pour le moment."}</p>`
+    ? `<p class="empty">${PAGE === "agenda" ? "Aucun événement ni anniversaire à venir pour l’instant. Reviens bientôt !" : PAGE === "rejoindre" ? "Les informations pour nous rejoindre arrivent bientôt." : "Rien à afficher pour le moment."}</p>`
     : html;
-  // rafraîchissement sans changement (toutes les 2 à 5 min) : rien n'est reconstruit (pas de clignotement des images)
+  // rafraîchissement sans changement (toutes les 2 à 5 min) : rien n’est reconstruit (pas de clignotement des images)
   const change = sortie !== dernierHtml;
   if(change){ main.innerHTML = sortie; dernierHtml = sortie; }
-  // ?ev= : la page s'ouvre sur l'événement. Les premiers rafraîchissements (live vérifié en direct) peuvent changer la hauteur
+  // ?ev= : la page s’ouvre sur l’événement. Les premiers rafraîchissements (live vérifié en direct) peuvent changer la hauteur
   // de ce qui est au-dessus : on se recale pendant quelques secondes, sauf si la personne a déjà fait défiler elle-même.
   if(evParam){ const el = evTrouve ? document.getElementById("ev-" + evParam) : $("#h-evts");
     if(el && evParam !== evVise){ evVise = evParam; evRecaler = Date.now() + 8000; touche = false;
@@ -176,30 +179,32 @@ function renderProfil(m, d){
   const main = $("#main");
   const qui = new URLSearchParams(location.search).get("m");
   if(qui !== profilAffiche){ window.scrollTo(0, 0); profilAffiche = qui; }       // pas de saut en haut lors des rafraîchissements
+  // retour = la page où l’on est, sans ?m (et pas « ./ », qui menait à l’accueil depuis Nos streamers)
+  const retour = `<a class="back" href="${esc(location.pathname)}" data-nav data-retour>← ${(document.body.dataset.page || "accueil") === "streamers" ? "Tous les streamers" : "Retour"}</a>`;
   if(!m){
     document.title = `${d.titre || "La Cabane"} · Streamer introuvable`;
-    main.innerHTML = `<a class="back" href="./" data-nav>← Tous les streamers</a><p class="empty">Ce streamer n'est pas (ou plus) présenté sur la vitrine.</p>`;
+    main.innerHTML = `${retour}<h1 class="ptitre">Streamer introuvable</h1><p class="empty">Ce streamer n’est pas (ou plus) présenté sur la vitrine.</p>`;
     return;
   }
   document.title = `${m.nom} · ${d.titre || "La Cabane"}`;
   const lien = lienPartageMembre(m.login);
   const cache = Math.floor(Date.now() / 6e5);          // aperçus des lives rafraîchis toutes les 10 min
   const succes = m.succes || [];
-  main.innerHTML = `<a class="back" href="./" data-nav>← Tous les streamers</a>
+  main.innerHTML = `${retour}
     <article class="prof ${m.live ? "on" : ""}">
-      ${okImg(m.avatar) ? `<img class="av" src="${esc(m.avatar.replace(/\d+x\d+(\.\w+)$/, "300x300$1"))}" alt="" width="128" height="128" fetchpriority="high" decoding="async" referrerpolicy="no-referrer">` : `<span class="av" aria-hidden="true">${esc((m.nom || "?")[0])}</span>`}
+      ${okImg(m.avatar) ? `<img class="av" src="${esc(avTaille(m.avatar, 150))}" alt="" width="128" height="128" fetchpriority="high" decoding="async" referrerpolicy="no-referrer">` : `<span class="av" aria-hidden="true">${esc((m.nom || "?")[0])}</span>`}
       <div style="min-width:0">
-        <h2>${esc(m.nom)}</h2>
+        <h1>${esc(m.nom)}</h1>
         <span class="tags">${tags(m)}</span>
         ${m.bio ? `<p class="bio">${esc(m.bio)}</p>` : ""}
         <span class="since">${m.depuis ? `🏠 ${depuis(m.depuis)} de <b>${esc(d.titre || "La Cabane")}</b>` : `🏠 Membre de <b>${esc(d.titre || "La Cabane")}</b>`}</span>
         ${(m.jeux || []).length ? `<div class="jeux" aria-label="Joue surtout à">🎮 ${m.jeux.map(j => `<span class="jeu">${esc(j)}</span>`).join("")}</div>` : ""}
-        ${(() => { const a = anniv(m, "depuis"); return a && a.jours === 0 ? `<div class="fete">🏠 Aujourd'hui, ${esc(m.nom)} fête ${ansTxt(a.ans)} dans ${esc(d.titre || "La Cabane")} ! 💜</div>` : ""; })()}
+        ${(() => { const a = anniv(m, "depuis"); return a && a.jours === 0 ? `<div class="fete">🏠 Aujourd’hui, ${esc(m.nom)} fête ${ansTxt(a.ans)} dans ${esc(d.titre || "La Cabane")} ! 💜</div>` : ""; })()}
         ${(() => { const a = anniv(m); if(!a) return "";
-          return a.jours === 0 ? `<div class="fete">🎂 Aujourd'hui, ${esc(m.nom)} fête ${fete(a.ans)} de stream ! Joyeux anniversaire de stream ! 🎉</div>`
+          return a.jours === 0 ? `<div class="fete">🎂 Aujourd’hui, ${esc(m.nom)} fête ${fete(a.ans)} de stream ! Joyeux anniversaire de stream ! 🎉</div>`
             : `<div class="fete calme">🎂 Anniversaire de stream le ${a.date.toLocaleDateString("fr-FR", {day:"numeric", month:"long"})} : ${ansTxt(a.ans)} de stream${a.jours <= 7 ? ` (${a.jours === 1 ? "demain" : `dans ${a.jours} jours`})` : ""}</div>`; })()}
         ${m.live ? `<a class="golive" href="${chan(m.login)}" target="_blank" rel="noopener">
-            <span class="img" style="${okImg(m.live.apercu) ? `background-image:url('${esc(m.live.apercu)}?t=${cache}')` : ""}"></span>
+            <span class="img">${okImg(m.live.apercu) ? vignette(m.live.apercu + "?t=" + cache, 440, 248) : ""}</span>
             <span><span class="tag live">En live</span> <b>${Number(m.live.viewers) || 0} spectateur${(m.live.viewers || 0) > 1 ? "s" : ""}</b>${m.live.depuis ? ` · depuis ${duree(m.live.depuis)}` : ""}
               ${m.live.jeu ? `<span class="g" style="display:block;color:var(--cyan);font-weight:700;margin-top:4px">${esc(m.live.jeu)}</span>` : ""}<span style="display:block;margin-top:4px">${esc(m.live.titre)}</span></span></a>` : ""}
         <div class="acts">
@@ -211,54 +216,74 @@ function renderProfil(m, d){
         <p class="hint">Streamer de ${esc(d.titre || "La Cabane")} ? Ajoute ce lien dans tes panneaux Twitch ou ta bio : <span style="overflow-wrap:anywhere">${esc(lien)}</span></p>
       </div>
     </article>
-    ${okClip(m.clip) ? `<section aria-labelledby="h-pclip"><h2 id="h-pclip">🎬 Son clip de la semaine</h2><div class="clips" style="max-width:420px"><a class="clip" href="${esc(m.clip.url)}" target="_blank" rel="noopener" aria-label="${esc(m.clip.titre)} (s'ouvre sur Twitch)">
-      <span class="img" style="${okClipImg(m.clip.vignette) ? `background-image:url('${esc(m.clip.vignette)}')` : ""}"><span class="vw">▶ ${Number(m.clip.vues) || 0} vue${(m.clip.vues || 0) > 1 ? "s" : ""}</span></span>
+    ${okClip(m.clip) ? `<section aria-labelledby="h-pclip"><h2 id="h-pclip">🎬 Son clip de la semaine</h2><div class="clips" style="max-width:420px"><a class="clip" href="${esc(m.clip.url)}" target="_blank" rel="noopener" aria-label="${esc(m.clip.titre)} (s’ouvre sur Twitch)">
+      <span class="img">${okClipImg(m.clip.vignette) ? vignette(m.clip.vignette, 480, 272) : ""}<span class="vw">▶ ${Number(m.clip.vues) || 0} vue${(m.clip.vues || 0) > 1 ? "s" : ""}</span></span>
       <span class="b"><span style="min-width:0"><span class="t">${esc(m.clip.titre || "Clip")}</span><span class="n">${m.clip.date ? fmtD(m.clip.date) : ""}</span></span></span></a></div></section>` : ""}
     ${succes.length ? `<section aria-labelledby="h-succes"><h2 id="h-succes">Ses réussites</h2>
       <ul class="timeline">${succes.map(x => `<li><span class="d">${fmtD(x.date)}</span><span>${succesIc(x)} ${esc(m.nom)} ${succesTxt(x)}</span></li>`).join("")}</ul></section>` : ""}`;
 }
 
-// Le robot ne passe qu'une fois par heure : les lives qu'il a notés sont revérifiés ici, en direct.
-// decapi renvoie une durée (« 1 hour, 5 minutes ») si la chaîne est en live, « … is offline » sinon.
+// Le robot ne passe qu’une fois par heure : le live est revérifié ici, en direct, pour TOUS les membres
+// (la vitrine reste juste même si le robot a du retard). decapi renvoie une durée (« 1 hour, 5 minutes ») si la chaîne
+// est en live, « … is offline » sinon. decapi limite à 100 requêtes et répond 429 SANS en-tête CORS (erreur rouge en console,
+// statut illisible) : le résultat est donc gardé dans sessionStorage et PARTAGÉ entre les pages de l’onglet (une vague
+// toutes les 2 min au plus), 4 requêtes à la fois, et la vague s’arrête au premier refus (pause de 10 min, dernier état gardé).
 const LIVE_RE = /^\d+\s+(day|hour|minute|second)s?(\s*,\s*\d+\s+(day|hour|minute|second)s?)*$/i;
-let liveVerifieA = null;
-const horsLigne = new Map();   // pseudo -> version des données (maj) pour laquelle le live a été vu terminé
-// Le live est vérifié ici, en direct, pour TOUS les membres (pas seulement ceux notés par le robot) :
-// la vitrine reste juste même si le robot a du retard. decapi renvoie une durée si la chaîne est en live.
 const horsLigneOk = t => /offline/i.test(t) && !LIVE_RE.test(t);
 function dureeMs(t){ let ms = 0; for(const [, n, u] of t.matchAll(/(\d+)\s+(day|hour|minute|second)/gi)) ms += n * {day:864e5, hour:36e5, minute:6e4, second:1e3}[u.toLowerCase()]; return ms; }
 async function pool(items, n, fn){ let i = 0; await Promise.all(Array.from({length:Math.min(n, items.length)}, async () => { while(i < items.length) await fn(items[i++]); })); }
 async function decapi(path){ const r = await fetch(`https://decapi.me/twitch/${path}`, {cache:"no-store"}); if(!r.ok) throw 0; return (await r.text()).trim(); }
-let verifEnCours = false, rotation = 0;
+const CLE_LIVES = "cabane.vitrine.lives", LIVES_FRAIS = 2 * 60e3, LIVES_PAUSE = 10 * 60e3, LIVES_LOT = 40, LIVES_PARALLELE = 4;
+// {t: début de la dernière vague, pause: pas de vague avant, rot: tour de rôle, etats: {pseudo: {t, live|null}}}
+function lireLives(){ const c = lire(sessionStorage, CLE_LIVES); return c && typeof c.etats === "object" && c.etats ? c : {t:0, pause:0, rot:0, etats:{}}; }
+// un état vu en direct plus récent que les données du robot prime sur elles ; renvoie true si quelque chose a changé
+function appliquerLives(donnees, c){
+  const maj = Date.parse(donnees?.maj || "") || 0; let change = false;
+  for(const m of donnees?.membres || []){ const e = c.etats[String(m.login).toLowerCase()];
+    if(!e || !(e.t > maj) || JSON.stringify(e.live || null) === JSON.stringify(m.live || null)) continue;
+    m.live = e.live || null; change = true; }
+  return change;
+}
+let verifEnCours = false;
 async function verifierLives(){
-  if(verifEnCours) return;                                    // un passage à la fois
-  const donnees = DATA;
-  const tous = (donnees?.membres || []).filter(m => okLogin(m.login));
+  if(verifEnCours) return;                                    // une vague à la fois
+  const donnees = DATA; if(!donnees?.membres) return;
+  const c = lireLives(), maintenant = Date.now();
+  // vérifié il y a moins de 2 min (sur cette page ou une autre), ou decapi vient de refuser : on reprend le dernier état connu
+  if(maintenant - c.t < LIVES_FRAIS || maintenant < c.pause){ if(appliquerLives(donnees, c) && DATA === donnees) render(); return; }
+  const tous = donnees.membres.filter(m => okLogin(m.login));
   // au-delà de 40 membres : ceux notés en live + 40 autres à tour de rôle (tout le monde est vu en quelques minutes)
   let aVerifier = tous;
-  if(tous.length > 40){ const autres = tous.filter(m => !m.live); if(rotation >= autres.length) rotation = 0;
-    const lot = autres.slice(rotation, rotation + 40); rotation += 40;
-    aVerifier = [...tous.filter(m => m.live), ...lot]; }
+  if(tous.length > LIVES_LOT){ const autres = tous.filter(m => !m.live); const rot = c.rot >= autres.length ? 0 : c.rot || 0;
+    aVerifier = [...tous.filter(m => m.live), ...autres.slice(rot, rot + LIVES_LOT)]; c.rot = rot + LIVES_LOT; }
   if(!aVerifier.length) return;
-  verifEnCours = true;
-  let change = false;
-  try { await pool(aVerifier, 6, async m => {
-    let t; try { t = await decapi(`uptime/${encodeURIComponent(m.login)}`); } catch { return; }   // réseau : on garde l'information du robot
+  verifEnCours = true; c.t = maintenant; ecrire(sessionStorage, CLE_LIVES, c);   // noté tout de suite : la page suivante ne relance pas
+  let change = false, refus = false;
+  const ok = p => decapi(p).catch(() => { refus = true; return ""; });
+  // la première chaîne seule, puis les autres 4 par 4 : si decapi refuse déjà, une seule erreur en console au lieu de quatre
+  const une = async m => {
+    if(refus) return;                                         // decapi a refusé : on n’insiste pas (chaque refus = une erreur en console)
+    const k = m.login.toLowerCase(), t = await ok(`uptime/${encodeURIComponent(m.login)}`);
+    if(refus) return;                                         // pas de réponse : on garde l’information connue
     if(LIVE_RE.test(t)){
       if(!m.live){   // passé en live depuis le passage du robot : on complète les infos
-        const [jeu, titre, vw] = await Promise.all([decapi(`game/${encodeURIComponent(m.login)}`).catch(() => ""), decapi(`title/${encodeURIComponent(m.login)}`).catch(() => ""), decapi(`viewercount/${encodeURIComponent(m.login)}`).catch(() => "")]);
+        const jeu = await ok(`game/${encodeURIComponent(m.login)}`), titre = await ok(`title/${encodeURIComponent(m.login)}`), vw = await ok(`viewercount/${encodeURIComponent(m.login)}`);   // l'une après l'autre : 4 requêtes à la fois au plus
         m.live = {viewers:/^\d+$/.test(vw) ? Number(vw) : 0, jeu:/offline|error|not found/i.test(jeu) ? "" : jeu, titre:/error|not found/i.test(titre) ? "" : titre.slice(0, 140),
-          depuis:new Date(Date.now() - dureeMs(t)).toISOString(), apercu:`https://static-cdn.jtvnw.net/previews-ttv/live_user_${m.login.toLowerCase()}-440x248.jpg`};
-        horsLigne.delete(m.login); change = true;
+          depuis:new Date(Date.now() - dureeMs(t)).toISOString(), apercu:`https://static-cdn.jtvnw.net/previews-ttv/live_user_${k}-440x248.jpg`};
+        change = true;
       }
-    } else if(horsLigneOk(t) && m.live){ m.live = null; horsLigne.set(m.login, donnees.maj); change = true; }
-  }); } finally { verifEnCours = false; }
-  liveVerifieA = new Date();
-  if(change && DATA === donnees) render();          // données rechargées entre-temps : le prochain passage s'en charge
+      c.etats[k] = {t:Date.now(), live:m.live};
+    } else if(horsLigneOk(t)){ if(m.live){ m.live = null; change = true; } c.etats[k] = {t:Date.now(), live:null}; }
+  };
+  try { await une(aVerifier[0]); await pool(aVerifier.slice(1), LIVES_PARALLELE, une); } finally { verifEnCours = false; }
+  if(refus) c.pause = Date.now() + LIVES_PAUSE;
+  for(const [k, e] of Object.entries(c.etats)) if(!(Date.now() - e.t < 6 * 36e5)) delete c.etats[k];   // ménage : plus de 6 h
+  ecrire(sessionStorage, CLE_LIVES, c);
+  if(change && DATA === donnees) render();          // données rechargées entre-temps : le prochain passage s’en charge
 }
 
 // « Découvrir un streamer » : tirage parmi les membres de La Cabane uniquement.
-// En priorité quelqu'un en live (les petits lives ont plus de chances), sinon n'importe quel membre,
+// En priorité quelqu’un en live (les petits lives ont plus de chances), sinon n’importe quel membre,
 // avec un coup de pouce aux chaînes pas encore affiliées. On évite de retomber sur les derniers tirés.
 const deja = [];
 function tirage(){
@@ -282,17 +307,15 @@ function decouvrir(){
 
 /* ---------- Inscriptions aux événements (streamers de La Cabane) ----------
    Connexion Twitch (prouve qui tu es) → demande déposée dans un salon Discord privé →
-   le robot la vérifie auprès de Twitch, l'ajoute, puis efface le message. */
+   le robot la vérifie auprès de Twitch, l’ajoute, puis efface le message. */
 const SESSION = "cabane.vitrine.twitch", ATTENTE = "cabane.vitrine.attente", RETOUR = "cabane.vitrine.oauth";
 const lire = (st, k) => { try { return JSON.parse(st.getItem(k)); } catch { return null; } };
 const ecrire = (st, k, v) => { try { v == null ? st.removeItem(k) : st.setItem(k, JSON.stringify(v)); } catch {} };
-// l'adresse du webhook est publiée masquée (voir le robot) : on la reconstitue ici
-const webhookDe = ins => { try { return ins?.cle ? decodeURIComponent(escape(atob(ins.cle.split("").reverse().join("")))) : ""; } catch { return ""; } };   // jamais d'adresse en clair
-const okWebhook = u => /^https:\/\/(discord\.com|discordapp\.com)\/api\/webhooks\/\d+\/[\w-]+$/.test(u || "");
-// relais Cloudflare (garde le webhook secret) : prioritaire sur l'ancien webhook masqué
+// relais Cloudflare (garde le webhook secret) : seul chemin depuis que le robot ne publie plus l’ancien webhook masqué
+// (outils.mjs → infosInscriptions) ; la vitrine n’appelle donc jamais discord.com directement (CSP sans discord.com).
 const relaisDe = ins => /^https:\/\/[\w.-]+(\/[\w./-]*)?$/.test(ins?.relais || "") ? ins.relais : "";
-const inscrOk = ins => !!(relaisDe(ins) || okWebhook(webhookDe(ins)));
-const redirectUri = () => location.origin + "/";   // adresse déjà autorisée dans l'application Twitch (page staff), qui renvoie ici
+const inscrOk = ins => !!relaisDe(ins);
+const redirectUri = () => location.origin + "/";   // adresse déjà autorisée dans l’application Twitch (page staff), qui renvoie ici
 let toastT = null;
 function toast(t){ const el = $("#toast"); el.textContent = t; el.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => { el.hidden = true; }, 6000); }
 function attentes(){
@@ -312,41 +335,32 @@ function actionsEvt(e, d){
   return `<div class="acts">
     ${ins ? (veut ? `<span class="moi">✓ Tu participes</span><button class="btn alt mini" type="button" data-insout="${esc(e.id)}">Me désinscrire</button>`
                   : `<button class="btn mini" type="button" data-ins="${esc(e.id)}">✋ Je participe</button>`) : ""}
-    ${dc ? `<a class="dc" href="${esc(dc)}" target="_blank" rel="noopener">${ins ? "ou réagis ✅ sur Discord" : "S'inscrire : réagis ✅ sur Discord"}</a>` : ""}
-    ${att ? `<span class="wait">⏳ ${att.action === "in" ? "Inscription" : "Désinscription"} envoyée : elle apparaîtra ici d'ici une heure.</span>` : ""}
+    ${dc ? `<a class="dc" href="${esc(dc)}" target="_blank" rel="noopener">${ins ? "ou réagis ✅ sur Discord" : "S’inscrire : réagis ✅ sur Discord"}</a>` : ""}
+    ${att ? `<span class="wait">⏳ ${att.action === "in" ? "Inscription" : "Désinscription"} envoyée : elle apparaîtra ici d’ici une heure.</span>` : ""}
   </div>`;
 }
 async function inscrire(id, action){
-  const ins = DATA?.inscriptions, relais = relaisDe(ins), wh = webhookDe(ins); if(!ins || !inscrOk(ins)) return;
+  const ins = DATA?.inscriptions, relais = relaisDe(ins); if(!relais) return;
   const s = lire(sessionStorage, SESSION);
-  if(!s){   // d'abord : qui es-tu ? (connexion Twitch, sans aucune autorisation demandée)
+  if(!s){   // d’abord : qui es-tu ? (connexion Twitch, sans aucune autorisation demandée)
     const etat = Math.random().toString(36).slice(2) + Date.now().toString(36);
     ecrire(sessionStorage, RETOUR, {etat, id, action, retour:(location.pathname.split("/vitrine/")[1] || "") + location.search});
     location.href = `https://id.twitch.tv/oauth2/authorize?${new URLSearchParams({client_id:ins.clientId, redirect_uri:redirectUri(), response_type:"token", scope:"", state:etat})}`;
     return;
   }
   if(!(DATA.membres || []).some(m => m.login.toLowerCase() === s.login.toLowerCase())){
-    render(); toast(`Les inscriptions sont réservées aux streamers de La Cabane (tu es connecté à Twitch en tant que ${s.login}). Si tu en fais partie mais n'apparais pas sur la vitrine, inscris-toi avec ✅ sous le message Discord.`); return; }
+    render(); toast(`Les inscriptions sont réservées aux streamers de La Cabane (tu es connecté à Twitch en tant que ${s.login}). Si tu en fais partie mais n’apparais pas sur la vitrine, inscris-toi avec ✅ sous le message Discord.`); return; }
   if(!navigator.onLine){ render(); toast("Pas de connexion internet : réessaie dans un instant."); return; }
-  if(relais){
-    let r = null; try { r = await fetch(relais, {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({ev:id, action, jeton:s.jeton})}); } catch {}
-    if(!r?.ok){
-      if(r?.status === 401) ecrire(sessionStorage, SESSION, null);   // jeton expiré : nouvelle connexion au prochain clic
-      render(); toast(!r ? "Le service des inscriptions ne répond pas. Réessaie plus tard, ou réagis ✅ sur Discord."
-        : r.status === 401 ? "Ta connexion Twitch a expiré. Clique à nouveau sur « Je participe » pour te reconnecter."
-        : r.status === 429 ? "Une demande vient déjà de partir : attends une minute avant de réessayer."
-        : "La demande n'a pas pu être envoyée. Réessaie plus tard, ou réagis ✅ sur Discord."); return; }
-  } else {
-    const fd = new FormData();
-    fd.append("payload_json", JSON.stringify({username:`Vitrine · ${s.login}`, allowed_mentions:{parse:[]},
-      content:JSON.stringify({cabane:"inscription", ev:id, action, jeton:s.jeton})}));
-    let ok = true;
-    try { const r = await fetch(wh, {method:"POST", body:fd}); ok = r.ok; } catch { /* réponse illisible (CORS) : la demande est quand même partie */ }
-    if(!ok){ render(); toast("La demande n'a pas pu être envoyée. Réessaie plus tard, ou réagis ✅ sur Discord."); return; }
-  }
+  let r = null; try { r = await fetch(relais, {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({ev:id, action, jeton:s.jeton})}); } catch {}
+  if(!r?.ok){
+    if(r?.status === 401) ecrire(sessionStorage, SESSION, null);   // jeton expiré : nouvelle connexion au prochain clic
+    render(); toast(!r ? "Le service des inscriptions ne répond pas. Réessaie plus tard, ou réagis ✅ sur Discord."
+      : r.status === 401 ? "Ta connexion Twitch a expiré. Clique à nouveau sur « Je participe » pour te reconnecter."
+      : r.status === 429 ? "Une demande vient déjà de partir : attends une minute avant de réessayer."
+      : "La demande n’a pas pu être envoyée. Réessaie plus tard, ou réagis ✅ sur Discord."); return; }
   const a = attentes(); a[id] = {action, login:s.login, le:Date.now()}; ecrire(localStorage, ATTENTE, a);
   render();
-  toast(action === "in" ? "C'est noté ! Ton inscription sera visible d'ici une heure." : "Désinscription envoyée, elle sera prise en compte d'ici une heure.");
+  toast(action === "in" ? "C’est noté ! Ton inscription sera visible d’ici une heure." : "Désinscription envoyée, elle sera prise en compte d’ici une heure.");
 }
 async function retourTwitch(){
   const h = new URLSearchParams(location.hash.slice(1)); if(!h.has("access_token") && !h.has("error")) return;
@@ -405,25 +419,20 @@ async function charger(){
     const r = await fetch(`membres.json?t=${Date.now()}`, {cache:"no-store"});
     if(r.status === 404){ DATA = {active:false}; }
     else if(!r.ok) throw 0;
-    else { const ancien = DATA; DATA = await r.json();
-      for(const m of DATA.membres || []){
-        if(m.live && horsLigne.get(m.login) === DATA.maj) m.live = null;
-        const avant = ancien?.membres?.find(x => x.login === m.login);
-        if(!m.live && avant?.live && ancien.maj === DATA.maj) m.live = avant.live;      // live vu en direct, pas encore dans les données du robot
-      } }
+    else { DATA = await r.json(); appliquerLives(DATA, lireLives()); }      // live vu en direct, plus récent que les données du robot
   } catch { if(!DATA){ dernierHtml = ""; $("#main").innerHTML = `<p class="empty">Impossible de charger la liste pour le moment. Réessaie dans quelques minutes.</p>`; } return; }
   const focus = document.activeElement?.id === "q", pos = focus ? document.activeElement.selectionStart : 0;
   render();
   if(!chargerFait){ chargerFait = true; await retourTwitch(); }
   if(focus){ const el = $("#q"); el.focus(); try { el.setSelectionRange(pos, pos); } catch {} }
-  if(!liveVerifieA || Date.now() - liveVerifieA > 60e3) verifierLives();
+  verifierLives();          // sans réseau si une page de l’onglet a vérifié il y a moins de 2 min
 }
 document.addEventListener("click", e => {
   const c = e.target.closest("[data-f]"); if(c){ filtre = c.dataset.f; render(); return; }
   const n = e.target.closest("a[data-nav]");
   if(n && !e.ctrlKey && !e.metaKey && !e.shiftKey && e.button === 0){ e.preventDefault(); const retour = !new URLSearchParams(location.search).get("m"); if(retour) sessionScroll = window.scrollY;
-    if(n.getAttribute("href") === "./" && history.state?.depuisAccueil){ history.back(); return; }   // « ← Tous les streamers » = retour arrière
-    history.pushState(retour ? {depuisAccueil:true} : null, "", n.getAttribute("href")); render(); if(n.getAttribute("href") === "./") window.scrollTo(0, sessionScroll || 0); return; }
+    if(n.hasAttribute("data-retour") && history.state?.depuisAccueil){ history.back(); return; }   // « ← Tous les streamers » = retour arrière
+    history.pushState(retour ? {depuisAccueil:true} : null, "", n.getAttribute("href")); render(); if(n.hasAttribute("data-retour")) window.scrollTo(0, sessionScroll || 0); return; }
   if(e.target.closest("#hasard, #autre")){ const m = new URLSearchParams(location.search).get("m"); if(m && !deja.includes(m)) deja.push(m); decouvrir(); return; }
   const ic = e.target.closest("[data-ics]"); if(ic){ e.preventDefault(); const ev = (DATA?.agenda || []).find(x => x.id === ic.dataset.ics); if(ev) telechargerIcs(ev); return; }
   const ib = e.target.closest("[data-ins], [data-insout]");
@@ -450,4 +459,5 @@ if(_ev && (document.body.dataset.page || "accueil") !== "agenda"){
   charger();
   setInterval(() => { if(document.visibilityState === "visible") charger(); }, 5 * 60 * 1000);
   setInterval(() => { if(document.visibilityState === "visible") verifierLives(); }, 2 * 60 * 1000);
+  document.addEventListener("visibilitychange", () => { if(document.visibilityState === "visible") verifierLives(); });   // onglet revenu : état à jour (sans réseau si encore frais)
 }

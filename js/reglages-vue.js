@@ -136,5 +136,5 @@ function localPanel(){
   </section>`;
 }
 function viewSetup(){
-  return `<h1>Bienvenue</h1><p class="sub">Connecte-toi au fichier partagé du staff pour commencer. Première fois ici ? <a href="#" data-goto="aide">Lis l'aide</a> : tout y est expliqué pas à pas.</p>${viewReglages()}`;
+  return `<h1>Bienvenue</h1><p class="sub">Connecte-toi au fichier partagé du staff pour commencer. Première fois ici ? <a href="#" data-goto="aide">Lis l'aide</a> : tout y est expliqué pas à pas.</p>${viewReglages().replace("<h1>Réglages</h1>", "")}`;   // un seul h1 par écran
 }

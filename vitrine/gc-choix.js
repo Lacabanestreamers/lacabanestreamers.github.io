@@ -1,4 +1,4 @@
-// Bouton « Ne pas être compté » de la page Confidentialité (fichier à part : la CSP n'autorise aucun script en ligne).
+// Bouton « Ne pas être compté » de la page Confidentialité (fichier à part : la CSP n’autorise aucun script en ligne).
 // GoatCounter (count.v4.js) ne compte rien quand localStorage.skipgc === 't' (même règle que le Site)
 (function () {
   var b = document.getElementById('gc-toggle'), s = document.getElementById('gc-state');

@@ -16,9 +16,9 @@ La description détaillée du robot, des données et de la sécurité est dans `
 | `commun.js` | Calculs partagés avec le robot (dates de Paris, séries, stagnation, paliers, relevés). **Deux copies identiques** : ici et `cabane/robot/commun.js`. |
 | `js/*.js` | Page staff, un fichier par écran ou fonction (liste dans `cabane/ARCHITECTURE.md`). |
 | `sw.js` | Service worker de la page staff : réseau d'abord (4 s) puis cache `cabane-vN`. Ne met pas en cache la vitrine, ni les autres origines, ni les non-GET. |
-| `manifest.webmanifest`, `icon-*.png`, `fonts/`, `fonts.css` | Application installable, polices hébergées (Orbitron, Rajdhani). |
+| `manifest.webmanifest`, `icon-*.png`, `fonts/`, `fonts.css` | Application installable, polices hébergées (Saira Condensed, IBM Plex Sans et Mono ; `Orbitron` et `Rajdhani` ne sont plus que des alias dans `fonts.css`). |
 | `404.html`, `robots.txt`, `sitemap.xml`, `google…html`, `lighthouserc.json` | Indexation, vérification Search Console, seuils Lighthouse (alertes seulement). |
-| `tests/vitrine.test.mjs` | Tests de non-régression (`npm test`). |
+| `tests/vitrine.test.mjs`, `tests/vitrine-app.test.mjs` | Tests de non-régression (`npm test`) ; le second exécute `vitrine/app.js` dans un bac à sable `node:vm` (faux navigateur, aucun réseau). |
 
 ## Règles qui tiennent l'ensemble
 - Numéro de version `?v=` : identique dans `index.html` et dans `V` de `sw.js` ; `CACHE` (`cabane-vN`) à incrémenter à chaque livraison de la page staff.
@@ -28,7 +28,9 @@ La description détaillée du robot, des données et de la sécurité est dans `
 - CSP en balise meta sur **toutes** les pages HTML (test « toute page HTML a une CSP », 29/10) : vitrine (script en ligne par empreinte sha256, GoatCounter, Twitch, relais `*.workers.dev`), pages légales (GoatCounter seulement ; le bouton « Ne pas être compté » est dans `vitrine/gc-choix.js`), `404.html` et pages écrites par le robot (`vitrine/s/`, `vitrine/e/`, `vitrine/annee/` : aucun script, sauf le renvoi d'une page d'événement autorisé par son empreinte ; gabarit dans `cabane/robot/etapes/partage.mjs` et `annee.mjs`). En plus : tout texte venant des données passe par `esc()`, les pseudos par `okLogin`, les images par `okImg`.
 - `robots.txt` autorise tout : la page staff se protège par `noindex`, qui doit rester lisible par les moteurs.
 - Relance du robot depuis la page (bandeau de l'Accueil, Réglages → Robot quotidien, réveil après enregistrement) : toujours `POST /repos/{owner}/{repo}/dispatches` (`repository_dispatch`, type `cabane-notif`) avec le jeton du membre du staff. Ce jeton n'a que Contents : Read and write : pas de `workflow_dispatch` (il faudrait Actions : Read and write), donc pas de lien direct vers l'exécution, seulement vers la liste des passages de `robot.yml`.
-- Aucun secret dans ce dépôt public : le webhook des inscriptions est derrière le relais Cloudflare (`inscriptions.relais`), jamais en clair.
+- Aucun secret dans ce dépôt public : le webhook des inscriptions est derrière le relais Cloudflare (`inscriptions.relais`), jamais en clair. Depuis le 18/11 la vitrine n'a plus l'ancien chemin « webhook masqué » et sa CSP n'autorise plus `discord.com` (le robot ne publie que `{relais, clientId}`).
+- **Vérification des lives (decapi.me, 18/11)** : decapi limite à 100 requêtes et répond 429 sans en-tête CORS (erreur console impossible à masquer). `vitrine/app.js` garde donc le résultat dans `sessionStorage` (`cabane.vitrine.lives`, partagé entre les pages de l'onglet) : une vague toutes les 2 min au plus, la première chaîne seule puis 4 à la fois, arrêt au premier refus et pause de 10 min ; l'état vu en direct ne prime que s'il est plus récent que `membres.json` (`maj`). Revérification seulement si l'onglet est visible.
+- **Profil `?m=`** : l'en-tête de page est masqué (`body.profil header`), le nom est le `h1` ; le lien de retour pointe vers `location.pathname` (la page où l'on est, sans `?m`).
 
 ## Tests (`npm test`)
 `tests/vitrine.test.mjs` (node:test, sans dépendance) vérifie : `commun.js` (dates, heure d'été, séries, paliers, relevés) et sa copie dans le robot ;

@@ -6,4 +6,4 @@ Les données viennent du dépôt privé `cabane` : le robot écrit `vitrine/memb
 Lire avant de modifier : `ARCHITECTURE.md`, `A_FAIRE.md`, `PIEGES.md`. Documents produit et techniques : `docs/` (PRD, TRD, APP_FLOW, DESIGN_BRIEF, BACKEND_SCHEMA, IMPLEMENTATION_PLAN).
 
 ## Tests
-`npm test` (Node 20+, aucune dépendance) → `tests/vitrine.test.mjs`.
+`npm test` (Node 20+, aucune dépendance) → `tests/vitrine.test.mjs` et `tests/vitrine-app.test.mjs`. Après toute modification de la vitrine ou de la page staff : `node bump.mjs` (aligne les `?v=` et `sw.js`).

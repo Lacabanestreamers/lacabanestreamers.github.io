@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://aulit42369.goatcounter.com; object-src 'none'; base-uri 'self'; form-action 'none'">
 <title>Confidentialité · La Cabane</title>
@@ -11,11 +12,11 @@
 <meta property="og:locale" content="fr_FR">
 <meta property="og:url" content="https://lacabanestreamers.github.io/vitrine/confidentialite.html">
 <meta property="og:title" content="Confidentialité · La Cabane">
-<meta property="og:description" content="Données affichées sur les streamers, leur origine, stockage local, services tiers et retrait d'une chaîne.">
+<meta property="og:description" content="Données affichées sur les streamers, leur origine, stockage local, services tiers et retrait d’une chaîne.">
 <meta property="og:image" content="https://lacabanestreamers.github.io/vitrine/apercu.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="La Cabane, communauté d'entraide entre streamers">
+<meta property="og:image:alt" content="La Cabane, communauté d’entraide entre streamers">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://lacabanestreamers.github.io/vitrine/apercu.png">
 <link rel="canonical" href="https://lacabanestreamers.github.io/vitrine/confidentialite.html">
@@ -26,81 +27,83 @@
 <link rel="stylesheet" href="pages.css">
 </head>
 <body>
+<a class="evitement" href="#main">Aller au contenu</a>
 <div class="wrap">
   <header>
     <a class="back" href="./">← Retour à la vitrine</a>
     <h1>Confidentialité</h1>
-    <p class="maj">Dernière mise à jour : 26 octobre 2026</p>
+    <p class="maj">Dernière mise à jour : 18 novembre 2026</p>
   </header>
-  <main>
+  <main id="main">
     <h2>Qui est responsable</h2>
-    <p>La vitrine présente <b>La Cabane</b>, une communauté bénévole d'entraide entre streamers. Le responsable du traitement des données est <b>Aulit42369</b>, éditeur du site (voir les <a href="mentions-legales.html">mentions légales</a>). Contact pour toute question ou demande sur tes données : <a href="mailto:aulit42369@gmail.com">aulit42369@gmail.com</a>. La vitrine n'a aucun but commercial, n'affiche aucune publicité et ne vend aucune donnée.</p>
+    <p>La vitrine présente <b>La Cabane</b>, une communauté bénévole d’entraide entre streamers. Le responsable du traitement des données est <b>Aulit42369</b>, éditeur du site (voir les <a href="mentions-legales.html">mentions légales</a>). Contact pour toute question ou demande sur tes données : <a href="mailto:aulit42369@gmail.com">aulit42369@gmail.com</a>. La vitrine n’a aucun but commercial, n’affiche aucune publicité et ne vend aucune donnée.</p>
 
     <h2>Ce que la vitrine affiche sur les streamers</h2>
     <p>Pour chaque streamer membre de La Cabane :</p>
     <ul>
       <li><b>Repris de Twitch</b> (informations déjà publiques sur la chaîne) : pseudo, nom affiché, image de profil, description (bio, avec ce que la personne y a écrit elle-même), statut affilié ou partenaire, jeux streamés, date du premier stream, clip le plus vu de la semaine, live en cours (titre, jeu, nombre de spectateurs, aperçu).</li>
-      <li><b>Ajouté par La Cabane</b> : date d'arrivée dans la communauté, étiquette « Staff », réussites (paliers de follows, affiliation, partenariat), participation aux événements.</li>
-      <li><b>Chiffres d'ensemble</b> : nombre de membres, heures de live et follows gagnés sur 30 jours, tous membres confondus.</li>
+      <li><b>Ajouté par La Cabane</b> : date d’arrivée dans la communauté, étiquette « Staff », réussites (paliers de follows, affiliation, partenariat), participation aux événements.</li>
+      <li><b>Chiffres d’ensemble</b> : nombre de membres, heures de live et follows gagnés sur 30 jours, tous membres confondus.</li>
     </ul>
-    <p>Ces informations sont relevées par un robot qui interroge l'API publique de Twitch une fois par heure, puis publiées dans le fichier <code>membres.json</code>. Le live est aussi revérifié depuis ton navigateur via le service public decapi.me.</p>
-    <p><b>Fiche publique par défaut</b> : en rejoignant La Cabane, ta chaîne apparaît sur la vitrine. Tu peux demander à tout moment à ne pas y figurer, sans avoir à te justifier (voir « Tes droits »). Si tu as <b>moins de 15 ans</b>, il faut l'accord d'un de tes parents pour figurer sur la vitrine et pour t'inscrire aux événements (article 45 de la loi Informatique et Libertés).</p>
+    <p>Ces informations sont relevées par un robot qui interroge l’API publique de Twitch une fois par heure, puis publiées dans le fichier <code>membres.json</code>. Le live est aussi revérifié depuis ton navigateur via le service public decapi.me.</p>
+    <p><b>Fiche publique par défaut</b> : en rejoignant La Cabane, ta chaîne apparaît sur la vitrine. Tu peux demander à tout moment à ne pas y figurer, sans avoir à te justifier (voir « Tes droits »). Si tu as <b>moins de 15 ans</b>, il faut l’accord d’un de tes parents pour figurer sur la vitrine et pour t’inscrire aux événements (article 45 de la loi Informatique et Libertés).</p>
 
     <h2>Le dépôt du site est public</h2>
-    <p>La vitrine est publiée sur GitHub Pages à partir d'un dépôt GitHub <b>public</b> : le robot y enregistre chaque nouvelle version de <code>membres.json</code> et des pages de partage. Les anciennes versions restent donc consultables dans l'historique Git du dépôt, même après le retrait d'une chaîne de la vitrine. Elles ne contiennent que les informations publiques décrites ci-dessus. Si tu veux qu'elles soient aussi effacées, demande-le par e-mail.</p>
+    <p>La vitrine est publiée sur GitHub Pages à partir d’un dépôt GitHub <b>public</b> : le robot y enregistre chaque nouvelle version de <code>membres.json</code> et des pages de partage. Les anciennes versions restent donc consultables dans l’historique Git du dépôt, même après le retrait d’une chaîne de la vitrine. Elles ne contiennent que les informations publiques décrites ci-dessus. Si tu veux qu’elles soient aussi effacées, demande-le par e-mail.</p>
 
     <h2>Le suivi interne du staff (jamais publié)</h2>
     <p>Le staff tient un fichier privé, jamais publié :</p>
     <ul>
       <li><b>Membres</b> : statistiques Twitch relevées (follows, viewers, dernier live, dernière VOD), référent, notes du staff, pseudo Discord.</li>
-      <li><b>Chaînes proposées</b> : un membre peut proposer une chaîne Twitch pour rejoindre La Cabane. Le staff note alors le pseudo, les données publiques de la chaîne (follows relevés chaque jour, dernière VOD, statut), qui l'a proposée, les avis et notes du staff et le motif de la décision. Une chaîne proposée n'apparaît jamais sur la vitrine.</li>
+      <li><b>Chaînes proposées</b> : un membre peut proposer une chaîne Twitch pour rejoindre La Cabane. Le staff note alors le pseudo, les données publiques de la chaîne (follows relevés chaque jour, dernière VOD, statut), qui l’a proposée, les avis et notes du staff et le motif de la décision. Une chaîne proposée n’apparaît jamais sur la vitrine.</li>
     </ul>
-    <p>But : organiser la communauté et décider des arrivées. C'est l'intérêt légitime de La Cabane.</p>
+    <p>But : organiser la communauté et décider des arrivées. C’est l’intérêt légitime de La Cabane.</p>
 
     <h2>Pourquoi la vitrine</h2>
-    <p>Faire découvrir les membres de la communauté et leurs lives : c'est l'intérêt légitime de La Cabane et la raison pour laquelle ses membres la rejoignent. Chaque membre peut demander à ne plus y figurer (voir « Tes droits »).</p>
+    <p>Faire découvrir les membres de la communauté et leurs lives : c’est l’intérêt légitime de La Cabane et la raison pour laquelle ses membres la rejoignent. Chaque membre peut demander à ne plus y figurer (voir « Tes droits »).</p>
 
     <h2>Si tu visites la vitrine</h2>
-    <p>Aucun compte, aucun formulaire, <b>aucun cookie</b>. Ton navigateur garde seulement, pour faire marcher le bouton « Je participe » des événements :</p>
+    <p>Aucun compte, aucun formulaire, <b>aucun cookie</b>. Ton navigateur garde seulement, pour faire marcher l’affichage des lives et le bouton « Je participe » des événements :</p>
     <ul>
-      <li><code>cabane.vitrine.twitch</code> (stockage de session, effacé à la fermeture de l'onglet) : ton pseudo Twitch, ton identifiant Twitch et le jeton de connexion, seulement si tu t'es connecté pour t'inscrire à un événement. Ce jeton ne donne aucune autorisation sur ton compte.</li>
+      <li><code>cabane.vitrine.twitch</code> (stockage de session, effacé à la fermeture de l’onglet) : ton pseudo Twitch, ton identifiant Twitch et le jeton de connexion, seulement si tu t’es connecté pour t’inscrire à un événement. Ce jeton ne donne aucune autorisation sur ton compte.</li>
+      <li><code>cabane.vitrine.lives</code> (stockage de session, effacé à la fermeture de l’onglet) : qui est en live d’après la dernière vérification, pour ne pas la refaire à chaque page (aucune donnée sur toi).</li>
       <li><code>cabane.vitrine.oauth</code> (stockage de session) : un code de vérification le temps de la connexion à Twitch.</li>
-      <li><code>cabane.vitrine.attente</code> (stockage local, 3 heures au plus) : les inscriptions envoyées qui n'apparaissent pas encore.</li>
+      <li><code>cabane.vitrine.attente</code> (stockage local, 3 heures au plus) : les inscriptions envoyées qui n’apparaissent pas encore.</li>
     </ul>
-    <p>Ces éléments sont strictement nécessaires à une fonction que tu demandes : ils ne demandent pas de consentement, d'où l'absence de bandeau cookies. Tu peux les effacer à tout moment depuis les réglages de ton navigateur (données du site).</p>
+    <p>Ces éléments sont strictement nécessaires à une fonction que tu demandes : ils ne demandent pas de consentement, d’où l’absence de bandeau cookies. Tu peux les effacer à tout moment depuis les réglages de ton navigateur (données du site).</p>
 
     <h2>Statistiques de visite</h2>
-    <p>La vitrine utilise <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener">GoatCounter</a>, service de mesure d'audience exploité depuis l'Irlande et hébergé dans l'Union européenne (serveurs en Finlande et en Allemagne). Il compte les pages vues sans cookie et sans identifiant qui te suivrait d'une visite à l'autre. Ton adresse IP sert seulement à déduire le pays et à ne pas compter deux fois la même visite : elle n'est jamais enregistrée (gardée quelques heures au plus en mémoire, puis oubliée). Seules des statistiques globales sont conservées : pages vues, site d'origine, navigateur, pays et taille d'écran approximatifs. Cette mesure sert uniquement à connaître la fréquentation de la vitrine : elle est exemptée de consentement, selon les recommandations de la CNIL. Base légale : l'intérêt légitime à connaître la fréquentation du site. Tu peux t'y opposer à tout moment sur ce navigateur :</p>
+    <p>La vitrine utilise <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener">GoatCounter</a>, service de mesure d’audience exploité depuis l’Irlande et hébergé dans l’Union européenne (serveurs en Finlande et en Allemagne). Il compte les pages vues sans cookie et sans identifiant qui te suivrait d’une visite à l’autre. Ton adresse IP sert seulement à déduire le pays et à ne pas compter deux fois la même visite : elle n’est jamais enregistrée (gardée quelques heures au plus en mémoire, puis oubliée). Seules des statistiques globales sont conservées : pages vues, site d’origine, navigateur, pays et taille d’écran approximatifs. Cette mesure sert uniquement à connaître la fréquentation de la vitrine : elle est exemptée de consentement, selon les recommandations de la CNIL. Base légale : l’intérêt légitime à connaître la fréquentation du site. Tu peux t’y opposer à tout moment sur ce navigateur :</p>
     <p><button type="button" class="btn" id="gc-toggle" aria-pressed="false">Ne pas être compté</button> <span id="gc-state"></span></p>
     <script src="gc-choix.js"></script>
 
     <h2>Inscription à un événement</h2>
-    <p>Quand un streamer de La Cabane clique sur « Je participe », il se connecte avec Twitch (aucune autorisation demandée). La demande (événement, ton jeton Twitch) passe par un petit relais hébergé chez Cloudflare, qui vérifie le jeton auprès de Twitch puis dépose dans un salon Discord privé du staff une demande signée qui ne contient que l'événement, ton identifiant et ton pseudo Twitch (ton jeton, lui, n'est jamais transmis à Discord ni gardé). Le robot vérifie la signature, ajoute ton pseudo et ton image à la liste des participants affichée sur la vitrine, puis efface le message.</p>
+    <p>Quand un streamer de La Cabane clique sur « Je participe », il se connecte avec Twitch (aucune autorisation demandée). La demande (événement, ton jeton Twitch) passe par un petit relais hébergé chez Cloudflare, qui vérifie le jeton auprès de Twitch puis dépose dans un salon Discord privé du staff une demande signée qui ne contient que l’événement, ton identifiant et ton pseudo Twitch (ton jeton, lui, n’est jamais transmis à Discord ni gardé). Le robot vérifie la signature, ajoute ton pseudo et ton image à la liste des participants affichée sur la vitrine, puis efface le message.</p>
 
     <h2>Services tiers utilisés par la page</h2>
     <ul>
-      <li><b>GitHub Pages</b> (GitHub, Inc., États-Unis) : hébergement du site et du fichier privé du staff. GitHub peut enregistrer l'adresse IP des visiteurs pour la sécurité du service (<a href="https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">déclaration de confidentialité de GitHub</a>).</li>
+      <li><b>GitHub Pages</b> (GitHub, Inc., États-Unis) : hébergement du site et du fichier privé du staff. GitHub peut enregistrer l’adresse IP des visiteurs pour la sécurité du service (<a href="https://docs.github.com/fr/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">déclaration de confidentialité de GitHub</a>).</li>
       <li><b>Twitch</b> (Twitch Interactive, Inc., États-Unis) : images de profil, aperçus des lives et vignettes de clips (static-cdn.jtvnw.net), connexion pour les inscriptions.</li>
       <li><b>decapi.me</b> : vérification en direct des lives.</li>
-      <li><b>GoatCounter</b> (Irlande, hébergé dans l'Union européenne) : statistiques de visite anonymes (voir plus haut).</li>
+      <li><b>GoatCounter</b> (Irlande, hébergé dans l’Union européenne) : statistiques de visite anonymes (voir plus haut).</li>
       <li><b>Cloudflare</b> (Cloudflare, Inc., États-Unis) et <b>Discord</b> (Discord Inc., États-Unis) : seulement pour les inscriptions aux événements.</li>
-      <li><b>Google</b> (Google LLC, États-Unis) : seulement si tu cliques sur « Ajouter à mon agenda » (Google Agenda) ou si tu écris à l'adresse de contact (Gmail).</li>
+      <li><b>Google</b> (Google LLC, États-Unis) : seulement si tu cliques sur « Ajouter à mon agenda » (Google Agenda) ou si tu écris à l’adresse de contact (Gmail).</li>
     </ul>
-    <p>Les polices du site sont hébergées sur le site lui-même : aucune requête ne part vers Google à l'affichage. Aucun lecteur vidéo ni contenu tiers intégré (iframe) : les liens vers Twitch, Discord ou Google Agenda ne s'ouvrent que si tu cliques dessus.</p>
-    <p><b>Transferts hors de l'Union européenne</b> : GitHub, Google, Twitch, Cloudflare et Discord sont établis aux États-Unis. Ces transferts sont encadrés par le Data Privacy Framework UE–États-Unis (décision d'adéquation de la Commission européenne du 10 juillet 2023) lorsque le prestataire y adhère, sinon par les clauses contractuelles types de la Commission.</p>
+    <p>Les polices du site sont hébergées sur le site lui-même : aucune requête ne part vers Google à l’affichage. Aucun lecteur vidéo ni contenu tiers intégré (iframe) : les liens vers Twitch, Discord ou Google Agenda ne s’ouvrent que si tu cliques dessus.</p>
+    <p><b>Transferts hors de l’Union européenne</b> : GitHub, Google, Twitch, Cloudflare et Discord sont établis aux États-Unis. Ces transferts sont encadrés par le Data Privacy Framework UE–États-Unis (décision d’adéquation de la Commission européenne du 10 juillet 2023) lorsque le prestataire y adhère, sinon par les clauses contractuelles types de la Commission.</p>
 
     <h2>Durée de conservation</h2>
     <ul>
-      <li><b>Vitrine</b> : les informations d'un membre restent publiées tant qu'il fait partie de La Cabane. Quand il part ou demande à être retiré, le staff le masque et le robot l'enlève de la vitrine, avec sa page de partage, à son passage suivant : en général dans l'heure, parfois quelques heures si GitHub retarde le robot. Les anciennes versions restent dans l'historique du dépôt (voir plus haut).</li>
+      <li><b>Vitrine</b> : les informations d’un membre restent publiées tant qu’il fait partie de La Cabane. Quand il part ou demande à être retiré, le staff le masque et le robot l’enlève de la vitrine, avec sa page de partage, à son passage suivant : en général dans l’heure, parfois quelques heures si GitHub retarde le robot. Les anciennes versions restent dans l’historique du dépôt (voir plus haut).</li>
       <li><b>Récaps annuels</b> (« La Cabane, ton année ») : une fois publiés, ils restent en ligne et peuvent citer un membre parti. Tout membre peut demander à en être retiré : le staff republie le récap sans lui.</li>
-      <li><b>Fichier privé du staff</b> : une proposition reste suivie tant qu'elle est en cours ; refusée ou abandonnée, elle est supprimée au plus tard 12 mois après la décision. La fiche d'un membre parti est supprimée au plus tard 12 mois après son départ. Les sauvegardes du fichier en gardent une copie jusqu'à leur remplacement.</li>
+      <li><b>Fichier privé du staff</b> : une proposition reste suivie tant qu’elle est en cours ; refusée ou abandonnée, elle est supprimée au plus tard 12 mois après la décision. La fiche d’un membre parti est supprimée au plus tard 12 mois après son départ. Les sauvegardes du fichier en gardent une copie jusqu’à leur remplacement.</li>
     </ul>
 
     <h2>Tes droits</h2>
-    <p>Tu peux demander à consulter, corriger ou supprimer les informations qui te concernent, à en limiter l'utilisation, ou t'opposer à leur affichage. Pour retirer ta chaîne de la vitrine, il suffit de le demander : le staff la masque, sans condition.</p>
+    <p>Tu peux demander à consulter, corriger ou supprimer les informations qui te concernent, à en limiter l’utilisation, ou t’opposer à leur affichage. Pour retirer ta chaîne de la vitrine, il suffit de le demander : le staff la masque, sans condition.</p>
     <p><b>Contact</b> : <a href="mailto:aulit42369@gmail.com">aulit42369@gmail.com</a> (tu peux aussi écrire à un membre du staff, étiquette « Staff » sur la <a href="./">vitrine</a>, sur Twitch ou sur le Discord de La Cabane). Si tu estimes que tes droits ne sont pas respectés, tu peux adresser une réclamation à la CNIL, sur <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a> ou par courrier : 3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07.</p>
   </main>
-  <footer><a href="./">Vitrine</a><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html" aria-current="page">Confidentialité</a><a href="cgu.html">Conditions d'utilisation</a></footer>
+  <footer><a href="./">Vitrine</a><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html" aria-current="page">Confidentialité</a><a href="cgu.html">Conditions d’utilisation</a></footer>
 </div>
 <script data-goatcounter="https://aulit42369.goatcounter.com/count"
         async src="https://gc.zgo.at/count.v4.js" crossorigin="anonymous"
