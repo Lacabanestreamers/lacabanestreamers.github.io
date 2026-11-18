@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2354,
+  "heuresLive30": 2363,
   "followsGagnes30": 517,
   "periode": {
    "du": "2026-10-19",
@@ -333,7 +333,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "[FR] [DDV] 🌊🏝️ NOUVELLE MAJ DISNEY DREAMLIGHT VALLEY ! CAP SUR LA MER DES SOUVENIRS ! 🐚✨",
+    "depuis": "2026-11-18T16:24:52Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
+   },
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -359,9 +365,9 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 12,
+    "viewers": 7,
     "jeu": "World of Warcraft",
-    "titre": "[DROP] Le retour du war pvp !",
+    "titre": "[DROP] Le chaman drop sa 15eme Katherine la Pure ...",
     "depuis": "2026-11-18T14:44:18Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galaadours-440x248.jpg"
    },
@@ -442,9 +448,9 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 11,
-    "jeu": "Aniimo",
-    "titre": "FR_VT - Monde Kawaaii me voilà !!",
+    "viewers": 20,
+    "jeu": "R.E.P.O.",
+    "titre": "FR_VT - Les cosmétiques nous voilà",
     "depuis": "2026-11-18T13:07:30Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
    },
@@ -506,7 +512,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 15,
+    "viewers": 20,
     "jeu": "Art",
     "titre": "✦ FAN ART ✦ Ocarina Of Time et notre corgi saucisse ! 🌭 | 🌟 Nv obj 500 follow ! | !artchallenges !liens",
     "depuis": "2026-11-18T13:36:26Z",
@@ -614,7 +620,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "R.E.P.O.",
+    "titre": "🔞 Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-18T16:45:42Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -847,7 +859,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 8,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] IT'S TIIIIIIIIME 🦜🏴‍☠️ Nouveau DLC à 15h, tellement hype 😍 | Coloriage Mystère | !discord !commandes",
     "depuis": "2026-11-18T13:00:13Z",
@@ -871,13 +883,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "World of Warcraft",
-    "titre": "Salut tout le monde , je continue les quête !!!",
-    "depuis": "2026-11-18T15:04:38Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -897,10 +903,10 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 3,
     "jeu": "The Legend of Zelda: Ocarina of Time",
     "titre": "[EP4] On joue de l'ocarina et on tape des vilains ! [!bs !fortune !insta !discord ]",
-    "depuis": "2026-11-18T14:07:59Z",
+    "depuis": "2026-11-18T16:59:46Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
    },
    "premierStream": "2025-09-24",
@@ -1051,7 +1057,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 11,
+    "viewers": 12,
     "jeu": "Granny: Escape Together",
     "titre": "Session tests avec @Galyssiane On s'échappe, mémé n'est pas contente! #grannyescapetogether #keymailer",
     "depuis": "2026-11-18T12:48:38Z",
@@ -1141,5 +1147,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-18T16:07:19.283Z"
+ "maj": "2026-11-18T17:07:26.290Z"
 }
