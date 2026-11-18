@@ -4,11 +4,11 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 45,
-  "affilies": 41,
+  "membres": 44,
+  "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2366,
-  "followsGagnes30": 533,
+  "heuresLive30": 2335,
+  "followsGagnes30": 517,
   "periode": {
    "du": "2026-10-19",
    "au": "2026-11-18"
@@ -192,13 +192,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 17,
-    "jeu": "Planet Zoo 2",
-    "titre": "🦒 Planet Zoo 2 : le zoo grandi , une étoile de plus ça serait top ! 🐘",
-    "depuis": "2026-11-18T10:49:50Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -340,7 +334,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] [DDV] 🧹🏰 GRAND MÉNAGE À DREAMLIGHT VALLEY ! On prépare le royaume pour la MAJ et la nouvelle DLC ! ✨🌸",
     "depuis": "2026-11-18T12:04:35Z",
@@ -398,8 +392,8 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
-    "jeu": "The Boo Club",
+    "viewers": 9,
+    "jeu": "GHOSTFLIPPERS",
     "titre": "Test de démos avec @sakkiel cet après midi! Venez trembler avec nous ! (!ttc !commandes) Clefs obtenues sur #Keymailer",
     "depuis": "2026-11-18T12:50:09Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
@@ -447,7 +441,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 11,
+    "jeu": "Aniimo",
+    "titre": "FR_VT - Monde Kawaaii me voilà !!",
+    "depuis": "2026-11-18T13:07:30Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -505,7 +505,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Art",
+    "titre": "✦ FAN ART ✦ Ocarina Of Time et notre corgi saucisse ! 🌭 | 🌟 Nv obj 500 follow ! | !artchallenges !liens",
+    "depuis": "2026-11-18T13:36:26Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
+   },
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -787,7 +793,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Minecraft",
+    "titre": "Petit live chill sur Minecraft",
+    "depuis": "2026-11-18T13:28:11Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
+   },
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -878,7 +890,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "The Legend of Zelda: Ocarina of Time",
+    "titre": "[EP4] On joue de l'ocarina et on tape des vilains ! [!bs !fortune !insta !discord ]",
+    "depuis": "2026-11-18T13:51:10Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
+   },
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -1027,9 +1045,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 7,
-    "jeu": "The Boo Club",
-    "titre": "Session tests avec @Galyssiane La démo du club qui fait BOO! #thebooclub #keymailer",
+    "viewers": 10,
+    "jeu": "GHOSTFLIPPERS",
+    "titre": "Session tests avec @Galyssiane Les fantômes qui font du flipper? x) #Friendslop #keymailer",
     "depuis": "2026-11-18T12:48:38Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1109,33 +1127,6 @@
    "succes": [],
    "jeux": [],
    "clip": null
-  },
-  {
-   "login": "zeylta",
-   "nom": "zeylta",
-   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/e5bcac28-73b8-4757-b121-0759fb234930-profile_image-300x300.jpeg",
-   "bio": "Bienvenue sur ma chaîne,Ici pas de prise de tête, on chill et on papote !N'hésite pas à te manifester à ton arrivée !",
-   "type": "affiliate",
-   "staff": false,
-   "depuis": "2026-10-14",
-   "live": null,
-   "premierStream": "2026-01-31",
-   "succes": [],
-   "jeux": [
-    "The Witch's Bakery",
-    "Coffee Talk",
-    "Allogloom",
-    "After the Wane",
-    "Coffee Talk: Episode 2 - Hibiscus & Butterfly"
-   ],
-   "clip": {
-    "url": "https://www.twitch.tv/zeylta/clip/RelievedWrongFishTwitchRaid--FzHkADNkWo2YLeF",
-    "titre": "Découvrons ce nouveau jeu a la DA incroyable | !tiktok | !Discord | !clip |",
-    "vues": 2,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/839840ec-e628-4739-a99e-9c60364fbfdb/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-17",
-    "duree": 30
-   }
   }
  ],
  "reussitesJours": 15,
@@ -1144,5 +1135,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-18T13:07:26.018Z"
+ "maj": "2026-11-18T14:07:24.475Z"
 }
