@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2343,
+  "heuresLive30": 2354,
   "followsGagnes30": 517,
   "periode": {
    "du": "2026-10-19",
@@ -333,13 +333,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": {
-    "viewers": 1,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "[FR] [DDV] 🧹🏰 GRAND MÉNAGE À DREAMLIGHT VALLEY ! On prépare le royaume pour la MAJ et la nouvelle DLC ! ✨🌸",
-    "depuis": "2026-11-18T12:04:35Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -365,7 +359,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 12,
     "jeu": "World of Warcraft",
     "titre": "[DROP] Le retour du war pvp !",
     "depuis": "2026-11-18T14:44:18Z",
@@ -398,7 +392,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 5,
     "jeu": "Granny: Escape Together",
     "titre": "Test de démos avec @sakkiel cet après midi! Venez trembler avec nous ! (!ttc !commandes) Clefs obtenues sur #Keymailer",
     "depuis": "2026-11-18T12:50:09Z",
@@ -448,7 +442,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 9,
+    "viewers": 11,
     "jeu": "Aniimo",
     "titre": "FR_VT - Monde Kawaaii me voilà !!",
     "depuis": "2026-11-18T13:07:30Z",
@@ -512,7 +506,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 14,
+    "viewers": 15,
     "jeu": "Art",
     "titre": "✦ FAN ART ✦ Ocarina Of Time et notre corgi saucisse ! 🌭 | 🌟 Nv obj 500 follow ! | !artchallenges !liens",
     "depuis": "2026-11-18T13:36:26Z",
@@ -555,7 +549,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 3,
     "jeu": "VALORANT",
     "titre": "🔥 LIVE VALORANT : OBJECTIF SILVER AUJOURD'HUI ! 🥈 | ON VA CHERCHER CE RANK UP !",
     "depuis": "2026-11-18T14:32:49Z",
@@ -805,21 +799,15 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 1,
-    "jeu": "Minecraft",
-    "titre": "Petit live chill sur Minecraft",
-    "depuis": "2026-11-18T13:28:11Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
     "Just Chatting",
     "Rocket League",
     "Fall Guys",
-    "Apex Legends",
-    "Starlit Adventures"
+    "Minecraft",
+    "Apex Legends"
    ],
    "clip": null
   },
@@ -859,7 +847,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] IT'S TIIIIIIIIME 🦜🏴‍☠️ Nouveau DLC à 15h, tellement hype 😍 | Coloriage Mystère | !discord !commandes",
     "depuis": "2026-11-18T13:00:13Z",
@@ -884,7 +872,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 0,
+    "viewers": 1,
     "jeu": "World of Warcraft",
     "titre": "Salut tout le monde , je continue les quête !!!",
     "depuis": "2026-11-18T15:04:38Z",
@@ -909,7 +897,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 7,
     "jeu": "The Legend of Zelda: Ocarina of Time",
     "titre": "[EP4] On joue de l'ocarina et on tape des vilains ! [!bs !fortune !insta !discord ]",
     "depuis": "2026-11-18T14:07:59Z",
@@ -1063,7 +1051,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 10,
+    "viewers": 11,
     "jeu": "Granny: Escape Together",
     "titre": "Session tests avec @Galyssiane On s'échappe, mémé n'est pas contente! #grannyescapetogether #keymailer",
     "depuis": "2026-11-18T12:48:38Z",
@@ -1153,5 +1141,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-18T15:07:19.680Z"
+ "maj": "2026-11-18T16:07:19.283Z"
 }
