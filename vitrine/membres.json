@@ -7,8 +7,8 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 8,
-  "heuresLive30": 2360,
-  "followsGagnes30": 530,
+  "heuresLive30": 2362,
+  "followsGagnes30": 533,
   "periode": {
    "du": "2026-10-19",
    "au": "2026-11-18"
@@ -193,7 +193,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 14,
     "jeu": "Planet Zoo 2",
     "titre": "🦒 Planet Zoo 2 : le zoo grandi , une étoile de plus ça serait top ! 🐘",
     "depuis": "2026-11-18T10:49:50Z",
@@ -219,8 +219,8 @@
    ],
    "jeux": [
     "Special Events",
-    "The Sims 4",
     "Planet Zoo 2",
+    "The Sims 4",
     "Just Chatting",
     "Dispatch"
    ],
@@ -339,7 +339,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "[FR] [DDV] 🧹🏰 GRAND MÉNAGE À DREAMLIGHT VALLEY ! On prépare le royaume pour la MAJ et la nouvelle DLC ! ✨🌸",
+    "depuis": "2026-11-18T12:04:35Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
+   },
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -590,13 +596,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 12,
-    "jeu": "FINAL FANTASY XVI",
-    "titre": "🔞 Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
-    "depuis": "2026-11-18T08:52:37Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -1126,5 +1126,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-18T11:07:23.759Z"
+ "maj": "2026-11-18T12:07:19.648Z"
 }
