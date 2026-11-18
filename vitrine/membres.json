@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2379,
+  "heuresLive30": 2384,
   "followsGagnes30": 525,
   "periode": {
    "du": "2026-10-19",
@@ -96,7 +96,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-22",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "The Witch's Bakery",
+    "titre": "Retour de la sorcière boulangère",
+    "depuis": "2026-11-18T19:56:51Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asalie-440x248.jpg"
+   },
    "premierStream": "2025-07-27",
    "succes": [
     {
@@ -122,7 +128,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 13,
+    "jeu": "VALORANT",
+    "titre": "On grind le silver avec le tibifidus actif à l'intérieur mais ça ne se voit pas à l'extérieur",
+    "depuis": "2026-11-18T19:40:17Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
+   },
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -250,7 +262,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "[FF14 online/Endwalker] Non, ce n'est pas du GTA 6 ^^",
     "depuis": "2026-11-18T18:53:02Z",
@@ -315,7 +327,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 9,
     "jeu": "Farming",
     "titre": "🍃 Place à la campagne ! Découverte de Next Acre en avant-première 🚜",
     "depuis": "2026-11-18T18:32:27Z",
@@ -326,7 +338,8 @@
    "jeux": [
     "Disney Dreamlight Valley",
     "Art",
-    "Silver Service"
+    "Silver Service",
+    "Farming"
    ],
    "clip": {
     "url": "https://www.twitch.tv/emmamarmotte/clip/CrowdedBoredPoxTheRinger-xXsPpM7V7M3IM9Rl",
@@ -536,13 +549,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 4,
-    "jeu": "VALORANT",
-    "titre": "🔥 LIVE VALORANT : OBJECTIF SILVER AUJOURD'HUI ! 🥈 | ON VA CHERCHER CE RANK UP !",
-    "depuis": "2026-11-18T14:32:49Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -906,7 +913,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 3,
+    "viewers": 5,
     "jeu": "Phasmophobia",
     "titre": "PHASMOPHOBIA [FR] | Retour à la chasse à l'entité avec mes chasseuses préférée @kneline, @melzebuth_ & @manah_world 👻| !discord",
     "depuis": "2026-11-18T18:50:21Z",
@@ -989,7 +996,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "TV Archive: Tidy Up Together",
+    "titre": "TV Archive on range les VHS",
+    "depuis": "2026-11-18T19:49:03Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
+   },
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -1027,7 +1040,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 11,
+    "viewers": 18,
     "jeu": "Isles of Arcana",
     "titre": "On découvre Isles of Arcana #islesofarcana #keymailer",
     "depuis": "2026-11-18T12:48:38Z",
@@ -1117,5 +1130,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-18T19:07:19.441Z"
+ "maj": "2026-11-18T20:07:20.002Z"
 }
