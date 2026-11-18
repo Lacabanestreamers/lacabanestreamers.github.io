@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 8,
-  "heuresLive30": 2349,
+  "heuresLive30": 2350,
   "followsGagnes30": 525,
   "periode": {
    "du": "2026-10-19",
@@ -615,13 +615,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 2,
-    "jeu": "ROB RUN",
-    "titre": "ROB RUN : Objectif gros braquage, zéro pitié !",
-    "depuis": "2026-11-17T20:25:05Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -1121,5 +1115,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-18T02:07:44.002Z"
+ "maj": "2026-11-18T03:07:20.616Z"
 }
