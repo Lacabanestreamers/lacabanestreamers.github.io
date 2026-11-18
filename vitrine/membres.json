@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 8,
-  "heuresLive30": 2362,
+  "heuresLive30": 2364,
   "followsGagnes30": 533,
   "periode": {
    "du": "2026-10-19",
@@ -193,7 +193,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 13,
     "jeu": "Planet Zoo 2",
     "titre": "🦒 Planet Zoo 2 : le zoo grandi , une étoile de plus ça serait top ! 🐘",
     "depuis": "2026-11-18T10:49:50Z",
@@ -340,7 +340,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] [DDV] 🧹🏰 GRAND MÉNAGE À DREAMLIGHT VALLEY ! On prépare le royaume pour la MAJ et la nouvelle DLC ! ✨🌸",
     "depuis": "2026-11-18T12:04:35Z",
@@ -397,7 +397,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "The Boo Club",
+    "titre": "Test de démos avec @sakkiel cet après midi! Venez trembler avec nous ! (!ttc !commandes) Clefs obtenues sur #Keymailer",
+    "depuis": "2026-11-18T12:50:09Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -1014,7 +1020,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "The Boo Club",
+    "titre": "Session tests avec @Galyssiane Le club qui fait BOO! #thebooclub #keymailer",
+    "depuis": "2026-11-18T12:48:38Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [
     {
@@ -1126,5 +1138,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-18T12:07:19.648Z"
+ "maj": "2026-11-18T12:56:21.988Z"
 }
