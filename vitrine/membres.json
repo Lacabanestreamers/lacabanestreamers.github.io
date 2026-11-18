@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2360,
+  "heuresLive30": 2369,
   "followsGagnes30": 516,
   "periode": {
    "du": "2026-10-20",
@@ -25,10 +25,10 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 1,
+    "viewers": 11,
     "jeu": "Rocket League",
-    "titre": "God of War 3 Remastered/PS4",
-    "depuis": "2026-11-18T22:02:22Z",
+    "titre": "Rocket League /PS5",
+    "depuis": "2026-11-18T22:38:55Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
    },
    "premierStream": null,
@@ -134,18 +134,12 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 8,
-    "jeu": "VALORANT",
-    "titre": "On grind le silver avec le tibifidus actif à l'intérieur mais ça ne se voit pas à l'extérieur",
-    "depuis": "2026-11-18T19:40:17Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
-    "7 Days to Die",
     "VALORANT",
+    "7 Days to Die",
     "Outbound",
     "Dice Hoarder",
     "Cinderia"
@@ -550,7 +544,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 6,
     "jeu": "VALORANT",
     "titre": "🔥 LIVE VALORANT : OBJECTIF SILVER AUJOURD'HUI ! 🥈 | ON VA CHERCHER CE RANK UP !",
     "depuis": "2026-11-18T21:10:20Z",
@@ -647,7 +641,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 11,
     "jeu": "Grand Theft Auto V",
     "titre": "On dit au revoir a GTA V & on lance GTA VI",
     "depuis": "2026-11-18T20:39:36Z",
@@ -924,13 +918,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 4,
-    "jeu": "Phasmophobia",
-    "titre": "PHASMOPHOBIA [FR] | Retour à la chasse à l'entité avec mes chasseuses préférée @kneline, @melzebuth_ & @manah_world 👻| !discord",
-    "depuis": "2026-11-18T18:50:21Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-10",
    "succes": [
     {
@@ -1046,9 +1034,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 16,
-    "jeu": "I got the ZOOMIES!!!!!!!!!!!!!!!!",
-    "titre": "On a des zoomies! Découverte de la démo!",
+    "viewers": 12,
+    "jeu": "Gently Packed",
+    "titre": "On découvre Gently Packed! Un jeu cosy de gestion/rangement! #gentlypacked #MadOctopus",
     "depuis": "2026-11-18T12:48:38Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1084,13 +1072,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": {
-    "viewers": 17,
-    "jeu": "Cyberpunk 2077",
-    "titre": "😈 PROJECT R - Session BETA TEST Cyberpunk RP 😈 !rpojectr !rs !discord",
-    "depuis": "2026-11-18T20:08:46Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-19",
    "succes": [
     {
@@ -1142,5 +1124,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-18T22:07:21.158Z"
+ "maj": "2026-11-18T23:07:19.869Z"
 }
