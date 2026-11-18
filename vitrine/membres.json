@@ -7,8 +7,8 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2373,
-  "followsGagnes30": 517,
+  "heuresLive30": 2379,
+  "followsGagnes30": 525,
   "periode": {
    "du": "2026-10-19",
    "au": "2026-11-18"
@@ -249,7 +249,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "FINAL FANTASY XIV ONLINE",
+    "titre": "[FF14 online/Endwalker] Non, ce n'est pas du GTA 6 ^^",
+    "depuis": "2026-11-18T18:53:02Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -308,7 +314,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 11,
+    "jeu": "Farming",
+    "titre": "🍃 Place à la campagne ! Découverte de Next Acre en avant-première 🚜",
+    "depuis": "2026-11-18T18:32:27Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
+   },
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
@@ -487,13 +499,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 18,
-    "jeu": "Art",
-    "titre": "✦ FAN ART ✦ Ocarina Of Time et notre corgi saucisse ! 🌭 | 🌟 Nv obj 500 follow ! | !artchallenges !liens",
-    "depuis": "2026-11-18T13:36:26Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -531,7 +537,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "VALORANT",
     "titre": "🔥 LIVE VALORANT : OBJECTIF SILVER AUJOURD'HUI ! 🥈 | ON VA CHERCHER CE RANK UP !",
     "depuis": "2026-11-18T14:32:49Z",
@@ -596,13 +602,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 17,
-    "jeu": "R.E.P.O.",
-    "titre": "🔞 Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
-    "depuis": "2026-11-18T16:45:42Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -834,13 +834,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 8,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "[FR] IT'S TIIIIIIIIME 🦜🏴‍☠️ Nouveau DLC à 15h, tellement hype 😍 | Coloriage Mystère | !discord !commandes",
-    "depuis": "2026-11-18T13:00:13Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -878,13 +872,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 7,
-    "jeu": "The Legend of Zelda: Ocarina of Time",
-    "titre": "[EP4] On joue de l'ocarina et on tape des vilains ! [!bs !fortune !insta !discord ]",
-    "depuis": "2026-11-18T16:59:46Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -917,7 +905,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Phasmophobia",
+    "titre": "PHASMOPHOBIA [FR] | Retour à la chasse à l'entité avec mes chasseuses préférée @kneline, @melzebuth_ & @manah_world 👻| !discord",
+    "depuis": "2026-11-18T18:50:21Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
+   },
    "premierStream": "2025-09-10",
    "succes": [
     {
@@ -1033,9 +1027,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 14,
-    "jeu": "Granny: Escape Together",
-    "titre": "Session tests avec @Galyssiane On s'échappe, mémé n'est pas contente! #grannyescapetogether #keymailer",
+    "viewers": 11,
+    "jeu": "Isles of Arcana",
+    "titre": "On découvre Isles of Arcana #islesofarcana #keymailer",
     "depuis": "2026-11-18T12:48:38Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1123,5 +1117,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-18T18:07:21.254Z"
+ "maj": "2026-11-18T19:07:19.441Z"
 }
