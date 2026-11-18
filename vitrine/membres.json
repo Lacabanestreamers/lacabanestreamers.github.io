@@ -7,10 +7,10 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2400,
-  "followsGagnes30": 525,
+  "heuresLive30": 2360,
+  "followsGagnes30": 516,
   "periode": {
-   "du": "2026-10-19",
+   "du": "2026-10-20",
    "au": "2026-11-18"
   }
  },
@@ -24,7 +24,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Rocket League",
+    "titre": "God of War 3 Remastered/PS4",
+    "depuis": "2026-11-18T22:02:22Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -51,7 +57,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
+    "viewers": 7,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🌙 DECOUVERTE du DLC 4!! Venez chill, rire et papoter avec nous 💜",
     "depuis": "2026-11-18T20:28:27Z",
@@ -102,13 +108,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-22",
-   "live": {
-    "viewers": 6,
-    "jeu": "The Witch's Bakery",
-    "titre": "Retour de la sorcière boulangère",
-    "depuis": "2026-11-18T19:56:51Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asalie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-07-27",
    "succes": [
     {
@@ -135,7 +135,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 8,
     "jeu": "VALORANT",
     "titre": "On grind le silver avec le tibifidus actif à l'intérieur mais ça ne se voit pas à l'extérieur",
     "depuis": "2026-11-18T19:40:17Z",
@@ -327,7 +327,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 7,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🗺️ Cap sur l'inconnu ! On découvre le DLC DDV 🌟",
     "depuis": "2026-11-18T18:32:27Z",
@@ -550,7 +550,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 2,
+    "viewers": 4,
     "jeu": "VALORANT",
     "titre": "🔥 LIVE VALORANT : OBJECTIF SILVER AUJOURD'HUI ! 🥈 | ON VA CHERCHER CE RANK UP !",
     "depuis": "2026-11-18T21:10:20Z",
@@ -647,9 +647,9 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
-    "jeu": "ROB RUN",
-    "titre": "GTA 6 se fait attendre… alors on part sur ROB RUN !",
+    "viewers": 7,
+    "jeu": "Grand Theft Auto V",
+    "titre": "On dit au revoir a GTA V & on lance GTA VI",
     "depuis": "2026-11-18T20:39:36Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
    },
@@ -925,7 +925,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 9,
+    "viewers": 4,
     "jeu": "Phasmophobia",
     "titre": "PHASMOPHOBIA [FR] | Retour à la chasse à l'entité avec mes chasseuses préférée @kneline, @melzebuth_ & @manah_world 👻| !discord",
     "depuis": "2026-11-18T18:50:21Z",
@@ -1046,9 +1046,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 10,
-    "jeu": "Games + Demos",
-    "titre": "La chaussette perdue simulateur 3000 #LostSockSimulator3000 #keymailer",
+    "viewers": 16,
+    "jeu": "I got the ZOOMIES!!!!!!!!!!!!!!!!",
+    "titre": "On a des zoomies! Découverte de la démo!",
     "depuis": "2026-11-18T12:48:38Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1085,7 +1085,7 @@
    "staff": false,
    "depuis": "2026-09-28",
    "live": {
-    "viewers": 11,
+    "viewers": 17,
     "jeu": "Cyberpunk 2077",
     "titre": "😈 PROJECT R - Session BETA TEST Cyberpunk RP 😈 !rpojectr !rs !discord",
     "depuis": "2026-11-18T20:08:46Z",
@@ -1142,5 +1142,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-18T21:20:17.030Z"
+ "maj": "2026-11-18T22:07:21.158Z"
 }
