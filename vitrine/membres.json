@@ -192,7 +192,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "Planet Zoo 2",
+    "titre": "🦒 Planet Zoo 2 : le zoo grandi , une étoile de plus ça serait top ! 🐘",
+    "depuis": "2026-11-18T10:49:50Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -249,13 +255,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": {
-    "viewers": 3,
-    "jeu": "FINAL FANTASY XIV ONLINE",
-    "titre": "[FF14 online/Endwalker] Coffee time sur Endwalker !",
-    "depuis": "2026-11-18T07:54:48Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -1100,13 +1100,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": {
-    "viewers": 11,
-    "jeu": "Coffee Talk: Episode 2 - Hibiscus & Butterfly",
-    "titre": "On retourne dans notre café #1 | !tiktok | !Discord | !clip |",
-    "depuis": "2026-11-18T07:50:37Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zeylta-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-01-31",
    "succes": [],
    "jeux": [
@@ -1132,5 +1126,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-18T10:08:16.221Z"
+ "maj": "2026-11-18T11:07:23.759Z"
 }
