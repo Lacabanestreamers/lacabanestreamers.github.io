@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 8,
-  "heuresLive30": 2353,
+  "heuresLive30": 2357,
   "followsGagnes30": 530,
   "periode": {
    "du": "2026-10-19",
@@ -250,7 +250,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 6,
+    "viewers": 3,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "[FF14 online/Endwalker] Coffee time sur Endwalker !",
     "depuis": "2026-11-18T07:54:48Z",
@@ -591,7 +591,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 12,
     "jeu": "FINAL FANTASY XVI",
     "titre": "🔞 Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-18T08:52:37Z",
@@ -847,19 +847,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "World of Warcraft",
-    "titre": "Salut tout le monde , je continue les quête !!!",
-    "depuis": "2026-11-18T07:08:57Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
     "American Truck Simulator",
-    "Disney Dreamlight Valley",
     "World of Warcraft",
+    "Disney Dreamlight Valley",
     "Euro Truck Simulator 2"
    ],
    "clip": null
@@ -1072,7 +1066,7 @@
    "login": "unoceandedouceur",
    "nom": "unoceandedouceur",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0dee2fe5-5fbe-4dbb-b3bf-4c1b75587740-profile_image-300x300.png",
-   "bio": "Salut à toutes et à tous, moi c'est Unoceandedouceur et ici tu trouveras principalement des jeux cosy. N'hésite pas à venir passer un petit moment de douceur avec moi :) Tout le monde est le/la bienvenue ici alors installe-toi 🎮Mail : unoceandedouceurpro@gmail.com",
+   "bio": "Salut à toutes et à tous, moi c'est Unoceandedouceur et ici tu trouveras principalement des jeux cosy. Tout le monde est le/la bienvenue ici alors installe-toi 🎮Mail : unoceandedouceurpro@gmail.com",
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-11-07",
@@ -1107,7 +1101,7 @@
    "staff": false,
    "depuis": "2026-10-14",
    "live": {
-    "viewers": 10,
+    "viewers": 11,
     "jeu": "Coffee Talk: Episode 2 - Hibiscus & Butterfly",
     "titre": "On retourne dans notre café #1 | !tiktok | !Discord | !clip |",
     "depuis": "2026-11-18T07:50:37Z",
@@ -1138,5 +1132,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-18T09:07:18.465Z"
+ "maj": "2026-11-18T10:07:21.075Z"
 }
