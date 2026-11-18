@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2391,
+  "heuresLive30": 2400,
   "followsGagnes30": 525,
   "periode": {
    "du": "2026-10-19",
@@ -61,9 +61,9 @@
    "succes": [],
    "jeux": [
     "Outbound",
+    "Disney Dreamlight Valley",
     "Just Chatting",
     "Silver Service",
-    "Disney Dreamlight Valley",
     "DEVOUR"
    ],
    "clip": null
@@ -103,7 +103,7 @@
    "staff": false,
    "depuis": "2026-09-22",
    "live": {
-    "viewers": 5,
+    "viewers": 6,
     "jeu": "The Witch's Bakery",
     "titre": "Retour de la sorcière boulangère",
     "depuis": "2026-11-18T19:56:51Z",
@@ -118,8 +118,8 @@
     }
    ],
    "jeux": [
-    "Outbound",
     "The Witch's Bakery",
+    "Outbound",
     "PICO PARK",
     "Slay the Spire II",
     "The Red Strings Club"
@@ -267,13 +267,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": {
-    "viewers": 3,
-    "jeu": "FINAL FANTASY XIV ONLINE",
-    "titre": "[FF14 online/Endwalker] Non, ce n'est pas du GTA 6 ^^",
-    "depuis": "2026-11-18T18:53:02Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -333,7 +327,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 3,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🗺️ Cap sur l'inconnu ! On découvre le DLC DDV 🌟",
     "depuis": "2026-11-18T18:32:27Z",
@@ -555,7 +549,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "VALORANT",
+    "titre": "🔥 LIVE VALORANT : OBJECTIF SILVER AUJOURD'HUI ! 🥈 | ON VA CHERCHER CE RANK UP !",
+    "depuis": "2026-11-18T21:10:20Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -925,7 +925,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 6,
+    "viewers": 9,
     "jeu": "Phasmophobia",
     "titre": "PHASMOPHOBIA [FR] | Retour à la chasse à l'entité avec mes chasseuses préférée @kneline, @melzebuth_ & @manah_world 👻| !discord",
     "depuis": "2026-11-18T18:50:21Z",
@@ -942,8 +942,8 @@
    "jeux": [
     "The Sims 4",
     "Terrible Lizards",
-    "R.E.P.O.",
     "Phasmophobia",
+    "R.E.P.O.",
     "Demonologist"
    ],
    "clip": null
@@ -1046,7 +1046,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 13,
+    "viewers": 10,
     "jeu": "Games + Demos",
     "titre": "La chaussette perdue simulateur 3000 #LostSockSimulator3000 #keymailer",
     "depuis": "2026-11-18T12:48:38Z",
@@ -1085,7 +1085,7 @@
    "staff": false,
    "depuis": "2026-09-28",
    "live": {
-    "viewers": 8,
+    "viewers": 11,
     "jeu": "Cyberpunk 2077",
     "titre": "😈 PROJECT R - Session BETA TEST Cyberpunk RP 😈 !rpojectr !rs !discord",
     "depuis": "2026-11-18T20:08:46Z",
@@ -1142,5 +1142,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-18T21:07:23.964Z"
+ "maj": "2026-11-18T21:20:17.030Z"
 }
