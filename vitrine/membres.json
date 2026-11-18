@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2363,
+  "heuresLive30": 2373,
   "followsGagnes30": 517,
   "periode": {
    "du": "2026-10-19",
@@ -333,13 +333,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": {
-    "viewers": 1,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "[FR] [DDV] 🌊🏝️ NOUVELLE MAJ DISNEY DREAMLIGHT VALLEY ! CAP SUR LA MER DES SOUVENIRS ! 🐚✨",
-    "depuis": "2026-11-18T16:24:52Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -364,13 +358,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 7,
-    "jeu": "World of Warcraft",
-    "titre": "[DROP] Le chaman drop sa 15eme Katherine la Pure ...",
-    "depuis": "2026-11-18T14:44:18Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galaadours-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2023-06-06",
    "succes": [],
    "jeux": [
@@ -397,13 +385,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 5,
-    "jeu": "Granny: Escape Together",
-    "titre": "Test de démos avec @sakkiel cet après midi! Venez trembler avec nous ! (!ttc !commandes) Clefs obtenues sur #Keymailer",
-    "depuis": "2026-11-18T12:50:09Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [],
    "jeux": [
@@ -447,13 +429,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 20,
-    "jeu": "R.E.P.O.",
-    "titre": "FR_VT - Les cosmétiques nous voilà",
-    "depuis": "2026-11-18T13:07:30Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -469,8 +445,8 @@
    ],
    "jeux": [
     "Minecraft",
-    "Valheim",
     "R.E.P.O.",
+    "Valheim",
     "Moon Sweepers",
     "Special Events"
    ],
@@ -512,7 +488,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 20,
+    "viewers": 18,
     "jeu": "Art",
     "titre": "✦ FAN ART ✦ Ocarina Of Time et notre corgi saucisse ! 🌭 | 🌟 Nv obj 500 follow ! | !artchallenges !liens",
     "depuis": "2026-11-18T13:36:26Z",
@@ -621,7 +597,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 17,
     "jeu": "R.E.P.O.",
     "titre": "🔞 Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-18T16:45:42Z",
@@ -643,8 +619,8 @@
    "jeux": [
     "Tomb Raider",
     "FINAL FANTASY XIV ONLINE",
-    "Special Events",
     "R.E.P.O.",
+    "Special Events",
     "Dead by Daylight"
    ],
    "clip": null
@@ -903,7 +879,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 7,
     "jeu": "The Legend of Zelda: Ocarina of Time",
     "titre": "[EP4] On joue de l'ocarina et on tape des vilains ! [!bs !fortune !insta !discord ]",
     "depuis": "2026-11-18T16:59:46Z",
@@ -1057,7 +1033,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 12,
+    "viewers": 14,
     "jeu": "Granny: Escape Together",
     "titre": "Session tests avec @Galyssiane On s'échappe, mémé n'est pas contente! #grannyescapetogether #keymailer",
     "depuis": "2026-11-18T12:48:38Z",
@@ -1147,5 +1123,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-18T17:07:26.290Z"
+ "maj": "2026-11-18T18:07:21.254Z"
 }
