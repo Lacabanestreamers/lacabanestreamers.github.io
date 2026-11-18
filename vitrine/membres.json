@@ -8,10 +8,10 @@
   "affilies": 41,
   "nouveaux30": 8,
   "heuresLive30": 2350,
-  "followsGagnes30": 525,
+  "followsGagnes30": 530,
   "periode": {
    "du": "2026-10-19",
-   "au": "2026-11-17"
+   "au": "2026-11-18"
   }
  },
  "agenda": [],
@@ -249,7 +249,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "FINAL FANTASY XIV ONLINE",
+    "titre": "[FF14 online/Endwalker] Coffee time sur Endwalker !",
+    "depuis": "2026-11-18T07:54:48Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -562,8 +568,8 @@
    ],
    "jeux": [
     "Dead Space 2",
-    "Makers & Crafting",
     "Little Nightmares II",
+    "Makers & Crafting",
     "Fall Guys",
     "Little Nightmares III"
    ],
@@ -835,15 +841,20 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "World of Warcraft",
+    "titre": "Salut tout le monde , je continue les quête !!!",
+    "depuis": "2026-11-18T07:08:57Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
     "American Truck Simulator",
     "Disney Dreamlight Valley",
     "World of Warcraft",
-    "Euro Truck Simulator 2",
-    "Project CARS"
+    "Euro Truck Simulator 2"
    ],
    "clip": null
   },
@@ -1089,7 +1100,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "Coffee Talk: Episode 2 - Hibiscus & Butterfly",
+    "titre": "On retourne dans notre café #1 | !tiktok | !Discord | !clip |",
+    "depuis": "2026-11-18T07:50:37Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_zeylta-440x248.jpg"
+   },
    "premierStream": "2026-01-31",
    "succes": [],
    "jeux": [
@@ -1115,5 +1132,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-18T03:07:20.616Z"
+ "maj": "2026-11-18T08:07:21.430Z"
 }
