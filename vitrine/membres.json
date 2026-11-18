@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2384,
+  "heuresLive30": 2391,
   "followsGagnes30": 525,
   "periode": {
    "du": "2026-10-19",
@@ -50,7 +50,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 13,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "🌙 DECOUVERTE du DLC 4!! Venez chill, rire et papoter avec nous 💜",
+    "depuis": "2026-11-18T20:28:27Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
+   },
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -97,7 +103,7 @@
    "staff": false,
    "depuis": "2026-09-22",
    "live": {
-    "viewers": 3,
+    "viewers": 5,
     "jeu": "The Witch's Bakery",
     "titre": "Retour de la sorcière boulangère",
     "depuis": "2026-11-18T19:56:51Z",
@@ -129,7 +135,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
+    "viewers": 10,
     "jeu": "VALORANT",
     "titre": "On grind le silver avec le tibifidus actif à l'intérieur mais ça ne se voit pas à l'extérieur",
     "depuis": "2026-11-18T19:40:17Z",
@@ -277,8 +283,8 @@
     }
    ],
    "jeux": [
-    "Warframe",
     "FINAL FANTASY XIV ONLINE",
+    "Warframe",
     "Lies of P",
     "Wuthering Waves",
     "Aniimo"
@@ -327,9 +333,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
-    "jeu": "Farming",
-    "titre": "🍃 Place à la campagne ! Découverte de Next Acre en avant-première 🚜",
+    "viewers": 7,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "🗺️ Cap sur l'inconnu ! On découvre le DLC DDV 🌟",
     "depuis": "2026-11-18T18:32:27Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
    },
@@ -640,7 +646,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "ROB RUN",
+    "titre": "GTA 6 se fait attendre… alors on part sur ROB RUN !",
+    "depuis": "2026-11-18T20:39:36Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
+   },
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -913,7 +925,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 5,
+    "viewers": 6,
     "jeu": "Phasmophobia",
     "titre": "PHASMOPHOBIA [FR] | Retour à la chasse à l'entité avec mes chasseuses préférée @kneline, @melzebuth_ & @manah_world 👻| !discord",
     "depuis": "2026-11-18T18:50:21Z",
@@ -931,8 +943,8 @@
     "The Sims 4",
     "Terrible Lizards",
     "R.E.P.O.",
-    "Demonologist",
-    "Hozy"
+    "Phasmophobia",
+    "Demonologist"
    ],
    "clip": null
   },
@@ -996,13 +1008,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": {
-    "viewers": 2,
-    "jeu": "TV Archive: Tidy Up Together",
-    "titre": "TV Archive on range les VHS",
-    "depuis": "2026-11-18T19:49:03Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -1040,9 +1046,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 18,
-    "jeu": "Isles of Arcana",
-    "titre": "On découvre Isles of Arcana #islesofarcana #keymailer",
+    "viewers": 13,
+    "jeu": "Games + Demos",
+    "titre": "La chaussette perdue simulateur 3000 #LostSockSimulator3000 #keymailer",
     "depuis": "2026-11-18T12:48:38Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1078,7 +1084,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "Cyberpunk 2077",
+    "titre": "😈 PROJECT R - Session BETA TEST Cyberpunk RP 😈 !rpojectr !rs !discord",
+    "depuis": "2026-11-18T20:08:46Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
+   },
    "premierStream": "2025-01-19",
    "succes": [
     {
@@ -1130,5 +1142,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-18T20:07:20.002Z"
+ "maj": "2026-11-18T21:07:23.964Z"
 }
