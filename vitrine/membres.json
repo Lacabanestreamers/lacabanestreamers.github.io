@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2415,
+  "heuresLive30": 2419,
   "followsGagnes30": 536,
   "periode": {
    "du": "2026-10-20",
@@ -354,7 +354,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "Just Chatting",
     "titre": "On s'organise pour la suite ! Et on discute :D",
     "depuis": "2026-11-19T14:55:53Z",
@@ -594,7 +594,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 15,
+    "viewers": 9,
     "jeu": "R.E.P.O.",
     "titre": "🔞 Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-19T12:46:01Z",
@@ -638,7 +638,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "Grand Theft Auto VI",
     "titre": "🔞 GTA 6 | DROP ACTIVÉ 💥 DU CHAOS, DU FUN ET DU -18 ! 😈",
     "depuis": "2026-11-19T09:34:40Z",
@@ -656,8 +656,8 @@
     "Call of Duty: Modern Warfare 4",
     "Special Events",
     "Rocket League",
-    "ROB RUN",
-    "Grand Theft Auto VI"
+    "Grand Theft Auto VI",
+    "ROB RUN"
    ],
    "clip": {
     "url": "https://www.twitch.tv/luffishgaming/clip/HeadstrongTenderClintBibleThump--MnnuQWSXbdNtBBm",
@@ -844,7 +844,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "[FR] SOUS L'OCEAN 🧜🏻🐠 Je continue la découverte | Disney Dreamlight Valley | !discord !commandes",
+    "depuis": "2026-11-19T17:00:11Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
+   },
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -1031,7 +1037,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 14,
+    "viewers": 11,
     "jeu": "Grand Theft Auto VI",
     "titre": "Vraiment? On en est là?",
     "depuis": "2026-11-19T12:39:59Z",
@@ -1126,5 +1132,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-19T16:07:19.939Z"
+ "maj": "2026-11-19T17:07:23.015Z"
 }
