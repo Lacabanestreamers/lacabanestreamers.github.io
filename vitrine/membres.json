@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2419,
+  "heuresLive30": 2424,
   "followsGagnes30": 536,
   "periode": {
    "du": "2026-10-20",
@@ -276,7 +276,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "The Survivalists",
+    "titre": "🏝The Survivalists ~ On continue notre survie ! - !réseaux",
+    "depuis": "2026-11-19T18:03:05Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -353,13 +359,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 7,
-    "jeu": "Just Chatting",
-    "titre": "On s'organise pour la suite ! Et on discute :D",
-    "depuis": "2026-11-19T14:55:53Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galaadours-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2023-06-06",
    "succes": [],
    "jeux": [
@@ -594,7 +594,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 13,
     "jeu": "R.E.P.O.",
     "titre": "🔞 Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-19T12:46:01Z",
@@ -638,7 +638,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 4,
     "jeu": "Grand Theft Auto VI",
     "titre": "🔞 GTA 6 | DROP ACTIVÉ 💥 DU CHAOS, DU FUN ET DU -18 ! 😈",
     "depuis": "2026-11-19T09:34:40Z",
@@ -655,8 +655,8 @@
    "jeux": [
     "Call of Duty: Modern Warfare 4",
     "Special Events",
-    "Rocket League",
     "Grand Theft Auto VI",
+    "Rocket League",
     "ROB RUN"
    ],
    "clip": {
@@ -845,7 +845,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 10,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] SOUS L'OCEAN 🧜🏻🐠 Je continue la découverte | Disney Dreamlight Valley | !discord !commandes",
     "depuis": "2026-11-19T17:00:11Z",
@@ -1037,7 +1037,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 11,
+    "viewers": 13,
     "jeu": "Grand Theft Auto VI",
     "titre": "Vraiment? On en est là?",
     "depuis": "2026-11-19T12:39:59Z",
@@ -1056,7 +1056,7 @@
     "Space Savory",
     "The Transference",
     "Just Chatting",
-    "Photomaly"
+    "Grand Theft Auto VI"
    ],
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/ArborealAdventurousScallionCoolCat-MG_fjYzr6aoJ1q-c",
@@ -1132,5 +1132,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-19T17:07:23.015Z"
+ "maj": "2026-11-19T18:07:24.926Z"
 }
