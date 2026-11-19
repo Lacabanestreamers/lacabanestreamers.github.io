@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2399,
+  "heuresLive30": 2401,
   "followsGagnes30": 536,
   "periode": {
    "du": "2026-10-20",
@@ -414,7 +414,7 @@
    "staff": false,
    "depuis": "2026-10-11",
    "live": {
-    "viewers": 13,
+    "viewers": 17,
     "jeu": "Cyberpunk 2077",
     "titre": "De retour in la Cité de la Night 🦾🔫 je sais plus jouer ça va être long (comme ce titre)",
     "depuis": "2026-11-19T09:44:14Z",
@@ -600,7 +600,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 2,
+    "viewers": 10,
     "jeu": "Just Chatting",
     "titre": "🔞 KITSUNE BAZAR SHOW LE RDV A NE PAS MANQUER !!!Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-19T12:46:01Z",
@@ -644,7 +644,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 15,
+    "viewers": 7,
     "jeu": "Grand Theft Auto VI",
     "titre": "🔞 GTA 6 | DROP ACTIVÉ 💥 DU CHAOS, DU FUN ET DU -18 ! 😈",
     "depuis": "2026-11-19T09:34:40Z",
@@ -1037,7 +1037,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "Grand Theft Auto VI",
     "titre": "Vraiment? On en est là?",
     "depuis": "2026-11-19T12:39:59Z",
@@ -1132,5 +1132,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-19T12:50:18.800Z"
+ "maj": "2026-11-19T13:07:26.973Z"
 }
