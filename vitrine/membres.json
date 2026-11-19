@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2388,
+  "heuresLive30": 2393,
   "followsGagnes30": 534,
   "periode": {
    "du": "2026-10-20",
@@ -243,7 +243,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 7,
+    "viewers": 8,
     "jeu": "Warframe",
     "titre": "[Warframe](MR27) It's plats time !",
     "depuis": "2026-11-19T08:48:57Z",
@@ -258,8 +258,8 @@
     }
    ],
    "jeux": [
-    "FINAL FANTASY XIV ONLINE",
     "Warframe",
+    "FINAL FANTASY XIV ONLINE",
     "Lies of P",
     "Wuthering Waves",
     "Aniimo"
@@ -413,7 +413,7 @@
    "staff": false,
    "depuis": "2026-10-11",
    "live": {
-    "viewers": 7,
+    "viewers": 8,
     "jeu": "Cyberpunk 2077",
     "titre": "De retour in la Cité de la Night 🦾🔫 je sais plus jouer ça va être long (comme ce titre)",
     "depuis": "2026-11-19T09:44:14Z",
@@ -423,7 +423,8 @@
    "succes": [],
    "jeux": [
     "Dressmaker (2026)",
-    "Games + Demos"
+    "Games + Demos",
+    "Cyberpunk 2077"
    ],
    "clip": null
   },
@@ -597,13 +598,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 16,
-    "jeu": "FINAL FANTASY XIV ONLINE",
-    "titre": "🔞 Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
-    "depuis": "2026-11-19T09:30:14Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -618,8 +613,8 @@
     }
    ],
    "jeux": [
-    "Tomb Raider",
     "FINAL FANTASY XIV ONLINE",
+    "Tomb Raider",
     "R.E.P.O.",
     "Special Events",
     "Dead by Daylight"
@@ -642,7 +637,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 14,
     "jeu": "Grand Theft Auto VI",
     "titre": "🔞 GTA 6 | DROP ACTIVÉ 💥 DU CHAOS, DU FUN ET DU -18 ! 😈",
     "depuis": "2026-11-19T09:34:40Z",
@@ -801,13 +796,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 3,
-    "jeu": "Minecraft",
-    "titre": "Petit live chill sur Minecraft",
-    "depuis": "2026-11-19T07:45:11Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -1130,5 +1119,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-19T10:07:24.905Z"
+ "maj": "2026-11-19T11:07:25.097Z"
 }
