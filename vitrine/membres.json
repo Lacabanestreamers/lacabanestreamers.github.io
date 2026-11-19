@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2375,
+  "heuresLive30": 2379,
   "followsGagnes30": 516,
   "periode": {
    "du": "2026-10-20",
@@ -57,7 +57,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 13,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🌙 DECOUVERTE du DLC 4!! Venez chill, rire et papoter avec nous 💜",
     "depuis": "2026-11-18T20:28:27Z",
@@ -321,7 +321,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 6,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🗺️ Cap sur l'inconnu ! On découvre le DLC DDV 🌟",
     "depuis": "2026-11-18T18:32:27Z",
@@ -634,13 +634,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 8,
-    "jeu": "Grand Theft Auto V",
-    "titre": "On dit au revoir a GTA V & on lance GTA VI",
-    "depuis": "2026-11-18T20:39:36Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -1112,5 +1106,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-19T00:07:19.778Z"
+ "maj": "2026-11-19T01:07:19.840Z"
 }
