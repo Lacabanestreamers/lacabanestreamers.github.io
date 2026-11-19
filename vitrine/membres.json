@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2379,
+  "heuresLive30": 2382,
   "followsGagnes30": 516,
   "periode": {
    "du": "2026-10-20",
@@ -25,10 +25,10 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 8,
-    "jeu": "Rocket League",
-    "titre": "Rocket League /PS5",
-    "depuis": "2026-11-18T22:38:55Z",
+    "viewers": 6,
+    "jeu": "God of War III: Remastered",
+    "titre": "God of War Remastered /PS4",
+    "depuis": "2026-11-19T01:10:01Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
    },
    "premierStream": null,
@@ -56,13 +56,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 13,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "🌙 DECOUVERTE du DLC 4!! Venez chill, rire et papoter avec nous 💜",
-    "depuis": "2026-11-18T20:28:27Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-03-29",
    "succes": [],
    "jeux": [
@@ -92,10 +86,10 @@
     "Demonologist"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/asakha/clip/GloriousSaltyFriesBCouch-phGFXxlfP0pQ_f5L",
+    "url": "https://www.twitch.tv/asakha/clip/SolidDignifiedAirGuitarRiPepperonis-I_DiP4P7_y8zpOUS",
     "titre": "💀 Objectif : identifier le fantôme. Bonus : ressortir vivants. | Demonologist avec @Galyssiane | ❗c",
-    "vues": 2,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/c484bc68-b554-4ea6-a7a6-49e756e8095d/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "vues": 4,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/25bb9eca-a0d7-46fe-8c7e-183bb91c6c11/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-17",
     "duree": 30
    }
@@ -145,12 +139,12 @@
     "Cinderia"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/aulit42369/clip/ColdbloodedAlertTroutStinkyCheese-xD15UVmOzCGU21Qc",
-    "titre": "Allons ranger des dés ce soir, on est en mode chill",
+    "url": "https://www.twitch.tv/aulit42369/clip/SweetFantasticHorseradishCclamChamp-tWN8pqvkEGr5BjVJ",
+    "titre": "WzBot CLIP | Allons ranger des dés ce soir, on est en mode chill (by chezelodie)",
     "vues": 4,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/916e1e7f-2dc6-4f62-83e5-481c673b90cc/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/5ba5bd22-5fac-4614-b93c-997db738fded/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-14",
-    "duree": 30
+    "duree": 60
    }
   },
   {
@@ -170,14 +164,7 @@
     "Dressmaker (2026)",
     "Stardew Valley"
    ],
-   "clip": {
-    "url": "https://www.twitch.tv/bichoune_/clip/CheerfulBillowingGnatBrokeBack-kwF6rHAkXxG4U4uY",
-    "titre": "Le banger qu'on à fait ici",
-    "vues": 1,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/dd920c7a-2515-4a38-b25a-d277817f274d/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-11",
-    "duree": 39
-   }
+   "clip": null
   },
   {
    "login": "brastentv",
@@ -231,11 +218,11 @@
     "Dispatch"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/chezelodie/clip/IntelligentIgnorantFennelSquadGoals-8NmWAfWsEFYyACv1",
-    "titre": "WzBot CLIP | 🗳️ DISPATCH | On concrétise avec invisimeuf ? La fin ce soir ?  👀 (by aemeilis)",
-    "vues": 4,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/318029c7-7b2f-4ac5-b080-9d01835a041e/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-15",
+    "url": "https://www.twitch.tv/chezelodie/clip/ViscousAuspiciousSoybeanTwitchRaid-i0jigR8d73uvxPv1",
+    "titre": "WzBot CLIP | 🦒 Planet Zoo 2 : le zoo grandi , une étoile de plus ça serait top ! ? (by aulit42369)",
+    "vues": 6,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b9c5b34f-efbf-465e-81a3-c9b56bc43960/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-18",
     "duree": 60
    }
   },
@@ -320,13 +307,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 6,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "🗺️ Cap sur l'inconnu ! On découvre le DLC DDV 🌟",
-    "depuis": "2026-11-18T18:32:27Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
@@ -417,7 +398,7 @@
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/CooperativeZealousOstrichGingerPower-DIumfVqvanvHzevs",
     "titre": "WzBot CLIP | Photomaly , la suite ! Des photos, et du flip ! Venez me rejoindre pour dé (by galyssia",
-    "vues": 9,
+    "vues": 10,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/14272e52-68bb-422e-a80c-87f9a44c4f70/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-16",
     "duree": 60
@@ -513,7 +494,14 @@
     "Art",
     "Just Chatting"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/kristal_et_ses_ac/clip/GentleBitterQuailStinkyCheese-Jesa54ikAOow1cDS",
+    "titre": "Annonce d'enlèvement de la productivité de BAKA",
+    "vues": 5,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e7e23a62-d4fc-42f6-b7e4-67d063d7ac4d/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-18",
+    "duree": 20
+   }
   },
   {
    "login": "laelya_",
@@ -589,7 +577,7 @@
    "clip": {
     "url": "https://www.twitch.tv/liiapin/clip/AffluentDeafKumquatYouDontSay--qNBy-QrPP6aOAJy",
     "titre": "Clip by inStreamly",
-    "vues": 3,
+    "vues": 4,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/107a6096-0021-44b5-a9cb-2356c09b447d/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-15",
     "duree": 26
@@ -624,7 +612,14 @@
     "Special Events",
     "Dead by Daylight"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/lilyth_minerva/clip/SpotlessRepletePepperSaltBae-t7BVrcm28auOa6m3",
+    "titre": "🔞 Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "vues": 6,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6cefc760-b190-41da-887c-f82ea7acf176/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-18",
+    "duree": 30
+   }
   },
   {
    "login": "luffishgaming",
@@ -721,7 +716,7 @@
    "clip": {
     "url": "https://www.twitch.tv/mandouee/clip/AliveChillySnailWOOP-NffJHxh_Xm5Zve7-",
     "titre": "J'respire la joie de vivre !",
-    "vues": 2,
+    "vues": 3,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/c6869bf3-9ef0-494a-b2d8-23cca5e1be97/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-12",
     "duree": 21
@@ -821,7 +816,7 @@
    "clip": {
     "url": "https://www.twitch.tv/mysti94/clip/AnnoyingNiceMageKappa-CRiFHcBm0uj6KgtH",
     "titre": "Train de la Hype Niv 11 - Merci à Baylor !",
-    "vues": 6,
+    "vues": 7,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/37c0abeb-9356-4d3b-abb4-71e429f2b1bc/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-13",
     "duree": 33
@@ -1106,5 +1101,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-19T01:07:19.840Z"
+ "maj": "2026-11-19T02:07:42.213Z"
 }
