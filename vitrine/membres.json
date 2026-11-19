@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2434,
+  "heuresLive30": 2441,
   "followsGagnes30": 542,
   "periode": {
    "du": "2026-10-20",
@@ -51,7 +51,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
+    "viewers": 11,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🌙 On continue la découverte du DLC 4 !! Venez chill, rire et papoter 💜",
     "depuis": "2026-11-19T19:27:02Z",
@@ -128,13 +128,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 12,
-    "jeu": "StarRupture",
-    "titre": "Construction de base et gros tatanage d'aliens en escouade sur Starrupture ! 💀",
-    "depuis": "2026-11-19T19:54:37Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -288,13 +282,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 3,
-    "jeu": "The Survivalists",
-    "titre": "🏝The Survivalists ~ On continue notre survie ! - !réseaux",
-    "depuis": "2026-11-19T18:03:05Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -431,7 +419,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-11",
-   "live": null,
+   "live": {
+    "viewers": 12,
+    "jeu": "StarRupture",
+    "titre": "Ca lag chez @aulit42369 alors je fais une exception :p",
+    "depuis": "2026-11-19T20:18:02Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hagosan-440x248.jpg"
+   },
    "premierStream": "2023-07-10",
    "succes": [],
    "jeux": [
@@ -697,7 +691,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 12,
+    "viewers": 4,
     "jeu": "Phasmophobia",
     "titre": "Prof Lylu le retour ! PHASMOPHOBIA - !lurk !discord ft @sahaku__ @br3akingmam",
     "depuis": "2026-11-19T19:28:05Z",
@@ -783,7 +777,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 6,
+    "viewers": 5,
     "jeu": "Poppy Playtime: Chapter 4 - Safe Haven",
     "titre": "SOIREE HORREUR ! Sur Poppy Playtime 4... Cap de faire les 150 FOLLOWS????  !discord !regles !don",
     "depuis": "2026-11-19T19:05:11Z",
@@ -862,13 +856,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 11,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "[FR] SOUS L'OCEAN 🧜🏻🐠 Je continue la découverte | Disney Dreamlight Valley | !discord !commandes",
-    "depuis": "2026-11-19T17:00:11Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -1055,7 +1043,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 13,
+    "viewers": 9,
     "jeu": "Grand Theft Auto VI",
     "titre": "Vraiment? On en est là?",
     "depuis": "2026-11-19T12:39:59Z",
@@ -1150,5 +1138,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-19T20:07:19.513Z"
+ "maj": "2026-11-19T21:07:26.408Z"
 }
