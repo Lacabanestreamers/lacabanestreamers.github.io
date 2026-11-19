@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2383,
+  "heuresLive30": 2385,
   "followsGagnes30": 534,
   "periode": {
    "du": "2026-10-20",
@@ -242,7 +242,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Warframe",
+    "titre": "[Warframe](MR27) It's plats time !",
+    "depuis": "2026-11-19T08:48:57Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -778,7 +784,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Minecraft",
     "titre": "Petit live chill sur Minecraft",
     "depuis": "2026-11-19T07:45:11Z",
@@ -789,8 +795,8 @@
    "jeux": [
     "Just Chatting",
     "Rocket League",
-    "Fall Guys",
     "Minecraft",
+    "Fall Guys",
     "Apex Legends"
    ],
    "clip": null
@@ -850,7 +856,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "World of Warcraft",
     "titre": "Salut tout le monde , je continue les quête !!!",
     "depuis": "2026-11-19T07:30:25Z",
@@ -1112,5 +1118,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-19T08:07:19.566Z"
+ "maj": "2026-11-19T09:07:20.118Z"
 }
