@@ -7,8 +7,8 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2393,
-  "followsGagnes30": 534,
+  "heuresLive30": 2396,
+  "followsGagnes30": 536,
   "periode": {
    "du": "2026-10-20",
    "au": "2026-11-19"
@@ -149,7 +149,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "🌟DISNEY DREAMLIGHT VALLEY • On découvre le nouveau dlc the keepsake sea + Quête / visite de vallée • 3💗",
+    "depuis": "2026-11-19T11:52:03Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bichoune_-440x248.jpg"
+   },
    "premierStream": "2025-10-04",
    "succes": [],
    "jeux": [
@@ -242,13 +248,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": {
-    "viewers": 8,
-    "jeu": "Warframe",
-    "titre": "[Warframe](MR27) It's plats time !",
-    "depuis": "2026-11-19T08:48:57Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -413,7 +413,7 @@
    "staff": false,
    "depuis": "2026-10-11",
    "live": {
-    "viewers": 8,
+    "viewers": 14,
     "jeu": "Cyberpunk 2077",
     "titre": "De retour in la Cité de la Night 🦾🔫 je sais plus jouer ça va être long (comme ce titre)",
     "depuis": "2026-11-19T09:44:14Z",
@@ -637,7 +637,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 14,
+    "viewers": 6,
     "jeu": "Grand Theft Auto VI",
     "titre": "🔞 GTA 6 | DROP ACTIVÉ 💥 DU CHAOS, DU FUN ET DU -18 ! 😈",
     "depuis": "2026-11-19T09:34:40Z",
@@ -1119,5 +1119,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-19T11:07:25.097Z"
+ "maj": "2026-11-19T12:07:21.084Z"
 }
