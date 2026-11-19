@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2441,
+  "heuresLive30": 2446,
   "followsGagnes30": 542,
   "periode": {
    "du": "2026-10-20",
@@ -420,7 +420,7 @@
    "staff": false,
    "depuis": "2026-10-11",
    "live": {
-    "viewers": 12,
+    "viewers": 11,
     "jeu": "StarRupture",
     "titre": "Ca lag chez @aulit42369 alors je fais une exception :p",
     "depuis": "2026-11-19T20:18:02Z",
@@ -431,7 +431,8 @@
    "jeux": [
     "Dressmaker (2026)",
     "Games + Demos",
-    "Cyberpunk 2077"
+    "Cyberpunk 2077",
+    "StarRupture"
    ],
    "clip": null
   },
@@ -691,7 +692,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 7,
     "jeu": "Phasmophobia",
     "titre": "Prof Lylu le retour ! PHASMOPHOBIA - !lurk !discord ft @sahaku__ @br3akingmam",
     "depuis": "2026-11-19T19:28:05Z",
@@ -1043,7 +1044,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 9,
+    "viewers": 8,
     "jeu": "Grand Theft Auto VI",
     "titre": "Vraiment? On en est là?",
     "depuis": "2026-11-19T12:39:59Z",
@@ -1138,5 +1139,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-19T21:07:26.408Z"
+ "maj": "2026-11-19T21:23:06.140Z"
 }
