@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2385,
+  "heuresLive30": 2388,
   "followsGagnes30": 534,
   "periode": {
    "du": "2026-10-20",
@@ -243,7 +243,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "Warframe",
     "titre": "[Warframe](MR27) It's plats time !",
     "depuis": "2026-11-19T08:48:57Z",
@@ -412,7 +412,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-11",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "Cyberpunk 2077",
+    "titre": "De retour in la Cité de la Night 🦾🔫 je sais plus jouer ça va être long (comme ce titre)",
+    "depuis": "2026-11-19T09:44:14Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hagosan-440x248.jpg"
+   },
    "premierStream": "2023-07-10",
    "succes": [],
    "jeux": [
@@ -591,7 +597,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 16,
+    "jeu": "FINAL FANTASY XIV ONLINE",
+    "titre": "🔞 Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-19T09:30:14Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -629,7 +641,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Grand Theft Auto VI",
+    "titre": "🔞 GTA 6 | DROP ACTIVÉ 💥 DU CHAOS, DU FUN ET DU -18 ! 😈",
+    "depuis": "2026-11-19T09:34:40Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
+   },
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -855,13 +873,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "World of Warcraft",
-    "titre": "Salut tout le monde , je continue les quête !!!",
-    "depuis": "2026-11-19T07:30:25Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1118,5 +1130,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-19T09:07:20.118Z"
+ "maj": "2026-11-19T10:07:24.905Z"
 }
