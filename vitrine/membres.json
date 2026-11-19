@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2401,
+  "heuresLive30": 2406,
   "followsGagnes30": 536,
   "periode": {
    "du": "2026-10-20",
@@ -162,8 +162,8 @@
     "Mazebound: Hunt, Gather, Run!",
     "Pokémon Mystery Dungeon: Explorers of Sky",
     "Dressmaker (2026)",
-    "Stardew Valley",
-    "Disney Dreamlight Valley"
+    "Disney Dreamlight Valley",
+    "Stardew Valley"
    ],
    "clip": null
   },
@@ -413,13 +413,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-11",
-   "live": {
-    "viewers": 17,
-    "jeu": "Cyberpunk 2077",
-    "titre": "De retour in la Cité de la Night 🦾🔫 je sais plus jouer ça va être long (comme ce titre)",
-    "depuis": "2026-11-19T09:44:14Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hagosan-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2023-07-10",
    "succes": [],
    "jeux": [
@@ -600,7 +594,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 12,
     "jeu": "Just Chatting",
     "titre": "🔞 KITSUNE BAZAR SHOW LE RDV A NE PAS MANQUER !!!Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-19T12:46:01Z",
@@ -644,7 +638,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "Grand Theft Auto VI",
     "titre": "🔞 GTA 6 | DROP ACTIVÉ 💥 DU CHAOS, DU FUN ET DU -18 ! 😈",
     "depuis": "2026-11-19T09:34:40Z",
@@ -663,7 +657,7 @@
     "Special Events",
     "Rocket League",
     "ROB RUN",
-    "Dune: Awakening"
+    "Grand Theft Auto VI"
    ],
    "clip": {
     "url": "https://www.twitch.tv/luffishgaming/clip/HeadstrongTenderClintBibleThump--MnnuQWSXbdNtBBm",
@@ -1037,7 +1031,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 7,
+    "viewers": 16,
     "jeu": "Grand Theft Auto VI",
     "titre": "Vraiment? On en est là?",
     "depuis": "2026-11-19T12:39:59Z",
@@ -1132,5 +1126,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-19T13:07:26.973Z"
+ "maj": "2026-11-19T14:07:18.472Z"
 }
