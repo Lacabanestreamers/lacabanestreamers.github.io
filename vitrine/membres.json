@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2382,
+  "heuresLive30": 2383,
   "followsGagnes30": 516,
   "periode": {
    "du": "2026-10-20",
@@ -24,13 +24,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": {
-    "viewers": 6,
-    "jeu": "God of War III: Remastered",
-    "titre": "God of War Remastered /PS4",
-    "depuis": "2026-11-19T01:10:01Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1101,5 +1095,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-19T02:07:42.213Z"
+ "maj": "2026-11-19T03:07:17.499Z"
 }
