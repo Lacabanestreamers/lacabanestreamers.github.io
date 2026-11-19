@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 8,
-  "heuresLive30": 2396,
+  "heuresLive30": 2399,
   "followsGagnes30": 536,
   "periode": {
    "du": "2026-10-20",
@@ -150,7 +150,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🌟DISNEY DREAMLIGHT VALLEY • On découvre le nouveau dlc the keepsake sea + Quête / visite de vallée • 3💗",
     "depuis": "2026-11-19T11:52:03Z",
@@ -162,7 +162,8 @@
     "Mazebound: Hunt, Gather, Run!",
     "Pokémon Mystery Dungeon: Explorers of Sky",
     "Dressmaker (2026)",
-    "Stardew Valley"
+    "Stardew Valley",
+    "Disney Dreamlight Valley"
    ],
    "clip": null
   },
@@ -413,7 +414,7 @@
    "staff": false,
    "depuis": "2026-10-11",
    "live": {
-    "viewers": 14,
+    "viewers": 13,
     "jeu": "Cyberpunk 2077",
     "titre": "De retour in la Cité de la Night 🦾🔫 je sais plus jouer ça va être long (comme ce titre)",
     "depuis": "2026-11-19T09:44:14Z",
@@ -598,7 +599,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Just Chatting",
+    "titre": "🔞 KITSUNE BAZAR SHOW LE RDV A NE PAS MANQUER !!!Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-19T12:46:01Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -637,7 +644,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 15,
     "jeu": "Grand Theft Auto VI",
     "titre": "🔞 GTA 6 | DROP ACTIVÉ 💥 DU CHAOS, DU FUN ET DU -18 ! 😈",
     "depuis": "2026-11-19T09:34:40Z",
@@ -1029,7 +1036,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Grand Theft Auto VI",
+    "titre": "Vraiment? On en est là?",
+    "depuis": "2026-11-19T12:39:59Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [
     {
@@ -1119,5 +1132,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-19T12:07:21.084Z"
+ "maj": "2026-11-19T12:50:18.800Z"
 }
