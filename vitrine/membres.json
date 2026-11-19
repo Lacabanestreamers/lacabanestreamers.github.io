@@ -6,11 +6,11 @@
  "chiffres": {
   "membres": 44,
   "affilies": 40,
-  "nouveaux30": 8,
-  "heuresLive30": 2446,
-  "followsGagnes30": 542,
+  "nouveaux30": 7,
+  "heuresLive30": 2360,
+  "followsGagnes30": 516,
   "periode": {
-   "du": "2026-10-20",
+   "du": "2026-10-21",
    "au": "2026-11-19"
   }
  },
@@ -51,7 +51,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 13,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🌙 On continue la découverte du DLC 4 !! Venez chill, rire et papoter 💜",
     "depuis": "2026-11-19T19:27:02Z",
@@ -420,7 +420,7 @@
    "staff": false,
    "depuis": "2026-10-11",
    "live": {
-    "viewers": 11,
+    "viewers": 9,
     "jeu": "StarRupture",
     "titre": "Ca lag chez @aulit42369 alors je fais une exception :p",
     "depuis": "2026-11-19T20:18:02Z",
@@ -778,7 +778,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "Poppy Playtime: Chapter 4 - Safe Haven",
     "titre": "SOIREE HORREUR ! Sur Poppy Playtime 4... Cap de faire les 150 FOLLOWS????  !discord !regles !don",
     "depuis": "2026-11-19T19:05:11Z",
@@ -1044,7 +1044,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 8,
+    "viewers": 11,
     "jeu": "Grand Theft Auto VI",
     "titre": "Vraiment? On en est là?",
     "depuis": "2026-11-19T12:39:59Z",
@@ -1139,5 +1139,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-19T21:23:06.140Z"
+ "maj": "2026-11-19T22:07:13.163Z"
 }
