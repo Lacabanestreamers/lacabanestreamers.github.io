@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 7,
-  "heuresLive30": 2365,
+  "heuresLive30": 2367,
   "followsGagnes30": 516,
   "periode": {
    "du": "2026-10-21",
@@ -51,7 +51,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 18,
+    "viewers": 19,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🌙 On continue la découverte du DLC 4 !! Venez chill, rire et papoter 💜",
     "depuis": "2026-11-19T19:27:02Z",
@@ -1026,7 +1026,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 14,
+    "viewers": 8,
     "jeu": "Grand Theft Auto VI",
     "titre": "Vraiment? On en est là?",
     "depuis": "2026-11-19T12:39:59Z",
@@ -1121,5 +1121,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-19T23:07:16.605Z"
+ "maj": "2026-11-20T00:07:22.578Z"
 }
