@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 7,
-  "heuresLive30": 2393,
+  "heuresLive30": 2397,
   "followsGagnes30": 527,
   "periode": {
    "du": "2026-10-21",
@@ -129,7 +129,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 22,
+    "viewers": 16,
     "jeu": "Once Human",
     "titre": "L'apocalypse en solo sur Once Human : zéro mates pour me carry, 100% de chances de finir en pâtée 💀",
     "depuis": "2026-11-20T09:14:10Z",
@@ -205,13 +205,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 12,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "🏴‍☠️ Sirènes, pirates et chaos : découverte de The Keepsake Sea 😄",
-    "depuis": "2026-11-20T11:14:02Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -235,7 +229,7 @@
     "Planet Zoo 2",
     "The Sims 4",
     "Dispatch",
-    "Just Chatting"
+    "Disney Dreamlight Valley"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/ViscousAuspiciousSoybeanTwitchRaid-i0jigR8d73uvxPv1",
@@ -464,7 +458,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Fire Emblem: Fortune's Weave",
+    "titre": "FR_VT - Toujours accro? MOI ???",
+    "depuis": "2026-11-20T14:02:10Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -619,7 +619,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 13,
+    "jeu": "R.E.P.O.",
+    "titre": "🔞Les kitsune son en roue libre !!! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-20T13:11:54Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -658,7 +664,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 9,
+    "viewers": 6,
     "jeu": "Grand Theft Auto VI",
     "titre": "🔞 GTA 6 | DROP ACTIVÉ 💥 DU CHAOS, DU FUN ET DU -18 ! 😈",
     "depuis": "2026-11-20T09:55:19Z",
@@ -1044,7 +1050,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 8,
+    "viewers": 17,
     "jeu": "Foxy Dumplings",
     "titre": "Journée cosy et découvertes <3 #foxydumplings #keymailer",
     "depuis": "2026-11-20T11:53:56Z",
@@ -1139,5 +1145,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-20T13:07:13.415Z"
+ "maj": "2026-11-20T14:07:15.583Z"
 }
