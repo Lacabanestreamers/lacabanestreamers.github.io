@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 7,
-  "heuresLive30": 2402,
+  "heuresLive30": 2405,
   "followsGagnes30": 527,
   "periode": {
    "du": "2026-10-21",
@@ -453,7 +453,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 9,
+    "viewers": 8,
     "jeu": "Fire Emblem: Fortune's Weave",
     "titre": "FR_VT - Toujours accro? MOI ???",
     "depuis": "2026-11-20T14:02:10Z",
@@ -614,7 +614,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 15,
     "jeu": "R.E.P.O.",
     "titre": "🔞Les kitsune son en roue libre !!! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-20T13:11:54Z",
@@ -1038,7 +1038,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 9,
+    "viewers": 17,
     "jeu": "Foxy Dumplings",
     "titre": "Journée cosy et découvertes <3 #foxydumplings #keymailer",
     "depuis": "2026-11-20T11:53:56Z",
@@ -1133,5 +1133,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-20T15:07:14.270Z"
+ "maj": "2026-11-20T16:07:13.689Z"
 }
