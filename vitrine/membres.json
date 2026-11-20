@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 7,
-  "heuresLive30": 2405,
+  "heuresLive30": 2408,
   "followsGagnes30": 527,
   "periode": {
    "du": "2026-10-21",
@@ -453,7 +453,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
+    "viewers": 9,
     "jeu": "Fire Emblem: Fortune's Weave",
     "titre": "FR_VT - Toujours accro? MOI ???",
     "depuis": "2026-11-20T14:02:10Z",
@@ -614,7 +614,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 15,
+    "viewers": 14,
     "jeu": "R.E.P.O.",
     "titre": "🔞Les kitsune son en roue libre !!! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-20T13:11:54Z",
@@ -657,7 +657,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Grand Theft Auto VI",
+    "titre": "GTA VI  – DROP ACTIVÉ ! On fait trembler la ville !",
+    "depuis": "2026-11-20T16:55:41Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
+   },
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -704,7 +710,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "PEAK",
+    "titre": "Petite rando en détente (C'est faux) PEAK - !lurk !discord ft @despe_boy22",
+    "depuis": "2026-11-20T16:28:54Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
+   },
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
@@ -1038,9 +1050,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 17,
-    "jeu": "Foxy Dumplings",
-    "titre": "Journée cosy et découvertes <3 #foxydumplings #keymailer",
+    "viewers": 11,
+    "jeu": "Potions Galore",
+    "titre": "Triage de potions en cours! #PotionsGalore",
     "depuis": "2026-11-20T11:53:56Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1104,7 +1116,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-11-07",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "⭐ LE GRAND MOMENT EST ARRIVÉ | Découverte Keepsake Sea #1 | !discord !lurk",
+    "depuis": "2026-11-20T17:03:33Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_unoceandedouceur-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1133,5 +1151,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-20T16:07:13.689Z"
+ "maj": "2026-11-20T17:07:17.173Z"
 }
