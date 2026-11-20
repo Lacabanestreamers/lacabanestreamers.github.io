@@ -200,7 +200,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "Invokyr",
     "titre": "🔮 La Team du Week-end fait de l'Invokyration douteuse 😆🔥",
     "depuis": "2026-11-20T17:22:26Z",
@@ -406,7 +406,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 11,
     "jeu": "Writing & Reading",
     "titre": "Lecture cozy : Ce soir , on TERMINE FRANKENSTEIN !  Allez, viens te poser on est bien !",
     "depuis": "2026-11-20T18:50:06Z",
@@ -470,7 +470,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "R.E.P.O.",
+    "titre": "FR_VT - Des cosmétiques !! des LVL !!",
+    "depuis": "2026-11-20T20:04:03Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -664,7 +670,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "Grand Theft Auto VI",
     "titre": "GTA VI  – DROP ACTIVÉ ! On fait trembler la ville !",
     "depuis": "2026-11-20T16:55:41Z",
@@ -902,10 +908,10 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Invokyr",
     "titre": "Team du week end !! [!bs !fortune !insta !discord ]",
-    "depuis": "2026-11-20T17:23:18Z",
+    "depuis": "2026-11-20T20:05:59Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
    },
    "premierStream": "2025-09-24",
@@ -1057,7 +1063,7 @@
    "depuis": "2026-10-27",
    "live": {
     "viewers": 9,
-    "jeu": "Grand Theft Auto V",
+    "jeu": "Grand Theft Auto VI",
     "titre": "On fini la soirée en mode thug",
     "depuis": "2026-11-20T11:53:56Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
@@ -1074,8 +1080,8 @@
     "Loftia",
     "Space Savory",
     "Grand Theft Auto VI",
-    "Potions Galore",
-    "The Transference"
+    "The Transference",
+    "Potions Galore"
    ],
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/GlamorousObedientPanPartyTime-Ct6e7yOoW-YgtEnp",
@@ -1123,7 +1129,7 @@
    "staff": false,
    "depuis": "2026-11-07",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "Disney Dreamlight Valley",
     "titre": "⭐ LE GRAND MOMENT EST ARRIVÉ | Découverte Keepsake Sea #1 | !discord !lurk",
     "depuis": "2026-11-20T17:03:33Z",
@@ -1157,5 +1163,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-20T19:58:37.187Z"
+ "maj": "2026-11-20T20:07:13.994Z"
 }
