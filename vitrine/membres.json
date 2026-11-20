@@ -7,11 +7,11 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 7,
-  "heuresLive30": 2369,
-  "followsGagnes30": 516,
+  "heuresLive30": 2370,
+  "followsGagnes30": 527,
   "periode": {
    "du": "2026-10-21",
-   "au": "2026-11-19"
+   "au": "2026-11-20"
   }
  },
  "agenda": [],
@@ -52,7 +52,13 @@
    "depuis": "2026-09-20",
    "live": null,
    "premierStream": "2025-03-29",
-   "succes": [],
+   "succes": [
+    {
+     "type": "palier",
+     "palier": 600,
+     "date": "2026-11-20"
+    }
+   ],
    "jeux": [
     "Disney Dreamlight Valley",
     "Just Chatting",
@@ -128,8 +134,8 @@
    "jeux": [
     "VALORANT",
     "7 Days to Die",
-    "Outbound",
     "Dice Hoarder",
+    "Outbound",
     "Cinderia"
    ],
    "clip": {
@@ -216,8 +222,8 @@
     "Special Events",
     "Planet Zoo 2",
     "The Sims 4",
-    "Just Chatting",
-    "Dispatch"
+    "Dispatch",
+    "Just Chatting"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/ViscousAuspiciousSoybeanTwitchRaid-i0jigR8d73uvxPv1",
@@ -250,7 +256,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "FINAL FANTASY XIV ONLINE",
+    "titre": "[FF14 online/Endwalker] On jette un oeil a l'event clavier ?",
+    "depuis": "2026-11-20T07:57:34Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -260,8 +272,8 @@
     }
    ],
    "jeux": [
-    "Warframe",
     "FINAL FANTASY XIV ONLINE",
+    "Warframe",
     "Lies of P",
     "Wuthering Waves",
     "Aniimo"
@@ -296,8 +308,8 @@
     "Minecraft",
     "Splatoon 3",
     "The Survivalists",
-    "Sprout Valley",
-    "Tomodachi Life: Living the Dream"
+    "Tomodachi Life: Living the Dream",
+    "Sprout Valley"
    ],
    "clip": null
   },
@@ -498,7 +510,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 3,
+    "viewers": 13,
     "jeu": "Art",
     "titre": "✦ FOOD ART ✦ Les brochettes de Toads ! | Bientôt l'week-end courage ! |🌟 Nv obj 500 follow ! | !artchallenges !liens",
     "depuis": "2026-11-20T06:55:39Z",
@@ -622,11 +634,11 @@
     }
    ],
    "jeux": [
-    "FINAL FANTASY XIV ONLINE",
     "Tomb Raider",
     "R.E.P.O.",
+    "FINAL FANTASY XIV ONLINE",
     "Special Events",
-    "Dead by Daylight"
+    "Just Chatting"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/SpotlessRepletePepperSaltBae-t7BVrcm28auOa6m3",
@@ -765,7 +777,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Stardew Valley",
+    "titre": "Matinale Cozy sur Stardew Valley, on papote ensemble les stars !!!! ... Cap de faire les 150 FOLLOWS????  !discord !regles !don",
+    "depuis": "2026-11-20T08:02:32Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -1115,5 +1133,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-20T07:07:17.736Z"
+ "maj": "2026-11-20T08:07:14.516Z"
 }
