@@ -497,7 +497,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Art",
+    "titre": "✦ FOOD ART ✦ Les brochettes de Toads ! | Bientôt l'week-end courage ! |🌟 Nv obj 500 follow ! | !artchallenges !liens",
+    "depuis": "2026-11-20T06:55:39Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
+   },
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -1109,5 +1115,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-20T02:07:34.974Z"
+ "maj": "2026-11-20T07:07:17.736Z"
 }
