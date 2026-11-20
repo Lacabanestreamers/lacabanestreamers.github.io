@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 7,
-  "heuresLive30": 2377,
+  "heuresLive30": 2383,
   "followsGagnes30": 527,
   "periode": {
    "du": "2026-10-21",
@@ -129,7 +129,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 14,
     "jeu": "Once Human",
     "titre": "L'apocalypse en solo sur Once Human : zéro mates pour me carry, 100% de chances de finir en pâtée 💀",
     "depuis": "2026-11-20T09:14:10Z",
@@ -262,13 +262,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": {
-    "viewers": 3,
-    "jeu": "FINAL FANTASY XIV ONLINE",
-    "titre": "[FF14 online/Endwalker] On jette un oeil a l'event clavier ?",
-    "depuis": "2026-11-20T07:57:34Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -439,7 +433,7 @@
    "staff": false,
    "depuis": "2026-10-11",
    "live": {
-    "viewers": 5,
+    "viewers": 13,
     "jeu": "Cyberpunk 2077",
     "titre": "Alooors qui vais-je ACCIDENTELLEMENT assassiner aujourd'hui ? 🦾🏍️",
     "depuis": "2026-11-20T09:23:00Z",
@@ -626,7 +620,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 12,
     "jeu": "FINAL FANTASY XVI",
     "titre": "🔞 Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-20T08:31:39Z",
@@ -670,7 +664,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Grand Theft Auto VI",
     "titre": "🔞 GTA 6 | DROP ACTIVÉ 💥 DU CHAOS, DU FUN ET DU -18 ! 😈",
     "depuis": "2026-11-20T09:55:19Z",
@@ -795,13 +789,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": {
-    "viewers": 4,
-    "jeu": "Stardew Valley",
-    "titre": "Matinale Cozy sur Stardew Valley, on papote ensemble les stars !!!! ... Cap de faire les 150 FOLLOWS????  !discord !regles !don",
-    "depuis": "2026-11-20T08:02:32Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
@@ -1151,5 +1139,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-20T10:07:15.159Z"
+ "maj": "2026-11-20T11:07:24.830Z"
 }
