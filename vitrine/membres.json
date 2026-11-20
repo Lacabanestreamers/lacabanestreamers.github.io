@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 7,
-  "heuresLive30": 2370,
+  "heuresLive30": 2373,
   "followsGagnes30": 527,
   "periode": {
    "du": "2026-10-21",
@@ -510,7 +510,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 13,
+    "viewers": 14,
     "jeu": "Art",
     "titre": "✦ FOOD ART ✦ Les brochettes de Toads ! | Bientôt l'week-end courage ! |🌟 Nv obj 500 follow ! | !artchallenges !liens",
     "depuis": "2026-11-20T06:55:39Z",
@@ -619,7 +619,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "FINAL FANTASY XVI",
+    "titre": "🔞 Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-20T08:31:39Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -778,7 +784,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 2,
+    "viewers": 7,
     "jeu": "Stardew Valley",
     "titre": "Matinale Cozy sur Stardew Valley, on papote ensemble les stars !!!! ... Cap de faire les 150 FOLLOWS????  !discord !regles !don",
     "depuis": "2026-11-20T08:02:32Z",
@@ -1133,5 +1139,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-20T08:07:14.516Z"
+ "maj": "2026-11-20T09:07:15.318Z"
 }
