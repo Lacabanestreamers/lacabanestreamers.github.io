@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 6,
-  "heuresLive30": 2360,
+  "heuresLive30": 2366,
   "followsGagnes30": 508,
   "periode": {
    "du": "2026-10-22",
@@ -51,7 +51,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 12,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🌙 On fini le DLC 4!! Venez chill, rire et papoter 💜",
     "depuis": "2026-11-20T20:24:29Z",
@@ -296,7 +296,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Minecraft",
     "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings ! - !réseaux",
     "depuis": "2026-11-20T18:13:34Z",
@@ -465,7 +465,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 11,
+    "viewers": 9,
     "jeu": "R.E.P.O.",
     "titre": "FR_VT - Des cosmétiques !! des LVL !!",
     "depuis": "2026-11-20T20:04:03Z",
@@ -565,13 +565,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 2,
-    "jeu": "Grand Theft Auto VI",
-    "titre": "On va tester gta 6 découvertes",
-    "depuis": "2026-11-20T21:05:08Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -579,7 +573,7 @@
     "Fortnite",
     "League of Legends",
     "Just Chatting",
-    "RuneScape: Dragonwilds"
+    "Grand Theft Auto VI"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lagonbleu_976/clip/AffluentZealousCoffeePeoplesChamp-uJCTddEPwZOJNcLR",
@@ -1072,8 +1066,8 @@
    ],
    "jeux": [
     "Loftia",
-    "Space Savory",
     "Grand Theft Auto VI",
+    "Space Savory",
     "The Transference",
     "Potions Galore"
    ],
@@ -1151,5 +1145,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-20T22:07:15.013Z"
+ "maj": "2026-11-20T23:07:13.807Z"
 }
