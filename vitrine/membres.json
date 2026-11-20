@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 7,
-  "heuresLive30": 2397,
+  "heuresLive30": 2402,
   "followsGagnes30": 527,
   "periode": {
    "du": "2026-10-21",
@@ -128,13 +128,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 16,
-    "jeu": "Once Human",
-    "titre": "L'apocalypse en solo sur Once Human : zéro mates pour me carry, 100% de chances de finir en pâtée 💀",
-    "depuis": "2026-11-20T09:14:10Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -459,7 +453,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 1,
+    "viewers": 9,
     "jeu": "Fire Emblem: Fortune's Weave",
     "titre": "FR_VT - Toujours accro? MOI ???",
     "depuis": "2026-11-20T14:02:10Z",
@@ -620,7 +614,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 13,
+    "viewers": 14,
     "jeu": "R.E.P.O.",
     "titre": "🔞Les kitsune son en roue libre !!! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-20T13:11:54Z",
@@ -663,13 +657,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 6,
-    "jeu": "Grand Theft Auto VI",
-    "titre": "🔞 GTA 6 | DROP ACTIVÉ 💥 DU CHAOS, DU FUN ET DU -18 ! 😈",
-    "depuis": "2026-11-20T09:55:19Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -1050,7 +1038,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 17,
+    "viewers": 9,
     "jeu": "Foxy Dumplings",
     "titre": "Journée cosy et découvertes <3 #foxydumplings #keymailer",
     "depuis": "2026-11-20T11:53:56Z",
@@ -1145,5 +1133,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-20T14:07:15.583Z"
+ "maj": "2026-11-20T15:07:14.270Z"
 }
