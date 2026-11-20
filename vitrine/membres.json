@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 7,
-  "heuresLive30": 2428,
+  "heuresLive30": 2436,
   "followsGagnes30": 531,
   "periode": {
    "du": "2026-10-21",
@@ -50,7 +50,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "Liquor Store Simulator",
+    "titre": "🌙 DECOUVERTE du jeux!! Venez chill, rire et papoter 💜",
+    "depuis": "2026-11-20T20:24:29Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
+   },
    "premierStream": "2025-03-29",
    "succes": [
     {
@@ -200,7 +206,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 6,
     "jeu": "Invokyr",
     "titre": "🔮 La Team du Week-end fait de l'Invokyration douteuse 😆🔥",
     "depuis": "2026-11-20T17:22:26Z",
@@ -405,13 +411,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 11,
-    "jeu": "Writing & Reading",
-    "titre": "Lecture cozy : Ce soir , on TERMINE FRANKENSTEIN !  Allez, viens te poser on est bien !",
-    "depuis": "2026-11-20T18:50:06Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [
     {
@@ -423,9 +423,9 @@
    "jeux": [
     "Just Chatting",
     "Shift at Midnight",
+    "Writing & Reading",
     "R.E.P.O.",
-    "Photomaly",
-    "Forever Ago"
+    "Photomaly"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/CooperativeZealousOstrichGingerPower-DIumfVqvanvHzevs",
@@ -471,7 +471,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 1,
+    "viewers": 11,
     "jeu": "R.E.P.O.",
     "titre": "FR_VT - Des cosmétiques !! des LVL !!",
     "depuis": "2026-11-20T20:04:03Z",
@@ -571,7 +571,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Grand Theft Auto VI",
+    "titre": "On va tester gta 6 découvertes",
+    "depuis": "2026-11-20T21:05:08Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -670,7 +676,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 11,
     "jeu": "Grand Theft Auto VI",
     "titre": "GTA VI  – DROP ACTIVÉ ! On fait trembler la ville !",
     "depuis": "2026-11-20T16:55:41Z",
@@ -686,8 +692,8 @@
    ],
    "jeux": [
     "Call of Duty: Modern Warfare 4",
-    "Special Events",
     "Grand Theft Auto VI",
+    "Special Events",
     "Rocket League",
     "ROB RUN"
    ],
@@ -1062,7 +1068,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 9,
+    "viewers": 11,
     "jeu": "Grand Theft Auto VI",
     "titre": "On fini la soirée en mode thug",
     "depuis": "2026-11-20T11:53:56Z",
@@ -1128,13 +1134,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-11-07",
-   "live": {
-    "viewers": 5,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "⭐ LE GRAND MOMENT EST ARRIVÉ | Découverte Keepsake Sea #1 | !discord !lurk",
-    "depuis": "2026-11-20T17:03:33Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_unoceandedouceur-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1163,5 +1163,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-20T20:07:13.994Z"
+ "maj": "2026-11-20T21:07:15.298Z"
 }
