@@ -6,11 +6,11 @@
  "chiffres": {
   "membres": 44,
   "affilies": 40,
-  "nouveaux30": 7,
-  "heuresLive30": 2436,
-  "followsGagnes30": 531,
+  "nouveaux30": 6,
+  "heuresLive30": 2360,
+  "followsGagnes30": 508,
   "periode": {
-   "du": "2026-10-21",
+   "du": "2026-10-22",
    "au": "2026-11-20"
   }
  },
@@ -51,9 +51,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
-    "jeu": "Liquor Store Simulator",
-    "titre": "🌙 DECOUVERTE du jeux!! Venez chill, rire et papoter 💜",
+    "viewers": 9,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "🌙 On fini le DLC 4!! Venez chill, rire et papoter 💜",
     "depuis": "2026-11-20T20:24:29Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
    },
@@ -205,13 +205,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 6,
-    "jeu": "Invokyr",
-    "titre": "🔮 La Team du Week-end fait de l'Invokyration douteuse 😆🔥",
-    "depuis": "2026-11-20T17:22:26Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -676,7 +670,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 11,
+    "viewers": 4,
     "jeu": "Grand Theft Auto VI",
     "titre": "GTA VI  – DROP ACTIVÉ ! On fait trembler la ville !",
     "depuis": "2026-11-20T16:55:41Z",
@@ -913,13 +907,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 3,
-    "jeu": "Invokyr",
-    "titre": "Team du week end !! [!bs !fortune !insta !discord ]",
-    "depuis": "2026-11-20T20:05:59Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -931,9 +919,9 @@
    "jeux": [
     "The Legend of Zelda: Ocarina of Time",
     "The Other Side",
+    "Invokyr",
     "All Rats on Deck",
-    "Inside the Backrooms",
-    "Codenames"
+    "Inside the Backrooms"
    ],
    "clip": {
     "url": "https://www.twitch.tv/oko_san_/clip/PluckyEmpathicTardigradeSaltBae-Hs2xKOOhHeZ_nn8p",
@@ -1068,7 +1056,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 11,
+    "viewers": 6,
     "jeu": "Grand Theft Auto VI",
     "titre": "On fini la soirée en mode thug",
     "depuis": "2026-11-20T11:53:56Z",
@@ -1163,5 +1151,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-20T21:07:15.298Z"
+ "maj": "2026-11-20T22:07:15.013Z"
 }
