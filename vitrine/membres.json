@@ -7,8 +7,8 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 7,
-  "heuresLive30": 2414,
-  "followsGagnes30": 527,
+  "heuresLive30": 2421,
+  "followsGagnes30": 531,
   "periode": {
    "du": "2026-10-21",
    "au": "2026-11-20"
@@ -200,7 +200,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 2,
+    "viewers": 4,
     "jeu": "Invokyr",
     "titre": "🔮 La Team du Week-end fait de l'Invokyration douteuse 😆🔥",
     "depuis": "2026-11-20T17:22:26Z",
@@ -295,7 +295,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Minecraft",
+    "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings ! - !réseaux",
+    "depuis": "2026-11-20T18:13:34Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -399,7 +405,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "Writing & Reading",
+    "titre": "Lecture cozy : Ce soir , on TERMINE FRANKENSTEIN !  Allez, viens te poser on est bien !",
+    "depuis": "2026-11-20T18:50:06Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [
     {
@@ -458,13 +470,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 10,
-    "jeu": "Fire Emblem: Fortune's Weave",
-    "titre": "FR_VT - Toujours accro? MOI ???",
-    "depuis": "2026-11-20T14:02:10Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -658,7 +664,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "Grand Theft Auto VI",
     "titre": "GTA VI  – DROP ACTIVÉ ! On fait trembler la ville !",
     "depuis": "2026-11-20T16:55:41Z",
@@ -710,13 +716,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 6,
-    "jeu": "PEAK",
-    "titre": "Petite rando en détente (C'est faux) PEAK - !lurk !discord ft @despe_boy22",
-    "depuis": "2026-11-20T16:28:54Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
@@ -1056,7 +1056,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 13,
+    "viewers": 12,
     "jeu": "Potions Galore",
     "titre": "Triage de potions en cours! #PotionsGalore",
     "depuis": "2026-11-20T11:53:56Z",
@@ -1075,7 +1075,7 @@
     "Space Savory",
     "Grand Theft Auto VI",
     "The Transference",
-    "Just Chatting"
+    "Potions Galore"
    ],
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/GlamorousObedientPanPartyTime-Ct6e7yOoW-YgtEnp",
@@ -1123,7 +1123,7 @@
    "staff": false,
    "depuis": "2026-11-07",
    "live": {
-    "viewers": 9,
+    "viewers": 7,
     "jeu": "Disney Dreamlight Valley",
     "titre": "⭐ LE GRAND MOMENT EST ARRIVÉ | Découverte Keepsake Sea #1 | !discord !lurk",
     "depuis": "2026-11-20T17:03:33Z",
@@ -1157,5 +1157,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-20T18:07:20.842Z"
+ "maj": "2026-11-20T19:07:13.186Z"
 }
