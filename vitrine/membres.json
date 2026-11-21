@@ -50,13 +50,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 8,
-    "jeu": "Dressmaker (2026)",
-    "titre": "Coupage de tissus pour faire des abominations?",
-    "depuis": "2026-11-20T20:24:29Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-03-29",
    "succes": [
     {
@@ -147,7 +141,7 @@
    "clip": {
     "url": "https://www.twitch.tv/aulit42369/clip/ColdbloodedAlertTroutStinkyCheese-xD15UVmOzCGU21Qc",
     "titre": "Allons ranger des dés ce soir, on est en mode chill",
-    "vues": 4,
+    "vues": 5,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/916e1e7f-2dc6-4f62-83e5-481c673b90cc/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-14",
     "duree": 30
@@ -174,7 +168,7 @@
    "clip": {
     "url": "https://www.twitch.tv/bichoune_/clip/VivaciousTacitArtichokeKappaWealth-JGv4_DezvjUVuYYb",
     "titre": "MES CHEVEUX !!!!",
-    "vues": 5,
+    "vues": 6,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/0b2655db-3c6f-481b-9160-d816d6fe83ab/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-19",
     "duree": 49
@@ -444,7 +438,7 @@
    "clip": {
     "url": "https://www.twitch.tv/hagosan/clip/MiniatureRealTardigradePhilosoraptor-eEGWBDEw1nb7RsvQ",
     "titre": "Headshot involontaire 😶​",
-    "vues": 2,
+    "vues": 3,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/2fadc47b-ff60-4ca7-afd2-840ac2ec0723/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-19",
     "duree": 41
@@ -519,7 +513,7 @@
    "clip": {
     "url": "https://www.twitch.tv/kristal_et_ses_ac/clip/GentleBitterQuailStinkyCheese-Jesa54ikAOow1cDS",
     "titre": "Annonce d'enlèvement de la productivité de BAKA",
-    "vues": 6,
+    "vues": 7,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/e7e23a62-d4fc-42f6-b7e4-67d063d7ac4d/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-18",
     "duree": 20
@@ -564,11 +558,11 @@
     "Grand Theft Auto VI"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/lagonbleu_976/clip/AffluentZealousCoffeePeoplesChamp-uJCTddEPwZOJNcLR",
-    "titre": "🥈 SILVER EN APPROCHE… NE ME FAITES PAS REDESCENDRE ! 💀",
+    "url": "https://www.twitch.tv/lagonbleu_976/clip/EvilMushyCheesecakeCoolStoryBro-bF3OaQ41dRu3o7MI",
+    "titre": "🔥 LIVE VALORANT : OBJECTIF SILVER AUJOURD'HUI ! 🥈 | ON VA CHERCHER CE RANK UP !",
     "vues": 2,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/d9f06c9f-d9c9-4863-8e68-3e280eed1d8b/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-15",
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/dfd53173-8f25-40a0-8122-019264d6d460/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-18",
     "duree": 30
    }
   },
@@ -637,7 +631,7 @@
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/SpotlessRepletePepperSaltBae-t7BVrcm28auOa6m3",
     "titre": "🔞 Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
-    "vues": 9,
+    "vues": 13,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6cefc760-b190-41da-887c-f82ea7acf176/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-18",
     "duree": 30
@@ -709,12 +703,12 @@
     "R.E.P.O."
    ],
    "clip": {
-    "url": "https://www.twitch.tv/lylu_live/clip/FunnySmilingMarrowDendiFace-2GN430fEDs3CrNFX",
-    "titre": "rip les oreilles",
-    "vues": 2,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/94b75335-c828-4055-9c5a-08bd47d4fac0/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-13",
-    "duree": 30
+    "url": "https://www.twitch.tv/lylu_live/clip/EndearingMildPeanutPipeHype-gTEJOprpdLJ0zGQA",
+    "titre": "la poooorte",
+    "vues": 6,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/cc0c47cd-2ac2-4dfb-96d2-006fd25a586a/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-20",
+    "duree": 60
    }
   },
   {
@@ -829,12 +823,12 @@
     "Psalm 2"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/mysti94/clip/AnnoyingNiceMageKappa-CRiFHcBm0uj6KgtH",
-    "titre": "Train de la Hype Niv 11 - Merci à Baylor !",
-    "vues": 7,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/37c0abeb-9356-4d3b-abb4-71e429f2b1bc/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-13",
-    "duree": 33
+    "url": "https://www.twitch.tv/mysti94/clip/AgitatedMoldyFoxSpicyBoy-iym1ciERqMuk5Pim",
+    "titre": "WzBot CLIP | [FR] ~ Lundécouverte - Démo - Plasm 2 ~ (by misschampignon)",
+    "vues": 1,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/0ebfb46c-e068-444c-86fa-a01133916f9b/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-16",
+    "duree": 60
    }
   },
   {
@@ -1050,7 +1044,7 @@
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/GlamorousObedientPanPartyTime-Ct6e7yOoW-YgtEnp",
     "titre": "Session tests avec @Galyssiane Les fantômes qui font du flipper? x) #Friendslop #keymailer",
-    "vues": 7,
+    "vues": 8,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/9fd7ebe7-477e-4991-8927-17bed5335621/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-18",
     "duree": 30
@@ -1098,7 +1092,14 @@
    "jeux": [
     "Disney Dreamlight Valley"
    ],
-   "clip": null
+   "clip": {
+    "url": "https://www.twitch.tv/unoceandedouceur/clip/BillowingExuberantIcecreamTTours-iUm_4CiNKZu2pXhm",
+    "titre": "de surprises en surprises !",
+    "vues": 2,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/9665ffde-3acd-4e85-8fc5-2fa2e27691ba/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-20",
+    "duree": 26
+   }
   },
   {
    "login": "yukaho_35",
@@ -1121,5 +1122,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-21T01:22:42.396Z"
+ "maj": "2026-11-21T02:07:37.394Z"
 }
