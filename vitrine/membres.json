@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 6,
-  "heuresLive30": 2366,
+  "heuresLive30": 2371,
   "followsGagnes30": 508,
   "periode": {
    "du": "2026-10-22",
@@ -51,7 +51,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 10,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🌙 On fini le DLC 4!! Venez chill, rire et papoter 💜",
     "depuis": "2026-11-20T20:24:29Z",
@@ -295,13 +295,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 2,
-    "jeu": "Minecraft",
-    "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings ! - !réseaux",
-    "depuis": "2026-11-20T18:13:34Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -464,13 +458,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 9,
-    "jeu": "R.E.P.O.",
-    "titre": "FR_VT - Des cosmétiques !! des LVL !!",
-    "depuis": "2026-11-20T20:04:03Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -663,13 +651,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 4,
-    "jeu": "Grand Theft Auto VI",
-    "titre": "GTA VI  – DROP ACTIVÉ ! On fait trembler la ville !",
-    "depuis": "2026-11-20T16:55:41Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -1049,13 +1031,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": {
-    "viewers": 6,
-    "jeu": "Grand Theft Auto VI",
-    "titre": "On fini la soirée en mode thug",
-    "depuis": "2026-11-20T11:53:56Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [
     {
@@ -1145,5 +1121,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-20T23:07:13.807Z"
+ "maj": "2026-11-21T00:07:16.849Z"
 }
