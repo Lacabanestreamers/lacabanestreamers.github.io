@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 6,
-  "heuresLive30": 2372,
+  "heuresLive30": 2373,
   "followsGagnes30": 508,
   "periode": {
    "du": "2026-10-22",
@@ -51,7 +51,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 8,
     "jeu": "Dressmaker (2026)",
     "titre": "Coupage de tissus pour faire des abominations?",
     "depuis": "2026-11-20T20:24:29Z",
@@ -1121,5 +1121,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-21T01:07:15.975Z"
+ "maj": "2026-11-21T01:22:42.396Z"
 }
