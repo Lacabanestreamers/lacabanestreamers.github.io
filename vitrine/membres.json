@@ -7,10 +7,10 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 6,
-  "heuresLive30": 2425,
-  "followsGagnes30": 527,
+  "heuresLive30": 2372,
+  "followsGagnes30": 505,
   "periode": {
-   "du": "2026-10-22",
+   "du": "2026-10-23",
    "au": "2026-11-21"
   }
  },
@@ -51,7 +51,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 3,
     "jeu": "7 Days to Die",
     "titre": "Tapage de zombies avec les cops🥰",
     "depuis": "2026-11-21T19:54:16Z",
@@ -333,7 +333,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 7,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🗺️ Disney DreamLight Valley ! On continue le DLC 4 !🌟",
     "depuis": "2026-11-21T19:31:47Z",
@@ -416,13 +416,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 9,
-    "jeu": "7 Days to Die",
-    "titre": "7 days to die ! Taper, survivre, taper, looter, survivre, claquer! (!ttc !commandes)",
-    "depuis": "2026-11-21T19:50:03Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [
     {
@@ -436,7 +430,7 @@
     "Shift at Midnight",
     "Writing & Reading",
     "R.E.P.O.",
-    "Photomaly"
+    "7 Days to Die"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/CooperativeZealousOstrichGingerPower-DIumfVqvanvHzevs",
@@ -482,7 +476,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 8,
     "jeu": "R.E.P.O.",
     "titre": "FR_VT - Des cosmétiques !! des LVL !!",
     "depuis": "2026-11-21T19:24:40Z",
@@ -564,7 +558,7 @@
    "depuis": "2026-09-27",
    "live": {
     "viewers": 9,
-    "jeu": "Dungeons & Dynasties",
+    "jeu": "After the Wane",
     "titre": "SOIRÉE TEST JEUX 🎮💫 : On découvre le gameplay exclusif de Dungeons & Dynasties, Trakonius & After the Wane | Découverte Nouveauté FR",
     "depuis": "2026-11-21T19:24:36Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
@@ -589,7 +583,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Grand Theft Auto VI",
     "titre": "🏙️GTA 6 ON REPREND L'AVENTURE À VICE CITY !",
     "depuis": "2026-11-21T19:48:34Z",
@@ -1073,7 +1067,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 16,
+    "viewers": 12,
     "jeu": "Redhowl",
     "titre": "Qui a peur du grand méchant loup?",
     "depuis": "2026-11-21T19:44:23Z",
@@ -1112,7 +1106,7 @@
    "staff": false,
    "depuis": "2026-09-28",
    "live": {
-    "viewers": 9,
+    "viewers": 14,
     "jeu": "Cyberpunk 2077",
     "titre": "😈 PROJECT R - Session BETA TEST Cyberpunk RP 😈 !rpojectr !rs !discord",
     "depuis": "2026-11-21T20:12:19Z",
@@ -1181,5 +1175,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-21T21:07:21.639Z"
+ "maj": "2026-11-21T22:07:12.010Z"
 }
