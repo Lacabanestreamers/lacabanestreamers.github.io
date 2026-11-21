@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 6,
-  "heuresLive30": 2374,
+  "heuresLive30": 2377,
   "followsGagnes30": 516,
   "periode": {
    "du": "2026-10-22",
@@ -200,7 +200,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 6,
     "jeu": "Planet Zoo 2",
     "titre": "🐾 Planet Zoo 2 : Pause détente avec nos pensionnaires préférés😆",
     "depuis": "2026-11-21T10:01:26Z",
@@ -552,7 +552,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Grand Theft Auto VI",
+    "titre": "🏙️GTA 6 ON CONTINUE L'AVENTURE À VICE CITY !",
+    "depuis": "2026-11-21T10:51:33Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -580,7 +586,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "We Were Here Tomorrow",
     "titre": "🐰Le retour des explorateurs, coop avec Raisin",
     "depuis": "2026-11-21T08:14:58Z",
@@ -598,8 +604,8 @@
     "Dead Space 2",
     "Makers & Crafting",
     "Little Nightmares II",
-    "Fall Guys",
-    "Little Nightmares III"
+    "We Were Here Tomorrow",
+    "Fall Guys"
    ],
    "clip": {
     "url": "https://www.twitch.tv/liiapin/clip/AffluentDeafKumquatYouDontSay--qNBy-QrPP6aOAJy",
@@ -656,7 +662,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Grand Theft Auto VI",
+    "titre": "🔞 GTA 6 | DROP ACTIVÉ 💥 DU CHAOS, DU FUN ET DU -18 ! 😈",
+    "depuis": "2026-11-21T10:34:51Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
+   },
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -1139,5 +1151,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-21T10:07:15.618Z"
+ "maj": "2026-11-21T11:07:15.790Z"
 }
