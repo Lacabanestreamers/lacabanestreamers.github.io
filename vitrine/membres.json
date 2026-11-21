@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 6,
-  "heuresLive30": 2415,
+  "heuresLive30": 2416,
   "followsGagnes30": 527,
   "periode": {
    "du": "2026-10-22",
@@ -50,7 +50,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "7 Days to Die",
+    "titre": "Tapage de zombies avec les cops🥰",
+    "depuis": "2026-11-21T19:54:16Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
+   },
    "premierStream": "2025-03-29",
    "succes": [
     {
@@ -128,7 +134,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "7 Days to Die",
+    "titre": "Tatane de zombie, , base en ruine, tout vas bien c'est samedi .",
+    "depuis": "2026-11-21T19:53:45Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
+   },
    "premierStream": "2025-10-09",
    "succes": [],
    "jeux": [
@@ -320,7 +332,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 14,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "🗺️ Disney DreamLight Valley ! On continue le DLC 4 !🌟",
+    "depuis": "2026-11-21T19:31:47Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
+   },
    "premierStream": "2025-05-25",
    "succes": [],
    "jeux": [
@@ -398,7 +416,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "7 Days to Die",
+    "titre": "7 days to die ! Taper, survivre, taper, looter, survivre, claquer! (!ttc !commandes)",
+    "depuis": "2026-11-21T19:50:03Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [
     {
@@ -457,7 +481,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 11,
+    "jeu": "R.E.P.O.",
+    "titre": "FR_VT - Des cosmétiques !! des LVL !!",
+    "depuis": "2026-11-21T19:24:40Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -532,7 +562,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 11,
+    "jeu": "Dungeons & Dynasties",
+    "titre": "SOIRÉE TEST JEUX 🎮💫 : On découvre le gameplay exclusif de Dungeons & Dynasties, Trakonius & After the Wane | Découverte Nouveauté FR",
+    "depuis": "2026-11-21T19:24:36Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
+   },
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
@@ -552,7 +588,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Grand Theft Auto VI",
+    "titre": "🏙️GTA 6 ON REPREND L'AVENTURE À VICE CITY !",
+    "depuis": "2026-11-21T19:48:34Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -1030,7 +1072,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 12,
+    "jeu": "Redhowl",
+    "titre": "Qui a peur du grand méchant loup?",
+    "depuis": "2026-11-21T19:44:23Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [
     {
@@ -1127,5 +1175,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-21T19:07:13.981Z"
+ "maj": "2026-11-21T20:07:13.315Z"
 }
