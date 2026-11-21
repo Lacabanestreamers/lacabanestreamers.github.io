@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 6,
-  "heuresLive30": 2403,
+  "heuresLive30": 2409,
   "followsGagnes30": 517,
   "periode": {
    "du": "2026-10-22",
@@ -199,13 +199,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 17,
-    "jeu": "Planet Zoo 2",
-    "titre": "🐾 Planet Zoo 2 : Pause détente avec nos pensionnaires préférés😆",
-    "depuis": "2026-11-21T10:01:26Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -294,7 +288,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Splatoon 3",
+    "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
+    "depuis": "2026-11-21T15:08:51Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -552,13 +552,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 8,
-    "jeu": "Grand Theft Auto VI",
-    "titre": "🏙️GTA 6 ON CONTINUE L'AVENTURE À VICE CITY !",
-    "depuis": "2026-11-21T10:51:33Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -585,13 +579,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 2,
-    "jeu": "Little Nightmares III",
-    "titre": "🐰Week end de cauchemars",
-    "depuis": "2026-11-21T14:28:10Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -605,7 +593,7 @@
     "Makers & Crafting",
     "Little Nightmares II",
     "We Were Here Tomorrow",
-    "Fall Guys"
+    "Little Nightmares III"
    ],
    "clip": {
     "url": "https://www.twitch.tv/liiapin/clip/AffluentDeafKumquatYouDontSay--qNBy-QrPP6aOAJy",
@@ -662,13 +650,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 6,
-    "jeu": "Grand Theft Auto VI",
-    "titre": "🔞 GTA 6 | DROP ACTIVÉ 💥 DU CHAOS, DU FUN ET DU -18 ! 😈",
-    "depuis": "2026-11-21T10:34:51Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -863,7 +845,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 10,
+    "viewers": 11,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] On passe l'après midi ensembre sur The Keepsake Sea 🐠🧜 | Disney Dreamlight Valley | !discord !commandes",
     "depuis": "2026-11-21T13:00:06Z",
@@ -1116,7 +1098,7 @@
    "staff": false,
    "depuis": "2026-11-07",
    "live": {
-    "viewers": 11,
+    "viewers": 20,
     "jeu": "Disney Dreamlight Valley",
     "titre": "⭐ DDV FR | J2 - On continue Keepsake Sea | !discord !lurk",
     "depuis": "2026-11-21T12:05:31Z",
@@ -1157,5 +1139,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-21T15:07:13.745Z"
+ "maj": "2026-11-21T16:07:13.698Z"
 }
