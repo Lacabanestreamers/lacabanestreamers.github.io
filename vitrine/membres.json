@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 6,
-  "heuresLive30": 2412,
+  "heuresLive30": 2415,
   "followsGagnes30": 517,
   "periode": {
    "du": "2026-10-22",
@@ -289,7 +289,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 5,
+    "viewers": 6,
     "jeu": "Splatoon 3",
     "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
     "depuis": "2026-11-21T15:08:51Z",
@@ -845,7 +845,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 11,
+    "viewers": 10,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] On passe l'après midi ensembre sur The Keepsake Sea 🐠🧜 | Disney Dreamlight Valley | !discord !commandes",
     "depuis": "2026-11-21T13:00:06Z",
@@ -1097,13 +1097,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-11-07",
-   "live": {
-    "viewers": 17,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "⭐ DDV FR | J2 - On continue Keepsake Sea | !discord !lurk",
-    "depuis": "2026-11-21T12:05:31Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_unoceandedouceur-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1139,5 +1133,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-21T17:07:15.830Z"
+ "maj": "2026-11-21T17:21:02.292Z"
 }
