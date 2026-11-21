@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 6,
-  "heuresLive30": 2372,
+  "heuresLive30": 2381,
   "followsGagnes30": 505,
   "periode": {
    "du": "2026-10-23",
@@ -51,7 +51,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 7,
     "jeu": "7 Days to Die",
     "titre": "Tapage de zombies avec les cops🥰",
     "depuis": "2026-11-21T19:54:16Z",
@@ -135,7 +135,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 10,
     "jeu": "7 Days to Die",
     "titre": "Tatane de zombie, , base en ruine, tout vas bien c'est samedi .",
     "depuis": "2026-11-21T19:53:45Z",
@@ -145,8 +145,8 @@
    "succes": [],
    "jeux": [
     "VALORANT",
-    "7 Days to Die",
     "Dice Hoarder",
+    "7 Days to Die",
     "Outbound",
     "Cinderia"
    ],
@@ -296,7 +296,7 @@
    "login": "elegaming__",
    "nom": "elegaming__",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/0919dbcd-ed9e-4317-aa73-9b0aec619c5a-profile_image-300x300.jpeg",
-   "bio": "🌸 Bienvenue sur ma chaîne Twitch 🌸           ~     Ici tu retrouves majoritairement du Let's Play de différents jeux comme 🏝ACNH, ⚪️Pokemon, Pikmin, 🥊SSBU, 🦑Splatoon, ⚔️SAO et d'autre encore ! et bien-évidemment avec le sourire ! 😝 ~  N'hésite pas à jeter un coup d'œil, ça me ferait plaisir 💫",
+   "bio": "🌸 Bienvenue sur ma chaîne Twitch 🌸           ~     Ici tu retrouves majoritairement du Let's Play de différents jeux comme 🏝ACNH, 🏹MCbe ⚪️Pokemon, 🌱Pikmin, 🦑Splatoon et d'autre encore ! et bien-évidemment avec le sourire ! 😝 ~  N'hésite pas à jeter un coup d'œil, ça me ferait plaisir 💫",
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
@@ -475,13 +475,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 8,
-    "jeu": "R.E.P.O.",
-    "titre": "FR_VT - Des cosmétiques !! des LVL !!",
-    "depuis": "2026-11-21T19:24:40Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -557,7 +551,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 9,
+    "viewers": 10,
     "jeu": "After the Wane",
     "titre": "SOIRÉE TEST JEUX 🎮💫 : On découvre le gameplay exclusif de Dungeons & Dynasties, Trakonius & After the Wane | Découverte Nouveauté FR",
     "depuis": "2026-11-21T19:24:36Z",
@@ -583,7 +577,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Grand Theft Auto VI",
     "titre": "🏙️GTA 6 ON REPREND L'AVENTURE À VICE CITY !",
     "depuis": "2026-11-21T19:48:34Z",
@@ -1067,9 +1061,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 12,
-    "jeu": "Redhowl",
-    "titre": "Qui a peur du grand méchant loup?",
+    "viewers": 10,
+    "jeu": "Invokyr",
+    "titre": "Juman...invokyr pour finir la soirée!",
     "depuis": "2026-11-21T19:44:23Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1086,7 +1080,7 @@
     "Grand Theft Auto VI",
     "Space Savory",
     "The Transference",
-    "Potions Galore"
+    "Redhowl"
    ],
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/GlamorousObedientPanPartyTime-Ct6e7yOoW-YgtEnp",
@@ -1106,7 +1100,7 @@
    "staff": false,
    "depuis": "2026-09-28",
    "live": {
-    "viewers": 14,
+    "viewers": 9,
     "jeu": "Cyberpunk 2077",
     "titre": "😈 PROJECT R - Session BETA TEST Cyberpunk RP 😈 !rpojectr !rs !discord",
     "depuis": "2026-11-21T20:12:19Z",
@@ -1175,5 +1169,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-21T22:07:12.010Z"
+ "maj": "2026-11-21T23:03:25.934Z"
 }
