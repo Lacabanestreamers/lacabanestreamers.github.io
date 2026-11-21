@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 6,
-  "heuresLive30": 2416,
+  "heuresLive30": 2425,
   "followsGagnes30": 527,
   "periode": {
    "du": "2026-10-22",
@@ -69,8 +69,8 @@
     "Disney Dreamlight Valley",
     "Just Chatting",
     "Silver Service",
-    "DEVOUR",
-    "Outbound"
+    "7 Days to Die",
+    "DEVOUR"
    ],
    "clip": null
   },
@@ -135,7 +135,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 2,
+    "viewers": 8,
     "jeu": "7 Days to Die",
     "titre": "Tatane de zombie, , base en ruine, tout vas bien c'est samedi .",
     "depuis": "2026-11-21T19:53:45Z",
@@ -333,7 +333,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 10,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🗺️ Disney DreamLight Valley ! On continue le DLC 4 !🌟",
     "depuis": "2026-11-21T19:31:47Z",
@@ -482,7 +482,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 11,
+    "viewers": 6,
     "jeu": "R.E.P.O.",
     "titre": "FR_VT - Des cosmétiques !! des LVL !!",
     "depuis": "2026-11-21T19:24:40Z",
@@ -563,7 +563,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 11,
+    "viewers": 9,
     "jeu": "Dungeons & Dynasties",
     "titre": "SOIRÉE TEST JEUX 🎮💫 : On découvre le gameplay exclusif de Dungeons & Dynasties, Trakonius & After the Wane | Découverte Nouveauté FR",
     "depuis": "2026-11-21T19:24:36Z",
@@ -589,7 +589,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Grand Theft Auto VI",
     "titre": "🏙️GTA 6 ON REPREND L'AVENTURE À VICE CITY !",
     "depuis": "2026-11-21T19:48:34Z",
@@ -1073,7 +1073,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 12,
+    "viewers": 16,
     "jeu": "Redhowl",
     "titre": "Qui a peur du grand méchant loup?",
     "depuis": "2026-11-21T19:44:23Z",
@@ -1111,7 +1111,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Cyberpunk 2077",
+    "titre": "😈 PROJECT R - Session BETA TEST Cyberpunk RP 😈 !rpojectr !rs !discord",
+    "depuis": "2026-11-21T20:12:19Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
+   },
    "premierStream": "2025-01-19",
    "succes": [
     {
@@ -1175,5 +1181,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-21T20:07:13.315Z"
+ "maj": "2026-11-21T21:07:21.639Z"
 }
