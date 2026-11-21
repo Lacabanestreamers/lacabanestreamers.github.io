@@ -573,7 +573,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "We Were Here Tomorrow",
+    "titre": "🐰Le retour des explorateurs, coop avec Raisin",
+    "depuis": "2026-11-21T08:14:58Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
+   },
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -1121,5 +1127,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-21T08:07:15.260Z"
+ "maj": "2026-11-21T09:07:16.499Z"
 }
