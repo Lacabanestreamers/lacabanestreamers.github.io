@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 6,
-  "heuresLive30": 2382,
+  "heuresLive30": 2389,
   "followsGagnes30": 517,
   "periode": {
    "du": "2026-10-22",
@@ -24,13 +24,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": {
-    "viewers": 0,
-    "jeu": "God of War III: Remastered",
-    "titre": "God of War Remastered /PS4",
-    "depuis": "2026-11-21T12:06:20Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -212,7 +206,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 24,
     "jeu": "Planet Zoo 2",
     "titre": "🐾 Planet Zoo 2 : Pause détente avec nos pensionnaires préférés😆",
     "depuis": "2026-11-21T10:01:26Z",
@@ -565,7 +559,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "Grand Theft Auto VI",
     "titre": "🏙️GTA 6 ON CONTINUE L'AVENTURE À VICE CITY !",
     "depuis": "2026-11-21T10:51:33Z",
@@ -669,7 +663,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 25,
+    "viewers": 14,
     "jeu": "Grand Theft Auto VI",
     "titre": "🔞 GTA 6 | DROP ACTIVÉ 💥 DU CHAOS, DU FUN ET DU -18 ! 😈",
     "depuis": "2026-11-21T10:34:51Z",
@@ -868,7 +862,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "[FR] On passe l'après midi ensembre sur The Keepsake Sea 🐠🧜 | Disney Dreamlight Valley | !discord !commandes",
+    "depuis": "2026-11-21T13:00:06Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
+   },
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -1122,7 +1122,7 @@
    "staff": false,
    "depuis": "2026-11-07",
    "live": {
-    "viewers": 2,
+    "viewers": 5,
     "jeu": "Disney Dreamlight Valley",
     "titre": "⭐ DDV FR | J2 - On continue Keepsake Sea | !discord !lurk",
     "depuis": "2026-11-21T12:05:31Z",
@@ -1163,5 +1163,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-21T12:07:24.182Z"
+ "maj": "2026-11-21T13:07:13.952Z"
 }
