@@ -199,7 +199,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 11,
+    "jeu": "Planet Zoo 2",
+    "titre": "🐾 Planet Zoo 2 : Pause détente avec nos pensionnaires préférés😆",
+    "depuis": "2026-11-21T10:01:26Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -574,7 +580,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "We Were Here Tomorrow",
     "titre": "🐰Le retour des explorateurs, coop avec Raisin",
     "depuis": "2026-11-21T08:14:58Z",
@@ -863,7 +869,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "World of Warcraft",
+    "titre": "Salut tout le monde , je continue les quête !!!",
+    "depuis": "2026-11-21T09:42:00Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1127,5 +1139,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-21T09:36:52.099Z"
+ "maj": "2026-11-21T10:07:15.618Z"
 }
