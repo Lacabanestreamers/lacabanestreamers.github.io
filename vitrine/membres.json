@@ -7,8 +7,8 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 6,
-  "heuresLive30": 2377,
-  "followsGagnes30": 516,
+  "heuresLive30": 2382,
+  "followsGagnes30": 517,
   "periode": {
    "du": "2026-10-22",
    "au": "2026-11-21"
@@ -24,7 +24,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "God of War III: Remastered",
+    "titre": "God of War Remastered /PS4",
+    "depuis": "2026-11-21T12:06:20Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -182,7 +188,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "Je découvre le nouveau DLC 😍😍",
+    "depuis": "2026-11-21T11:15:15Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_brastentv-440x248.jpg"
+   },
    "premierStream": "2026-06-05",
    "succes": [],
    "jeux": [
@@ -200,7 +212,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 11,
     "jeu": "Planet Zoo 2",
     "titre": "🐾 Planet Zoo 2 : Pause détente avec nos pensionnaires préférés😆",
     "depuis": "2026-11-21T10:01:26Z",
@@ -553,7 +565,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 3,
+    "viewers": 6,
     "jeu": "Grand Theft Auto VI",
     "titre": "🏙️GTA 6 ON CONTINUE L'AVENTURE À VICE CITY !",
     "depuis": "2026-11-21T10:51:33Z",
@@ -565,8 +577,8 @@
     "VALORANT",
     "Fortnite",
     "League of Legends",
-    "Just Chatting",
-    "Grand Theft Auto VI"
+    "Grand Theft Auto VI",
+    "Just Chatting"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lagonbleu_976/clip/EvilMushyCheesecakeCoolStoryBro-bF3OaQ41dRu3o7MI",
@@ -585,13 +597,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 5,
-    "jeu": "We Were Here Tomorrow",
-    "titre": "🐰Le retour des explorateurs, coop avec Raisin",
-    "depuis": "2026-11-21T08:14:58Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -663,7 +669,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 25,
     "jeu": "Grand Theft Auto VI",
     "titre": "🔞 GTA 6 | DROP ACTIVÉ 💥 DU CHAOS, DU FUN ET DU -18 ! 😈",
     "depuis": "2026-11-21T10:34:51Z",
@@ -1115,7 +1121,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-11-07",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "⭐ DDV FR | J2 - On continue Keepsake Sea | !discord !lurk",
+    "depuis": "2026-11-21T12:05:31Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_unoceandedouceur-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1151,5 +1163,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-21T11:07:15.790Z"
+ "maj": "2026-11-21T12:07:24.182Z"
 }
