@@ -8,10 +8,10 @@
   "affilies": 40,
   "nouveaux30": 6,
   "heuresLive30": 2373,
-  "followsGagnes30": 508,
+  "followsGagnes30": 516,
   "periode": {
    "du": "2026-10-22",
-   "au": "2026-11-20"
+   "au": "2026-11-21"
   }
  },
  "agenda": [],
@@ -269,7 +269,6 @@
     "FINAL FANTASY XIV ONLINE",
     "Warframe",
     "Lies of P",
-    "Wuthering Waves",
     "Aniimo"
    ],
    "clip": {
@@ -797,10 +796,10 @@
    "succes": [],
    "jeux": [
     "Just Chatting",
-    "Rocket League",
     "Minecraft",
     "Fall Guys",
-    "Apex Legends"
+    "Starlit Adventures",
+    "Solarpunk"
    ],
    "clip": null
   },
@@ -992,8 +991,8 @@
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
-    "Cellar Keeper",
     "The Cozy Board Game Shop: Tidy Up",
+    "Cellar Keeper",
     "Dying Light",
     "Sort A Lot",
     "Anime Shop Simulator ✨"
@@ -1122,5 +1121,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-21T02:07:37.394Z"
+ "maj": "2026-11-21T08:07:15.260Z"
 }
