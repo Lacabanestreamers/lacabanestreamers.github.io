@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 6,
-  "heuresLive30": 2371,
+  "heuresLive30": 2372,
   "followsGagnes30": 508,
   "periode": {
    "du": "2026-10-22",
@@ -52,8 +52,8 @@
    "depuis": "2026-09-20",
    "live": {
     "viewers": 10,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "🌙 On fini le DLC 4!! Venez chill, rire et papoter 💜",
+    "jeu": "Dressmaker (2026)",
+    "titre": "Coupage de tissus pour faire des abominations?",
     "depuis": "2026-11-20T20:24:29Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
    },
@@ -1121,5 +1121,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-21T00:07:16.849Z"
+ "maj": "2026-11-21T01:07:15.975Z"
 }
