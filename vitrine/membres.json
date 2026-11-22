@@ -664,7 +664,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 6,
+    "viewers": 8,
     "jeu": "ROB RUN",
     "titre": "ROB RUN : JE SUIS LÀ POUR TOUT CASSER ! 😈 | Luffish Gaming",
     "depuis": "2026-11-22T11:50:42Z",
@@ -757,7 +757,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 3,
     "jeu": "Slime Rancher 2",
     "titre": "On continu sur pokemon métamorphe only",
     "depuis": "2026-11-22T09:05:29Z",
@@ -882,7 +882,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 0,
+    "viewers": 1,
     "jeu": "World of Warcraft",
     "titre": "Salut tout le monde , je continue avec ma paladine  !!!",
     "depuis": "2026-11-22T11:59:54Z",
@@ -1158,5 +1158,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T12:42:18.085Z"
+ "maj": "2026-11-22T13:07:21.077Z"
 }
