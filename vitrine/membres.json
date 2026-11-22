@@ -1020,7 +1020,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 3,
+    "viewers": 5,
     "jeu": "TV Archive: Tidy Up Together",
     "titre": "TV Archive on range les VHS",
     "depuis": "2026-11-22T15:24:42Z",
@@ -1063,7 +1063,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 17,
+    "viewers": 20,
     "jeu": "Just Chatting",
     "titre": "Pause avant la soirée",
     "depuis": "2026-11-22T14:17:47Z",
@@ -1081,8 +1081,8 @@
     "Loftia",
     "Grand Theft Auto VI",
     "Space Savory",
-    "Invokyr",
-    "Games + Demos"
+    "Just Chatting",
+    "Invokyr"
    ],
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/GlamorousObedientPanPartyTime-Ct6e7yOoW-YgtEnp",
@@ -1172,5 +1172,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T18:27:09.865Z"
+ "maj": "2026-11-22T19:07:17.707Z"
 }
