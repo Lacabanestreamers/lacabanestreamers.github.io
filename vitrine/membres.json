@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2430,
+  "heuresLive30": 2434,
   "followsGagnes30": 521,
   "periode": {
    "du": "2026-10-23",
@@ -419,7 +419,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 18,
+    "viewers": 20,
     "jeu": "Komu",
     "titre": "C'est parti pour le fight ! KOMU !  (!ttc !commandes)",
     "depuis": "2026-11-22T13:35:44Z",
@@ -596,8 +596,8 @@
    "succes": [],
    "jeux": [
     "VALORANT",
-    "Fortnite",
     "Grand Theft Auto VI",
+    "Fortnite",
     "League of Legends",
     "Just Chatting"
    ],
@@ -1026,7 +1026,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "TV Archive: Tidy Up Together",
     "titre": "TV Archive on range les VHS",
     "depuis": "2026-11-22T15:24:42Z",
@@ -1069,7 +1069,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 15,
+    "viewers": 17,
     "jeu": "Games + Demos",
     "titre": "Session tests! Découverte de Lost Alchemist #lostalchemist",
     "depuis": "2026-11-22T14:17:47Z",
@@ -1178,5 +1178,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T17:07:18.556Z"
+ "maj": "2026-11-22T18:07:22.679Z"
 }
