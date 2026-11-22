@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2418,
+  "heuresLive30": 2424,
   "followsGagnes30": 521,
   "periode": {
    "du": "2026-10-23",
@@ -419,8 +419,8 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
-    "jeu": "The Demon Wants to Marry the Princess or Lose Her at Poker",
+    "viewers": 9,
+    "jeu": "Silk Collector: Tidy Up the Clothing Store!",
     "titre": "Cet aprem on teste des démos avant le match komu de 18h !  (clefs reçues via keymailer! ) (!ttc !commandes)",
     "depuis": "2026-11-22T13:35:44Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
@@ -586,7 +586,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 0,
+    "viewers": 1,
     "jeu": "Grand Theft Auto VI",
     "titre": "🏙️GTA 6 ON REPREND L'AVENTURE À VICE CITY !",
     "depuis": "2026-11-22T15:06:23Z",
@@ -690,7 +690,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 14,
+    "viewers": 13,
     "jeu": "Grand Theft Auto VI",
     "titre": "GTA 6 – DROP ACTIVÉ | Braquages, bastons et gros délire !",
     "depuis": "2026-11-22T11:50:42Z",
@@ -901,13 +901,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 2,
-    "jeu": "World of Warcraft",
-    "titre": "Salut tout le monde , je continue avec ma paladine  !!!",
-    "depuis": "2026-11-22T11:59:54Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -960,7 +954,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 8,
+    "viewers": 10,
     "jeu": "The Sims 4",
     "titre": "THE SIMS 4 [FR] | Live constru, on construit le camp WoodWind de Phasmophobia 🏕️| !discord",
     "depuis": "2026-11-22T13:36:18Z",
@@ -1043,7 +1037,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "TV Archive: Tidy Up Together",
+    "titre": "TV Archive on range les VHS",
+    "depuis": "2026-11-22T15:24:42Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
+   },
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -1190,5 +1190,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T15:07:18.188Z"
+ "maj": "2026-11-22T16:07:18.430Z"
 }
