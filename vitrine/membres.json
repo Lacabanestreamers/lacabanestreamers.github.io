@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 6,
-  "heuresLive30": 2406,
+  "heuresLive30": 2409,
   "followsGagnes30": 521,
   "periode": {
    "du": "2026-10-23",
@@ -664,7 +664,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "ROB RUN",
     "titre": "ROB RUN : JE SUIS LÀ POUR TOUT CASSER ! 😈 | Luffish Gaming",
     "depuis": "2026-11-22T11:50:42Z",
@@ -757,7 +757,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 2,
+    "viewers": 4,
     "jeu": "Slime Rancher 2",
     "titre": "On continu sur pokemon métamorphe only",
     "depuis": "2026-11-22T09:05:29Z",
@@ -773,8 +773,8 @@
    ],
    "jeux": [
     "PowerWash Simulator",
-    "Slime Rancher",
     "Slime Rancher 2",
+    "Slime Rancher",
     "The Elder Scrolls V: Skyrim - Special Edition",
     "Far Far West"
    ],
@@ -1158,5 +1158,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T12:07:14.761Z"
+ "maj": "2026-11-22T12:42:18.085Z"
 }
