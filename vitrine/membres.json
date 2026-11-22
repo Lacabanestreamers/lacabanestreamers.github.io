@@ -7,8 +7,8 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2434,
-  "followsGagnes30": 521,
+  "heuresLive30": 2438,
+  "followsGagnes30": 533,
   "periode": {
    "du": "2026-10-23",
    "au": "2026-11-22"
@@ -418,13 +418,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 20,
-    "jeu": "Komu",
-    "titre": "C'est parti pour le fight ! KOMU !  (!ttc !commandes)",
-    "depuis": "2026-11-22T13:35:44Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [
     {
@@ -1026,7 +1020,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 4,
+    "viewers": 3,
     "jeu": "TV Archive: Tidy Up Together",
     "titre": "TV Archive on range les VHS",
     "depuis": "2026-11-22T15:24:42Z",
@@ -1070,8 +1064,8 @@
    "depuis": "2026-10-27",
    "live": {
     "viewers": 17,
-    "jeu": "Games + Demos",
-    "titre": "Session tests! Découverte de Lost Alchemist #lostalchemist",
+    "jeu": "Just Chatting",
+    "titre": "Pause avant la soirée",
     "depuis": "2026-11-22T14:17:47Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1088,7 +1082,7 @@
     "Grand Theft Auto VI",
     "Space Savory",
     "Invokyr",
-    "The Transference"
+    "Games + Demos"
    ],
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/GlamorousObedientPanPartyTime-Ct6e7yOoW-YgtEnp",
@@ -1178,5 +1172,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T18:07:22.679Z"
+ "maj": "2026-11-22T18:27:09.865Z"
 }
