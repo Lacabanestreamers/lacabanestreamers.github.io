@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2384,
+  "heuresLive30": 2387,
   "followsGagnes30": 515,
   "periode": {
    "du": "2026-10-24",
@@ -175,13 +175,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 5,
-    "jeu": "Pokémon Mystery Dungeon: Explorers of Sky",
-    "titre": "⚡POKEMON DONGON MYSTERE : EXPLORATEUR DU CIEL DS • on sauve le temps ou kwa la tcheam ???? • 4 💗",
-    "depuis": "2026-11-22T20:06:30Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bichoune_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-04",
    "succes": [],
    "jeux": [
@@ -586,7 +580,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Grand Theft Auto VI",
     "titre": "🏙️GTA 6 ON REPREND L'AVENTURE À VICE CITY !",
     "depuis": "2026-11-22T15:06:23Z",
@@ -1063,7 +1057,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 20,
+    "viewers": 22,
     "jeu": "Milki Delivery",
     "titre": "La petite laitière <3 #milkidelivery",
     "depuis": "2026-11-22T14:17:47Z",
@@ -1172,5 +1166,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T22:07:29.470Z"
+ "maj": "2026-11-22T23:07:28.920Z"
 }
