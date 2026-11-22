@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 6,
-  "heuresLive30": 2398,
+  "heuresLive30": 2402,
   "followsGagnes30": 518,
   "periode": {
    "du": "2026-10-23",
@@ -593,7 +593,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 2,
     "jeu": "Little Nightmares III",
     "titre": "🐰Week end de cauchemars",
     "depuis": "2026-11-22T08:14:59Z",
@@ -863,7 +863,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 7,
     "jeu": "Art",
     "titre": "[FR] Fin d'un colo, début d'un autre 🎨✏️ | Coloriage Mystère | !discord !commandes",
     "depuis": "2026-11-22T08:01:05Z",
@@ -1164,5 +1164,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T10:07:14.529Z"
+ "maj": "2026-11-22T11:04:53.910Z"
 }
