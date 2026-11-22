@@ -288,13 +288,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 1,
-    "jeu": "Minecraft",
-    "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings ! - !réseaux",
-    "depuis": "2026-11-21T18:35:45Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -1134,5 +1128,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T02:59:57.485Z"
+ "maj": "2026-11-22T03:07:14.708Z"
 }
