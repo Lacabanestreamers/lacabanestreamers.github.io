@@ -8,10 +8,10 @@
   "affilies": 40,
   "nouveaux30": 6,
   "heuresLive30": 2394,
-  "followsGagnes30": 505,
+  "followsGagnes30": 518,
   "periode": {
    "du": "2026-10-23",
-   "au": "2026-11-21"
+   "au": "2026-11-22"
   }
  },
  "agenda": [],
@@ -130,7 +130,13 @@
    "depuis": "2026-09-20",
    "live": null,
    "premierStream": "2025-10-09",
-   "succes": [],
+   "succes": [
+    {
+     "type": "palier",
+     "palier": 200,
+     "date": "2026-11-22"
+    }
+   ],
    "jeux": [
     "VALORANT",
     "7 Days to Die",
@@ -316,7 +322,13 @@
    "depuis": "2026-09-20",
    "live": null,
    "premierStream": "2025-05-25",
-   "succes": [],
+   "succes": [
+    {
+     "type": "palier",
+     "palier": 650,
+     "date": "2026-11-22"
+    }
+   ],
    "jeux": [
     "Disney Dreamlight Valley",
     "Art",
@@ -632,7 +644,7 @@
     "R.E.P.O.",
     "FINAL FANTASY XIV ONLINE",
     "Special Events",
-    "Just Chatting"
+    "Invokyr"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/SpotlessRepletePepperSaltBae-t7BVrcm28auOa6m3",
@@ -770,8 +782,8 @@
    "jeux": [
     "Stardew Valley",
     "Poppy Playtime: Chapter 4 - Safe Haven",
-    "Poppy Playtime: Chapter 3 - Deep Sleep",
     "The Baby In Yellow",
+    "Poppy Playtime: Chapter 3 - Deep Sleep",
     "Aniimo"
    ],
    "clip": {
@@ -838,7 +850,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Art",
+    "titre": "[FR] Fin d'un colo, début d'un autre 🎨✏️ | Coloriage Mystère | !discord !commandes",
+    "depuis": "2026-11-22T08:01:05Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
+   },
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -861,8 +879,8 @@
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
-    "American Truck Simulator",
     "World of Warcraft",
+    "American Truck Simulator",
     "Disney Dreamlight Valley",
     "Euro Truck Simulator 2"
    ],
@@ -992,10 +1010,10 @@
    "succes": [],
    "jeux": [
     "The Cozy Board Game Shop: Tidy Up",
-    "Cellar Keeper",
     "Dying Light",
     "Sort A Lot",
-    "Anime Shop Simulator ✨"
+    "Anime Shop Simulator ✨",
+    "Game Market Mayhem"
    ],
    "clip": null
   },
@@ -1128,5 +1146,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T03:07:14.708Z"
+ "maj": "2026-11-22T08:07:24.878Z"
 }
