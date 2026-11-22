@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 6,
-  "heuresLive30": 2389,
+  "heuresLive30": 2392,
   "followsGagnes30": 505,
   "periode": {
    "du": "2026-10-23",
@@ -552,13 +552,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 4,
-    "jeu": "Grand Theft Auto VI",
-    "titre": "🏙️GTA 6 ON REPREND L'AVENTURE À VICE CITY !",
-    "depuis": "2026-11-21T19:48:34Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -1036,13 +1030,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": {
-    "viewers": 9,
-    "jeu": "Invokyr",
-    "titre": "Juman...invokyr pour finir la soirée!",
-    "depuis": "2026-11-21T19:44:23Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [
     {
@@ -1055,8 +1043,8 @@
     "Loftia",
     "Grand Theft Auto VI",
     "Space Savory",
-    "The Transference",
-    "Redhowl"
+    "Invokyr",
+    "The Transference"
    ],
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/GlamorousObedientPanPartyTime-Ct6e7yOoW-YgtEnp",
@@ -1139,5 +1127,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T00:07:15.221Z"
+ "maj": "2026-11-22T01:07:12.204Z"
 }
