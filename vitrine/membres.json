@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2438,
+  "heuresLive30": 2441,
   "followsGagnes30": 533,
   "periode": {
    "du": "2026-10-23",
@@ -219,7 +219,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "The Wolf Among Us Remastered",
+    "titre": "🐺  The Wolf Among Us  | Je vais regretter chacun de mes choix 🌙",
+    "depuis": "2026-11-22T19:30:16Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -1019,13 +1025,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": {
-    "viewers": 5,
-    "jeu": "TV Archive: Tidy Up Together",
-    "titre": "TV Archive on range les VHS",
-    "depuis": "2026-11-22T15:24:42Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -1064,8 +1064,8 @@
    "depuis": "2026-10-27",
    "live": {
     "viewers": 20,
-    "jeu": "Just Chatting",
-    "titre": "Pause avant la soirée",
+    "jeu": "Milki Delivery",
+    "titre": "La petite laitière <3 #milkidelivery",
     "depuis": "2026-11-22T14:17:47Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1172,5 +1172,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T19:07:17.707Z"
+ "maj": "2026-11-22T19:36:15.395Z"
 }
