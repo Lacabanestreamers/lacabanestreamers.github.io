@@ -175,7 +175,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Pokémon Mystery Dungeon: Explorers of Sky",
+    "titre": "⚡POKEMON DONGON MYSTERE : EXPLORATEUR DU CIEL DS • on sauve le temps ou kwa la tcheam ???? • 4 💗",
+    "depuis": "2026-11-22T20:06:30Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bichoune_-440x248.jpg"
+   },
    "premierStream": "2025-10-04",
    "succes": [],
    "jeux": [
@@ -220,7 +226,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 10,
     "jeu": "The Wolf Among Us Remastered",
     "titre": "🐺  The Wolf Among Us  | Je vais regretter chacun de mes choix 🌙",
     "depuis": "2026-11-22T19:30:16Z",
@@ -586,7 +592,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Grand Theft Auto VI",
     "titre": "🏙️GTA 6 ON REPREND L'AVENTURE À VICE CITY !",
     "depuis": "2026-11-22T15:06:23Z",
@@ -1063,7 +1069,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 24,
+    "viewers": 22,
     "jeu": "Milki Delivery",
     "titre": "La petite laitière <3 #milkidelivery",
     "depuis": "2026-11-22T14:17:47Z",
@@ -1172,5 +1178,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T19:45:12.978Z"
+ "maj": "2026-11-22T20:07:38.656Z"
 }
