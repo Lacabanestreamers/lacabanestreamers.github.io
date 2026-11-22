@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2441,
+  "heuresLive30": 2442,
   "followsGagnes30": 533,
   "periode": {
    "du": "2026-10-23",
@@ -220,7 +220,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 9,
     "jeu": "The Wolf Among Us Remastered",
     "titre": "🐺  The Wolf Among Us  | Je vais regretter chacun de mes choix 🌙",
     "depuis": "2026-11-22T19:30:16Z",
@@ -1063,7 +1063,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 20,
+    "viewers": 24,
     "jeu": "Milki Delivery",
     "titre": "La petite laitière <3 #milkidelivery",
     "depuis": "2026-11-22T14:17:47Z",
@@ -1172,5 +1172,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T19:36:15.395Z"
+ "maj": "2026-11-22T19:45:12.978Z"
 }
