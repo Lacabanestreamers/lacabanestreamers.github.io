@@ -592,13 +592,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 2,
-    "jeu": "Little Nightmares III",
-    "titre": "🐰Week end de cauchemars",
-    "depuis": "2026-11-22T08:14:59Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -669,7 +663,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "ROB RUN",
+    "titre": "ROB RUN : JE SUIS LÀ POUR TOUT CASSER ! 😈 | Luffish Gaming",
+    "depuis": "2026-11-22T11:50:42Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
+   },
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -862,13 +862,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 6,
-    "jeu": "Art",
-    "titre": "[FR] Fin d'un colo, début d'un autre 🎨✏️ | Coloriage Mystère | !discord !commandes",
-    "depuis": "2026-11-22T08:01:05Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -888,10 +882,10 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 1,
-    "jeu": "Euro Truck Simulator 2",
-    "titre": "Salut tout le monde ,de retour sur la route avec HaulMP  !!!",
-    "depuis": "2026-11-22T09:54:54Z",
+    "viewers": 0,
+    "jeu": "World of Warcraft",
+    "titre": "Salut tout le monde , je continue avec ma paladine  !!!",
+    "depuis": "2026-11-22T11:59:54Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
    },
    "premierStream": "2025-08-17",
@@ -1164,5 +1158,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T11:07:16.840Z"
+ "maj": "2026-11-22T12:07:14.761Z"
 }
