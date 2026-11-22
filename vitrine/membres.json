@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2424,
+  "heuresLive30": 2430,
   "followsGagnes30": 521,
   "periode": {
    "du": "2026-10-23",
@@ -419,9 +419,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
-    "jeu": "Silk Collector: Tidy Up the Clothing Store!",
-    "titre": "Cet aprem on teste des démos avant le match komu de 18h !  (clefs reçues via keymailer! ) (!ttc !commandes)",
+    "viewers": 18,
+    "jeu": "Komu",
+    "titre": "C'est parti pour le fight ! KOMU !  (!ttc !commandes)",
     "depuis": "2026-11-22T13:35:44Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
    },
@@ -689,13 +689,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 13,
-    "jeu": "Grand Theft Auto VI",
-    "titre": "GTA 6 – DROP ACTIVÉ | Braquages, bastons et gros délire !",
-    "depuis": "2026-11-22T11:50:42Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -953,13 +947,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 10,
-    "jeu": "The Sims 4",
-    "titre": "THE SIMS 4 [FR] | Live constru, on construit le camp WoodWind de Phasmophobia 🏕️| !discord",
-    "depuis": "2026-11-22T13:36:18Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-10",
    "succes": [
     {
@@ -1081,9 +1069,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 9,
-    "jeu": "Night Plane",
-    "titre": "Faut il vraiment monter dans cet avion? #NightPlane #keymailer",
+    "viewers": 15,
+    "jeu": "Games + Demos",
+    "titre": "Session tests! Découverte de Lost Alchemist #lostalchemist",
     "depuis": "2026-11-22T14:17:47Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1190,5 +1178,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T16:07:18.430Z"
+ "maj": "2026-11-22T17:07:18.556Z"
 }
