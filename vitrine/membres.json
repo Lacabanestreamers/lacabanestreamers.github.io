@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 6,
-  "heuresLive30": 2395,
+  "heuresLive30": 2398,
   "followsGagnes30": 518,
   "periode": {
    "du": "2026-10-23",
@@ -593,7 +593,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Little Nightmares III",
     "titre": "🐰Week end de cauchemars",
     "depuis": "2026-11-22T08:14:59Z",
@@ -611,8 +611,8 @@
     "Dead Space 2",
     "Makers & Crafting",
     "Little Nightmares II",
-    "We Were Here Tomorrow",
-    "Little Nightmares III"
+    "Little Nightmares III",
+    "We Were Here Tomorrow"
    ],
    "clip": {
     "url": "https://www.twitch.tv/liiapin/clip/AffluentDeafKumquatYouDontSay--qNBy-QrPP6aOAJy",
@@ -757,7 +757,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Slime Rancher 2",
     "titre": "On continu sur pokemon métamorphe only",
     "depuis": "2026-11-22T09:05:29Z",
@@ -774,8 +774,8 @@
    "jeux": [
     "PowerWash Simulator",
     "Slime Rancher",
-    "The Elder Scrolls V: Skyrim - Special Edition",
     "Slime Rancher 2",
+    "The Elder Scrolls V: Skyrim - Special Edition",
     "Far Far West"
    ],
    "clip": null
@@ -863,7 +863,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 4,
     "jeu": "Art",
     "titre": "[FR] Fin d'un colo, début d'un autre 🎨✏️ | Coloriage Mystère | !discord !commandes",
     "depuis": "2026-11-22T08:01:05Z",
@@ -887,7 +887,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Euro Truck Simulator 2",
+    "titre": "Salut tout le monde ,de retour sur la route avec HaulMP  !!!",
+    "depuis": "2026-11-22T09:54:54Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1158,5 +1164,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T09:07:16.686Z"
+ "maj": "2026-11-22T10:07:14.529Z"
 }
