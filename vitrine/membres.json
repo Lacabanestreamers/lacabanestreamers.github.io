@@ -7,8 +7,8 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 6,
-  "heuresLive30": 2402,
-  "followsGagnes30": 518,
+  "heuresLive30": 2406,
+  "followsGagnes30": 521,
   "periode": {
    "du": "2026-10-23",
    "au": "2026-11-22"
@@ -863,7 +863,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "Art",
     "titre": "[FR] Fin d'un colo, début d'un autre 🎨✏️ | Coloriage Mystère | !discord !commandes",
     "depuis": "2026-11-22T08:01:05Z",
@@ -1164,5 +1164,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T11:04:53.910Z"
+ "maj": "2026-11-22T11:07:16.840Z"
 }
