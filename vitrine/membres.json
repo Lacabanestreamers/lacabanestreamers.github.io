@@ -4,10 +4,10 @@
  "texte": "Une communauté d'entraide et de motivation entre streamers. Viens découvrir nos membres et passe leur dire bonjour en live !",
  "lienDiscord": "",
  "chiffres": {
-  "membres": 44,
-  "affilies": 40,
-  "nouveaux30": 6,
-  "heuresLive30": 2412,
+  "membres": 45,
+  "affilies": 41,
+  "nouveaux30": 7,
+  "heuresLive30": 2417,
   "followsGagnes30": 521,
   "periode": {
    "du": "2026-10-23",
@@ -66,6 +66,20 @@
     "7 Days to Die",
     "DEVOUR"
    ],
+   "clip": null
+  },
+  {
+   "login": "ameflech",
+   "nom": "ameflech",
+   "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/a4dbeaed-824f-44ae-af9a-a1d3c8f6884b-profile_image-300x300.png",
+   "bio": "",
+   "type": "affiliate",
+   "staff": false,
+   "depuis": "2026-11-22",
+   "live": null,
+   "premierStream": null,
+   "succes": [],
+   "jeux": [],
    "clip": null
   },
   {
@@ -405,7 +419,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "The Demon Wants to Marry the Princess or Lose Her at Poker",
     "titre": "Cet aprem on teste des démos avant le match komu de 18h !  (clefs reçues via keymailer! ) (!ttc !commandes)",
     "depuis": "2026-11-22T13:35:44Z",
@@ -670,7 +684,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
+    "viewers": 20,
     "jeu": "ROB RUN",
     "titre": "ROB RUN : JE SUIS LÀ POUR TOUT CASSER ! 😈 | Luffish Gaming",
     "depuis": "2026-11-22T11:50:42Z",
@@ -946,7 +960,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 7,
+    "viewers": 8,
     "jeu": "The Sims 4",
     "titre": "THE SIMS 4 [FR] | Live constru, on construit le camp WoodWind de Phasmophobia 🏕️| !discord",
     "depuis": "2026-11-22T13:36:18Z",
@@ -1066,7 +1080,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Night Plane",
+    "titre": "Faut il vraiment monter dans cet avion? #NightPlane #keymailer",
+    "depuis": "2026-11-22T14:17:47Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [
     {
@@ -1170,5 +1190,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T14:07:23.814Z"
+ "maj": "2026-11-22T14:28:35.159Z"
 }
