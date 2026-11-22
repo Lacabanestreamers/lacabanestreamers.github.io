@@ -7,7 +7,7 @@
   "membres": 44,
   "affilies": 40,
   "nouveaux30": 6,
-  "heuresLive30": 2409,
+  "heuresLive30": 2412,
   "followsGagnes30": 521,
   "periode": {
    "du": "2026-10-23",
@@ -404,7 +404,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "The Demon Wants to Marry the Princess or Lose Her at Poker",
+    "titre": "Cet aprem on teste des démos avant le match komu de 18h !  (clefs reçues via keymailer! ) (!ttc !commandes)",
+    "depuis": "2026-11-22T13:35:44Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [
     {
@@ -682,8 +688,8 @@
     "Call of Duty: Modern Warfare 4",
     "Grand Theft Auto VI",
     "Special Events",
-    "Rocket League",
-    "ROB RUN"
+    "ROB RUN",
+    "Rocket League"
    ],
    "clip": null
   },
@@ -757,7 +763,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "Slime Rancher 2",
     "titre": "On continu sur pokemon métamorphe only",
     "depuis": "2026-11-22T09:05:29Z",
@@ -772,8 +778,8 @@
     }
    ],
    "jeux": [
-    "PowerWash Simulator",
     "Slime Rancher 2",
+    "PowerWash Simulator",
     "Slime Rancher",
     "The Elder Scrolls V: Skyrim - Special Edition",
     "Far Far West"
@@ -882,7 +888,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "World of Warcraft",
     "titre": "Salut tout le monde , je continue avec ma paladine  !!!",
     "depuis": "2026-11-22T11:59:54Z",
@@ -939,7 +945,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "The Sims 4",
+    "titre": "THE SIMS 4 [FR] | Live constru, on construit le camp WoodWind de Phasmophobia 🏕️| !discord",
+    "depuis": "2026-11-22T13:36:18Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
+   },
    "premierStream": "2025-09-10",
    "succes": [
     {
@@ -1158,5 +1170,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T13:07:21.077Z"
+ "maj": "2026-11-22T14:07:23.814Z"
 }
