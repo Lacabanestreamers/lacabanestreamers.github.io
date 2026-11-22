@@ -7,10 +7,10 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2446,
-  "followsGagnes30": 533,
+  "heuresLive30": 2384,
+  "followsGagnes30": 515,
   "periode": {
-   "du": "2026-10-23",
+   "du": "2026-10-24",
    "au": "2026-11-22"
   }
  },
@@ -176,7 +176,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "Pokémon Mystery Dungeon: Explorers of Sky",
     "titre": "⚡POKEMON DONGON MYSTERE : EXPLORATEUR DU CIEL DS • on sauve le temps ou kwa la tcheam ???? • 4 💗",
     "depuis": "2026-11-22T20:06:30Z",
@@ -186,8 +186,8 @@
    "succes": [],
    "jeux": [
     "Mazebound: Hunt, Gather, Run!",
-    "Disney Dreamlight Valley",
     "Pokémon Mystery Dungeon: Explorers of Sky",
+    "Disney Dreamlight Valley",
     "Dressmaker (2026)",
     "Stardew Valley"
    ],
@@ -225,13 +225,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 10,
-    "jeu": "The Wolf Among Us Remastered",
-    "titre": "🐺  The Wolf Among Us  | Je vais regretter chacun de mes choix 🌙",
-    "depuis": "2026-11-22T19:30:16Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -592,7 +586,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 1,
+    "viewers": 3,
     "jeu": "Grand Theft Auto VI",
     "titre": "🏙️GTA 6 ON REPREND L'AVENTURE À VICE CITY !",
     "depuis": "2026-11-22T15:06:23Z",
@@ -1178,5 +1172,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T21:07:29.805Z"
+ "maj": "2026-11-22T22:07:29.470Z"
 }
