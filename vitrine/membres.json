@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2417,
+  "heuresLive30": 2418,
   "followsGagnes30": 521,
   "periode": {
    "du": "2026-10-23",
@@ -419,7 +419,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 10,
     "jeu": "The Demon Wants to Marry the Princess or Lose Her at Poker",
     "titre": "Cet aprem on teste des démos avant le match komu de 18h !  (clefs reçues via keymailer! ) (!ttc !commandes)",
     "depuis": "2026-11-22T13:35:44Z",
@@ -585,7 +585,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "Grand Theft Auto VI",
+    "titre": "🏙️GTA 6 ON REPREND L'AVENTURE À VICE CITY !",
+    "depuis": "2026-11-22T15:06:23Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -684,9 +690,9 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 20,
-    "jeu": "ROB RUN",
-    "titre": "ROB RUN : JE SUIS LÀ POUR TOUT CASSER ! 😈 | Luffish Gaming",
+    "viewers": 14,
+    "jeu": "Grand Theft Auto VI",
+    "titre": "GTA 6 – DROP ACTIVÉ | Braquages, bastons et gros délire !",
     "depuis": "2026-11-22T11:50:42Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
    },
@@ -776,13 +782,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 2,
-    "jeu": "Slime Rancher 2",
-    "titre": "On continu sur pokemon métamorphe only",
-    "depuis": "2026-11-22T09:05:29Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-08",
    "succes": [
     {
@@ -1081,7 +1081,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 5,
+    "viewers": 9,
     "jeu": "Night Plane",
     "titre": "Faut il vraiment monter dans cet avion? #NightPlane #keymailer",
     "depuis": "2026-11-22T14:17:47Z",
@@ -1190,5 +1190,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T14:28:35.159Z"
+ "maj": "2026-11-22T15:07:18.188Z"
 }
