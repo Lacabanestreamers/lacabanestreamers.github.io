@@ -8,10 +8,10 @@
   "affilies": 41,
   "nouveaux30": 7,
   "heuresLive30": 2394,
-  "followsGagnes30": 515,
+  "followsGagnes30": 526,
   "periode": {
    "du": "2026-10-24",
-   "au": "2026-11-22"
+   "au": "2026-11-23"
   }
  },
  "agenda": [],
@@ -442,11 +442,11 @@
     }
    ],
    "jeux": [
-    "Just Chatting",
     "Shift at Midnight",
     "Writing & Reading",
     "R.E.P.O.",
-    "7 Days to Die"
+    "7 Days to Die",
+    "Photomaly"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/CooperativeZealousOstrichGingerPower-DIumfVqvanvHzevs",
@@ -534,8 +534,8 @@
    "succes": [],
    "jeux": [
     "Stardew Valley",
-    "Slime Rancher",
     "Animal Crossing: New Horizons",
+    "Slime Rancher",
     "DEVOUR",
     "Leaf it Alone"
    ],
@@ -553,8 +553,7 @@
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
-    "Art",
-    "Just Chatting"
+    "Art"
    ],
    "clip": {
     "url": "https://www.twitch.tv/kristal_et_ses_ac/clip/GentleBitterQuailStinkyCheese-Jesa54ikAOow1cDS",
@@ -672,7 +671,7 @@
     "R.E.P.O.",
     "FINAL FANTASY XIV ONLINE",
     "Special Events",
-    "Invokyr"
+    "Minecraft"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/SpotlessRepletePepperSaltBae-t7BVrcm28auOa6m3",
@@ -804,15 +803,21 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Stardew Valley",
+    "titre": "Stardew // Objectif poule bleue & noix... Bientôt les 150 MimiFollows !!! *_*  !discord !regles !don",
+    "depuis": "2026-11-23T07:44:19Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [],
    "jeux": [
     "Stardew Valley",
     "Poppy Playtime: Chapter 4 - Safe Haven",
     "The Baby In Yellow",
-    "Poppy Playtime: Chapter 3 - Deep Sleep",
-    "Aniimo"
+    "Aniimo",
+    "Among the Sleep"
    ],
    "clip": {
     "url": "https://www.twitch.tv/melpastelplay/clip/SincereFuriousKumquatRaccAttack-2PyLCK4YgCUAeZPg",
@@ -884,8 +889,7 @@
    "jeux": [
     "Disney Dreamlight Valley",
     "Art",
-    "Moonlight Peaks",
-    "R.E.P.O."
+    "Moonlight Peaks"
    ],
    "clip": null
   },
@@ -929,8 +933,8 @@
     "The Legend of Zelda: Ocarina of Time",
     "The Other Side",
     "Invokyr",
-    "All Rats on Deck",
-    "Inside the Backrooms"
+    "Inside the Backrooms",
+    "Codenames"
    ],
    "clip": {
     "url": "https://www.twitch.tv/oko_san_/clip/EmpathicEnthusiasticRuffLitty-un3gL94s8K0Dstcc",
@@ -1011,8 +1015,8 @@
    "premierStream": "2023-03-23",
    "succes": [],
    "jeux": [
-    "The Witcher 3: Wild Hunt Remastered",
     "The Dark Pictures Anthology: House of Ashes",
+    "The Witcher 3: Wild Hunt Remastered",
     "Split Fiction",
     "Just Chatting",
     "Pratfall"
@@ -1132,7 +1136,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-11-07",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "⭐ DDV FR | J3 - On continue Keepsake Sea | !discord !lurk",
+    "depuis": "2026-11-23T07:56:33Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_unoceandedouceur-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1168,5 +1178,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-23T05:07:30.464Z"
+ "maj": "2026-11-23T08:07:38.986Z"
 }
