@@ -7,8 +7,8 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2434,
-  "followsGagnes30": 531,
+  "heuresLive30": 2438,
+  "followsGagnes30": 535,
   "periode": {
    "du": "2026-10-24",
    "au": "2026-11-23"
@@ -83,13 +83,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-11-22",
-   "live": {
-    "viewers": 2,
-    "jeu": "R.E.P.O.",
-    "titre": "Repos: Un cota a respecter ou un robot à la casse ? Avec @lilyth_minerva",
-    "depuis": "2026-11-23T13:17:54Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ameflech-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -298,7 +292,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Lies of P",
+    "titre": "[Lies of P]On tente le boss de fin de DLC ?",
+    "depuis": "2026-11-23T18:53:45Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -440,7 +440,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Writing & Reading",
+    "titre": "Live lecture cocooning de l'Hiver - Croc Blanc de Jack London  Episode 1 !  (!ttc !commandes)",
+    "depuis": "2026-11-23T18:51:31Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [
     {
@@ -601,7 +607,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "VALORANT",
     "titre": "DES HEADSHOTS… OU LE CHAOS 😂",
     "depuis": "2026-11-23T16:14:25Z",
@@ -666,13 +672,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 15,
-    "jeu": "R.E.P.O.",
-    "titre": "🔞Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
-    "depuis": "2026-11-23T13:29:27Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -687,8 +687,8 @@
     }
    ],
    "jeux": [
-    "Tomb Raider",
     "R.E.P.O.",
+    "Tomb Raider",
     "FINAL FANTASY XIV ONLINE",
     "Special Events",
     "Baldur's Gate 3"
@@ -1198,5 +1198,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-23T18:07:44.958Z"
+ "maj": "2026-11-23T19:07:36.169Z"
 }
