@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2394,
+  "heuresLive30": 2396,
   "followsGagnes30": 526,
   "periode": {
    "du": "2026-10-24",
@@ -652,7 +652,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "Baldur's Gate 3",
+    "titre": "🔞Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-23T08:25:40Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -804,7 +810,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 4,
+    "viewers": 6,
     "jeu": "Stardew Valley",
     "titre": "Stardew // Objectif poule bleue & noix... Bientôt les 150 MimiFollows !!! *_*  !discord !regles !don",
     "depuis": "2026-11-23T07:44:19Z",
@@ -1137,7 +1143,7 @@
    "staff": false,
    "depuis": "2026-11-07",
    "live": {
-    "viewers": 4,
+    "viewers": 12,
     "jeu": "Disney Dreamlight Valley",
     "titre": "⭐ DDV FR | J3 - On continue Keepsake Sea | !discord !lurk",
     "depuis": "2026-11-23T07:56:33Z",
@@ -1178,5 +1184,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-23T08:07:38.986Z"
+ "maj": "2026-11-23T08:54:18.473Z"
 }
