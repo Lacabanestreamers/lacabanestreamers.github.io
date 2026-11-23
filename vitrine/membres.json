@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2443,
+  "heuresLive30": 2445,
   "followsGagnes30": 535,
   "periode": {
    "du": "2026-10-24",
@@ -859,7 +859,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "What Remains of Edith Finch",
     "titre": "[FR] ~ Lundécouverte - What Remains of Edith Finch - #1 ~",
     "depuis": "2026-11-23T19:56:59Z",
@@ -872,7 +872,7 @@
     "PUMPKIN PANIC",
     "DEVOUR",
     "Just Chatting",
-    "Psalm 2"
+    "What Remains of Edith Finch"
    ],
    "clip": {
     "url": "https://www.twitch.tv/mysti94/clip/BitterTangentialMacaroniPoooound-G0m0HUvvyrTVbWB4",
@@ -1077,7 +1077,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "Milki Delivery",
     "titre": "La petite laitière partie 2, et fin? <3 #milkidelivery",
     "depuis": "2026-11-23T20:32:54Z",
@@ -1186,5 +1186,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-23T21:07:46.389Z"
+ "maj": "2026-11-23T21:13:13.054Z"
 }
