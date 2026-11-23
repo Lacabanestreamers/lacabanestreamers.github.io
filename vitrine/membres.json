@@ -7,8 +7,8 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2407,
-  "followsGagnes30": 526,
+  "heuresLive30": 2412,
+  "followsGagnes30": 531,
   "periode": {
    "du": "2026-10-24",
    "au": "2026-11-23"
@@ -189,13 +189,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 2,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "🌟DISNEY DREAMLIGHT VALLEY • JE SUIS UNE SIRENE Suite du dlc + quêtes •  4 💗",
-    "depuis": "2026-11-23T09:01:01Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_bichoune_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-04",
    "succes": [],
    "jeux": [
@@ -472,7 +466,7 @@
    "staff": false,
    "depuis": "2026-10-11",
    "live": {
-    "viewers": 15,
+    "viewers": 25,
     "jeu": "Dressmaker (2026)",
     "titre": "Début de semaine tout en douceur 🧵👗",
     "depuis": "2026-11-23T09:32:14Z",
@@ -664,13 +658,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 12,
-    "jeu": "Baldur's Gate 3",
-    "titre": "🔞Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
-    "depuis": "2026-11-23T08:25:40Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -689,7 +677,7 @@
     "R.E.P.O.",
     "FINAL FANTASY XIV ONLINE",
     "Special Events",
-    "Minecraft"
+    "Baldur's Gate 3"
    ],
    "clip": {
     "url": "https://www.twitch.tv/lilyth_minerva/clip/SpotlessRepletePepperSaltBae-t7BVrcm28auOa6m3",
@@ -829,7 +817,13 @@
    "depuis": "2026-09-25",
    "live": null,
    "premierStream": "2026-03-26",
-   "succes": [],
+   "succes": [
+    {
+     "type": "palier",
+     "palier": 150,
+     "date": "2026-11-23"
+    }
+   ],
    "jeux": [
     "Stardew Valley",
     "Poppy Playtime: Chapter 4 - Safe Haven",
@@ -1154,13 +1148,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-11-07",
-   "live": {
-    "viewers": 12,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "⭐ DDV FR | J3 - On continue Keepsake Sea | !discord !lurk",
-    "depuis": "2026-11-23T07:56:33Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_unoceandedouceur-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1196,5 +1184,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-23T11:07:34.530Z"
+ "maj": "2026-11-23T12:07:30.336Z"
 }
