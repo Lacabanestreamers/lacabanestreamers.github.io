@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2414,
+  "heuresLive30": 2416,
   "followsGagnes30": 531,
   "periode": {
    "du": "2026-10-24",
@@ -83,7 +83,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-11-22",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "R.E.P.O.",
+    "titre": "Repos: Un cota a respecter ou un robot à la casse ? Avec @lilyth_minerva",
+    "depuis": "2026-11-23T13:17:54Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_ameflech-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [],
@@ -380,13 +386,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": {
-    "viewers": 7,
-    "jeu": "Hogwarts Legacy",
-    "titre": "[FR] [HL] HOGWARTS LEGACY : ON PART À LA DÉCOUVERTE DES SECRETS DE POUDLARD ! 🏰⚡",
-    "depuis": "2026-11-23T12:17:13Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -658,7 +658,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 16,
+    "jeu": "R.E.P.O.",
+    "titre": "🔞Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-23T13:29:27Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -908,7 +914,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "World of Warcraft",
     "titre": "Salut tout le monde, Nokara viesn d'arriver a mulgore  !!!",
     "depuis": "2026-11-23T12:38:40Z",
@@ -932,7 +938,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "The Legend of Zelda: Ocarina of Time",
+    "titre": "On va sauver Hyrule !!  [!bs !fortune !insta !discord ]",
+    "depuis": "2026-11-23T13:54:34Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
+   },
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -1184,5 +1196,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-23T13:07:29.877Z"
+ "maj": "2026-11-23T14:07:29.031Z"
 }
