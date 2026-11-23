@@ -579,13 +579,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 2,
-    "jeu": "Grand Theft Auto VI",
-    "titre": "🏙️GTA 6 ON REPREND L'AVENTURE À VICE CITY !",
-    "depuis": "2026-11-22T15:06:23Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -1056,13 +1050,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": {
-    "viewers": 14,
-    "jeu": "Milki Delivery",
-    "titre": "La petite laitière <3 #milkidelivery",
-    "depuis": "2026-11-22T14:17:47Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [
     {
@@ -1166,5 +1154,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-23T00:11:35.141Z"
+ "maj": "2026-11-23T01:07:28.893Z"
 }
