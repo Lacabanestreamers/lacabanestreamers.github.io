@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2438,
+  "heuresLive30": 2442,
   "followsGagnes30": 535,
   "periode": {
    "du": "2026-10-24",
@@ -292,13 +292,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": {
-    "viewers": 1,
-    "jeu": "Lies of P",
-    "titre": "[Lies of P]On tente le boss de fin de DLC ?",
-    "depuis": "2026-11-23T18:53:45Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -440,13 +434,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 9,
-    "jeu": "Writing & Reading",
-    "titre": "Live lecture cocooning de l'Hiver - Croc Blanc de Jack London  Episode 1 !  (!ttc !commandes)",
-    "depuis": "2026-11-23T18:51:31Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [
     {
@@ -456,8 +444,8 @@
     }
    ],
    "jeux": [
-    "Shift at Midnight",
     "Writing & Reading",
+    "Shift at Midnight",
     "R.E.P.O.",
     "7 Days to Die",
     "Photomaly"
@@ -606,13 +594,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 2,
-    "jeu": "VALORANT",
-    "titre": "DES HEADSHOTS… OU LE CHAOS 😂",
-    "depuis": "2026-11-23T16:14:25Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -876,7 +858,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "What Remains of Edith Finch",
+    "titre": "[FR] ~ Lundécouverte - What Remains of Edith Finch - #1 ~",
+    "depuis": "2026-11-23T19:56:59Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
+   },
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -903,13 +891,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 11,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "[FR] On commence la semaine ensemble avec The Keepsake Sea 🧜🏻🐠 | Disney Dreamlight Valley | !discord !commandes",
-    "depuis": "2026-11-23T17:00:12Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -1198,5 +1180,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-23T19:07:36.169Z"
+ "maj": "2026-11-23T20:07:43.881Z"
 }
