@@ -6,11 +6,11 @@
  "chiffres": {
   "membres": 45,
   "affilies": 41,
-  "nouveaux30": 7,
-  "heuresLive30": 2445,
-  "followsGagnes30": 535,
+  "nouveaux30": 6,
+  "heuresLive30": 2380,
+  "followsGagnes30": 527,
   "periode": {
-   "du": "2026-10-24",
+   "du": "2026-10-25",
    "au": "2026-11-23"
   }
  },
@@ -1077,7 +1077,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 4,
+    "viewers": 14,
     "jeu": "Milki Delivery",
     "titre": "La petite laitière partie 2, et fin? <3 #milkidelivery",
     "depuis": "2026-11-23T20:32:54Z",
@@ -1186,5 +1186,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-23T21:13:13.054Z"
+ "maj": "2026-11-23T22:07:40.220Z"
 }
