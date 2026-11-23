@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2380,
+  "heuresLive30": 2382,
   "followsGagnes30": 527,
   "periode": {
    "du": "2026-10-25",
@@ -858,13 +858,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 7,
-    "jeu": "What Remains of Edith Finch",
-    "titre": "[FR] ~ Lundécouverte - What Remains of Edith Finch - #1 ~",
-    "depuis": "2026-11-23T19:56:59Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -1077,7 +1071,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 14,
+    "viewers": 10,
     "jeu": "Milki Delivery",
     "titre": "La petite laitière partie 2, et fin? <3 #milkidelivery",
     "depuis": "2026-11-23T20:32:54Z",
@@ -1095,8 +1089,8 @@
     "Loftia",
     "Grand Theft Auto VI",
     "Space Savory",
-    "Just Chatting",
-    "Invokyr"
+    "Milki Delivery",
+    "Just Chatting"
    ],
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/GlamorousObedientPanPartyTime-Ct6e7yOoW-YgtEnp",
@@ -1186,5 +1180,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-23T22:07:40.220Z"
+ "maj": "2026-11-23T23:07:47.213Z"
 }
