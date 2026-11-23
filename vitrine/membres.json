@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2420,
+  "heuresLive30": 2424,
   "followsGagnes30": 531,
   "periode": {
    "du": "2026-10-24",
@@ -388,7 +388,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Hogwarts Legacy",
+    "titre": "[FR] [HL] HOGWARTS LEGACY : ON PART À LA DÉCOUVERTE DES SECRETS DE POUDLARD ! 🏰⚡",
+    "depuis": "2026-11-23T15:28:25Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
+   },
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -661,7 +667,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 18,
+    "viewers": 14,
     "jeu": "R.E.P.O.",
     "titre": "🔞Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-23T13:29:27Z",
@@ -915,13 +921,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 2,
-    "jeu": "World of Warcraft",
-    "titre": "Salut tout le monde, Nokara viesn d'arriver a mulgore  !!!",
-    "depuis": "2026-11-23T12:38:40Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -941,7 +941,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 5,
     "jeu": "The Legend of Zelda: Ocarina of Time",
     "titre": "On va sauver Hyrule !!  [!bs !fortune !insta !discord ]",
     "depuis": "2026-11-23T13:54:34Z",
@@ -1198,5 +1198,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-23T15:07:29.960Z"
+ "maj": "2026-11-23T16:07:32.743Z"
 }
