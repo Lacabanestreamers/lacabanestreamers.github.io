@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2412,
+  "heuresLive30": 2414,
   "followsGagnes30": 531,
   "periode": {
    "du": "2026-10-24",
@@ -380,7 +380,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "Hogwarts Legacy",
+    "titre": "[FR] [HL] HOGWARTS LEGACY : ON PART À LA DÉCOUVERTE DES SECRETS DE POUDLARD ! 🏰⚡",
+    "depuis": "2026-11-23T12:17:13Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
+   },
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -465,13 +471,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-11",
-   "live": {
-    "viewers": 25,
-    "jeu": "Dressmaker (2026)",
-    "titre": "Début de semaine tout en douceur 🧵👗",
-    "depuis": "2026-11-23T09:32:14Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hagosan-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2023-07-10",
    "succes": [],
    "jeux": [
@@ -783,13 +783,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 2,
-    "jeu": "Slime Rancher 2",
-    "titre": "Jour 8 j'ai du bouffer arca",
-    "depuis": "2026-11-23T09:08:44Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mattmist2-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-08",
    "succes": [
     {
@@ -913,7 +907,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "World of Warcraft",
+    "titre": "Salut tout le monde, Nokara viesn d'arriver a mulgore  !!!",
+    "depuis": "2026-11-23T12:38:40Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1184,5 +1184,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-23T12:07:30.336Z"
+ "maj": "2026-11-23T13:07:29.877Z"
 }
