@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2387,
+  "heuresLive30": 2389,
   "followsGagnes30": 515,
   "periode": {
    "du": "2026-10-24",
@@ -580,7 +580,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
+    "viewers": 3,
     "jeu": "Grand Theft Auto VI",
     "titre": "🏙️GTA 6 ON REPREND L'AVENTURE À VICE CITY !",
     "depuis": "2026-11-22T15:06:23Z",
@@ -1057,7 +1057,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 22,
+    "viewers": 15,
     "jeu": "Milki Delivery",
     "titre": "La petite laitière <3 #milkidelivery",
     "depuis": "2026-11-22T14:17:47Z",
@@ -1166,5 +1166,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-22T23:07:28.920Z"
+ "maj": "2026-11-23T00:07:29.881Z"
 }
