@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2416,
+  "heuresLive30": 2420,
   "followsGagnes30": 531,
   "periode": {
    "du": "2026-10-24",
@@ -84,7 +84,7 @@
    "staff": false,
    "depuis": "2026-11-22",
    "live": {
-    "viewers": 1,
+    "viewers": 3,
     "jeu": "R.E.P.O.",
     "titre": "Repos: Un cota a respecter ou un robot à la casse ? Avec @lilyth_minerva",
     "depuis": "2026-11-23T13:17:54Z",
@@ -92,7 +92,9 @@
    },
    "premierStream": null,
    "succes": [],
-   "jeux": [],
+   "jeux": [
+    "R.E.P.O."
+   ],
    "clip": {
     "url": "https://www.twitch.tv/ameflech/clip/AgileFlaccidSnoodArsonNoSexy-k2MoTyMpkEIuv8VN",
     "titre": "WzBot CLIP | Repos: Un monde de dingo et tout va bien? Avec @lilyth_minerva (by ameflech)",
@@ -659,7 +661,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 16,
+    "viewers": 18,
     "jeu": "R.E.P.O.",
     "titre": "🔞Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-23T13:29:27Z",
@@ -939,7 +941,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "The Legend of Zelda: Ocarina of Time",
     "titre": "On va sauver Hyrule !!  [!bs !fortune !insta !discord ]",
     "depuis": "2026-11-23T13:54:34Z",
@@ -1196,5 +1198,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-23T14:07:29.031Z"
+ "maj": "2026-11-23T15:07:29.960Z"
 }
