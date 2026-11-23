@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2424,
+  "heuresLive30": 2428,
   "followsGagnes30": 531,
   "periode": {
    "du": "2026-10-24",
@@ -389,7 +389,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 1,
+    "viewers": 8,
     "jeu": "Hogwarts Legacy",
     "titre": "[FR] [HL] HOGWARTS LEGACY : ON PART À LA DÉCOUVERTE DES SECRETS DE POUDLARD ! 🏰⚡",
     "depuis": "2026-11-23T15:28:25Z",
@@ -606,7 +606,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "VALORANT",
+    "titre": "DES HEADSHOTS… OU LE CHAOS 😂",
+    "depuis": "2026-11-23T16:14:25Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -667,7 +673,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 18,
     "jeu": "R.E.P.O.",
     "titre": "🔞Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-23T13:29:27Z",
@@ -903,7 +909,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "[FR] On commence la semaine ensemble avec The Keepsake Sea 🧜🏻🐠 | Disney Dreamlight Valley | !discord !commandes",
+    "depuis": "2026-11-23T17:00:12Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
+   },
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -941,7 +953,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "The Legend of Zelda: Ocarina of Time",
     "titre": "On va sauver Hyrule !!  [!bs !fortune !insta !discord ]",
     "depuis": "2026-11-23T13:54:34Z",
@@ -1198,5 +1210,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-23T16:07:32.743Z"
+ "maj": "2026-11-23T17:07:31.341Z"
 }
