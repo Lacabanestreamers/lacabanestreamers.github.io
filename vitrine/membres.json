@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 7,
-  "heuresLive30": 2442,
+  "heuresLive30": 2443,
   "followsGagnes30": 535,
   "periode": {
    "du": "2026-10-24",
@@ -1076,7 +1076,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Milki Delivery",
+    "titre": "La petite laitière partie 2, et fin? <3 #milkidelivery",
+    "depuis": "2026-11-23T20:32:54Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [
     {
@@ -1180,5 +1186,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-23T20:07:43.881Z"
+ "maj": "2026-11-23T21:07:46.389Z"
 }
