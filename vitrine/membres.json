@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2405,
+  "heuresLive30": 2411,
   "followsGagnes30": 540,
   "periode": {
    "du": "2026-10-25",
@@ -152,7 +152,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 2,
+    "viewers": 8,
     "jeu": "Once Human",
     "titre": "On bâtit notre petit havre de paix en solo sur Once Human, ambiance chill et loot au poil",
     "depuis": "2026-11-24T14:03:46Z",
@@ -171,7 +171,7 @@
     "7 Days to Die",
     "Dice Hoarder",
     "Outbound",
-    "Cinderia"
+    "Once Human"
    ],
    "clip": {
     "url": "https://www.twitch.tv/aulit42369/clip/JoyousWealthyNarwhalJKanStyle-Gp9yC7CrwLc6tcOv",
@@ -235,7 +235,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 19,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🏴‍☠️ Sirènes, pirates et chaos : découverte de The Keepsake Sea #2 😄",
     "depuis": "2026-11-24T09:59:13Z",
@@ -405,7 +405,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "World of Warcraft",
+    "titre": "[DROP] On monte un de mes rerolls !",
+    "depuis": "2026-11-24T14:27:30Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galaadours-440x248.jpg"
+   },
    "premierStream": "2023-06-06",
    "succes": [],
    "jeux": [
@@ -556,7 +562,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 16,
+    "viewers": 14,
     "jeu": "Art",
     "titre": "✦ FOOD ART ✦ Les brochettes de Toads ! | Derniers lives pour utiliser vos tickets !artchallenges |🌟 Nv obj 500 follow ! | !liens",
     "depuis": "2026-11-24T13:43:44Z",
@@ -604,7 +610,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Grand Theft Auto VI",
+    "titre": "🏙️GTA 6 ON REPREND L'AVENTURE À VICE CITY !",
+    "depuis": "2026-11-24T14:19:22Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -665,7 +677,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 8,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "🔞Du farm et du chill !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-24T13:43:31Z",
@@ -1085,7 +1097,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Grand Theft Auto VI",
+    "titre": "GTA avant la soirée Peak :)",
+    "depuis": "2026-11-24T14:59:30Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [
     {
@@ -1189,5 +1207,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-24T14:07:45.088Z"
+ "maj": "2026-11-24T15:07:35.910Z"
 }
