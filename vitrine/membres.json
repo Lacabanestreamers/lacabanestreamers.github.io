@@ -7,8 +7,8 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2397,
-  "followsGagnes30": 537,
+  "heuresLive30": 2401,
+  "followsGagnes30": 540,
   "periode": {
    "du": "2026-10-25",
    "au": "2026-11-24"
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 2,
+    "viewers": 4,
     "jeu": "God of War III: Remastered",
     "titre": "God of War Remastered /PS4",
     "depuis": "2026-11-24T10:03:00Z",
@@ -235,7 +235,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 22,
     "jeu": "The Sims 4",
     "titre": "😂 PAUVRE ➜ RICHE #4 | Le manoir attendra encore... 🏡 (challenge by @aly0806)",
     "depuis": "2026-11-24T09:59:13Z",
@@ -297,13 +297,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": {
-    "viewers": 5,
-    "jeu": "Warframe",
-    "titre": "[Warframe](MR27) Coffee, plat and chill !",
-    "depuis": "2026-11-24T07:54:33Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -658,13 +652,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 8,
-    "jeu": "Overwatch",
-    "titre": "🔞On essaie de pas rager !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
-    "depuis": "2026-11-24T08:37:08Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -1177,5 +1165,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-24T11:07:36.971Z"
+ "maj": "2026-11-24T12:07:36.333Z"
 }
