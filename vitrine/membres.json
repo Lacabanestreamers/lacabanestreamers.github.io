@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2411,
+  "heuresLive30": 2420,
   "followsGagnes30": 540,
   "periode": {
    "du": "2026-10-25",
@@ -152,7 +152,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 10,
     "jeu": "Once Human",
     "titre": "On bâtit notre petit havre de paix en solo sur Once Human, ambiance chill et loot au poil",
     "depuis": "2026-11-24T14:03:46Z",
@@ -234,13 +234,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 19,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "🏴‍☠️ Sirènes, pirates et chaos : découverte de The Keepsake Sea #2 😄",
-    "depuis": "2026-11-24T09:59:13Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -263,8 +257,8 @@
     "Special Events",
     "Planet Zoo 2",
     "The Sims 4",
-    "Dispatch",
-    "Disney Dreamlight Valley"
+    "Disney Dreamlight Valley",
+    "Dispatch"
    ],
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/ViscousAuspiciousSoybeanTwitchRaid-i0jigR8d73uvxPv1",
@@ -406,7 +400,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 4,
     "jeu": "World of Warcraft",
     "titre": "[DROP] On monte un de mes rerolls !",
     "depuis": "2026-11-24T14:27:30Z",
@@ -562,7 +556,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 14,
+    "viewers": 16,
     "jeu": "Art",
     "titre": "✦ FOOD ART ✦ Les brochettes de Toads ! | Derniers lives pour utiliser vos tickets !artchallenges |🌟 Nv obj 500 follow ! | !liens",
     "depuis": "2026-11-24T13:43:44Z",
@@ -611,7 +605,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "Grand Theft Auto VI",
     "titre": "🏙️GTA 6 ON REPREND L'AVENTURE À VICE CITY !",
     "depuis": "2026-11-24T14:19:22Z",
@@ -677,7 +671,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 10,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "🔞Du farm et du chill !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-24T13:43:31Z",
@@ -924,13 +918,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 2,
-    "jeu": "World of Warcraft",
-    "titre": "Salut tout le monde, Nokara sont aventure en Tanaris !!!",
-    "depuis": "2026-11-24T12:07:07Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1098,7 +1086,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 3,
+    "viewers": 13,
     "jeu": "Grand Theft Auto VI",
     "titre": "GTA avant la soirée Peak :)",
     "depuis": "2026-11-24T14:59:30Z",
@@ -1171,7 +1159,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-11-07",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "⭐ DDV FR | J4 - On continue Keepsake Sea | !discord !lurk",
+    "depuis": "2026-11-24T16:01:28Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_unoceandedouceur-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1207,5 +1201,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-24T15:07:35.910Z"
+ "maj": "2026-11-24T16:07:40.587Z"
 }
