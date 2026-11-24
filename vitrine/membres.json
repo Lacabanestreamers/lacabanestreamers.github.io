@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2382,
+  "heuresLive30": 2383,
   "followsGagnes30": 527,
   "periode": {
    "du": "2026-10-25",
@@ -594,7 +594,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Grand Theft Auto VI",
+    "titre": "🏙️GTA 6 ON REPREND L'AVENTURE À VICE CITY !",
+    "depuis": "2026-11-23T23:43:27Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -1070,13 +1076,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": {
-    "viewers": 10,
-    "jeu": "Milki Delivery",
-    "titre": "La petite laitière partie 2, et fin? <3 #milkidelivery",
-    "depuis": "2026-11-23T20:32:54Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [
     {
@@ -1180,5 +1180,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-23T23:07:47.213Z"
+ "maj": "2026-11-24T00:07:37.384Z"
 }
