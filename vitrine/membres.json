@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2387,
+  "heuresLive30": 2389,
   "followsGagnes30": 537,
   "periode": {
    "du": "2026-10-25",
@@ -286,7 +286,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 3,
+    "viewers": 5,
     "jeu": "Warframe",
     "titre": "[Warframe](MR27) Coffee, plat and chill !",
     "depuis": "2026-11-24T07:54:33Z",
@@ -646,7 +646,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 14,
+    "jeu": "Overwatch",
+    "titre": "🔞On essaie de pas rager !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-24T08:37:08Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -798,7 +804,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 10,
+    "viewers": 13,
     "jeu": "Stardew Valley",
     "titre": "Stardew // Aujourd'hui on récupère notre poule bleue !!! Objectif 160 MimiFollows ??  !discord !regles !don",
     "depuis": "2026-11-24T07:40:09Z",
@@ -1165,5 +1171,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-24T08:07:39.116Z"
+ "maj": "2026-11-24T09:07:34.378Z"
 }
