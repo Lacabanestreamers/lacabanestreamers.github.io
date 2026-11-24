@@ -7,10 +7,10 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2463,
-  "followsGagnes30": 555,
+  "heuresLive30": 2421,
+  "followsGagnes30": 556,
   "periode": {
-   "du": "2026-10-25",
+   "du": "2026-10-26",
    "au": "2026-11-24"
   }
  },
@@ -24,7 +24,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "God of War III: Remastered",
+    "titre": "God of War Remastered /PS4",
+    "depuis": "2026-11-24T22:47:39Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -99,18 +105,12 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": {
-    "viewers": 3,
-    "jeu": "PEAK",
-    "titre": "🏕️ Départ de la Taverne, direction le sommet (Retour non garanti) !🧗 | ❗cmd ❗rs ❗clip",
-    "depuis": "2026-11-24T19:55:04Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asakha-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2021-12-06",
    "succes": [],
    "jeux": [
-    "R.E.P.O.",
     "PEAK",
+    "R.E.P.O.",
     "Abiotic Factor",
     "Demonologist"
    ],
@@ -342,13 +342,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 10,
-    "jeu": "Art",
-    "titre": "🐿️ SOIRÉE COLORIAGE DES MARMOTTES 🎨 | Chill & détente ensemble 💖",
-    "depuis": "2026-11-24T19:44:56Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-05-25",
    "succes": [
     {
@@ -432,13 +426,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 7,
-    "jeu": "PEAK",
-    "titre": "Ce soir, de courageux aventuriers s'aventurent jusqu'aux sommets de la montagne pour le Pandathon ! Rejoignez nous ! (!ttc !commandes)",
-    "depuis": "2026-11-24T19:52:29Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [
     {
@@ -452,7 +440,7 @@
     "Shift at Midnight",
     "R.E.P.O.",
     "7 Days to Die",
-    "Photomaly"
+    "PEAK"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/CoweringBlushingPheasantGingerPower-q6zsCSUU1LHcWkQJ",
@@ -498,7 +486,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 7,
+    "viewers": 6,
     "jeu": "Moon Sweepers",
     "titre": "FR_VT - GO sur la luna !!",
     "depuis": "2026-11-24T20:18:43Z",
@@ -709,7 +697,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
+    "viewers": 16,
     "jeu": "ROB RUN",
     "titre": "WIPE sur ROB RUN Go faire des tunes !",
     "depuis": "2026-11-24T20:15:23Z",
@@ -880,13 +868,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 5,
-    "jeu": "The Sims 4",
-    "titre": "[FR] ~ Sims 4 - Challenge des Festivités- Halloween #7 ~",
-    "depuis": "2026-11-24T19:51:26Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -976,13 +958,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 6,
-    "jeu": "Jurassic Architect",
-    "titre": "JURASSIC ARCHITECT [FR] | On découvre ensemble ce petit jeu bien sympa avec tout pleins de dino, et vous pouvez interagir 🦕| !discord",
-    "depuis": "2026-11-24T20:14:23Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-10",
    "succes": [
     {
@@ -996,7 +972,7 @@
     "Terrible Lizards",
     "Phasmophobia",
     "R.E.P.O.",
-    "Demonologist"
+    "Jurassic Architect"
    ],
    "clip": null
   },
@@ -1097,13 +1073,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": {
-    "viewers": 5,
-    "jeu": "PEAK",
-    "titre": "Le peak du Pandathon d'@hazill_ avec les coupaings!",
-    "depuis": "2026-11-24T14:59:30Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [
     {
@@ -1207,5 +1177,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-24T22:07:36.826Z"
+ "maj": "2026-11-24T23:07:39.318Z"
 }
