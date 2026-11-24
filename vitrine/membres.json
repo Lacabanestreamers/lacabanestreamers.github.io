@@ -44,9 +44,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
-    "jeu": "Layer Land",
-    "titre": "🥰une petite découverte en chill se soir 🥰",
+    "viewers": 18,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "🌈 Moment chill en Panda sur DDV ✨",
     "depuis": "2026-11-24T16:30:14Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
    },
@@ -658,13 +658,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 11,
-    "jeu": "FINAL FANTASY XIV ONLINE",
-    "titre": "🔞Du farm et du chill !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
-    "depuis": "2026-11-24T13:43:31Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -743,7 +737,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 8,
+    "viewers": 9,
     "jeu": "Phasmophobia",
     "titre": "MAJ PHASMOOOO - !lurk !discord ft @calo_vt",
     "depuis": "2026-11-24T16:27:31Z",
@@ -1080,7 +1074,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 11,
+    "viewers": 12,
     "jeu": "Grand Theft Auto VI",
     "titre": "GTA avant la soirée Peak :)",
     "depuis": "2026-11-24T14:59:30Z",
@@ -1154,7 +1148,7 @@
    "staff": false,
    "depuis": "2026-11-07",
    "live": {
-    "viewers": 15,
+    "viewers": 13,
     "jeu": "Disney Dreamlight Valley",
     "titre": "⭐ DDV FR | J4 - On continue Keepsake Sea | !discord !lurk",
     "depuis": "2026-11-24T16:01:28Z",
@@ -1195,5 +1189,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-24T17:29:54.359Z"
+ "maj": "2026-11-24T18:07:41.707Z"
 }
