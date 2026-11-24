@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2403,
+  "heuresLive30": 2405,
   "followsGagnes30": 540,
   "periode": {
    "du": "2026-10-25",
@@ -151,7 +151,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Once Human",
+    "titre": "On bâtit notre petit havre de paix en solo sur Once Human, ambiance chill et loot au poil",
+    "depuis": "2026-11-24T14:03:46Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
+   },
    "premierStream": "2025-10-09",
    "succes": [
     {
@@ -229,9 +235,9 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 17,
-    "jeu": "The Sims 4",
-    "titre": "😂 PAUVRE ➜ RICHE #4 | Le manoir attendra encore... 🏡 (challenge by @aly0806)",
+    "viewers": 14,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "🏴‍☠️ Sirènes, pirates et chaos : découverte de The Keepsake Sea #2 😄",
     "depuis": "2026-11-24T09:59:13Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
    },
@@ -485,7 +491,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "Fire Emblem: Fortune's Weave",
+    "titre": "FR_VT - En vrai, dites le moi, suis je addict a ce jeu???",
+    "depuis": "2026-11-24T13:16:36Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -539,11 +551,17 @@
    "login": "kristal_et_ses_ac",
    "nom": "Kristal_et_ses_AC",
    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/3c431a1d-3bef-4fc4-bb12-f060b780f870-profile_image-300x300.png",
-   "bio": "👋 Bienvenu chez la team des Aberrations Chromatiques ! Moi, c'est Kristal (Alizée) ! Mon objectif : vivre de mon Art ! Ici, ça dessine, ça joue, ça discute, on se soutient les un les autres, et surtout, on s'amuse ! Rejoins-nous et fais parti de la team ! ✨",
+   "bio": "👋 Bienvenu chez les Aberrations Chromatiques ! Je suis Kristal (Alizée) ! Mon objectif : vivre de mon Art ! Ici, ça dessine, ça joue, ça discute, on se soutient les un les autres, et surtout, on s'amuse ! Rejoins-nous et fais parti de la team ! ✨",
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 16,
+    "jeu": "Art",
+    "titre": "✦ FOOD ART ✦ Les brochettes de Toads ! | Derniers lives pour utiliser vos tickets !artchallenges |🌟 Nv obj 500 follow ! | !liens",
+    "depuis": "2026-11-24T13:43:44Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
+   },
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -646,7 +664,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "FINAL FANTASY XIV ONLINE",
+    "titre": "🔞Du farm et du chill !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-24T13:43:31Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -1165,5 +1189,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-24T13:07:34.570Z"
+ "maj": "2026-11-24T14:07:45.088Z"
 }
