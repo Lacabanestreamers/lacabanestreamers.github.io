@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2453,
+  "heuresLive30": 2463,
   "followsGagnes30": 555,
   "periode": {
    "du": "2026-10-25",
@@ -110,8 +110,8 @@
    "succes": [],
    "jeux": [
     "R.E.P.O.",
-    "Abiotic Factor",
     "PEAK",
+    "Abiotic Factor",
     "Demonologist"
    ],
    "clip": {
@@ -316,13 +316,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 1,
-    "jeu": "Pokémon Quest",
-    "titre": "◻️Pokemon Quest ~ On continue l'aventure ! - !réseaux",
-    "depuis": "2026-11-24T18:59:36Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -336,7 +330,7 @@
     "Splatoon 3",
     "The Survivalists",
     "Tomodachi Life: Living the Dream",
-    "Sprout Valley"
+    "Pokémon Quest"
    ],
    "clip": null
   },
@@ -349,7 +343,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 10,
     "jeu": "Art",
     "titre": "🐿️ SOIRÉE COLORIAGE DES MARMOTTES 🎨 | Chill & détente ensemble 💖",
     "depuis": "2026-11-24T19:44:56Z",
@@ -439,7 +433,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 7,
     "jeu": "PEAK",
     "titre": "Ce soir, de courageux aventuriers s'aventurent jusqu'aux sommets de la montagne pour le Pandathon ! Rejoignez nous ! (!ttc !commandes)",
     "depuis": "2026-11-24T19:52:29Z",
@@ -504,7 +498,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 9,
+    "viewers": 7,
     "jeu": "Moon Sweepers",
     "titre": "FR_VT - GO sur la luna !!",
     "depuis": "2026-11-24T20:18:43Z",
@@ -611,7 +605,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 2,
+    "viewers": 1,
     "jeu": "Grand Theft Auto VI",
     "titre": "🏙️GTA 6 ON REPREND L'AVENTURE À VICE CITY !",
     "depuis": "2026-11-24T20:53:14Z",
@@ -715,7 +709,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 5,
+    "viewers": 8,
     "jeu": "ROB RUN",
     "titre": "WIPE sur ROB RUN Go faire des tunes !",
     "depuis": "2026-11-24T20:15:23Z",
@@ -983,7 +977,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 8,
+    "viewers": 6,
     "jeu": "Jurassic Architect",
     "titre": "JURASSIC ARCHITECT [FR] | On découvre ensemble ce petit jeu bien sympa avec tout pleins de dino, et vous pouvez interagir 🦕| !discord",
     "depuis": "2026-11-24T20:14:23Z",
@@ -1104,7 +1098,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "PEAK",
     "titre": "Le peak du Pandathon d'@hazill_ avec les coupaings!",
     "depuis": "2026-11-24T14:59:30Z",
@@ -1213,5 +1207,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-24T21:07:37.071Z"
+ "maj": "2026-11-24T22:07:36.826Z"
 }
