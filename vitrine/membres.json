@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2384,
+  "heuresLive30": 2385,
   "followsGagnes30": 527,
   "periode": {
    "du": "2026-10-25",
@@ -33,14 +33,7 @@
     "A Plague Tale: Innocence",
     "God of War III: Remastered"
    ],
-   "clip": {
-    "url": "https://www.twitch.tv/alf_de_melmac/clip/IronicSuccessfulKimchiDansGame-AyYSUpkA5LUI0kzD",
-    "titre": "Elle était belle, celle-là!",
-    "vues": 5,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/82a9dde5-69dc-48b9-ba3c-927d7c617dcf/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-17",
-    "duree": 23
-   }
+   "clip": null
   },
   {
    "login": "aly0806",
@@ -69,7 +62,7 @@
    "clip": {
     "url": "https://www.twitch.tv/aly0806/clip/CoyCovertGorillaCopyThis-UMOFRZFbEf_phBFN",
     "titre": "Première transformation",
-    "vues": 2,
+    "vues": 3,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/2d2c573e-076e-4b27-ae67-193c413f6ce2/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-22",
     "duree": 31
@@ -92,7 +85,7 @@
    "clip": {
     "url": "https://www.twitch.tv/ameflech/clip/AgileFlaccidSnoodArsonNoSexy-k2MoTyMpkEIuv8VN",
     "titre": "WzBot CLIP | Repos: Un monde de dingo et tout va bien? Avec @lilyth_minerva (by ameflech)",
-    "vues": 5,
+    "vues": 8,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/71291fa2-61ae-4814-8cfd-74536aeb567c/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-20",
     "duree": 60
@@ -264,7 +257,7 @@
    "clip": {
     "url": "https://www.twitch.tv/chezelodie/clip/ViscousAuspiciousSoybeanTwitchRaid-i0jigR8d73uvxPv1",
     "titre": "WzBot CLIP | 🦒 Planet Zoo 2 : le zoo grandi , une étoile de plus ça serait top ! ? (by aulit42369)",
-    "vues": 9,
+    "vues": 11,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b9c5b34f-efbf-465e-81a3-c9b56bc43960/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-18",
     "duree": 60
@@ -307,14 +300,7 @@
     "Lies of P",
     "Aniimo"
    ],
-   "clip": {
-    "url": "https://www.twitch.tv/detectiverenard/clip/MoistInspiringFishArgieB8-uF8e_PcV-_5q9O9H",
-    "titre": "WHAT!?",
-    "vues": 3,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/eba09e26-a579-4032-a80c-ba617f47e2d4/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-16",
-    "duree": 26
-   }
+   "clip": null
   },
   {
    "login": "elegaming__",
@@ -368,7 +354,7 @@
    "clip": {
     "url": "https://www.twitch.tv/emmamarmotte/clip/DoubtfulPlainLasagnaCoolStoryBro-w0NzqZlT09wH6Vx7",
     "titre": "🗺️ Disney DreamLight Valley ! On continue le DLC 4 !🌟",
-    "vues": 3,
+    "vues": 7,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/699a11d8-c3a4-453e-b55a-c96790c03465/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-21",
     "duree": 30
@@ -451,11 +437,11 @@
     "Photomaly"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/galyssiane/clip/CooperativeZealousOstrichGingerPower-DIumfVqvanvHzevs",
-    "titre": "WzBot CLIP | Photomaly , la suite ! Des photos, et du flip ! Venez me rejoindre pour dé (by galyssia",
-    "vues": 10,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/14272e52-68bb-422e-a80c-87f9a44c4f70/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-16",
+    "url": "https://www.twitch.tv/galyssiane/clip/CoweringBlushingPheasantGingerPower-q6zsCSUU1LHcWkQJ",
+    "titre": "WzBot CLIP | Test de démos avec @sakkiel cet après midi! Venez trembler avec nous ! (! (by galyssian",
+    "vues": 4,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/194e6c49-4bd9-4746-9469-b8430be72759/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-18",
     "duree": 60
    }
   },
@@ -517,7 +503,7 @@
    "clip": {
     "url": "https://www.twitch.tv/hyroshimaeu/clip/TriangularCarefulSashimiOneHand-QyXokUq-hwLf3jZj",
     "titre": "La chance ?  Ep 1",
-    "vues": 3,
+    "vues": 4,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/893f6273-85f9-4948-8c59-a1b7b7ad7d96/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-21",
     "duree": 30
@@ -595,10 +581,10 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 4,
-    "jeu": "Grand Theft Auto VI",
-    "titre": "🏙️GTA 6 ON REPREND L'AVENTURE À VICE CITY !",
-    "depuis": "2026-11-23T23:43:27Z",
+    "viewers": 1,
+    "jeu": "VALORANT",
+    "titre": "un peu de valo chill avec @floragetting",
+    "depuis": "2026-11-24T01:30:03Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
    },
    "premierStream": "2027-08-31",
@@ -644,11 +630,11 @@
     "We Were Here Tomorrow"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/liiapin/clip/BigAliveOrangeChocolateRain-TNocI7ggePMD7ivl",
+    "url": "https://www.twitch.tv/liiapin/clip/AntsyDelightfulClintKlappa-3VuA6axh_Oyo4AW4",
     "titre": "Clip by inStreamly",
     "vues": 2,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/98f80481-5aee-4b98-824b-25cbdd943ee7/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-21",
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b59be9fb-4e8f-4ee3-b0e5-6efcf8b2c527/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-22",
     "duree": 26
    }
   },
@@ -874,14 +860,7 @@
     "Just Chatting",
     "What Remains of Edith Finch"
    ],
-   "clip": {
-    "url": "https://www.twitch.tv/mysti94/clip/BitterTangentialMacaroniPoooound-G0m0HUvvyrTVbWB4",
-    "titre": "WzBot CLIP | [FR] ~ Lundécouverte - Démo - Plasm 2 ~ (by misschampignon)",
-    "vues": 1,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/08376ade-0b9b-408f-b227-c4bc7933338c/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-16",
-    "duree": 60
-   }
+   "clip": null
   },
   {
    "login": "nabelle_",
@@ -1095,7 +1074,7 @@
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/GlamorousObedientPanPartyTime-Ct6e7yOoW-YgtEnp",
     "titre": "Session tests avec @Galyssiane Les fantômes qui font du flipper? x) #Friendslop #keymailer",
-    "vues": 8,
+    "vues": 9,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/9fd7ebe7-477e-4991-8927-17bed5335621/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-18",
     "duree": 30
@@ -1130,7 +1109,7 @@
    "clip": {
     "url": "https://www.twitch.tv/tata_gazouille/clip/AntediluvianFaithfulSashimiPeteZarollTie-r3C4b0BFMedXRfO_",
     "titre": "SAMA Accueilli en REINE",
-    "vues": 25,
+    "vues": 30,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/dedaf6f4-a2c3-4d3a-ad01-15678f0b4097/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-22",
     "duree": 37
@@ -1151,12 +1130,12 @@
     "Disney Dreamlight Valley"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/unoceandedouceur/clip/FreezingPlainCroissantPermaSmug-ERx9myXphZyGtfJi",
-    "titre": "Océ Jackson, la reine de la pop 😎",
-    "vues": 5,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/21549b73-b6b3-4f12-8dda-1a1eea833dc3/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-21",
-    "duree": 21
+    "url": "https://www.twitch.tv/unoceandedouceur/clip/ProductiveCalmBeaverCoolCat-fd31KM9rfb6SBdRw",
+    "titre": "Qu'est-ce qui se passe encore xD",
+    "vues": 7,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b88d1fb2-b2e8-4ad5-8eed-d33791010ef2/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-23",
+    "duree": 60
    }
   },
   {
@@ -1180,5 +1159,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-24T01:07:34.766Z"
+ "maj": "2026-11-24T02:08:05.453Z"
 }
