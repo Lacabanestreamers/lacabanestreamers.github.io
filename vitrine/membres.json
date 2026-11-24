@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2386,
+  "heuresLive30": 2387,
   "followsGagnes30": 527,
   "periode": {
    "du": "2026-10-25",
@@ -580,13 +580,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 3,
-    "jeu": "VALORANT",
-    "titre": "un peu de valo chill avec @floragetting",
-    "depuis": "2026-11-24T01:30:03Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -1159,5 +1153,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-24T03:07:34.101Z"
+ "maj": "2026-11-24T04:07:35.340Z"
 }
