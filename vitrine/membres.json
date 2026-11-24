@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2389,
+  "heuresLive30": 2392,
   "followsGagnes30": 537,
   "periode": {
    "du": "2026-10-25",
@@ -24,7 +24,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "God of War III: Remastered",
+    "titre": "God of War Remastered /PS4",
+    "depuis": "2026-11-24T10:03:00Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -228,7 +234,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "The Sims 4",
+    "titre": "😂 PAUVRE ➜ RICHE #4 | Le manoir attendra encore... 🏡 (challenge by @aly0806)",
+    "depuis": "2026-11-24T09:59:13Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -647,7 +659,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 15,
     "jeu": "Overwatch",
     "titre": "🔞On essaie de pas rager !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-24T08:37:08Z",
@@ -804,7 +816,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 13,
+    "viewers": 9,
     "jeu": "Stardew Valley",
     "titre": "Stardew // Aujourd'hui on récupère notre poule bleue !!! Objectif 160 MimiFollows ??  !discord !regles !don",
     "depuis": "2026-11-24T07:40:09Z",
@@ -1171,5 +1183,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-24T09:07:34.378Z"
+ "maj": "2026-11-24T10:07:34.436Z"
 }
