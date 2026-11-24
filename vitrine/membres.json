@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2447,
+  "heuresLive30": 2453,
   "followsGagnes30": 555,
   "periode": {
    "du": "2026-10-25",
@@ -349,7 +349,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 11,
     "jeu": "Art",
     "titre": "🐿️ SOIRÉE COLORIAGE DES MARMOTTES 🎨 | Chill & détente ensemble 💖",
     "depuis": "2026-11-24T19:44:56Z",
@@ -439,7 +439,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 8,
     "jeu": "PEAK",
     "titre": "Ce soir, de courageux aventuriers s'aventurent jusqu'aux sommets de la montagne pour le Pandathon ! Rejoignez nous ! (!ttc !commandes)",
     "depuis": "2026-11-24T19:52:29Z",
@@ -503,7 +503,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "Moon Sweepers",
+    "titre": "FR_VT - GO sur la luna !!",
+    "depuis": "2026-11-24T20:18:43Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -604,7 +610,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Grand Theft Auto VI",
+    "titre": "🏙️GTA 6 ON REPREND L'AVENTURE À VICE CITY !",
+    "depuis": "2026-11-24T20:53:14Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -702,7 +714,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "ROB RUN",
+    "titre": "WIPE sur ROB RUN Go faire des tunes !",
+    "depuis": "2026-11-24T20:15:23Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
+   },
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -869,7 +887,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "The Sims 4",
     "titre": "[FR] ~ Sims 4 - Challenge des Festivités- Halloween #7 ~",
     "depuis": "2026-11-24T19:51:26Z",
@@ -964,7 +982,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "Jurassic Architect",
+    "titre": "JURASSIC ARCHITECT [FR] | On découvre ensemble ce petit jeu bien sympa avec tout pleins de dino, et vous pouvez interagir 🦕| !discord",
+    "depuis": "2026-11-24T20:14:23Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
+   },
    "premierStream": "2025-09-10",
    "succes": [
     {
@@ -1080,7 +1104,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 10,
+    "viewers": 4,
     "jeu": "PEAK",
     "titre": "Le peak du Pandathon d'@hazill_ avec les coupaings!",
     "depuis": "2026-11-24T14:59:30Z",
@@ -1189,5 +1213,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-24T20:07:39.427Z"
+ "maj": "2026-11-24T21:07:37.071Z"
 }
