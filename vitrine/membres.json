@@ -7,8 +7,8 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2436,
-  "followsGagnes30": 540,
+  "heuresLive30": 2442,
+  "followsGagnes30": 555,
   "periode": {
    "du": "2026-10-25",
    "au": "2026-11-24"
@@ -43,13 +43,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 18,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "🌈 Moment chill en Panda sur DDV ✨",
-    "depuis": "2026-11-24T16:30:14Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-03-29",
    "succes": [
     {
@@ -158,7 +152,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 13,
     "jeu": "Once Human",
     "titre": "On bâtit notre petit havre de paix en solo sur Once Human, ambiance chill et loot au poil",
     "depuis": "2026-11-24T14:03:46Z",
@@ -322,7 +316,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Pokémon Quest",
+    "titre": "◻️Pokemon Quest ~ On continue l'aventure ! - !réseaux",
+    "depuis": "2026-11-24T18:59:36Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -549,13 +549,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 25,
-    "jeu": "Art",
-    "titre": "✦ FOOD ART ✦ Les brochettes de Toads ! | Derniers lives pour utiliser vos tickets !artchallenges |🌟 Nv obj 500 follow ! | !liens",
-    "depuis": "2026-11-24T13:43:44Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -737,7 +731,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 9,
+    "viewers": 12,
     "jeu": "Phasmophobia",
     "titre": "MAJ PHASMOOOO - !lurk !discord ft @calo_vt",
     "depuis": "2026-11-24T16:27:31Z",
@@ -906,7 +900,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "World of Warcraft",
+    "titre": "Salut tout le monde, Nokara sont aventure en Tanaris !!!",
+    "depuis": "2026-11-24T18:11:25Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1147,13 +1147,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-11-07",
-   "live": {
-    "viewers": 13,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "⭐ DDV FR | J4 - On continue Keepsake Sea | !discord !lurk",
-    "depuis": "2026-11-24T16:01:28Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_unoceandedouceur-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1189,5 +1183,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-24T18:07:41.707Z"
+ "maj": "2026-11-24T19:07:35.654Z"
 }
