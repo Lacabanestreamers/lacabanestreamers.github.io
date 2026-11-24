@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2401,
+  "heuresLive30": 2403,
   "followsGagnes30": 540,
   "periode": {
    "du": "2026-10-25",
@@ -24,13 +24,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": {
-    "viewers": 4,
-    "jeu": "God of War III: Remastered",
-    "titre": "God of War Remastered /PS4",
-    "depuis": "2026-11-24T10:03:00Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -235,7 +229,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 22,
+    "viewers": 17,
     "jeu": "The Sims 4",
     "titre": "😂 PAUVRE ➜ RICHE #4 | Le manoir attendra encore... 🏡 (challenge by @aly0806)",
     "depuis": "2026-11-24T09:59:13Z",
@@ -894,7 +888,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "World of Warcraft",
+    "titre": "Salut tout le monde, Nokara sont aventure en Tanaris !!!",
+    "depuis": "2026-11-24T12:07:07Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1165,5 +1165,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-24T12:07:36.333Z"
+ "maj": "2026-11-24T13:07:34.570Z"
 }
