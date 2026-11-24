@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2442,
+  "heuresLive30": 2447,
   "followsGagnes30": 555,
   "periode": {
    "du": "2026-10-25",
@@ -99,7 +99,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-14",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "PEAK",
+    "titre": "🏕️ Départ de la Taverne, direction le sommet (Retour non garanti) !🧗 | ❗cmd ❗rs ❗clip",
+    "depuis": "2026-11-24T19:55:04Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_asakha-440x248.jpg"
+   },
    "premierStream": "2021-12-06",
    "succes": [],
    "jeux": [
@@ -151,13 +157,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 13,
-    "jeu": "Once Human",
-    "titre": "On bâtit notre petit havre de paix en solo sur Once Human, ambiance chill et loot au poil",
-    "depuis": "2026-11-24T14:03:46Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aulit42369-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-09",
    "succes": [
     {
@@ -348,7 +348,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 12,
+    "jeu": "Art",
+    "titre": "🐿️ SOIRÉE COLORIAGE DES MARMOTTES 🎨 | Chill & détente ensemble 💖",
+    "depuis": "2026-11-24T19:44:56Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_emmamarmotte-440x248.jpg"
+   },
    "premierStream": "2025-05-25",
    "succes": [
     {
@@ -432,7 +438,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 6,
+    "jeu": "PEAK",
+    "titre": "Ce soir, de courageux aventuriers s'aventurent jusqu'aux sommets de la montagne pour le Pandathon ! Rejoignez nous ! (!ttc !commandes)",
+    "depuis": "2026-11-24T19:52:29Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [
     {
@@ -730,13 +742,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 12,
-    "jeu": "Phasmophobia",
-    "titre": "MAJ PHASMOOOO - !lurk !discord ft @calo_vt",
-    "depuis": "2026-11-24T16:27:31Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lylu_live-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-29",
    "succes": [],
    "jeux": [
@@ -862,7 +868,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "The Sims 4",
+    "titre": "[FR] ~ Sims 4 - Challenge des Festivités- Halloween #7 ~",
+    "depuis": "2026-11-24T19:51:26Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
+   },
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -900,13 +912,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "World of Warcraft",
-    "titre": "Salut tout le monde, Nokara sont aventure en Tanaris !!!",
-    "depuis": "2026-11-24T18:11:25Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1074,9 +1080,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 12,
-    "jeu": "Grand Theft Auto VI",
-    "titre": "GTA avant la soirée Peak :)",
+    "viewers": 10,
+    "jeu": "PEAK",
+    "titre": "Le peak du Pandathon d'@hazill_ avec les coupaings!",
     "depuis": "2026-11-24T14:59:30Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1183,5 +1189,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-24T19:07:35.654Z"
+ "maj": "2026-11-24T20:07:39.427Z"
 }
