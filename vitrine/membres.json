@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2489,
+  "heuresLive30": 2491,
   "followsGagnes30": 586,
   "periode": {
    "du": "2026-10-26",
@@ -1050,7 +1050,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 13,
+    "viewers": 14,
     "jeu": "Dale & Dawson Stationery Supplies",
     "titre": "Dale and Dawson pour le pandathon d'@hazill_",
     "depuis": "2026-11-25T14:38:43Z",
@@ -1094,7 +1094,7 @@
    "staff": false,
    "depuis": "2026-09-28",
    "live": {
-    "viewers": 13,
+    "viewers": 15,
     "jeu": "Cyberpunk 2077",
     "titre": "😈 PROJECT R - Session BETA TEST Cyberpunk RP 😈 !rpojectr !rs !discord",
     "depuis": "2026-11-25T20:15:36Z",
@@ -1170,5 +1170,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-25T22:07:37.505Z"
+ "maj": "2026-11-25T22:24:08.445Z"
 }
