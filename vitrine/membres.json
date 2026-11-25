@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2434,
+  "heuresLive30": 2435,
   "followsGagnes30": 571,
   "periode": {
    "du": "2026-10-26",
@@ -286,7 +286,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 1,
+    "viewers": 6,
     "jeu": "ARKNIGHTS: ENDFIELD",
     "titre": "[Arknight Endfield] Nouveau patch de contenu !",
     "depuis": "2026-11-25T08:05:26Z",
@@ -304,7 +304,8 @@
     "FINAL FANTASY XIV ONLINE",
     "Warframe",
     "Lies of P",
-    "Aniimo"
+    "Aniimo",
+    "ARKNIGHTS: ENDFIELD"
    ],
    "clip": null
   },
@@ -646,7 +647,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 9,
+    "jeu": "R.E.P.O.",
+    "titre": "🔞Du farm et du chill !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-25T08:34:47Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -940,7 +947,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "Waterpark Simulator",
+    "titre": "WATERPARK SIMULATION [FR] | On ouvre enfin notre parc aquatique et ça promet d'être épique avec @kneline 🛝🏊| !discord",
+    "depuis": "2026-11-25T08:45:24Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
+   },
    "premierStream": "2025-09-10",
    "succes": [
     {
@@ -1163,5 +1176,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-25T08:07:38.023Z"
+ "maj": "2026-11-25T09:07:38.352Z"
 }
