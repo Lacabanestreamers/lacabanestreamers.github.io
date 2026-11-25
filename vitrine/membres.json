@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2452,
+  "heuresLive30": 2458,
   "followsGagnes30": 578,
   "periode": {
    "du": "2026-10-26",
@@ -229,7 +229,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 12,
+    "viewers": 17,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🏴‍☠️ Sirènes, pirates et chaos : découverte de The Keepsake Sea #3 😄",
     "depuis": "2026-11-25T10:59:07Z",
@@ -461,7 +461,7 @@
    "staff": false,
    "depuis": "2026-10-11",
    "live": {
-    "viewers": 17,
+    "viewers": 13,
     "jeu": "Cyberpunk 2077",
     "titre": "On test un nouveau build ! 🦾🔫",
     "depuis": "2026-11-25T10:05:00Z",
@@ -493,7 +493,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 8,
     "jeu": "The Legend of Zelda: Ocarina of Time",
     "titre": "FR_VT - Full découverte du monde de Zelda",
     "depuis": "2026-11-25T12:56:48Z",
@@ -715,8 +715,8 @@
    "jeux": [
     "Call of Duty: Modern Warfare 4",
     "Grand Theft Auto VI",
-    "Special Events",
     "ROB RUN",
+    "Special Events",
     "Rocket League"
    ],
    "clip": null
@@ -850,7 +850,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
+    "viewers": 3,
     "jeu": "Minecraft",
     "titre": "On fini tranquille la maison !",
     "depuis": "2026-11-25T12:07:09Z",
@@ -932,7 +932,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "The Legend of Zelda: Ocarina of Time",
+    "titre": "EP 6 je crois... Mais on va sauver Hyrule !!  [!bs !fortune !insta !discord ]",
+    "depuis": "2026-11-25T13:56:16Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
+   },
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -965,13 +971,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-26",
-   "live": {
-    "viewers": 6,
-    "jeu": "Waterpark Simulator",
-    "titre": "WATERPARK SIMULATION [FR] | On ouvre enfin notre parc aquatique et ça promet d'être épique avec @kneline 🛝🏊| !discord",
-    "depuis": "2026-11-25T08:45:24Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_p_xline_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-10",
    "succes": [
     {
@@ -983,8 +983,8 @@
    "jeux": [
     "The Sims 4",
     "Terrible Lizards",
-    "Phasmophobia",
     "Waterpark Simulator",
+    "Phasmophobia",
     "R.E.P.O."
    ],
    "clip": null
@@ -1194,5 +1194,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-25T13:07:41.495Z"
+ "maj": "2026-11-25T14:07:40.614Z"
 }
