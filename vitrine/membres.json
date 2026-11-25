@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2433,
+  "heuresLive30": 2434,
   "followsGagnes30": 556,
   "periode": {
    "du": "2026-10-26",
@@ -678,13 +678,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 5,
-    "jeu": "ROB RUN",
-    "titre": "WIPE sur ROB RUN Go faire des tunes !",
-    "depuis": "2026-11-24T20:15:23Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -1159,5 +1153,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-25T03:07:38.964Z"
+ "maj": "2026-11-25T04:07:35.421Z"
 }
