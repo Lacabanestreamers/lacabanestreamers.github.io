@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2484,
+  "heuresLive30": 2486,
   "followsGagnes30": 586,
   "periode": {
    "du": "2026-10-26",
@@ -422,7 +422,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 5,
+    "viewers": 7,
     "jeu": "Dale & Dawson Stationery Supplies",
     "titre": "Le café est froid, les collègues sont suspects - LinkedIn m'avait promis une expérience enrichissante... Rejoignez nous ! (!ttc !commandes)",
     "depuis": "2026-11-25T19:50:07Z",
@@ -1056,9 +1056,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 6,
-    "jeu": "Sort My Comics!",
-    "titre": "On range des comics!  #sortmycomics #keymailer",
+    "viewers": 10,
+    "jeu": "Dale & Dawson Stationery Supplies",
+    "titre": "Dale and Dawson pour le pandathon d'@hazill_",
     "depuis": "2026-11-25T14:38:43Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1099,7 +1099,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": null,
+   "live": {
+    "viewers": 13,
+    "jeu": "Cyberpunk 2077",
+    "titre": "😈 PROJECT R - Session BETA TEST Cyberpunk RP 😈 !rpojectr !rs !discord",
+    "depuis": "2026-11-25T20:15:36Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
+   },
    "premierStream": "2025-01-19",
    "succes": [
     {
@@ -1170,5 +1176,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-25T20:07:42.265Z"
+ "maj": "2026-11-25T21:07:39.201Z"
 }
