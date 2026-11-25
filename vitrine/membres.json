@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2486,
+  "heuresLive30": 2489,
   "followsGagnes30": 586,
   "periode": {
    "du": "2026-10-26",
@@ -421,13 +421,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 7,
-    "jeu": "Dale & Dawson Stationery Supplies",
-    "titre": "Le café est froid, les collègues sont suspects - LinkedIn m'avait promis une expérience enrichissante... Rejoignez nous ! (!ttc !commandes)",
-    "depuis": "2026-11-25T19:50:07Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [
     {
@@ -1056,7 +1050,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 10,
+    "viewers": 13,
     "jeu": "Dale & Dawson Stationery Supplies",
     "titre": "Dale and Dawson pour le pandathon d'@hazill_",
     "depuis": "2026-11-25T14:38:43Z",
@@ -1176,5 +1170,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-25T21:07:39.201Z"
+ "maj": "2026-11-25T22:07:37.505Z"
 }
