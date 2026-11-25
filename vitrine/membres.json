@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2471,
+  "heuresLive30": 2477,
   "followsGagnes30": 578,
   "periode": {
    "du": "2026-10-26",
@@ -43,13 +43,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 11,
-    "jeu": "Disney Dreamlight Valley",
-    "titre": "🌈 Moment chill en Panda sur DDV ✨",
-    "depuis": "2026-11-25T14:17:42Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-03-29",
    "succes": [
     {
@@ -344,7 +338,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 7,
+    "viewers": 13,
     "jeu": "Disney Dreamlight Valley",
     "titre": "✨ SURPRISE ! 💛| Chill & détente ensemble 💖",
     "depuis": "2026-11-25T15:44:21Z",
@@ -493,7 +487,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
+    "viewers": 12,
     "jeu": "The Legend of Zelda: Ocarina of Time",
     "titre": "FR_VT - Full découverte du monde de Zelda",
     "depuis": "2026-11-25T12:56:48Z",
@@ -697,13 +691,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 5,
-    "jeu": "Grand Theft Auto VI",
-    "titre": "Relation ou Braquage ?",
-    "depuis": "2026-11-25T11:46:46Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_luffishgaming-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2017-03-05",
    "succes": [
     {
@@ -1080,9 +1068,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 18,
-    "jeu": "Milki Delivery",
-    "titre": "On fini Milki! <3",
+    "viewers": 11,
+    "jeu": "Sort My Comics!",
+    "titre": "On range des comics!  #sortmycomics #keymailer",
     "depuis": "2026-11-25T14:38:43Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1194,5 +1182,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-25T17:07:39.160Z"
+ "maj": "2026-11-25T18:07:38.732Z"
 }
