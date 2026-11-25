@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2438,
+  "heuresLive30": 2442,
   "followsGagnes30": 571,
   "periode": {
    "du": "2026-10-26",
@@ -228,7 +228,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "🏴‍☠️ Sirènes, pirates et chaos : découverte de The Keepsake Sea #3 😄",
+    "depuis": "2026-11-25T10:59:07Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -286,7 +292,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 6,
+    "viewers": 10,
     "jeu": "ARKNIGHTS: ENDFIELD",
     "titre": "[Arknight Endfield] Nouveau patch de contenu !",
     "depuis": "2026-11-25T08:05:26Z",
@@ -304,8 +310,8 @@
     "FINAL FANTASY XIV ONLINE",
     "Warframe",
     "Lies of P",
-    "Aniimo",
-    "ARKNIGHTS: ENDFIELD"
+    "ARKNIGHTS: ENDFIELD",
+    "Aniimo"
    ],
    "clip": null
   },
@@ -461,7 +467,7 @@
    "staff": false,
    "depuis": "2026-10-11",
    "live": {
-    "viewers": 2,
+    "viewers": 17,
     "jeu": "Cyberpunk 2077",
     "titre": "On test un nouveau build ! 🦾🔫",
     "depuis": "2026-11-25T10:05:00Z",
@@ -471,8 +477,8 @@
    "succes": [],
    "jeux": [
     "Dressmaker (2026)",
-    "Games + Demos",
     "Cyberpunk 2077",
+    "Games + Demos",
     "StarRupture"
    ],
    "clip": {
@@ -653,13 +659,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 14,
-    "jeu": "R.E.P.O.",
-    "titre": "🔞Du farm et du chill !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
-    "depuis": "2026-11-25T08:34:47Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -1182,5 +1182,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-25T10:07:39.118Z"
+ "maj": "2026-11-25T11:07:39.353Z"
 }
