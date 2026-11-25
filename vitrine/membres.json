@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2435,
+  "heuresLive30": 2438,
   "followsGagnes30": 571,
   "periode": {
    "du": "2026-10-26",
@@ -460,7 +460,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-11",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Cyberpunk 2077",
+    "titre": "On test un nouveau build ! 🦾🔫",
+    "depuis": "2026-11-25T10:05:00Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hagosan-440x248.jpg"
+   },
    "premierStream": "2023-07-10",
    "succes": [],
    "jeux": [
@@ -648,7 +654,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 14,
     "jeu": "R.E.P.O.",
     "titre": "🔞Du farm et du chill !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-25T08:34:47Z",
@@ -948,7 +954,7 @@
    "staff": false,
    "depuis": "2026-09-26",
    "live": {
-    "viewers": 7,
+    "viewers": 8,
     "jeu": "Waterpark Simulator",
     "titre": "WATERPARK SIMULATION [FR] | On ouvre enfin notre parc aquatique et ça promet d'être épique avec @kneline 🛝🏊| !discord",
     "depuis": "2026-11-25T08:45:24Z",
@@ -1176,5 +1182,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-25T09:07:38.352Z"
+ "maj": "2026-11-25T10:07:39.118Z"
 }
