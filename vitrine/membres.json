@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2431,
+  "heuresLive30": 2433,
   "followsGagnes30": 556,
   "periode": {
    "du": "2026-10-26",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "Rocket League",
     "titre": "Rocket League /PS5",
     "depuis": "2026-11-25T01:58:21Z",
@@ -685,7 +685,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 10,
+    "viewers": 13,
     "jeu": "ROB RUN",
     "titre": "WIPE sur ROB RUN Go faire des tunes !",
     "depuis": "2026-11-24T20:15:23Z",
@@ -1165,5 +1165,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-25T02:08:08.127Z"
+ "maj": "2026-11-25T02:16:38.963Z"
 }
