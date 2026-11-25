@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2425,
+  "heuresLive30": 2428,
   "followsGagnes30": 556,
   "periode": {
    "du": "2026-10-26",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 14,
+    "viewers": 8,
     "jeu": "God of War III: Remastered",
     "titre": "God of War Remastered /PS4",
     "depuis": "2026-11-24T22:47:39Z",
@@ -587,7 +587,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 5,
+    "viewers": 3,
     "jeu": "Grand Theft Auto VI",
     "titre": "🏙️GTA 6 ON REPREND L'AVENTURE À VICE CITY !",
     "depuis": "2026-11-24T20:53:14Z",
@@ -691,7 +691,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 16,
+    "viewers": 6,
     "jeu": "ROB RUN",
     "titre": "WIPE sur ROB RUN Go faire des tunes !",
     "depuis": "2026-11-24T20:15:23Z",
@@ -1171,5 +1171,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-25T00:07:35.411Z"
+ "maj": "2026-11-25T01:07:33.284Z"
 }
