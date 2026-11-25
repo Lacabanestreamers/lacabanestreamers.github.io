@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2458,
+  "heuresLive30": 2464,
   "followsGagnes30": 578,
   "periode": {
    "du": "2026-10-26",
@@ -43,7 +43,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "🌈 Moment chill en Panda sur DDV ✨",
+    "depuis": "2026-11-25T14:17:42Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
+   },
    "premierStream": "2025-03-29",
    "succes": [
     {
@@ -229,7 +235,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 17,
+    "viewers": 15,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🏴‍☠️ Sirènes, pirates et chaos : découverte de The Keepsake Sea #3 😄",
     "depuis": "2026-11-25T10:59:07Z",
@@ -460,13 +466,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-11",
-   "live": {
-    "viewers": 13,
-    "jeu": "Cyberpunk 2077",
-    "titre": "On test un nouveau build ! 🦾🔫",
-    "depuis": "2026-11-25T10:05:00Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hagosan-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2023-07-10",
    "succes": [],
    "jeux": [
@@ -493,7 +493,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
+    "viewers": 9,
     "jeu": "The Legend of Zelda: Ocarina of Time",
     "titre": "FR_VT - Full découverte du monde de Zelda",
     "depuis": "2026-11-25T12:56:48Z",
@@ -698,7 +698,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 4,
+    "viewers": 6,
     "jeu": "ROB RUN",
     "titre": "WIPE ROB RUN : ON COURT, ON FARM, ON ENCAISSE !",
     "depuis": "2026-11-25T11:46:46Z",
@@ -849,13 +849,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 3,
-    "jeu": "Minecraft",
-    "titre": "On fini tranquille la maison !",
-    "depuis": "2026-11-25T12:07:09Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -913,7 +907,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "World of Warcraft",
+    "titre": "Salut tout le monde, Nokara sont aventure en Tanaris !!!",
+    "depuis": "2026-11-25T14:09:11Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -933,7 +933,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 2,
+    "viewers": 8,
     "jeu": "The Legend of Zelda: Ocarina of Time",
     "titre": "EP 6 je crois... Mais on va sauver Hyrule !!  [!bs !fortune !insta !discord ]",
     "depuis": "2026-11-25T13:56:16Z",
@@ -1085,7 +1085,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "Milki Delivery",
+    "titre": "On fini Milki! <3",
+    "depuis": "2026-11-25T14:38:43Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [
     {
@@ -1194,5 +1200,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-25T14:07:40.614Z"
+ "maj": "2026-11-25T15:07:37.073Z"
 }
