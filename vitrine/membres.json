@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 6,
-  "heuresLive30": 2446,
+  "heuresLive30": 2451,
   "followsGagnes30": 578,
   "periode": {
    "du": "2026-10-26",
@@ -229,7 +229,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 9,
     "jeu": "Disney Dreamlight Valley",
     "titre": "🏴‍☠️ Sirènes, pirates et chaos : découverte de The Keepsake Sea #3 😄",
     "depuis": "2026-11-25T10:59:07Z",
@@ -291,13 +291,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": {
-    "viewers": 6,
-    "jeu": "ARKNIGHTS: ENDFIELD",
-    "titre": "[Arknight Endfield] Nouveau patch de contenu !",
-    "depuis": "2026-11-25T08:05:26Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -467,7 +461,7 @@
    "staff": false,
    "depuis": "2026-10-11",
    "live": {
-    "viewers": 14,
+    "viewers": 16,
     "jeu": "Cyberpunk 2077",
     "titre": "On test un nouveau build ! 🦾🔫",
     "depuis": "2026-11-25T10:05:00Z",
@@ -849,7 +843,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Minecraft",
+    "titre": "On fini tranquille la maison !",
+    "depuis": "2026-11-25T12:07:09Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
+   },
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -1188,5 +1188,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-25T12:07:38.972Z"
+ "maj": "2026-11-25T12:36:03.567Z"
 }
