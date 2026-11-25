@@ -8,10 +8,10 @@
   "affilies": 41,
   "nouveaux30": 6,
   "heuresLive30": 2434,
-  "followsGagnes30": 556,
+  "followsGagnes30": 571,
   "periode": {
    "du": "2026-10-26",
-   "au": "2026-11-24"
+   "au": "2026-11-25"
   }
  },
  "agenda": [],
@@ -285,7 +285,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "ARKNIGHTS: ENDFIELD",
+    "titre": "[Arknight Endfield] Nouveau patch de contenu !",
+    "depuis": "2026-11-25T08:05:26Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -525,7 +531,7 @@
     "Animal Crossing: New Horizons",
     "DEVOUR",
     "Leaf it Alone",
-    "Slime Rancher"
+    "Art"
    ],
    "clip": null
   },
@@ -618,10 +624,10 @@
    ],
    "jeux": [
     "Dead Space 2",
-    "Makers & Crafting",
     "Little Nightmares II",
     "Little Nightmares III",
-    "We Were Here Tomorrow"
+    "We Were Here Tomorrow",
+    "Makers & Crafting"
    ],
    "clip": {
     "url": "https://www.twitch.tv/liiapin/clip/AntsyDelightfulClintKlappa-3VuA6axh_Oyo4AW4",
@@ -778,8 +784,8 @@
     "Slime Rancher 2",
     "PowerWash Simulator",
     "Slime Rancher",
-    "The Elder Scrolls V: Skyrim - Special Edition",
-    "Far Far West"
+    "Kingdom Hearts Birth by Sleep",
+    "The Elder Scrolls V: Skyrim - Special Edition"
    ],
    "clip": null
   },
@@ -965,8 +971,7 @@
    "succes": [],
    "jeux": [
     "Disney Dreamlight Valley",
-    "Planet Zoo 2",
-    "The Sims 4"
+    "Planet Zoo 2"
    ],
    "clip": null
   },
@@ -1052,6 +1057,11 @@
    "live": null,
    "premierStream": null,
    "succes": [
+    {
+     "type": "palier",
+     "palier": 550,
+     "date": "2026-11-25"
+    },
     {
      "type": "palier",
      "palier": 500,
@@ -1153,5 +1163,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-25T04:07:35.421Z"
+ "maj": "2026-11-25T08:07:38.023Z"
 }
