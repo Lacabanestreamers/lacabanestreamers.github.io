@@ -8,10 +8,10 @@
   "affilies": 41,
   "nouveaux30": 4,
   "heuresLive30": 2420,
-  "followsGagnes30": 613,
+  "followsGagnes30": 614,
   "periode": {
    "du": "2026-10-27",
-   "au": "2026-11-25"
+   "au": "2026-11-26"
   }
  },
  "agenda": [],
@@ -285,7 +285,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Warframe",
+    "titre": "[Warframe](MR27) Un café et des plats !",
+    "depuis": "2026-11-26T07:55:32Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -431,11 +437,11 @@
     }
    ],
    "jeux": [
-    "Writing & Reading",
-    "Shift at Midnight",
     "R.E.P.O.",
     "7 Days to Die",
-    "PEAK"
+    "PEAK",
+    "Writing & Reading",
+    "Photomaly"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/VivaciousOutstandingSwallowOneHand-OHqMbmYNTjCcxLRf",
@@ -777,10 +783,9 @@
    ],
    "jeux": [
     "Slime Rancher 2",
-    "PowerWash Simulator",
     "Slime Rancher",
-    "Kingdom Hearts Birth by Sleep",
-    "The Elder Scrolls V: Skyrim - Special Edition"
+    "PowerWash Simulator",
+    "Kingdom Hearts Birth by Sleep"
    ],
    "clip": null
   },
@@ -792,7 +797,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Stardew Valley",
+    "titre": "Stardew // On devient Ami avec qui maintenant ??? Objectif 160 MimiFollows ??  !discord !regles !don",
+    "depuis": "2026-11-26T08:05:54Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [
     {
@@ -883,14 +894,20 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "World of Warcraft",
+    "titre": "Salut tout le monde, on continue l'aventure wow forever !!!",
+    "depuis": "2026-11-26T07:10:33Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
     "World of Warcraft",
     "American Truck Simulator",
-    "Disney Dreamlight Valley",
-    "Euro Truck Simulator 2"
+    "Euro Truck Simulator 2",
+    "Disney Dreamlight Valley"
    ],
    "clip": null
   },
@@ -915,8 +932,8 @@
     "The Legend of Zelda: Ocarina of Time",
     "The Other Side",
     "Invokyr",
-    "Inside the Backrooms",
-    "Codenames"
+    "Codenames",
+    "Party Animals"
    ],
    "clip": null
   },
@@ -992,8 +1009,8 @@
     "The Dark Pictures Anthology: House of Ashes",
     "The Witcher 3: Wild Hunt Remastered",
     "Split Fiction",
-    "Just Chatting",
-    "Pratfall"
+    "Pratfall",
+    "Just Chatting"
    ],
    "clip": null
   },
@@ -1115,7 +1132,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-11-07",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "⭐ DDV FR | J5 - On continue Keepsake Sea | !discord !lurk",
+    "depuis": "2026-11-26T08:00:22Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_unoceandedouceur-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1151,5 +1174,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-26T02:08:03.972Z"
+ "maj": "2026-11-26T08:07:34.523Z"
 }
