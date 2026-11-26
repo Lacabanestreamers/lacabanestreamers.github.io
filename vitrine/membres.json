@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2400,
+  "heuresLive30": 2401,
   "followsGagnes30": 608,
   "periode": {
    "du": "2026-10-28",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 5,
+    "viewers": 8,
     "jeu": "God of War III: Remastered",
     "titre": "God of War Remastered /PS4",
     "depuis": "2026-11-26T22:43:10Z",
@@ -587,7 +587,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "VALORANT",
+    "titre": "🔴 VALORANT | L'INSOMNIE EST CASSE-C......, GO SACRIFIER L'ÉLO 💀",
+    "depuis": "2026-11-26T23:34:52Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -1156,5 +1162,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-26T23:07:32.921Z"
+ "maj": "2026-11-26T23:43:52.405Z"
 }
