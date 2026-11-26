@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 4,
-  "heuresLive30": 2471,
+  "heuresLive30": 2473,
   "followsGagnes30": 632,
   "periode": {
    "du": "2026-10-27",
@@ -126,7 +126,7 @@
    "staff": false,
    "depuis": "2026-09-22",
    "live": {
-    "viewers": 6,
+    "viewers": 14,
     "jeu": "The Red Strings Club",
     "titre": "Changement de programme : on continue The Red Strings Club",
     "depuis": "2026-11-26T19:00:42Z",
@@ -587,13 +587,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 8,
-    "jeu": "Grand Theft Auto VI",
-    "titre": "🏙️GTA 6 Personne n'ai prêt!!!! 👀",
-    "depuis": "2026-11-26T20:13:50Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -1162,5 +1156,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-26T21:07:37.220Z"
+ "maj": "2026-11-26T22:07:36.763Z"
 }
