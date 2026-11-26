@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 4,
-  "heuresLive30": 2437,
+  "heuresLive30": 2439,
   "followsGagnes30": 620,
   "periode": {
    "du": "2026-10-27",
@@ -152,7 +152,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 11,
     "jeu": "Once Human",
     "titre": "On bâtit notre petit havre de paix en solo sur Once Human, ambiance chill et loot au poil",
     "depuis": "2026-11-26T11:05:25Z",
@@ -234,7 +234,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Art",
+    "titre": "✏️ Duo créatif : @oko_san_ a du talent, moi des crayons ✨",
+    "depuis": "2026-11-26T14:00:16Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -291,7 +297,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Overwatch",
+    "titre": "[Overwatch] Petit moment nostalgie !",
+    "depuis": "2026-11-26T14:04:09Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -428,7 +440,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 13,
     "jeu": "Deal Flipper",
     "titre": "Aujourd'hui, je découvre les joies du capitalisme (aïe).Future millionnaire ou faillite imminente? Rejoignez nous! <3 (!ttc /!commandes)",
     "depuis": "2026-11-26T12:50:19Z",
@@ -913,7 +925,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Art",
+    "titre": "Apres midi chill et artistique entre copine ✨ @chezelodie [!bs !fortune !insta !discord ]",
+    "depuis": "2026-11-26T14:04:45Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
+   },
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -965,7 +983,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "On continue l'aventure avec Winnie et ses amis !",
+    "depuis": "2026-11-26T13:28:17Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_paygadream-440x248.jpg"
+   },
    "premierStream": "2026-05-02",
    "succes": [],
    "jeux": [
@@ -1162,5 +1186,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-26T13:07:35.932Z"
+ "maj": "2026-11-26T14:07:35.873Z"
 }
