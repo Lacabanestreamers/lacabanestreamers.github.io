@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 4,
-  "heuresLive30": 2417,
+  "heuresLive30": 2420,
   "followsGagnes30": 613,
   "periode": {
    "du": "2026-10-27",
@@ -581,13 +581,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 2,
-    "jeu": "VALORANT",
-    "titre": "🌙 VALORANT EN NOCTURNE | Quelques games chill 🎮",
-    "depuis": "2026-11-25T22:30:59Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -1055,13 +1049,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": {
-    "viewers": 18,
-    "jeu": "Dale & Dawson Stationery Supplies",
-    "titre": "Dale and Dawson pour le pandathon d'@hazill_",
-    "depuis": "2026-11-25T14:38:43Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [
     {
@@ -1099,13 +1087,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-28",
-   "live": {
-    "viewers": 17,
-    "jeu": "Cyberpunk 2077",
-    "titre": "😈 PROJECT R - Session BETA TEST Cyberpunk RP 😈 !rpojectr !rs !discord",
-    "depuis": "2026-11-25T20:15:36Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_tata_gazouille-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-01-19",
    "succes": [
     {
@@ -1176,5 +1158,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-25T23:07:36.399Z"
+ "maj": "2026-11-26T00:07:36.862Z"
 }
