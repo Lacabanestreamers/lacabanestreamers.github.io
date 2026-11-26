@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 4,
-  "heuresLive30": 2468,
+  "heuresLive30": 2471,
   "followsGagnes30": 632,
   "periode": {
    "du": "2026-10-27",
@@ -126,7 +126,7 @@
    "staff": false,
    "depuis": "2026-09-22",
    "live": {
-    "viewers": 8,
+    "viewers": 6,
     "jeu": "The Red Strings Club",
     "titre": "Changement de programme : on continue The Red Strings Club",
     "depuis": "2026-11-26T19:00:42Z",
@@ -142,8 +142,8 @@
    ],
    "jeux": [
     "Outbound",
-    "PICO PARK",
     "The Red Strings Club",
+    "PICO PARK",
     "Slay the Spire II",
     "The Witch's Bakery"
    ],
@@ -317,13 +317,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 5,
-    "jeu": "The Survivalists",
-    "titre": "🏝The Survivalists ~ On continue la survie ! - !réseaux",
-    "depuis": "2026-11-26T18:01:32Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -573,13 +567,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 11,
-    "jeu": "Just Chatting",
-    "titre": "RÉACT🍿 : On continue 90 Day Fiancé / 3 mois pour se marier, avec des couples fous 🤯 ! | React émission & docus YT",
-    "depuis": "2026-11-26T19:02:52Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_laelya_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-10-10",
    "succes": [],
    "jeux": [
@@ -599,7 +587,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "Grand Theft Auto VI",
+    "titre": "🏙️GTA 6 Personne n'ai prêt!!!! 👀",
+    "depuis": "2026-11-26T20:13:50Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -1168,5 +1162,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-26T20:07:34.784Z"
+ "maj": "2026-11-26T21:07:37.220Z"
 }
