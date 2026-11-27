@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2404,
+  "heuresLive30": 2405,
   "followsGagnes30": 608,
   "periode": {
    "du": "2026-10-28",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 4,
+    "viewers": 9,
     "jeu": "God of War III: Remastered",
     "titre": "God of War Remastered /PS4",
     "depuis": "2026-11-26T22:43:10Z",
@@ -115,10 +115,10 @@
     "Demonologist"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/asakha/clip/ConsiderateDeterminedMagpieKeyboardCat-dmhb_rHIG1s9YPKc",
+    "url": "https://www.twitch.tv/asakha/clip/KindLivelyEelOMGScoots-luCRTx39gW7YkmYI",
     "titre": "🏕️ Départ de la Taverne, direction le sommet (Retour non garanti) !🧗 | ❗cmd ❗rs ❗clip",
     "vues": 3,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/dfd5a43c-30d1-42aa-a704-44b0502cd334/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/a6327f89-a405-42d4-a48d-07033c8e78f2/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-24",
     "duree": 30
    }
@@ -201,12 +201,12 @@
     "Stardew Valley"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/bichoune_/clip/VivaciousTacitArtichokeKappaWealth-JGv4_DezvjUVuYYb",
-    "titre": "MES CHEVEUX !!!!",
-    "vues": 6,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/0b2655db-3c6f-481b-9160-d816d6fe83ab/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-19",
-    "duree": 49
+    "url": "https://www.twitch.tv/bichoune_/clip/FancyRamshackleAlligatorPJSalt--q7mUMD_g6raS0BE",
+    "titre": "HAHAHAHA LA TEAM ROCKET A ENCORE FRAPPEEEE",
+    "vues": 3,
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/1d65d4be-65f5-4868-afef-42351c7005de/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-22",
+    "duree": 60
    }
   },
   {
@@ -361,7 +361,7 @@
    "clip": {
     "url": "https://www.twitch.tv/emmamarmotte/clip/BashfulCuteHyenaDAESuppy-RQwr5-2iz3qYMYR_",
     "titre": "🗺️ Disney DreamLight Valley ! On continue le DLC 4 !🌟",
-    "vues": 7,
+    "vues": 8,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/1f3793e2-b92e-4c70-8e9e-4fc70f8a5784/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-21",
     "duree": 30
@@ -410,14 +410,7 @@
     "Chicken Feet",
     "Deep Rock Galactic"
    ],
-   "clip": {
-    "url": "https://www.twitch.tv/galaadours/clip/SpotlessGrossWrenStoneLightning-88tW2O_ELbaNuayK",
-    "titre": "la journée spéciale",
-    "vues": 2,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/f4df596c-bbb8-4298-94cf-d5c4874b9294/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-19",
-    "duree": 49
-   }
+   "clip": null
   },
   {
    "login": "galyssiane",
@@ -469,14 +462,7 @@
     "Games + Demos",
     "StarRupture"
    ],
-   "clip": {
-    "url": "https://www.twitch.tv/hagosan/clip/MiniatureRealTardigradePhilosoraptor-eEGWBDEw1nb7RsvQ",
-    "titre": "Headshot involontaire 😶​",
-    "vues": 4,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/2fadc47b-ff60-4ca7-afd2-840ac2ec0723/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-19",
-    "duree": 41
-   }
+   "clip": null
   },
   {
    "login": "hyroshimaeu",
@@ -553,7 +539,7 @@
    "clip": {
     "url": "https://www.twitch.tv/kristal_et_ses_ac/clip/ColdbloodedSillyDuckArgieB8-tbX2qpNK37ATBP6o",
     "titre": "WzBot CLIP | ✦ FOOD ART ✦ Les brochettes de Toads ! | Derniers lives pour utiliser v (by baka_saske)",
-    "vues": 2,
+    "vues": 3,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/6804855e-554d-43d8-8ce3-3d52a6401e93/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-24",
     "duree": 60
@@ -669,11 +655,11 @@
     "Baldur's Gate 3"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/lilyth_minerva/clip/EphemeralMiniatureGiraffeDatSheffy-epD5xck0IgMJ3NGi",
-    "titre": "WzBot CLIP | 🔞 KITSUNE BAZAR SHOW LE RDV A NE PAS MANQUER !!!Entre papote et éclat d (by nezukochan",
+    "url": "https://www.twitch.tv/lilyth_minerva/clip/SpotlessCovertTildeStoneLightning-_HqJq1Wj_Ahazko2",
+    "titre": "WzBot CLIP | 🔞Les kitsune son en roue libre !!! Entre papote et éclat de fun!! / !di (by lilyth_min",
     "vues": 5,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/9e239129-f565-44fb-9c7e-aeb9b2da109b/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-19",
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/722a9b4b-0045-4abc-8aa8-268922a74f94/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-20",
     "duree": 60
    }
   },
@@ -1069,12 +1055,12 @@
     "Just Chatting"
    ],
    "clip": {
-    "url": "https://www.twitch.tv/sakkiel/clip/SuperExcitedMagpieOneHand-3TZ0e2-0sM0w54T2",
-    "titre": "Journée cosy et découvertes <3 #foxydumplings #keymailer",
+    "url": "https://www.twitch.tv/sakkiel/clip/DeliciousPricklyRavenSoonerLater-B7pgLr1yBNRa4j3S",
+    "titre": "Le peak du Pandathon d'@hazill_ avec les coupaings!",
     "vues": 5,
-    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/c442f0d8-cf30-4d0d-9dc4-7e6496ba8e98/landscape/thumb/thumb-0000000000-480x272.jpg",
-    "date": "2026-11-20",
-    "duree": 25
+    "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b3c62f09-5134-4926-a241-aaae4344ee55/landscape/thumb/thumb-0000000000-480x272.jpg",
+    "date": "2026-11-24",
+    "duree": 30
    }
   },
   {
@@ -1106,7 +1092,7 @@
    "clip": {
     "url": "https://www.twitch.tv/tata_gazouille/clip/AntediluvianFaithfulSashimiPeteZarollTie-r3C4b0BFMedXRfO_",
     "titre": "SAMA Accueilli en REINE",
-    "vues": 38,
+    "vues": 40,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/dedaf6f4-a2c3-4d3a-ad01-15678f0b4097/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-22",
     "duree": 37
@@ -1129,7 +1115,7 @@
    "clip": {
     "url": "https://www.twitch.tv/unoceandedouceur/clip/ProductiveCalmBeaverCoolCat-fd31KM9rfb6SBdRw",
     "titre": "Qu'est-ce qui se passe encore xD",
-    "vues": 12,
+    "vues": 14,
     "vignette": "https://static-cdn.jtvnw.net/twitch-video-assets/twitch-vap-video-assets-prod-us-west-2/b88d1fb2-b2e8-4ad5-8eed-d33791010ef2/landscape/thumb/thumb-0000000000-480x272.jpg",
     "date": "2026-11-23",
     "duree": 60
@@ -1156,5 +1142,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-27T01:07:34.255Z"
+ "maj": "2026-11-27T02:08:07.591Z"
 }
