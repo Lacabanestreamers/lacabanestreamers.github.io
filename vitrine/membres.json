@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2401,
+  "heuresLive30": 2402,
   "followsGagnes30": 608,
   "periode": {
    "du": "2026-10-28",
@@ -25,7 +25,7 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 8,
+    "viewers": 9,
     "jeu": "God of War III: Remastered",
     "titre": "God of War Remastered /PS4",
     "depuis": "2026-11-26T22:43:10Z",
@@ -1162,5 +1162,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-26T23:43:52.405Z"
+ "maj": "2026-11-27T00:07:35.660Z"
 }
