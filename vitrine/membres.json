@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2422,
+  "heuresLive30": 2426,
   "followsGagnes30": 614,
   "periode": {
    "du": "2026-10-28",
@@ -370,10 +370,10 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 1,
+    "viewers": 5,
     "jeu": "Red Dead Redemption II",
     "titre": "[FR] [RDR2] 🤠🔴 RED DEAD REDEMPTION 2 – LA SUITE DES AVENTURES D’ARTHUR MORGAN ! 🔴",
-    "depuis": "2026-11-27T12:01:17Z",
+    "depuis": "2026-11-27T12:20:48Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
    },
    "premierStream": "2024-08-10",
@@ -453,21 +453,15 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-11",
-   "live": {
-    "viewers": 10,
-    "jeu": "Tailor Simulator",
-    "titre": "Un nouveau magasin ouvre en ville, venez nombreux·ses ! 🏬🪡  !commandes",
-    "depuis": "2026-11-27T09:25:26Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hagosan-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2023-07-10",
    "succes": [],
    "jeux": [
     "Dressmaker (2026)",
     "Cyberpunk 2077",
     "Games + Demos",
-    "StarRupture",
-    "Tailor Simulator"
+    "Tailor Simulator",
+    "StarRupture"
    ],
    "clip": null
   },
@@ -823,13 +817,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 1,
-    "jeu": "Minecraft",
-    "titre": "Objectif : aller dans le nether",
-    "depuis": "2026-11-27T10:30:07Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -1047,7 +1035,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 19,
+    "viewers": 21,
     "jeu": "Art",
     "titre": "On découvre la tablette ensemble avant la session tests! #help x)",
     "depuis": "2026-11-27T09:56:59Z",
@@ -1161,5 +1149,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-27T12:07:41.164Z"
+ "maj": "2026-11-27T13:07:34.891Z"
 }
