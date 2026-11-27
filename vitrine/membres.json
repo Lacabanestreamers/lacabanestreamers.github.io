@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2428,
+  "heuresLive30": 2432,
   "followsGagnes30": 614,
   "periode": {
    "du": "2026-10-28",
@@ -44,7 +44,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 0,
+    "viewers": 6,
     "jeu": "It Takes Two",
     "titre": "🌈 Moment chill et rigolade avec Lilyth✨",
     "depuis": "2026-11-27T14:06:45Z",
@@ -375,13 +375,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": {
-    "viewers": 5,
-    "jeu": "Red Dead Redemption II",
-    "titre": "[FR] [RDR2] 🤠🔴 RED DEAD REDEMPTION 2 – LA SUITE DES AVENTURES D’ARTHUR MORGAN ! 🔴",
-    "depuis": "2026-11-27T12:20:48Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -538,7 +532,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 14,
+    "viewers": 15,
     "jeu": "Miniatures & Models",
     "titre": "DIY MINIATURE HOUSE DE NOËL ! Ça chill un maaax☕ | 18H : Tirage aux sort tickets !artchallenges ! 🎫 | #rushto500follows | !liens",
     "depuis": "2026-11-27T13:40:29Z",
@@ -547,7 +541,8 @@
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
-    "Art"
+    "Art",
+    "Miniatures & Models"
    ],
    "clip": {
     "url": "https://www.twitch.tv/kristal_et_ses_ac/clip/ColdbloodedSillyDuckArgieB8-tbX2qpNK37ATBP6o",
@@ -586,7 +581,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "VALORANT",
+    "titre": "🔴 VALORANT | les game sont CASSE-C......, GO SACRIFIER L'ÉLO 💀",
+    "depuis": "2026-11-27T14:44:46Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
+   },
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -646,7 +647,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 15,
+    "jeu": "It Takes Two",
+    "titre": "🔞[Drop Perso]  Entre papote et éclat de fun!! @aly0806 / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-27T14:09:20Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -887,7 +894,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "World of Warcraft",
+    "titre": "Salut tout le monde, on continue l'aventure wow forever !!!",
+    "depuis": "2026-11-27T14:42:40Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1047,7 +1060,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 14,
+    "viewers": 13,
     "jeu": "Art",
     "titre": "On découvre la tablette ensemble avant la session tests! #help x)",
     "depuis": "2026-11-27T09:56:59Z",
@@ -1161,5 +1174,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-27T14:07:36.052Z"
+ "maj": "2026-11-27T15:07:35.635Z"
 }
