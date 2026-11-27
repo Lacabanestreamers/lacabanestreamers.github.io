@@ -7,8 +7,8 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2419,
-  "followsGagnes30": 612,
+  "heuresLive30": 2422,
+  "followsGagnes30": 614,
   "periode": {
    "du": "2026-10-28",
    "au": "2026-11-27"
@@ -369,7 +369,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Red Dead Redemption II",
+    "titre": "[FR] [RDR2] 🤠🔴 RED DEAD REDEMPTION 2 – LA SUITE DES AVENTURES D’ARTHUR MORGAN ! 🔴",
+    "depuis": "2026-11-27T12:01:17Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
+   },
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -448,7 +454,7 @@
    "staff": false,
    "depuis": "2026-10-11",
    "live": {
-    "viewers": 12,
+    "viewers": 10,
     "jeu": "Tailor Simulator",
     "titre": "Un nouveau magasin ouvre en ville, venez nombreux·ses ! 🏬🪡  !commandes",
     "depuis": "2026-11-27T09:25:26Z",
@@ -1041,7 +1047,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 9,
+    "viewers": 19,
     "jeu": "Art",
     "titre": "On découvre la tablette ensemble avant la session tests! #help x)",
     "depuis": "2026-11-27T09:56:59Z",
@@ -1155,5 +1161,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-27T11:07:38.512Z"
+ "maj": "2026-11-27T12:07:41.164Z"
 }
