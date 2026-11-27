@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2426,
+  "heuresLive30": 2428,
   "followsGagnes30": 614,
   "periode": {
    "du": "2026-10-28",
@@ -43,7 +43,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "It Takes Two",
+    "titre": "🌈 Moment chill et rigolade avec Lilyth✨",
+    "depuis": "2026-11-27T14:06:45Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
+   },
    "premierStream": "2025-03-29",
    "succes": [
     {
@@ -531,7 +537,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 14,
+    "jeu": "Miniatures & Models",
+    "titre": "DIY MINIATURE HOUSE DE NOËL ! Ça chill un maaax☕ | 18H : Tirage aux sort tickets !artchallenges ! 🎫 | #rushto500follows | !liens",
+    "depuis": "2026-11-27T13:40:29Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
+   },
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -1035,7 +1047,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 21,
+    "viewers": 14,
     "jeu": "Art",
     "titre": "On découvre la tablette ensemble avant la session tests! #help x)",
     "depuis": "2026-11-27T09:56:59Z",
@@ -1149,5 +1161,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-27T13:07:34.891Z"
+ "maj": "2026-11-27T14:07:36.052Z"
 }
