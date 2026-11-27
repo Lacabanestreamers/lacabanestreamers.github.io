@@ -8,10 +8,10 @@
   "affilies": 41,
   "nouveaux30": 3,
   "heuresLive30": 2407,
-  "followsGagnes30": 608,
+  "followsGagnes30": 612,
   "periode": {
    "du": "2026-10-28",
-   "au": "2026-11-26"
+   "au": "2026-11-27"
   }
  },
  "agenda": [],
@@ -54,8 +54,8 @@
    ],
    "jeux": [
     "Disney Dreamlight Valley",
-    "Just Chatting",
     "Silver Service",
+    "Just Chatting",
     "7 Days to Die",
     "DEVOUR"
    ],
@@ -105,8 +105,8 @@
    "jeux": [
     "PEAK",
     "R.E.P.O.",
-    "Abiotic Factor",
-    "Demonologist"
+    "Demonologist",
+    "Abiotic Factor"
    ],
    "clip": {
     "url": "https://www.twitch.tv/asakha/clip/KindLivelyEelOMGScoots-luCRTx39gW7YkmYI",
@@ -163,9 +163,9 @@
    "jeux": [
     "VALORANT",
     "Once Human",
-    "7 Days to Die",
     "Dice Hoarder",
-    "Outbound"
+    "Outbound",
+    "7 Days to Die"
    ],
    "clip": {
     "url": "https://www.twitch.tv/aulit42369/clip/JoyousWealthyNarwhalJKanStyle-Gp9yC7CrwLc6tcOv",
@@ -250,8 +250,8 @@
    "jeux": [
     "Special Events",
     "Planet Zoo 2",
-    "The Sims 4",
     "Disney Dreamlight Valley",
+    "The Sims 4",
     "Dispatch"
    ],
    "clip": {
@@ -285,7 +285,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "FINAL FANTASY XIV ONLINE",
+    "titre": "[FF14 Online] En route vers Dawntrail !",
+    "depuis": "2026-11-27T07:58:31Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -402,7 +408,7 @@
     "Just Chatting",
     "Special Events",
     "Chicken Feet",
-    "Deep Rock Galactic"
+    "Dub Together"
    ],
    "clip": null
   },
@@ -483,8 +489,8 @@
    "jeux": [
     "R.E.P.O.",
     "Minecraft",
-    "Valheim",
     "Moon Sweepers",
+    "Valheim",
     "Fire Emblem: Fortune's Weave"
    ],
    "clip": {
@@ -777,7 +783,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-25",
-   "live": null,
+   "live": {
+    "viewers": 8,
+    "jeu": "Stardew Valley",
+    "titre": "Stardew // On ship Elliott ??? Objectif 160 MimiFollows ??  !discord !regles !don",
+    "depuis": "2026-11-27T07:43:01Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_melpastelplay-440x248.jpg"
+   },
    "premierStream": "2026-03-26",
    "succes": [
     {
@@ -836,9 +848,9 @@
    "jeux": [
     "The Sims 4",
     "PUMPKIN PANIC",
-    "DEVOUR",
     "Just Chatting",
-    "What Remains of Edith Finch"
+    "What Remains of Edith Finch",
+    "DEVOUR"
    ],
    "clip": null
   },
@@ -1046,7 +1058,7 @@
     "Grand Theft Auto VI",
     "Space Savory",
     "Milki Delivery",
-    "Just Chatting"
+    "Invokyr"
    ],
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/DeliciousPricklyRavenSoonerLater-B7pgLr1yBNRa4j3S",
@@ -1136,5 +1148,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-27T04:07:34.626Z"
+ "maj": "2026-11-27T08:07:34.495Z"
 }
