@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2457,
+  "heuresLive30": 2461,
   "followsGagnes30": 623,
   "periode": {
    "du": "2026-10-28",
@@ -44,7 +44,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 14,
+    "viewers": 10,
     "jeu": "It Takes Two",
     "titre": "🌈 Moment chill et rigolade avec Lilyth✨",
     "depuis": "2026-11-27T14:06:45Z",
@@ -235,7 +235,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 2,
     "jeu": "Invokyr",
     "titre": "🔮 La Team du Week-end fait mieux que la dernière fois  ?!😆🔥",
     "depuis": "2026-11-27T18:31:10Z",
@@ -297,7 +297,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-17",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Warframe",
+    "titre": "[Warframe/Dev talk !] On arréte tout, ya' Dev talk !",
+    "depuis": "2026-11-27T18:54:53Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_detectiverenard-440x248.jpg"
+   },
    "premierStream": "2026-03-09",
    "succes": [
     {
@@ -340,8 +346,8 @@
    ],
    "jeux": [
     "Minecraft",
-    "Splatoon 3",
     "The Survivalists",
+    "Splatoon 3",
     "Tomodachi Life: Living the Dream",
     "Pokémon Quest"
    ],
@@ -433,7 +439,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 0,
+    "viewers": 6,
     "jeu": "Writing & Reading",
     "titre": "Petit live lecture Cozy de fin de semaine : Croc Blanc Episode 2 ! Rejoignez nous! <3 (!ttc/!commandes)",
     "depuis": "2026-11-27T18:50:08Z",
@@ -448,10 +454,10 @@
     }
    ],
    "jeux": [
+    "Writing & Reading",
     "R.E.P.O.",
     "7 Days to Die",
     "PEAK",
-    "Writing & Reading",
     "Photomaly"
    ],
    "clip": {
@@ -654,7 +660,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 12,
     "jeu": "It Takes Two",
     "titre": "🔞[Drop Perso]  Entre papote et éclat de fun!! @aly0806 / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-27T14:09:20Z",
@@ -901,7 +907,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "Euro Truck Simulator 2",
     "titre": "Salut tout le monde,je depose quelque passagers !!!",
     "depuis": "2026-11-27T18:45:35Z",
@@ -927,7 +933,7 @@
    "depuis": "2026-09-20",
    "live": {
     "viewers": 2,
-    "jeu": "Art",
+    "jeu": "Invokyr",
     "titre": "On Invokyr avec la team ! ✨  [!bs !fortune !insta !discord ]",
     "depuis": "2026-11-27T18:34:05Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
@@ -944,8 +950,8 @@
     "The Legend of Zelda: Ocarina of Time",
     "The Other Side",
     "Invokyr",
-    "Codenames",
-    "Art"
+    "Art",
+    "Codenames"
    ],
    "clip": null
   },
@@ -1072,7 +1078,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 22,
+    "viewers": 21,
     "jeu": "Hubert",
     "titre": "Session tests! La démo de #Hubert #keymailer",
     "depuis": "2026-11-27T09:56:59Z",
@@ -1096,7 +1102,7 @@
     "Grand Theft Auto VI",
     "Space Savory",
     "Milki Delivery",
-    "Games + Demos"
+    "Invokyr"
    ],
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/DeliciousPricklyRavenSoonerLater-B7pgLr1yBNRa4j3S",
@@ -1186,5 +1192,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-27T18:50:57.328Z"
+ "maj": "2026-11-27T19:07:37.549Z"
 }
