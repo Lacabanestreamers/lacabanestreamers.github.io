@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2409,
+  "heuresLive30": 2413,
   "followsGagnes30": 612,
   "periode": {
    "du": "2026-10-28",
@@ -286,7 +286,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 6,
+    "viewers": 5,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "[FF14 Online] En route vers Dawntrail !",
     "depuis": "2026-11-27T07:58:31Z",
@@ -453,7 +453,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-11",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "Tailor Simulator",
+    "titre": "Un nouveau magasin ouvre en ville, venez nombreux·ses ! 🏬🪡  !commandes",
+    "depuis": "2026-11-27T09:25:26Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hagosan-440x248.jpg"
+   },
    "premierStream": "2023-07-10",
    "succes": [],
    "jeux": [
@@ -634,7 +640,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 15,
     "jeu": "Invokyr",
     "titre": "🔞[Drop Perso] On essaie de rester Zen !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-27T08:38:13Z",
@@ -790,7 +796,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 10,
+    "viewers": 12,
     "jeu": "Stardew Valley",
     "titre": "Stardew // On ship Elliott ??? Objectif 160 MimiFollows ??  !discord !regles !don",
     "depuis": "2026-11-27T07:43:01Z",
@@ -887,7 +893,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 1,
+    "viewers": 2,
     "jeu": "World of Warcraft",
     "titre": "Salut tout le monde, on continue l'aventure wow forever !!!",
     "depuis": "2026-11-27T08:25:04Z",
@@ -1051,7 +1057,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Art",
+    "titre": "On découvre la tablette ensemble avant la session tests! #help x)",
+    "depuis": "2026-11-27T09:56:59Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [
     {
@@ -1160,5 +1172,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-27T09:07:39.918Z"
+ "maj": "2026-11-27T10:07:35.502Z"
 }
