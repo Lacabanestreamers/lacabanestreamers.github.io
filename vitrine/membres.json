@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2432,
+  "heuresLive30": 2438,
   "followsGagnes30": 614,
   "periode": {
    "du": "2026-10-28",
@@ -44,7 +44,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 6,
+    "viewers": 7,
     "jeu": "It Takes Two",
     "titre": "🌈 Moment chill et rigolade avec Lilyth✨",
     "depuis": "2026-11-27T14:06:45Z",
@@ -317,7 +317,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "Splatoon 3",
+    "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
+    "depuis": "2026-11-27T15:19:11Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
+   },
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -532,7 +538,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 15,
+    "viewers": 19,
     "jeu": "Miniatures & Models",
     "titre": "DIY MINIATURE HOUSE DE NOËL ! Ça chill un maaax☕ | 18H : Tirage aux sort tickets !artchallenges ! 🎫 | #rushto500follows | !liens",
     "depuis": "2026-11-27T13:40:29Z",
@@ -582,7 +588,7 @@
    "staff": false,
    "depuis": "2026-10-26",
    "live": {
-    "viewers": 3,
+    "viewers": 4,
     "jeu": "VALORANT",
     "titre": "🔴 VALORANT | les game sont CASSE-C......, GO SACRIFIER L'ÉLO 💀",
     "depuis": "2026-11-27T14:44:46Z",
@@ -648,7 +654,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 15,
+    "viewers": 12,
     "jeu": "It Takes Two",
     "titre": "🔞[Drop Perso]  Entre papote et éclat de fun!! @aly0806 / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-27T14:09:20Z",
@@ -1060,9 +1066,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 13,
-    "jeu": "Art",
-    "titre": "On découvre la tablette ensemble avant la session tests! #help x)",
+    "viewers": 16,
+    "jeu": "Games + Demos",
+    "titre": "Découverte de Retro Pond #retropond #keymailer",
     "depuis": "2026-11-27T09:56:59Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1174,5 +1180,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-27T15:07:35.635Z"
+ "maj": "2026-11-27T16:07:36.393Z"
 }
