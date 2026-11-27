@@ -7,8 +7,8 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2451,
-  "followsGagnes30": 614,
+  "heuresLive30": 2457,
+  "followsGagnes30": 623,
   "periode": {
    "du": "2026-10-28",
    "au": "2026-11-27"
@@ -44,7 +44,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 8,
+    "viewers": 14,
     "jeu": "It Takes Two",
     "titre": "🌈 Moment chill et rigolade avec Lilyth✨",
     "depuis": "2026-11-27T14:06:45Z",
@@ -234,7 +234,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 4,
+    "jeu": "Invokyr",
+    "titre": "🔮 La Team du Week-end fait mieux que la dernière fois  ?!😆🔥",
+    "depuis": "2026-11-27T18:31:10Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
+   },
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -318,10 +324,10 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 2,
-    "jeu": "Splatoon 3",
-    "titre": "🦑Splatoon 3 ~ MULTI ensemble ! - !CA !réseaux",
-    "depuis": "2026-11-27T15:19:11Z",
+    "viewers": 1,
+    "jeu": "Minecraft",
+    "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings avec un build de gâteau pour souffler les bougies ! - !réseaux",
+    "depuis": "2026-11-27T18:27:55Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
    },
    "premierStream": "2024-08-12",
@@ -334,8 +340,8 @@
    ],
    "jeux": [
     "Minecraft",
-    "The Survivalists",
     "Splatoon 3",
+    "The Survivalists",
     "Tomodachi Life: Living the Dream",
     "Pokémon Quest"
    ],
@@ -426,7 +432,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "Writing & Reading",
+    "titre": "Petit live lecture Cozy de fin de semaine : Croc Blanc Episode 2 ! Rejoignez nous! <3 (!ttc/!commandes)",
+    "depuis": "2026-11-27T18:50:08Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [
     {
@@ -537,13 +549,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 21,
-    "jeu": "Miniatures & Models",
-    "titre": "DIY MINIATURE HOUSE DE NOËL ! Ça chill un maaax☕ | 18H : Tirage aux sort tickets !artchallenges ! 🎫 | #rushto500follows | !liens",
-    "depuis": "2026-11-27T13:40:29Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_kristal_et_ses_ac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-19",
    "succes": [],
    "jeux": [
@@ -587,13 +593,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-26",
-   "live": {
-    "viewers": 2,
-    "jeu": "VALORANT",
-    "titre": "🔴 VALORANT | les game sont CASSE-C......, GO SACRIFIER L'ÉLO 💀",
-    "depuis": "2026-11-27T14:44:46Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lagonbleu_976-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2027-08-31",
    "succes": [],
    "jeux": [
@@ -654,7 +654,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 11,
+    "viewers": 10,
     "jeu": "It Takes Two",
     "titre": "🔞[Drop Perso]  Entre papote et éclat de fun!! @aly0806 / !discord !clip !kitsune !zic 🔞",
     "depuis": "2026-11-27T14:09:20Z",
@@ -900,7 +900,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Euro Truck Simulator 2",
+    "titre": "Salut tout le monde,je depose quelque passagers !!!",
+    "depuis": "2026-11-27T18:45:35Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -919,7 +925,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Art",
+    "titre": "On Invokyr avec la team ! ✨  [!bs !fortune !insta !discord ]",
+    "depuis": "2026-11-27T18:34:05Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
+   },
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -1060,9 +1072,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 19,
-    "jeu": "Games + Demos",
-    "titre": "Session tests! La démo de #goatsodyssey #keymailer",
+    "viewers": 22,
+    "jeu": "Hubert",
+    "titre": "Session tests! La démo de #Hubert #keymailer",
     "depuis": "2026-11-27T09:56:59Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1084,7 +1096,7 @@
     "Grand Theft Auto VI",
     "Space Savory",
     "Milki Delivery",
-    "Invokyr"
+    "Games + Demos"
    ],
    "clip": {
     "url": "https://www.twitch.tv/sakkiel/clip/DeliciousPricklyRavenSoonerLater-B7pgLr1yBNRa4j3S",
@@ -1174,5 +1186,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-27T18:07:42.669Z"
+ "maj": "2026-11-27T18:50:57.328Z"
 }
