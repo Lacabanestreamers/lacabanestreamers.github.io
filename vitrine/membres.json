@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2406,
+  "heuresLive30": 2407,
   "followsGagnes30": 608,
   "periode": {
    "du": "2026-10-28",
@@ -24,13 +24,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-24",
-   "live": {
-    "viewers": 7,
-    "jeu": "Rocket League",
-    "titre": "Rocket League /PS5",
-    "depuis": "2026-11-27T02:07:49Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [],
    "jeux": [
@@ -1142,5 +1136,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-27T03:07:40.090Z"
+ "maj": "2026-11-27T04:07:34.626Z"
 }
