@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2405,
+  "heuresLive30": 2406,
   "followsGagnes30": 608,
   "periode": {
    "du": "2026-10-28",
@@ -25,18 +25,18 @@
    "staff": false,
    "depuis": "2026-10-24",
    "live": {
-    "viewers": 9,
-    "jeu": "God of War III: Remastered",
-    "titre": "God of War Remastered /PS4",
-    "depuis": "2026-11-26T22:43:10Z",
+    "viewers": 7,
+    "jeu": "Rocket League",
+    "titre": "Rocket League /PS5",
+    "depuis": "2026-11-27T02:07:49Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_alf_de_melmac-440x248.jpg"
    },
    "premierStream": null,
    "succes": [],
    "jeux": [
     "Rocket League",
-    "Fortnite",
     "God of War III: Remastered",
+    "Fortnite",
     "A Plague Tale: Innocence"
    ],
    "clip": null
@@ -1142,5 +1142,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-27T02:08:07.591Z"
+ "maj": "2026-11-27T03:07:40.090Z"
 }
