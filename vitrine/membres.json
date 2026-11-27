@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2461,
+  "heuresLive30": 2470,
   "followsGagnes30": 623,
   "periode": {
    "du": "2026-10-28",
@@ -43,13 +43,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 10,
-    "jeu": "It Takes Two",
-    "titre": "🌈 Moment chill et rigolade avec Lilyth✨",
-    "depuis": "2026-11-27T14:06:45Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-03-29",
    "succes": [
     {
@@ -235,7 +229,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 2,
+    "viewers": 4,
     "jeu": "Invokyr",
     "titre": "🔮 La Team du Week-end fait mieux que la dernière fois  ?!😆🔥",
     "depuis": "2026-11-27T18:31:10Z",
@@ -438,13 +432,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 6,
-    "jeu": "Writing & Reading",
-    "titre": "Petit live lecture Cozy de fin de semaine : Croc Blanc Episode 2 ! Rejoignez nous! <3 (!ttc/!commandes)",
-    "depuis": "2026-11-27T18:50:08Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-06-17",
    "succes": [
     {
@@ -497,7 +485,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 13,
+    "jeu": "MECCHA CHAMELEON",
+    "titre": "FR_VT - On se camoufle ce soir",
+    "depuis": "2026-11-27T19:23:10Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
+   },
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -659,13 +653,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 12,
-    "jeu": "It Takes Two",
-    "titre": "🔞[Drop Perso]  Entre papote et éclat de fun!! @aly0806 / !discord !clip !kitsune !zic 🔞",
-    "depuis": "2026-11-27T14:09:20Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -868,7 +856,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 3,
+    "jeu": "The Sims 4",
+    "titre": "[FR] ~ Sims 4 - Rénovation des Mondes - Sulani #18 ~",
+    "depuis": "2026-11-27T19:56:32Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
+   },
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -907,7 +901,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Euro Truck Simulator 2",
     "titre": "Salut tout le monde,je depose quelque passagers !!!",
     "depuis": "2026-11-27T18:45:35Z",
@@ -932,7 +926,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 2,
+    "viewers": 3,
     "jeu": "Invokyr",
     "titre": "On Invokyr avec la team ! ✨  [!bs !fortune !insta !discord ]",
     "depuis": "2026-11-27T18:34:05Z",
@@ -948,8 +942,8 @@
    ],
    "jeux": [
     "The Legend of Zelda: Ocarina of Time",
-    "The Other Side",
     "Invokyr",
+    "The Other Side",
     "Art",
     "Codenames"
    ],
@@ -1078,9 +1072,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 21,
-    "jeu": "Hubert",
-    "titre": "Session tests! La démo de #Hubert #keymailer",
+    "viewers": 17,
+    "jeu": "Design & Conjure",
+    "titre": "Session tests! La démo de #DesignandConjure #keymailer",
     "depuis": "2026-11-27T09:56:59Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1192,5 +1186,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-27T19:07:37.549Z"
+ "maj": "2026-11-27T20:07:33.986Z"
 }
