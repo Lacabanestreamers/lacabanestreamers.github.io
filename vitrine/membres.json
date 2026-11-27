@@ -286,7 +286,7 @@
    "staff": false,
    "depuis": "2026-10-17",
    "live": {
-    "viewers": 2,
+    "viewers": 6,
     "jeu": "FINAL FANTASY XIV ONLINE",
     "titre": "[FF14 Online] En route vers Dawntrail !",
     "depuis": "2026-11-27T07:58:31Z",
@@ -633,7 +633,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 11,
+    "jeu": "Invokyr",
+    "titre": "🔞[Drop Perso] On essaie de rester Zen !! Entre papote et éclat de fun!! / !discord !clip !kitsune !zic 🔞",
+    "depuis": "2026-11-27T08:38:13Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_lilyth_minerva-440x248.jpg"
+   },
    "premierStream": "2018-08-08",
    "succes": [
     {
@@ -784,7 +790,7 @@
    "staff": false,
    "depuis": "2026-09-25",
    "live": {
-    "viewers": 8,
+    "viewers": 10,
     "jeu": "Stardew Valley",
     "titre": "Stardew // On ship Elliott ??? Objectif 160 MimiFollows ??  !discord !regles !don",
     "depuis": "2026-11-27T07:43:01Z",
@@ -880,7 +886,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "World of Warcraft",
+    "titre": "Salut tout le monde, on continue l'aventure wow forever !!!",
+    "depuis": "2026-11-27T08:25:04Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1148,5 +1160,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-27T08:08:17.082Z"
+ "maj": "2026-11-27T09:07:39.918Z"
 }
