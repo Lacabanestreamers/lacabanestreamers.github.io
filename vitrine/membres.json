@@ -7,10 +7,10 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2485,
-  "followsGagnes30": 623,
+  "heuresLive30": 2374,
+  "followsGagnes30": 612,
   "periode": {
-   "du": "2026-10-28",
+   "du": "2026-10-29",
    "au": "2026-11-27"
   }
  },
@@ -312,7 +312,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 1,
+    "viewers": 4,
     "jeu": "Minecraft",
     "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings avec un build de gâteau pour souffler les bougies ! - !réseaux",
     "depuis": "2026-11-27T18:27:55Z",
@@ -844,13 +844,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 5,
-    "jeu": "The Sims 4",
-    "titre": "[FR] ~ Sims 4 - Rénovation des Mondes - Sulani #18 ~",
-    "depuis": "2026-11-27T19:56:32Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_mysti94-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-11",
    "succes": [],
    "jeux": [
@@ -1156,5 +1150,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-27T22:07:37.553Z"
+ "maj": "2026-11-27T23:07:34.895Z"
 }
