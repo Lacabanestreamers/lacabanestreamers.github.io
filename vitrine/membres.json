@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2478,
+  "heuresLive30": 2485,
   "followsGagnes30": 623,
   "periode": {
    "du": "2026-10-28",
@@ -228,13 +228,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 3,
-    "jeu": "Invokyr",
-    "titre": "🔮 La Team du Week-end fait mieux que la dernière fois  ?!😆🔥",
-    "depuis": "2026-11-27T20:52:03Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -480,9 +474,9 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 9,
-    "jeu": "MECCHA CHAMELEON",
-    "titre": "FR_VT - On se camoufle ce soir",
+    "viewers": 10,
+    "jeu": "R.E.P.O.",
+    "titre": "FR_VT -Go R.E.P.O",
     "depuis": "2026-11-27T19:23:10Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
    },
@@ -851,7 +845,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 4,
+    "viewers": 5,
     "jeu": "The Sims 4",
     "titre": "[FR] ~ Sims 4 - Rénovation des Mondes - Sulani #18 ~",
     "depuis": "2026-11-27T19:56:32Z",
@@ -894,19 +888,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 2,
-    "jeu": "Euro Truck Simulator 2",
-    "titre": "Salut tout le monde,je depose quelque passagers !!!",
-    "depuis": "2026-11-27T18:45:35Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
     "World of Warcraft",
-    "American Truck Simulator",
     "Euro Truck Simulator 2",
+    "American Truck Simulator",
     "Disney Dreamlight Valley"
    ],
    "clip": null
@@ -919,13 +907,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 10,
-    "jeu": "Invokyr",
-    "titre": "On Invokyr avec la team ! ✨  [!bs !fortune !insta !discord ]",
-    "depuis": "2026-11-27T18:34:05Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_oko_san_-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-09-24",
    "succes": [
     {
@@ -1065,13 +1047,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": {
-    "viewers": 15,
-    "jeu": "Design & Conjure",
-    "titre": "Session tests! La démo de #DesignandConjure #keymailer",
-    "depuis": "2026-11-27T09:56:59Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
-   },
+   "live": null,
    "premierStream": null,
    "succes": [
     {
@@ -1180,5 +1156,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-27T21:07:34.959Z"
+ "maj": "2026-11-27T22:07:37.553Z"
 }
