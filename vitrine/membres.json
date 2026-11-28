@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2387,
+  "heuresLive30": 2392,
   "followsGagnes30": 616,
   "periode": {
    "du": "2026-10-29",
@@ -368,7 +368,7 @@
    "staff": false,
    "depuis": "2026-10-09",
    "live": {
-    "viewers": 1,
+    "viewers": 3,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] [DDV] 🔴 LIVE | DISNEY DREAMLIGHT VALLEY 🌸✨ GRAND NETTOYAGE DE LA VALLÉE 🧹 + SUITE DE LA NOUVELLE DLC ! 💖🏰",
     "depuis": "2026-11-28T12:34:27Z",
@@ -419,7 +419,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 10,
+    "viewers": 17,
     "jeu": "Just Chatting",
     "titre": "On a plein de démos à tester avec @sakkiel ! Rejoignez nous! <3 (!ttc/!commandes) - clefs obtenues via keymailer",
     "depuis": "2026-11-28T12:50:19Z",
@@ -607,7 +607,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 0,
+    "viewers": 1,
     "jeu": "Dead Space 3",
     "titre": "🐰Retour dans l'espace avec mes extraterrestres",
     "depuis": "2026-11-28T13:06:29Z",
@@ -869,7 +869,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 2,
+    "viewers": 8,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] DE RETOUR ! Est-ce qu'on termine le DLC The Keepsake Sea aujourd'hui ? 🧜‍♀️🪸 | Disney Dreamlight Valley | !discord !commandes",
     "depuis": "2026-11-28T13:00:18Z",
@@ -1014,7 +1014,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": null,
+   "live": {
+    "viewers": 5,
+    "jeu": "Tidy Bakery",
+    "titre": "Tidy Bakary on range notre belle boulangerie",
+    "depuis": "2026-11-28T13:32:58Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
+   },
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -1052,7 +1058,7 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 7,
+    "viewers": 8,
     "jeu": "Haunted: Escape the Dollhouse",
     "titre": "Session Tests en multi!  #keymailer #hauntedescapethedollhouse",
     "depuis": "2026-11-28T12:49:55Z",
@@ -1166,5 +1172,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-28T13:07:37.212Z"
+ "maj": "2026-11-28T14:07:33.704Z"
 }
