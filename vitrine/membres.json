@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2376,
+  "heuresLive30": 2377,
   "followsGagnes30": 612,
   "periode": {
    "du": "2026-10-29",
@@ -595,7 +595,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 0,
+    "viewers": 4,
     "jeu": "We Were Here Tomorrow",
     "titre": "🐰Le retour des explorateurs avec Raisin",
     "depuis": "2026-11-28T08:05:28Z",
@@ -816,7 +816,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Minecraft",
+    "titre": "On explore le Nether !",
+    "depuis": "2026-11-28T08:16:20Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
+   },
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -1142,5 +1148,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-28T08:07:45.183Z"
+ "maj": "2026-11-28T09:07:35.655Z"
 }
