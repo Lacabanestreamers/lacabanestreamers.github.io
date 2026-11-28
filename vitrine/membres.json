@@ -7,8 +7,8 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2383,
-  "followsGagnes30": 612,
+  "heuresLive30": 2385,
+  "followsGagnes30": 616,
   "periode": {
    "du": "2026-10-29",
    "au": "2026-11-28"
@@ -220,7 +220,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 25,
+    "viewers": 18,
     "jeu": "Planet Zoo",
     "titre": "🦁  PLANET ZOO 2 : Aujourd'hui, on fait grandir le zoo ! 🐾",
     "depuis": "2026-11-28T10:01:36Z",
@@ -874,7 +874,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "World of Warcraft",
+    "titre": "Salut tout le monde, de retour avec ma démos !!!",
+    "depuis": "2026-11-28T11:21:34Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
+   },
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -996,13 +1002,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-21",
-   "live": {
-    "viewers": 6,
-    "jeu": "Tidy Bakery",
-    "titre": "Tidy Bakary on range notre belle boulangerie",
-    "depuis": "2026-11-28T09:59:48Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_rggk_obelix_14-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-08-22",
    "succes": [],
    "jeux": [
@@ -1148,5 +1148,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-28T11:07:38.246Z"
+ "maj": "2026-11-28T12:07:36.620Z"
 }
