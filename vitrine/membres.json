@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2379,
+  "heuresLive30": 2383,
   "followsGagnes30": 612,
   "periode": {
    "du": "2026-10-29",
@@ -220,7 +220,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 3,
+    "viewers": 2,
     "jeu": "Planet Zoo",
     "titre": "🦁  PLANET ZOO 2 : Aujourd'hui, on fait grandir le zoo ! 🐾",
     "depuis": "2026-11-28T10:01:36Z",
@@ -601,7 +601,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 9,
+    "viewers": 8,
     "jeu": "We Were Here Tomorrow",
     "titre": "🐰Le retour des explorateurs avec Raisin",
     "depuis": "2026-11-28T08:05:28Z",
@@ -617,9 +617,9 @@
    ],
    "jeux": [
     "Dead Space 2",
+    "We Were Here Tomorrow",
     "Little Nightmares II",
     "Little Nightmares III",
-    "We Were Here Tomorrow",
     "Makers & Crafting"
    ],
    "clip": {
@@ -823,7 +823,7 @@
    "staff": false,
    "depuis": "2026-09-27",
    "live": {
-    "viewers": 2,
+    "viewers": 5,
     "jeu": "Minecraft",
     "titre": "On explore le Nether !",
     "depuis": "2026-11-28T08:16:20Z",
@@ -1160,5 +1160,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-28T10:07:34.528Z"
+ "maj": "2026-11-28T10:11:39.127Z"
 }
