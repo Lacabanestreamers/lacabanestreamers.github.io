@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2374,
+  "heuresLive30": 2376,
   "followsGagnes30": 612,
   "periode": {
    "du": "2026-10-29",
@@ -311,13 +311,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 4,
-    "jeu": "Minecraft",
-    "titre": "🏹MC Be ~ On continue la 🏕survie avec les coupings avec un build de gâteau pour souffler les bougies ! - !réseaux",
-    "depuis": "2026-11-27T18:27:55Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_elegaming__-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-08-12",
    "succes": [
     {
@@ -330,8 +324,8 @@
     "Minecraft",
     "The Survivalists",
     "Splatoon 3",
-    "Tomodachi Life: Living the Dream",
-    "Pokémon Quest"
+    "Pokémon Quest",
+    "My Hero Ultra Rumble"
    ],
    "clip": null
   },
@@ -473,13 +467,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 10,
-    "jeu": "R.E.P.O.",
-    "titre": "FR_VT -Go R.E.P.O",
-    "depuis": "2026-11-27T19:23:10Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_hyroshimaeu-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2026-02-01",
    "succes": [
     {
@@ -1150,5 +1138,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-27T23:07:34.895Z"
+ "maj": "2026-11-28T00:07:40.528Z"
 }
