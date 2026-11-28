@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2392,
+  "heuresLive30": 2398,
   "followsGagnes30": 616,
   "periode": {
    "du": "2026-10-29",
@@ -43,7 +43,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "Maquette",
+    "titre": "🌈 Moment chill et rigolade on continue les maquette de Noel✨",
+    "depuis": "2026-11-28T14:13:26Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_aly0806-440x248.jpg"
+   },
    "premierStream": "2025-03-29",
    "succes": [
     {
@@ -419,8 +425,8 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 17,
-    "jeu": "Just Chatting",
+    "viewers": 6,
+    "jeu": "Snackrifice",
     "titre": "On a plein de démos à tester avec @sakkiel ! Rejoignez nous! <3 (!ttc/!commandes) - clefs obtenues via keymailer",
     "depuis": "2026-11-28T12:50:19Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
@@ -437,8 +443,8 @@
     "Writing & Reading",
     "R.E.P.O.",
     "7 Days to Die",
-    "PEAK",
-    "Photomaly"
+    "Just Chatting",
+    "PEAK"
    ],
    "clip": {
     "url": "https://www.twitch.tv/galyssiane/clip/HeartlessColorfulGuanacoPicoMause-VXYL_Yw8GQKNEtG_",
@@ -607,7 +613,7 @@
    "staff": false,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 1,
+    "viewers": 3,
     "jeu": "Dead Space 3",
     "titre": "🐰Retour dans l'espace avec mes extraterrestres",
     "depuis": "2026-11-28T13:06:29Z",
@@ -869,7 +875,7 @@
    "staff": false,
    "depuis": "2026-10-15",
    "live": {
-    "viewers": 8,
+    "viewers": 7,
     "jeu": "Disney Dreamlight Valley",
     "titre": "[FR] DE RETOUR ! Est-ce qu'on termine le DLC The Keepsake Sea aujourd'hui ? 🧜‍♀️🪸 | Disney Dreamlight Valley | !discord !commandes",
     "depuis": "2026-11-28T13:00:18Z",
@@ -1015,7 +1021,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 5,
+    "viewers": 3,
     "jeu": "Tidy Bakery",
     "titre": "Tidy Bakary on range notre belle boulangerie",
     "depuis": "2026-11-28T13:32:58Z",
@@ -1058,9 +1064,9 @@
    "staff": false,
    "depuis": "2026-10-27",
    "live": {
-    "viewers": 8,
-    "jeu": "Haunted: Escape the Dollhouse",
-    "titre": "Session Tests en multi!  #keymailer #hauntedescapethedollhouse",
+    "viewers": 12,
+    "jeu": "Snackrifice",
+    "titre": "Session Tests en multi! Snackrifice  #keymailer #snackrifice",
     "depuis": "2026-11-28T12:49:55Z",
     "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
    },
@@ -1172,5 +1178,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-28T14:07:33.704Z"
+ "maj": "2026-11-28T15:07:34.859Z"
 }
