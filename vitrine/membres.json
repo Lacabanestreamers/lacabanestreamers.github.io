@@ -7,7 +7,7 @@
   "membres": 45,
   "affilies": 41,
   "nouveaux30": 3,
-  "heuresLive30": 2385,
+  "heuresLive30": 2387,
   "followsGagnes30": 616,
   "periode": {
    "du": "2026-10-29",
@@ -219,13 +219,7 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 18,
-    "jeu": "Planet Zoo",
-    "titre": "🦁  PLANET ZOO 2 : Aujourd'hui, on fait grandir le zoo ! 🐾",
-    "depuis": "2026-11-28T10:01:36Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_chezelodie-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-02-13",
    "succes": [
     {
@@ -373,7 +367,13 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-09",
-   "live": null,
+   "live": {
+    "viewers": 1,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "[FR] [DDV] 🔴 LIVE | DISNEY DREAMLIGHT VALLEY 🌸✨ GRAND NETTOYAGE DE LA VALLÉE 🧹 + SUITE DE LA NOUVELLE DLC ! 💖🏰",
+    "depuis": "2026-11-28T12:34:27Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_evodp-440x248.jpg"
+   },
    "premierStream": "2024-08-10",
    "succes": [
     {
@@ -418,7 +418,13 @@
    "type": "affiliate",
    "staff": true,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 10,
+    "jeu": "Just Chatting",
+    "titre": "On a plein de démos à tester avec @sakkiel ! Rejoignez nous! <3 (!ttc/!commandes) - clefs obtenues via keymailer",
+    "depuis": "2026-11-28T12:50:19Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_galyssiane-440x248.jpg"
+   },
    "premierStream": "2024-06-17",
    "succes": [
     {
@@ -600,7 +606,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "Dead Space 3",
+    "titre": "🐰Retour dans l'espace avec mes extraterrestres",
+    "depuis": "2026-11-28T13:06:29Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
+   },
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -856,7 +868,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": null,
+   "live": {
+    "viewers": 2,
+    "jeu": "Disney Dreamlight Valley",
+    "titre": "[FR] DE RETOUR ! Est-ce qu'on termine le DLC The Keepsake Sea aujourd'hui ? 🧜‍♀️🪸 | Disney Dreamlight Valley | !discord !commandes",
+    "depuis": "2026-11-28T13:00:18Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nabelle_-440x248.jpg"
+   },
    "premierStream": "2025-01-15",
    "succes": [],
    "jeux": [
@@ -874,13 +892,7 @@
    "type": "",
    "staff": false,
    "depuis": "2026-10-15",
-   "live": {
-    "viewers": 1,
-    "jeu": "World of Warcraft",
-    "titre": "Salut tout le monde, de retour avec ma démos !!!",
-    "depuis": "2026-11-28T11:21:34Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_nyxenfox-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2025-08-17",
    "succes": [],
    "jeux": [
@@ -1039,7 +1051,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-10-27",
-   "live": null,
+   "live": {
+    "viewers": 7,
+    "jeu": "Haunted: Escape the Dollhouse",
+    "titre": "Session Tests en multi!  #keymailer #hauntedescapethedollhouse",
+    "depuis": "2026-11-28T12:49:55Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_sakkiel-440x248.jpg"
+   },
    "premierStream": null,
    "succes": [
     {
@@ -1148,5 +1166,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-28T12:07:36.620Z"
+ "maj": "2026-11-28T13:07:37.212Z"
 }
