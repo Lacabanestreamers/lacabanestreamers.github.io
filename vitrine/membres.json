@@ -11,7 +11,7 @@
   "followsGagnes30": 612,
   "periode": {
    "du": "2026-10-29",
-   "au": "2026-11-27"
+   "au": "2026-11-28"
   }
  },
  "agenda": [],
@@ -57,7 +57,7 @@
     "Silver Service",
     "Just Chatting",
     "7 Days to Die",
-    "DEVOUR"
+    "Outbound"
    ],
    "clip": {
     "url": "https://www.twitch.tv/aly0806/clip/BashfulDoubtfulEchidnaCharlietheUnicorn-1kzsNBOImx8ROVc-",
@@ -98,8 +98,7 @@
    "jeux": [
     "PEAK",
     "R.E.P.O.",
-    "Demonologist",
-    "Abiotic Factor"
+    "Demonologist"
    ],
    "clip": {
     "url": "https://www.twitch.tv/asakha/clip/KindLivelyEelOMGScoots-luCRTx39gW7YkmYI",
@@ -208,8 +207,7 @@
    "premierStream": "2026-06-05",
    "succes": [],
    "jeux": [
-    "Disney Dreamlight Valley",
-    "Just Chatting"
+    "Disney Dreamlight Valley"
    ],
    "clip": null
   },
@@ -510,10 +508,10 @@
    "succes": [],
    "jeux": [
     "Stardew Valley",
-    "Animal Crossing: New Horizons",
     "DEVOUR",
     "Leaf it Alone",
-    "Art"
+    "Art",
+    "Animal Crossing: New Horizons"
    ],
    "clip": null
   },
@@ -596,7 +594,13 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": null,
+   "live": {
+    "viewers": 0,
+    "jeu": "We Were Here Tomorrow",
+    "titre": "🐰Le retour des explorateurs avec Raisin",
+    "depuis": "2026-11-28T08:05:28Z",
+    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
+   },
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -644,8 +648,8 @@
     }
    ],
    "jeux": [
-    "R.E.P.O.",
     "Tomb Raider",
+    "R.E.P.O.",
     "FINAL FANTASY XIV ONLINE",
     "Special Events",
     "Baldur's Gate 3"
@@ -677,8 +681,8 @@
     }
    ],
    "jeux": [
-    "Call of Duty: Modern Warfare 4",
     "Grand Theft Auto VI",
+    "Call of Duty: Modern Warfare 4",
     "ROB RUN",
     "Special Events",
     "Rocket League"
@@ -712,8 +716,8 @@
    "succes": [],
    "jeux": [
     "Phasmophobia",
-    "Demonologist",
     "Sons of the Forest",
+    "Demonologist",
     "Toilet 8",
     "R.E.P.O."
    ],
@@ -740,9 +744,9 @@
    "jeux": [
     "Writing & Reading",
     "Art",
-    "Animal Crossing: New Horizons",
     "Agent A: A Puzzle In Disguise",
-    "Co-working & Studying"
+    "Co-working & Studying",
+    "Fortnite"
    ],
    "clip": null
   },
@@ -840,7 +844,7 @@
     "PUMPKIN PANIC",
     "Just Chatting",
     "What Remains of Edith Finch",
-    "DEVOUR"
+    "Psalm 2"
    ],
    "clip": null
   },
@@ -901,9 +905,9 @@
    "jeux": [
     "The Legend of Zelda: Ocarina of Time",
     "Invokyr",
-    "The Other Side",
     "Art",
-    "Codenames"
+    "Codenames",
+    "Party Animals"
    ],
    "clip": null
   },
@@ -997,10 +1001,10 @@
    "succes": [],
    "jeux": [
     "The Cozy Board Game Shop: Tidy Up",
-    "Dying Light",
     "Sort A Lot",
     "Anime Shop Simulator ✨",
-    "TV Archive: Tidy Up Together"
+    "TV Archive: Tidy Up Together",
+    "TCG Card Collection: Tidy Up"
    ],
    "clip": null
   },
@@ -1046,8 +1050,8 @@
    "jeux": [
     "Loftia",
     "Grand Theft Auto VI",
-    "Space Savory",
     "Milki Delivery",
+    "Space Savory",
     "Invokyr"
    ],
    "clip": {
@@ -1138,5 +1142,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-28T02:08:03.819Z"
+ "maj": "2026-11-28T08:07:45.183Z"
 }
