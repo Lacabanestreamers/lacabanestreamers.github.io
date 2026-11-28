@@ -220,7 +220,7 @@
    "staff": true,
    "depuis": "2026-09-20",
    "live": {
-    "viewers": 2,
+    "viewers": 25,
     "jeu": "Planet Zoo",
     "titre": "🦁  PLANET ZOO 2 : Aujourd'hui, on fait grandir le zoo ! 🐾",
     "depuis": "2026-11-28T10:01:36Z",
@@ -600,13 +600,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-20",
-   "live": {
-    "viewers": 8,
-    "jeu": "We Were Here Tomorrow",
-    "titre": "🐰Le retour des explorateurs avec Raisin",
-    "depuis": "2026-11-28T08:05:28Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_liiapin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2022-04-19",
    "succes": [
     {
@@ -822,13 +816,7 @@
    "type": "affiliate",
    "staff": false,
    "depuis": "2026-09-27",
-   "live": {
-    "viewers": 5,
-    "jeu": "Minecraft",
-    "titre": "On explore le Nether !",
-    "depuis": "2026-11-28T08:16:20Z",
-    "apercu": "https://static-cdn.jtvnw.net/previews-ttv/live_user_morganokonrin-440x248.jpg"
-   },
+   "live": null,
    "premierStream": "2024-12-03",
    "succes": [],
    "jeux": [
@@ -1009,7 +997,7 @@
    "staff": false,
    "depuis": "2026-10-21",
    "live": {
-    "viewers": 2,
+    "viewers": 6,
     "jeu": "Tidy Bakery",
     "titre": "Tidy Bakary on range notre belle boulangerie",
     "depuis": "2026-11-28T09:59:48Z",
@@ -1160,5 +1148,5 @@
   "relais": "https://cabane-inscriptions.aulit.workers.dev",
   "clientId": "6k9f9c4ticoctec1u5yw9jauhsr2ru"
  },
- "maj": "2026-11-28T10:11:39.127Z"
+ "maj": "2026-11-28T11:07:38.246Z"
 }
